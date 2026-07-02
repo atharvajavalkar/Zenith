@@ -1,0 +1,78 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: algo-postgres
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-algo}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-algo}
+      POSTGRES_DB: ${POSTGRES_DB:-algo}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-algo}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: algo-backend
+    env_file: .env
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://${POSTGRES_USER:-algo}:${POSTGRES_PASSWORD:-algo}@postgres:5432/${POSTGRES_DB:-algo}
+      JWT_SECRET: ${JWT_SECRET:-change-me-in-production}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000,http://localhost:5173}
+      TV_USERNAME: ${TV_USERNAME:-}
+      TV_PASSWORD: ${TV_PASSWORD:-}
+      SYMBOL: ${SYMBOL:-XAUUSD}
+      EXCHANGE: ${EXCHANGE:-XM}
+      BROKER: ${BROKER:-xm}
+      # XM / MT5 credentials (fill in .env when ready for live trading)
+      MT5_LOGIN: ${MT5_LOGIN:-}
+      MT5_PASSWORD: ${MT5_PASSWORD:-}
+      MT5_SERVER: ${MT5_SERVER:-}
+      MT5_PATH: ${MT5_PATH:-}
+      MT5_SYMBOL: ${MT5_SYMBOL:-XAUUSD}
+      MT5_BRIDGE_URL: ${MT5_BRIDGE_URL:-}
+      # Legacy OANDA (leave empty — only used as last-resort candle fallback)
+      OANDA_API_TOKEN: ${OANDA_API_TOKEN:-}
+      OANDA_ACCOUNT_ID: ${OANDA_ACCOUNT_ID:-}
+      OANDA_ENVIRONMENT: ${OANDA_ENVIRONMENT:-practice}
+      TRADE_MODE: ${TRADE_MODE:-paper}
+      AUTO_TRADE_ENABLED: ${AUTO_TRADE_ENABLED:-true}
+      TRADE_UNITS: ${TRADE_UNITS:-1}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - ./backend:/app/backend
+      - ./config.py:/app/config.py
+      - ./data:/app/data
+      - ./indicators:/app/indicators
+      - ./analysis:/app/analysis
+      - ./strategy:/app/strategy
+    restart: unless-stopped
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: ${VITE_API_URL:-http://localhost:8000}
+        VITE_WS_URL: ${VITE_WS_URL:-ws://localhost:8000}
+    container_name: algo-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

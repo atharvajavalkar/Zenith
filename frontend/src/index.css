@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-color: #0a0e14;
+  background-image:
+    radial-gradient(900px circle at 12% -8%, rgba(243, 185, 74, 0.08), transparent 45%),
+    radial-gradient(1100px circle at 100% 0%, rgba(41, 98, 255, 0.07), transparent 42%);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(243, 185, 74, 0.28);
+  color: #fff;
+}
+
+/* Refined scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #26344a;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #34465f;
+  background-clip: padding-box;
+}
+
+@layer components {
+  /* Elevated surface card with subtle gradient + hover lift */
+  .zcard {
+    @apply relative rounded-2xl border border-surface-border bg-surface-card shadow-card transition-all duration-300;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0));
+  }
+  .zcard-hover:hover {
+    @apply border-accent-gold/30 shadow-card-hover;
+    transform: translateY(-2px);
+  }
+  /* Section label above panel groups */
+  .section-eyebrow {
+    @apply text-[11px] font-semibold uppercase tracking-[0.18em] text-accent-gold/80;
+  }
+  /* Thin gold top accent for premium panels */
+  .gold-rule {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-accent-gold/40 to-transparent;
+  }
+}
+
+.brand-zenith {
+  position: relative;
+  display: inline-block;
+  font-family: 'Cinzel Decorative', 'Cinzel', 'Times New Roman', serif;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  background: linear-gradient(
+    100deg,
+    #5c3410 0%,
+    #9a6224 14%,
+    #d9a441 30%,
+    #e7c067 42%,
+    #fff6d2 50%,
+    #e7c067 58%,
+    #d9a441 70%,
+    #c5862f 86%,
+    #6b3f15 100%
+  );
+  background-size: 220% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.45))
+    drop-shadow(0 0 16px rgba(231, 192, 103, 0.38));
+  animation: brand-sheen 7s ease-in-out infinite;
+}
+
+/* Sweeping specular highlight overlay */
+.brand-zenith::after {
+  content: 'Zenith';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 0%,
+    transparent 40%,
+    rgba(255, 255, 255, 0.9) 48%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0.9) 52%,
+    transparent 60%,
+    transparent 100%
+  );
+  background-size: 220% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  pointer-events: none;
+  animation: brand-shine 6s ease-in-out infinite;
+}
+
+@keyframes brand-sheen {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+
+@keyframes brand-shine {
+  0% {
+    background-position: 150% center;
+  }
+  55% {
+    background-position: -50% center;
+  }
+  100% {
+    background-position: -50% center;
+  }
+}
+
+.brand-zenith--light {
+  background: linear-gradient(
+    100deg,
+    #5c3410 0%,
+    #8a5a22 25%,
+    #c08a2e 50%,
+    #8a5a22 75%,
+    #5c3410 100%
+  );
+  background-size: 220% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.4));
+}
+
+.brand-zenith--light::after {
+  display: none;
+}

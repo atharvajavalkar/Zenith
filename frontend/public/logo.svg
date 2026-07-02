@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="skyGlow" x1="64" y1="8" x2="64" y2="72" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fff6d2" stop-opacity="0.22"/>
+      <stop offset="45%" stop-color="#d9a441" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0a0e14" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="zenithHalo" cx="64" cy="18" r="28" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fff6d2" stop-opacity="0.55"/>
+      <stop offset="35%" stop-color="#e7c067" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#d9a441" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldRockLit" x1="48" y1="20" x2="96" y2="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#fff6d2"/>
+      <stop offset="18%" stop-color="#e7c067"/>
+      <stop offset="42%" stop-color="#d9a441"/>
+      <stop offset="68%" stop-color="#9a6224"/>
+      <stop offset="100%" stop-color="#5c3410"/>
+    </linearGradient>
+    <linearGradient id="goldRockShadow" x1="20" y1="24" x2="64" y2="92" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8a5a22"/>
+      <stop offset="35%" stop-color="#6b3f15"/>
+      <stop offset="72%" stop-color="#4a2a0e"/>
+      <stop offset="100%" stop-color="#2a1808"/>
+    </linearGradient>
+    <linearGradient id="snowCap" x1="64" y1="8" x2="64" y2="38" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#fff6d2"/>
+      <stop offset="72%" stop-color="#e7c067"/>
+      <stop offset="100%" stop-color="#d9a441" stop-opacity="0.85"/>
+    </linearGradient>
+    <linearGradient id="glacier" x1="64" y1="78" x2="64" y2="98" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#e7c067" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#9a6224" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="aiguilleLit" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff6d2"/>
+      <stop offset="50%" stop-color="#d9a441"/>
+      <stop offset="100%" stop-color="#6b3f15"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- App tile -->
+  <rect width="128" height="128" rx="26" fill="#0a0e14"/>
+  <rect width="128" height="128" rx="26" fill="url(#skyGlow)"/>
+
+  <!-- Zenith sun rays -->
+  <g stroke="#e7c067" stroke-opacity="0.2" stroke-width="0.6" stroke-linecap="round">
+    <line x1="64" y1="14" x2="64" y2="4"/>
+    <line x1="64" y1="14" x2="78" y2="8"/>
+    <line x1="64" y1="14" x2="50" y2="8"/>
+    <line x1="64" y1="14" x2="86" y2="16"/>
+    <line x1="64" y1="14" x2="42" y2="16"/>
+    <line x1="64" y1="14" x2="90" y2="26"/>
+    <line x1="64" y1="14" x2="38" y2="26"/>
+  </g>
+  <circle cx="64" cy="14" r="18" fill="url(#zenithHalo)"/>
+
+  <!-- Distant ridgeline (Mont Blanc massif backdrop) -->
+  <path
+    d="M8 78 L22 58 L34 66 L48 48 L58 56 L64 44 L72 54 L84 46 L96 58 L108 52 L120 68 L120 92 L8 92 Z"
+    fill="#1a1520"
+    stroke="#3d2a14"
+    stroke-width="0.5"
+    stroke-opacity="0.5"
+  />
+
+  <!-- Left Aiguille — needle spire (Chamonix skyline) -->
+  <path d="M14 92 L26 34 L30 92 Z" fill="url(#goldRockShadow)"/>
+  <path d="M26 34 L30 92 L22 92 Z" fill="url(#aiguilleLit)" opacity="0.85"/>
+  <path d="M26 34 L28 58 L27 72" stroke="#fff6d2" stroke-opacity="0.25" stroke-width="0.5" fill="none"/>
+  <path d="M20 92 L32 48 L36 92 Z" fill="#2a1808" opacity="0.55"/>
+
+  <!-- Right satellite peak -->
+  <path d="M94 92 L102 42 L108 92 Z" fill="url(#goldRockShadow)"/>
+  <path d="M102 42 L108 92 L98 92 Z" fill="url(#goldRockLit)" opacity="0.75"/>
+  <path d="M88 92 L98 52 L104 92 Z" fill="#1f1208" opacity="0.5"/>
+
+  <!-- Mont Blanc — central dome (Bossons face, lit right / shadow left) -->
+  <path
+    d="M64 12
+       C56 18, 50 28, 46 42
+       L38 92
+       L64 92
+       Z"
+    fill="url(#goldRockShadow)"
+  />
+  <path
+    d="M64 12
+       C72 18, 78 28, 82 42
+       L90 92
+       L64 92
+       Z"
+    fill="url(#goldRockLit)"
+    filter="url(#softGlow)"
+  />
+
+  <!-- Mont Blanc snow dome & summit plateau -->
+  <path
+    d="M64 12
+       C58 16, 54 22, 52 30
+       C54 28, 58 26, 64 24
+       C70 26, 74 28, 76 30
+       C74 22, 70 16, 64 12 Z"
+    fill="url(#snowCap)"
+  />
+  <!-- Summit cornice -->
+  <path
+    d="M58 24 Q64 21 70 24 L68 28 Q64 26 60 28 Z"
+    fill="#ffffff"
+    opacity="0.92"
+  />
+
+  <!-- Rock striations — Mont Blanc gneiss facets (gold ore veins) -->
+  <g stroke="#fff6d2" stroke-opacity="0.18" stroke-width="0.45" fill="none" stroke-linecap="round">
+    <path d="M68 38 L76 58 L74 72"/>
+    <path d="M72 44 L80 64"/>
+    <path d="M66 48 L70 68"/>
+    <path d="M58 52 L52 72"/>
+    <path d="M60 62 L48 82"/>
+  </g>
+  <g stroke="#d9a441" stroke-opacity="0.35" stroke-width="0.55" fill="none" stroke-linecap="round">
+    <path d="M70 36 L78 52 L76 78"/>
+    <path d="M74 50 L84 70"/>
+  </g>
+
+  <!-- Glacier tongue at base -->
+  <path d="M28 92 C40 86, 52 88, 64 84 C76 88, 88 86, 100 92 L100 98 L28 98 Z" fill="url(#glacier)"/>
+  <path d="M36 94 C48 90, 58 91, 64 88 C70 91, 80 90, 92 94" stroke="#fff6d2" stroke-opacity="0.2" stroke-width="0.6" fill="none"/>
+
+  <!-- Horizon gold line -->
+  <path d="M10 98 H118" stroke="#d9a441" stroke-opacity="0.45" stroke-width="0.8" stroke-linecap="round"/>
+
+  <!-- Zenith point — sun over Mont Blanc summit -->
+  <circle cx="64" cy="13" r="3.2" fill="#fff6d2" filter="url(#softGlow)"/>
+  <circle cx="64" cy="13" r="1.4" fill="#ffffff"/>
+</svg>
