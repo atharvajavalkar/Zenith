@@ -1,0 +1,34 @@
+{
+  "zenith": "USDCHF",
+  "map": {
+    "true_l3": false,
+    "primary": "xm_dom",
+    "product": "USDCHF",
+    "databento": {
+      "dataset": "DBFX.PLUS",
+      "symbol": "USD/CHF",
+      "schema": "mbp-10"
+    },
+    "tardis": null,
+    "note": "Spot FX has no single exchange L3; XM DOM + Databento FX L2 when keyed"
+  },
+  "sources": {
+    "xm_dom": {
+      "ok": false,
+      "error": "No module named 'requests'"
+    },
+    "databento": {
+      "ok": false,
+      "skipped": true,
+      "reason": "DATABENTO_API_KEY not set",
+      "would_fetch": {
+        "dataset": "DBFX.PLUS",
+        "symbol": "USD/CHF",
+        "schema": "mbp-10"
+      }
+    }
+  },
+  "fetched_at": "2026-08-10T10:13:42Z",
+  "best_schema": null,
+  "best_source": null
+}

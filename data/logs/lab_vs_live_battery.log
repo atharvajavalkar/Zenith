@@ -1,0 +1,111 @@
+
+===== TF=1d window 2011-07-24→2026-07-23 (5478d) · $200.0/R =====
+
+  [live] GOLD brain=fib_liq rr=4 bars=3770 entries=0
+    full n=0 E[R]=0.0 wr=0.0% | OOS n=0 E[R]=0.0 | WF 0/4 | MC None% → DEAD
+  [lab] GOLD brain=roc_60 rr=4 bars=3770 entries=16
+    full n=16 E[R]=0.562 wr=31.2% | OOS n=5 E[R]=1.0 | WF 4/4 | MC 80.5% → SURVIVES
+  [live] USDCHF brain=ema_20_50_tight rr=2.4 bars=3902 entries=0
+    full n=0 E[R]=0.0 wr=0.0% | OOS n=0 E[R]=0.0 | WF 0/4 | MC None% → DEAD
+  [lab] USDCHF brain=volmom rr=2.4 bars=3902 entries=216
+    full n=97 E[R]=-0.089 wr=26.8% | OOS n=27 E[R]=0.259 | WF 3/4 | MC 29.0% → FRAGILE
+  [live] USDJPY brain=fib_liq rr=4 bars=3905 entries=0
+    full n=0 E[R]=0.0 wr=0.0% | OOS n=0 E[R]=0.0 | WF 0/4 | MC None% → DEAD
+  [lab] USDJPY brain=sma_cross rr=4 bars=3905 entries=87
+    full n=75 E[R]=0.133 wr=22.7% | OOS n=21 E[R]=0.429 | WF 2/4 | MC 66.3% → SURVIVES
+  [live] NAS100 brain=sma_20_50_cross rr=4 bars=3772 entries=71
+    full n=67 E[R]=0.418 wr=28.4% | OOS n=18 E[R]=0.944 | WF 4/4 | MC 94.1% → SURVIVES
+  [lab] NAS100 brain=roc_120 rr=4 bars=3772 entries=22
+    full n=15 E[R]=1.667 wr=53.3% | OOS n=9 E[R]=1.778 | WF 3/4 | MC 99.6% → SURVIVES
+  [live] UKOIL brain=breakout_20 rr=3 bars=3748 entries=497
+    full n=162 E[R]=0.259 wr=31.5% | OOS n=45 E[R]=0.067 | WF 3/4 | MC 96.2% → SURVIVES
+  [lab] UKOIL brain=roc_120 rr=3 bars=3748 entries=45
+    full n=27 E[R]=0.333 wr=33.3% | OOS n=10 E[R]=-0.2 | WF 2/4 | MC 84.2% → FRAGILE
+  [live] AUDUSD brain=ema_20_50_pull rr=1.5 bars=3904 entries=0
+    full n=0 E[R]=0.0 wr=0.0% | OOS n=0 E[R]=0.0 | WF 0/4 | MC None% → DEAD
+  [lab] AUDUSD brain=bb_2 rr=1.5 bars=3904 entries=165
+    full n=109 E[R]=-0.083 wr=36.7% | OOS n=14 E[R]=0.786 | WF 3/4 | MC 24.4% → FRAGILE
+  [live] BTCUSD brain=ema_20_50_tight rr=3 bars=4328 entries=21
+    full n=17 E[R]=0.412 wr=35.3% | OOS n=4 E[R]=-1.0 | WF 1/4 | MC 77.0% → FRAGILE
+  [lab] BTCUSD brain=cta_50_200 rr=3 bars=4328 entries=18
+    full n=17 E[R]=0.176 wr=29.4% | OOS n=4 E[R]=0.0 | WF 1/4 | MC 59.7% → FRAGILE
+  [live] ETHUSD brain=ema_20_50_tight rr=4 bars=3179 entries=16
+    full n=13 E[R]=2.077 wr=61.5% | OOS n=5 E[R]=3.0 | WF 2/4 | MC 99.9% → SURVIVES
+  [lab] ETHUSD brain=roc_60 rr=4 bars=3179 entries=76
+    full n=39 E[R]=0.923 wr=38.5% | OOS n=13 E[R]=0.923 | WF 4/4 | MC 99.8% → SURVIVES
+
+### HEAD-TO-HEAD 1d
+
+Pair     Live               Lab            L-ver     Lab-ver     L-OOS  Lab-OOS   Ln  Labn Better 
+----------------------------------------------------------------------------------------------------
+GOLD     fib_liq            roc_60         DEAD      SURVIVES    0.000    1.000    0    16 lab    
+USDCHF   ema_20_50_tight    volmom         DEAD      FRAGILE     0.000    0.259    0    97 lab    
+USDJPY   fib_liq            sma_cross      DEAD      SURVIVES    0.000    0.429    0    75 lab    
+NAS100   sma_20_50_cross    roc_120        SURVIVES  SURVIVES    0.944    1.778   67    15 lab    
+UKOIL    breakout_20        roc_120        SURVIVES  FRAGILE     0.067   -0.200  162    27 live   
+AUDUSD   ema_20_50_pull     bb_2           DEAD      FRAGILE     0.000    0.786    0   109 lab    
+BTCUSD   ema_20_50_tight    cta_50_200     FRAGILE   FRAGILE    -1.000    0.000   17    17 lab    
+ETHUSD   ema_20_50_tight    roc_60         SURVIVES  SURVIVES    3.000    0.923   13    39 live   
+
+LIVE 1d  3S/1F/4D · 4.3/10 · OOS E[R]=0.3764 · MC=91.8%
+LAB  1d  4S/4F/0D · 8.7/10 · OOS E[R]=0.6219 · MC=67.9%
+Pair wins: lab=6 live=2 tie=0 → switch_recommended
+
+===== TF=1h window 2024-08-22→2026-07-23 (700d) · $200.0/R =====
+
+  [live] GOLD brain=fib_liq rr=4 bars=10977 entries=50
+    full n=44 E[R]=0.023 wr=20.5% | OOS n=15 E[R]=1.0 | WF 3/4 | MC 56.5% → FRAGILE
+  [lab] GOLD brain=roc_60 rr=4 bars=10977 entries=3
+    full n=2 E[R]=-1.0 wr=0.0% | OOS n=2 E[R]=-1.0 | WF 0/4 | MC None% → DEAD
+  [live] USDCHF brain=ema_20_50_tight rr=2.4 bars=11771 entries=93
+    full n=74 E[R]=0.011 wr=29.7% | OOS n=17 E[R]=0.2 | WF 1/4 | MC 55.1% → FRAGILE
+  [lab] USDCHF brain=volmom rr=2.4 bars=11771 entries=781
+    full n=335 E[R]=-0.188 wr=23.9% | OOS n=105 E[R]=-0.255 | WF 0/4 | MC 1.1% → DEAD
+  [live] USDJPY brain=fib_liq rr=4 bars=11753 entries=62
+    full n=53 E[R]=0.226 wr=24.5% | OOS n=15 E[R]=0.667 | WF 3/4 | MC 79.8% → SURVIVES
+  [lab] USDJPY brain=sma_cross rr=4 bars=11753 entries=265
+    full n=234 E[R]=-0.081 wr=18.4% | OOS n=70 E[R]=0.071 | WF 3/4 | MC 28.7% → FRAGILE
+  [live] NAS100 brain=sma_20_50_cross rr=4 bars=10946 entries=231
+    full n=209 E[R]=0.292 wr=25.8% | OOS n=61 E[R]=0.475 | WF 3/4 | MC 97.4% → SURVIVES
+  [lab] NAS100 brain=roc_120 rr=4 bars=10946 entries=2
+    full n=2 E[R]=-1.0 wr=0.0% | OOS n=0 E[R]=0.0 | WF 0/4 | MC None% → DEAD
+  [live] UKOIL brain=breakout_20 rr=3 bars=10956 entries=1108
+    full n=363 E[R]=0.069 wr=26.7% | OOS n=128 E[R]=0.25 | WF 2/4 | MC 78.8% → FRAGILE
+  [lab] UKOIL brain=roc_120 rr=3 bars=10956 entries=16
+    full n=15 E[R]=-0.2 wr=20.0% | OOS n=12 E[R]=0.0 | WF 1/4 | MC 36.3% → DEAD
+  [live] AUDUSD brain=ema_20_50_pull rr=1.5 bars=11884 entries=233
+    full n=159 E[R]=0.022 wr=40.9% | OOS n=43 E[R]=0.221 | WF 3/4 | MC 60.9% → FRAGILE
+  [lab] AUDUSD brain=bb_2 rr=1.5 bars=11884 entries=126
+    full n=120 E[R]=0.0 wr=40.0% | OOS n=42 E[R]=0.012 | WF 2/4 | MC 46.2% → FRAGILE
+  [live] BTCUSD brain=ema_20_50_tight rr=3 bars=16791 entries=106
+    full n=88 E[R]=0.318 wr=33.0% | OOS n=26 E[R]=0.385 | WF 3/4 | MC 93.1% → SURVIVES
+  [lab] BTCUSD brain=cta_50_200 rr=3 bars=16791 entries=103
+    full n=101 E[R]=-0.168 wr=20.8% | OOS n=30 E[R]=-0.333 | WF 1/4 | MC 14.8% → DEAD
+  [live] ETHUSD brain=ema_20_50_tight rr=4 bars=16788 entries=99
+    full n=81 E[R]=0.728 wr=34.6% | OOS n=17 E[R]=1.353 | WF 3/4 | MC 99.6% → SURVIVES
+  [lab] ETHUSD brain=roc_60 rr=4 bars=16788 entries=43
+    full n=40 E[R]=0.125 wr=22.5% | OOS n=10 E[R]=0.0 | WF 2/4 | MC 59.0% → FRAGILE
+
+### HEAD-TO-HEAD 1h
+
+Pair     Live               Lab            L-ver     Lab-ver     L-OOS  Lab-OOS   Ln  Labn Better 
+----------------------------------------------------------------------------------------------------
+GOLD     fib_liq            roc_60         FRAGILE   DEAD        1.000   -1.000   44     2 live   
+USDCHF   ema_20_50_tight    volmom         FRAGILE   DEAD        0.200   -0.255   74   335 live   
+USDJPY   fib_liq            sma_cross      SURVIVES  FRAGILE     0.667    0.071   53   234 live   
+NAS100   sma_20_50_cross    roc_120        SURVIVES  DEAD        0.475    0.000  209     2 live   
+UKOIL    breakout_20        roc_120        FRAGILE   DEAD        0.250    0.000  363    15 live   
+AUDUSD   ema_20_50_pull     bb_2           FRAGILE   FRAGILE     0.221    0.012  159   120 live   
+BTCUSD   ema_20_50_tight    cta_50_200     SURVIVES  DEAD        0.385   -0.333   88   101 live   
+ETHUSD   ema_20_50_tight    roc_60         SURVIVES  FRAGILE     1.353    0.000   81    40 live   
+
+LIVE 1h  4S/4F/0D · 9.1/10 · OOS E[R]=0.5689 · MC=77.6%
+LAB  1h  0S/3F/5D · 1.0/10 · OOS E[R]=-0.1881 · MC=31.0%
+Pair wins: lab=0 live=8 tie=0 → do_not_switch
+
+### FINAL 1–10 (blend)
+
+LIVE brains: 6.2/10
+LAB winners: 5.6/10
+Recommendation: do_not_switch
+Wrote /app/data/lab_vs_live_battery.json

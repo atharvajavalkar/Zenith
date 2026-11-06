@@ -1,0 +1,878 @@
+
+===== SOLUTION XM HUNT @ 2026-10-07T00:50:40.861933+00:00 =====
+=== SOLUTION HUNT (XM spreads, locked holdout) ===
+book=('BTCUSD', 'UKOIL', 'GOLD', 'NAS100') tfs=('5m', '15m', '3m')
+holdout starts 2026-07-24 — not used to pick the brain
+gate: pre 30/90/180/1y green, 1y PASS|SOFT, E[R]≥0.03, n≥40, OOS>0, WF≥3, spread<0.20R
+AND holdout n≥8, pnl>0, E[R]>0
+research only · .env untouched
+
+
+######## BTCUSD @ 5m · 10.0y ########
+  hole cut at 2026-08-09 00:00:00+00:00 (gap 384.08h)
+  catalog 432 modes · bars 986,093 · end 2026-10-07 00:49:58+00:00
+  runnable modes 438
+  … coarse 1/438 cells=2 25s
+  … coarse 40/438 cells=80 49s
+  … coarse 80/438 cells=160 66s
+  … coarse 120/438 cells=240 80s
+  … coarse 160/438 cells=320 89s
+  … coarse 200/438 cells=400 101s
+  … coarse 240/438 cells=480 111s
+  … coarse 280/438 cells=560 115s
+  … coarse 320/438 cells=640 120s
+  … coarse 360/438 cells=720 133s
+  … coarse 400/438 cells=800 142s
+  densify 18 modes
+  SOLUTION sm_t0.40_o0.55|sl2.5|rr3.0|g5 holdout=1370.65 1y=2477.44
+  SOLUTION sm_t0.38_o0.40|sl2.5|rr3.0|g5 holdout=1070.34 1y=4685.13
+  SOLUTION sm_t0.38_o0.45|sl2.5|rr3.0|g5 holdout=311.63 1y=2727.55
+  SOLUTION sm_t0.38_o0.45|sl3.0|rr3.0|g5 holdout=852.83 1y=3785.98
+  SOLUTION sm_t0.38_o0.55|sl3.0|rr3.0|g5 holdout=430.95 1y=4016.21
+  SOLUTION st_3.5|sl2.0|rr2.0|g2 holdout=1036.13 1y=1710.89
+  SOLUTION st_3.5|sl2.0|rr2.0|g3 holdout=1036.13 1y=1710.89
+  SOLUTION st_3.5|sl2.0|rr2.0|g5 holdout=1036.13 1y=1710.89
+  SOLUTION st_3.0|sl2.0|rr2.0|g2 holdout=1004.98 1y=950.9
+  SOLUTION st_3.0|sl2.0|rr2.0|g3 holdout=1004.98 1y=950.9
+  SOLUTION st_3.0|sl2.0|rr2.0|g5 holdout=1004.98 1y=950.9
+  SOLUTION st_3.0|sl2.0|rr4.0|g2 holdout=1124.43 1y=3807.27
+  SOLUTION st_3.0|sl2.0|rr4.0|g3 holdout=1124.43 1y=3807.27
+  SOLUTION st_3.0|sl2.0|rr4.0|g5 holdout=1124.43 1y=3807.27
+  SOLUTION st_3.0|sl2.5|rr2.0|g2 holdout=839.43 1y=1753.1
+  SOLUTION st_3.0|sl2.5|rr2.0|g3 holdout=839.43 1y=1753.1
+  SOLUTION st_3.0|sl2.5|rr2.0|g5 holdout=839.43 1y=1753.1
+  SOLUTION st_3.0|sl3.0|rr2.0|g2 holdout=110.55 1y=856.43
+  SOLUTION st_3.0|sl3.0|rr2.0|g3 holdout=110.55 1y=856.43
+  SOLUTION st_3.0|sl3.0|rr2.0|g5 holdout=110.55 1y=856.43
+  SOLUTION sm_t0.38_o0.48|sl3.0|rr3.0|g5 holdout=906.73 1y=2222.56
+  SOLUTION sm_t0.38_o0.50|sl3.0|rr3.0|g5 holdout=494.18 1y=2877.97
+  SOLUTION math_hurst_mr_0.45|sl2.0|rr4.0|g2 holdout=529.63 1y=2264.4
+  SOLUTION math_hurst_mr_0.45|sl2.5|rr4.0|g2 holdout=536.89 1y=2744.28
+  SOLUTION math_hurst_mr_0.45|sl2.5|rr4.0|g3 holdout=536.77 1y=1566.35
+  SOLUTION math_hurst_mr_0.45|sl3.0|rr3.0|g2 holdout=234.43 1y=2703.01
+  SOLUTION math_hurst_mr_0.45|sl3.0|rr3.0|g5 holdout=347.17 1y=1659.22
+  SOLUTION math_hurst_mr_0.45|sl3.0|rr4.0|g2 holdout=547.66 1y=4499.47
+  SOLUTION math_hurst_mr_0.45|sl3.0|rr4.0|g3 holdout=547.57 1y=4115.38
+  SOLUTION math_hurst_mr_0.45|sl3.0|rr4.0|g5 holdout=659.67 1y=4172.58
+  SOLUTION ou_2.6|sl2.0|rr4.0|g3 holdout=1263.69 1y=2045.24
+  SOLUTION ou_2.6|sl2.5|rr4.0|g3 holdout=1001.08 1y=1775.42
+  SOLUTION ou_2.6|sl2.5|rr4.0|g5 holdout=1107.51 1y=1255.41
+  SOLUTION sm_t0.38_o0.42|sl2.5|rr3.0|g5 holdout=549.81 1y=5084.14
+  SOLUTION sm_t0.38_o0.42|sl3.0|rr3.0|g5 holdout=625.53 1y=3179.69
+  BEST 5m: sm_t0.40_o0.55|sl2.5|rr3.0|g5 sol=True hold=1370.65 1y=2477.44 solutions=35
+
+######## BTCUSD @ 15m · 10.0y ########
+  hole cut at 2026-08-09 00:00:00+00:00 (gap 384.25h)
+  catalog 432 modes · bars 328,701 · end 2026-10-07 00:50:03+00:00
+  runnable modes 437
+  … coarse 1/437 cells=1328 213s
+  … coarse 40/437 cells=1406 220s
+  … coarse 80/437 cells=1486 226s
+  … coarse 120/437 cells=1566 230s
+  SOLUTION off_sm_t0.45_o0.50|sl2.0|rr3.0|g3 holdout=76.48 1y=4138.08 exp=0.1228
+  … coarse 160/437 cells=1646 233s
+  … coarse 200/437 cells=1726 238s
+  SOLUTION vm_t0.75_l25|sl3.0|rr3.0|g3 holdout=98.6 1y=3176.39 exp=0.1412
+  SOLUTION cir_z1.8_s0.3|sl2.0|rr3.0|g3 holdout=280.81 1y=3350.05 exp=0.0725
+  … coarse 240/437 cells=1806 241s
+  SOLUTION cir_z2.4_s0.5|sl3.0|rr3.0|g3 holdout=959.04 1y=1148.66 exp=0.0508
+  … coarse 280/437 cells=1886 243s
+  SOLUTION ou_2.0|sl3.0|rr3.0|g3 holdout=394.82 1y=2036.37 exp=0.0768
+  SOLUTION ou_2.6|sl3.0|rr3.0|g3 holdout=614.89 1y=3803.87 exp=0.2199
+  SOLUTION ema_12_36_z0.6|sl2.0|rr3.0|g3 holdout=789.95 1y=2157.75 exp=0.0489
+  … coarse 320/437 cells=1966 244s
+  SOLUTION bb_60_2.2|sl3.0|rr3.0|g3 holdout=111.77 1y=2111.83 exp=0.1056
+  … coarse 360/437 cells=2046 249s
+  … coarse 400/437 cells=2126 252s
+  SOLUTION math_kalman_fade_2.0|sl3.0|rr3.0|g3 holdout=193.74 1y=1011.48 exp=0.0339
+  densify 18 modes
+  SOLUTION ema_12_36_z0.6|sl2.0|rr3.0|g2 holdout=789.95 1y=2173.26
+  SOLUTION ou_2.6|sl3.0|rr3.0|g2 holdout=510.07 1y=3163.78
+  SOLUTION cir_z2.4_s0.5|sl3.0|rr2.0|g3 holdout=508.18 1y=1992.9
+  SOLUTION cir_z2.4_s0.5|sl3.0|rr3.0|g2 holdout=960.39 1y=1516.6
+  SOLUTION cir_z1.8_s0.3|sl3.0|rr2.0|g3 holdout=628.81 1y=1441.37
+  SOLUTION vm_t0.75_l25|sl3.0|rr3.0|g2 holdout=98.6 1y=3576.59
+  SOLUTION off_sm_t0.45_o0.50|sl2.0|rr3.0|g2 holdout=831.17 1y=3451.02
+  SOLUTION off_sm_t0.45_o0.50|sl2.5|rr2.0|g2 holdout=970.65 1y=2938.94
+  SOLUTION off_sm_t0.45_o0.50|sl2.5|rr2.0|g3 holdout=401.18 1y=3138.57
+  SOLUTION off_sm_t0.45_o0.50|sl3.0|rr2.0|g2 holdout=362.1 1y=2129.15
+  SOLUTION off_sm_t0.45_o0.50|sl3.0|rr2.0|g3 holdout=278.49 1y=3461.35
+  BEST 15m: off_sm_t0.45_o0.50|sl2.5|rr2.0|g2 sol=True hold=970.65 1y=2938.94 solutions=20
+
+######## BTCUSD @ 3m · 5.0y ########
+  SKIP hist ends 2026-07-23 — holdout not covered
+
+######## UKOIL @ 5m · 10.0y ########
+  hole cut at 2026-07-28 04:00:00+00:00 (gap 100.08h)
+  catalog 426 modes · bars 1,055,559 · end 2026-10-07 00:39:58+00:00
+  runnable modes 431
+  … coarse 1/431 cells=2490 304s
+  … coarse 40/431 cells=2568 320s
+  … coarse 80/431 cells=2648 332s
+  … coarse 120/431 cells=2728 340s
+  … coarse 160/431 cells=2808 347s
+  … coarse 200/431 cells=2888 358s
+  … coarse 240/431 cells=2968 368s
+  … coarse 280/431 cells=3048 373s
+  SOLUTION ou_1.4|sl3.0|rr3.0|g3 holdout=1345.8 1y=4142.95 exp=0.0811
+  SOLUTION ou_1.6|sl3.0|rr3.0|g3 holdout=1152.12 1y=9596.57 exp=0.1975
+  … coarse 320/431 cells=3128 377s
+  … coarse 360/431 cells=3208 390s
+  … coarse 400/431 cells=3288 399s
+  SOLUTION math_hf_spike_fade_0.70|sl2.0|rr3.0|g3 holdout=797.58 1y=1608.2 exp=0.1449
+  densify 18 modes
+  SOLUTION ou_1.6|sl3.0|rr4.0|g2 holdout=2268.06 1y=8875.37
+  SOLUTION ou_1.6|sl3.0|rr4.0|g3 holdout=2319.04 1y=9360.67
+  SOLUTION ou_1.6|sl3.0|rr4.0|g5 holdout=574.57 1y=8032.46
+  SOLUTION ou_1.4|sl3.0|rr3.0|g5 holdout=1096.46 1y=4943.58
+  SOLUTION math_hf_spike_fade_0.70|sl2.0|rr3.0|g2 holdout=167.68 1y=1770.46
+  SOLUTION math_hf_spike_fade_0.70|sl2.0|rr3.0|g5 holdout=1596.98 1y=1708.72
+  SOLUTION math_hf_spike_fade_0.70|sl2.0|rr4.0|g2 holdout=336.4 1y=2197.75
+  SOLUTION math_hf_spike_fade_0.70|sl2.0|rr4.0|g3 holdout=1067.44 1y=1936.41
+  SOLUTION math_hf_spike_fade_0.70|sl2.0|rr4.0|g5 holdout=2066.77 1y=2276.61
+  SOLUTION ou_1.2|sl3.0|rr3.0|g2 holdout=764.98 1y=4721.22
+  SOLUTION math_ou_snap_5_40|sl3.0|rr3.0|g2 holdout=173.09 1y=3407.9
+  SOLUTION cir_z2.6_s0.3|sl3.0|rr4.0|g3 holdout=980.74 1y=3859.28
+  SOLUTION cir_z2.6_s0.7|sl3.0|rr4.0|g3 holdout=2434.03 1y=2107.28
+  SOLUTION math_lf_thrust_eff|sl2.0|rr3.0|g5 holdout=332.55 1y=2243.98
+  SOLUTION math_lf_thrust_eff|sl2.0|rr4.0|g5 holdout=552.55 1y=1772.91
+  BEST 5m: ou_1.6|sl3.0|rr4.0|g3 sol=True hold=2319.04 1y=9360.67 solutions=18
+
+######## UKOIL @ 15m · 10.0y ########
+  hole cut at 2026-07-28 04:00:00+00:00 (gap 100.25h)
+  catalog 426 modes · bars 352,069 · end 2026-10-07 00:39:58+00:00
+  runnable modes 431
+  … coarse 1/431 cells=3964 459s
+  … coarse 40/431 cells=4042 466s
+  … coarse 80/431 cells=4122 470s
+  … coarse 120/431 cells=4202 475s
+  … coarse 160/431 cells=4282 478s
+  … coarse 200/431 cells=4362 482s
+  … coarse 240/431 cells=4442 486s
+  … coarse 280/431 cells=4522 488s
+  … coarse 320/431 cells=4602 490s
+  SOLUTION bb_50_2.5|sl2.0|rr3.0|g3 holdout=1062.72 1y=1986.71 exp=0.0747
+  … coarse 360/431 cells=4682 494s
+  … coarse 400/431 cells=4762 498s
+  densify 18 modes
+  SOLUTION bb_50_2.5|sl3.0|rr2.0|g2 holdout=908.9 1y=1103.65
+  SOLUTION cir_z1.4_s0.5|sl2.0|rr4.0|g3 holdout=2703.87 1y=3468.75
+  SOLUTION cir_z1.6_s0.7|sl1.5|rr4.0|g3 holdout=2636.59 1y=3583.02
+  SOLUTION cir_z1.6_s0.7|sl2.5|rr4.0|g2 holdout=713.0 1y=1500.76
+  SOLUTION cir_z1.6_s0.7|sl3.0|rr4.0|g2 holdout=1186.7 1y=1115.33
+  SOLUTION cir_z1.6_s0.5|sl1.5|rr4.0|g3 holdout=2817.09 1y=2355.22
+  SOLUTION cir_z1.6_s0.5|sl2.5|rr4.0|g2 holdout=1034.62 1y=2120.77
+  SOLUTION vm_t0.75_l40|sl2.5|rr4.0|g2 holdout=1022.92 1y=2977.38
+  SOLUTION vm_t0.75_l40|sl2.5|rr4.0|g3 holdout=1022.92 1y=2755.47
+  SOLUTION off_vm_t0.75_l40|sl2.5|rr4.0|g2 holdout=1139.94 1y=2257.66
+  SOLUTION off_vm_t0.75_l40|sl2.5|rr4.0|g3 holdout=1139.94 1y=2035.75
+  SOLUTION vm_t0.65_l40|sl2.5|rr4.0|g2 holdout=914.51 1y=2817.63
+  SOLUTION vm_t0.65_l40|sl2.5|rr4.0|g3 holdout=914.51 1y=2595.72
+  BEST 15m: cir_z1.4_s0.5|sl2.0|rr4.0|g3 sol=True hold=2703.87 1y=3468.75 solutions=14
+
+######## UKOIL @ 3m · 5.0y ########
+  SKIP hist ends 2026-07-23 — holdout not covered
+
+######## GOLD @ 5m · 10.0y ########
+  hole cut at 2026-07-28 04:00:00+00:00 (gap 100.08h)
+  catalog 427 modes · bars 1,053,918 · end 2026-10-07 00:39:46+00:00
+  runnable modes 433
+  … coarse 1/433 cells=5222 560s
+  … coarse 40/433 cells=5300 578s
+  … coarse 80/433 cells=5380 591s
+  … coarse 120/433 cells=5460 602s
+  SOLUTION sm_t0.40_o0.45|sl3.0|rr3.0|g3 holdout=700.38 1y=2257.65 exp=0.0348
+  … coarse 160/433 cells=5540 609s
+  SOLUTION off_vm_t0.45_l40|sl3.0|rr3.0|g3 holdout=255.53 1y=9963.73 exp=0.1835
+  SOLUTION vm_t0.55_l40|sl3.0|rr3.0|g3 holdout=335.69 1y=8259.03 exp=0.1395
+  SOLUTION off_vm_t0.55_l40|sl3.0|rr3.0|g3 holdout=965.63 1y=7549.46 exp=0.139
+  … coarse 200/433 cells=5620 619s
+  SOLUTION vm_t0.65_l40|sl3.0|rr3.0|g3 holdout=1008.15 1y=9132.36 exp=0.1585
+  SOLUTION vm_t0.75_l40|sl3.0|rr3.0|g3 holdout=1400.7 1y=8009.09 exp=0.1374
+  … coarse 240/433 cells=5700 628s
+  SOLUTION cir_z2.6_s0.3|sl3.0|rr3.0|g3 holdout=1812.09 1y=6264.24 exp=0.1356
+  SOLUTION cir_z3.0_s0.3|sl3.0|rr3.0|g3 holdout=435.84 1y=5008.05 exp=0.1499
+  SOLUTION ent_p0.85_s0.15|sl2.0|rr3.0|g3 holdout=1100.03 1y=4438.14 exp=0.0978
+  SOLUTION ent_p0.85_s0.25|sl2.0|rr3.0|g3 holdout=608.92 1y=3088.31 exp=0.1895
+  SOLUTION snr_0.35|sl2.0|rr3.0|g3 holdout=199.09 1y=2509.71 exp=0.1041
+  … coarse 280/433 cells=5780 632s
+  SOLUTION ou_1.8|sl3.0|rr3.0|g3 holdout=348.29 1y=5629.67 exp=0.0827
+  SOLUTION ou_2.2|sl3.0|rr3.0|g3 holdout=585.31 1y=6534.99 exp=0.1201
+  SOLUTION ou_2.6|sl3.0|rr3.0|g3 holdout=24.71 1y=5537.29 exp=0.1457
+  SOLUTION ft_lf0.5_s0.35|sl2.0|rr3.0|g3 holdout=525.58 1y=801.24 exp=0.0756
+  SOLUTION ft_lf0.5_s0.35|sl3.0|rr3.0|g3 holdout=988.71 1y=1604.09 exp=0.1744
+  SOLUTION ft_lf0.55_s0.3|sl3.0|rr3.0|g3 holdout=1704.19 1y=911.38 exp=0.0747
+  SOLUTION ft_lf0.55_s0.35|sl3.0|rr3.0|g3 holdout=321.19 1y=2887.87 exp=0.5449
+  … coarse 320/433 cells=5860 636s
+  … coarse 360/433 cells=5940 647s
+  SOLUTION agree_sm_ou|sl3.0|rr3.0|g3 holdout=1175.91 1y=8854.45 exp=0.1559
+  … coarse 400/433 cells=6020 655s
+  SOLUTION math_higuchi_trend_1.50|sl3.0|rr3.0|g3 holdout=1232.82 1y=5132.26 exp=0.1022
+  SOLUTION math_lf_thrust_eff|sl2.0|rr3.0|g3 holdout=1284.7 1y=8499.99 exp=0.2471
+  SOLUTION math_lf_thrust_eff|sl3.0|rr3.0|g3 holdout=647.62 1y=6677.19 exp=0.2981
+  densify 18 modes
+  SOLUTION cir_z2.6_s0.3|sl2.0|rr4.0|g2 holdout=2149.15 1y=6163.41
+  SOLUTION cir_z2.6_s0.3|sl2.0|rr4.0|g3 holdout=1960.15 1y=4355.71
+  SOLUTION cir_z2.6_s0.3|sl2.0|rr4.0|g5 holdout=1675.04 1y=6084.68
+  SOLUTION cir_z2.6_s0.3|sl2.5|rr3.0|g2 holdout=1361.04 1y=1669.87
+  SOLUTION cir_z2.6_s0.3|sl2.5|rr3.0|g5 holdout=984.04 1y=1866.97
+  SOLUTION cir_z2.6_s0.3|sl2.5|rr4.0|g2 holdout=734.72 1y=3468.12
+  SOLUTION cir_z2.6_s0.3|sl2.5|rr4.0|g3 holdout=448.72 1y=3023.63
+  SOLUTION cir_z2.6_s0.3|sl2.5|rr4.0|g5 holdout=947.85 1y=5734.4
+  SOLUTION cir_z2.6_s0.3|sl3.0|rr3.0|g2 holdout=2399.21 1y=5557.41
+  SOLUTION cir_z2.6_s0.3|sl3.0|rr3.0|g5 holdout=1812.09 1y=7627.62
+  SOLUTION cir_z2.6_s0.3|sl3.0|rr4.0|g2 holdout=1885.28 1y=4610.63
+  SOLUTION cir_z2.6_s0.3|sl3.0|rr4.0|g3 holdout=1884.13 1y=6507.11
+  SOLUTION cir_z2.6_s0.3|sl3.0|rr4.0|g5 holdout=1884.13 1y=6865.4
+  SOLUTION agree_sm_ou|sl2.5|rr4.0|g2 holdout=16.43 1y=7649.55
+  SOLUTION agree_sm_ou|sl3.0|rr2.0|g5 holdout=652.1 1y=3490.78
+  SOLUTION agree_sm_ou|sl3.0|rr3.0|g2 holdout=982.78 1y=8534.66
+  SOLUTION agree_sm_ou|sl3.0|rr3.0|g5 holdout=376.25 1y=9415.33
+  SOLUTION agree_sm_ou|sl3.0|rr4.0|g2 holdout=1170.42 1y=8151.6
+  SOLUTION agree_sm_ou|sl3.0|rr4.0|g3 holdout=2065.37 1y=9284.39
+  SOLUTION ft_lf0.55_s0.3|sl1.5|rr4.0|g2 holdout=2193.23 1y=1566.74
+  SOLUTION ft_lf0.55_s0.3|sl1.5|rr4.0|g3 holdout=2193.56 1y=1393.76
+  SOLUTION ft_lf0.55_s0.3|sl1.5|rr4.0|g5 holdout=2192.75 1y=1393.57
+  SOLUTION ft_lf0.55_s0.3|sl2.0|rr4.0|g2 holdout=2157.19 1y=1175.51
+  SOLUTION ft_lf0.55_s0.3|sl2.0|rr4.0|g3 holdout=2156.73 1y=1280.66
+  SOLUTION ft_lf0.55_s0.3|sl2.0|rr4.0|g5 holdout=2156.83 1y=578.68
+  SOLUTION ft_lf0.55_s0.3|sl2.5|rr4.0|g2 holdout=2286.36 1y=629.93
+  SOLUTION ft_lf0.55_s0.3|sl3.0|rr3.0|g2 holdout=1703.87 1y=911.03
+  SOLUTION ft_lf0.55_s0.3|sl3.0|rr3.0|g5 holdout=1302.43 1y=613.24
+  SOLUTION math_higuchi_trend_1.50|sl2.0|rr4.0|g2 holdout=587.05 1y=10084.92
+  SOLUTION math_higuchi_trend_1.50|sl2.5|rr3.0|g2 holdout=611.5 1y=3364.4
+  SOLUTION math_higuchi_trend_1.50|sl2.5|rr4.0|g2 holdout=513.55 1y=7056.54
+  SOLUTION math_higuchi_trend_1.50|sl2.5|rr4.0|g3 holdout=806.94 1y=5905.6
+  SOLUTION off_vm_t0.55_l40|sl2.0|rr4.0|g2 holdout=557.86 1y=6907.27
+  SOLUTION off_vm_t0.55_l40|sl2.0|rr4.0|g3 holdout=988.91 1y=7425.69
+  SOLUTION off_vm_t0.55_l40|sl2.0|rr4.0|g5 holdout=157.92 1y=5036.69
+  SOLUTION off_vm_t0.55_l40|sl2.5|rr4.0|g2 holdout=933.64 1y=6749.82
+  SOLUTION off_vm_t0.55_l40|sl2.5|rr4.0|g3 holdout=1251.96 1y=8016.39
+  SOLUTION off_vm_t0.55_l40|sl2.5|rr4.0|g5 holdout=933.64 1y=7413.41
+  SOLUTION off_vm_t0.55_l40|sl3.0|rr3.0|g2 holdout=965.63 1y=7832.67
+  SOLUTION off_vm_t0.55_l40|sl3.0|rr3.0|g5 holdout=965.63 1y=7446.52
+  SOLUTION off_vm_t0.55_l40|sl3.0|rr4.0|g2 holdout=316.25 1y=9608.34
+  SOLUTION off_vm_t0.55_l40|sl3.0|rr4.0|g3 holdout=316.25 1y=8813.98
+  SOLUTION off_vm_t0.55_l40|sl3.0|rr4.0|g5 holdout=316.25 1y=9205.16
+  SOLUTION ft_lf0.55_s0.35|sl2.5|rr2.0|g2 holdout=205.0 1y=2110.23
+  SOLUTION ft_lf0.55_s0.35|sl2.5|rr2.0|g3 holdout=205.0 1y=2308.36
+  SOLUTION ft_lf0.55_s0.35|sl2.5|rr2.0|g5 holdout=206.2 1y=1810.67
+  SOLUTION ft_lf0.55_s0.35|sl2.5|rr3.0|g2 holdout=308.74 1y=3038.55
+  SOLUTION ft_lf0.55_s0.35|sl2.5|rr3.0|g3 holdout=308.79 1y=3038.53
+  SOLUTION ft_lf0.55_s0.35|sl2.5|rr3.0|g5 holdout=308.74 1y=2740.02
+  SOLUTION ft_lf0.55_s0.35|sl2.5|rr4.0|g2 holdout=1011.1 1y=3171.61
+  SOLUTION ft_lf0.55_s0.35|sl2.5|rr4.0|g3 holdout=408.37 1y=3171.61
+  SOLUTION ft_lf0.55_s0.35|sl2.5|rr4.0|g5 holdout=408.06 1y=3171.41
+  SOLUTION ft_lf0.55_s0.35|sl3.0|rr2.0|g2 holdout=221.71 1y=1759.5
+  SOLUTION ft_lf0.55_s0.35|sl3.0|rr2.0|g3 holdout=23.4 1y=1460.02
+  SOLUTION ft_lf0.55_s0.35|sl3.0|rr2.0|g5 holdout=23.53 1y=1759.52
+  SOLUTION ft_lf0.55_s0.35|sl3.0|rr3.0|g2 holdout=321.19 1y=2887.87
+  SOLUTION ft_lf0.55_s0.35|sl3.0|rr3.0|g5 holdout=320.74 1y=2887.87
+  SOLUTION ent_p0.85_s0.15|sl1.5|rr2.0|g2 holdout=64.77 1y=3265.96
+  SOLUTION ent_p0.85_s0.15|sl2.0|rr2.0|g2 holdout=978.24 1y=3288.34
+  SOLUTION ent_p0.85_s0.15|sl2.0|rr2.0|g3 holdout=875.1 1y=2536.13
+  SOLUTION ent_p0.85_s0.15|sl2.0|rr2.0|g5 holdout=780.26 1y=2767.55
+  SOLUTION ent_p0.85_s0.15|sl2.0|rr3.0|g2 holdout=1203.47 1y=3028.04
+  SOLUTION ent_p0.85_s0.15|sl2.0|rr3.0|g5 holdout=1204.27 1y=3658.06
+  SOLUTION ent_p0.85_s0.15|sl2.0|rr4.0|g2 holdout=1418.1 1y=5839.6
+  SOLUTION ent_p0.85_s0.15|sl2.0|rr4.0|g3 holdout=1210.84 1y=6197.47
+  SOLUTION ent_p0.85_s0.15|sl2.0|rr4.0|g5 holdout=1314.5 1y=5182.36
+  SOLUTION ent_p0.85_s0.15|sl2.5|rr3.0|g2 holdout=1372.73 1y=3869.73
+  SOLUTION ent_p0.85_s0.15|sl2.5|rr3.0|g3 holdout=1270.92 1y=5094.49
+  SOLUTION ent_p0.85_s0.15|sl2.5|rr3.0|g5 holdout=1373.23 1y=4212.42
+  SOLUTION ent_p0.85_s0.15|sl2.5|rr4.0|g5 holdout=1173.96 1y=5118.5
+  SOLUTION ent_p0.85_s0.15|sl3.0|rr2.0|g3 holdout=883.23 1y=2422.42
+  SOLUTION ent_p0.85_s0.15|sl3.0|rr4.0|g2 holdout=1418.11 1y=4252.27
+  SOLUTION ent_p0.85_s0.15|sl3.0|rr4.0|g5 holdout=1418.15 1y=3100.41
+  SOLUTION ft_lf0.5_s0.35|sl2.0|rr3.0|g2 holdout=525.43 1y=1302.65
+  SOLUTION ft_lf0.5_s0.35|sl2.0|rr3.0|g5 holdout=525.62 1y=1409.55
+  SOLUTION ft_lf0.5_s0.35|sl2.0|rr4.0|g2 holdout=1232.39 1y=2934.42
+  SOLUTION ft_lf0.5_s0.35|sl2.0|rr4.0|g3 holdout=1232.48 1y=2934.28
+  SOLUTION ft_lf0.5_s0.35|sl2.0|rr4.0|g5 holdout=1232.48 1y=2536.2
+  SOLUTION ft_lf0.5_s0.35|sl2.5|rr2.0|g2 holdout=560.82 1y=778.99
+  SOLUTION ft_lf0.5_s0.35|sl2.5|rr2.0|g3 holdout=560.73 1y=1080.29
+  SOLUTION ft_lf0.5_s0.35|sl2.5|rr2.0|g5 holdout=561.81 1y=687.77
+  SOLUTION ft_lf0.5_s0.35|sl2.5|rr3.0|g2 holdout=866.47 1y=1318.74
+  SOLUTION ft_lf0.5_s0.35|sl2.5|rr3.0|g3 holdout=866.52 1y=1213.85
+  SOLUTION ft_lf0.5_s0.35|sl2.5|rr3.0|g5 holdout=866.47 1y=1020.21
+  SOLUTION ft_lf0.5_s0.35|sl3.0|rr2.0|g2 holdout=584.69 1y=472.52
+  SOLUTION ft_lf0.5_s0.35|sl3.0|rr2.0|g5 holdout=386.51 1y=577.13
+  SOLUTION ft_lf0.5_s0.35|sl3.0|rr3.0|g2 holdout=886.49 1y=1603.97
+  SOLUTION ft_lf0.5_s0.35|sl3.0|rr3.0|g5 holdout=988.56 1y=1603.87
+  SOLUTION ft_lf0.5_s0.35|sl3.0|rr4.0|g2 holdout=1092.94 1y=2631.2
+  SOLUTION ft_lf0.5_s0.35|sl3.0|rr4.0|g3 holdout=1092.85 1y=2631.32
+  SOLUTION ft_lf0.5_s0.35|sl3.0|rr4.0|g5 holdout=1195.9 1y=2631.2
+  SOLUTION math_lf_thrust_eff|sl2.5|rr2.0|g2 holdout=870.51 1y=4016.0
+  SOLUTION math_lf_thrust_eff|sl2.5|rr2.0|g3 holdout=763.37 1y=3555.99
+  SOLUTION math_lf_thrust_eff|sl2.5|rr3.0|g2 holdout=2099.42 1y=5467.49
+  SOLUTION math_lf_thrust_eff|sl2.5|rr3.0|g3 holdout=1699.54 1y=5180.98
+  SOLUTION math_lf_thrust_eff|sl2.5|rr3.0|g5 holdout=1589.2 1y=4794.88
+  SOLUTION math_lf_thrust_eff|sl2.5|rr4.0|g2 holdout=3130.38 1y=10265.87
+  SOLUTION math_lf_thrust_eff|sl2.5|rr4.0|g3 holdout=2632.35 1y=8313.89
+  SOLUTION math_lf_thrust_eff|sl2.5|rr4.0|g5 holdout=1709.59 1y=8248.22
+  SOLUTION math_lf_thrust_eff|sl3.0|rr2.0|g2 holdout=1321.71 1y=7292.07
+  SOLUTION math_lf_thrust_eff|sl3.0|rr2.0|g3 holdout=1320.83 1y=6495.22
+  SOLUTION math_lf_thrust_eff|sl3.0|rr3.0|g2 holdout=648.02 1y=8489.2
+  SOLUTION math_lf_thrust_eff|sl3.0|rr3.0|g5 holdout=749.4 1y=7691.29
+  SOLUTION math_lf_thrust_eff|sl3.0|rr4.0|g2 holdout=1777.37 1y=9631.67
+  SOLUTION math_lf_thrust_eff|sl3.0|rr4.0|g3 holdout=1776.21 1y=8947.6
+  SOLUTION math_lf_thrust_eff|sl3.0|rr4.0|g5 holdout=1776.65 1y=6767.8
+  SOLUTION ou_2.2|sl3.0|rr3.0|g2 holdout=1899.68 1y=7118.24
+  SOLUTION ou_2.2|sl3.0|rr3.0|g5 holdout=497.43 1y=8482.68
+  SOLUTION ou_2.2|sl3.0|rr4.0|g2 holdout=2028.27 1y=6213.3
+  SOLUTION ou_2.2|sl3.0|rr4.0|g3 holdout=896.71 1y=7149.97
+  SOLUTION ou_2.2|sl3.0|rr4.0|g5 holdout=1420.33 1y=7394.96
+  SOLUTION ent_p0.85_s0.25|sl1.5|rr2.0|g2 holdout=447.5 1y=3775.98
+  SOLUTION ent_p0.85_s0.25|sl1.5|rr2.0|g3 holdout=553.55 1y=3904.0
+  SOLUTION ent_p0.85_s0.25|sl1.5|rr2.0|g5 holdout=773.2 1y=2764.43
+  SOLUTION ent_p0.85_s0.25|sl1.5|rr3.0|g3 holdout=479.35 1y=5696.97
+  SOLUTION ent_p0.85_s0.25|sl1.5|rr3.0|g5 holdout=589.0 1y=4230.51
+  SOLUTION ent_p0.85_s0.25|sl1.5|rr4.0|g3 holdout=87.8 1y=2280.81
+  SOLUTION ent_p0.85_s0.25|sl1.5|rr4.0|g5 holdout=199.0 1y=1603.6
+  SOLUTION ent_p0.85_s0.25|sl2.0|rr2.0|g2 holdout=383.79 1y=4339.11
+  SOLUTION ent_p0.85_s0.25|sl2.0|rr2.0|g3 holdout=383.79 1y=4159.32
+  SOLUTION ent_p0.85_s0.25|sl2.0|rr2.0|g5 holdout=600.07 1y=3707.99
+  SOLUTION ent_p0.85_s0.25|sl2.0|rr3.0|g2 holdout=607.57 1y=3860.35
+  SOLUTION ent_p0.85_s0.25|sl2.0|rr3.0|g5 holdout=714.42 1y=3614.13
+  SOLUTION ent_p0.85_s0.25|sl2.5|rr2.0|g2 holdout=313.17 1y=4667.87
+  SOLUTION ent_p0.85_s0.25|sl2.5|rr2.0|g3 holdout=314.05 1y=4965.56
+  SOLUTION ent_p0.85_s0.25|sl2.5|rr2.0|g5 holdout=419.08 1y=4483.68
+  SOLUTION ent_p0.85_s0.25|sl2.5|rr4.0|g2 holdout=230.2 1y=1988.53
+  SOLUTION ent_p0.85_s0.25|sl2.5|rr4.0|g3 holdout=230.63 1y=808.16
+  SOLUTION ent_p0.85_s0.25|sl3.0|rr2.0|g2 holdout=326.32 1y=2536.64
+  SOLUTION ent_p0.85_s0.25|sl3.0|rr2.0|g3 holdout=327.22 1y=2731.85
+  SOLUTION ent_p0.85_s0.25|sl3.0|rr2.0|g5 holdout=430.88 1y=3147.86
+  SOLUTION ent_p0.85_s0.25|sl3.0|rr4.0|g2 holdout=242.18 1y=1925.67
+  SOLUTION ent_p0.85_s0.25|sl3.0|rr4.0|g3 holdout=242.18 1y=1531.6
+  SOLUTION ent_p0.85_s0.25|sl3.0|rr4.0|g5 holdout=347.8 1y=1638.66
+  SOLUTION off_vm_t0.45_l40|sl2.0|rr4.0|g2 holdout=793.35 1y=5397.63
+  SOLUTION off_vm_t0.45_l40|sl2.0|rr4.0|g3 holdout=1224.4 1y=6023.07
+  SOLUTION off_vm_t0.45_l40|sl2.0|rr4.0|g5 holdout=282.57 1y=2843.83
+  SOLUTION off_vm_t0.45_l40|sl3.0|rr2.0|g2 holdout=1280.65 1y=5647.65
+  SOLUTION off_vm_t0.45_l40|sl3.0|rr2.0|g3 holdout=1280.65 1y=5354.97
+  SOLUTION off_vm_t0.45_l40|sl3.0|rr3.0|g2 holdout=255.53 1y=10247.0
+  SOLUTION off_vm_t0.45_l40|sl3.0|rr3.0|g5 holdout=255.53 1y=9250.65
+  SOLUTION vm_t0.75_l40|sl3.0|rr3.0|g2 holdout=1400.7 1y=8014.6
+  SOLUTION vm_t0.75_l40|sl3.0|rr3.0|g5 holdout=1400.7 1y=7938.65
+  SOLUTION vm_t0.75_l40|sl3.0|rr4.0|g5 holdout=357.95 1y=6178.64
+  SOLUTION sm_t0.40_o0.45|sl3.0|rr4.0|g3 holdout=1342.79 1y=4661.82
+  SOLUTION sm_t0.40_o0.45|sl3.0|rr4.0|g5 holdout=118.2 1y=5268.22
+  SOLUTION ou_1.8|sl3.0|rr2.0|g5 holdout=842.68 1y=2854.84
+  SOLUTION ou_1.8|sl3.0|rr3.0|g5 holdout=1185.02 1y=9219.54
+  SOLUTION ou_1.8|sl3.0|rr4.0|g2 holdout=110.11 1y=3102.32
+  SOLUTION vm_t0.65_l40|sl3.0|rr3.0|g2 holdout=1008.15 1y=9030.78
+  SOLUTION vm_t0.65_l40|sl3.0|rr3.0|g5 holdout=1008.15 1y=9165.0
+  SOLUTION vm_t0.65_l40|sl3.0|rr4.0|g5 holdout=760.49 1y=7872.24
+  SOLUTION snr_0.35|sl2.0|rr3.0|g5 holdout=199.21 1y=3826.38
+  SOLUTION snr_0.35|sl2.5|rr3.0|g2 holdout=266.93 1y=2836.39
+  SOLUTION snr_0.35|sl2.5|rr3.0|g3 holdout=266.55 1y=2440.21
+  SOLUTION snr_0.35|sl2.5|rr3.0|g5 holdout=266.61 1y=2540.61
+  SOLUTION cir_z3.0_s0.3|sl1.5|rr3.0|g2 holdout=779.61 1y=4549.27
+  SOLUTION cir_z3.0_s0.3|sl1.5|rr3.0|g3 holdout=779.97 1y=4335.78
+  SOLUTION cir_z3.0_s0.3|sl1.5|rr3.0|g5 holdout=779.61 1y=4861.01
+  SOLUTION cir_z3.0_s0.3|sl2.5|rr3.0|g2 holdout=1373.98 1y=2779.12
+  SOLUTION cir_z3.0_s0.3|sl2.5|rr3.0|g3 holdout=1078.71 1y=2475.28
+  SOLUTION cir_z3.0_s0.3|sl2.5|rr3.0|g5 holdout=1078.71 1y=2472.89
+  SOLUTION cir_z3.0_s0.3|sl2.5|rr4.0|g2 holdout=787.53 1y=3749.39
+  SOLUTION cir_z3.0_s0.3|sl3.0|rr3.0|g2 holdout=731.9 1y=4019.45
+  SOLUTION cir_z3.0_s0.3|sl3.0|rr3.0|g5 holdout=435.84 1y=3683.53
+  SOLUTION cir_z3.0_s0.3|sl3.0|rr4.0|g2 holdout=740.44 1y=5435.45
+  SOLUTION cir_z3.0_s0.3|sl3.0|rr4.0|g3 holdout=344.38 1y=6637.07
+  SOLUTION cir_z3.0_s0.3|sl3.0|rr4.0|g5 holdout=344.38 1y=5385.59
+  BEST 5m: math_lf_thrust_eff|sl2.5|rr4.0|g2 sol=True hold=3130.38 1y=10265.87 solutions=190
+
+######## GOLD @ 15m · 10.0y ########
+  hole cut at 2026-07-28 04:00:00+00:00 (gap 100.25h)
+  catalog 427 modes · bars 351,317 · end 2026-10-07 00:39:57+00:00
+  runnable modes 432
+  … coarse 1/432 cells=6700 719s
+  … coarse 40/432 cells=6778 725s
+  … coarse 80/432 cells=6858 730s
+  SOLUTION sm_t0.32_o0.42|sl3.0|rr3.0|g3 holdout=608.5 1y=3177.75 exp=0.1173
+  SOLUTION sm_t0.32_o0.45|sl3.0|rr3.0|g3 holdout=1699.29 1y=2803.5 exp=0.105
+  SOLUTION sm_t0.32_o0.48|sl3.0|rr3.0|g3 holdout=1389.35 1y=3970.43 exp=0.1551
+  SOLUTION off_sm_t0.35_o0.45|sl3.0|rr3.0|g3 holdout=988.07 1y=1498.07 exp=0.0535
+  SOLUTION off_sm_t0.35_o0.48|sl3.0|rr3.0|g3 holdout=674.93 1y=2354.6 exp=0.0866
+  … coarse 120/432 cells=6938 734s
+  SOLUTION off_sm_t0.38_o0.48|sl3.0|rr3.0|g3 holdout=284.2 1y=1497.08 exp=0.0576
+  SOLUTION off_sm_t0.38_o0.50|sl3.0|rr3.0|g3 holdout=284.2 1y=1401.47 exp=0.0545
+  SOLUTION off_sm_t0.38_o0.55|sl3.0|rr3.0|g3 holdout=284.2 1y=1767.97 exp=0.0688
+  … coarse 160/432 cells=7018 738s
+  SOLUTION off_vm_t0.35_l40|sl2.0|rr3.0|g3 holdout=493.98 1y=1488.05 exp=0.0423
+  SOLUTION vm_t0.45_l20|sl2.0|rr3.0|g3 holdout=26.49 1y=4780.24 exp=0.106
+  SOLUTION off_vm_t0.45_l20|sl2.0|rr3.0|g3 holdout=1039.13 1y=3855.6 exp=0.0905
+  SOLUTION off_vm_t0.55_l20|sl2.0|rr3.0|g3 holdout=651.87 1y=5502.33 exp=0.1342
+  … coarse 200/432 cells=7098 741s
+  SOLUTION cir_z1.8_s0.3|sl3.0|rr3.0|g3 holdout=1846.25 1y=5737.02 exp=0.2897
+  … coarse 240/432 cells=7178 745s
+  SOLUTION cir_z1.8_s0.7|sl3.0|rr3.0|g3 holdout=1230.12 1y=3877.15 exp=0.2009
+  SOLUTION cir_z2.0_s0.7|sl3.0|rr3.0|g3 holdout=148.38 1y=5396.88 exp=0.2902
+  … coarse 280/432 cells=7258 746s
+  SOLUTION ou_1.6|sl3.0|rr3.0|g3 holdout=114.82 1y=3887.01 exp=0.1712
+  SOLUTION ema_8_21_z0.5|sl2.0|rr3.0|g3 holdout=1409.17 1y=5093.19 exp=0.1489
+  … coarse 320/432 cells=7338 748s
+  … coarse 360/432 cells=7418 752s
+  SOLUTION kelt_40_1.8|sl3.0|rr3.0|g3 holdout=1051.05 1y=4921.49 exp=0.2486
+  SOLUTION zmr_20_1.5|sl2.0|rr3.0|g3 holdout=593.73 1y=1813.97 exp=0.0346
+  SOLUTION agree_sm_vm|sl2.0|rr3.0|g3 holdout=268.43 1y=3420.55 exp=0.6219
+  SOLUTION math_ou_snap_5_40|sl3.0|rr3.0|g3 holdout=529.95 1y=6792.99 exp=0.2953
+  … coarse 400/432 cells=7498 755s
+  SOLUTION math_higuchi_trend_1.40|sl3.0|rr3.0|g3 holdout=1052.45 1y=4034.72 exp=0.2431
+  SOLUTION math_allan_persist_0.80|sl3.0|rr3.0|g3 holdout=1507.29 1y=2490.49 exp=0.118
+  SOLUTION math_allan_persist_0.95|sl3.0|rr3.0|g3 holdout=1406.18 1y=3050.2 exp=0.1837
+  SOLUTION math_kalman_fade_1.6|sl3.0|rr3.0|g3 holdout=1630.77 1y=3155.25 exp=0.1415
+  SOLUTION math_torsion_0.30|sl2.0|rr3.0|g3 holdout=1027.75 1y=3708.69 exp=0.0749
+  SOLUTION math_hf_spike_fade_0.70|sl2.0|rr3.0|g3 holdout=275.4 1y=3486.76 exp=0.5535
+  SOLUTION math_lf_thrust_eff|sl2.0|rr3.0|g3 holdout=451.77 1y=3815.2 exp=0.3153
+  SOLUTION math_lf_thrust_eff|sl3.0|rr3.0|g3 holdout=285.86 1y=4364.22 exp=0.5075
+  SOLUTION math_skew_align_snr|sl3.0|rr3.0|g3 holdout=161.5 1y=4300.42 exp=0.2886
+  densify 18 modes
+  SOLUTION ema_8_21_z0.5|sl1.5|rr3.0|g3 holdout=51.91 1y=6904.09
+  SOLUTION ema_8_21_z0.5|sl1.5|rr4.0|g2 holdout=181.78 1y=7997.21
+  SOLUTION ema_8_21_z0.5|sl1.5|rr4.0|g3 holdout=181.78 1y=8708.56
+  SOLUTION ema_8_21_z0.5|sl2.0|rr3.0|g2 holdout=1409.17 1y=4990.68
+  SOLUTION ema_8_21_z0.5|sl3.0|rr2.0|g2 holdout=800.72 1y=2096.9
+  SOLUTION ema_8_21_z0.5|sl3.0|rr2.0|g3 holdout=800.72 1y=2094.13
+  SOLUTION math_allan_persist_0.95|sl1.5|rr3.0|g2 holdout=730.87 1y=11233.71
+  SOLUTION math_allan_persist_0.95|sl2.5|rr2.0|g3 holdout=73.52 1y=5809.96
+  SOLUTION math_allan_persist_0.95|sl3.0|rr2.0|g2 holdout=466.3 1y=5098.66
+  SOLUTION math_allan_persist_0.95|sl3.0|rr2.0|g3 holdout=673.34 1y=3533.61
+  SOLUTION math_allan_persist_0.95|sl3.0|rr3.0|g2 holdout=596.65 1y=4887.7
+  SOLUTION math_allan_persist_0.80|sl2.5|rr2.0|g3 holdout=51.01 1y=5359.55
+  SOLUTION math_allan_persist_0.80|sl3.0|rr2.0|g2 holdout=670.27 1y=7755.15
+  SOLUTION math_allan_persist_0.80|sl3.0|rr2.0|g3 holdout=478.34 1y=4157.09
+  SOLUTION math_allan_persist_0.80|sl3.0|rr3.0|g2 holdout=697.39 1y=4434.83
+  SOLUTION cir_z1.8_s0.7|sl2.5|rr3.0|g2 holdout=914.83 1y=2757.13
+  SOLUTION cir_z1.8_s0.7|sl2.5|rr3.0|g3 holdout=1409.58 1y=2344.78
+  SOLUTION cir_z1.8_s0.7|sl2.5|rr4.0|g3 holdout=2243.48 1y=3363.61
+  SOLUTION cir_z1.8_s0.7|sl3.0|rr2.0|g2 holdout=1096.68 1y=2493.4
+  SOLUTION cir_z1.8_s0.7|sl3.0|rr2.0|g3 holdout=1287.21 1y=1312.17
+  SOLUTION cir_z1.8_s0.7|sl3.0|rr4.0|g2 holdout=2050.84 1y=8262.72
+  SOLUTION cir_z1.8_s0.7|sl3.0|rr4.0|g3 holdout=2051.57 1y=3662.56
+  SOLUTION kelt_40_1.8|sl2.0|rr4.0|g2 holdout=785.02 1y=8561.73
+  SOLUTION kelt_40_1.8|sl2.0|rr4.0|g3 holdout=1002.06 1y=4128.59
+  SOLUTION kelt_40_1.8|sl3.0|rr2.0|g3 holdout=876.78 1y=4295.62
+  SOLUTION math_higuchi_trend_1.40|sl1.5|rr3.0|g2 holdout=486.6 1y=7325.85
+  SOLUTION math_higuchi_trend_1.40|sl1.5|rr3.0|g3 holdout=487.13 1y=7095.69
+  SOLUTION math_higuchi_trend_1.40|sl2.5|rr2.0|g3 holdout=713.1 1y=3897.26
+  SOLUTION math_higuchi_trend_1.40|sl2.5|rr3.0|g3 holdout=426.18 1y=5549.91
+  SOLUTION math_higuchi_trend_1.40|sl3.0|rr2.0|g2 holdout=739.54 1y=5394.49
+  SOLUTION math_higuchi_trend_1.40|sl3.0|rr2.0|g3 holdout=739.68 1y=5041.57
+  SOLUTION math_higuchi_trend_1.40|sl3.0|rr3.0|g2 holdout=1052.41 1y=4482.39
+  SOLUTION cir_z1.8_s0.3|sl2.5|rr4.0|g2 holdout=994.17 1y=8403.53
+  SOLUTION cir_z1.8_s0.3|sl3.0|rr2.0|g2 holdout=1912.18 1y=5409.82
+  SOLUTION cir_z1.8_s0.3|sl3.0|rr2.0|g3 holdout=1923.39 1y=4624.15
+  SOLUTION cir_z1.8_s0.3|sl3.0|rr4.0|g2 holdout=227.03 1y=8251.78
+  SOLUTION math_lf_thrust_eff|sl1.5|rr3.0|g2 holdout=314.76 1y=5149.62
+  SOLUTION math_lf_thrust_eff|sl1.5|rr3.0|g3 holdout=227.23 1y=5850.9
+  SOLUTION math_lf_thrust_eff|sl1.5|rr4.0|g2 holdout=618.19 1y=5899.08
+  SOLUTION math_lf_thrust_eff|sl1.5|rr4.0|g3 holdout=618.12 1y=5815.92
+  SOLUTION math_lf_thrust_eff|sl2.0|rr2.0|g2 holdout=352.09 1y=4065.08
+  SOLUTION math_lf_thrust_eff|sl2.0|rr2.0|g3 holdout=257.47 1y=3871.9
+  SOLUTION math_lf_thrust_eff|sl2.0|rr3.0|g2 holdout=658.94 1y=4899.37
+  SOLUTION math_lf_thrust_eff|sl2.5|rr2.0|g2 holdout=665.4 1y=5036.71
+  SOLUTION math_lf_thrust_eff|sl2.5|rr2.0|g3 holdout=768.11 1y=4934.38
+  SOLUTION math_lf_thrust_eff|sl2.5|rr3.0|g2 holdout=468.7 1y=3969.99
+  SOLUTION math_lf_thrust_eff|sl2.5|rr3.0|g3 holdout=366.65 1y=4365.51
+  SOLUTION math_lf_thrust_eff|sl2.5|rr4.0|g3 holdout=480.58 1y=4591.57
+  SOLUTION math_lf_thrust_eff|sl3.0|rr2.0|g2 holdout=874.8 1y=4337.36
+  SOLUTION math_lf_thrust_eff|sl3.0|rr2.0|g3 holdout=976.99 1y=4545.66
+  SOLUTION math_torsion_0.30|sl1.5|rr4.0|g2 holdout=2441.27 1y=6990.96
+  SOLUTION math_kalman_fade_1.6|sl3.0|rr4.0|g2 holdout=315.75 1y=5990.77
+  SOLUTION math_hf_spike_fade_0.70|sl2.0|rr3.0|g2 holdout=275.47 1y=2364.99
+  SOLUTION math_hf_spike_fade_0.70|sl2.0|rr4.0|g2 holdout=575.47 1y=4470.01
+  SOLUTION math_hf_spike_fade_0.70|sl2.0|rr4.0|g3 holdout=575.4 1y=5192.88
+  SOLUTION math_hf_spike_fade_0.70|sl2.5|rr3.0|g2 holdout=280.36 1y=2938.42
+  SOLUTION math_hf_spike_fade_0.70|sl2.5|rr3.0|g3 holdout=280.31 1y=3143.1
+  SOLUTION math_hf_spike_fade_0.70|sl2.5|rr4.0|g2 holdout=580.36 1y=3737.98
+  SOLUTION math_hf_spike_fade_0.70|sl2.5|rr4.0|g3 holdout=580.31 1y=3840.51
+  SOLUTION math_hf_spike_fade_0.70|sl3.0|rr4.0|g2 holdout=185.89 1y=4378.37
+  SOLUTION math_hf_spike_fade_0.70|sl3.0|rr4.0|g3 holdout=185.91 1y=4480.41
+  SOLUTION sm_t0.32_o0.45|sl3.0|rr3.0|g2 holdout=2174.81 1y=2362.47
+  SOLUTION sm_t0.32_o0.45|sl3.0|rr4.0|g3 holdout=323.83 1y=3259.79
+  SOLUTION cir_z2.0_s0.7|sl3.0|rr2.0|g2 holdout=1211.26 1y=2105.8
+  SOLUTION cir_z2.0_s0.7|sl3.0|rr4.0|g2 holdout=755.83 1y=6731.28
+  SOLUTION off_vm_t0.45_l20|sl2.0|rr3.0|g2 holdout=1039.13 1y=4563.87
+  SOLUTION sm_t0.32_o0.48|sl3.0|rr4.0|g3 holdout=709.85 1y=3936.2
+  SOLUTION off_vm_t0.55_l20|sl2.0|rr3.0|g2 holdout=651.87 1y=5810.08
+  SOLUTION agree_sm_vm|sl2.0|rr2.0|g2 holdout=268.43 1y=1420.55
+  SOLUTION agree_sm_vm|sl2.0|rr2.0|g3 holdout=268.43 1y=1420.55
+  SOLUTION agree_sm_vm|sl2.0|rr3.0|g2 holdout=268.43 1y=3420.55
+  SOLUTION ou_1.6|sl2.5|rr4.0|g3 holdout=387.88 1y=3668.39
+  SOLUTION ou_1.6|sl3.0|rr2.0|g3 holdout=964.42 1y=1466.16
+  SOLUTION ou_1.6|sl3.0|rr4.0|g2 holdout=719.34 1y=7996.78
+  BEST 15m: cir_z1.8_s0.7|sl3.0|rr4.0|g2 sol=True hold=2050.84 1y=8262.72 solutions=104
+
+######## GOLD @ 3m · 5.0y ########
+  SKIP hist ends 2026-07-23 — holdout not covered
+
+######## NAS100 @ 5m · 10.0y ########
+  hole cut at 2026-07-28 04:05:00+00:00 (gap 100.17h)
+  catalog 426 modes · bars 1,056,758 · end 2026-10-07 00:40:17+00:00
+  runnable modes 431
+  … coarse 1/431 cells=7960 824s
+  … coarse 40/431 cells=8038 839s
+  SOLUTION sm_t0.25_o0.40|sl3.0|rr3.0|g3 holdout=3187.25 1y=4117.47 exp=0.0641
+  SOLUTION off_sm_t0.25_o0.40|sl3.0|rr3.0|g3 holdout=4396.2 1y=2744.98 exp=0.0444
+  SOLUTION sm_t0.25_o0.42|sl3.0|rr3.0|g3 holdout=1060.66 1y=5044.79 exp=0.0792
+  SOLUTION sm_t0.25_o0.45|sl3.0|rr3.0|g3 holdout=1101.47 1y=8461.19 exp=0.1374
+  SOLUTION off_sm_t0.25_o0.45|sl3.0|rr3.0|g3 holdout=3631.51 1y=6226.84 exp=0.1057
+  SOLUTION off_sm_t0.25_o0.48|sl3.0|rr3.0|g3 holdout=2719.92 1y=5418.49 exp=0.0933
+  SOLUTION sm_t0.25_o0.50|sl3.0|rr3.0|g3 holdout=1299.3 1y=6685.07 exp=0.1125
+  SOLUTION off_sm_t0.25_o0.50|sl3.0|rr3.0|g3 holdout=4334.05 1y=4560.68 exp=0.0806
+  SOLUTION sm_t0.28_o0.40|sl3.0|rr3.0|g3 holdout=1966.35 1y=2313.43 exp=0.035
+  SOLUTION sm_t0.28_o0.45|sl3.0|rr3.0|g3 holdout=189.8 1y=7237.78 exp=0.1136
+  SOLUTION off_sm_t0.28_o0.45|sl3.0|rr3.0|g3 holdout=1899.17 1y=5969.62 exp=0.1005
+  SOLUTION sm_t0.28_o0.50|sl3.0|rr3.0|g3 holdout=582.17 1y=2815.08 exp=0.0476
+  SOLUTION sm_t0.30_o0.32|sl3.0|rr3.0|g3 holdout=1993.96 1y=4614.09 exp=0.0695
+  SOLUTION sm_t0.30_o0.35|sl3.0|rr3.0|g3 holdout=1996.32 1y=4578.33 exp=0.0694
+  SOLUTION off_sm_t0.30_o0.35|sl3.0|rr3.0|g3 holdout=3115.47 1y=2537.9 exp=0.0404
+  SOLUTION sm_t0.30_o0.40|sl3.0|rr3.0|g3 holdout=746.05 1y=3425.15 exp=0.0527
+  … coarse 80/431 cells=8118 850s
+  SOLUTION off_sm_t0.30_o0.42|sl3.0|rr3.0|g3 holdout=3255.75 1y=3525.2 exp=0.0597
+  SOLUTION sm_t0.30_o0.45|sl3.0|rr3.0|g3 holdout=70.31 1y=10525.64 exp=0.1728
+  SOLUTION off_sm_t0.30_o0.45|sl3.0|rr3.0|g3 holdout=2497.85 1y=8291.35 exp=0.147
+  SOLUTION sm_t0.30_o0.48|sl3.0|rr3.0|g3 holdout=62.87 1y=7132.9 exp=0.1199
+  SOLUTION off_sm_t0.30_o0.48|sl3.0|rr3.0|g3 holdout=2386.8 1y=5080.02 exp=0.092
+  SOLUTION sm_t0.30_o0.50|sl3.0|rr3.0|g3 holdout=980.55 1y=6242.26 exp=0.1097
+  SOLUTION sm_t0.32_o0.35|sl3.0|rr3.0|g3 holdout=1370.36 1y=2921.44 exp=0.0443
+  SOLUTION sm_t0.32_o0.40|sl3.0|rr3.0|g3 holdout=1036.72 1y=3897.32 exp=0.0604
+  SOLUTION off_sm_t0.32_o0.42|sl3.0|rr3.0|g3 holdout=4046.13 1y=3163.82 exp=0.0547
+  SOLUTION off_sm_t0.32_o0.45|sl3.0|rr3.0|g3 holdout=2888.6 1y=7481.55 exp=0.1383
+  SOLUTION sm_t0.35_o0.40|sl3.0|rr3.0|g3 holdout=1258.63 1y=5434.93 exp=0.0844
+  SOLUTION sm_t0.35_o0.42|sl3.0|rr3.0|g3 holdout=1313.02 1y=7720.25 exp=0.1241
+  SOLUTION sm_t0.35_o0.45|sl3.0|rr3.0|g3 holdout=350.59 1y=10386.75 exp=0.1763
+  SOLUTION off_sm_t0.35_o0.45|sl3.0|rr3.0|g3 holdout=3117.97 1y=7176.83 exp=0.137
+  SOLUTION off_sm_t0.35_o0.48|sl3.0|rr3.0|g3 holdout=2605.12 1y=5939.18 exp=0.116
+  SOLUTION sm_t0.35_o0.50|sl3.0|rr3.0|g3 holdout=55.54 1y=7371.73 exp=0.1355
+  SOLUTION off_sm_t0.35_o0.50|sl3.0|rr3.0|g3 holdout=2421.86 1y=4170.66 exp=0.0871
+  … coarse 120/431 cells=8198 858s
+  SOLUTION sm_t0.38_o0.40|sl3.0|rr3.0|g3 holdout=2220.63 1y=2955.03 exp=0.046
+  SOLUTION sm_t0.38_o0.42|sl3.0|rr3.0|g3 holdout=2019.4 1y=4269.13 exp=0.0691
+  SOLUTION sm_t0.38_o0.45|sl3.0|rr3.0|g3 holdout=947.73 1y=7868.07 exp=0.134
+  SOLUTION off_sm_t0.38_o0.45|sl3.0|rr3.0|g3 holdout=3316.71 1y=4907.87 exp=0.0978
+  SOLUTION sm_t0.38_o0.48|sl3.0|rr3.0|g3 holdout=510.17 1y=8171.84 exp=0.1421
+  SOLUTION off_sm_t0.38_o0.48|sl3.0|rr3.0|g3 holdout=2291.3 1y=4797.25 exp=0.0993
+  SOLUTION sm_t0.38_o0.50|sl3.0|rr3.0|g3 holdout=1310.98 1y=6105.41 exp=0.1129
+  SOLUTION off_sm_t0.38_o0.50|sl3.0|rr3.0|g3 holdout=2797.11 1y=2954.86 exp=0.0661
+  SOLUTION sm_t0.38_o0.55|sl3.0|rr3.0|g3 holdout=142.83 1y=6672.2 exp=0.1283
+  SOLUTION off_sm_t0.38_o0.55|sl3.0|rr3.0|g3 holdout=934.64 1y=3855.36 exp=0.0911
+  SOLUTION sm_t0.40_o0.50|sl3.0|rr3.0|g3 holdout=436.88 1y=5610.26 exp=0.1039
+  SOLUTION sm_t0.45_o0.48|sl3.0|rr3.0|g3 holdout=510.46 1y=4993.55 exp=0.0926
+  SOLUTION sm_t0.45_o0.50|sl3.0|rr3.0|g3 holdout=467.36 1y=3663.17 exp=0.072
+  … coarse 160/431 cells=8278 866s
+  … coarse 200/431 cells=8358 875s
+  SOLUTION off_vm_t0.65_l30|sl3.0|rr3.0|g3 holdout=189.93 1y=3088.92 exp=0.0612
+  … coarse 240/431 cells=8438 884s
+  SOLUTION ent_p0.85_s0.0|sl2.0|rr3.0|g3 holdout=41.32 1y=4554.61 exp=0.0647
+  SOLUTION snr_0.35|sl3.0|rr3.0|g3 holdout=2243.56 1y=7525.3 exp=0.3202
+  … coarse 280/431 cells=8518 889s
+  SOLUTION ft_lf0.5_s0.35|sl2.0|rr3.0|g3 holdout=217.94 1y=1903.11 exp=0.134
+  SOLUTION ema_8_21_z0.5|sl3.0|rr3.0|g3 holdout=503.82 1y=10799.44 exp=0.2097
+  SOLUTION ema_12_36_z0.6|sl3.0|rr3.0|g3 holdout=527.25 1y=9192.73 exp=0.1764
+  SOLUTION ema_12_36_z0.8|sl3.0|rr3.0|g3 holdout=682.84 1y=7930.11 exp=0.1567
+  SOLUTION ema_20_50_z0.7|sl3.0|rr3.0|g3 holdout=1912.15 1y=8495.45 exp=0.1723
+  SOLUTION ema_20_50_z0.9|sl3.0|rr3.0|g3 holdout=263.01 1y=4911.58 exp=0.1063
+  SOLUTION ema_9_30_z0.6|sl3.0|rr3.0|g3 holdout=915.38 1y=9837.94 exp=0.1881
+  SOLUTION ema_15_45_z0.8|sl3.0|rr3.0|g3 holdout=2489.29 1y=5846.92 exp=0.1208
+  … coarse 320/431 cells=8598 893s
+  SOLUTION cusum_0.008|sl3.0|rr3.0|g3 holdout=1598.11 1y=5863.63 exp=0.1115
+  SOLUTION cusum_0.01|sl3.0|rr3.0|g3 holdout=276.09 1y=7375.74 exp=0.1487
+  SOLUTION cusum_0.012|sl3.0|rr3.0|g3 holdout=804.56 1y=6779.59 exp=0.1311
+  SOLUTION cusum_0.015|sl3.0|rr3.0|g3 holdout=1213.22 1y=6980.57 exp=0.1374
+  SOLUTION cusum_0.018|sl3.0|rr3.0|g3 holdout=505.42 1y=8164.33 exp=0.1538
+  SOLUTION cusum_0.02|sl3.0|rr3.0|g3 holdout=918.19 1y=6636.89 exp=0.1234
+  … coarse 360/431 cells=8678 905s
+  SOLUTION hurst_sm|sl3.0|rr3.0|g3 holdout=1395.97 1y=5599.6 exp=0.112
+  SOLUTION math_hurst_trend_0.52|sl3.0|rr3.0|g3 holdout=2294.78 1y=6346.35 exp=0.1237
+  … coarse 400/431 cells=8758 914s
+  SOLUTION math_higuchi_trend_1.40|sl3.0|rr3.0|g3 holdout=1899.96 1y=1910.45 exp=0.0484
+  SOLUTION math_cusum_0.015|sl3.0|rr3.0|g3 holdout=653.11 1y=5774.53 exp=0.1123
+  SOLUTION math_cusum_0.025|sl3.0|rr3.0|g3 holdout=1034.76 1y=5788.04 exp=0.1076
+  densify 18 modes
+  SOLUTION off_sm_t0.25_o0.50|sl3.0|rr3.0|g5 holdout=2732.4 1y=5137.84
+  SOLUTION off_sm_t0.25_o0.50|sl3.0|rr4.0|g5 holdout=632.01 1y=5771.48
+  SOLUTION off_sm_t0.25_o0.40|sl3.0|rr3.0|g5 holdout=3557.56 1y=4193.26
+  SOLUTION off_sm_t0.32_o0.42|sl2.5|rr4.0|g5 holdout=1168.37 1y=3423.99
+  SOLUTION off_sm_t0.32_o0.42|sl3.0|rr3.0|g2 holdout=3238.6 1y=3395.13
+  SOLUTION off_sm_t0.32_o0.42|sl3.0|rr3.0|g5 holdout=3544.04 1y=5182.88
+  SOLUTION off_sm_t0.25_o0.45|sl3.0|rr3.0|g2 holdout=2540.42 1y=6334.69
+  SOLUTION off_sm_t0.25_o0.45|sl3.0|rr3.0|g5 holdout=1713.67 1y=7239.43
+  SOLUTION off_sm_t0.25_o0.45|sl3.0|rr4.0|g5 holdout=470.91 1y=6415.61
+  SOLUTION off_sm_t0.32_o0.45|sl2.0|rr4.0|g2 holdout=3948.11 1y=4489.18
+  SOLUTION off_sm_t0.32_o0.45|sl2.0|rr4.0|g5 holdout=3900.64 1y=4390.95
+  SOLUTION off_sm_t0.32_o0.45|sl2.5|rr3.0|g2 holdout=982.41 1y=2079.76
+  SOLUTION off_sm_t0.32_o0.45|sl2.5|rr4.0|g2 holdout=709.26 1y=4182.22
+  SOLUTION off_sm_t0.32_o0.45|sl2.5|rr4.0|g3 holdout=522.83 1y=2440.09
+  SOLUTION off_sm_t0.32_o0.45|sl2.5|rr4.0|g5 holdout=1150.79 1y=5486.45
+  SOLUTION off_sm_t0.32_o0.45|sl3.0|rr3.0|g2 holdout=3295.82 1y=8611.16
+  SOLUTION off_sm_t0.32_o0.45|sl3.0|rr3.0|g5 holdout=2824.31 1y=8516.92
+  SOLUTION off_sm_t0.32_o0.45|sl3.0|rr4.0|g5 holdout=875.02 1y=3780.94
+  SOLUTION sm_t0.25_o0.40|sl2.5|rr4.0|g5 holdout=639.81 1y=7792.7
+  SOLUTION sm_t0.25_o0.40|sl3.0|rr3.0|g2 holdout=858.96 1y=3924.93
+  SOLUTION sm_t0.25_o0.40|sl3.0|rr3.0|g5 holdout=3252.32 1y=4767.05
+  SOLUTION off_sm_t0.30_o0.35|sl2.5|rr4.0|g2 holdout=1052.63 1y=2376.28
+  SOLUTION snr_0.35|sl3.0|rr2.0|g2 holdout=2912.21 1y=5433.01
+  SOLUTION snr_0.35|sl3.0|rr2.0|g3 holdout=2807.59 1y=6241.73
+  SOLUTION snr_0.35|sl3.0|rr2.0|g5 holdout=3015.24 1y=5947.77
+  SOLUTION snr_0.35|sl3.0|rr3.0|g2 holdout=2348.44 1y=7719.53
+  SOLUTION snr_0.35|sl3.0|rr3.0|g5 holdout=2348.29 1y=7314.94
+  SOLUTION off_sm_t0.38_o0.45|sl3.0|rr3.0|g2 holdout=3821.77 1y=1932.99
+  SOLUTION off_sm_t0.38_o0.45|sl3.0|rr4.0|g3 holdout=1614.31 1y=2953.42
+  SOLUTION off_sm_t0.35_o0.45|sl3.0|rr3.0|g2 holdout=3523.73 1y=7472.84
+  SOLUTION off_sm_t0.30_o0.45|sl2.5|rr4.0|g2 holdout=902.28 1y=5254.19
+  SOLUTION off_sm_t0.30_o0.45|sl2.5|rr4.0|g5 holdout=924.88 1y=5795.74
+  SOLUTION off_sm_t0.30_o0.45|sl3.0|rr3.0|g2 holdout=2506.01 1y=7938.71
+  SOLUTION off_sm_t0.30_o0.45|sl3.0|rr3.0|g5 holdout=2323.12 1y=6668.56
+  SOLUTION off_sm_t0.30_o0.45|sl3.0|rr4.0|g5 holdout=1475.27 1y=5796.01
+  SOLUTION off_sm_t0.25_o0.48|sl3.0|rr3.0|g2 holdout=1629.24 1y=5318.48
+  SOLUTION off_sm_t0.25_o0.48|sl3.0|rr3.0|g5 holdout=1117.25 1y=7523.14
+  SOLUTION off_sm_t0.30_o0.42|sl2.5|rr4.0|g2 holdout=757.49 1y=2119.48
+  SOLUTION off_sm_t0.30_o0.42|sl2.5|rr4.0|g5 holdout=1046.83 1y=4198.32
+  SOLUTION off_sm_t0.30_o0.42|sl3.0|rr3.0|g2 holdout=2153.18 1y=2404.64
+  SOLUTION off_sm_t0.30_o0.42|sl3.0|rr3.0|g5 holdout=2858.33 1y=3167.55
+  SOLUTION off_sm_t0.30_o0.42|sl3.0|rr4.0|g5 holdout=958.75 1y=1894.05
+  SOLUTION off_sm_t0.30_o0.48|sl2.0|rr4.0|g2 holdout=620.74 1y=2516.23
+  SOLUTION off_sm_t0.30_o0.48|sl2.5|rr4.0|g2 holdout=117.3 1y=2605.71
+  SOLUTION off_sm_t0.30_o0.48|sl2.5|rr4.0|g5 holdout=141.37 1y=3404.69
+  SOLUTION off_sm_t0.30_o0.48|sl3.0|rr3.0|g2 holdout=1890.31 1y=5648.61
+  SOLUTION off_sm_t0.30_o0.48|sl3.0|rr3.0|g5 holdout=2508.06 1y=5405.58
+  SOLUTION off_sm_t0.30_o0.48|sl3.0|rr4.0|g2 holdout=562.74 1y=3022.68
+  SOLUTION off_sm_t0.35_o0.48|sl3.0|rr3.0|g2 holdout=2905.14 1y=5644.78
+  SOLUTION ema_15_45_z0.8|sl3.0|rr3.0|g2 holdout=2489.68 1y=5878.14
+  SOLUTION ema_15_45_z0.8|sl3.0|rr3.0|g5 holdout=2489.09 1y=5148.65
+  SOLUTION ema_15_45_z0.8|sl3.0|rr4.0|g3 holdout=369.06 1y=4897.47
+  SOLUTION sm_t0.38_o0.40|sl3.0|rr3.0|g2 holdout=3072.66 1y=2533.6
+  SOLUTION sm_t0.38_o0.40|sl3.0|rr3.0|g5 holdout=2619.41 1y=2460.82
+  BEST 5m: off_sm_t0.25_o0.50|sl3.0|rr3.0|g3 sol=True hold=4334.05 1y=4560.68 solutions=122
+
+######## NAS100 @ 15m · 10.0y ########
+  hole cut at 2026-07-28 04:00:00+00:00 (gap 100.25h)
+  catalog 426 modes · bars 352,275 · end 2026-10-07 00:40:23+00:00
+  runnable modes 431
+  … coarse 1/431 cells=9434 1002s
+  … coarse 40/431 cells=9512 1008s
+  SOLUTION sm_t0.28_o0.32|sl2.0|rr3.0|g3 holdout=1375.79 1y=3041.3 exp=0.0612
+  SOLUTION sm_t0.28_o0.35|sl2.0|rr3.0|g3 holdout=656.35 1y=1900.61 exp=0.0378
+  SOLUTION sm_t0.28_o0.45|sl2.0|rr3.0|g3 holdout=439.23 1y=4946.36 exp=0.1137
+  SOLUTION sm_t0.28_o0.48|sl2.0|rr3.0|g3 holdout=350.75 1y=5491.67 exp=0.1289
+  SOLUTION sm_t0.28_o0.50|sl2.0|rr3.0|g3 holdout=450.76 1y=5877.73 exp=0.138
+  … coarse 80/431 cells=9592 1012s
+  SOLUTION sm_t0.32_o0.48|sl2.0|rr3.0|g3 holdout=798.96 1y=7333.43 exp=0.1771
+  SOLUTION sm_t0.32_o0.50|sl2.0|rr3.0|g3 holdout=1403.14 1y=6708.74 exp=0.1628
+  SOLUTION sm_t0.35_o0.38|sl3.0|rr3.0|g3 holdout=187.1 1y=5040.73 exp=0.147
+  SOLUTION sm_t0.35_o0.42|sl3.0|rr3.0|g3 holdout=502.95 1y=4800.07 exp=0.1509
+  SOLUTION sm_t0.35_o0.45|sl3.0|rr3.0|g3 holdout=593.91 1y=6719.58 exp=0.2189
+  SOLUTION sm_t0.35_o0.48|sl3.0|rr3.0|g3 holdout=383.97 1y=8307.53 exp=0.2778
+  SOLUTION sm_t0.35_o0.50|sl3.0|rr3.0|g3 holdout=1964.81 1y=8690.89 exp=0.2907
+  SOLUTION sm_t0.35_o0.55|sl3.0|rr3.0|g3 holdout=1965.35 1y=8288.08 exp=0.2848
+  … coarse 120/431 cells=9672 1016s
+  SOLUTION sm_t0.38_o0.45|sl3.0|rr3.0|g3 holdout=1080.43 1y=5453.22 exp=0.18
+  SOLUTION sm_t0.38_o0.48|sl3.0|rr3.0|g3 holdout=870.44 1y=7444.14 exp=0.2523
+  SOLUTION sm_t0.38_o0.50|sl3.0|rr3.0|g3 holdout=2449.91 1y=7531.36 exp=0.2562
+  SOLUTION sm_t0.38_o0.55|sl3.0|rr3.0|g3 holdout=2450.45 1y=8259.88 exp=0.2919
+  SOLUTION sm_t0.40_o0.45|sl3.0|rr3.0|g3 holdout=574.9 1y=5045.56 exp=0.1607
+  SOLUTION sm_t0.40_o0.48|sl2.0|rr3.0|g3 holdout=1816.65 1y=6731.18 exp=0.1829
+  SOLUTION sm_t0.40_o0.50|sl2.0|rr3.0|g3 holdout=1005.87 1y=6821.86 exp=0.1879
+  SOLUTION sm_t0.40_o0.50|sl3.0|rr3.0|g3 holdout=1147.36 1y=8038.64 exp=0.2644
+  SOLUTION sm_t0.40_o0.55|sl2.0|rr3.0|g3 holdout=1317.92 1y=7185.66 exp=0.2065
+  SOLUTION sm_t0.40_o0.55|sl3.0|rr3.0|g3 holdout=1250.09 1y=8860.76 exp=0.3035
+  SOLUTION sm_t0.45_o0.50|sl3.0|rr3.0|g3 holdout=150.36 1y=5847.7 exp=0.219
+  SOLUTION sm_t0.45_o0.55|sl3.0|rr3.0|g3 holdout=355.75 1y=5649.22 exp=0.2198
+  … coarse 160/431 cells=9752 1019s
+  SOLUTION vm_t0.35_l20|sl2.0|rr3.0|g3 holdout=1259.2 1y=3289.28 exp=0.0707
+  SOLUTION off_vm_t0.45_l10|sl2.0|rr3.0|g3 holdout=166.52 1y=2121.51 exp=0.0517
+  SOLUTION off_vm_t0.45_l20|sl2.0|rr3.0|g3 holdout=2439.0 1y=5850.97 exp=0.1361
+  SOLUTION off_vm_t0.55_l10|sl2.0|rr3.0|g3 holdout=562.2 1y=2536.87 exp=0.0619
+  … coarse 200/431 cells=9832 1023s
+  SOLUTION vm_t0.65_l20|sl2.0|rr3.0|g3 holdout=1061.11 1y=6678.91 exp=0.1481
+  SOLUTION off_vm_t0.75_l25|sl2.0|rr3.0|g3 holdout=1018.54 1y=1189.04 exp=0.0322
+  … coarse 240/431 cells=9912 1026s
+  SOLUTION snr_0.25|sl3.0|rr3.0|g3 holdout=515.13 1y=2704.17 exp=0.1366
+  … coarse 280/431 cells=9992 1028s
+  … coarse 320/431 cells=10072 1029s
+  SOLUTION bb_40_2.0|sl2.0|rr3.0|g3 holdout=1486.82 1y=3777.68 exp=0.091
+  SOLUTION bb_40_2.2|sl2.0|rr3.0|g3 holdout=230.18 1y=4272.85 exp=0.1116
+  SOLUTION bb_50_2.0|sl3.0|rr3.0|g3 holdout=1225.7 1y=3621.95 exp=0.1784
+  SOLUTION bb_50_2.5|sl3.0|rr3.0|g3 holdout=1344.8 1y=678.25 exp=0.0392
+  SOLUTION bb_60_2.2|sl3.0|rr3.0|g3 holdout=1440.12 1y=4154.26 exp=0.2098
+  SOLUTION cusum_0.012|sl2.0|rr3.0|g3 holdout=816.12 1y=3115.29 exp=0.0611
+  SOLUTION rsi_40_60|sl3.0|rr3.0|g3 holdout=106.58 1y=3088.7 exp=0.1485
+  … coarse 360/431 cells=10152 1034s
+  SOLUTION zmr_50_2.2|sl3.0|rr3.0|g3 holdout=823.01 1y=7214.92 exp=0.3044
+  SOLUTION zmr_60_1.8|sl3.0|rr3.0|g3 holdout=1412.72 1y=4476.9 exp=0.2092
+  SOLUTION lonny_sm|sl2.0|rr3.0|g3 holdout=966.2 1y=1246.24 exp=0.047
+  SOLUTION dyn_hurst_vm_bb|sl2.0|rr3.0|g3 holdout=2927.07 1y=10499.73 exp=0.2408
+  SOLUTION math_hurst_trend_0.52|sl2.0|rr3.0|g3 holdout=352.06 1y=3772.37 exp=0.095
+  … coarse 400/431 cells=10232 1037s
+  SOLUTION math_higuchi_trend_1.40|sl3.0|rr3.0|g3 holdout=1047.21 1y=960.96 exp=0.0447
+  densify 18 modes
+  SOLUTION sm_t0.38_o0.55|sl2.0|rr2.0|g2 holdout=2920.58 1y=6331.11
+  SOLUTION sm_t0.38_o0.55|sl2.0|rr4.0|g3 holdout=2746.13 1y=9685.39
+  SOLUTION sm_t0.38_o0.55|sl2.5|rr3.0|g2 holdout=2114.53 1y=8164.9
+  SOLUTION sm_t0.38_o0.55|sl2.5|rr3.0|g3 holdout=2217.13 1y=9888.72
+  SOLUTION sm_t0.38_o0.55|sl2.5|rr4.0|g2 holdout=2369.09 1y=9728.61
+  SOLUTION sm_t0.38_o0.55|sl2.5|rr4.0|g3 holdout=2472.82 1y=12242.94
+  SOLUTION sm_t0.38_o0.55|sl3.0|rr2.0|g2 holdout=2118.99 1y=3662.77
+  SOLUTION sm_t0.38_o0.55|sl3.0|rr2.0|g3 holdout=2221.56 1y=4504.12
+  SOLUTION sm_t0.38_o0.55|sl3.0|rr3.0|g2 holdout=2450.48 1y=6558.62
+  SOLUTION sm_t0.38_o0.50|sl2.0|rr2.0|g2 holdout=2910.19 1y=6165.94
+  SOLUTION sm_t0.38_o0.50|sl2.0|rr4.0|g3 holdout=2641.66 1y=9257.1
+  SOLUTION sm_t0.38_o0.50|sl2.5|rr3.0|g2 holdout=2010.95 1y=6828.04
+  SOLUTION sm_t0.38_o0.50|sl2.5|rr3.0|g3 holdout=2113.55 1y=8656.16
+  SOLUTION sm_t0.38_o0.50|sl2.5|rr4.0|g2 holdout=2265.51 1y=7374.64
+  SOLUTION sm_t0.38_o0.50|sl2.5|rr4.0|g3 holdout=2369.24 1y=9993.83
+  SOLUTION sm_t0.38_o0.50|sl3.0|rr3.0|g2 holdout=2449.94 1y=5636.57
+  SOLUTION sm_t0.35_o0.55|sl2.0|rr2.0|g2 holdout=2604.73 1y=6128.26
+  SOLUTION sm_t0.35_o0.55|sl2.0|rr2.0|g3 holdout=3129.09 1y=4980.02
+  SOLUTION sm_t0.35_o0.55|sl2.0|rr4.0|g3 holdout=1842.92 1y=9133.53
+  SOLUTION sm_t0.35_o0.55|sl2.5|rr3.0|g2 holdout=1688.88 1y=7020.84
+  SOLUTION sm_t0.35_o0.55|sl2.5|rr3.0|g3 holdout=1496.79 1y=7935.71
+  SOLUTION sm_t0.35_o0.55|sl2.5|rr4.0|g2 holdout=3542.18 1y=9064.71
+  SOLUTION sm_t0.35_o0.55|sl2.5|rr4.0|g3 holdout=4148.02 1y=10376.33
+  SOLUTION sm_t0.35_o0.55|sl3.0|rr3.0|g2 holdout=2158.06 1y=6785.52
+  SOLUTION sm_t0.35_o0.55|sl3.0|rr4.0|g2 holdout=3763.25 1y=5571.37
+  SOLUTION sm_t0.35_o0.55|sl3.0|rr4.0|g3 holdout=3867.34 1y=7795.59
+  SOLUTION dyn_hurst_vm_bb|sl1.5|rr4.0|g2 holdout=1675.97 1y=10085.6
+  SOLUTION dyn_hurst_vm_bb|sl1.5|rr4.0|g3 holdout=1178.06 1y=11310.12
+  SOLUTION dyn_hurst_vm_bb|sl2.0|rr3.0|g2 holdout=3119.87 1y=9618.03
+  SOLUTION dyn_hurst_vm_bb|sl3.0|rr2.0|g2 holdout=2254.31 1y=3394.38
+  SOLUTION off_vm_t0.45_l20|sl1.5|rr4.0|g2 holdout=2616.84 1y=8474.63
+  SOLUTION off_vm_t0.45_l20|sl1.5|rr4.0|g3 holdout=2719.59 1y=7580.21
+  SOLUTION off_vm_t0.45_l20|sl2.0|rr3.0|g2 holdout=2336.94 1y=7349.72
+  SOLUTION sm_t0.35_o0.50|sl1.5|rr3.0|g3 holdout=2732.9 1y=5063.85
+  SOLUTION sm_t0.35_o0.50|sl1.5|rr4.0|g3 holdout=1905.2 1y=10153.8
+  SOLUTION sm_t0.35_o0.50|sl2.0|rr2.0|g2 holdout=2292.68 1y=6564.35
+  SOLUTION sm_t0.35_o0.50|sl2.0|rr4.0|g3 holdout=1737.51 1y=9231.01
+  SOLUTION sm_t0.35_o0.50|sl2.5|rr3.0|g2 holdout=1688.23 1y=6098.12
+  SOLUTION sm_t0.35_o0.50|sl2.5|rr3.0|g3 holdout=1496.14 1y=6824.05
+  SOLUTION sm_t0.35_o0.50|sl2.5|rr4.0|g2 holdout=3541.53 1y=7404.79
+  SOLUTION sm_t0.35_o0.50|sl2.5|rr4.0|g3 holdout=4147.37 1y=8711.58
+  SOLUTION sm_t0.35_o0.50|sl3.0|rr3.0|g2 holdout=2157.52 1y=6880.0
+  SOLUTION sm_t0.35_o0.50|sl3.0|rr4.0|g2 holdout=3762.71 1y=5673.28
+  SOLUTION sm_t0.35_o0.50|sl3.0|rr4.0|g3 holdout=3866.8 1y=7788.17
+  SOLUTION sm_t0.40_o0.55|sl1.5|rr3.0|g2 holdout=2701.17 1y=5411.56
+  SOLUTION sm_t0.40_o0.55|sl1.5|rr3.0|g3 holdout=2933.1 1y=5659.75
+  SOLUTION sm_t0.40_o0.55|sl1.5|rr4.0|g2 holdout=3264.88 1y=11546.2
+  SOLUTION sm_t0.40_o0.55|sl1.5|rr4.0|g3 holdout=3184.59 1y=9781.11
+  SOLUTION sm_t0.40_o0.55|sl2.0|rr2.0|g2 holdout=2152.26 1y=5329.59
+  SOLUTION sm_t0.40_o0.55|sl2.0|rr2.0|g3 holdout=1261.59 1y=4970.7
+  SOLUTION sm_t0.40_o0.55|sl2.0|rr3.0|g2 holdout=1111.36 1y=7764.46
+  SOLUTION sm_t0.40_o0.55|sl2.0|rr4.0|g3 holdout=748.1 1y=9794.28
+  SOLUTION sm_t0.40_o0.55|sl2.5|rr2.0|g2 holdout=1180.9 1y=4190.82
+  SOLUTION sm_t0.40_o0.55|sl2.5|rr3.0|g2 holdout=1907.24 1y=7168.56
+  SOLUTION sm_t0.40_o0.55|sl2.5|rr3.0|g3 holdout=1713.18 1y=8893.81
+  SOLUTION sm_t0.40_o0.55|sl2.5|rr4.0|g2 holdout=1815.67 1y=9736.84
+  SOLUTION sm_t0.40_o0.55|sl2.5|rr4.0|g3 holdout=1815.75 1y=11864.25
+  SOLUTION sm_t0.40_o0.55|sl3.0|rr3.0|g2 holdout=1146.67 1y=7336.22
+  SOLUTION sm_t0.40_o0.55|sl3.0|rr4.0|g2 holdout=3552.84 1y=6670.38
+  SOLUTION sm_t0.40_o0.55|sl3.0|rr4.0|g3 holdout=3656.81 1y=8393.82
+  SOLUTION sm_t0.32_o0.50|sl1.5|rr3.0|g2 holdout=1264.09 1y=4134.13
+  SOLUTION sm_t0.32_o0.50|sl1.5|rr3.0|g3 holdout=1368.44 1y=4554.17
+  SOLUTION sm_t0.32_o0.50|sl1.5|rr4.0|g3 holdout=3148.17 1y=7666.07
+  SOLUTION sm_t0.32_o0.50|sl2.0|rr2.0|g3 holdout=1524.72 1y=5428.38
+  SOLUTION zmr_60_1.8|sl3.0|rr2.0|g2 holdout=90.72 1y=3196.39
+  SOLUTION zmr_60_1.8|sl3.0|rr3.0|g2 holdout=404.9 1y=5215.28
+  SOLUTION zmr_60_1.8|sl3.0|rr4.0|g2 holdout=829.78 1y=4077.36
+  SOLUTION zmr_60_1.8|sl3.0|rr4.0|g3 holdout=1340.44 1y=4270.82
+  SOLUTION sm_t0.40_o0.48|sl1.5|rr3.0|g2 holdout=2582.54 1y=4415.86
+  SOLUTION sm_t0.40_o0.48|sl1.5|rr3.0|g3 holdout=2817.53 1y=4635.31
+  SOLUTION sm_t0.40_o0.48|sl1.5|rr4.0|g2 holdout=3460.12 1y=10764.79
+  SOLUTION sm_t0.40_o0.48|sl1.5|rr4.0|g3 holdout=3882.89 1y=9176.57
+  SOLUTION sm_t0.40_o0.48|sl2.0|rr2.0|g2 holdout=1940.58 1y=3971.5
+  SOLUTION sm_t0.40_o0.48|sl2.0|rr2.0|g3 holdout=1246.98 1y=3810.2
+  SOLUTION sm_t0.40_o0.48|sl2.0|rr3.0|g2 holdout=1313.02 1y=7308.03
+  SOLUTION sm_t0.40_o0.48|sl2.5|rr2.0|g2 holdout=969.93 1y=2566.54
+  SOLUTION sm_t0.40_o0.48|sl2.5|rr3.0|g2 holdout=1220.54 1y=5954.85
+  SOLUTION sm_t0.40_o0.48|sl2.5|rr3.0|g3 holdout=923.49 1y=8185.92
+  SOLUTION sm_t0.40_o0.48|sl3.0|rr4.0|g2 holdout=971.98 1y=5416.28
+  SOLUTION sm_t0.40_o0.48|sl3.0|rr4.0|g3 holdout=1075.43 1y=7140.42
+  SOLUTION zmr_50_2.2|sl3.0|rr3.0|g2 holdout=322.93 1y=3499.95
+  SOLUTION zmr_50_2.2|sl3.0|rr4.0|g2 holdout=837.19 1y=878.89
+  SOLUTION zmr_50_2.2|sl3.0|rr4.0|g3 holdout=448.45 1y=5029.62
+  SOLUTION sm_t0.38_o0.48|sl2.0|rr2.0|g2 holdout=2813.98 1y=5181.86
+  SOLUTION sm_t0.38_o0.48|sl2.0|rr4.0|g3 holdout=1178.74 1y=9683.54
+  SOLUTION sm_t0.38_o0.48|sl2.5|rr3.0|g2 holdout=1132.88 1y=5850.4
+  SOLUTION sm_t0.38_o0.48|sl2.5|rr3.0|g3 holdout=1132.49 1y=8190.29
+  SOLUTION sm_t0.38_o0.48|sl3.0|rr3.0|g2 holdout=870.47 1y=5944.01
+  SOLUTION sm_t0.38_o0.45|sl2.5|rr3.0|g2 holdout=1436.59 1y=4732.29
+  SOLUTION sm_t0.38_o0.45|sl2.5|rr3.0|g3 holdout=1436.2 1y=6293.63
+  SOLUTION sm_t0.38_o0.45|sl3.0|rr2.0|g2 holdout=2227.71 1y=2935.15
+  SOLUTION sm_t0.38_o0.45|sl3.0|rr3.0|g2 holdout=1080.46 1y=4449.32
+  SOLUTION sm_t0.40_o0.50|sl1.5|rr4.0|g2 holdout=2948.81 1y=11262.81
+  SOLUTION sm_t0.40_o0.50|sl1.5|rr4.0|g3 holdout=2868.52 1y=9389.1
+  SOLUTION sm_t0.40_o0.50|sl2.0|rr2.0|g2 holdout=2037.27 1y=4952.86
+  SOLUTION sm_t0.40_o0.50|sl2.0|rr2.0|g3 holdout=1146.6 1y=4594.06
+  SOLUTION sm_t0.40_o0.50|sl2.0|rr3.0|g2 holdout=799.31 1y=7695.29
+  SOLUTION sm_t0.40_o0.50|sl2.0|rr4.0|g2 holdout=229.75 1y=8225.81
+  SOLUTION sm_t0.40_o0.50|sl2.0|rr4.0|g3 holdout=436.05 1y=9443.05
+  SOLUTION sm_t0.40_o0.50|sl2.5|rr2.0|g2 holdout=974.68 1y=3347.93
+  SOLUTION sm_t0.40_o0.50|sl2.5|rr3.0|g2 holdout=1701.02 1y=5845.74
+  SOLUTION sm_t0.40_o0.50|sl2.5|rr3.0|g3 holdout=1506.96 1y=7674.74
+  SOLUTION sm_t0.40_o0.50|sl2.5|rr4.0|g2 holdout=1609.45 1y=7213.1
+  SOLUTION sm_t0.40_o0.50|sl2.5|rr4.0|g3 holdout=1609.53 1y=9444.82
+  SOLUTION sm_t0.40_o0.50|sl3.0|rr3.0|g2 holdout=1043.91 1y=6615.71
+  SOLUTION sm_t0.40_o0.50|sl3.0|rr4.0|g2 holdout=3450.08 1y=5920.75
+  SOLUTION sm_t0.40_o0.50|sl3.0|rr4.0|g3 holdout=3554.08 1y=7644.65
+  SOLUTION bb_60_2.2|sl2.5|rr4.0|g2 holdout=596.66 1y=5775.22
+  SOLUTION sm_t0.32_o0.48|sl1.5|rr3.0|g2 holdout=1565.45 1y=3573.37
+  SOLUTION sm_t0.32_o0.48|sl1.5|rr3.0|g3 holdout=1560.02 1y=4691.31
+  SOLUTION sm_t0.32_o0.48|sl1.5|rr4.0|g3 holdout=3549.9 1y=7989.49
+  SOLUTION sm_t0.32_o0.48|sl2.0|rr2.0|g3 holdout=1317.52 1y=5061.13
+  BEST 15m: sm_t0.35_o0.55|sl2.5|rr4.0|g3 sol=True hold=4148.02 1y=10376.33 solutions=157
+
+######## NAS100 @ 3m · 5.0y ########
+  SKIP hist ends 2026-07-23 — holdout not covered
+
+=== DONE · solutions 4/4 · cells 10690 ===
+  BTCUSD: sm_t0.40_o0.55|sl2.5|rr3.0|g5 tf=5m holdout=1370.65 1y=2477.44
+  UKOIL: cir_z1.6_s0.5|sl1.5|rr4.0|g3 tf=15m holdout=2817.09 1y=2355.22
+  GOLD: math_lf_thrust_eff|sl2.5|rr4.0|g2 tf=5m holdout=3130.38 1y=10265.87
+  NAS100: sm_t0.35_o0.55|sl2.5|rr4.0|g3 tf=15m holdout=4148.02 1y=10376.33
+=== LOCKED PRE-HOLDOUT CONFIRM ===
+
+######## BTCUSD @ 5m ########
+  dyn_hurst_sm_ou|sl3.0|rr3.0|g3 pre_exp=0.0964 1y=5671.07 hold=-2686.93 n=93 sol=False
+  math_higuchi_trend_1.40|sl3.0|rr3.0|g3 pre_exp=0.0466 1y=1296.08 hold=-216.54 n=42 sol=False
+  sm_t0.38_o0.55|sl3.0|rr3.0|g3 pre_exp=0.0291 1y=1768.18 hold=895.36 n=89 sol=False
+  sm_t0.40_o0.55|sl3.0|rr3.0|g3 pre_exp=0.0208 1y=1232.82 hold=816.79 n=79 sol=False
+  sm_t0.38_o0.45|sl3.0|rr3.0|g3 pre_exp=0.0149 1y=967.39 hold=1094.94 n=84 sol=False
+  vm_t0.45_l10|sl3.0|rr3.0|g3 pre_exp=0.0084 1y=490.04 hold=-933.05 n=103 sol=False
+  st_3.5|sl2.0|rr3.0|g3 pre_exp=0.1838 1y=2260.89 hold=768.08 n=36 sol=False
+  st_3.0|sl2.0|rr3.0|g3 pre_exp=0.1396 1y=2847.73 hold=974.43 n=52 sol=False
+  LOCKED FAIL dyn_hurst_sm_ou|sl3.0|rr3.0|g3
+
+######## UKOIL @ 5m ########
+  ou_1.6|sl3.0|rr3.0|g3 pre_exp=0.1975 1y=9596.57 hold=1152.12 n=131 sol=True
+  math_hf_spike_fade_0.70|sl2.0|rr3.0|g3 pre_exp=0.1449 1y=1608.2 hold=797.58 n=38 sol=True
+  cir_z3.0_s0.7|sl3.0|rr3.0|g3 pre_exp=0.1086 1y=2182.62 hold=-292.3 n=57 sol=False
+  cir_z3.0_s0.3|sl3.0|rr3.0|g3 pre_exp=0.0989 1y=1612.43 hold=-1247.5 n=51 sol=False
+  math_bimod_0.70|sl2.0|rr3.0|g3 pre_exp=0.0893 1y=1321.41 hold=-1696.89 n=37 sol=False
+  math_hf_spike_fade_0.60|sl3.0|rr3.0|g3 pre_exp=0.0852 1y=3126.69 hold=-1326.41 n=110 sol=False
+  ou_1.4|sl3.0|rr3.0|g3 pre_exp=0.0811 1y=4142.95 hold=1345.8 n=137 sol=True
+  sm_t0.30_o0.50|sl3.0|rr3.0|g3 pre_exp=0.0674 1y=3041.24 hold=-3317.43 n=140 sol=False
+  LOCKED PASS ou_1.6|sl3.0|rr3.0|g3
+
+######## GOLD @ 5m ########
+  math_bimod_0.70|sl2.0|rr3.0|g3 pre_exp=0.5813 1y=5348.31 hold=-63.28 n=12 sol=False
+  ent_p0.6_s0.0|sl2.0|rr3.0|g3 pre_exp=0.4206 1y=6687.03 hold=0.0 n=0 sol=False
+  math_perm_order_0.80|sl2.0|rr3.0|g3 pre_exp=0.3894 1y=6541.52 hold=0.0 n=0 sol=False
+  ent_p0.68_s0.0|sl2.0|rr3.0|g3 pre_exp=0.3826 1y=6351.13 hold=0.0 n=0 sol=False
+  ent_p0.72_s0.0|sl2.0|rr3.0|g3 pre_exp=0.3653 1y=6648.32 hold=0.0 n=0 sol=False
+  math_lf_thrust_eff|sl2.0|rr3.0|g3 pre_exp=0.2471 1y=8499.99 hold=1284.7 n=60 sol=True
+  off_vm_t0.45_l40|sl3.0|rr3.0|g3 pre_exp=0.1835 1y=9963.73 hold=255.53 n=94 sol=True
+  ema_9_30_z0.6|sl3.0|rr3.0|g3 pre_exp=0.1676 1y=7809.7 hold=-2584.68 n=110 sol=False
+  LOCKED FAIL math_bimod_0.70|sl2.0|rr3.0|g3
+
+######## NAS100 @ 5m ########
+  snr_0.35|sl3.0|rr3.0|g3 pre_exp=0.3202 1y=7525.3 hold=2243.56 n=36 sol=True
+  ft_lf0.55_s0.35|sl2.0|rr3.0|g3 pre_exp=0.2971 1y=2525.66 hold=453.62 n=7 sol=False
+  ent_p0.85_s0.15|sl2.0|rr3.0|g3 pre_exp=0.2381 1y=10668.21 hold=-532.26 n=31 sol=False
+  ema_8_21_z0.5|sl3.0|rr3.0|g3 pre_exp=0.2097 1y=10799.44 hold=503.82 n=61 sol=True
+  ema_9_30_z0.6|sl3.0|rr3.0|g3 pre_exp=0.1881 1y=9837.94 hold=915.38 n=57 sol=True
+  vm_t0.35_l30|sl3.0|rr3.0|g3 pre_exp=0.1796 1y=10039.49 hold=-2679.45 n=122 sol=False
+  ema_12_36_z0.6|sl3.0|rr3.0|g3 pre_exp=0.1764 1y=9192.73 hold=527.25 n=53 sol=True
+  ema_20_50_z0.7|sl3.0|rr3.0|g3 pre_exp=0.1723 1y=8495.45 hold=1912.15 n=59 sol=True
+  LOCKED PASS snr_0.35|sl3.0|rr3.0|g3
+
+=== LOCKED 2/4 ===

@@ -1,0 +1,260 @@
+=== REST-5 COGNITIVE deep hunt ===
+book=('AUDUSD', 'USDCHF', 'ETHUSD', 'NAS100', 'USDJPY')
+live untouched: GOLD BTCUSD UKOIL
+layers: zenith-math + bayes/HMM/info/omni-math + JPY↔GOLD
+full_variants=50 lean_1m=26
+est_cells≈22,410 · n_green-first · XM spreads ON
+
+
+######## COG AUDUSD @ 5m · 10.0y ########
+  … 1/52 modes · cells=36 · 151s · static
+  … 6/52 modes · cells=216 · 735s · math_snr_drift_0.55
+  … 12/52 modes · cells=432 · 1384s · math_ou_snap_8_25
+  … 18/52 modes · cells=576 · 1871s · math_allan_persist_0.95
+  … 24/52 modes · cells=792 · 2545s · math_kalman_fade_2.0
+  … 30/52 modes · cells=1008 · 3223s · math_bimod_0.55
+  … 36/52 modes · cells=1224 · 3885s · math_hf_spike_fade_0.70
+  … 42/52 modes · cells=1440 · 4526s · cog_bayes_sm_cir_ent
+  … 48/52 modes · cells=1584 · 4959s · cog_math_omni_f80
+  BEST 5m: math_ou_snap_8_25|sl3.0|rr2.0|g2 green=6/6 1y $2,472 all_six_in_top=23
+
+######## COG AUDUSD @ 15m · 10.0y ########
+  … 1/52 modes · cells=1752 · 5410s · static
+  … 6/52 modes · cells=1872 · 5518s · math_snr_drift_0.55
+  … 12/52 modes · cells=2016 · 5649s · math_ou_snap_8_25
+  … 18/52 modes · cells=2112 · 5741s · math_allan_persist_0.95
+  … 24/52 modes · cells=2256 · 5875s · math_kalman_fade_2.0
+  … 30/52 modes · cells=2400 · 6012s · math_bimod_0.55
+  … 36/52 modes · cells=2544 · 6146s · math_hf_spike_fade_0.70
+  … 42/52 modes · cells=2688 · 6277s · cog_bayes_sm_cir_ent
+  … 48/52 modes · cells=2784 · 6365s · cog_math_omni_f80
+  BEST 15m: math_skew_align_snr|sl3.0|rr2.0|g3 green=6/6 1y $1,575 all_six_in_top=1
+
+######## COG AUDUSD @ 3m · 5.0y ########
+  … 1/52 modes · cells=2874 · 6489s · static
+  … 6/52 modes · cells=2964 · 6724s · math_snr_drift_0.55
+  … 12/52 modes · cells=3072 · 7020s · math_ou_snap_8_25
+  … 18/52 modes · cells=3144 · 7223s · math_allan_persist_0.95
+  … 24/52 modes · cells=3252 · 7521s · math_kalman_fade_2.0
+  … 30/52 modes · cells=3360 · 7825s · math_bimod_0.55
+  … 36/52 modes · cells=3468 · 8124s · math_hf_spike_fade_0.70
+  … 42/52 modes · cells=3576 · 9043s · cog_bayes_sm_cir_ent
+  … 48/52 modes · cells=3648 · 9672s · cog_math_omni_f80
+  BEST 3m: static|sl3.0|rr2.0|g2 green=5/6 1y $2,085 all_six_in_top=0
+
+######## COG AUDUSD @ 1m · 1.0y ########
+  … 1/28 modes · cells=3732 · 11767s · static
+  … 6/28 modes · cells=3792 · 11879s · math_snr_drift_0.55
+  … 12/28 modes · cells=3864 · 12106s · math_ou_snap_8_25
+  … 18/28 modes · cells=3912 · 12337s · math_allan_persist_0.95
+  BEST 1m: math_eff_lf_0.25|sl2.5|rr4.0|g5 green=3/6 1y $1,447 all_six_in_top=0
+
+######## COG USDCHF @ 5m · 10.0y ########
+  … 1/52 modes · cells=4044 · 13697s · static
+  … 6/52 modes · cells=4224 · 15498s · math_snr_drift_0.55
+  … 12/52 modes · cells=4440 · 16488s · math_ou_snap_8_25
+  … 18/52 modes · cells=4584 · 16966s · math_allan_persist_0.95
+  … 24/52 modes · cells=4800 · 17669s · math_kalman_fade_2.0
+  … 30/52 modes · cells=5016 · 18379s · math_bimod_0.55
+  … 36/52 modes · cells=5232 · 19083s · math_hf_spike_fade_0.70
+  … 42/52 modes · cells=5448 · 21859s · cog_bayes_sm_cir_ent
+  … 48/52 modes · cells=5592 · 22860s · cog_math_omni_f80
+  BEST 5m: math_skew_align_snr|sl3.0|rr2.0|g5 green=6/6 1y $252 all_six_in_top=30
+
+######## COG USDCHF @ 15m · 10.0y ########
+  … 1/52 modes · cells=5760 · 24100s · static
+  … 6/52 modes · cells=5880 · 24288s · math_snr_drift_0.55
+  … 12/52 modes · cells=6024 · 24512s · math_ou_snap_8_25
+  … 18/52 modes · cells=6120 · 24668s · math_allan_persist_0.95
+  … 24/52 modes · cells=6264 · 24901s · math_kalman_fade_2.0
+  … 30/52 modes · cells=6408 · 25129s · math_bimod_0.55
+  … 36/52 modes · cells=6552 · 25344s · math_hf_spike_fade_0.70
+  … 42/52 modes · cells=6696 · 25552s · cog_bayes_sm_cir_ent
+  … 48/52 modes · cells=6792 · 25689s · cog_math_omni_f80
+  BEST 15m: math_hurst_trend_0.52|sl3.5|rr2.0|g3 green=6/6 1y $1,288 all_six_in_top=30
+
+######## COG USDCHF @ 3m · 5.0y ########
+  … 1/52 modes · cells=6882 · 25882s · static
+  … 6/52 modes · cells=6972 · 26213s · math_snr_drift_0.55
+  … 12/52 modes · cells=7080 · 26609s · math_ou_snap_8_25
+  … 18/52 modes · cells=7152 · 26886s · math_allan_persist_0.95
+  … 24/52 modes · cells=7260 · 27290s · math_kalman_fade_2.0
+  … 30/52 modes · cells=7368 · 27696s · math_bimod_0.55
+  … 36/52 modes · cells=7476 · 28105s · math_hf_spike_fade_0.70
+  … 42/52 modes · cells=7584 · 28500s · cog_bayes_sm_cir_ent
+  … 48/52 modes · cells=7656 · 28771s · cog_math_omni_f80
+  BEST 3m: cog_agree_sm_cir|sl3.5|rr3.0|g2 green=6/6 1y $3,212 all_six_in_top=24
+
+######## COG USDCHF @ 1m · 1.0y ########
+  … 1/28 modes · cells=7740 · 29076s · static
+  … 6/28 modes · cells=7800 · 29215s · math_snr_drift_0.55
+  … 12/28 modes · cells=7872 · 29385s · math_ou_snap_8_25
+  … 18/28 modes · cells=7920 · 29505s · math_allan_persist_0.95
+  BEST 1m: math_eff_lf_0.25|sl3.0|rr3.0|g3 green=5/6 1y $2,465 all_six_in_top=0
+
+######## COG ETHUSD @ 5m · 10.0y ########
+  … 1/52 modes · cells=8052 · 29885s · static
+  … 6/52 modes · cells=8232 · 30554s · math_snr_drift_0.55
+  … 12/52 modes · cells=8448 · 31367s · math_ou_snap_8_25
+  … 18/52 modes · cells=8592 · 31943s · math_allan_persist_0.95
+  … 24/52 modes · cells=8808 · 32775s · math_kalman_fade_2.0
+  … 30/52 modes · cells=9024 · 33624s · math_bimod_0.55
+  … 36/52 modes · cells=9240 · 34430s · math_hf_spike_fade_0.70
+  … 42/52 modes · cells=9456 · 35182s · cog_bayes_sm_cir_ent
+  … 48/52 modes · cells=9600 · 35720s · cog_math_omni_f80
+  BEST 5m: cog_hmm_trend_fade|sl2.0|rr3.0|g5 green=6/6 1y $1,237 all_six_in_top=4
+
+######## COG ETHUSD @ 15m · 10.0y ########
+  … 1/52 modes · cells=9768 · 36287s · static
+  … 6/52 modes · cells=9888 · 36423s · math_snr_drift_0.55
+  … 12/52 modes · cells=10032 · 36591s · math_ou_snap_8_25
+  … 18/52 modes · cells=10128 · 36710s · math_allan_persist_0.95
+  … 24/52 modes · cells=10272 · 36883s · math_kalman_fade_2.0
+  … 30/52 modes · cells=10416 · 37063s · math_bimod_0.55
+  … 36/52 modes · cells=10560 · 37235s · math_hf_spike_fade_0.70
+  … 42/52 modes · cells=10704 · 37403s · cog_bayes_sm_cir_ent
+  … 48/52 modes · cells=10800 · 37517s · cog_math_omni_f80
+  BEST 15m: math_kalman_fade_1.6|sl2.0|rr3.0|g2 green=6/6 1y $2,578 all_six_in_top=20
+
+######## COG ETHUSD @ 3m · 5.0y ########
+  … 1/52 modes · cells=10914 · 37715s · static
+  … 6/52 modes · cells=11004 · 38039s · math_snr_drift_0.55
+  … 12/52 modes · cells=11112 · 38431s · math_ou_snap_8_25
+  … 18/52 modes · cells=11184 · 38713s · math_allan_persist_0.95
+  … 24/52 modes · cells=11292 · 39126s · math_kalman_fade_2.0
+  … 30/52 modes · cells=11400 · 39542s · math_bimod_0.55
+  … 36/52 modes · cells=11508 · 39951s · math_hf_spike_fade_0.70
+  … 42/52 modes · cells=11616 · 40346s · cog_bayes_sm_cir_ent
+  … 48/52 modes · cells=11688 · 40615s · cog_math_omni_f80
+  BEST 3m: math_hurst_mr_0.45|sl3.0|rr3.0|g2 green=6/6 1y $49 all_six_in_top=1
+
+######## COG ETHUSD @ 1m · 1.0y ########
+  … 1/28 modes · cells=11772 · 40927s · static
+  … 6/28 modes · cells=11832 · 41069s · math_snr_drift_0.55
+  … 12/28 modes · cells=11904 · 41240s · math_ou_snap_8_25
+  … 18/28 modes · cells=11952 · 41362s · math_allan_persist_0.95
+  BEST 1m: math_eff_lf_0.25|sl2.0|rr2.0|g5 green=4/6 1y $-13,892 all_six_in_top=0
+
+######## COG NAS100 @ 5m · 10.0y ########
+  … 1/52 modes · cells=12084 · 41764s · static
+  … 6/52 modes · cells=12264 · 42537s · math_snr_drift_0.55
+  … 12/52 modes · cells=12480 · 43499s · math_ou_snap_8_25
+  … 18/52 modes · cells=12624 · 44147s · math_allan_persist_0.95
+  … 24/52 modes · cells=12840 · 45097s · math_kalman_fade_2.0
+  … 30/52 modes · cells=13056 · 46081s · math_bimod_0.55
+  … 36/52 modes · cells=13272 · 47054s · math_hf_spike_fade_0.70
+  … 42/52 modes · cells=13488 · 48007s · cog_bayes_sm_cir_ent
+  … 48/52 modes · cells=13668 · 48801s · cog_math_omni_f80
+  BEST 5m: math_cusum_0.025|sl2.0|rr2.0|g5 green=6/6 1y $6,039 all_six_in_top=30
+
+######## COG NAS100 @ 15m · 10.0y ########
+  … 1/52 modes · cells=13836 · 49449s · static
+  … 6/52 modes · cells=13956 · 49606s · math_snr_drift_0.55
+  … 12/52 modes · cells=14100 · 49798s · math_ou_snap_8_25
+  … 18/52 modes · cells=14196 · 49933s · math_allan_persist_0.95
+  … 24/52 modes · cells=14340 · 50132s · math_kalman_fade_2.0
+  … 30/52 modes · cells=14484 · 50331s · math_bimod_0.55
+  … 36/52 modes · cells=14628 · 50521s · math_hf_spike_fade_0.70
+  … 42/52 modes · cells=14772 · 50708s · cog_bayes_sm_cir_ent
+  … 48/52 modes · cells=14892 · 50863s · cog_math_omni_f80
+  BEST 15m: math_cusum_0.025|sl1.5|rr3.0|g3 green=6/6 1y $4,246 all_six_in_top=30
+
+######## COG NAS100 @ 3m · 5.0y ########
+  … 1/52 modes · cells=14982 · 51042s · static
+  … 6/52 modes · cells=15072 · 51357s · math_snr_drift_0.55
+  … 12/52 modes · cells=15180 · 51742s · math_ou_snap_8_25
+  … 18/52 modes · cells=15252 · 52014s · math_allan_persist_0.95
+  … 24/52 modes · cells=15360 · 52413s · math_kalman_fade_2.0
+  … 30/52 modes · cells=15468 · 52821s · math_bimod_0.55
+  … 36/52 modes · cells=15576 · 53228s · math_hf_spike_fade_0.70
+  … 42/52 modes · cells=15684 · 53618s · cog_bayes_sm_cir_ent
+  … 48/52 modes · cells=15756 · 53889s · cog_math_omni_f80
+  BEST 3m: math_cusum_0.025|sl2.0|rr3.0|g2 green=6/6 1y $4,317 all_six_in_top=30
+
+######## COG NAS100 @ 1m · 1.0y ########
+  … 1/28 modes · cells=15840 · 54200s · static
+  … 6/28 modes · cells=15900 · 54340s · math_snr_drift_0.55
+  … 12/28 modes · cells=15972 · 54506s · math_ou_snap_8_25
+  … 18/28 modes · cells=16020 · 54623s · math_allan_persist_0.95
+  BEST 1m: cog_math_omni_f100|sl2.5|rr2.0|g5 green=6/6 1y $12,550 all_six_in_top=16
+
+######## COG USDJPY @ 5m · 10.0y ########
+  … 1/53 modes · cells=16152 · 55050s · static
+  … 6/53 modes · cells=16332 · 55832s · math_snr_drift_0.55
+  … 12/53 modes · cells=16548 · 56797s · math_ou_snap_8_25
+  … 18/53 modes · cells=16692 · 57469s · math_allan_persist_0.95
+  … 24/53 modes · cells=16908 · 58452s · math_kalman_fade_2.0
+  … 30/53 modes · cells=17124 · 59431s · math_bimod_0.55
+  … 36/53 modes · cells=17340 · 60404s · math_hf_spike_fade_0.70
+  … 42/53 modes · cells=17556 · 65421s · cog_bayes_sm_cir_ent
+  … 48/53 modes · cells=17700 · 73020s · cog_math_omni_f80
+  BEST 5m: cog_offflat_bayes|sl2.0|rr4.0|g3 green=6/6 1y $1,377 all_six_in_top=30
+
+######## COG USDJPY @ 15m · 10.0y ########
+  … 1/53 modes · cells=17904 · 75887s · static
+  … 6/53 modes · cells=18024 · 76001s · math_snr_drift_0.55
+  … 12/53 modes · cells=18168 · 76142s · math_ou_snap_8_25
+  … 18/53 modes · cells=18264 · 76239s · math_allan_persist_0.95
+  … 24/53 modes · cells=18408 · 76381s · math_kalman_fade_2.0
+RESUME · 17 pair×tf already done
+=== REST-5 COGNITIVE deep hunt ===
+book=('AUDUSD', 'USDCHF', 'ETHUSD', 'NAS100', 'USDJPY')
+live untouched: GOLD BTCUSD UKOIL
+layers: zenith-math + bayes/HMM/info/omni-math + JPY↔GOLD
+full_variants=50 lean_1m=26
+est_cells≈22,410 · n_green-first · XM spreads ON
+
+skip AUDUSD:5m (resume)
+skip AUDUSD:15m (resume)
+skip AUDUSD:3m (resume)
+skip AUDUSD:1m (resume)
+skip USDCHF:5m (resume)
+skip USDCHF:15m (resume)
+skip USDCHF:3m (resume)
+skip USDCHF:1m (resume)
+skip ETHUSD:5m (resume)
+skip ETHUSD:15m (resume)
+skip ETHUSD:3m (resume)
+skip ETHUSD:1m (resume)
+skip NAS100:5m (resume)
+skip NAS100:15m (resume)
+skip NAS100:3m (resume)
+skip NAS100:1m (resume)
+skip USDJPY:5m (resume)
+
+######## COG USDJPY @ 15m · 10.0y ########
+RESUME · 17 pair×tf already done
+=== REST-5 COGNITIVE deep hunt ===
+book=('AUDUSD', 'USDCHF', 'ETHUSD', 'NAS100', 'USDJPY')
+live untouched: GOLD BTCUSD UKOIL
+layers: zenith-math + bayes/HMM/info/omni-math + JPY↔GOLD
+full_variants=50 lean_1m=26
+est_cells≈22,410 · n_green-first · XM spreads ON
+
+skip AUDUSD:5m (resume)
+skip AUDUSD:15m (resume)
+skip AUDUSD:3m (resume)
+skip AUDUSD:1m (resume)
+skip USDCHF:5m (resume)
+skip USDCHF:15m (resume)
+skip USDCHF:3m (resume)
+skip USDCHF:1m (resume)
+skip ETHUSD:5m (resume)
+skip ETHUSD:15m (resume)
+skip ETHUSD:3m (resume)
+skip ETHUSD:1m (resume)
+skip NAS100:5m (resume)
+skip NAS100:15m (resume)
+skip NAS100:3m (resume)
+skip NAS100:1m (resume)
+skip USDJPY:5m (resume)
+
+######## COG USDJPY @ 15m · 10.0y ########
+  … 1/53 modes · cells=24 · 46s · static
+  … 6/53 modes · cells=144 · 188s · math_snr_drift_0.55
+  … 12/53 modes · cells=288 · 369s · math_ou_snap_8_25
+  … 18/53 modes · cells=384 · 464s · math_allan_persist_0.95
+  … 24/53 modes · cells=528 · 598s · math_kalman_fade_2.0
+  … 30/53 modes · cells=672 · 737s · math_bimod_0.55
+  … 36/53 modes · cells=816 · 871s · math_hf_spike_fade_0.70
+  … 42/53 modes · cells=960 · 1003s · cog_bayes_sm_cir_ent

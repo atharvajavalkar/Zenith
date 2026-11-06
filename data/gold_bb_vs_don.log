@@ -1,0 +1,55 @@
+GOLD bb_2.5 vs don_100 · Dukascopy · $200.0/R · RR=4
+Window end: 2026-07-25 · horizons: 1m/5m/1y · TFs: 5m+1h
+
+loaded 5m: 1,049,184 bars 2016-07-23→2026-07-23
+loaded 1h: 87,432 bars 2016-07-23→2026-07-23
+
+### Horizon 1m (30d)  2026-06-25→2026-07-25
+  bb_2.5   @5m  n=   5 WR=  0.0% Full=$    -1,000 OOS=$     -400 E[R]=-1.000 WF=0/4 MC=0.0% DEAD
+  don_100  @5m  n=  99 WR= 20.2% Full=$       200 OOS=$        0 E[R]=+0.000 WF=2/4 MC=55.3% FRAGILE
+  bb_2.5   @1h  n=   2 WR=  0.0% Full=$      -400 OOS=$     -200 E[R]=-1.000 WF=0/4 MC=—% DEAD
+  don_100  @1h  n=   8 WR= 12.5% Full=$      -600 OOS=$      400 E[R]=+0.667 WF=2/4 MC=26.1% DEAD
+
+### Horizon 5m (152d)  2026-02-23→2026-07-25
+  bb_2.5   @5m  n=  30 WR= 23.3% Full=$     1,000 OOS=$   -1,200 E[R]=-1.000 WF=2/4 MC=59.1% FRAGILE
+  don_100  @5m  n= 492 WR= 19.9% Full=$      -400 OOS=$    1,600 E[R]=+0.051 WF=3/4 MC=48.5% FRAGILE
+  bb_2.5   @1h  n=   8 WR= 25.0% Full=$       400 OOS=$     -400 E[R]=-1.000 WF=1/4 MC=62.7% FRAGILE
+  don_100  @1h  n=  49 WR= 24.5% Full=$     2,200 OOS=$     -400 E[R]=-0.118 WF=1/4 MC=78.8% FRAGILE
+
+### Horizon 1y (365d)  2025-07-25→2026-07-25
+  bb_2.5   @5m  n=  61 WR= 23.0% Full=$     1,800 OOS=$    1,000 E[R]=+0.250 WF=2/4 MC=66.0% FRAGILE
+  don_100  @5m  n=1222 WR= 21.1% Full=$    13,600 OOS=$      200 E[R]=+0.003 WF=3/4 MC=83.7% SURVIVES
+  bb_2.5   @1h  n=  17 WR= 29.4% Full=$     1,600 OOS=$      400 E[R]=+0.250 WF=1/4 MC=77.1% SURVIVES
+  don_100  @1h  n= 136 WR= 30.9% Full=$    14,800 OOS=$        0 E[R]=+0.000 WF=2/4 MC=99.9% SURVIVES
+
+================================================================================================
+Horizon  Brain    TF       n    WR%     Full PnL    OOS PnL  OOS E[R]    WF   MC% Verdict
+------------------------------------------------------------------------------------------------
+1m       bb_2.5   5m       5    0.0 $     -1,000 $     -400    -1.000 0/  4   0.0 DEAD
+1m       don_100  5m      99   20.2 $        200 $        0     0.000 2/  4  55.3 FRAGILE
+1m       bb_2.5   1h       2    0.0 $       -400 $     -200    -1.000 0/  4     — DEAD
+1m       don_100  1h       8   12.5 $       -600 $      400     0.667 2/  4  26.1 DEAD
+5m       bb_2.5   5m      30   23.3 $      1,000 $   -1,200    -1.000 2/  4  59.1 FRAGILE
+5m       don_100  5m     492   19.9 $       -400 $    1,600     0.051 3/  4  48.5 FRAGILE
+5m       bb_2.5   1h       8   25.0 $        400 $     -400    -1.000 1/  4  62.7 FRAGILE
+5m       don_100  1h      49   24.5 $      2,200 $     -400    -0.118 1/  4  78.8 FRAGILE
+1y       bb_2.5   5m      61   23.0 $      1,800 $    1,000     0.250 2/  4  66.0 FRAGILE
+1y       don_100  5m    1222   21.1 $     13,600 $      200     0.003 3/  4  83.7 SURVIVES
+1y       bb_2.5   1h      17   29.4 $      1,600 $      400     0.250 1/  4  77.1 SURVIVES
+1y       don_100  1h     136   30.9 $     14,800 $        0     0.000 2/  4  99.9 SURVIVES
+
+### Head-to-head (best Full PnL per horizon; also note bb@5m vs don@1h)
+
+1m: BEST = don_100@5m Full $200 (FRAGILE)
+  your lean bb@5m $-1,000 vs live don@1h $-600 → don_100@1h (Δ $-400)
+  OOS: bb@5m $-400 E[R]=-1.000 | don@1h $400 E[R]=+0.667
+
+5m: BEST = don_100@1h Full $2,200 (FRAGILE)
+  your lean bb@5m $1,000 vs live don@1h $2,200 → don_100@1h (Δ $-1,200)
+  OOS: bb@5m $-1,200 E[R]=-1.000 | don@1h $-400 E[R]=-0.118
+
+1y: BEST = don_100@1h Full $14,800 (SURVIVES)
+  your lean bb@5m $1,800 vs live don@1h $14,800 → don_100@1h (Δ $-13,000)
+  OOS: bb@5m $1,000 E[R]=+0.250 | don@1h $0 E[R]=+0.000
+
+Wrote /app/data/gold_bb_vs_don.json in 20.9s

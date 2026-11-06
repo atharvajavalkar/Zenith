@@ -1,0 +1,5189 @@
+{
+  "generated_at": "2026-08-05T19:29:02.280014+00:00",
+  "research_only": true,
+  "live_wired": false,
+  "symbol": "USDCHF",
+  "window_days": 365,
+  "risk_usd": 200.0,
+  "process": "liq sweep \u2192 dual EMA bias \u2192 engulf (same as GOLD PA)",
+  "tf_universe": [
+    "1m",
+    "3m",
+    "5m",
+    "15m"
+  ],
+  "liq_tfs": [
+    "3m",
+    "5m",
+    "15m"
+  ],
+  "rrs": [
+    2.0,
+    2.4,
+    3.0,
+    4.0
+  ],
+  "combos": 30,
+  "cells": 120,
+  "survives_n": 53,
+  "best": {
+    "name": "liq=3m|bias=15m+5m|entry=1m",
+    "liq_tf": "3m",
+    "bias_a": "15m",
+    "bias_b": "5m",
+    "entry_tf": "1m",
+    "rr": 2.0,
+    "trades": 1089,
+    "pnl": 57600.0,
+    "exp_r": 0.2645,
+    "win_rate": 42.1,
+    "verdict": "SURVIVES",
+    "wf_green": 4,
+    "wf_n": 4,
+    "mc_prob_profit": 100.0,
+    "tests": {
+      "1_full": {
+        "n": 1089,
+        "pnl": 57600.0,
+        "exp_r": 0.2645
+      },
+      "2_oos70": {
+        "n": 327,
+        "pnl": 17400.0,
+        "exp_r": 0.2661
+      },
+      "3_wf_fold_1": {
+        "n": 215,
+        "pnl": 13400.0,
+        "exp_r": 0.3116
+      },
+      "4_wf_fold_2": {
+        "n": 150,
+        "pnl": 4800.0,
+        "exp_r": 0.16
+      },
+      "5_wf_fold_3": {
+        "n": 159,
+        "pnl": 8400.0,
+        "exp_r": 0.2642
+      },
+      "6_wf_fold_4": {
+        "n": 168,
+        "pnl": 9000.0,
+        "exp_r": 0.2679
+      },
+      "7_torture_spread": {
+        "n": 1089,
+        "pnl": 24930.0,
+        "exp_r": 0.1145
+      },
+      "8_torture_skip": {
+        "n": 722,
+        "pnl": 41000.0,
+        "exp_r": 0.2839
+      }
+    }
+  },
+  "top15": [
+    {
+      "name": "liq=3m|bias=15m+5m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "15m",
+      "bias_b": "5m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 1089,
+      "pnl": 57600.0,
+      "exp_r": 0.2645,
+      "win_rate": 42.1,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 100.0,
+      "tests": {
+        "1_full": {
+          "n": 1089,
+          "pnl": 57600.0,
+          "exp_r": 0.2645
+        },
+        "2_oos70": {
+          "n": 327,
+          "pnl": 17400.0,
+          "exp_r": 0.2661
+        },
+        "3_wf_fold_1": {
+          "n": 215,
+          "pnl": 13400.0,
+          "exp_r": 0.3116
+        },
+        "4_wf_fold_2": {
+          "n": 150,
+          "pnl": 4800.0,
+          "exp_r": 0.16
+        },
+        "5_wf_fold_3": {
+          "n": 159,
+          "pnl": 8400.0,
+          "exp_r": 0.2642
+        },
+        "6_wf_fold_4": {
+          "n": 168,
+          "pnl": 9000.0,
+          "exp_r": 0.2679
+        },
+        "7_torture_spread": {
+          "n": 1089,
+          "pnl": 24930.0,
+          "exp_r": 0.1145
+        },
+        "8_torture_skip": {
+          "n": 722,
+          "pnl": 41000.0,
+          "exp_r": 0.2839
+        }
+      }
+    },
+    {
+      "name": "liq=5m|bias=15m+5m|entry=1m",
+      "liq_tf": "5m",
+      "bias_a": "15m",
+      "bias_b": "5m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 906,
+      "pnl": 41400.0,
+      "exp_r": 0.2285,
+      "win_rate": 40.9,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 100.0,
+      "tests": {
+        "1_full": {
+          "n": 906,
+          "pnl": 41400.0,
+          "exp_r": 0.2285
+        },
+        "2_oos70": {
+          "n": 255,
+          "pnl": 15600.0,
+          "exp_r": 0.3059
+        },
+        "3_wf_fold_1": {
+          "n": 191,
+          "pnl": 11600.0,
+          "exp_r": 0.3037
+        },
+        "4_wf_fold_2": {
+          "n": 131,
+          "pnl": -1600.0,
+          "exp_r": -0.0611
+        },
+        "5_wf_fold_3": {
+          "n": 70,
+          "pnl": 6400.0,
+          "exp_r": 0.4571
+        },
+        "6_wf_fold_4": {
+          "n": 185,
+          "pnl": 9200.0,
+          "exp_r": 0.2486
+        },
+        "7_torture_spread": {
+          "n": 906,
+          "pnl": 14220.0,
+          "exp_r": 0.0785
+        },
+        "8_torture_skip": {
+          "n": 600,
+          "pnl": 29400.0,
+          "exp_r": 0.245
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=3m+1m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "3m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 3.0,
+      "trades": 573,
+      "pnl": 39800.0,
+      "exp_r": 0.3473,
+      "win_rate": 33.7,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 100.0,
+      "tests": {
+        "1_full": {
+          "n": 573,
+          "pnl": 39800.0,
+          "exp_r": 0.3473
+        },
+        "2_oos70": {
+          "n": 217,
+          "pnl": 11800.0,
+          "exp_r": 0.2719
+        },
+        "3_wf_fold_1": {
+          "n": 105,
+          "pnl": 600.0,
+          "exp_r": 0.0286
+        },
+        "4_wf_fold_2": {
+          "n": 72,
+          "pnl": 4800.0,
+          "exp_r": 0.3333
+        },
+        "5_wf_fold_3": {
+          "n": 109,
+          "pnl": 600.0,
+          "exp_r": 0.0275
+        },
+        "6_wf_fold_4": {
+          "n": 108,
+          "pnl": 11200.0,
+          "exp_r": 0.5185
+        },
+        "7_torture_spread": {
+          "n": 573,
+          "pnl": 22610.0,
+          "exp_r": 0.1973
+        },
+        "8_torture_skip": {
+          "n": 379,
+          "pnl": 27400.0,
+          "exp_r": 0.3615
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=3m+1m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "3m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 865,
+      "pnl": 34600.0,
+      "exp_r": 0.2,
+      "win_rate": 40.0,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 100.0,
+      "tests": {
+        "1_full": {
+          "n": 865,
+          "pnl": 34600.0,
+          "exp_r": 0.2
+        },
+        "2_oos70": {
+          "n": 306,
+          "pnl": 13800.0,
+          "exp_r": 0.2255
+        },
+        "3_wf_fold_1": {
+          "n": 143,
+          "pnl": 2000.0,
+          "exp_r": 0.0699
+        },
+        "4_wf_fold_2": {
+          "n": 110,
+          "pnl": 4400.0,
+          "exp_r": 0.2
+        },
+        "5_wf_fold_3": {
+          "n": 139,
+          "pnl": 6400.0,
+          "exp_r": 0.2302
+        },
+        "6_wf_fold_4": {
+          "n": 167,
+          "pnl": 7400.0,
+          "exp_r": 0.2216
+        },
+        "7_torture_spread": {
+          "n": 865,
+          "pnl": 8650.0,
+          "exp_r": 0.05
+        },
+        "8_torture_skip": {
+          "n": 574,
+          "pnl": 21400.0,
+          "exp_r": 0.1864
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=3m+1m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "3m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 2.4,
+      "trades": 748,
+      "pnl": 30600.0,
+      "exp_r": 0.2045,
+      "win_rate": 35.4,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 99.9,
+      "tests": {
+        "1_full": {
+          "n": 748,
+          "pnl": 30600.0,
+          "exp_r": 0.2045
+        },
+        "2_oos70": {
+          "n": 274,
+          "pnl": 10480.0,
+          "exp_r": 0.1912
+        },
+        "3_wf_fold_1": {
+          "n": 122,
+          "pnl": -600.0,
+          "exp_r": -0.0246
+        },
+        "4_wf_fold_2": {
+          "n": 98,
+          "pnl": 3520.0,
+          "exp_r": 0.1796
+        },
+        "5_wf_fold_3": {
+          "n": 121,
+          "pnl": 3000.0,
+          "exp_r": 0.124
+        },
+        "6_wf_fold_4": {
+          "n": 153,
+          "pnl": 7480.0,
+          "exp_r": 0.2444
+        },
+        "7_torture_spread": {
+          "n": 748,
+          "pnl": 8160.0,
+          "exp_r": 0.0545
+        },
+        "8_torture_skip": {
+          "n": 495,
+          "pnl": 17280.0,
+          "exp_r": 0.1745
+        }
+      }
+    },
+    {
+      "name": "liq=3m|bias=15m+3m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "15m",
+      "bias_b": "3m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 1068,
+      "pnl": 30600.0,
+      "exp_r": 0.1433,
+      "win_rate": 38.1,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 99.9,
+      "tests": {
+        "1_full": {
+          "n": 1068,
+          "pnl": 30600.0,
+          "exp_r": 0.1433
+        },
+        "2_oos70": {
+          "n": 323,
+          "pnl": 8600.0,
+          "exp_r": 0.1331
+        },
+        "3_wf_fold_1": {
+          "n": 201,
+          "pnl": 9000.0,
+          "exp_r": 0.2239
+        },
+        "4_wf_fold_2": {
+          "n": 150,
+          "pnl": 1200.0,
+          "exp_r": 0.04
+        },
+        "5_wf_fold_3": {
+          "n": 145,
+          "pnl": 5200.0,
+          "exp_r": 0.1793
+        },
+        "6_wf_fold_4": {
+          "n": 178,
+          "pnl": 3400.0,
+          "exp_r": 0.0955
+        },
+        "7_torture_spread": {
+          "n": 1068,
+          "pnl": -1440.0,
+          "exp_r": -0.0067
+        },
+        "8_torture_skip": {
+          "n": 710,
+          "pnl": 12200.0,
+          "exp_r": 0.0859
+        }
+      }
+    },
+    {
+      "name": "liq=3m|bias=5m+3m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "5m",
+      "bias_b": "3m",
+      "entry_tf": "1m",
+      "rr": 2.4,
+      "trades": 1065,
+      "pnl": 29760.0,
+      "exp_r": 0.1397,
+      "win_rate": 33.5,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 99.8,
+      "tests": {
+        "1_full": {
+          "n": 1065,
+          "pnl": 29760.0,
+          "exp_r": 0.1397
+        },
+        "2_oos70": {
+          "n": 283,
+          "pnl": 10040.0,
+          "exp_r": 0.1774
+        },
+        "3_wf_fold_1": {
+          "n": 218,
+          "pnl": 6720.0,
+          "exp_r": 0.1541
+        },
+        "4_wf_fold_2": {
+          "n": 162,
+          "pnl": 1600.0,
+          "exp_r": 0.0494
+        },
+        "5_wf_fold_3": {
+          "n": 73,
+          "pnl": -320.0,
+          "exp_r": -0.0219
+        },
+        "6_wf_fold_4": {
+          "n": 210,
+          "pnl": 10360.0,
+          "exp_r": 0.2467
+        },
+        "7_torture_spread": {
+          "n": 1065,
+          "pnl": -2190.0,
+          "exp_r": -0.0103
+        },
+        "8_torture_skip": {
+          "n": 710,
+          "pnl": 16440.0,
+          "exp_r": 0.1158
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=15m+1m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "15m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 623,
+      "pnl": 29000.0,
+      "exp_r": 0.2327,
+      "win_rate": 41.1,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 100.0,
+      "tests": {
+        "1_full": {
+          "n": 623,
+          "pnl": 29000.0,
+          "exp_r": 0.2327
+        },
+        "2_oos70": {
+          "n": 202,
+          "pnl": 13600.0,
+          "exp_r": 0.3366
+        },
+        "3_wf_fold_1": {
+          "n": 108,
+          "pnl": 4800.0,
+          "exp_r": 0.2222
+        },
+        "4_wf_fold_2": {
+          "n": 99,
+          "pnl": 1200.0,
+          "exp_r": 0.0606
+        },
+        "5_wf_fold_3": {
+          "n": 96,
+          "pnl": 7200.0,
+          "exp_r": 0.375
+        },
+        "6_wf_fold_4": {
+          "n": 106,
+          "pnl": 6400.0,
+          "exp_r": 0.3019
+        },
+        "7_torture_spread": {
+          "n": 623,
+          "pnl": 10310.0,
+          "exp_r": 0.0827
+        },
+        "8_torture_skip": {
+          "n": 413,
+          "pnl": 21200.0,
+          "exp_r": 0.2567
+        }
+      }
+    },
+    {
+      "name": "liq=3m|bias=5m+3m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "5m",
+      "bias_b": "3m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 1317,
+      "pnl": 27600.0,
+      "exp_r": 0.1048,
+      "win_rate": 36.8,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 99.7,
+      "tests": {
+        "1_full": {
+          "n": 1317,
+          "pnl": 27600.0,
+          "exp_r": 0.1048
+        },
+        "2_oos70": {
+          "n": 375,
+          "pnl": 10200.0,
+          "exp_r": 0.136
+        },
+        "3_wf_fold_1": {
+          "n": 246,
+          "pnl": 7200.0,
+          "exp_r": 0.1463
+        },
+        "4_wf_fold_2": {
+          "n": 224,
+          "pnl": 200.0,
+          "exp_r": 0.0045
+        },
+        "5_wf_fold_3": {
+          "n": 165,
+          "pnl": 4200.0,
+          "exp_r": 0.1273
+        },
+        "6_wf_fold_4": {
+          "n": 210,
+          "pnl": 6000.0,
+          "exp_r": 0.1429
+        },
+        "7_torture_spread": {
+          "n": 1317,
+          "pnl": -11910.0,
+          "exp_r": -0.0452
+        },
+        "8_torture_skip": {
+          "n": 874,
+          "pnl": 23200.0,
+          "exp_r": 0.1327
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=15m+5m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "15m",
+      "bias_b": "5m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 605,
+      "pnl": 26600.0,
+      "exp_r": 0.2198,
+      "win_rate": 40.7,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 100.0,
+      "tests": {
+        "1_full": {
+          "n": 605,
+          "pnl": 26600.0,
+          "exp_r": 0.2198
+        },
+        "2_oos70": {
+          "n": 205,
+          "pnl": 14200.0,
+          "exp_r": 0.3463
+        },
+        "3_wf_fold_1": {
+          "n": 105,
+          "pnl": 4200.0,
+          "exp_r": 0.2
+        },
+        "4_wf_fold_2": {
+          "n": 97,
+          "pnl": -800.0,
+          "exp_r": -0.0412
+        },
+        "5_wf_fold_3": {
+          "n": 91,
+          "pnl": 7000.0,
+          "exp_r": 0.3846
+        },
+        "6_wf_fold_4": {
+          "n": 114,
+          "pnl": 7200.0,
+          "exp_r": 0.3158
+        },
+        "7_torture_spread": {
+          "n": 605,
+          "pnl": 8450.0,
+          "exp_r": 0.0698
+        },
+        "8_torture_skip": {
+          "n": 402,
+          "pnl": 22200.0,
+          "exp_r": 0.2761
+        }
+      }
+    },
+    {
+      "name": "liq=5m|bias=15m+3m|entry=1m",
+      "liq_tf": "5m",
+      "bias_a": "15m",
+      "bias_b": "3m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 868,
+      "pnl": 26200.0,
+      "exp_r": 0.1509,
+      "win_rate": 38.4,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 99.7,
+      "tests": {
+        "1_full": {
+          "n": 868,
+          "pnl": 26200.0,
+          "exp_r": 0.1509
+        },
+        "2_oos70": {
+          "n": 251,
+          "pnl": 12200.0,
+          "exp_r": 0.243
+        },
+        "3_wf_fold_1": {
+          "n": 181,
+          "pnl": 2800.0,
+          "exp_r": 0.0773
+        },
+        "4_wf_fold_2": {
+          "n": 124,
+          "pnl": -800.0,
+          "exp_r": -0.0323
+        },
+        "5_wf_fold_3": {
+          "n": 65,
+          "pnl": 6200.0,
+          "exp_r": 0.4769
+        },
+        "6_wf_fold_4": {
+          "n": 186,
+          "pnl": 6000.0,
+          "exp_r": 0.1613
+        },
+        "7_torture_spread": {
+          "n": 868,
+          "pnl": 160.0,
+          "exp_r": 0.0009
+        },
+        "8_torture_skip": {
+          "n": 576,
+          "pnl": 21000.0,
+          "exp_r": 0.1823
+        }
+      }
+    },
+    {
+      "name": "liq=3m|bias=15m+5m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "15m",
+      "bias_b": "5m",
+      "entry_tf": "1m",
+      "rr": 2.4,
+      "trades": 394,
+      "pnl": 24560.0,
+      "exp_r": 0.3117,
+      "win_rate": 38.6,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 100.0,
+      "tests": {
+        "1_full": {
+          "n": 394,
+          "pnl": 24560.0,
+          "exp_r": 0.3117
+        },
+        "2_oos70": {
+          "n": 187,
+          "pnl": 10200.0,
+          "exp_r": 0.2727
+        },
+        "3_wf_fold_1": {
+          "n": 69,
+          "pnl": 6600.0,
+          "exp_r": 0.4783
+        },
+        "4_wf_fold_2": {
+          "n": 136,
+          "pnl": 7480.0,
+          "exp_r": 0.275
+        },
+        "5_wf_fold_3": {
+          "n": 46,
+          "pnl": 3040.0,
+          "exp_r": 0.3304
+        },
+        "6_wf_fold_4": {
+          "n": 141,
+          "pnl": 7160.0,
+          "exp_r": 0.2539
+        },
+        "7_torture_spread": {
+          "n": 394,
+          "pnl": 12740.0,
+          "exp_r": 0.1617
+        },
+        "8_torture_skip": {
+          "n": 262,
+          "pnl": 13560.0,
+          "exp_r": 0.2588
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=5m+1m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "5m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 3.0,
+      "trades": 469,
+      "pnl": 19800.0,
+      "exp_r": 0.2111,
+      "win_rate": 30.3,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "wf_n": 4,
+      "mc_prob_profit": 99.2,
+      "tests": {
+        "1_full": {
+          "n": 469,
+          "pnl": 19800.0,
+          "exp_r": 0.2111
+        },
+        "2_oos70": {
+          "n": 174,
+          "pnl": 10800.0,
+          "exp_r": 0.3103
+        },
+        "3_wf_fold_1": {
+          "n": 109,
+          "pnl": 1400.0,
+          "exp_r": 0.0642
+        },
+        "4_wf_fold_2": {
+          "n": 69,
+          "pnl": -3400.0,
+          "exp_r": -0.2464
+        },
+        "5_wf_fold_3": {
+          "n": 96,
+          "pnl": -800.0,
+          "exp_r": -0.0417
+        },
+        "6_wf_fold_4": {
+          "n": 78,
+          "pnl": 11600.0,
+          "exp_r": 0.7436
+        },
+        "7_torture_spread": {
+          "n": 469,
+          "pnl": 5730.0,
+          "exp_r": 0.0611
+        },
+        "8_torture_skip": {
+          "n": 310,
+          "pnl": 19600.0,
+          "exp_r": 0.3161
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=5m+3m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "5m",
+      "bias_b": "3m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 753,
+      "pnl": 19200.0,
+      "exp_r": 0.1275,
+      "win_rate": 37.6,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "wf_n": 4,
+      "mc_prob_profit": 99.0,
+      "tests": {
+        "1_full": {
+          "n": 753,
+          "pnl": 19200.0,
+          "exp_r": 0.1275
+        },
+        "2_oos70": {
+          "n": 255,
+          "pnl": 6000.0,
+          "exp_r": 0.1176
+        },
+        "3_wf_fold_1": {
+          "n": 136,
+          "pnl": 2800.0,
+          "exp_r": 0.1029
+        },
+        "4_wf_fold_2": {
+          "n": 106,
+          "pnl": -2600.0,
+          "exp_r": -0.1226
+        },
+        "5_wf_fold_3": {
+          "n": 110,
+          "pnl": -400.0,
+          "exp_r": -0.0182
+        },
+        "6_wf_fold_4": {
+          "n": 145,
+          "pnl": 6400.0,
+          "exp_r": 0.2207
+        },
+        "7_torture_spread": {
+          "n": 753,
+          "pnl": -3390.0,
+          "exp_r": -0.0225
+        },
+        "8_torture_skip": {
+          "n": 498,
+          "pnl": 9600.0,
+          "exp_r": 0.0964
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=15m+3m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "15m",
+      "bias_b": "3m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 580,
+      "pnl": 18400.0,
+      "exp_r": 0.1586,
+      "win_rate": 38.6,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 99.5,
+      "tests": {
+        "1_full": {
+          "n": 580,
+          "pnl": 18400.0,
+          "exp_r": 0.1586
+        },
+        "2_oos70": {
+          "n": 195,
+          "pnl": 9000.0,
+          "exp_r": 0.2308
+        },
+        "3_wf_fold_1": {
+          "n": 96,
+          "pnl": 2400.0,
+          "exp_r": 0.125
+        },
+        "4_wf_fold_2": {
+          "n": 86,
+          "pnl": -2200.0,
+          "exp_r": -0.1279
+        },
+        "5_wf_fold_3": {
+          "n": 85,
+          "pnl": 3400.0,
+          "exp_r": 0.2
+        },
+        "6_wf_fold_4": {
+          "n": 110,
+          "pnl": 5600.0,
+          "exp_r": 0.2545
+        },
+        "7_torture_spread": {
+          "n": 580,
+          "pnl": 1000.0,
+          "exp_r": 0.0086
+        },
+        "8_torture_skip": {
+          "n": 386,
+          "pnl": 14600.0,
+          "exp_r": 0.1891
+        }
+      }
+    }
+  ],
+  "gold_stack_cell": {
+    "name": "liq=3m|bias=15m+5m|entry=1m",
+    "liq_tf": "3m",
+    "bias_a": "15m",
+    "bias_b": "5m",
+    "entry_tf": "1m",
+    "rr": 2.0,
+    "trades": 1089,
+    "pnl": 57600.0,
+    "exp_r": 0.2645,
+    "win_rate": 42.1,
+    "verdict": "SURVIVES",
+    "wf_green": 4,
+    "wf_n": 4,
+    "mc_prob_profit": 100.0,
+    "tests": {
+      "1_full": {
+        "n": 1089,
+        "pnl": 57600.0,
+        "exp_r": 0.2645
+      },
+      "2_oos70": {
+        "n": 327,
+        "pnl": 17400.0,
+        "exp_r": 0.2661
+      },
+      "3_wf_fold_1": {
+        "n": 215,
+        "pnl": 13400.0,
+        "exp_r": 0.3116
+      },
+      "4_wf_fold_2": {
+        "n": 150,
+        "pnl": 4800.0,
+        "exp_r": 0.16
+      },
+      "5_wf_fold_3": {
+        "n": 159,
+        "pnl": 8400.0,
+        "exp_r": 0.2642
+      },
+      "6_wf_fold_4": {
+        "n": 168,
+        "pnl": 9000.0,
+        "exp_r": 0.2679
+      },
+      "7_torture_spread": {
+        "n": 1089,
+        "pnl": 24930.0,
+        "exp_r": 0.1145
+      },
+      "8_torture_skip": {
+        "n": 722,
+        "pnl": 41000.0,
+        "exp_r": 0.2839
+      }
+    }
+  },
+  "wired_baseline": {
+    "name": "wired_bb_2.5",
+    "liq_tf": null,
+    "bias_a": null,
+    "bias_b": null,
+    "entry_tf": "1m",
+    "rr": 4.0,
+    "trades": 175,
+    "pnl": 25000.0,
+    "exp_r": 0.7143,
+    "win_rate": 34.3,
+    "verdict": "SURVIVES",
+    "wf_green": 4,
+    "wf_n": 4,
+    "mc_prob_profit": 100.0,
+    "tests": {
+      "1_full": {
+        "n": 175,
+        "pnl": 25000.0,
+        "exp_r": 0.7143
+      },
+      "2_oos70": {
+        "n": 47,
+        "pnl": 4600.0,
+        "exp_r": 0.4894
+      },
+      "3_wf_fold_1": {
+        "n": 35,
+        "pnl": 5000.0,
+        "exp_r": 0.7143
+      },
+      "4_wf_fold_2": {
+        "n": 17,
+        "pnl": 5600.0,
+        "exp_r": 1.6471
+      },
+      "5_wf_fold_3": {
+        "n": 23,
+        "pnl": 2400.0,
+        "exp_r": 0.5217
+      },
+      "6_wf_fold_4": {
+        "n": 24,
+        "pnl": 2200.0,
+        "exp_r": 0.4583
+      },
+      "7_torture_spread": {
+        "n": 175,
+        "pnl": 19750.0,
+        "exp_r": 0.5643
+      },
+      "8_torture_skip": {
+        "n": 113,
+        "pnl": 13400.0,
+        "exp_r": 0.5929
+      }
+    }
+  },
+  "wired_rr_sweep": [
+    {
+      "name": "wired_bb_2.5",
+      "liq_tf": null,
+      "bias_a": null,
+      "bias_b": null,
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 176,
+      "pnl": 13400.0,
+      "exp_r": 0.3807,
+      "win_rate": 46.0,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 100.0,
+      "tests": {
+        "1_full": {
+          "n": 176,
+          "pnl": 13400.0,
+          "exp_r": 0.3807
+        },
+        "2_oos70": {
+          "n": 48,
+          "pnl": 3600.0,
+          "exp_r": 0.375
+        },
+        "3_wf_fold_1": {
+          "n": 35,
+          "pnl": 2600.0,
+          "exp_r": 0.3714
+        },
+        "4_wf_fold_2": {
+          "n": 17,
+          "pnl": 3200.0,
+          "exp_r": 0.9412
+        },
+        "5_wf_fold_3": {
+          "n": 24,
+          "pnl": 2400.0,
+          "exp_r": 0.5
+        },
+        "6_wf_fold_4": {
+          "n": 24,
+          "pnl": 1200.0,
+          "exp_r": 0.25
+        },
+        "7_torture_spread": {
+          "n": 176,
+          "pnl": 8120.0,
+          "exp_r": 0.2307
+        },
+        "8_torture_skip": {
+          "n": 114,
+          "pnl": 9000.0,
+          "exp_r": 0.3947
+        }
+      }
+    },
+    {
+      "name": "wired_bb_2.5",
+      "liq_tf": null,
+      "bias_a": null,
+      "bias_b": null,
+      "entry_tf": "1m",
+      "rr": 2.4,
+      "trades": 176,
+      "pnl": 16480.0,
+      "exp_r": 0.4682,
+      "win_rate": 43.2,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 100.0,
+      "tests": {
+        "1_full": {
+          "n": 176,
+          "pnl": 16480.0,
+          "exp_r": 0.4682
+        },
+        "2_oos70": {
+          "n": 48,
+          "pnl": 4000.0,
+          "exp_r": 0.4167
+        },
+        "3_wf_fold_1": {
+          "n": 35,
+          "pnl": 3200.0,
+          "exp_r": 0.4571
+        },
+        "4_wf_fold_2": {
+          "n": 17,
+          "pnl": 4080.0,
+          "exp_r": 1.2
+        },
+        "5_wf_fold_3": {
+          "n": 24,
+          "pnl": 2000.0,
+          "exp_r": 0.4167
+        },
+        "6_wf_fold_4": {
+          "n": 24,
+          "pnl": 2000.0,
+          "exp_r": 0.4167
+        },
+        "7_torture_spread": {
+          "n": 176,
+          "pnl": 11200.0,
+          "exp_r": 0.3182
+        },
+        "8_torture_skip": {
+          "n": 114,
+          "pnl": 11200.0,
+          "exp_r": 0.4912
+        }
+      }
+    },
+    {
+      "name": "wired_bb_2.5",
+      "liq_tf": null,
+      "bias_a": null,
+      "bias_b": null,
+      "entry_tf": "1m",
+      "rr": 3.0,
+      "trades": 176,
+      "pnl": 19200.0,
+      "exp_r": 0.5455,
+      "win_rate": 38.6,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 100.0,
+      "tests": {
+        "1_full": {
+          "n": 176,
+          "pnl": 19200.0,
+          "exp_r": 0.5455
+        },
+        "2_oos70": {
+          "n": 48,
+          "pnl": 4000.0,
+          "exp_r": 0.4167
+        },
+        "3_wf_fold_1": {
+          "n": 35,
+          "pnl": 2600.0,
+          "exp_r": 0.3714
+        },
+        "4_wf_fold_2": {
+          "n": 17,
+          "pnl": 5400.0,
+          "exp_r": 1.5882
+        },
+        "5_wf_fold_3": {
+          "n": 24,
+          "pnl": 1600.0,
+          "exp_r": 0.3333
+        },
+        "6_wf_fold_4": {
+          "n": 24,
+          "pnl": 2400.0,
+          "exp_r": 0.5
+        },
+        "7_torture_spread": {
+          "n": 176,
+          "pnl": 13920.0,
+          "exp_r": 0.3955
+        },
+        "8_torture_skip": {
+          "n": 114,
+          "pnl": 13200.0,
+          "exp_r": 0.5789
+        }
+      }
+    },
+    {
+      "name": "wired_bb_2.5",
+      "liq_tf": null,
+      "bias_a": null,
+      "bias_b": null,
+      "entry_tf": "1m",
+      "rr": 4.0,
+      "trades": 175,
+      "pnl": 25000.0,
+      "exp_r": 0.7143,
+      "win_rate": 34.3,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 100.0,
+      "tests": {
+        "1_full": {
+          "n": 175,
+          "pnl": 25000.0,
+          "exp_r": 0.7143
+        },
+        "2_oos70": {
+          "n": 47,
+          "pnl": 4600.0,
+          "exp_r": 0.4894
+        },
+        "3_wf_fold_1": {
+          "n": 35,
+          "pnl": 5000.0,
+          "exp_r": 0.7143
+        },
+        "4_wf_fold_2": {
+          "n": 17,
+          "pnl": 5600.0,
+          "exp_r": 1.6471
+        },
+        "5_wf_fold_3": {
+          "n": 23,
+          "pnl": 2400.0,
+          "exp_r": 0.5217
+        },
+        "6_wf_fold_4": {
+          "n": 24,
+          "pnl": 2200.0,
+          "exp_r": 0.4583
+        },
+        "7_torture_spread": {
+          "n": 175,
+          "pnl": 19750.0,
+          "exp_r": 0.5643
+        },
+        "8_torture_skip": {
+          "n": 113,
+          "pnl": 13400.0,
+          "exp_r": 0.5929
+        }
+      }
+    }
+  ],
+  "pnl_delta_best_pa_minus_wired": 32600.0,
+  "best_per_entry_tf": {
+    "1m": {
+      "name": "liq=3m|bias=15m+5m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "15m",
+      "bias_b": "5m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 1089,
+      "pnl": 57600.0,
+      "exp_r": 0.2645,
+      "win_rate": 42.1,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 100.0,
+      "tests": {
+        "1_full": {
+          "n": 1089,
+          "pnl": 57600.0,
+          "exp_r": 0.2645
+        },
+        "2_oos70": {
+          "n": 327,
+          "pnl": 17400.0,
+          "exp_r": 0.2661
+        },
+        "3_wf_fold_1": {
+          "n": 215,
+          "pnl": 13400.0,
+          "exp_r": 0.3116
+        },
+        "4_wf_fold_2": {
+          "n": 150,
+          "pnl": 4800.0,
+          "exp_r": 0.16
+        },
+        "5_wf_fold_3": {
+          "n": 159,
+          "pnl": 8400.0,
+          "exp_r": 0.2642
+        },
+        "6_wf_fold_4": {
+          "n": 168,
+          "pnl": 9000.0,
+          "exp_r": 0.2679
+        },
+        "7_torture_spread": {
+          "n": 1089,
+          "pnl": 24930.0,
+          "exp_r": 0.1145
+        },
+        "8_torture_skip": {
+          "n": 722,
+          "pnl": 41000.0,
+          "exp_r": 0.2839
+        }
+      }
+    },
+    "3m": {
+      "name": "liq=15m|bias=15m+3m|entry=3m",
+      "liq_tf": "15m",
+      "bias_a": "15m",
+      "bias_b": "3m",
+      "entry_tf": "3m",
+      "rr": 2.0,
+      "trades": 515,
+      "pnl": 11600.0,
+      "exp_r": 0.1126,
+      "win_rate": 37.1,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 95.9,
+      "tests": {
+        "1_full": {
+          "n": 515,
+          "pnl": 11600.0,
+          "exp_r": 0.1126
+        },
+        "2_oos70": {
+          "n": 152,
+          "pnl": 6200.0,
+          "exp_r": 0.2039
+        },
+        "3_wf_fold_1": {
+          "n": 85,
+          "pnl": 3400.0,
+          "exp_r": 0.2
+        },
+        "4_wf_fold_2": {
+          "n": 80,
+          "pnl": 200.0,
+          "exp_r": 0.0125
+        },
+        "5_wf_fold_3": {
+          "n": 77,
+          "pnl": 2600.0,
+          "exp_r": 0.1688
+        },
+        "6_wf_fold_4": {
+          "n": 75,
+          "pnl": 3600.0,
+          "exp_r": 0.24
+        },
+        "7_torture_spread": {
+          "n": 515,
+          "pnl": -3850.0,
+          "exp_r": -0.0374
+        },
+        "8_torture_skip": {
+          "n": 342,
+          "pnl": 6600.0,
+          "exp_r": 0.0965
+        }
+      }
+    },
+    "5m": {
+      "name": "liq=15m|bias=15m+5m|entry=5m",
+      "liq_tf": "15m",
+      "bias_a": "15m",
+      "bias_b": "5m",
+      "entry_tf": "5m",
+      "rr": 2.0,
+      "trades": 376,
+      "pnl": 2200.0,
+      "exp_r": 0.0293,
+      "win_rate": 34.3,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "wf_n": 4,
+      "mc_prob_profit": 65.4,
+      "tests": {
+        "1_full": {
+          "n": 376,
+          "pnl": 2200.0,
+          "exp_r": 0.0293
+        },
+        "2_oos70": {
+          "n": 109,
+          "pnl": 400.0,
+          "exp_r": 0.0183
+        },
+        "3_wf_fold_1": {
+          "n": 72,
+          "pnl": 1200.0,
+          "exp_r": 0.0833
+        },
+        "4_wf_fold_2": {
+          "n": 75,
+          "pnl": -1800.0,
+          "exp_r": -0.12
+        },
+        "5_wf_fold_3": {
+          "n": 52,
+          "pnl": -800.0,
+          "exp_r": -0.0769
+        },
+        "6_wf_fold_4": {
+          "n": 57,
+          "pnl": 1200.0,
+          "exp_r": 0.1053
+        },
+        "7_torture_spread": {
+          "n": 376,
+          "pnl": -9080.0,
+          "exp_r": -0.1207
+        },
+        "8_torture_skip": {
+          "n": 248,
+          "pnl": 3800.0,
+          "exp_r": 0.0766
+        }
+      }
+    },
+    "15m": {
+      "name": "liq=15m|bias=15m+15m|entry=15m",
+      "liq_tf": "15m",
+      "bias_a": "15m",
+      "bias_b": "15m",
+      "entry_tf": "15m",
+      "rr": 3.0,
+      "trades": 269,
+      "pnl": 8600.0,
+      "exp_r": 0.1599,
+      "win_rate": 29.0,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 91.7,
+      "tests": {
+        "1_full": {
+          "n": 269,
+          "pnl": 8600.0,
+          "exp_r": 0.1599
+        },
+        "2_oos70": {
+          "n": 80,
+          "pnl": 4000.0,
+          "exp_r": 0.25
+        },
+        "3_wf_fold_1": {
+          "n": 45,
+          "pnl": 600.0,
+          "exp_r": 0.0667
+        },
+        "4_wf_fold_2": {
+          "n": 58,
+          "pnl": -400.0,
+          "exp_r": -0.0345
+        },
+        "5_wf_fold_3": {
+          "n": 46,
+          "pnl": 2000.0,
+          "exp_r": 0.2174
+        },
+        "6_wf_fold_4": {
+          "n": 34,
+          "pnl": 2000.0,
+          "exp_r": 0.2941
+        },
+        "7_torture_spread": {
+          "n": 269,
+          "pnl": 530.0,
+          "exp_r": 0.0099
+        },
+        "8_torture_skip": {
+          "n": 178,
+          "pnl": 2800.0,
+          "exp_r": 0.0787
+        }
+      }
+    }
+  },
+  "all_cells_summary": [
+    {
+      "name": "liq=3m|bias=15m+5m|entry=1m",
+      "rr": 2.0,
+      "trades": 1089,
+      "pnl": 57600.0,
+      "exp_r": 0.2645,
+      "win_rate": 42.1,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "mc_prob_profit": 100.0
+    },
+    {
+      "name": "liq=5m|bias=15m+5m|entry=1m",
+      "rr": 2.0,
+      "trades": 906,
+      "pnl": 41400.0,
+      "exp_r": 0.2285,
+      "win_rate": 40.9,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 100.0
+    },
+    {
+      "name": "liq=15m|bias=3m+1m|entry=1m",
+      "rr": 3.0,
+      "trades": 573,
+      "pnl": 39800.0,
+      "exp_r": 0.3473,
+      "win_rate": 33.7,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "mc_prob_profit": 100.0
+    },
+    {
+      "name": "liq=15m|bias=3m+1m|entry=1m",
+      "rr": 2.0,
+      "trades": 865,
+      "pnl": 34600.0,
+      "exp_r": 0.2,
+      "win_rate": 40.0,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "mc_prob_profit": 100.0
+    },
+    {
+      "name": "liq=15m|bias=3m+1m|entry=1m",
+      "rr": 2.4,
+      "trades": 748,
+      "pnl": 30600.0,
+      "exp_r": 0.2045,
+      "win_rate": 35.4,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 99.9
+    },
+    {
+      "name": "liq=3m|bias=15m+3m|entry=1m",
+      "rr": 2.0,
+      "trades": 1068,
+      "pnl": 30600.0,
+      "exp_r": 0.1433,
+      "win_rate": 38.1,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "mc_prob_profit": 99.9
+    },
+    {
+      "name": "liq=3m|bias=5m+3m|entry=1m",
+      "rr": 2.4,
+      "trades": 1065,
+      "pnl": 29760.0,
+      "exp_r": 0.1397,
+      "win_rate": 33.5,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 99.8
+    },
+    {
+      "name": "liq=15m|bias=15m+1m|entry=1m",
+      "rr": 2.0,
+      "trades": 623,
+      "pnl": 29000.0,
+      "exp_r": 0.2327,
+      "win_rate": 41.1,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "mc_prob_profit": 100.0
+    },
+    {
+      "name": "liq=3m|bias=5m+3m|entry=1m",
+      "rr": 2.0,
+      "trades": 1317,
+      "pnl": 27600.0,
+      "exp_r": 0.1048,
+      "win_rate": 36.8,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "mc_prob_profit": 99.7
+    },
+    {
+      "name": "liq=15m|bias=15m+5m|entry=1m",
+      "rr": 2.0,
+      "trades": 605,
+      "pnl": 26600.0,
+      "exp_r": 0.2198,
+      "win_rate": 40.7,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 100.0
+    },
+    {
+      "name": "liq=5m|bias=15m+3m|entry=1m",
+      "rr": 2.0,
+      "trades": 868,
+      "pnl": 26200.0,
+      "exp_r": 0.1509,
+      "win_rate": 38.4,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 99.7
+    },
+    {
+      "name": "liq=3m|bias=15m+5m|entry=1m",
+      "rr": 2.4,
+      "trades": 394,
+      "pnl": 24560.0,
+      "exp_r": 0.3117,
+      "win_rate": 38.6,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "mc_prob_profit": 100.0
+    },
+    {
+      "name": "liq=15m|bias=5m+1m|entry=1m",
+      "rr": 3.0,
+      "trades": 469,
+      "pnl": 19800.0,
+      "exp_r": 0.2111,
+      "win_rate": 30.3,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "mc_prob_profit": 99.2
+    },
+    {
+      "name": "liq=15m|bias=5m+3m|entry=1m",
+      "rr": 2.0,
+      "trades": 753,
+      "pnl": 19200.0,
+      "exp_r": 0.1275,
+      "win_rate": 37.6,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "mc_prob_profit": 99.0
+    },
+    {
+      "name": "liq=15m|bias=15m+3m|entry=1m",
+      "rr": 2.0,
+      "trades": 580,
+      "pnl": 18400.0,
+      "exp_r": 0.1586,
+      "win_rate": 38.6,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 99.5
+    },
+    {
+      "name": "liq=3m|bias=15m+1m|entry=1m",
+      "rr": 2.0,
+      "trades": 1049,
+      "pnl": 18200.0,
+      "exp_r": 0.0867,
+      "win_rate": 36.2,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 97.2
+    },
+    {
+      "name": "liq=5m|bias=15m+1m|entry=1m",
+      "rr": 2.0,
+      "trades": 856,
+      "pnl": 17200.0,
+      "exp_r": 0.1005,
+      "win_rate": 36.7,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 97.4
+    },
+    {
+      "name": "liq=15m|bias=5m+1m|entry=1m",
+      "rr": 2.0,
+      "trades": 740,
+      "pnl": 17000.0,
+      "exp_r": 0.1149,
+      "win_rate": 37.2,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 98.9
+    },
+    {
+      "name": "liq=3m|bias=5m+3m|entry=1m",
+      "rr": 3.0,
+      "trades": 774,
+      "pnl": 16400.0,
+      "exp_r": 0.1059,
+      "win_rate": 27.6,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "mc_prob_profit": 94.8
+    },
+    {
+      "name": "liq=3m|bias=5m+1m|entry=1m",
+      "rr": 2.4,
+      "trades": 886,
+      "pnl": 15920.0,
+      "exp_r": 0.0898,
+      "win_rate": 32.1,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "mc_prob_profit": 95.8
+    },
+    {
+      "name": "liq=15m|bias=5m+3m|entry=1m",
+      "rr": 3.0,
+      "trades": 491,
+      "pnl": 15400.0,
+      "exp_r": 0.1568,
+      "win_rate": 28.9,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 97.8
+    },
+    {
+      "name": "liq=5m|bias=5m+3m|entry=1m",
+      "rr": 2.0,
+      "trades": 1086,
+      "pnl": 15000.0,
+      "exp_r": 0.0691,
+      "win_rate": 35.6,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "mc_prob_profit": 93.3
+    },
+    {
+      "name": "liq=15m|bias=5m+3m|entry=1m",
+      "rr": 2.4,
+      "trades": 643,
+      "pnl": 14880.0,
+      "exp_r": 0.1157,
+      "win_rate": 32.8,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 96.5
+    },
+    {
+      "name": "liq=15m|bias=15m+1m|entry=1m",
+      "rr": 2.4,
+      "trades": 320,
+      "pnl": 14200.0,
+      "exp_r": 0.2219,
+      "win_rate": 35.9,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 98.8
+    },
+    {
+      "name": "liq=3m|bias=15m+3m|entry=1m",
+      "rr": 2.4,
+      "trades": 388,
+      "pnl": 14200.0,
+      "exp_r": 0.183,
+      "win_rate": 34.8,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "mc_prob_profit": 98.9
+    },
+    {
+      "name": "liq=3m|bias=15m+5m|entry=1m",
+      "rr": 3.0,
+      "trades": 273,
+      "pnl": 13400.0,
+      "exp_r": 0.2454,
+      "win_rate": 31.1,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 98.6
+    },
+    {
+      "name": "liq=15m|bias=15m+1m|entry=1m",
+      "rr": 3.0,
+      "trades": 284,
+      "pnl": 12000.0,
+      "exp_r": 0.2113,
+      "win_rate": 30.3,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 97.2
+    },
+    {
+      "name": "liq=15m|bias=15m+3m|entry=3m",
+      "rr": 2.0,
+      "trades": 515,
+      "pnl": 11600.0,
+      "exp_r": 0.1126,
+      "win_rate": 37.1,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "mc_prob_profit": 95.9
+    },
+    {
+      "name": "liq=15m|bias=15m+3m|entry=3m",
+      "rr": 2.4,
+      "trades": 469,
+      "pnl": 10920.0,
+      "exp_r": 0.1164,
+      "win_rate": 32.8,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 94.3
+    },
+    {
+      "name": "liq=5m|bias=3m+1m|entry=1m",
+      "rr": 3.0,
+      "trades": 833,
+      "pnl": 10200.0,
+      "exp_r": 0.0612,
+      "win_rate": 26.5,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 82.5
+    },
+    {
+      "name": "liq=3m|bias=3m+1m|entry=1m",
+      "rr": 4.0,
+      "trades": 275,
+      "pnl": 10000.0,
+      "exp_r": 0.1818,
+      "win_rate": 23.6,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "mc_prob_profit": 92.0
+    },
+    {
+      "name": "liq=15m|bias=15m+1m|entry=1m",
+      "rr": 4.0,
+      "trades": 231,
+      "pnl": 9800.0,
+      "exp_r": 0.2121,
+      "win_rate": 24.2,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 93.0
+    },
+    {
+      "name": "liq=15m|bias=15m+5m|entry=1m",
+      "rr": 3.0,
+      "trades": 231,
+      "pnl": 9800.0,
+      "exp_r": 0.2121,
+      "win_rate": 30.3,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "mc_prob_profit": 97.1
+    },
+    {
+      "name": "liq=3m|bias=15m+5m|entry=1m",
+      "rr": 4.0,
+      "trades": 236,
+      "pnl": 9800.0,
+      "exp_r": 0.2076,
+      "win_rate": 24.2,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 92.8
+    },
+    {
+      "name": "liq=5m|bias=15m+5m|entry=1m",
+      "rr": 3.0,
+      "trades": 250,
+      "pnl": 9200.0,
+      "exp_r": 0.184,
+      "win_rate": 29.6,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "mc_prob_profit": 94.4
+    },
+    {
+      "name": "liq=3m|bias=15m+3m|entry=1m",
+      "rr": 3.0,
+      "trades": 282,
+      "pnl": 9200.0,
+      "exp_r": 0.1631,
+      "win_rate": 29.1,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "mc_prob_profit": 93.4
+    },
+    {
+      "name": "liq=15m|bias=3m+1m|entry=1m",
+      "rr": 4.0,
+      "trades": 305,
+      "pnl": 9000.0,
+      "exp_r": 0.1475,
+      "win_rate": 23.0,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "mc_prob_profit": 86.6
+    },
+    {
+      "name": "liq=15m|bias=15m+15m|entry=15m",
+      "rr": 3.0,
+      "trades": 269,
+      "pnl": 8600.0,
+      "exp_r": 0.1599,
+      "win_rate": 29.0,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 91.7
+    },
+    {
+      "name": "liq=15m|bias=15m+5m|entry=1m",
+      "rr": 2.4,
+      "trades": 294,
+      "pnl": 8520.0,
+      "exp_r": 0.1449,
+      "win_rate": 33.7,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "mc_prob_profit": 93.3
+    },
+    {
+      "name": "liq=3m|bias=15m+1m|entry=1m",
+      "rr": 2.4,
+      "trades": 411,
+      "pnl": 8240.0,
+      "exp_r": 0.1002,
+      "win_rate": 32.4,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 91.1
+    },
+    {
+      "name": "liq=15m|bias=15m+3m|entry=1m",
+      "rr": 3.0,
+      "trades": 244,
+      "pnl": 8000.0,
+      "exp_r": 0.1639,
+      "win_rate": 29.1,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "mc_prob_profit": 91.8
+    },
+    {
+      "name": "liq=3m|bias=5m+1m|entry=1m",
+      "rr": 4.0,
+      "trades": 216,
+      "pnl": 6800.0,
+      "exp_r": 0.1574,
+      "win_rate": 23.1,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 86.9
+    },
+    {
+      "name": "liq=15m|bias=5m+1m|entry=1m",
+      "rr": 4.0,
+      "trades": 276,
+      "pnl": 6800.0,
+      "exp_r": 0.1232,
+      "win_rate": 22.5,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "mc_prob_profit": 82.8
+    },
+    {
+      "name": "liq=15m|bias=15m+15m|entry=15m",
+      "rr": 4.0,
+      "trades": 252,
+      "pnl": 6600.0,
+      "exp_r": 0.131,
+      "win_rate": 22.6,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 84.0
+    },
+    {
+      "name": "liq=3m|bias=15m+1m|entry=1m",
+      "rr": 3.0,
+      "trades": 301,
+      "pnl": 6200.0,
+      "exp_r": 0.103,
+      "win_rate": 27.6,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 84.8
+    },
+    {
+      "name": "liq=3m|bias=5m+3m|entry=1m",
+      "rr": 4.0,
+      "trades": 250,
+      "pnl": 6000.0,
+      "exp_r": 0.12,
+      "win_rate": 22.4,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 79.5
+    },
+    {
+      "name": "liq=15m|bias=5m+3m|entry=1m",
+      "rr": 4.0,
+      "trades": 280,
+      "pnl": 6000.0,
+      "exp_r": 0.1071,
+      "win_rate": 22.1,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "mc_prob_profit": 78.6
+    },
+    {
+      "name": "liq=15m|bias=15m+3m|entry=1m",
+      "rr": 2.4,
+      "trades": 293,
+      "pnl": 6000.0,
+      "exp_r": 0.1024,
+      "win_rate": 32.4,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "mc_prob_profit": 85.0
+    },
+    {
+      "name": "liq=15m|bias=5m+3m|entry=3m",
+      "rr": 3.0,
+      "trades": 554,
+      "pnl": 6000.0,
+      "exp_r": 0.0542,
+      "win_rate": 26.4,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 76.6
+    },
+    {
+      "name": "liq=15m|bias=15m+5m|entry=1m",
+      "rr": 4.0,
+      "trades": 221,
+      "pnl": 5800.0,
+      "exp_r": 0.1312,
+      "win_rate": 22.6,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 80.7
+    },
+    {
+      "name": "liq=15m|bias=15m+5m|entry=3m",
+      "rr": 2.0,
+      "trades": 511,
+      "pnl": 5200.0,
+      "exp_r": 0.0509,
+      "win_rate": 35.0,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 77.8
+    },
+    {
+      "name": "liq=3m|bias=15m+3m|entry=1m",
+      "rr": 4.0,
+      "trades": 231,
+      "pnl": 4800.0,
+      "exp_r": 0.1039,
+      "win_rate": 22.1,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "mc_prob_profit": 76.5
+    },
+    {
+      "name": "liq=15m|bias=15m+15m|entry=15m",
+      "rr": 2.4,
+      "trades": 312,
+      "pnl": 3560.0,
+      "exp_r": 0.0571,
+      "win_rate": 31.1,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "mc_prob_profit": 75.2
+    },
+    {
+      "name": "liq=3m|bias=5m+1m|entry=1m",
+      "rr": 3.0,
+      "trades": 646,
+      "pnl": 11600.0,
+      "exp_r": 0.0898,
+      "win_rate": 27.2,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 89.8
+    },
+    {
+      "name": "liq=15m|bias=5m+1m|entry=1m",
+      "rr": 2.4,
+      "trades": 630,
+      "pnl": 10680.0,
+      "exp_r": 0.0848,
+      "win_rate": 31.9,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 90.8
+    },
+    {
+      "name": "liq=3m|bias=3m+1m|entry=1m",
+      "rr": 2.4,
+      "trades": 1008,
+      "pnl": 9880.0,
+      "exp_r": 0.049,
+      "win_rate": 30.9,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 84.4
+    },
+    {
+      "name": "liq=3m|bias=5m+1m|entry=1m",
+      "rr": 2.0,
+      "trades": 1104,
+      "pnl": 9000.0,
+      "exp_r": 0.0408,
+      "win_rate": 34.7,
+      "verdict": "FRAGILE",
+      "wf_green": 3,
+      "mc_prob_profit": 82.2
+    },
+    {
+      "name": "liq=5m|bias=3m+1m|entry=1m",
+      "rr": 2.0,
+      "trades": 1171,
+      "pnl": 7000.0,
+      "exp_r": 0.0299,
+      "win_rate": 34.3,
+      "verdict": "FRAGILE",
+      "wf_green": 3,
+      "mc_prob_profit": 77.5
+    },
+    {
+      "name": "liq=15m|bias=5m+3m|entry=3m",
+      "rr": 4.0,
+      "trades": 383,
+      "pnl": 6400.0,
+      "exp_r": 0.0836,
+      "win_rate": 21.7,
+      "verdict": "FRAGILE",
+      "wf_green": 1,
+      "mc_prob_profit": 79.0
+    },
+    {
+      "name": "liq=5m|bias=5m+3m|entry=1m",
+      "rr": 2.4,
+      "trades": 852,
+      "pnl": 6400.0,
+      "exp_r": 0.0376,
+      "win_rate": 30.5,
+      "verdict": "FRAGILE",
+      "wf_green": 1,
+      "mc_prob_profit": 75.3
+    },
+    {
+      "name": "liq=15m|bias=15m+5m|entry=3m",
+      "rr": 2.4,
+      "trades": 480,
+      "pnl": 6000.0,
+      "exp_r": 0.0625,
+      "win_rate": 31.2,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 78.3
+    },
+    {
+      "name": "liq=15m|bias=5m+3m|entry=3m",
+      "rr": 2.0,
+      "trades": 700,
+      "pnl": 5200.0,
+      "exp_r": 0.0371,
+      "win_rate": 34.6,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 73.7
+    },
+    {
+      "name": "liq=15m|bias=5m+3m|entry=3m",
+      "rr": 2.4,
+      "trades": 609,
+      "pnl": 4680.0,
+      "exp_r": 0.0384,
+      "win_rate": 30.5,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 71.5
+    },
+    {
+      "name": "liq=5m|bias=15m+3m|entry=1m",
+      "rr": 3.0,
+      "trades": 257,
+      "pnl": 4600.0,
+      "exp_r": 0.0895,
+      "win_rate": 27.2,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 78.0
+    },
+    {
+      "name": "liq=5m|bias=15m+5m|entry=3m",
+      "rr": 4.0,
+      "trades": 517,
+      "pnl": 4600.0,
+      "exp_r": 0.0445,
+      "win_rate": 20.9,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 68.0
+    },
+    {
+      "name": "liq=3m|bias=3m+1m|entry=1m",
+      "rr": 2.0,
+      "trades": 1252,
+      "pnl": 4600.0,
+      "exp_r": 0.0184,
+      "win_rate": 33.9,
+      "verdict": "FRAGILE",
+      "wf_green": 3,
+      "mc_prob_profit": 67.8
+    },
+    {
+      "name": "liq=5m|bias=15m+5m|entry=1m",
+      "rr": 2.4,
+      "trades": 301,
+      "pnl": 4400.0,
+      "exp_r": 0.0731,
+      "win_rate": 31.6,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 80.8
+    },
+    {
+      "name": "liq=15m|bias=15m+3m|entry=3m",
+      "rr": 3.0,
+      "trades": 450,
+      "pnl": 3600.0,
+      "exp_r": 0.04,
+      "win_rate": 26.0,
+      "verdict": "FRAGILE",
+      "wf_green": 3,
+      "mc_prob_profit": 68.2
+    },
+    {
+      "name": "liq=3m|bias=15m+5m|entry=3m",
+      "rr": 2.4,
+      "trades": 844,
+      "pnl": 3240.0,
+      "exp_r": 0.0192,
+      "win_rate": 30.0,
+      "verdict": "FRAGILE",
+      "wf_green": 1,
+      "mc_prob_profit": 61.4
+    },
+    {
+      "name": "liq=3m|bias=3m+1m|entry=1m",
+      "rr": 3.0,
+      "trades": 780,
+      "pnl": 3200.0,
+      "exp_r": 0.0205,
+      "win_rate": 25.5,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 61.5
+    },
+    {
+      "name": "liq=5m|bias=5m+1m|entry=1m",
+      "rr": 2.0,
+      "trades": 1001,
+      "pnl": 3200.0,
+      "exp_r": 0.016,
+      "win_rate": 33.9,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 61.8
+    },
+    {
+      "name": "liq=3m|bias=15m+1m|entry=1m",
+      "rr": 4.0,
+      "trades": 201,
+      "pnl": 2800.0,
+      "exp_r": 0.0697,
+      "win_rate": 21.4,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 65.8
+    },
+    {
+      "name": "liq=5m|bias=15m+5m|entry=3m",
+      "rr": 3.0,
+      "trades": 550,
+      "pnl": 2800.0,
+      "exp_r": 0.0255,
+      "win_rate": 25.6,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 65.5
+    },
+    {
+      "name": "liq=5m|bias=15m+3m|entry=3m",
+      "rr": 2.0,
+      "trades": 751,
+      "pnl": 2800.0,
+      "exp_r": 0.0186,
+      "win_rate": 34.0,
+      "verdict": "FRAGILE",
+      "wf_green": 3,
+      "mc_prob_profit": 62.5
+    },
+    {
+      "name": "liq=5m|bias=3m+1m|entry=1m",
+      "rr": 4.0,
+      "trades": 328,
+      "pnl": 2400.0,
+      "exp_r": 0.0366,
+      "win_rate": 20.7,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 64.8
+    },
+    {
+      "name": "liq=5m|bias=15m+3m|entry=3m",
+      "rr": 4.0,
+      "trades": 488,
+      "pnl": 2400.0,
+      "exp_r": 0.0246,
+      "win_rate": 20.5,
+      "verdict": "FRAGILE",
+      "wf_green": 1,
+      "mc_prob_profit": 61.5
+    },
+    {
+      "name": "liq=15m|bias=15m+3m|entry=1m",
+      "rr": 4.0,
+      "trades": 219,
+      "pnl": 2200.0,
+      "exp_r": 0.0502,
+      "win_rate": 21.0,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 64.4
+    },
+    {
+      "name": "liq=15m|bias=15m+5m|entry=5m",
+      "rr": 2.0,
+      "trades": 376,
+      "pnl": 2200.0,
+      "exp_r": 0.0293,
+      "win_rate": 34.3,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 65.4
+    },
+    {
+      "name": "liq=15m|bias=15m+5m|entry=3m",
+      "rr": 3.0,
+      "trades": 457,
+      "pnl": 2200.0,
+      "exp_r": 0.0241,
+      "win_rate": 25.6,
+      "verdict": "FRAGILE",
+      "wf_green": 3,
+      "mc_prob_profit": 61.0
+    },
+    {
+      "name": "liq=3m|bias=5m+3m|entry=3m",
+      "rr": 2.4,
+      "trades": 979,
+      "pnl": 2080.0,
+      "exp_r": 0.0106,
+      "win_rate": 29.7,
+      "verdict": "FRAGILE",
+      "wf_green": 1,
+      "mc_prob_profit": 57.3
+    },
+    {
+      "name": "liq=5m|bias=15m+3m|entry=3m",
+      "rr": 2.4,
+      "trades": 650,
+      "pnl": 1920.0,
+      "exp_r": 0.0148,
+      "win_rate": 29.8,
+      "verdict": "FRAGILE",
+      "wf_green": 3,
+      "mc_prob_profit": 59.3
+    },
+    {
+      "name": "liq=5m|bias=15m+5m|entry=3m",
+      "rr": 2.0,
+      "trades": 751,
+      "pnl": 1600.0,
+      "exp_r": 0.0107,
+      "win_rate": 33.7,
+      "verdict": "FRAGILE",
+      "wf_green": 1,
+      "mc_prob_profit": 59.7
+    },
+    {
+      "name": "liq=5m|bias=5m+1m|entry=1m",
+      "rr": 2.4,
+      "trades": 778,
+      "pnl": 1480.0,
+      "exp_r": 0.0095,
+      "win_rate": 29.7,
+      "verdict": "FRAGILE",
+      "wf_green": 1,
+      "mc_prob_profit": 58.9
+    },
+    {
+      "name": "liq=15m|bias=15m+3m|entry=3m",
+      "rr": 4.0,
+      "trades": 349,
+      "pnl": 1200.0,
+      "exp_r": 0.0172,
+      "win_rate": 20.3,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 58.9
+    },
+    {
+      "name": "liq=5m|bias=15m+3m|entry=1m",
+      "rr": 4.0,
+      "trades": 230,
+      "pnl": 1000.0,
+      "exp_r": 0.0217,
+      "win_rate": 20.4,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 52.8
+    },
+    {
+      "name": "liq=15m|bias=15m+15m|entry=15m",
+      "rr": 2.0,
+      "trades": 325,
+      "pnl": 1000.0,
+      "exp_r": 0.0154,
+      "win_rate": 33.8,
+      "verdict": "FRAGILE",
+      "wf_green": 3,
+      "mc_prob_profit": 54.6
+    },
+    {
+      "name": "liq=5m|bias=15m+5m|entry=3m",
+      "rr": 2.4,
+      "trades": 650,
+      "pnl": 560.0,
+      "exp_r": 0.0043,
+      "win_rate": 29.5,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 51.0
+    },
+    {
+      "name": "liq=15m|bias=15m+5m|entry=3m",
+      "rr": 4.0,
+      "trades": 363,
+      "pnl": 400.0,
+      "exp_r": 0.0055,
+      "win_rate": 20.1,
+      "verdict": "FRAGILE",
+      "wf_green": 1,
+      "mc_prob_profit": 52.4
+    },
+    {
+      "name": "liq=5m|bias=5m+3m|entry=1m",
+      "rr": 3.0,
+      "trades": 731,
+      "pnl": 200.0,
+      "exp_r": 0.0014,
+      "win_rate": 25.0,
+      "verdict": "FRAGILE",
+      "wf_green": 0,
+      "mc_prob_profit": 51.4
+    },
+    {
+      "name": "liq=3m|bias=15m+3m|entry=3m",
+      "rr": 2.0,
+      "trades": 986,
+      "pnl": 200.0,
+      "exp_r": 0.001,
+      "win_rate": 33.4,
+      "verdict": "FRAGILE",
+      "wf_green": 1,
+      "mc_prob_profit": 51.0
+    },
+    {
+      "name": "liq=5m|bias=15m+1m|entry=1m",
+      "rr": 3.0,
+      "trades": 284,
+      "pnl": 0.0,
+      "exp_r": 0.0,
+      "win_rate": 25.0,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 46.8
+    },
+    {
+      "name": "liq=5m|bias=15m+3m|entry=3m",
+      "rr": 3.0,
+      "trades": 544,
+      "pnl": 0.0,
+      "exp_r": 0.0,
+      "win_rate": 25.0,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 44.9
+    },
+    {
+      "name": "liq=5m|bias=3m+1m|entry=1m",
+      "rr": 2.4,
+      "trades": 906,
+      "pnl": -320.0,
+      "exp_r": -0.0018,
+      "win_rate": 29.4,
+      "verdict": "FRAGILE",
+      "wf_green": 1,
+      "mc_prob_profit": 47.6
+    },
+    {
+      "name": "liq=3m|bias=15m+3m|entry=3m",
+      "rr": 2.4,
+      "trades": 879,
+      "pnl": -360.0,
+      "exp_r": -0.002,
+      "win_rate": 29.4,
+      "verdict": "DEAD",
+      "wf_green": 2,
+      "mc_prob_profit": 49.5
+    },
+    {
+      "name": "liq=15m|bias=15m+5m|entry=5m",
+      "rr": 2.4,
+      "trades": 207,
+      "pnl": -600.0,
+      "exp_r": -0.0145,
+      "win_rate": 29.0,
+      "verdict": "FRAGILE",
+      "wf_green": 1,
+      "mc_prob_profit": 46.9
+    },
+    {
+      "name": "liq=3m|bias=15m+5m|entry=3m",
+      "rr": 2.0,
+      "trades": 961,
+      "pnl": -800.0,
+      "exp_r": -0.0042,
+      "win_rate": 33.2,
+      "verdict": "FRAGILE",
+      "wf_green": 1,
+      "mc_prob_profit": 44.2
+    },
+    {
+      "name": "liq=5m|bias=5m+3m|entry=1m",
+      "rr": 4.0,
+      "trades": 329,
+      "pnl": -1800.0,
+      "exp_r": -0.0274,
+      "win_rate": 19.5,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "mc_prob_profit": 40.3
+    },
+    {
+      "name": "liq=15m|bias=15m+5m|entry=5m",
+      "rr": 3.0,
+      "trades": 190,
+      "pnl": -2000.0,
+      "exp_r": -0.0526,
+      "win_rate": 23.7,
+      "verdict": "FRAGILE",
+      "wf_green": 1,
+      "mc_prob_profit": 32.6
+    },
+    {
+      "name": "liq=3m|bias=15m+5m|entry=3m",
+      "rr": 4.0,
+      "trades": 454,
+      "pnl": -2800.0,
+      "exp_r": -0.0308,
+      "win_rate": 19.4,
+      "verdict": "DEAD",
+      "wf_green": 1,
+      "mc_prob_profit": 37.0
+    },
+    {
+      "name": "liq=5m|bias=15m+3m|entry=1m",
+      "rr": 2.4,
+      "trades": 314,
+      "pnl": -2960.0,
+      "exp_r": -0.0471,
+      "win_rate": 28.0,
+      "verdict": "FRAGILE",
+      "wf_green": 1,
+      "mc_prob_profit": 28.3
+    },
+    {
+      "name": "liq=5m|bias=15m+5m|entry=1m",
+      "rr": 4.0,
+      "trades": 236,
+      "pnl": -3200.0,
+      "exp_r": -0.0678,
+      "win_rate": 18.6,
+      "verdict": "DEAD",
+      "wf_green": 1,
+      "mc_prob_profit": 28.1
+    },
+    {
+      "name": "liq=15m|bias=15m+5m|entry=5m",
+      "rr": 4.0,
+      "trades": 166,
+      "pnl": -3200.0,
+      "exp_r": -0.0964,
+      "win_rate": 18.1,
+      "verdict": "DEAD",
+      "wf_green": 1,
+      "mc_prob_profit": 23.4
+    },
+    {
+      "name": "liq=5m|bias=15m+5m|entry=5m",
+      "rr": 2.0,
+      "trades": 610,
+      "pnl": -3800.0,
+      "exp_r": -0.0311,
+      "win_rate": 32.3,
+      "verdict": "DEAD",
+      "wf_green": 1,
+      "mc_prob_profit": 27.5
+    },
+    {
+      "name": "liq=5m|bias=15m+1m|entry=1m",
+      "rr": 2.4,
+      "trades": 314,
+      "pnl": -4320.0,
+      "exp_r": -0.0688,
+      "win_rate": 27.4,
+      "verdict": "DEAD",
+      "wf_green": 0,
+      "mc_prob_profit": 21.9
+    },
+    {
+      "name": "liq=5m|bias=15m+1m|entry=1m",
+      "rr": 4.0,
+      "trades": 222,
+      "pnl": -4400.0,
+      "exp_r": -0.0991,
+      "win_rate": 18.0,
+      "verdict": "DEAD",
+      "wf_green": 0,
+      "mc_prob_profit": 22.8
+    },
+    {
+      "name": "liq=3m|bias=5m+3m|entry=3m",
+      "rr": 4.0,
+      "trades": 466,
+      "pnl": -5200.0,
+      "exp_r": -0.0558,
+      "win_rate": 18.9,
+      "verdict": "DEAD",
+      "wf_green": 0,
+      "mc_prob_profit": 24.9
+    },
+    {
+      "name": "liq=5m|bias=15m+5m|entry=5m",
+      "rr": 4.0,
+      "trades": 181,
+      "pnl": -5200.0,
+      "exp_r": -0.1436,
+      "win_rate": 17.1,
+      "verdict": "DEAD",
+      "wf_green": 1,
+      "mc_prob_profit": 13.0
+    },
+    {
+      "name": "liq=5m|bias=15m+5m|entry=5m",
+      "rr": 2.4,
+      "trades": 313,
+      "pnl": -5480.0,
+      "exp_r": -0.0875,
+      "win_rate": 26.8,
+      "verdict": "DEAD",
+      "wf_green": 1,
+      "mc_prob_profit": 13.9
+    },
+    {
+      "name": "liq=3m|bias=5m+3m|entry=3m",
+      "rr": 3.0,
+      "trades": 604,
+      "pnl": -5600.0,
+      "exp_r": -0.0464,
+      "win_rate": 23.8,
+      "verdict": "DEAD",
+      "wf_green": 1,
+      "mc_prob_profit": 23.4
+    },
+    {
+      "name": "liq=5m|bias=15m+5m|entry=5m",
+      "rr": 3.0,
+      "trades": 214,
+      "pnl": -6000.0,
+      "exp_r": -0.1402,
+      "win_rate": 21.5,
+      "verdict": "DEAD",
+      "wf_green": 0,
+      "mc_prob_profit": 11.1
+    },
+    {
+      "name": "liq=3m|bias=15m+3m|entry=3m",
+      "rr": 4.0,
+      "trades": 486,
+      "pnl": -6200.0,
+      "exp_r": -0.0638,
+      "win_rate": 18.7,
+      "verdict": "DEAD",
+      "wf_green": 1,
+      "mc_prob_profit": 23.3
+    },
+    {
+      "name": "liq=3m|bias=5m+3m|entry=3m",
+      "rr": 2.0,
+      "trades": 1130,
+      "pnl": -6400.0,
+      "exp_r": -0.0283,
+      "win_rate": 32.4,
+      "verdict": "DEAD",
+      "wf_green": 1,
+      "mc_prob_profit": 25.2
+    },
+    {
+      "name": "liq=5m|bias=5m+1m|entry=1m",
+      "rr": 3.0,
+      "trades": 661,
+      "pnl": -7400.0,
+      "exp_r": -0.056,
+      "win_rate": 23.6,
+      "verdict": "DEAD",
+      "wf_green": 0,
+      "mc_prob_profit": 18.6
+    },
+    {
+      "name": "liq=5m|bias=5m+1m|entry=1m",
+      "rr": 4.0,
+      "trades": 252,
+      "pnl": -7400.0,
+      "exp_r": -0.1468,
+      "win_rate": 17.1,
+      "verdict": "DEAD",
+      "wf_green": 1,
+      "mc_prob_profit": 10.8
+    },
+    {
+      "name": "liq=3m|bias=15m+3m|entry=3m",
+      "rr": 3.0,
+      "trades": 595,
+      "pnl": -7800.0,
+      "exp_r": -0.0655,
+      "win_rate": 23.4,
+      "verdict": "DEAD",
+      "wf_green": 1,
+      "mc_prob_profit": 17.2
+    },
+    {
+      "name": "liq=5m|bias=5m+3m|entry=3m",
+      "rr": 3.0,
+      "trades": 632,
+      "pnl": -8000.0,
+      "exp_r": -0.0633,
+      "win_rate": 23.4,
+      "verdict": "DEAD",
+      "wf_green": 1,
+      "mc_prob_profit": 15.0
+    },
+    {
+      "name": "liq=5m|bias=5m+3m|entry=3m",
+      "rr": 4.0,
+      "trades": 510,
+      "pnl": -8000.0,
+      "exp_r": -0.0784,
+      "win_rate": 18.4,
+      "verdict": "DEAD",
+      "wf_green": 0,
+      "mc_prob_profit": 17.0
+    },
+    {
+      "name": "liq=3m|bias=15m+5m|entry=3m",
+      "rr": 3.0,
+      "trades": 589,
+      "pnl": -8200.0,
+      "exp_r": -0.0696,
+      "win_rate": 23.3,
+      "verdict": "DEAD",
+      "wf_green": 2,
+      "mc_prob_profit": 14.8
+    },
+    {
+      "name": "liq=5m|bias=5m+3m|entry=3m",
+      "rr": 2.0,
+      "trades": 969,
+      "pnl": -9600.0,
+      "exp_r": -0.0495,
+      "win_rate": 31.7,
+      "verdict": "DEAD",
+      "wf_green": 0,
+      "mc_prob_profit": 13.8
+    },
+    {
+      "name": "liq=5m|bias=5m+3m|entry=3m",
+      "rr": 2.4,
+      "trades": 843,
+      "pnl": -11520.0,
+      "exp_r": -0.0683,
+      "win_rate": 27.4,
+      "verdict": "DEAD",
+      "wf_green": 0,
+      "mc_prob_profit": 10.4
+    }
+  ],
+  "survives_full": [
+    {
+      "name": "liq=3m|bias=15m+5m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "15m",
+      "bias_b": "5m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 1089,
+      "pnl": 57600.0,
+      "exp_r": 0.2645,
+      "win_rate": 42.1,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 100.0,
+      "tests": {
+        "1_full": {
+          "n": 1089,
+          "pnl": 57600.0,
+          "exp_r": 0.2645
+        },
+        "2_oos70": {
+          "n": 327,
+          "pnl": 17400.0,
+          "exp_r": 0.2661
+        },
+        "3_wf_fold_1": {
+          "n": 215,
+          "pnl": 13400.0,
+          "exp_r": 0.3116
+        },
+        "4_wf_fold_2": {
+          "n": 150,
+          "pnl": 4800.0,
+          "exp_r": 0.16
+        },
+        "5_wf_fold_3": {
+          "n": 159,
+          "pnl": 8400.0,
+          "exp_r": 0.2642
+        },
+        "6_wf_fold_4": {
+          "n": 168,
+          "pnl": 9000.0,
+          "exp_r": 0.2679
+        },
+        "7_torture_spread": {
+          "n": 1089,
+          "pnl": 24930.0,
+          "exp_r": 0.1145
+        },
+        "8_torture_skip": {
+          "n": 722,
+          "pnl": 41000.0,
+          "exp_r": 0.2839
+        }
+      }
+    },
+    {
+      "name": "liq=5m|bias=15m+5m|entry=1m",
+      "liq_tf": "5m",
+      "bias_a": "15m",
+      "bias_b": "5m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 906,
+      "pnl": 41400.0,
+      "exp_r": 0.2285,
+      "win_rate": 40.9,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 100.0,
+      "tests": {
+        "1_full": {
+          "n": 906,
+          "pnl": 41400.0,
+          "exp_r": 0.2285
+        },
+        "2_oos70": {
+          "n": 255,
+          "pnl": 15600.0,
+          "exp_r": 0.3059
+        },
+        "3_wf_fold_1": {
+          "n": 191,
+          "pnl": 11600.0,
+          "exp_r": 0.3037
+        },
+        "4_wf_fold_2": {
+          "n": 131,
+          "pnl": -1600.0,
+          "exp_r": -0.0611
+        },
+        "5_wf_fold_3": {
+          "n": 70,
+          "pnl": 6400.0,
+          "exp_r": 0.4571
+        },
+        "6_wf_fold_4": {
+          "n": 185,
+          "pnl": 9200.0,
+          "exp_r": 0.2486
+        },
+        "7_torture_spread": {
+          "n": 906,
+          "pnl": 14220.0,
+          "exp_r": 0.0785
+        },
+        "8_torture_skip": {
+          "n": 600,
+          "pnl": 29400.0,
+          "exp_r": 0.245
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=3m+1m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "3m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 3.0,
+      "trades": 573,
+      "pnl": 39800.0,
+      "exp_r": 0.3473,
+      "win_rate": 33.7,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 100.0,
+      "tests": {
+        "1_full": {
+          "n": 573,
+          "pnl": 39800.0,
+          "exp_r": 0.3473
+        },
+        "2_oos70": {
+          "n": 217,
+          "pnl": 11800.0,
+          "exp_r": 0.2719
+        },
+        "3_wf_fold_1": {
+          "n": 105,
+          "pnl": 600.0,
+          "exp_r": 0.0286
+        },
+        "4_wf_fold_2": {
+          "n": 72,
+          "pnl": 4800.0,
+          "exp_r": 0.3333
+        },
+        "5_wf_fold_3": {
+          "n": 109,
+          "pnl": 600.0,
+          "exp_r": 0.0275
+        },
+        "6_wf_fold_4": {
+          "n": 108,
+          "pnl": 11200.0,
+          "exp_r": 0.5185
+        },
+        "7_torture_spread": {
+          "n": 573,
+          "pnl": 22610.0,
+          "exp_r": 0.1973
+        },
+        "8_torture_skip": {
+          "n": 379,
+          "pnl": 27400.0,
+          "exp_r": 0.3615
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=3m+1m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "3m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 865,
+      "pnl": 34600.0,
+      "exp_r": 0.2,
+      "win_rate": 40.0,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 100.0,
+      "tests": {
+        "1_full": {
+          "n": 865,
+          "pnl": 34600.0,
+          "exp_r": 0.2
+        },
+        "2_oos70": {
+          "n": 306,
+          "pnl": 13800.0,
+          "exp_r": 0.2255
+        },
+        "3_wf_fold_1": {
+          "n": 143,
+          "pnl": 2000.0,
+          "exp_r": 0.0699
+        },
+        "4_wf_fold_2": {
+          "n": 110,
+          "pnl": 4400.0,
+          "exp_r": 0.2
+        },
+        "5_wf_fold_3": {
+          "n": 139,
+          "pnl": 6400.0,
+          "exp_r": 0.2302
+        },
+        "6_wf_fold_4": {
+          "n": 167,
+          "pnl": 7400.0,
+          "exp_r": 0.2216
+        },
+        "7_torture_spread": {
+          "n": 865,
+          "pnl": 8650.0,
+          "exp_r": 0.05
+        },
+        "8_torture_skip": {
+          "n": 574,
+          "pnl": 21400.0,
+          "exp_r": 0.1864
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=3m+1m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "3m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 2.4,
+      "trades": 748,
+      "pnl": 30600.0,
+      "exp_r": 0.2045,
+      "win_rate": 35.4,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 99.9,
+      "tests": {
+        "1_full": {
+          "n": 748,
+          "pnl": 30600.0,
+          "exp_r": 0.2045
+        },
+        "2_oos70": {
+          "n": 274,
+          "pnl": 10480.0,
+          "exp_r": 0.1912
+        },
+        "3_wf_fold_1": {
+          "n": 122,
+          "pnl": -600.0,
+          "exp_r": -0.0246
+        },
+        "4_wf_fold_2": {
+          "n": 98,
+          "pnl": 3520.0,
+          "exp_r": 0.1796
+        },
+        "5_wf_fold_3": {
+          "n": 121,
+          "pnl": 3000.0,
+          "exp_r": 0.124
+        },
+        "6_wf_fold_4": {
+          "n": 153,
+          "pnl": 7480.0,
+          "exp_r": 0.2444
+        },
+        "7_torture_spread": {
+          "n": 748,
+          "pnl": 8160.0,
+          "exp_r": 0.0545
+        },
+        "8_torture_skip": {
+          "n": 495,
+          "pnl": 17280.0,
+          "exp_r": 0.1745
+        }
+      }
+    },
+    {
+      "name": "liq=3m|bias=15m+3m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "15m",
+      "bias_b": "3m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 1068,
+      "pnl": 30600.0,
+      "exp_r": 0.1433,
+      "win_rate": 38.1,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 99.9,
+      "tests": {
+        "1_full": {
+          "n": 1068,
+          "pnl": 30600.0,
+          "exp_r": 0.1433
+        },
+        "2_oos70": {
+          "n": 323,
+          "pnl": 8600.0,
+          "exp_r": 0.1331
+        },
+        "3_wf_fold_1": {
+          "n": 201,
+          "pnl": 9000.0,
+          "exp_r": 0.2239
+        },
+        "4_wf_fold_2": {
+          "n": 150,
+          "pnl": 1200.0,
+          "exp_r": 0.04
+        },
+        "5_wf_fold_3": {
+          "n": 145,
+          "pnl": 5200.0,
+          "exp_r": 0.1793
+        },
+        "6_wf_fold_4": {
+          "n": 178,
+          "pnl": 3400.0,
+          "exp_r": 0.0955
+        },
+        "7_torture_spread": {
+          "n": 1068,
+          "pnl": -1440.0,
+          "exp_r": -0.0067
+        },
+        "8_torture_skip": {
+          "n": 710,
+          "pnl": 12200.0,
+          "exp_r": 0.0859
+        }
+      }
+    },
+    {
+      "name": "liq=3m|bias=5m+3m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "5m",
+      "bias_b": "3m",
+      "entry_tf": "1m",
+      "rr": 2.4,
+      "trades": 1065,
+      "pnl": 29760.0,
+      "exp_r": 0.1397,
+      "win_rate": 33.5,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 99.8,
+      "tests": {
+        "1_full": {
+          "n": 1065,
+          "pnl": 29760.0,
+          "exp_r": 0.1397
+        },
+        "2_oos70": {
+          "n": 283,
+          "pnl": 10040.0,
+          "exp_r": 0.1774
+        },
+        "3_wf_fold_1": {
+          "n": 218,
+          "pnl": 6720.0,
+          "exp_r": 0.1541
+        },
+        "4_wf_fold_2": {
+          "n": 162,
+          "pnl": 1600.0,
+          "exp_r": 0.0494
+        },
+        "5_wf_fold_3": {
+          "n": 73,
+          "pnl": -320.0,
+          "exp_r": -0.0219
+        },
+        "6_wf_fold_4": {
+          "n": 210,
+          "pnl": 10360.0,
+          "exp_r": 0.2467
+        },
+        "7_torture_spread": {
+          "n": 1065,
+          "pnl": -2190.0,
+          "exp_r": -0.0103
+        },
+        "8_torture_skip": {
+          "n": 710,
+          "pnl": 16440.0,
+          "exp_r": 0.1158
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=15m+1m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "15m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 623,
+      "pnl": 29000.0,
+      "exp_r": 0.2327,
+      "win_rate": 41.1,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 100.0,
+      "tests": {
+        "1_full": {
+          "n": 623,
+          "pnl": 29000.0,
+          "exp_r": 0.2327
+        },
+        "2_oos70": {
+          "n": 202,
+          "pnl": 13600.0,
+          "exp_r": 0.3366
+        },
+        "3_wf_fold_1": {
+          "n": 108,
+          "pnl": 4800.0,
+          "exp_r": 0.2222
+        },
+        "4_wf_fold_2": {
+          "n": 99,
+          "pnl": 1200.0,
+          "exp_r": 0.0606
+        },
+        "5_wf_fold_3": {
+          "n": 96,
+          "pnl": 7200.0,
+          "exp_r": 0.375
+        },
+        "6_wf_fold_4": {
+          "n": 106,
+          "pnl": 6400.0,
+          "exp_r": 0.3019
+        },
+        "7_torture_spread": {
+          "n": 623,
+          "pnl": 10310.0,
+          "exp_r": 0.0827
+        },
+        "8_torture_skip": {
+          "n": 413,
+          "pnl": 21200.0,
+          "exp_r": 0.2567
+        }
+      }
+    },
+    {
+      "name": "liq=3m|bias=5m+3m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "5m",
+      "bias_b": "3m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 1317,
+      "pnl": 27600.0,
+      "exp_r": 0.1048,
+      "win_rate": 36.8,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 99.7,
+      "tests": {
+        "1_full": {
+          "n": 1317,
+          "pnl": 27600.0,
+          "exp_r": 0.1048
+        },
+        "2_oos70": {
+          "n": 375,
+          "pnl": 10200.0,
+          "exp_r": 0.136
+        },
+        "3_wf_fold_1": {
+          "n": 246,
+          "pnl": 7200.0,
+          "exp_r": 0.1463
+        },
+        "4_wf_fold_2": {
+          "n": 224,
+          "pnl": 200.0,
+          "exp_r": 0.0045
+        },
+        "5_wf_fold_3": {
+          "n": 165,
+          "pnl": 4200.0,
+          "exp_r": 0.1273
+        },
+        "6_wf_fold_4": {
+          "n": 210,
+          "pnl": 6000.0,
+          "exp_r": 0.1429
+        },
+        "7_torture_spread": {
+          "n": 1317,
+          "pnl": -11910.0,
+          "exp_r": -0.0452
+        },
+        "8_torture_skip": {
+          "n": 874,
+          "pnl": 23200.0,
+          "exp_r": 0.1327
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=15m+5m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "15m",
+      "bias_b": "5m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 605,
+      "pnl": 26600.0,
+      "exp_r": 0.2198,
+      "win_rate": 40.7,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 100.0,
+      "tests": {
+        "1_full": {
+          "n": 605,
+          "pnl": 26600.0,
+          "exp_r": 0.2198
+        },
+        "2_oos70": {
+          "n": 205,
+          "pnl": 14200.0,
+          "exp_r": 0.3463
+        },
+        "3_wf_fold_1": {
+          "n": 105,
+          "pnl": 4200.0,
+          "exp_r": 0.2
+        },
+        "4_wf_fold_2": {
+          "n": 97,
+          "pnl": -800.0,
+          "exp_r": -0.0412
+        },
+        "5_wf_fold_3": {
+          "n": 91,
+          "pnl": 7000.0,
+          "exp_r": 0.3846
+        },
+        "6_wf_fold_4": {
+          "n": 114,
+          "pnl": 7200.0,
+          "exp_r": 0.3158
+        },
+        "7_torture_spread": {
+          "n": 605,
+          "pnl": 8450.0,
+          "exp_r": 0.0698
+        },
+        "8_torture_skip": {
+          "n": 402,
+          "pnl": 22200.0,
+          "exp_r": 0.2761
+        }
+      }
+    },
+    {
+      "name": "liq=5m|bias=15m+3m|entry=1m",
+      "liq_tf": "5m",
+      "bias_a": "15m",
+      "bias_b": "3m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 868,
+      "pnl": 26200.0,
+      "exp_r": 0.1509,
+      "win_rate": 38.4,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 99.7,
+      "tests": {
+        "1_full": {
+          "n": 868,
+          "pnl": 26200.0,
+          "exp_r": 0.1509
+        },
+        "2_oos70": {
+          "n": 251,
+          "pnl": 12200.0,
+          "exp_r": 0.243
+        },
+        "3_wf_fold_1": {
+          "n": 181,
+          "pnl": 2800.0,
+          "exp_r": 0.0773
+        },
+        "4_wf_fold_2": {
+          "n": 124,
+          "pnl": -800.0,
+          "exp_r": -0.0323
+        },
+        "5_wf_fold_3": {
+          "n": 65,
+          "pnl": 6200.0,
+          "exp_r": 0.4769
+        },
+        "6_wf_fold_4": {
+          "n": 186,
+          "pnl": 6000.0,
+          "exp_r": 0.1613
+        },
+        "7_torture_spread": {
+          "n": 868,
+          "pnl": 160.0,
+          "exp_r": 0.0009
+        },
+        "8_torture_skip": {
+          "n": 576,
+          "pnl": 21000.0,
+          "exp_r": 0.1823
+        }
+      }
+    },
+    {
+      "name": "liq=3m|bias=15m+5m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "15m",
+      "bias_b": "5m",
+      "entry_tf": "1m",
+      "rr": 2.4,
+      "trades": 394,
+      "pnl": 24560.0,
+      "exp_r": 0.3117,
+      "win_rate": 38.6,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 100.0,
+      "tests": {
+        "1_full": {
+          "n": 394,
+          "pnl": 24560.0,
+          "exp_r": 0.3117
+        },
+        "2_oos70": {
+          "n": 187,
+          "pnl": 10200.0,
+          "exp_r": 0.2727
+        },
+        "3_wf_fold_1": {
+          "n": 69,
+          "pnl": 6600.0,
+          "exp_r": 0.4783
+        },
+        "4_wf_fold_2": {
+          "n": 136,
+          "pnl": 7480.0,
+          "exp_r": 0.275
+        },
+        "5_wf_fold_3": {
+          "n": 46,
+          "pnl": 3040.0,
+          "exp_r": 0.3304
+        },
+        "6_wf_fold_4": {
+          "n": 141,
+          "pnl": 7160.0,
+          "exp_r": 0.2539
+        },
+        "7_torture_spread": {
+          "n": 394,
+          "pnl": 12740.0,
+          "exp_r": 0.1617
+        },
+        "8_torture_skip": {
+          "n": 262,
+          "pnl": 13560.0,
+          "exp_r": 0.2588
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=5m+1m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "5m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 3.0,
+      "trades": 469,
+      "pnl": 19800.0,
+      "exp_r": 0.2111,
+      "win_rate": 30.3,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "wf_n": 4,
+      "mc_prob_profit": 99.2,
+      "tests": {
+        "1_full": {
+          "n": 469,
+          "pnl": 19800.0,
+          "exp_r": 0.2111
+        },
+        "2_oos70": {
+          "n": 174,
+          "pnl": 10800.0,
+          "exp_r": 0.3103
+        },
+        "3_wf_fold_1": {
+          "n": 109,
+          "pnl": 1400.0,
+          "exp_r": 0.0642
+        },
+        "4_wf_fold_2": {
+          "n": 69,
+          "pnl": -3400.0,
+          "exp_r": -0.2464
+        },
+        "5_wf_fold_3": {
+          "n": 96,
+          "pnl": -800.0,
+          "exp_r": -0.0417
+        },
+        "6_wf_fold_4": {
+          "n": 78,
+          "pnl": 11600.0,
+          "exp_r": 0.7436
+        },
+        "7_torture_spread": {
+          "n": 469,
+          "pnl": 5730.0,
+          "exp_r": 0.0611
+        },
+        "8_torture_skip": {
+          "n": 310,
+          "pnl": 19600.0,
+          "exp_r": 0.3161
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=5m+3m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "5m",
+      "bias_b": "3m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 753,
+      "pnl": 19200.0,
+      "exp_r": 0.1275,
+      "win_rate": 37.6,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "wf_n": 4,
+      "mc_prob_profit": 99.0,
+      "tests": {
+        "1_full": {
+          "n": 753,
+          "pnl": 19200.0,
+          "exp_r": 0.1275
+        },
+        "2_oos70": {
+          "n": 255,
+          "pnl": 6000.0,
+          "exp_r": 0.1176
+        },
+        "3_wf_fold_1": {
+          "n": 136,
+          "pnl": 2800.0,
+          "exp_r": 0.1029
+        },
+        "4_wf_fold_2": {
+          "n": 106,
+          "pnl": -2600.0,
+          "exp_r": -0.1226
+        },
+        "5_wf_fold_3": {
+          "n": 110,
+          "pnl": -400.0,
+          "exp_r": -0.0182
+        },
+        "6_wf_fold_4": {
+          "n": 145,
+          "pnl": 6400.0,
+          "exp_r": 0.2207
+        },
+        "7_torture_spread": {
+          "n": 753,
+          "pnl": -3390.0,
+          "exp_r": -0.0225
+        },
+        "8_torture_skip": {
+          "n": 498,
+          "pnl": 9600.0,
+          "exp_r": 0.0964
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=15m+3m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "15m",
+      "bias_b": "3m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 580,
+      "pnl": 18400.0,
+      "exp_r": 0.1586,
+      "win_rate": 38.6,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 99.5,
+      "tests": {
+        "1_full": {
+          "n": 580,
+          "pnl": 18400.0,
+          "exp_r": 0.1586
+        },
+        "2_oos70": {
+          "n": 195,
+          "pnl": 9000.0,
+          "exp_r": 0.2308
+        },
+        "3_wf_fold_1": {
+          "n": 96,
+          "pnl": 2400.0,
+          "exp_r": 0.125
+        },
+        "4_wf_fold_2": {
+          "n": 86,
+          "pnl": -2200.0,
+          "exp_r": -0.1279
+        },
+        "5_wf_fold_3": {
+          "n": 85,
+          "pnl": 3400.0,
+          "exp_r": 0.2
+        },
+        "6_wf_fold_4": {
+          "n": 110,
+          "pnl": 5600.0,
+          "exp_r": 0.2545
+        },
+        "7_torture_spread": {
+          "n": 580,
+          "pnl": 1000.0,
+          "exp_r": 0.0086
+        },
+        "8_torture_skip": {
+          "n": 386,
+          "pnl": 14600.0,
+          "exp_r": 0.1891
+        }
+      }
+    },
+    {
+      "name": "liq=3m|bias=15m+1m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "15m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 1049,
+      "pnl": 18200.0,
+      "exp_r": 0.0867,
+      "win_rate": 36.2,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 97.2,
+      "tests": {
+        "1_full": {
+          "n": 1049,
+          "pnl": 18200.0,
+          "exp_r": 0.0867
+        },
+        "2_oos70": {
+          "n": 329,
+          "pnl": 8600.0,
+          "exp_r": 0.1307
+        },
+        "3_wf_fold_1": {
+          "n": 206,
+          "pnl": 6200.0,
+          "exp_r": 0.1505
+        },
+        "4_wf_fold_2": {
+          "n": 147,
+          "pnl": -3000.0,
+          "exp_r": -0.102
+        },
+        "5_wf_fold_3": {
+          "n": 137,
+          "pnl": 3800.0,
+          "exp_r": 0.1387
+        },
+        "6_wf_fold_4": {
+          "n": 192,
+          "pnl": 4800.0,
+          "exp_r": 0.125
+        },
+        "7_torture_spread": {
+          "n": 1049,
+          "pnl": -13270.0,
+          "exp_r": -0.0633
+        },
+        "8_torture_skip": {
+          "n": 698,
+          "pnl": 12800.0,
+          "exp_r": 0.0917
+        }
+      }
+    },
+    {
+      "name": "liq=5m|bias=15m+1m|entry=1m",
+      "liq_tf": "5m",
+      "bias_a": "15m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 856,
+      "pnl": 17200.0,
+      "exp_r": 0.1005,
+      "win_rate": 36.7,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 97.4,
+      "tests": {
+        "1_full": {
+          "n": 856,
+          "pnl": 17200.0,
+          "exp_r": 0.1005
+        },
+        "2_oos70": {
+          "n": 245,
+          "pnl": 6200.0,
+          "exp_r": 0.1265
+        },
+        "3_wf_fold_1": {
+          "n": 162,
+          "pnl": 4200.0,
+          "exp_r": 0.1296
+        },
+        "4_wf_fold_2": {
+          "n": 113,
+          "pnl": -2800.0,
+          "exp_r": -0.1239
+        },
+        "5_wf_fold_3": {
+          "n": 63,
+          "pnl": 5400.0,
+          "exp_r": 0.4286
+        },
+        "6_wf_fold_4": {
+          "n": 182,
+          "pnl": 800.0,
+          "exp_r": 0.022
+        },
+        "7_torture_spread": {
+          "n": 856,
+          "pnl": -8480.0,
+          "exp_r": -0.0495
+        },
+        "8_torture_skip": {
+          "n": 569,
+          "pnl": 15800.0,
+          "exp_r": 0.1388
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=5m+1m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "5m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 740,
+      "pnl": 17000.0,
+      "exp_r": 0.1149,
+      "win_rate": 37.2,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 98.9,
+      "tests": {
+        "1_full": {
+          "n": 740,
+          "pnl": 17000.0,
+          "exp_r": 0.1149
+        },
+        "2_oos70": {
+          "n": 247,
+          "pnl": 8800.0,
+          "exp_r": 0.1781
+        },
+        "3_wf_fold_1": {
+          "n": 150,
+          "pnl": 1200.0,
+          "exp_r": 0.04
+        },
+        "4_wf_fold_2": {
+          "n": 98,
+          "pnl": -1600.0,
+          "exp_r": -0.0816
+        },
+        "5_wf_fold_3": {
+          "n": 113,
+          "pnl": 800.0,
+          "exp_r": 0.0354
+        },
+        "6_wf_fold_4": {
+          "n": 134,
+          "pnl": 8000.0,
+          "exp_r": 0.2985
+        },
+        "7_torture_spread": {
+          "n": 740,
+          "pnl": -5200.0,
+          "exp_r": -0.0351
+        },
+        "8_torture_skip": {
+          "n": 490,
+          "pnl": 7600.0,
+          "exp_r": 0.0776
+        }
+      }
+    },
+    {
+      "name": "liq=3m|bias=5m+3m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "5m",
+      "bias_b": "3m",
+      "entry_tf": "1m",
+      "rr": 3.0,
+      "trades": 774,
+      "pnl": 16400.0,
+      "exp_r": 0.1059,
+      "win_rate": 27.6,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "wf_n": 4,
+      "mc_prob_profit": 94.8,
+      "tests": {
+        "1_full": {
+          "n": 774,
+          "pnl": 16400.0,
+          "exp_r": 0.1059
+        },
+        "2_oos70": {
+          "n": 143,
+          "pnl": 5800.0,
+          "exp_r": 0.2028
+        },
+        "3_wf_fold_1": {
+          "n": 164,
+          "pnl": 5600.0,
+          "exp_r": 0.1707
+        },
+        "4_wf_fold_2": {
+          "n": 124,
+          "pnl": -2400.0,
+          "exp_r": -0.0968
+        },
+        "5_wf_fold_3": {
+          "n": 1,
+          "pnl": -200.0,
+          "exp_r": -1.0
+        },
+        "6_wf_fold_4": {
+          "n": 142,
+          "pnl": 6000.0,
+          "exp_r": 0.2113
+        },
+        "7_torture_spread": {
+          "n": 774,
+          "pnl": -6820.0,
+          "exp_r": -0.0441
+        },
+        "8_torture_skip": {
+          "n": 512,
+          "pnl": 7200.0,
+          "exp_r": 0.0703
+        }
+      }
+    },
+    {
+      "name": "liq=3m|bias=5m+1m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "5m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 2.4,
+      "trades": 886,
+      "pnl": 15920.0,
+      "exp_r": 0.0898,
+      "win_rate": 32.1,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 95.8,
+      "tests": {
+        "1_full": {
+          "n": 886,
+          "pnl": 15920.0,
+          "exp_r": 0.0898
+        },
+        "2_oos70": {
+          "n": 256,
+          "pnl": 5240.0,
+          "exp_r": 0.1023
+        },
+        "3_wf_fold_1": {
+          "n": 187,
+          "pnl": 2720.0,
+          "exp_r": 0.0727
+        },
+        "4_wf_fold_2": {
+          "n": 141,
+          "pnl": 1040.0,
+          "exp_r": 0.0369
+        },
+        "5_wf_fold_3": {
+          "n": 64,
+          "pnl": 800.0,
+          "exp_r": 0.0625
+        },
+        "6_wf_fold_4": {
+          "n": 192,
+          "pnl": 4440.0,
+          "exp_r": 0.1156
+        },
+        "7_torture_spread": {
+          "n": 886,
+          "pnl": -10660.0,
+          "exp_r": -0.0602
+        },
+        "8_torture_skip": {
+          "n": 585,
+          "pnl": 12200.0,
+          "exp_r": 0.1043
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=5m+3m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "5m",
+      "bias_b": "3m",
+      "entry_tf": "1m",
+      "rr": 3.0,
+      "trades": 491,
+      "pnl": 15400.0,
+      "exp_r": 0.1568,
+      "win_rate": 28.9,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 97.8,
+      "tests": {
+        "1_full": {
+          "n": 491,
+          "pnl": 15400.0,
+          "exp_r": 0.1568
+        },
+        "2_oos70": {
+          "n": 169,
+          "pnl": 7800.0,
+          "exp_r": 0.2308
+        },
+        "3_wf_fold_1": {
+          "n": 115,
+          "pnl": 1000.0,
+          "exp_r": 0.0435
+        },
+        "4_wf_fold_2": {
+          "n": 70,
+          "pnl": -3600.0,
+          "exp_r": -0.2571
+        },
+        "5_wf_fold_3": {
+          "n": 87,
+          "pnl": 200.0,
+          "exp_r": 0.0115
+        },
+        "6_wf_fold_4": {
+          "n": 82,
+          "pnl": 7600.0,
+          "exp_r": 0.4634
+        },
+        "7_torture_spread": {
+          "n": 491,
+          "pnl": 670.0,
+          "exp_r": 0.0068
+        },
+        "8_torture_skip": {
+          "n": 326,
+          "pnl": 15600.0,
+          "exp_r": 0.2393
+        }
+      }
+    },
+    {
+      "name": "liq=5m|bias=5m+3m|entry=1m",
+      "liq_tf": "5m",
+      "bias_a": "5m",
+      "bias_b": "3m",
+      "entry_tf": "1m",
+      "rr": 2.0,
+      "trades": 1086,
+      "pnl": 15000.0,
+      "exp_r": 0.0691,
+      "win_rate": 35.6,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 93.3,
+      "tests": {
+        "1_full": {
+          "n": 1086,
+          "pnl": 15000.0,
+          "exp_r": 0.0691
+        },
+        "2_oos70": {
+          "n": 299,
+          "pnl": 5600.0,
+          "exp_r": 0.0936
+        },
+        "3_wf_fold_1": {
+          "n": 238,
+          "pnl": 1000.0,
+          "exp_r": 0.021
+        },
+        "4_wf_fold_2": {
+          "n": 193,
+          "pnl": 1600.0,
+          "exp_r": 0.0415
+        },
+        "5_wf_fold_3": {
+          "n": 66,
+          "pnl": 2400.0,
+          "exp_r": 0.1818
+        },
+        "6_wf_fold_4": {
+          "n": 233,
+          "pnl": 3200.0,
+          "exp_r": 0.0687
+        },
+        "7_torture_spread": {
+          "n": 1086,
+          "pnl": -17580.0,
+          "exp_r": -0.0809
+        },
+        "8_torture_skip": {
+          "n": 721,
+          "pnl": 4600.0,
+          "exp_r": 0.0319
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=5m+3m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "5m",
+      "bias_b": "3m",
+      "entry_tf": "1m",
+      "rr": 2.4,
+      "trades": 643,
+      "pnl": 14880.0,
+      "exp_r": 0.1157,
+      "win_rate": 32.8,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 96.5,
+      "tests": {
+        "1_full": {
+          "n": 643,
+          "pnl": 14880.0,
+          "exp_r": 0.1157
+        },
+        "2_oos70": {
+          "n": 209,
+          "pnl": 3760.0,
+          "exp_r": 0.09
+        },
+        "3_wf_fold_1": {
+          "n": 122,
+          "pnl": 80.0,
+          "exp_r": 0.0033
+        },
+        "4_wf_fold_2": {
+          "n": 96,
+          "pnl": -2200.0,
+          "exp_r": -0.1146
+        },
+        "5_wf_fold_3": {
+          "n": 98,
+          "pnl": 120.0,
+          "exp_r": 0.0061
+        },
+        "6_wf_fold_4": {
+          "n": 111,
+          "pnl": 3640.0,
+          "exp_r": 0.164
+        },
+        "7_torture_spread": {
+          "n": 643,
+          "pnl": -4410.0,
+          "exp_r": -0.0343
+        },
+        "8_torture_skip": {
+          "n": 425,
+          "pnl": 13600.0,
+          "exp_r": 0.16
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=15m+1m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "15m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 2.4,
+      "trades": 320,
+      "pnl": 14200.0,
+      "exp_r": 0.2219,
+      "win_rate": 35.9,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 98.8,
+      "tests": {
+        "1_full": {
+          "n": 320,
+          "pnl": 14200.0,
+          "exp_r": 0.2219
+        },
+        "2_oos70": {
+          "n": 184,
+          "pnl": 12160.0,
+          "exp_r": 0.3304
+        },
+        "3_wf_fold_1": {
+          "n": 41,
+          "pnl": -40.0,
+          "exp_r": -0.0049
+        },
+        "4_wf_fold_2": {
+          "n": 94,
+          "pnl": 1600.0,
+          "exp_r": 0.0851
+        },
+        "5_wf_fold_3": {
+          "n": 84,
+          "pnl": 5640.0,
+          "exp_r": 0.3357
+        },
+        "6_wf_fold_4": {
+          "n": 100,
+          "pnl": 6520.0,
+          "exp_r": 0.326
+        },
+        "7_torture_spread": {
+          "n": 320,
+          "pnl": 4600.0,
+          "exp_r": 0.0719
+        },
+        "8_torture_skip": {
+          "n": 216,
+          "pnl": 10520.0,
+          "exp_r": 0.2435
+        }
+      }
+    },
+    {
+      "name": "liq=3m|bias=15m+3m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "15m",
+      "bias_b": "3m",
+      "entry_tf": "1m",
+      "rr": 2.4,
+      "trades": 388,
+      "pnl": 14200.0,
+      "exp_r": 0.183,
+      "win_rate": 34.8,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 98.9,
+      "tests": {
+        "1_full": {
+          "n": 388,
+          "pnl": 14200.0,
+          "exp_r": 0.183
+        },
+        "2_oos70": {
+          "n": 191,
+          "pnl": 6000.0,
+          "exp_r": 0.1571
+        },
+        "3_wf_fold_1": {
+          "n": 69,
+          "pnl": 4560.0,
+          "exp_r": 0.3304
+        },
+        "4_wf_fold_2": {
+          "n": 126,
+          "pnl": 3360.0,
+          "exp_r": 0.1333
+        },
+        "5_wf_fold_3": {
+          "n": 41,
+          "pnl": 2680.0,
+          "exp_r": 0.3268
+        },
+        "6_wf_fold_4": {
+          "n": 150,
+          "pnl": 3320.0,
+          "exp_r": 0.1107
+        },
+        "7_torture_spread": {
+          "n": 388,
+          "pnl": 2560.0,
+          "exp_r": 0.033
+        },
+        "8_torture_skip": {
+          "n": 256,
+          "pnl": 4560.0,
+          "exp_r": 0.0891
+        }
+      }
+    },
+    {
+      "name": "liq=3m|bias=15m+5m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "15m",
+      "bias_b": "5m",
+      "entry_tf": "1m",
+      "rr": 3.0,
+      "trades": 273,
+      "pnl": 13400.0,
+      "exp_r": 0.2454,
+      "win_rate": 31.1,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 98.6,
+      "tests": {
+        "1_full": {
+          "n": 273,
+          "pnl": 13400.0,
+          "exp_r": 0.2454
+        },
+        "2_oos70": {
+          "n": 126,
+          "pnl": 6800.0,
+          "exp_r": 0.2698
+        },
+        "3_wf_fold_1": {
+          "n": 52,
+          "pnl": 4800.0,
+          "exp_r": 0.4615
+        },
+        "4_wf_fold_2": {
+          "n": 93,
+          "pnl": 1400.0,
+          "exp_r": 0.0753
+        },
+        "5_wf_fold_3": {
+          "n": 1,
+          "pnl": -200.0,
+          "exp_r": -1.0
+        },
+        "6_wf_fold_4": {
+          "n": 125,
+          "pnl": 7000.0,
+          "exp_r": 0.28
+        },
+        "7_torture_spread": {
+          "n": 273,
+          "pnl": 5210.0,
+          "exp_r": 0.0954
+        },
+        "8_torture_skip": {
+          "n": 181,
+          "pnl": 14200.0,
+          "exp_r": 0.3923
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=15m+1m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "15m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 3.0,
+      "trades": 284,
+      "pnl": 12000.0,
+      "exp_r": 0.2113,
+      "win_rate": 30.3,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 97.2,
+      "tests": {
+        "1_full": {
+          "n": 284,
+          "pnl": 12000.0,
+          "exp_r": 0.2113
+        },
+        "2_oos70": {
+          "n": 151,
+          "pnl": 11400.0,
+          "exp_r": 0.3775
+        },
+        "3_wf_fold_1": {
+          "n": 39,
+          "pnl": 200.0,
+          "exp_r": 0.0256
+        },
+        "4_wf_fold_2": {
+          "n": 93,
+          "pnl": -200.0,
+          "exp_r": -0.0108
+        },
+        "5_wf_fold_3": {
+          "n": 77,
+          "pnl": 4600.0,
+          "exp_r": 0.2987
+        },
+        "6_wf_fold_4": {
+          "n": 74,
+          "pnl": 6800.0,
+          "exp_r": 0.4595
+        },
+        "7_torture_spread": {
+          "n": 284,
+          "pnl": 3480.0,
+          "exp_r": 0.0613
+        },
+        "8_torture_skip": {
+          "n": 192,
+          "pnl": 8800.0,
+          "exp_r": 0.2292
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=15m+3m|entry=3m",
+      "liq_tf": "15m",
+      "bias_a": "15m",
+      "bias_b": "3m",
+      "entry_tf": "3m",
+      "rr": 2.0,
+      "trades": 515,
+      "pnl": 11600.0,
+      "exp_r": 0.1126,
+      "win_rate": 37.1,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 95.9,
+      "tests": {
+        "1_full": {
+          "n": 515,
+          "pnl": 11600.0,
+          "exp_r": 0.1126
+        },
+        "2_oos70": {
+          "n": 152,
+          "pnl": 6200.0,
+          "exp_r": 0.2039
+        },
+        "3_wf_fold_1": {
+          "n": 85,
+          "pnl": 3400.0,
+          "exp_r": 0.2
+        },
+        "4_wf_fold_2": {
+          "n": 80,
+          "pnl": 200.0,
+          "exp_r": 0.0125
+        },
+        "5_wf_fold_3": {
+          "n": 77,
+          "pnl": 2600.0,
+          "exp_r": 0.1688
+        },
+        "6_wf_fold_4": {
+          "n": 75,
+          "pnl": 3600.0,
+          "exp_r": 0.24
+        },
+        "7_torture_spread": {
+          "n": 515,
+          "pnl": -3850.0,
+          "exp_r": -0.0374
+        },
+        "8_torture_skip": {
+          "n": 342,
+          "pnl": 6600.0,
+          "exp_r": 0.0965
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=15m+3m|entry=3m",
+      "liq_tf": "15m",
+      "bias_a": "15m",
+      "bias_b": "3m",
+      "entry_tf": "3m",
+      "rr": 2.4,
+      "trades": 469,
+      "pnl": 10920.0,
+      "exp_r": 0.1164,
+      "win_rate": 32.8,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 94.3,
+      "tests": {
+        "1_full": {
+          "n": 469,
+          "pnl": 10920.0,
+          "exp_r": 0.1164
+        },
+        "2_oos70": {
+          "n": 143,
+          "pnl": 6080.0,
+          "exp_r": 0.2126
+        },
+        "3_wf_fold_1": {
+          "n": 81,
+          "pnl": 1480.0,
+          "exp_r": 0.0914
+        },
+        "4_wf_fold_2": {
+          "n": 73,
+          "pnl": -1000.0,
+          "exp_r": -0.0685
+        },
+        "5_wf_fold_3": {
+          "n": 69,
+          "pnl": 3200.0,
+          "exp_r": 0.2319
+        },
+        "6_wf_fold_4": {
+          "n": 74,
+          "pnl": 2880.0,
+          "exp_r": 0.1946
+        },
+        "7_torture_spread": {
+          "n": 469,
+          "pnl": -3150.0,
+          "exp_r": -0.0336
+        },
+        "8_torture_skip": {
+          "n": 310,
+          "pnl": 3960.0,
+          "exp_r": 0.0639
+        }
+      }
+    },
+    {
+      "name": "liq=5m|bias=3m+1m|entry=1m",
+      "liq_tf": "5m",
+      "bias_a": "3m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 3.0,
+      "trades": 833,
+      "pnl": 10200.0,
+      "exp_r": 0.0612,
+      "win_rate": 26.5,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 82.5,
+      "tests": {
+        "1_full": {
+          "n": 833,
+          "pnl": 10200.0,
+          "exp_r": 0.0612
+        },
+        "2_oos70": {
+          "n": 161,
+          "pnl": 1400.0,
+          "exp_r": 0.0435
+        },
+        "3_wf_fold_1": {
+          "n": 186,
+          "pnl": 2000.0,
+          "exp_r": 0.0538
+        },
+        "4_wf_fold_2": {
+          "n": 149,
+          "pnl": 600.0,
+          "exp_r": 0.0201
+        },
+        "5_wf_fold_3": {
+          "n": 1,
+          "pnl": -200.0,
+          "exp_r": -1.0
+        },
+        "6_wf_fold_4": {
+          "n": 160,
+          "pnl": 1600.0,
+          "exp_r": 0.05
+        },
+        "7_torture_spread": {
+          "n": 833,
+          "pnl": -14790.0,
+          "exp_r": -0.0888
+        },
+        "8_torture_skip": {
+          "n": 553,
+          "pnl": 3000.0,
+          "exp_r": 0.0271
+        }
+      }
+    },
+    {
+      "name": "liq=3m|bias=3m+1m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "3m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 4.0,
+      "trades": 275,
+      "pnl": 10000.0,
+      "exp_r": 0.1818,
+      "win_rate": 23.6,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "wf_n": 4,
+      "mc_prob_profit": 92.0,
+      "tests": {
+        "1_full": {
+          "n": 275,
+          "pnl": 10000.0,
+          "exp_r": 0.1818
+        },
+        "2_oos70": {
+          "n": 100,
+          "pnl": 5000.0,
+          "exp_r": 0.25
+        },
+        "3_wf_fold_1": {
+          "n": 65,
+          "pnl": 7000.0,
+          "exp_r": 0.5385
+        },
+        "4_wf_fold_2": {
+          "n": 108,
+          "pnl": -2600.0,
+          "exp_r": -0.1204
+        },
+        "5_wf_fold_3": {
+          "n": 1,
+          "pnl": -200.0,
+          "exp_r": -1.0
+        },
+        "6_wf_fold_4": {
+          "n": 99,
+          "pnl": 5200.0,
+          "exp_r": 0.2626
+        },
+        "7_torture_spread": {
+          "n": 275,
+          "pnl": 1750.0,
+          "exp_r": 0.0318
+        },
+        "8_torture_skip": {
+          "n": 183,
+          "pnl": 2400.0,
+          "exp_r": 0.0656
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=15m+1m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "15m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 4.0,
+      "trades": 231,
+      "pnl": 9800.0,
+      "exp_r": 0.2121,
+      "win_rate": 24.2,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 93.0,
+      "tests": {
+        "1_full": {
+          "n": 231,
+          "pnl": 9800.0,
+          "exp_r": 0.2121
+        },
+        "2_oos70": {
+          "n": 132,
+          "pnl": 7600.0,
+          "exp_r": 0.2879
+        },
+        "3_wf_fold_1": {
+          "n": 30,
+          "pnl": 0.0,
+          "exp_r": 0.0
+        },
+        "4_wf_fold_2": {
+          "n": 68,
+          "pnl": 1400.0,
+          "exp_r": 0.1029
+        },
+        "5_wf_fold_3": {
+          "n": 72,
+          "pnl": 1600.0,
+          "exp_r": 0.1111
+        },
+        "6_wf_fold_4": {
+          "n": 60,
+          "pnl": 6000.0,
+          "exp_r": 0.5
+        },
+        "7_torture_spread": {
+          "n": 231,
+          "pnl": 2870.0,
+          "exp_r": 0.0621
+        },
+        "8_torture_skip": {
+          "n": 152,
+          "pnl": 10600.0,
+          "exp_r": 0.3487
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=15m+5m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "15m",
+      "bias_b": "5m",
+      "entry_tf": "1m",
+      "rr": 3.0,
+      "trades": 231,
+      "pnl": 9800.0,
+      "exp_r": 0.2121,
+      "win_rate": 30.3,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "wf_n": 4,
+      "mc_prob_profit": 97.1,
+      "tests": {
+        "1_full": {
+          "n": 231,
+          "pnl": 9800.0,
+          "exp_r": 0.2121
+        },
+        "2_oos70": {
+          "n": 127,
+          "pnl": 9800.0,
+          "exp_r": 0.3858
+        },
+        "3_wf_fold_1": {
+          "n": 33,
+          "pnl": -200.0,
+          "exp_r": -0.0303
+        },
+        "4_wf_fold_2": {
+          "n": 70,
+          "pnl": -400.0,
+          "exp_r": -0.0286
+        },
+        "5_wf_fold_3": {
+          "n": 69,
+          "pnl": 3000.0,
+          "exp_r": 0.2174
+        },
+        "6_wf_fold_4": {
+          "n": 58,
+          "pnl": 6800.0,
+          "exp_r": 0.5862
+        },
+        "7_torture_spread": {
+          "n": 231,
+          "pnl": 2870.0,
+          "exp_r": 0.0621
+        },
+        "8_torture_skip": {
+          "n": 152,
+          "pnl": 4800.0,
+          "exp_r": 0.1579
+        }
+      }
+    },
+    {
+      "name": "liq=3m|bias=15m+5m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "15m",
+      "bias_b": "5m",
+      "entry_tf": "1m",
+      "rr": 4.0,
+      "trades": 236,
+      "pnl": 9800.0,
+      "exp_r": 0.2076,
+      "win_rate": 24.2,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 92.8,
+      "tests": {
+        "1_full": {
+          "n": 236,
+          "pnl": 9800.0,
+          "exp_r": 0.2076
+        },
+        "2_oos70": {
+          "n": 126,
+          "pnl": 3800.0,
+          "exp_r": 0.1508
+        },
+        "3_wf_fold_1": {
+          "n": 28,
+          "pnl": 3400.0,
+          "exp_r": 0.6071
+        },
+        "4_wf_fold_2": {
+          "n": 80,
+          "pnl": 2000.0,
+          "exp_r": 0.125
+        },
+        "5_wf_fold_3": {
+          "n": 1,
+          "pnl": -200.0,
+          "exp_r": -1.0
+        },
+        "6_wf_fold_4": {
+          "n": 125,
+          "pnl": 4000.0,
+          "exp_r": 0.16
+        },
+        "7_torture_spread": {
+          "n": 236,
+          "pnl": 2720.0,
+          "exp_r": 0.0576
+        },
+        "8_torture_skip": {
+          "n": 156,
+          "pnl": 8800.0,
+          "exp_r": 0.2821
+        }
+      }
+    },
+    {
+      "name": "liq=5m|bias=15m+5m|entry=1m",
+      "liq_tf": "5m",
+      "bias_a": "15m",
+      "bias_b": "5m",
+      "entry_tf": "1m",
+      "rr": 3.0,
+      "trades": 250,
+      "pnl": 9200.0,
+      "exp_r": 0.184,
+      "win_rate": 29.6,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "wf_n": 4,
+      "mc_prob_profit": 94.4,
+      "tests": {
+        "1_full": {
+          "n": 250,
+          "pnl": 9200.0,
+          "exp_r": 0.184
+        },
+        "2_oos70": {
+          "n": 117,
+          "pnl": 6200.0,
+          "exp_r": 0.265
+        },
+        "3_wf_fold_1": {
+          "n": 45,
+          "pnl": 3000.0,
+          "exp_r": 0.3333
+        },
+        "4_wf_fold_2": {
+          "n": 83,
+          "pnl": -1400.0,
+          "exp_r": -0.0843
+        },
+        "5_wf_fold_3": {
+          "n": 1,
+          "pnl": -200.0,
+          "exp_r": -1.0
+        },
+        "6_wf_fold_4": {
+          "n": 116,
+          "pnl": 6400.0,
+          "exp_r": 0.2759
+        },
+        "7_torture_spread": {
+          "n": 250,
+          "pnl": 1700.0,
+          "exp_r": 0.034
+        },
+        "8_torture_skip": {
+          "n": 165,
+          "pnl": 7800.0,
+          "exp_r": 0.2364
+        }
+      }
+    },
+    {
+      "name": "liq=3m|bias=15m+3m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "15m",
+      "bias_b": "3m",
+      "entry_tf": "1m",
+      "rr": 3.0,
+      "trades": 282,
+      "pnl": 9200.0,
+      "exp_r": 0.1631,
+      "win_rate": 29.1,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "wf_n": 4,
+      "mc_prob_profit": 93.4,
+      "tests": {
+        "1_full": {
+          "n": 282,
+          "pnl": 9200.0,
+          "exp_r": 0.1631
+        },
+        "2_oos70": {
+          "n": 140,
+          "pnl": 5600.0,
+          "exp_r": 0.2
+        },
+        "3_wf_fold_1": {
+          "n": 50,
+          "pnl": 3600.0,
+          "exp_r": 0.36
+        },
+        "4_wf_fold_2": {
+          "n": 90,
+          "pnl": -400.0,
+          "exp_r": -0.0222
+        },
+        "5_wf_fold_3": {
+          "n": 1,
+          "pnl": -200.0,
+          "exp_r": -1.0
+        },
+        "6_wf_fold_4": {
+          "n": 139,
+          "pnl": 5800.0,
+          "exp_r": 0.2086
+        },
+        "7_torture_spread": {
+          "n": 282,
+          "pnl": 740.0,
+          "exp_r": 0.0131
+        },
+        "8_torture_skip": {
+          "n": 190,
+          "pnl": 6000.0,
+          "exp_r": 0.1579
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=3m+1m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "3m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 4.0,
+      "trades": 305,
+      "pnl": 9000.0,
+      "exp_r": 0.1475,
+      "win_rate": 23.0,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "wf_n": 4,
+      "mc_prob_profit": 86.6,
+      "tests": {
+        "1_full": {
+          "n": 305,
+          "pnl": 9000.0,
+          "exp_r": 0.1475
+        },
+        "2_oos70": {
+          "n": 199,
+          "pnl": 9200.0,
+          "exp_r": 0.2312
+        },
+        "3_wf_fold_1": {
+          "n": 47,
+          "pnl": 600.0,
+          "exp_r": 0.0638
+        },
+        "4_wf_fold_2": {
+          "n": 58,
+          "pnl": -1600.0,
+          "exp_r": -0.1379
+        },
+        "5_wf_fold_3": {
+          "n": 102,
+          "pnl": -1400.0,
+          "exp_r": -0.0686
+        },
+        "6_wf_fold_4": {
+          "n": 97,
+          "pnl": 10600.0,
+          "exp_r": 0.5464
+        },
+        "7_torture_spread": {
+          "n": 305,
+          "pnl": -150.0,
+          "exp_r": -0.0025
+        },
+        "8_torture_skip": {
+          "n": 205,
+          "pnl": 9000.0,
+          "exp_r": 0.2195
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=15m+15m|entry=15m",
+      "liq_tf": "15m",
+      "bias_a": "15m",
+      "bias_b": "15m",
+      "entry_tf": "15m",
+      "rr": 3.0,
+      "trades": 269,
+      "pnl": 8600.0,
+      "exp_r": 0.1599,
+      "win_rate": 29.0,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 91.7,
+      "tests": {
+        "1_full": {
+          "n": 269,
+          "pnl": 8600.0,
+          "exp_r": 0.1599
+        },
+        "2_oos70": {
+          "n": 80,
+          "pnl": 4000.0,
+          "exp_r": 0.25
+        },
+        "3_wf_fold_1": {
+          "n": 45,
+          "pnl": 600.0,
+          "exp_r": 0.0667
+        },
+        "4_wf_fold_2": {
+          "n": 58,
+          "pnl": -400.0,
+          "exp_r": -0.0345
+        },
+        "5_wf_fold_3": {
+          "n": 46,
+          "pnl": 2000.0,
+          "exp_r": 0.2174
+        },
+        "6_wf_fold_4": {
+          "n": 34,
+          "pnl": 2000.0,
+          "exp_r": 0.2941
+        },
+        "7_torture_spread": {
+          "n": 269,
+          "pnl": 530.0,
+          "exp_r": 0.0099
+        },
+        "8_torture_skip": {
+          "n": 178,
+          "pnl": 2800.0,
+          "exp_r": 0.0787
+        }
+      }
+    },
+    {
+      "name": "liq=15m|bias=15m+5m|entry=1m",
+      "liq_tf": "15m",
+      "bias_a": "15m",
+      "bias_b": "5m",
+      "entry_tf": "1m",
+      "rr": 2.4,
+      "trades": 294,
+      "pnl": 8520.0,
+      "exp_r": 0.1449,
+      "win_rate": 33.7,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "wf_n": 4,
+      "mc_prob_profit": 93.3,
+      "tests": {
+        "1_full": {
+          "n": 294,
+          "pnl": 8520.0,
+          "exp_r": 0.1449
+        },
+        "2_oos70": {
+          "n": 169,
+          "pnl": 9040.0,
+          "exp_r": 0.2675
+        },
+        "3_wf_fold_1": {
+          "n": 35,
+          "pnl": -200.0,
+          "exp_r": -0.0286
+        },
+        "4_wf_fold_2": {
+          "n": 89,
+          "pnl": -800.0,
+          "exp_r": -0.0449
+        },
+        "5_wf_fold_3": {
+          "n": 74,
+          "pnl": 3560.0,
+          "exp_r": 0.2405
+        },
+        "6_wf_fold_4": {
+          "n": 95,
+          "pnl": 5480.0,
+          "exp_r": 0.2884
+        },
+        "7_torture_spread": {
+          "n": 294,
+          "pnl": -300.0,
+          "exp_r": -0.0051
+        },
+        "8_torture_skip": {
+          "n": 199,
+          "pnl": 7800.0,
+          "exp_r": 0.196
+        }
+      }
+    },
+    {
+      "name": "liq=3m|bias=15m+1m|entry=1m",
+      "liq_tf": "3m",
+      "bias_a": "15m",
+      "bias_b": "1m",
+      "entry_tf": "1m",
+      "rr": 2.4,
+      "trades": 411,
+      "pnl": 8240.0,
+      "exp_r": 0.1002,
+      "win_rate": 32.4,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 91.1,
+      "tests": {
+        "1_full": {
+          "n": 411,
+          "pnl": 8240.0,
+          "exp_r": 0.1002
+        },
+        "2_oos70": {
+          "n": 208,
+          "pnl": 7360.0,
+          "exp_r": 0.1769
+        },
+        "3_wf_fold_1": {
+          "n": 64,
+          "pnl": 800.0,
+          "exp_r": 0.0625
+        },
+        "4_wf_fold_2": {
+          "n": 137,
+          "pnl": -200.0,
+          "exp_r": -0.0073
+        },
+        "5_wf_fold_3": {
+          "n": 61,
+          "pnl": 2760.0,
+          "exp_r": 0.2262
+        },
+        "6_wf_fold_4": {
+          "n": 147,
+          "pnl": 4600.0,
+          "exp_r": 0.1565
+        },
+        "7_torture_spread": {
+          "n": 411,
+          "pnl": -4090.0,
+          "exp_r": -0.0498
+        },
+        "8_torture_skip": {
+          "n": 270,
+          "pnl": 9240.0,
+          "exp_r": 0.1711
+        }
+      }
+    }
+  ],
+  "elapsed_s": 110.6
+}

@@ -1,0 +1,17 @@
+{
+  "status": "done",
+  "pct": 100,
+  "cells_done": 19086,
+  "cells_est": 20190,
+  "elapsed_sec": 111414.9,
+  "survivors": 152,
+  "updated_at": "2026-08-27T19:49:53.678307+00:00",
+  "hunt": "rest5",
+  "book": [
+    "AUDUSD",
+    "USDCHF",
+    "ETHUSD",
+    "NAS100",
+    "USDJPY"
+  ]
+}

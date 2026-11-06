@@ -1,0 +1,849 @@
+{
+  "generated_at": "2026-08-05T12:50:02.639436+00:00",
+  "symbol": "GOLD",
+  "window_days": 365,
+  "risk_usd": 200.0,
+  "process": {
+    "liquidity_tf": "15m",
+    "bias_tfs": [
+      "1h",
+      "25m"
+    ],
+    "bias_rule": "ema20>ema50 & close>ema20 (bull) / inverse (bear); both TFs same",
+    "entry_tf": "5m",
+    "entry_rule": "classic engulfing after 15m sweep reclaim, within 90m",
+    "sl": "beyond 15m sweep wick (or 5m wick if wider)"
+  },
+  "head_to_head_rr4": {
+    "pa": {
+      "pnl": 17000.0,
+      "n": 290,
+      "exp_r": 0.2931,
+      "verdict": "SURVIVES",
+      "tests": {
+        "1_full": {
+          "n": 290,
+          "pnl": 17000.0,
+          "exp_r": 0.2931,
+          "win_rate": 25.9
+        },
+        "2_oos70": {
+          "n": 76,
+          "pnl": 800.0,
+          "exp_r": 0.0526,
+          "win_rate": 21.1
+        },
+        "3_wf_fold_1": {
+          "n": 42,
+          "pnl": 9600.0,
+          "exp_r": 1.1429,
+          "win_rate": 42.9
+        },
+        "4_wf_fold_2": {
+          "n": 45,
+          "pnl": 0.0,
+          "exp_r": 0.0,
+          "win_rate": 20.0
+        },
+        "5_wf_fold_3": {
+          "n": 30,
+          "pnl": 0.0,
+          "exp_r": 0.0,
+          "win_rate": 20.0
+        },
+        "6_wf_fold_4": {
+          "n": 46,
+          "pnl": 800.0,
+          "exp_r": 0.087,
+          "win_rate": 21.7
+        },
+        "7_torture_spread": {
+          "n": 290,
+          "pnl": 8300.0,
+          "exp_r": 0.1431,
+          "win_rate": 25.9
+        },
+        "8_torture_skip": {
+          "n": 197,
+          "pnl": 13600.0,
+          "exp_r": 0.3452,
+          "win_rate": 26.9
+        }
+      },
+      "mc_prob_profit": 99.0
+    },
+    "don_100": {
+      "pnl": 17000.0,
+      "n": 460,
+      "exp_r": 0.1848,
+      "verdict": "SURVIVES",
+      "tests": {
+        "1_full": {
+          "n": 460,
+          "pnl": 17000.0,
+          "exp_r": 0.1848,
+          "win_rate": 23.7
+        },
+        "2_oos70": {
+          "n": 134,
+          "pnl": 3200.0,
+          "exp_r": 0.1194,
+          "win_rate": 22.4
+        },
+        "3_wf_fold_1": {
+          "n": 72,
+          "pnl": 7600.0,
+          "exp_r": 0.5278,
+          "win_rate": 30.6
+        },
+        "4_wf_fold_2": {
+          "n": 58,
+          "pnl": 4400.0,
+          "exp_r": 0.3793,
+          "win_rate": 27.6
+        },
+        "5_wf_fold_3": {
+          "n": 61,
+          "pnl": 800.0,
+          "exp_r": 0.0656,
+          "win_rate": 21.3
+        },
+        "6_wf_fold_4": {
+          "n": 73,
+          "pnl": 2400.0,
+          "exp_r": 0.1644,
+          "win_rate": 23.3
+        },
+        "7_torture_spread": {
+          "n": 460,
+          "pnl": 3200.0,
+          "exp_r": 0.0348,
+          "win_rate": 23.7
+        },
+        "8_torture_skip": {
+          "n": 305,
+          "pnl": 11000.0,
+          "exp_r": 0.1803,
+          "win_rate": 23.6
+        }
+      },
+      "mc_prob_profit": 97.3
+    },
+    "pnl_delta_pa_minus_don": 0.0
+  },
+  "best_by_pnl": {
+    "pa": {
+      "name": "pa_liq_1h25_engulf5",
+      "note": "15m liq sweep + 1h&25m EMA bias + 5m engulf; exec on 5m",
+      "rr": 4.0,
+      "exec_tf": "see_note",
+      "entries_raw": 572,
+      "trades": 290,
+      "pnl": 17000.0,
+      "exp_r": 0.2931,
+      "win_rate": 25.9,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "wf_n": 4,
+      "mc_prob_profit": 99.0,
+      "tests": {
+        "1_full": {
+          "n": 290,
+          "pnl": 17000.0,
+          "exp_r": 0.2931,
+          "win_rate": 25.9
+        },
+        "2_oos70": {
+          "n": 76,
+          "pnl": 800.0,
+          "exp_r": 0.0526,
+          "win_rate": 21.1
+        },
+        "3_wf_fold_1": {
+          "n": 42,
+          "pnl": 9600.0,
+          "exp_r": 1.1429,
+          "win_rate": 42.9
+        },
+        "4_wf_fold_2": {
+          "n": 45,
+          "pnl": 0.0,
+          "exp_r": 0.0,
+          "win_rate": 20.0
+        },
+        "5_wf_fold_3": {
+          "n": 30,
+          "pnl": 0.0,
+          "exp_r": 0.0,
+          "win_rate": 20.0
+        },
+        "6_wf_fold_4": {
+          "n": 46,
+          "pnl": 800.0,
+          "exp_r": 0.087,
+          "win_rate": 21.7
+        },
+        "7_torture_spread": {
+          "n": 290,
+          "pnl": 8300.0,
+          "exp_r": 0.1431,
+          "win_rate": 25.9
+        },
+        "8_torture_skip": {
+          "n": 197,
+          "pnl": 13600.0,
+          "exp_r": 0.3452,
+          "win_rate": 26.9
+        }
+      },
+      "mc_prob_profit_raw": 99.0,
+      "span": {
+        "bars": 102950,
+        "start": "2025-07-31",
+        "end": "2026-07-23"
+      }
+    },
+    "don_100": {
+      "name": "don_100",
+      "note": "live wired brain; exec on 15m",
+      "rr": 4.0,
+      "exec_tf": "see_note",
+      "entries_raw": 1234,
+      "trades": 460,
+      "pnl": 17000.0,
+      "exp_r": 0.1848,
+      "win_rate": 23.7,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 97.3,
+      "tests": {
+        "1_full": {
+          "n": 460,
+          "pnl": 17000.0,
+          "exp_r": 0.1848,
+          "win_rate": 23.7
+        },
+        "2_oos70": {
+          "n": 134,
+          "pnl": 3200.0,
+          "exp_r": 0.1194,
+          "win_rate": 22.4
+        },
+        "3_wf_fold_1": {
+          "n": 72,
+          "pnl": 7600.0,
+          "exp_r": 0.5278,
+          "win_rate": 30.6
+        },
+        "4_wf_fold_2": {
+          "n": 58,
+          "pnl": 4400.0,
+          "exp_r": 0.3793,
+          "win_rate": 27.6
+        },
+        "5_wf_fold_3": {
+          "n": 61,
+          "pnl": 800.0,
+          "exp_r": 0.0656,
+          "win_rate": 21.3
+        },
+        "6_wf_fold_4": {
+          "n": 73,
+          "pnl": 2400.0,
+          "exp_r": 0.1644,
+          "win_rate": 23.3
+        },
+        "7_torture_spread": {
+          "n": 460,
+          "pnl": 3200.0,
+          "exp_r": 0.0348,
+          "win_rate": 23.7
+        },
+        "8_torture_skip": {
+          "n": 305,
+          "pnl": 11000.0,
+          "exp_r": 0.1803,
+          "win_rate": 23.6
+        }
+      },
+      "mc_prob_profit_raw": 97.3,
+      "span": {
+        "bars": 34316,
+        "start": "2025-07-31",
+        "end": "2026-07-23"
+      }
+    }
+  },
+  "cells": [
+    {
+      "name": "pa_liq_1h25_engulf5",
+      "note": "15m liq sweep + 1h&25m EMA bias + 5m engulf; exec on 5m",
+      "rr": 2.0,
+      "exec_tf": "see_note",
+      "entries_raw": 572,
+      "trades": 362,
+      "pnl": 10400.0,
+      "exp_r": 0.1436,
+      "win_rate": 38.1,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 97.8,
+      "tests": {
+        "1_full": {
+          "n": 362,
+          "pnl": 10400.0,
+          "exp_r": 0.1436,
+          "win_rate": 38.1
+        },
+        "2_oos70": {
+          "n": 114,
+          "pnl": 0.0,
+          "exp_r": 0.0,
+          "win_rate": 33.3
+        },
+        "3_wf_fold_1": {
+          "n": 55,
+          "pnl": 4000.0,
+          "exp_r": 0.3636,
+          "win_rate": 45.5
+        },
+        "4_wf_fold_2": {
+          "n": 52,
+          "pnl": 1000.0,
+          "exp_r": 0.0962,
+          "win_rate": 36.5
+        },
+        "5_wf_fold_3": {
+          "n": 56,
+          "pnl": 200.0,
+          "exp_r": 0.0179,
+          "win_rate": 33.9
+        },
+        "6_wf_fold_4": {
+          "n": 58,
+          "pnl": -200.0,
+          "exp_r": -0.0172,
+          "win_rate": 32.8
+        },
+        "7_torture_spread": {
+          "n": 362,
+          "pnl": -460.0,
+          "exp_r": -0.0064,
+          "win_rate": 38.1
+        },
+        "8_torture_skip": {
+          "n": 242,
+          "pnl": 9200.0,
+          "exp_r": 0.1901,
+          "win_rate": 39.7
+        }
+      },
+      "mc_prob_profit_raw": 97.8,
+      "span": {
+        "bars": 102950,
+        "start": "2025-07-31",
+        "end": "2026-07-23"
+      }
+    },
+    {
+      "name": "pa_liq_1h25_engulf5",
+      "note": "15m liq sweep + 1h&25m EMA bias + 5m engulf; exec on 5m",
+      "rr": 2.4,
+      "exec_tf": "see_note",
+      "entries_raw": 572,
+      "trades": 350,
+      "pnl": 10920.0,
+      "exp_r": 0.156,
+      "win_rate": 34.0,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 97.3,
+      "tests": {
+        "1_full": {
+          "n": 350,
+          "pnl": 10920.0,
+          "exp_r": 0.156,
+          "win_rate": 34.0
+        },
+        "2_oos70": {
+          "n": 108,
+          "pnl": -520.0,
+          "exp_r": -0.0241,
+          "win_rate": 28.7
+        },
+        "3_wf_fold_1": {
+          "n": 52,
+          "pnl": 3880.0,
+          "exp_r": 0.3731,
+          "win_rate": 40.4
+        },
+        "4_wf_fold_2": {
+          "n": 50,
+          "pnl": 880.0,
+          "exp_r": 0.088,
+          "win_rate": 32.0
+        },
+        "5_wf_fold_3": {
+          "n": 52,
+          "pnl": -880.0,
+          "exp_r": -0.0846,
+          "win_rate": 26.9
+        },
+        "6_wf_fold_4": {
+          "n": 56,
+          "pnl": 360.0,
+          "exp_r": 0.0321,
+          "win_rate": 30.4
+        },
+        "7_torture_spread": {
+          "n": 350,
+          "pnl": 420.0,
+          "exp_r": 0.006,
+          "win_rate": 34.0
+        },
+        "8_torture_skip": {
+          "n": 234,
+          "pnl": 4200.0,
+          "exp_r": 0.0897,
+          "win_rate": 32.1
+        }
+      },
+      "mc_prob_profit_raw": 97.3,
+      "span": {
+        "bars": 102950,
+        "start": "2025-07-31",
+        "end": "2026-07-23"
+      }
+    },
+    {
+      "name": "pa_liq_1h25_engulf5",
+      "note": "15m liq sweep + 1h&25m EMA bias + 5m engulf; exec on 5m",
+      "rr": 3.0,
+      "exec_tf": "see_note",
+      "entries_raw": 572,
+      "trades": 336,
+      "pnl": 12800.0,
+      "exp_r": 0.1905,
+      "win_rate": 29.8,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 96.9,
+      "tests": {
+        "1_full": {
+          "n": 336,
+          "pnl": 12800.0,
+          "exp_r": 0.1905,
+          "win_rate": 29.8
+        },
+        "2_oos70": {
+          "n": 104,
+          "pnl": 800.0,
+          "exp_r": 0.0385,
+          "win_rate": 26.0
+        },
+        "3_wf_fold_1": {
+          "n": 50,
+          "pnl": 6000.0,
+          "exp_r": 0.6,
+          "win_rate": 40.0
+        },
+        "4_wf_fold_2": {
+          "n": 49,
+          "pnl": 600.0,
+          "exp_r": 0.0612,
+          "win_rate": 26.5
+        },
+        "5_wf_fold_3": {
+          "n": 49,
+          "pnl": -1000.0,
+          "exp_r": -0.102,
+          "win_rate": 22.4
+        },
+        "6_wf_fold_4": {
+          "n": 55,
+          "pnl": 1800.0,
+          "exp_r": 0.1636,
+          "win_rate": 29.1
+        },
+        "7_torture_spread": {
+          "n": 336,
+          "pnl": 2720.0,
+          "exp_r": 0.0405,
+          "win_rate": 29.8
+        },
+        "8_torture_skip": {
+          "n": 225,
+          "pnl": 7000.0,
+          "exp_r": 0.1556,
+          "win_rate": 28.9
+        }
+      },
+      "mc_prob_profit_raw": 96.9,
+      "span": {
+        "bars": 102950,
+        "start": "2025-07-31",
+        "end": "2026-07-23"
+      }
+    },
+    {
+      "name": "pa_liq_1h25_engulf5",
+      "note": "15m liq sweep + 1h&25m EMA bias + 5m engulf; exec on 5m",
+      "rr": 4.0,
+      "exec_tf": "see_note",
+      "entries_raw": 572,
+      "trades": 290,
+      "pnl": 17000.0,
+      "exp_r": 0.2931,
+      "win_rate": 25.9,
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "wf_n": 4,
+      "mc_prob_profit": 99.0,
+      "tests": {
+        "1_full": {
+          "n": 290,
+          "pnl": 17000.0,
+          "exp_r": 0.2931,
+          "win_rate": 25.9
+        },
+        "2_oos70": {
+          "n": 76,
+          "pnl": 800.0,
+          "exp_r": 0.0526,
+          "win_rate": 21.1
+        },
+        "3_wf_fold_1": {
+          "n": 42,
+          "pnl": 9600.0,
+          "exp_r": 1.1429,
+          "win_rate": 42.9
+        },
+        "4_wf_fold_2": {
+          "n": 45,
+          "pnl": 0.0,
+          "exp_r": 0.0,
+          "win_rate": 20.0
+        },
+        "5_wf_fold_3": {
+          "n": 30,
+          "pnl": 0.0,
+          "exp_r": 0.0,
+          "win_rate": 20.0
+        },
+        "6_wf_fold_4": {
+          "n": 46,
+          "pnl": 800.0,
+          "exp_r": 0.087,
+          "win_rate": 21.7
+        },
+        "7_torture_spread": {
+          "n": 290,
+          "pnl": 8300.0,
+          "exp_r": 0.1431,
+          "win_rate": 25.9
+        },
+        "8_torture_skip": {
+          "n": 197,
+          "pnl": 13600.0,
+          "exp_r": 0.3452,
+          "win_rate": 26.9
+        }
+      },
+      "mc_prob_profit_raw": 99.0,
+      "span": {
+        "bars": 102950,
+        "start": "2025-07-31",
+        "end": "2026-07-23"
+      }
+    },
+    {
+      "name": "don_100",
+      "note": "live wired brain; exec on 15m",
+      "rr": 2.0,
+      "exec_tf": "see_note",
+      "entries_raw": 1234,
+      "trades": 547,
+      "pnl": 7000.0,
+      "exp_r": 0.064,
+      "win_rate": 35.5,
+      "verdict": "FRAGILE",
+      "wf_green": 2,
+      "wf_n": 4,
+      "mc_prob_profit": 85.7,
+      "tests": {
+        "1_full": {
+          "n": 547,
+          "pnl": 7000.0,
+          "exp_r": 0.064,
+          "win_rate": 35.5
+        },
+        "2_oos70": {
+          "n": 157,
+          "pnl": -1400.0,
+          "exp_r": -0.0446,
+          "win_rate": 31.8
+        },
+        "3_wf_fold_1": {
+          "n": 83,
+          "pnl": 9200.0,
+          "exp_r": 0.5542,
+          "win_rate": 51.8
+        },
+        "4_wf_fold_2": {
+          "n": 69,
+          "pnl": 1200.0,
+          "exp_r": 0.087,
+          "win_rate": 36.2
+        },
+        "5_wf_fold_3": {
+          "n": 70,
+          "pnl": -200.0,
+          "exp_r": -0.0143,
+          "win_rate": 32.9
+        },
+        "6_wf_fold_4": {
+          "n": 87,
+          "pnl": -1200.0,
+          "exp_r": -0.069,
+          "win_rate": 31.0
+        },
+        "7_torture_spread": {
+          "n": 547,
+          "pnl": -9410.0,
+          "exp_r": -0.086,
+          "win_rate": 35.5
+        },
+        "8_torture_skip": {
+          "n": 363,
+          "pnl": 5400.0,
+          "exp_r": 0.0744,
+          "win_rate": 35.8
+        }
+      },
+      "mc_prob_profit_raw": 85.7,
+      "span": {
+        "bars": 34316,
+        "start": "2025-07-31",
+        "end": "2026-07-23"
+      }
+    },
+    {
+      "name": "don_100",
+      "note": "live wired brain; exec on 15m",
+      "rr": 2.4,
+      "exec_tf": "see_note",
+      "entries_raw": 1234,
+      "trades": 514,
+      "pnl": 8720.0,
+      "exp_r": 0.0848,
+      "win_rate": 31.9,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 88.3,
+      "tests": {
+        "1_full": {
+          "n": 514,
+          "pnl": 8720.0,
+          "exp_r": 0.0848,
+          "win_rate": 31.9
+        },
+        "2_oos70": {
+          "n": 149,
+          "pnl": 120.0,
+          "exp_r": 0.004,
+          "win_rate": 29.5
+        },
+        "3_wf_fold_1": {
+          "n": 80,
+          "pnl": 8480.0,
+          "exp_r": 0.53,
+          "win_rate": 45.0
+        },
+        "4_wf_fold_2": {
+          "n": 67,
+          "pnl": 1560.0,
+          "exp_r": 0.1164,
+          "win_rate": 32.8
+        },
+        "5_wf_fold_3": {
+          "n": 67,
+          "pnl": 200.0,
+          "exp_r": 0.0149,
+          "win_rate": 29.9
+        },
+        "6_wf_fold_4": {
+          "n": 82,
+          "pnl": -80.0,
+          "exp_r": -0.0049,
+          "win_rate": 29.3
+        },
+        "7_torture_spread": {
+          "n": 514,
+          "pnl": -6700.0,
+          "exp_r": -0.0652,
+          "win_rate": 31.9
+        },
+        "8_torture_skip": {
+          "n": 341,
+          "pnl": 7960.0,
+          "exp_r": 0.1167,
+          "win_rate": 32.8
+        }
+      },
+      "mc_prob_profit_raw": 88.3,
+      "span": {
+        "bars": 34316,
+        "start": "2025-07-31",
+        "end": "2026-07-23"
+      }
+    },
+    {
+      "name": "don_100",
+      "note": "live wired brain; exec on 15m",
+      "rr": 3.0,
+      "exec_tf": "see_note",
+      "entries_raw": 1234,
+      "trades": 482,
+      "pnl": 14000.0,
+      "exp_r": 0.1452,
+      "win_rate": 28.6,
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "mc_prob_profit": 96.1,
+      "tests": {
+        "1_full": {
+          "n": 482,
+          "pnl": 14000.0,
+          "exp_r": 0.1452,
+          "win_rate": 28.6
+        },
+        "2_oos70": {
+          "n": 139,
+          "pnl": 1000.0,
+          "exp_r": 0.036,
+          "win_rate": 25.9
+        },
+        "3_wf_fold_1": {
+          "n": 76,
+          "pnl": 11200.0,
+          "exp_r": 0.7368,
+          "win_rate": 43.4
+        },
+        "4_wf_fold_2": {
+          "n": 62,
+          "pnl": 2000.0,
+          "exp_r": 0.1613,
+          "win_rate": 29.0
+        },
+        "5_wf_fold_3": {
+          "n": 63,
+          "pnl": 1000.0,
+          "exp_r": 0.0794,
+          "win_rate": 27.0
+        },
+        "6_wf_fold_4": {
+          "n": 76,
+          "pnl": 0.0,
+          "exp_r": 0.0,
+          "win_rate": 25.0
+        },
+        "7_torture_spread": {
+          "n": 482,
+          "pnl": -460.0,
+          "exp_r": -0.0048,
+          "win_rate": 28.6
+        },
+        "8_torture_skip": {
+          "n": 321,
+          "pnl": 11000.0,
+          "exp_r": 0.1713,
+          "win_rate": 29.3
+        }
+      },
+      "mc_prob_profit_raw": 96.1,
+      "span": {
+        "bars": 34316,
+        "start": "2025-07-31",
+        "end": "2026-07-23"
+      }
+    },
+    {
+      "name": "don_100",
+      "note": "live wired brain; exec on 15m",
+      "rr": 4.0,
+      "exec_tf": "see_note",
+      "entries_raw": 1234,
+      "trades": 460,
+      "pnl": 17000.0,
+      "exp_r": 0.1848,
+      "win_rate": 23.7,
+      "verdict": "SURVIVES",
+      "wf_green": 4,
+      "wf_n": 4,
+      "mc_prob_profit": 97.3,
+      "tests": {
+        "1_full": {
+          "n": 460,
+          "pnl": 17000.0,
+          "exp_r": 0.1848,
+          "win_rate": 23.7
+        },
+        "2_oos70": {
+          "n": 134,
+          "pnl": 3200.0,
+          "exp_r": 0.1194,
+          "win_rate": 22.4
+        },
+        "3_wf_fold_1": {
+          "n": 72,
+          "pnl": 7600.0,
+          "exp_r": 0.5278,
+          "win_rate": 30.6
+        },
+        "4_wf_fold_2": {
+          "n": 58,
+          "pnl": 4400.0,
+          "exp_r": 0.3793,
+          "win_rate": 27.6
+        },
+        "5_wf_fold_3": {
+          "n": 61,
+          "pnl": 800.0,
+          "exp_r": 0.0656,
+          "win_rate": 21.3
+        },
+        "6_wf_fold_4": {
+          "n": 73,
+          "pnl": 2400.0,
+          "exp_r": 0.1644,
+          "win_rate": 23.3
+        },
+        "7_torture_spread": {
+          "n": 460,
+          "pnl": 3200.0,
+          "exp_r": 0.0348,
+          "win_rate": 23.7
+        },
+        "8_torture_skip": {
+          "n": 305,
+          "pnl": 11000.0,
+          "exp_r": 0.1803,
+          "win_rate": 23.6
+        }
+      },
+      "mc_prob_profit_raw": 97.3,
+      "span": {
+        "bars": 34316,
+        "start": "2025-07-31",
+        "end": "2026-07-23"
+      }
+    }
+  ],
+  "elapsed_s": 52.3
+}

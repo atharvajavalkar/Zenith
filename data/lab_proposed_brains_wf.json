@@ -1,0 +1,748 @@
+{
+  "generated_at": "2026-08-18T13:48:55.007888+00:00",
+  "risk_usd": 100.0,
+  "tf": "5m",
+  "proposed": {
+    "ETHUSD": "vol_clock",
+    "BTCUSD": "entropy_tod",
+    "GOLD": "circadian_thr",
+    "NAS100": "entropy_strict",
+    "USDJPY": "weekday_regime_prior",
+    "AUDUSD": "session_mix_no_off",
+    "USDCHF": "session_mix",
+    "UKOIL": "weekday_regime_prior"
+  },
+  "windows": [
+    "7d",
+    "15d",
+    "30d",
+    "90d",
+    "180d",
+    "1y",
+    "3y"
+  ],
+  "elapsed_sec": 47.4,
+  "desk": {
+    "7d": 481.46,
+    "15d": -619.38,
+    "30d": -724.52,
+    "90d": 1136.68,
+    "180d": 5543.37,
+    "1y": 16846.54,
+    "3y": -9650.06
+  },
+  "per_pair": {
+    "ETHUSD": {
+      "symbol": "ETHUSD",
+      "brain": "vol_clock",
+      "wireable": true,
+      "rr": 4.0,
+      "sl_atr": 2.0,
+      "spread_mult": 8.0,
+      "n_entries": 7396,
+      "n_trades_3y": 495,
+      "windows": {
+        "7d": {
+          "n": 3,
+          "exp_r": -1.125,
+          "win_rate": 0.0,
+          "pnl": -337.5,
+          "avg_spread_r": 0.125,
+          "wf_green": 0,
+          "oos_exp_r": -1.125,
+          "n_bars": 2017,
+          "verdict": "FAIL"
+        },
+        "15d": {
+          "n": 5,
+          "exp_r": -1.125,
+          "win_rate": 0.0,
+          "pnl": -562.5,
+          "avg_spread_r": 0.125,
+          "wf_green": 0,
+          "oos_exp_r": -1.125,
+          "n_bars": 4321,
+          "verdict": "FAIL"
+        },
+        "30d": {
+          "n": 9,
+          "exp_r": -0.0139,
+          "win_rate": 0.2222,
+          "pnl": -12.5,
+          "avg_spread_r": 0.125,
+          "wf_green": 0,
+          "oos_exp_r": -1.125,
+          "n_bars": 8641,
+          "verdict": "FAIL"
+        },
+        "90d": {
+          "n": 30,
+          "exp_r": 0.2083,
+          "win_rate": 0.2667,
+          "pnl": 625.0,
+          "avg_spread_r": 0.125,
+          "wf_green": 0,
+          "oos_exp_r": 0.125,
+          "n_bars": 25921,
+          "verdict": "FAIL"
+        },
+        "180d": {
+          "n": 77,
+          "exp_r": -0.0207,
+          "win_rate": 0.2208,
+          "pnl": -159.34,
+          "avg_spread_r": 0.1246,
+          "wf_green": 2,
+          "oos_exp_r": 0.1908,
+          "n_bars": 51841,
+          "verdict": "FAIL"
+        },
+        "1y": {
+          "n": 160,
+          "exp_r": 0.2223,
+          "win_rate": 0.2687,
+          "pnl": 3557.35,
+          "avg_spread_r": 0.1214,
+          "wf_green": 2,
+          "oos_exp_r": 0.0592,
+          "n_bars": 105121,
+          "verdict": "SOFT"
+        },
+        "3y": {
+          "n": 483,
+          "exp_r": 0.079,
+          "win_rate": 0.2402,
+          "pnl": 3813.96,
+          "avg_spread_r": 0.1219,
+          "wf_green": 2,
+          "oos_exp_r": 0.179,
+          "n_bars": 315361,
+          "verdict": "SOFT"
+        }
+      }
+    },
+    "BTCUSD": {
+      "symbol": "BTCUSD",
+      "brain": "entropy_tod",
+      "wireable": false,
+      "rr": 3.0,
+      "sl_atr": 2.0,
+      "spread_mult": 8.0,
+      "n_entries": 219,
+      "n_trades_3y": 29,
+      "windows": {
+        "7d": {
+          "n": 0,
+          "exp_r": 0.0,
+          "win_rate": 0.0,
+          "pnl": 0.0,
+          "avg_spread_r": 0.0,
+          "wf_green": 0,
+          "oos_exp_r": 0.0,
+          "mc": null,
+          "verdict": "FAIL"
+        },
+        "15d": {
+          "n": 0,
+          "exp_r": 0.0,
+          "win_rate": 0.0,
+          "pnl": 0.0,
+          "avg_spread_r": 0.0,
+          "wf_green": 0,
+          "oos_exp_r": 0.0,
+          "mc": null,
+          "verdict": "FAIL"
+        },
+        "30d": {
+          "n": 2,
+          "exp_r": -1.125,
+          "win_rate": 0.0,
+          "pnl": -225.0,
+          "avg_spread_r": 0.125,
+          "wf_green": 0,
+          "oos_exp_r": -1.125,
+          "n_bars": 8641,
+          "verdict": "FAIL"
+        },
+        "90d": {
+          "n": 3,
+          "exp_r": 0.2083,
+          "win_rate": 0.3333,
+          "pnl": 62.5,
+          "avg_spread_r": 0.125,
+          "wf_green": 0,
+          "oos_exp_r": -1.125,
+          "n_bars": 25921,
+          "verdict": "FAIL"
+        },
+        "180d": {
+          "n": 6,
+          "exp_r": -0.4502,
+          "win_rate": 0.1667,
+          "pnl": -270.14,
+          "avg_spread_r": 0.1169,
+          "wf_green": 0,
+          "oos_exp_r": 0.2083,
+          "n_bars": 51841,
+          "verdict": "FAIL"
+        },
+        "1y": {
+          "n": 10,
+          "exp_r": 0.0836,
+          "win_rate": 0.3,
+          "pnl": 83.59,
+          "avg_spread_r": 0.1164,
+          "wf_green": 0,
+          "oos_exp_r": 0.2083,
+          "n_bars": 105121,
+          "verdict": "FAIL"
+        },
+        "3y": {
+          "n": 28,
+          "exp_r": 0.1693,
+          "win_rate": 0.3214,
+          "pnl": 474.13,
+          "avg_spread_r": 0.1164,
+          "wf_green": 2,
+          "oos_exp_r": 0.0836,
+          "n_bars": 315361,
+          "verdict": "SOFT"
+        }
+      }
+    },
+    "GOLD": {
+      "symbol": "GOLD",
+      "brain": "circadian_thr",
+      "wireable": true,
+      "rr": 4.0,
+      "sl_atr": 2.0,
+      "spread_mult": 10.0,
+      "n_entries": 3008,
+      "n_trades_3y": 675,
+      "windows": {
+        "7d": {
+          "n": 5,
+          "exp_r": -0.0436,
+          "win_rate": 0.2,
+          "pnl": -21.78,
+          "avg_spread_r": 0.0436,
+          "wf_green": 0,
+          "oos_exp_r": 0.2072,
+          "n_bars": 2017,
+          "verdict": "FAIL"
+        },
+        "15d": {
+          "n": 11,
+          "exp_r": -0.136,
+          "win_rate": 0.1818,
+          "pnl": -149.55,
+          "avg_spread_r": 0.045,
+          "wf_green": 0,
+          "oos_exp_r": 0.2072,
+          "n_bars": 4321,
+          "verdict": "FAIL"
+        },
+        "30d": {
+          "n": 24,
+          "exp_r": -0.0077,
+          "win_rate": 0.2083,
+          "pnl": -18.38,
+          "avg_spread_r": 0.0493,
+          "wf_green": 0,
+          "oos_exp_r": -0.4888,
+          "n_bars": 8641,
+          "verdict": "FAIL"
+        },
+        "90d": {
+          "n": 62,
+          "exp_r": 0.0836,
+          "win_rate": 0.2258,
+          "pnl": 518.02,
+          "avg_spread_r": 0.0455,
+          "wf_green": 2,
+          "oos_exp_r": 0.2004,
+          "n_bars": 25921,
+          "verdict": "SOFT"
+        },
+        "180d": {
+          "n": 107,
+          "exp_r": 0.222,
+          "win_rate": 0.2523,
+          "pnl": 2375.11,
+          "avg_spread_r": 0.0397,
+          "wf_green": 3,
+          "oos_exp_r": 0.1737,
+          "n_bars": 51841,
+          "verdict": "PASS"
+        },
+        "1y": {
+          "n": 221,
+          "exp_r": 0.15,
+          "win_rate": 0.2398,
+          "pnl": 3315.4,
+          "avg_spread_r": 0.0491,
+          "wf_green": 3,
+          "oos_exp_r": 0.0107,
+          "n_bars": 105121,
+          "verdict": "PASS"
+        },
+        "3y": {
+          "n": 645,
+          "exp_r": 0.0119,
+          "win_rate": 0.2171,
+          "pnl": 765.14,
+          "avg_spread_r": 0.0734,
+          "wf_green": 2,
+          "oos_exp_r": 0.2165,
+          "n_bars": 315361,
+          "verdict": "SOFT"
+        }
+      }
+    },
+    "NAS100": {
+      "symbol": "NAS100",
+      "brain": "entropy_strict",
+      "wireable": true,
+      "rr": 4.0,
+      "sl_atr": 2.0,
+      "spread_mult": 8.0,
+      "n_entries": 1425,
+      "n_trades_3y": 400,
+      "windows": {
+        "7d": {
+          "n": 5,
+          "exp_r": -0.0584,
+          "win_rate": 0.2,
+          "pnl": -29.19,
+          "avg_spread_r": 0.0584,
+          "wf_green": 0,
+          "oos_exp_r": -1.0484,
+          "n_bars": 2017,
+          "verdict": "FAIL"
+        },
+        "15d": {
+          "n": 9,
+          "exp_r": -0.496,
+          "win_rate": 0.1111,
+          "pnl": -446.44,
+          "avg_spread_r": 0.0516,
+          "wf_green": 0,
+          "oos_exp_r": -1.0691,
+          "n_bars": 4321,
+          "verdict": "FAIL"
+        },
+        "30d": {
+          "n": 11,
+          "exp_r": -0.5954,
+          "win_rate": 0.0909,
+          "pnl": -654.96,
+          "avg_spread_r": 0.05,
+          "wf_green": 0,
+          "oos_exp_r": -0.0584,
+          "n_bars": 8641,
+          "verdict": "FAIL"
+        },
+        "90d": {
+          "n": 40,
+          "exp_r": -0.4407,
+          "win_rate": 0.125,
+          "pnl": -1762.98,
+          "avg_spread_r": 0.0657,
+          "wf_green": 1,
+          "oos_exp_r": -0.5954,
+          "n_bars": 25921,
+          "verdict": "FAIL"
+        },
+        "180d": {
+          "n": 75,
+          "exp_r": 0.1246,
+          "win_rate": 0.24,
+          "pnl": 934.62,
+          "avg_spread_r": 0.0754,
+          "wf_green": 1,
+          "oos_exp_r": -0.4299,
+          "n_bars": 51841,
+          "verdict": "FAIL"
+        },
+        "1y": {
+          "n": 136,
+          "exp_r": 0.3422,
+          "win_rate": 0.2868,
+          "pnl": 4654.35,
+          "avg_spread_r": 0.0916,
+          "wf_green": 3,
+          "oos_exp_r": 0.0522,
+          "n_bars": 105121,
+          "verdict": "PASS"
+        },
+        "3y": {
+          "n": 380,
+          "exp_r": 0.1837,
+          "win_rate": 0.2579,
+          "pnl": 6979.01,
+          "avg_spread_r": 0.1058,
+          "wf_green": 4,
+          "oos_exp_r": 0.3338,
+          "n_bars": 315361,
+          "verdict": "PASS"
+        }
+      }
+    },
+    "USDJPY": {
+      "symbol": "USDJPY",
+      "brain": "weekday_regime_prior",
+      "wireable": true,
+      "rr": 2.0,
+      "sl_atr": 2.5,
+      "spread_mult": 10.0,
+      "n_entries": 4946,
+      "n_trades_3y": 1541,
+      "windows": {
+        "7d": {
+          "n": 4,
+          "exp_r": -0.35,
+          "win_rate": 0.25,
+          "pnl": -140.0,
+          "avg_spread_r": 0.1,
+          "wf_green": 0,
+          "oos_exp_r": -0.1,
+          "n_bars": 2017,
+          "verdict": "FAIL"
+        },
+        "15d": {
+          "n": 11,
+          "exp_r": -0.2818,
+          "win_rate": 0.2727,
+          "pnl": -310.0,
+          "avg_spread_r": 0.1,
+          "wf_green": 0,
+          "oos_exp_r": -0.1,
+          "n_bars": 4321,
+          "verdict": "FAIL"
+        },
+        "30d": {
+          "n": 24,
+          "exp_r": -0.6,
+          "win_rate": 0.1667,
+          "pnl": -1440.0,
+          "avg_spread_r": 0.1,
+          "wf_green": 0,
+          "oos_exp_r": -0.5,
+          "n_bars": 8641,
+          "verdict": "FAIL"
+        },
+        "90d": {
+          "n": 64,
+          "exp_r": -0.3448,
+          "win_rate": 0.25,
+          "pnl": -2206.82,
+          "avg_spread_r": 0.0948,
+          "wf_green": 1,
+          "oos_exp_r": -0.6,
+          "n_bars": 25921,
+          "verdict": "FAIL"
+        },
+        "180d": {
+          "n": 182,
+          "exp_r": -0.0577,
+          "win_rate": 0.3462,
+          "pnl": -1050.92,
+          "avg_spread_r": 0.0962,
+          "wf_green": 1,
+          "oos_exp_r": -0.3479,
+          "n_bars": 51841,
+          "verdict": "FAIL"
+        },
+        "1y": {
+          "n": 411,
+          "exp_r": 0.0268,
+          "win_rate": 0.3747,
+          "pnl": 1102.05,
+          "avg_spread_r": 0.0973,
+          "wf_green": 2,
+          "oos_exp_r": -0.3031,
+          "n_bars": 105121,
+          "verdict": "SOFT"
+        },
+        "3y": {
+          "n": 1465,
+          "exp_r": -0.0356,
+          "win_rate": 0.3529,
+          "pnl": -5220.22,
+          "avg_spread_r": 0.0943,
+          "wf_green": 2,
+          "oos_exp_r": 0.0502,
+          "n_bars": 315361,
+          "verdict": "FAIL"
+        }
+      }
+    },
+    "AUDUSD": {
+      "symbol": "AUDUSD",
+      "brain": "session_mix_no_off",
+      "wireable": true,
+      "rr": 2.0,
+      "sl_atr": 2.5,
+      "spread_mult": 10.0,
+      "n_entries": 27260,
+      "n_trades_3y": 978,
+      "windows": {
+        "7d": {
+          "n": 2,
+          "exp_r": -1.1,
+          "win_rate": 0.0,
+          "pnl": -220.0,
+          "avg_spread_r": 0.1,
+          "wf_green": 0,
+          "oos_exp_r": -1.1,
+          "n_bars": 2017,
+          "verdict": "FAIL"
+        },
+        "15d": {
+          "n": 7,
+          "exp_r": -0.6714,
+          "win_rate": 0.1429,
+          "pnl": -470.0,
+          "avg_spread_r": 0.1,
+          "wf_green": 0,
+          "oos_exp_r": -1.1,
+          "n_bars": 4321,
+          "verdict": "FAIL"
+        },
+        "30d": {
+          "n": 13,
+          "exp_r": 0.0538,
+          "win_rate": 0.3846,
+          "pnl": 70.0,
+          "avg_spread_r": 0.1,
+          "wf_green": 0,
+          "oos_exp_r": -1.1,
+          "n_bars": 8641,
+          "verdict": "FAIL"
+        },
+        "90d": {
+          "n": 63,
+          "exp_r": -0.0524,
+          "win_rate": 0.3492,
+          "pnl": -330.0,
+          "avg_spread_r": 0.1,
+          "wf_green": 1,
+          "oos_exp_r": 0.15,
+          "n_bars": 25921,
+          "verdict": "FAIL"
+        },
+        "180d": {
+          "n": 192,
+          "exp_r": 0.0412,
+          "win_rate": 0.3802,
+          "pnl": 790.28,
+          "avg_spread_r": 0.0995,
+          "wf_green": 3,
+          "oos_exp_r": -0.4,
+          "n_bars": 51841,
+          "verdict": "SOFT"
+        },
+        "1y": {
+          "n": 280,
+          "exp_r": 0.0575,
+          "win_rate": 0.3857,
+          "pnl": 1610.28,
+          "avg_spread_r": 0.0996,
+          "wf_green": 2,
+          "oos_exp_r": 0.1,
+          "n_bars": 105121,
+          "verdict": "SOFT"
+        },
+        "3y": {
+          "n": 911,
+          "exp_r": -0.1146,
+          "win_rate": 0.3282,
+          "pnl": -10440.12,
+          "avg_spread_r": 0.0992,
+          "wf_green": 2,
+          "oos_exp_r": 0.0465,
+          "n_bars": 315361,
+          "verdict": "FAIL"
+        }
+      }
+    },
+    "USDCHF": {
+      "symbol": "USDCHF",
+      "brain": "session_mix",
+      "wireable": true,
+      "rr": 2.0,
+      "sl_atr": 2.5,
+      "spread_mult": 10.0,
+      "n_entries": 32809,
+      "n_trades_3y": 713,
+      "windows": {
+        "7d": {
+          "n": 0,
+          "exp_r": 0.0,
+          "win_rate": 0.0,
+          "pnl": 0.0,
+          "avg_spread_r": 0.0,
+          "wf_green": 0,
+          "oos_exp_r": 0.0,
+          "mc": null,
+          "verdict": "FAIL"
+        },
+        "15d": {
+          "n": 0,
+          "exp_r": 0.0,
+          "win_rate": 0.0,
+          "pnl": 0.0,
+          "avg_spread_r": 0.0,
+          "wf_green": 0,
+          "oos_exp_r": 0.0,
+          "mc": null,
+          "verdict": "FAIL"
+        },
+        "30d": {
+          "n": 2,
+          "exp_r": 0.4,
+          "win_rate": 0.5,
+          "pnl": 80.0,
+          "avg_spread_r": 0.1,
+          "wf_green": 0,
+          "oos_exp_r": -1.1,
+          "n_bars": 8641,
+          "verdict": "FAIL"
+        },
+        "90d": {
+          "n": 30,
+          "exp_r": 0.4,
+          "win_rate": 0.5,
+          "pnl": 1200.0,
+          "avg_spread_r": 0.1,
+          "wf_green": 3,
+          "oos_exp_r": 0.5667,
+          "n_bars": 25921,
+          "verdict": "PASS"
+        },
+        "180d": {
+          "n": 95,
+          "exp_r": 0.0372,
+          "win_rate": 0.3789,
+          "pnl": 353.5,
+          "avg_spread_r": 0.0996,
+          "wf_green": 2,
+          "oos_exp_r": 0.6308,
+          "n_bars": 51841,
+          "verdict": "SOFT"
+        },
+        "1y": {
+          "n": 158,
+          "exp_r": 0.0586,
+          "win_rate": 0.3861,
+          "pnl": 925.23,
+          "avg_spread_r": 0.0997,
+          "wf_green": 2,
+          "oos_exp_r": 0.1716,
+          "n_bars": 105121,
+          "verdict": "SOFT"
+        },
+        "3y": {
+          "n": 663,
+          "exp_r": -0.0352,
+          "win_rate": 0.3544,
+          "pnl": -2334.66,
+          "avg_spread_r": 0.0986,
+          "wf_green": 2,
+          "oos_exp_r": 0.0636,
+          "n_bars": 315361,
+          "verdict": "FAIL"
+        }
+      }
+    },
+    "UKOIL": {
+      "symbol": "UKOIL",
+      "brain": "weekday_regime_prior",
+      "wireable": true,
+      "rr": 4.0,
+      "sl_atr": 2.0,
+      "spread_mult": 1.0,
+      "n_entries": 1916,
+      "n_trades_3y": 1016,
+      "windows": {
+        "7d": {
+          "n": 7,
+          "exp_r": 1.757,
+          "win_rate": 0.5714,
+          "pnl": 1229.93,
+          "avg_spread_r": 0.1001,
+          "wf_green": 0,
+          "oos_exp_r": 0.5848,
+          "n_bars": 2017,
+          "verdict": "FAIL"
+        },
+        "15d": {
+          "n": 15,
+          "exp_r": 0.8794,
+          "win_rate": 0.4,
+          "pnl": 1319.11,
+          "avg_spread_r": 0.1206,
+          "wf_green": 0,
+          "oos_exp_r": 1.757,
+          "n_bars": 4321,
+          "verdict": "FAIL"
+        },
+        "30d": {
+          "n": 35,
+          "exp_r": 0.4218,
+          "win_rate": 0.3143,
+          "pnl": 1476.32,
+          "avg_spread_r": 0.1496,
+          "wf_green": 2,
+          "oos_exp_r": 1.6767,
+          "n_bars": 8641,
+          "verdict": "SOFT"
+        },
+        "90d": {
+          "n": 111,
+          "exp_r": 0.2731,
+          "win_rate": 0.2793,
+          "pnl": 3030.96,
+          "avg_spread_r": 0.1233,
+          "wf_green": 3,
+          "oos_exp_r": 0.6447,
+          "n_bars": 25921,
+          "verdict": "PASS"
+        },
+        "180d": {
+          "n": 209,
+          "exp_r": 0.123,
+          "win_rate": 0.2488,
+          "pnl": 2570.26,
+          "avg_spread_r": 0.121,
+          "wf_green": 3,
+          "oos_exp_r": 0.1154,
+          "n_bars": 51841,
+          "verdict": "PASS"
+        },
+        "1y": {
+          "n": 355,
+          "exp_r": 0.045,
+          "win_rate": 0.2394,
+          "pnl": 1598.29,
+          "avg_spread_r": 0.1522,
+          "wf_green": 3,
+          "oos_exp_r": 0.2143,
+          "n_bars": 105121,
+          "verdict": "PASS"
+        },
+        "3y": {
+          "n": 961,
+          "exp_r": -0.0384,
+          "win_rate": 0.2268,
+          "pnl": -3687.3,
+          "avg_spread_r": 0.1726,
+          "wf_green": 3,
+          "oos_exp_r": 0.0521,
+          "n_bars": 315361,
+          "verdict": "FAIL"
+        }
+      }
+    }
+  }
+}

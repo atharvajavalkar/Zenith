@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import ZenithLogo from './ZenithLogo'
+import TradeModeSelect from './TradeModeSelect'
 
 export default function Layout({ children, variant = 'default' }) {
   const { user, logout } = useAuth()
@@ -9,93 +10,74 @@ export default function Layout({ children, variant = 'default' }) {
 
   const navLink = (to, label) => {
     const active = location.pathname === to
-    if (isChart) {
-      return (
-        <Link
-          to={to}
-          className="text-sm px-3 py-1.5 rounded-lg transition"
-          style={active ? { backgroundColor: '#F0F3FA', color: '#131722' } : { color: '#787B86' }}
-        >
-          {label}
-        </Link>
-      )
-    }
     return (
-      <Link
-        to={to}
-        className={`relative text-sm font-medium px-3.5 py-2 rounded-lg transition-colors ${
-          active
-            ? 'text-surface bg-gold-gradient shadow-glow'
-            : 'text-surface-muted hover:text-gray-100 hover:bg-white/5'
-        }`}
-      >
+      <Link to={to} className={`nav-link ${active ? 'nav-link-active' : ''}`}>
         {label}
       </Link>
     )
   }
 
   return (
-    <div className={`min-h-screen ${isChart ? 'bg-white' : 'bg-surface'}`}>
-      <header
-        className={`shrink-0 ${
-          isChart
-            ? 'border-b'
-            : 'sticky top-0 z-40 border-b border-surface-border/70 bg-surface/80 backdrop-blur-xl'
-        }`}
-        style={{
-          backgroundColor: isChart ? '#FFFFFF' : undefined,
-          borderColor: isChart ? '#E0E3EB' : undefined,
-        }}
-      >
+    <div className="app-shell">
+      <header className="relative z-40 sticky top-0 border-b border-accent-gold/10 bg-[#080807]/80 backdrop-blur-xl shrink-0">
         <div
-          className={`${isChart ? 'w-full' : 'max-w-7xl mx-auto'} px-4 py-3 flex items-center justify-between`}
+          className={`${
+            isChart ? 'w-full' : 'max-w-7xl mx-auto'
+          } px-5 sm:px-8 h-[4.25rem] flex items-center justify-between gap-6`}
         >
-          <div className="flex items-center gap-7">
-            <Link to="/dashboard" className="hover:opacity-95 transition-opacity">
+          <div className="flex items-center gap-8 min-w-0">
+            <Link to="/dashboard" className="shrink-0 group">
               <ZenithLogo
-                size={44}
-                variant={isChart ? 'light' : 'dark'}
-                showTagline={!isChart}
-                textClassName="text-3xl sm:text-4xl"
+                size={26}
+                variant="dark"
+                showTagline={false}
+                textClassName="text-[1.45rem] sm:text-[1.6rem] transition-opacity group-hover:opacity-90"
               />
             </Link>
-            <nav className="flex items-center gap-1.5">
+            <nav className="hidden sm:flex items-center gap-1 overflow-x-auto">
               {navLink('/dashboard', 'Dashboard')}
+              {navLink('/world', 'World')}
               {navLink('/chart', 'Chart')}
+              {navLink('/backtest', 'Backtest')}
+              {navLink('/strategy-lab', 'Strategy Lab')}
+              {navLink('/nebula', 'Nebula')}
+              {navLink('/settings', 'Settings')}
             </nav>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 sm:gap-4 shrink-0">
+            <TradeModeSelect compact />
             {user?.email && (
-              <div className="hidden sm:flex items-center gap-2.5 pr-1">
-                <span
-                  className="grid h-8 w-8 place-items-center rounded-full bg-gold-gradient text-sm font-bold text-surface"
-                  style={isChart ? {} : undefined}
-                  title={user.email}
-                >
-                  {user.email[0]?.toUpperCase()}
-                </span>
-                <span
-                  className="text-sm"
-                  style={{ color: isChart ? '#787B86' : undefined }}
-                >
-                  {user.email}
-                </span>
-              </div>
+              <span
+                className="hidden md:block text-[11px] tracking-wide font-light truncate max-w-[160px] text-surface-muted"
+                title={user.email}
+              >
+                {user.email}
+              </span>
             )}
-            <button
-              type="button"
-              onClick={logout}
-              className={`text-sm px-4 py-2 rounded-lg border transition ${
-                isChart ? '' : 'border-surface-border text-surface-muted hover:text-gray-100 hover:border-accent-gold/40'
-              }`}
-              style={isChart ? { borderColor: '#E0E3EB', color: '#131722' } : undefined}
-            >
+            <button type="button" onClick={logout} className="btn-secondary">
               Logout
             </button>
           </div>
         </div>
+        <nav className="sm:hidden flex items-center gap-0.5 overflow-x-auto px-4 pb-3 border-t border-accent-gold/5">
+          {navLink('/dashboard', 'Dashboard')}
+          {navLink('/world', 'World')}
+          {navLink('/chart', 'Chart')}
+          {navLink('/backtest', 'Backtest')}
+          {navLink('/strategy-lab', 'Lab')}
+          {navLink('/nebula', 'Nebula')}
+          {navLink('/settings', 'Settings')}
+        </nav>
       </header>
-      <main className={isChart ? '' : 'max-w-7xl mx-auto px-4 py-7 space-y-7'}>{children}</main>
+      <main
+        className={
+          isChart
+            ? 'relative z-[1]'
+            : 'relative z-[1] max-w-7xl mx-auto px-5 sm:px-10 py-10 sm:py-12 space-y-10 fade-page'
+        }
+      >
+        {children}
+      </main>
     </div>
   )
 }

@@ -1,0 +1,87 @@
+{
+  "run_id": "20260810T101448Z",
+  "generated_at": "2026-08-10T10:18:56Z",
+  "symbols": [
+    "GOLD",
+    "USDCHF",
+    "USDJPY",
+    "NAS100",
+    "UKOIL",
+    "AUDUSD",
+    "BTCUSD",
+    "ETHUSD"
+  ],
+  "results": [
+    {
+      "zenith": "GOLD",
+      "best_source": null,
+      "best_schema": null,
+      "file": "data/l3/20260810T101448Z/GOLD.json",
+      "xm_ok": false,
+      "coinbase_orders": null
+    },
+    {
+      "zenith": "USDCHF",
+      "best_source": null,
+      "best_schema": null,
+      "file": "data/l3/20260810T101448Z/USDCHF.json",
+      "xm_ok": false,
+      "coinbase_orders": null
+    },
+    {
+      "zenith": "USDJPY",
+      "best_source": null,
+      "best_schema": null,
+      "file": "data/l3/20260810T101448Z/USDJPY.json",
+      "xm_ok": false,
+      "coinbase_orders": null
+    },
+    {
+      "zenith": "NAS100",
+      "best_source": null,
+      "best_schema": null,
+      "file": "data/l3/20260810T101448Z/NAS100.json",
+      "xm_ok": false,
+      "coinbase_orders": null
+    },
+    {
+      "zenith": "UKOIL",
+      "best_source": null,
+      "best_schema": null,
+      "file": "data/l3/20260810T101448Z/UKOIL.json",
+      "xm_ok": false,
+      "coinbase_orders": null
+    },
+    {
+      "zenith": "AUDUSD",
+      "best_source": null,
+      "best_schema": null,
+      "file": "data/l3/20260810T101448Z/AUDUSD.json",
+      "xm_ok": false,
+      "coinbase_orders": null
+    },
+    {
+      "zenith": "BTCUSD",
+      "best_source": "coinbase_l3",
+      "best_schema": "L3_MBO",
+      "file": "data/l3/20260810T101448Z/BTCUSD.json",
+      "xm_ok": false,
+      "coinbase_orders": 58055
+    },
+    {
+      "zenith": "ETHUSD",
+      "best_source": "coinbase_l3",
+      "best_schema": "L3_MBO",
+      "file": "data/l3/20260810T101448Z/ETHUSD.json",
+      "xm_ok": false,
+      "coinbase_orders": 18939
+    }
+  ],
+  "order_chain": "data/l3/20260810T101448Z/coinbase_order_chain.jsonl",
+  "notes": {
+    "true_l3": "Only Coinbase snapshots/chain for BTCUSD/ETHUSD without paid keys",
+    "xm_dom": "Aggregated broker depth \u2014 useful live DOM, not exchange order chain",
+    "futures_fx_true_l3": "Set DATABENTO_API_KEY for CME GC/NQ/CL MBO and FX MBP",
+    "crypto_history": "Set TARDIS_API_KEY for historical Coinbase L3"
+  }
+}

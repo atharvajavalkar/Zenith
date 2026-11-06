@@ -1,0 +1,1972 @@
+{
+  "meta": {
+    "risk_usd": 200.0,
+    "live_book": [
+      "GOLD",
+      "BTCUSD",
+      "UKOIL",
+      "NAS100"
+    ],
+    "schwab_source": "lab_schwab_tally_densify_v2.json",
+    "nebula": "untouched",
+    "live_env": "untouched",
+    "started": "2026-09-11T07:12:16.195994+00:00",
+    "finished": "2026-09-11T07:12:35.847571+00:00"
+  },
+  "symbols": {
+    "GOLD": {
+      "live_brain": "omni",
+      "live_tfs": [
+        "3m",
+        "5m"
+      ],
+      "live_rr": 3.0,
+      "schwab_crown": {
+        "symbol": "GOLD",
+        "lookbacks": [
+          7,
+          60
+        ],
+        "size_mode": "strict",
+        "lot_mult": 2.5,
+        "tp_r": null,
+        "hold_days": 5,
+        "id": "lb7-60_strict_x2.5_c2c_h5",
+        "v2_exp_r": 2.152,
+        "v2_verdict": "SURVIVES"
+      },
+      "horizons": {
+        "1y": {
+          "schwab": {
+            "verdict": "SURVIVES",
+            "full": {
+              "n": 49,
+              "wins": 35,
+              "losses": 14,
+              "wr": 71.4,
+              "pnl": 21090.42,
+              "avg_r": 2.152,
+              "exp_r": 2.152,
+              "max_dd": -2032.63,
+              "pf": 3.46
+            },
+            "oos": {
+              "n": 20,
+              "wins": 14,
+              "losses": 6,
+              "wr": 70.0,
+              "pnl": 4996.21,
+              "avg_r": 1.249,
+              "exp_r": 1.249,
+              "max_dd": -959.55,
+              "pf": 3.11
+            },
+            "wf_green": 4,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": 107.415,
+              "p5_R": 51.111,
+              "p95_R": 163.053,
+              "mean_R": 107.002,
+              "prob_profit": 100.0,
+              "prob_ruin_10R": 9.5,
+              "median_maxDD_R": -12.661,
+              "p5_maxDD_R": -25.823
+            },
+            "tests": {
+              "1_full": {
+                "n": 49,
+                "exp_r": 2.152,
+                "pnl": 21090.42
+              },
+              "2_oos70": {
+                "n": 20,
+                "exp_r": 1.249,
+                "pnl": 4996.21
+              },
+              "3_wf_fold_1": {
+                "n": 9,
+                "exp_r": 4.118,
+                "pnl": 7412.54
+              },
+              "4_wf_fold_2": {
+                "n": 11,
+                "exp_r": 2.77,
+                "pnl": 6093.33
+              },
+              "5_wf_fold_3": {
+                "n": 10,
+                "exp_r": 0.508,
+                "pnl": 1015.28
+              },
+              "6_wf_fold_4": {
+                "n": 10,
+                "exp_r": 1.99,
+                "pnl": 3980.93
+              },
+              "7_torture_spread": {
+                "n": 49,
+                "exp_r": 2.002,
+                "pnl": 19620.48
+              },
+              "8_torture_skip": {
+                "n": 31,
+                "exp_r": 1.75,
+                "pnl": 10848.98
+              },
+              "mc_prob_profit": 100.0
+            },
+            "crown_id": "lb7-60_strict_x2.5_c2c_h5"
+          },
+          "live": {
+            "verdict": "FRAGILE",
+            "full": {
+              "n": 60,
+              "wins": 17,
+              "losses": 43,
+              "wr": 28.3,
+              "pnl": 423.76,
+              "avg_r": 0.071,
+              "exp_r": 0.071,
+              "max_dd": -1190.84,
+              "pf": 1.09
+            },
+            "oos": {
+              "n": 18,
+              "wins": 4,
+              "losses": 14,
+              "wr": 22.2,
+              "pnl": -298.37,
+              "avg_r": -0.166,
+              "exp_r": -0.166,
+              "max_dd": -1164.42,
+              "pf": 0.8
+            },
+            "wf_green": 2,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": 4.267,
+              "p5_R": -19.467,
+              "p95_R": 28.216,
+              "mean_R": 4.609,
+              "prob_profit": 64.5,
+              "prob_ruin_10R": 32.3,
+              "median_maxDD_R": -12.257,
+              "p5_maxDD_R": -24.4
+            },
+            "sl_atr": 2.0,
+            "rr": 3.0,
+            "meta": {
+              "omni_cfg": {
+                "look_fast": 80,
+                "look_mid": 400,
+                "look_slow": 600,
+                "edge_min": 0.55,
+                "hysteresis": 25,
+                "min_agree": 2,
+                "sl_atr": 2.0,
+                "rr": 3.0
+              },
+              "sitout_bars": 1047380,
+              "active_bars": 1800
+            }
+          },
+          "live_tf": "5m"
+        },
+        "full": {
+          "schwab": {
+            "verdict": "SURVIVES",
+            "full": {
+              "n": 475,
+              "wins": 259,
+              "losses": 216,
+              "wr": 54.5,
+              "pnl": 48878.87,
+              "avg_r": 0.515,
+              "exp_r": 0.515,
+              "max_dd": -9477.32,
+              "pf": 1.35
+            },
+            "oos": {
+              "n": 149,
+              "wins": 94,
+              "losses": 55,
+              "wr": 63.1,
+              "pnl": 36553.44,
+              "avg_r": 1.227,
+              "exp_r": 1.227,
+              "max_dd": -5201.18,
+              "pf": 2.06
+            },
+            "wf_green": 3,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": 246.958,
+              "p5_R": 90.077,
+              "p95_R": 410.077,
+              "mean_R": 247.451,
+              "prob_profit": 99.3,
+              "prob_ruin_10R": 51.4,
+              "median_maxDD_R": -55.241,
+              "p5_maxDD_R": -100.135
+            },
+            "tests": {
+              "1_full": {
+                "n": 475,
+                "exp_r": 0.515,
+                "pnl": 48878.87
+              },
+              "2_oos70": {
+                "n": 149,
+                "exp_r": 1.227,
+                "pnl": 36553.44
+              },
+              "3_wf_fold_1": {
+                "n": 69,
+                "exp_r": -0.254,
+                "pnl": -3504.78
+              },
+              "4_wf_fold_2": {
+                "n": 73,
+                "exp_r": 0.347,
+                "pnl": 5063.73
+              },
+              "5_wf_fold_3": {
+                "n": 75,
+                "exp_r": 0.993,
+                "pnl": 14893.47
+              },
+              "6_wf_fold_4": {
+                "n": 74,
+                "exp_r": 1.464,
+                "pnl": 21659.97
+              },
+              "7_torture_spread": {
+                "n": 475,
+                "exp_r": 0.365,
+                "pnl": 34628.76
+              },
+              "8_torture_skip": {
+                "n": 316,
+                "exp_r": 0.375,
+                "pnl": 23715.62
+              },
+              "mc_prob_profit": 99.3
+            },
+            "crown_id": "lb7-60_strict_x2.5_c2c_h5"
+          },
+          "live": {
+            "verdict": "FRAGILE",
+            "full": {
+              "n": 423,
+              "wins": 119,
+              "losses": 304,
+              "wr": 28.1,
+              "pnl": 1368.85,
+              "avg_r": 0.032,
+              "exp_r": 0.032,
+              "max_dd": -5201.43,
+              "pf": 1.04
+            },
+            "oos": {
+              "n": 153,
+              "wins": 52,
+              "losses": 101,
+              "wr": 34.0,
+              "pnl": 4228.32,
+              "avg_r": 0.276,
+              "exp_r": 0.276,
+              "max_dd": -1398.82,
+              "pf": 1.39
+            },
+            "wf_green": 2,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": 13.562,
+              "p5_R": -46.361,
+              "p95_R": 77.578,
+              "mean_R": 14.147,
+              "prob_profit": 63.7,
+              "prob_ruin_10R": 68.7,
+              "median_maxDD_R": -36.01,
+              "p5_maxDD_R": -72.829
+            },
+            "sl_atr": 2.0,
+            "rr": 3.0,
+            "meta": {
+              "omni_cfg": {
+                "look_fast": 80,
+                "look_mid": 400,
+                "look_slow": 600,
+                "edge_min": 0.55,
+                "hysteresis": 25,
+                "min_agree": 2,
+                "sl_atr": 2.0,
+                "rr": 3.0
+              },
+              "sitout_bars": 1047380,
+              "active_bars": 1800
+            }
+          },
+          "live_tf": "5m"
+        }
+      },
+      "live_by_tf": {
+        "3m": {
+          "1y": {
+            "verdict": "DEAD",
+            "full": {
+              "n": 352,
+              "wins": 92,
+              "losses": 260,
+              "wr": 26.1,
+              "pnl": -820.06,
+              "avg_r": -0.023,
+              "exp_r": -0.023,
+              "max_dd": -3412.39,
+              "pf": 0.97
+            },
+            "oos": {
+              "n": 122,
+              "wins": 30,
+              "losses": 92,
+              "wr": 24.6,
+              "pnl": -1079.59,
+              "avg_r": -0.088,
+              "exp_r": -0.088,
+              "max_dd": -2858.96,
+              "pf": 0.89
+            },
+            "wf_green": 1,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": -8.311,
+              "p5_R": -63.394,
+              "p95_R": 48.176,
+              "mean_R": -7.894,
+              "prob_profit": 39.1,
+              "prob_ruin_10R": 81.7,
+              "median_maxDD_R": -40.326,
+              "p5_maxDD_R": -78.086
+            },
+            "sl_atr": 2.0,
+            "rr": 3.0,
+            "meta": {
+              "omni_cfg": {
+                "look_fast": 120,
+                "look_mid": 240,
+                "look_slow": 600,
+                "edge_min": 0.52,
+                "hysteresis": 25,
+                "min_agree": 2,
+                "sl_atr": 2.0,
+                "rr": 3.0
+              },
+              "sitout_bars": 1729204,
+              "active_bars": 19432
+            }
+          },
+          "full": {
+            "verdict": "FRAGILE",
+            "full": {
+              "n": 1967,
+              "wins": 544,
+              "losses": 1423,
+              "wr": 27.7,
+              "pnl": 2702.01,
+              "avg_r": 0.014,
+              "exp_r": 0.014,
+              "max_dd": -6272.55,
+              "pf": 1.02
+            },
+            "oos": {
+              "n": 770,
+              "wins": 216,
+              "losses": 554,
+              "wr": 28.1,
+              "pnl": 2932.71,
+              "avg_r": 0.038,
+              "exp_r": 0.038,
+              "max_dd": -3412.39,
+              "pf": 1.05
+            },
+            "wf_green": 4,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": 25.877,
+              "p5_R": -96.954,
+              "p95_R": 163.371,
+              "mean_R": 27.214,
+              "prob_profit": 62.7,
+              "prob_ruin_10R": 84.3,
+              "median_maxDD_R": -78.435,
+              "p5_maxDD_R": -154.394
+            },
+            "sl_atr": 2.0,
+            "rr": 3.0,
+            "meta": {
+              "omni_cfg": {
+                "look_fast": 120,
+                "look_mid": 240,
+                "look_slow": 600,
+                "edge_min": 0.52,
+                "hysteresis": 25,
+                "min_agree": 2,
+                "sl_atr": 2.0,
+                "rr": 3.0
+              },
+              "sitout_bars": 1729204,
+              "active_bars": 19432
+            }
+          }
+        },
+        "5m": {
+          "1y": {
+            "verdict": "FRAGILE",
+            "full": {
+              "n": 60,
+              "wins": 17,
+              "losses": 43,
+              "wr": 28.3,
+              "pnl": 423.76,
+              "avg_r": 0.071,
+              "exp_r": 0.071,
+              "max_dd": -1190.84,
+              "pf": 1.09
+            },
+            "oos": {
+              "n": 18,
+              "wins": 4,
+              "losses": 14,
+              "wr": 22.2,
+              "pnl": -298.37,
+              "avg_r": -0.166,
+              "exp_r": -0.166,
+              "max_dd": -1164.42,
+              "pf": 0.8
+            },
+            "wf_green": 2,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": 4.267,
+              "p5_R": -19.467,
+              "p95_R": 28.216,
+              "mean_R": 4.609,
+              "prob_profit": 64.5,
+              "prob_ruin_10R": 32.3,
+              "median_maxDD_R": -12.257,
+              "p5_maxDD_R": -24.4
+            },
+            "sl_atr": 2.0,
+            "rr": 3.0,
+            "meta": {
+              "omni_cfg": {
+                "look_fast": 80,
+                "look_mid": 400,
+                "look_slow": 600,
+                "edge_min": 0.55,
+                "hysteresis": 25,
+                "min_agree": 2,
+                "sl_atr": 2.0,
+                "rr": 3.0
+              },
+              "sitout_bars": 1047380,
+              "active_bars": 1800
+            }
+          },
+          "full": {
+            "verdict": "FRAGILE",
+            "full": {
+              "n": 423,
+              "wins": 119,
+              "losses": 304,
+              "wr": 28.1,
+              "pnl": 1368.85,
+              "avg_r": 0.032,
+              "exp_r": 0.032,
+              "max_dd": -5201.43,
+              "pf": 1.04
+            },
+            "oos": {
+              "n": 153,
+              "wins": 52,
+              "losses": 101,
+              "wr": 34.0,
+              "pnl": 4228.32,
+              "avg_r": 0.276,
+              "exp_r": 0.276,
+              "max_dd": -1398.82,
+              "pf": 1.39
+            },
+            "wf_green": 2,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": 13.562,
+              "p5_R": -46.361,
+              "p95_R": 77.578,
+              "mean_R": 14.147,
+              "prob_profit": 63.7,
+              "prob_ruin_10R": 68.7,
+              "median_maxDD_R": -36.01,
+              "p5_maxDD_R": -72.829
+            },
+            "sl_atr": 2.0,
+            "rr": 3.0,
+            "meta": {
+              "omni_cfg": {
+                "look_fast": 80,
+                "look_mid": 400,
+                "look_slow": 600,
+                "edge_min": 0.55,
+                "hysteresis": 25,
+                "min_agree": 2,
+                "sl_atr": 2.0,
+                "rr": 3.0
+              },
+              "sitout_bars": 1047380,
+              "active_bars": 1800
+            }
+          }
+        }
+      },
+      "live_best_tf_1y": "5m"
+    },
+    "BTCUSD": {
+      "live_brain": "omni",
+      "live_tfs": [
+        "3m",
+        "5m"
+      ],
+      "live_rr": 3.0,
+      "schwab_crown": {
+        "symbol": "BTCUSD",
+        "lookbacks": [
+          5,
+          10
+        ],
+        "size_mode": "strict",
+        "lot_mult": 2.5,
+        "tp_r": null,
+        "hold_days": 5,
+        "id": "lb5-10_strict_x2.5_c2c_h5",
+        "v2_exp_r": 0.953,
+        "v2_verdict": "SURVIVES"
+      },
+      "horizons": {
+        "1y": {
+          "schwab": {
+            "verdict": "SURVIVES",
+            "full": {
+              "n": 56,
+              "wins": 33,
+              "losses": 23,
+              "wr": 58.9,
+              "pnl": 10678.12,
+              "avg_r": 0.953,
+              "exp_r": 0.953,
+              "max_dd": -1810.8,
+              "pf": 2.1
+            },
+            "oos": {
+              "n": 24,
+              "wins": 14,
+              "losses": 10,
+              "wr": 58.3,
+              "pnl": 4425.3,
+              "avg_r": 0.922,
+              "exp_r": 0.922,
+              "max_dd": -1410.53,
+              "pf": 2.05
+            },
+            "wf_green": 4,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": 52.68,
+              "p5_R": 9.136,
+              "p95_R": 98.577,
+              "mean_R": 53.3,
+              "prob_profit": 97.7,
+              "prob_ruin_10R": 10.8,
+              "median_maxDD_R": -11.991,
+              "p5_maxDD_R": -23.795
+            },
+            "tests": {
+              "1_full": {
+                "n": 56,
+                "exp_r": 0.953,
+                "pnl": 10678.12
+              },
+              "2_oos70": {
+                "n": 24,
+                "exp_r": 0.922,
+                "pnl": 4425.3
+              },
+              "3_wf_fold_1": {
+                "n": 11,
+                "exp_r": 1.44,
+                "pnl": 3168.08
+              },
+              "4_wf_fold_2": {
+                "n": 12,
+                "exp_r": 2.036,
+                "pnl": 4887.53
+              },
+              "5_wf_fold_3": {
+                "n": 12,
+                "exp_r": 0.62,
+                "pnl": 1486.85
+              },
+              "6_wf_fold_4": {
+                "n": 12,
+                "exp_r": 1.224,
+                "pnl": 2938.45
+              },
+              "7_torture_spread": {
+                "n": 56,
+                "exp_r": 0.803,
+                "pnl": 8998.2
+              },
+              "8_torture_skip": {
+                "n": 35,
+                "exp_r": 1.012,
+                "pnl": 7081.6
+              },
+              "mc_prob_profit": 97.7
+            },
+            "crown_id": "lb5-10_strict_x2.5_c2c_h5"
+          },
+          "live": {
+            "verdict": "SURVIVES",
+            "full": {
+              "n": 332,
+              "wins": 100,
+              "losses": 232,
+              "wr": 30.1,
+              "pnl": 2859.74,
+              "avg_r": 0.086,
+              "exp_r": 0.086,
+              "max_dd": -2719.88,
+              "pf": 1.11
+            },
+            "oos": {
+              "n": 94,
+              "wins": 29,
+              "losses": 65,
+              "wr": 30.9,
+              "pnl": 1036.37,
+              "avg_r": 0.11,
+              "exp_r": 0.11,
+              "max_dd": -1645.83,
+              "pf": 1.14
+            },
+            "wf_green": 3,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": 28.581,
+              "p5_R": -23.067,
+              "p95_R": 84.857,
+              "mean_R": 29.794,
+              "prob_profit": 81.6,
+              "prob_ruin_10R": 51.5,
+              "median_maxDD_R": -27.582,
+              "p5_maxDD_R": -52.103
+            },
+            "sl_atr": 2.5,
+            "rr": 3.0,
+            "meta": {
+              "omni_cfg": {
+                "look_fast": 120,
+                "look_mid": 240,
+                "look_slow": 600,
+                "edge_min": 0.55,
+                "hysteresis": 25,
+                "min_agree": 2,
+                "sl_atr": 2.5,
+                "rr": 3.0
+              },
+              "sitout_bars": 1592777,
+              "active_bars": 22419
+            }
+          },
+          "live_tf": "3m"
+        },
+        "full": {
+          "schwab": {
+            "verdict": "SURVIVES",
+            "full": {
+              "n": 517,
+              "wins": 251,
+              "losses": 266,
+              "wr": 48.5,
+              "pnl": 30268.63,
+              "avg_r": 0.293,
+              "exp_r": 0.293,
+              "max_dd": -19532.33,
+              "pf": 1.18
+            },
+            "oos": {
+              "n": 158,
+              "wins": 80,
+              "losses": 78,
+              "wr": 50.6,
+              "pnl": 10176.76,
+              "avg_r": 0.322,
+              "exp_r": 0.322,
+              "max_dd": -10543.86,
+              "pf": 1.25
+            },
+            "wf_green": 2,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": 156.304,
+              "p5_R": -44.825,
+              "p95_R": 343.98,
+              "mean_R": 151.508,
+              "prob_profit": 89.2,
+              "prob_ruin_10R": 72.4,
+              "median_maxDD_R": -86.087,
+              "p5_maxDD_R": -167.486
+            },
+            "tests": {
+              "1_full": {
+                "n": 517,
+                "exp_r": 0.293,
+                "pnl": 30268.63
+              },
+              "2_oos70": {
+                "n": 158,
+                "exp_r": 0.322,
+                "pnl": 10176.76
+              },
+              "3_wf_fold_1": {
+                "n": 75,
+                "exp_r": 0.085,
+                "pnl": 1275.04
+              },
+              "4_wf_fold_2": {
+                "n": 79,
+                "exp_r": -0.918,
+                "pnl": -14498.45
+              },
+              "5_wf_fold_3": {
+                "n": 79,
+                "exp_r": -0.08,
+                "pnl": -1265.61
+              },
+              "6_wf_fold_4": {
+                "n": 79,
+                "exp_r": 0.724,
+                "pnl": 11442.37
+              },
+              "7_torture_spread": {
+                "n": 517,
+                "exp_r": 0.143,
+                "pnl": 14758.32
+              },
+              "8_torture_skip": {
+                "n": 343,
+                "exp_r": 0.211,
+                "pnl": 14445.8
+              },
+              "mc_prob_profit": 89.2
+            },
+            "crown_id": "lb5-10_strict_x2.5_c2c_h5"
+          },
+          "live": {
+            "verdict": "FRAGILE",
+            "full": {
+              "n": 1512,
+              "wins": 419,
+              "losses": 1093,
+              "wr": 27.7,
+              "pnl": -1833.9,
+              "avg_r": -0.012,
+              "exp_r": -0.012,
+              "max_dd": -10557.31,
+              "pf": 0.99
+            },
+            "oos": {
+              "n": 709,
+              "wins": 208,
+              "losses": 501,
+              "wr": 29.3,
+              "pnl": 3859.92,
+              "avg_r": 0.054,
+              "exp_r": 0.054,
+              "max_dd": -2719.88,
+              "pf": 1.07
+            },
+            "wf_green": 2,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": -18.397,
+              "p5_R": -142.247,
+              "p95_R": 92.78,
+              "mean_R": -19.374,
+              "prob_profit": 40.2,
+              "prob_ruin_10R": 90.2,
+              "median_maxDD_R": -86.95,
+              "p5_maxDD_R": -170.205
+            },
+            "sl_atr": 2.5,
+            "rr": 3.0,
+            "meta": {
+              "omni_cfg": {
+                "look_fast": 120,
+                "look_mid": 240,
+                "look_slow": 600,
+                "edge_min": 0.55,
+                "hysteresis": 25,
+                "min_agree": 2,
+                "sl_atr": 2.5,
+                "rr": 3.0
+              },
+              "sitout_bars": 1592777,
+              "active_bars": 22419
+            }
+          },
+          "live_tf": "3m"
+        }
+      },
+      "live_by_tf": {
+        "3m": {
+          "1y": {
+            "verdict": "SURVIVES",
+            "full": {
+              "n": 332,
+              "wins": 100,
+              "losses": 232,
+              "wr": 30.1,
+              "pnl": 2859.74,
+              "avg_r": 0.086,
+              "exp_r": 0.086,
+              "max_dd": -2719.88,
+              "pf": 1.11
+            },
+            "oos": {
+              "n": 94,
+              "wins": 29,
+              "losses": 65,
+              "wr": 30.9,
+              "pnl": 1036.37,
+              "avg_r": 0.11,
+              "exp_r": 0.11,
+              "max_dd": -1645.83,
+              "pf": 1.14
+            },
+            "wf_green": 3,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": 28.581,
+              "p5_R": -23.067,
+              "p95_R": 84.857,
+              "mean_R": 29.794,
+              "prob_profit": 81.6,
+              "prob_ruin_10R": 51.5,
+              "median_maxDD_R": -27.582,
+              "p5_maxDD_R": -52.103
+            },
+            "sl_atr": 2.5,
+            "rr": 3.0,
+            "meta": {
+              "omni_cfg": {
+                "look_fast": 120,
+                "look_mid": 240,
+                "look_slow": 600,
+                "edge_min": 0.55,
+                "hysteresis": 25,
+                "min_agree": 2,
+                "sl_atr": 2.5,
+                "rr": 3.0
+              },
+              "sitout_bars": 1592777,
+              "active_bars": 22419
+            }
+          },
+          "full": {
+            "verdict": "FRAGILE",
+            "full": {
+              "n": 1512,
+              "wins": 419,
+              "losses": 1093,
+              "wr": 27.7,
+              "pnl": -1833.9,
+              "avg_r": -0.012,
+              "exp_r": -0.012,
+              "max_dd": -10557.31,
+              "pf": 0.99
+            },
+            "oos": {
+              "n": 709,
+              "wins": 208,
+              "losses": 501,
+              "wr": 29.3,
+              "pnl": 3859.92,
+              "avg_r": 0.054,
+              "exp_r": 0.054,
+              "max_dd": -2719.88,
+              "pf": 1.07
+            },
+            "wf_green": 2,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": -18.397,
+              "p5_R": -142.247,
+              "p95_R": 92.78,
+              "mean_R": -19.374,
+              "prob_profit": 40.2,
+              "prob_ruin_10R": 90.2,
+              "median_maxDD_R": -86.95,
+              "p5_maxDD_R": -170.205
+            },
+            "sl_atr": 2.5,
+            "rr": 3.0,
+            "meta": {
+              "omni_cfg": {
+                "look_fast": 120,
+                "look_mid": 240,
+                "look_slow": 600,
+                "edge_min": 0.55,
+                "hysteresis": 25,
+                "min_agree": 2,
+                "sl_atr": 2.5,
+                "rr": 3.0
+              },
+              "sitout_bars": 1592777,
+              "active_bars": 22419
+            }
+          }
+        },
+        "5m": {
+          "1y": {
+            "verdict": "DEAD",
+            "full": {
+              "n": 467,
+              "wins": 116,
+              "losses": 351,
+              "wr": 24.8,
+              "pnl": -5705.38,
+              "avg_r": -0.122,
+              "exp_r": -0.122,
+              "max_dd": -8363.14,
+              "pf": 0.85
+            },
+            "oos": {
+              "n": 132,
+              "wins": 35,
+              "losses": 97,
+              "wr": 26.5,
+              "pnl": -792.17,
+              "avg_r": -0.06,
+              "exp_r": -0.06,
+              "max_dd": -3601.69,
+              "pf": 0.93
+            },
+            "wf_green": 1,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": -56.968,
+              "p5_R": -117.14,
+              "p95_R": 3.626,
+              "mean_R": -56.374,
+              "prob_profit": 6.2,
+              "prob_ruin_10R": 98.0,
+              "median_maxDD_R": -76.258,
+              "p5_maxDD_R": -127.741
+            },
+            "sl_atr": 2.0,
+            "rr": 3.0,
+            "meta": {
+              "omni_cfg": {
+                "look_fast": 80,
+                "look_mid": 240,
+                "look_slow": 600,
+                "edge_min": 0.52,
+                "hysteresis": 25,
+                "min_agree": 2,
+                "sl_atr": 2.0,
+                "rr": 3.0
+              },
+              "sitout_bars": 937006,
+              "active_bars": 32110
+            }
+          },
+          "full": {
+            "verdict": "FRAGILE",
+            "full": {
+              "n": 2421,
+              "wins": 683,
+              "losses": 1738,
+              "wr": 28.2,
+              "pnl": 2555.44,
+              "avg_r": 0.011,
+              "exp_r": 0.011,
+              "max_dd": -13332.94,
+              "pf": 1.01
+            },
+            "oos": {
+              "n": 1197,
+              "wins": 315,
+              "losses": 882,
+              "wr": 26.3,
+              "pnl": -7486.77,
+              "avg_r": -0.063,
+              "exp_r": -0.063,
+              "max_dd": -13332.94,
+              "pf": 0.92
+            },
+            "wf_green": 3,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": 25.706,
+              "p5_R": -136.561,
+              "p95_R": 173.617,
+              "mean_R": 22.635,
+              "prob_profit": 60.8,
+              "prob_ruin_10R": 85.8,
+              "median_maxDD_R": -89.328,
+              "p5_maxDD_R": -185.463
+            },
+            "sl_atr": 2.0,
+            "rr": 3.0,
+            "meta": {
+              "omni_cfg": {
+                "look_fast": 80,
+                "look_mid": 240,
+                "look_slow": 600,
+                "edge_min": 0.52,
+                "hysteresis": 25,
+                "min_agree": 2,
+                "sl_atr": 2.0,
+                "rr": 3.0
+              },
+              "sitout_bars": 937006,
+              "active_bars": 32110
+            }
+          }
+        }
+      },
+      "live_best_tf_1y": "3m"
+    },
+    "UKOIL": {
+      "live_brain": "omni",
+      "live_tfs": [
+        "3m"
+      ],
+      "live_rr": 3.0,
+      "schwab_crown": {
+        "symbol": "UKOIL",
+        "lookbacks": [
+          60,
+          63
+        ],
+        "size_mode": "strict",
+        "lot_mult": 2.5,
+        "tp_r": null,
+        "hold_days": 5,
+        "id": "lb60-63_strict_x2.5_c2c_h5",
+        "v2_exp_r": 1.026,
+        "v2_verdict": "SURVIVES"
+      },
+      "horizons": {
+        "1y": {
+          "schwab": {
+            "verdict": "SURVIVES",
+            "full": {
+              "n": 59,
+              "wins": 37,
+              "losses": 22,
+              "wr": 62.7,
+              "pnl": 12110.56,
+              "avg_r": 1.026,
+              "exp_r": 1.026,
+              "max_dd": -3318.17,
+              "pf": 1.83
+            },
+            "oos": {
+              "n": 25,
+              "wins": 18,
+              "losses": 7,
+              "wr": 72.0,
+              "pnl": 8697.96,
+              "avg_r": 1.74,
+              "exp_r": 1.74,
+              "max_dd": -2892.26,
+              "pf": 2.58
+            },
+            "wf_green": 4,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": 59.431,
+              "p5_R": 3.265,
+              "p95_R": 115.672,
+              "mean_R": 58.926,
+              "prob_profit": 95.7,
+              "prob_ruin_10R": 27.8,
+              "median_maxDD_R": -18.6,
+              "p5_maxDD_R": -37.679
+            },
+            "tests": {
+              "1_full": {
+                "n": 59,
+                "exp_r": 1.026,
+                "pnl": 12110.56
+              },
+              "2_oos70": {
+                "n": 25,
+                "exp_r": 1.74,
+                "pnl": 8697.96
+              },
+              "3_wf_fold_1": {
+                "n": 12,
+                "exp_r": 0.629,
+                "pnl": 1510.01
+              },
+              "4_wf_fold_2": {
+                "n": 13,
+                "exp_r": 1.134,
+                "pnl": 2948.36
+              },
+              "5_wf_fold_3": {
+                "n": 12,
+                "exp_r": 1.984,
+                "pnl": 4761.53
+              },
+              "6_wf_fold_4": {
+                "n": 13,
+                "exp_r": 1.514,
+                "pnl": 3936.43
+              },
+              "7_torture_spread": {
+                "n": 59,
+                "exp_r": 0.876,
+                "pnl": 10340.52
+              },
+              "8_torture_skip": {
+                "n": 37,
+                "exp_r": 0.13,
+                "pnl": 961.15
+              },
+              "mc_prob_profit": 95.7
+            },
+            "crown_id": "lb60-63_strict_x2.5_c2c_h5"
+          },
+          "live": {
+            "verdict": "DEAD",
+            "full": {
+              "n": 91,
+              "wins": 24,
+              "losses": 67,
+              "wr": 26.4,
+              "pnl": -946.17,
+              "avg_r": -0.104,
+              "exp_r": -0.104,
+              "max_dd": -1842.91,
+              "pf": 0.88
+            },
+            "oos": {
+              "n": 45,
+              "wins": 11,
+              "losses": 34,
+              "wr": 24.4,
+              "pnl": -831.45,
+              "avg_r": -0.185,
+              "exp_r": -0.185,
+              "max_dd": -1373.74,
+              "pf": 0.79
+            },
+            "wf_green": 1,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": -9.49,
+              "p5_R": -37.714,
+              "p95_R": 18.956,
+              "mean_R": -9.125,
+              "prob_profit": 29.4,
+              "prob_ruin_10R": 72.7,
+              "median_maxDD_R": -22.851,
+              "p5_maxDD_R": -43.188
+            },
+            "sl_atr": 2.0,
+            "rr": 3.0,
+            "meta": {
+              "omni_cfg": {
+                "look_fast": 120,
+                "look_mid": 240,
+                "look_slow": 600,
+                "edge_min": 0.52,
+                "hysteresis": 25,
+                "min_agree": 2,
+                "sl_atr": 2.0,
+                "rr": 3.0
+              },
+              "sitout_bars": 1744944,
+              "active_bars": 8492
+            }
+          },
+          "live_tf": "3m"
+        },
+        "full": {
+          "schwab": {
+            "verdict": "SURVIVES",
+            "full": {
+              "n": 586,
+              "wins": 317,
+              "losses": 269,
+              "wr": 54.1,
+              "pnl": 24930.58,
+              "avg_r": 0.213,
+              "exp_r": 0.213,
+              "max_dd": -11566.69,
+              "pf": 1.13
+            },
+            "oos": {
+              "n": 178,
+              "wins": 101,
+              "losses": 77,
+              "wr": 56.7,
+              "pnl": 19514.55,
+              "avg_r": 0.548,
+              "exp_r": 0.548,
+              "max_dd": -6180.23,
+              "pf": 1.38
+            },
+            "wf_green": 3,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": 129.771,
+              "p5_R": -64.012,
+              "p95_R": 298.442,
+              "mean_R": 124.259,
+              "prob_profit": 86.4,
+              "prob_ruin_10R": 78.2,
+              "median_maxDD_R": -82.3,
+              "p5_maxDD_R": -156.919
+            },
+            "tests": {
+              "1_full": {
+                "n": 586,
+                "exp_r": 0.213,
+                "pnl": 24930.58
+              },
+              "2_oos70": {
+                "n": 178,
+                "exp_r": 0.548,
+                "pnl": 19514.55
+              },
+              "3_wf_fold_1": {
+                "n": 90,
+                "exp_r": 0.017,
+                "pnl": 303.04
+              },
+              "4_wf_fold_2": {
+                "n": 89,
+                "exp_r": -0.004,
+                "pnl": -73.3
+              },
+              "5_wf_fold_3": {
+                "n": 89,
+                "exp_r": 0.249,
+                "pnl": 4434.46
+              },
+              "6_wf_fold_4": {
+                "n": 89,
+                "exp_r": 0.847,
+                "pnl": 15080.09
+              },
+              "7_torture_spread": {
+                "n": 586,
+                "exp_r": 0.063,
+                "pnl": 7350.68
+              },
+              "8_torture_skip": {
+                "n": 391,
+                "exp_r": 0.367,
+                "pnl": 28705.23
+              },
+              "mc_prob_profit": 86.4
+            },
+            "crown_id": "lb60-63_strict_x2.5_c2c_h5"
+          },
+          "live": {
+            "verdict": "DEAD",
+            "full": {
+              "n": 411,
+              "wins": 111,
+              "losses": 300,
+              "wr": 27.0,
+              "pnl": -3885.3,
+              "avg_r": -0.095,
+              "exp_r": -0.095,
+              "max_dd": -5207.69,
+              "pf": 0.89
+            },
+            "oos": {
+              "n": 149,
+              "wins": 39,
+              "losses": 110,
+              "wr": 26.2,
+              "pnl": -1868.92,
+              "avg_r": -0.125,
+              "exp_r": -0.125,
+              "max_dd": -2886.62,
+              "pf": 0.86
+            },
+            "wf_green": 1,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": -39.749,
+              "p5_R": -98.799,
+              "p95_R": 20.393,
+              "mean_R": -39.506,
+              "prob_profit": 14.3,
+              "prob_ruin_10R": 94.8,
+              "median_maxDD_R": -62.88,
+              "p5_maxDD_R": -110.552
+            },
+            "sl_atr": 2.0,
+            "rr": 3.0,
+            "meta": {
+              "omni_cfg": {
+                "look_fast": 120,
+                "look_mid": 240,
+                "look_slow": 600,
+                "edge_min": 0.52,
+                "hysteresis": 25,
+                "min_agree": 2,
+                "sl_atr": 2.0,
+                "rr": 3.0
+              },
+              "sitout_bars": 1744944,
+              "active_bars": 8492
+            }
+          },
+          "live_tf": "3m"
+        }
+      },
+      "live_by_tf": {
+        "3m": {
+          "1y": {
+            "verdict": "DEAD",
+            "full": {
+              "n": 91,
+              "wins": 24,
+              "losses": 67,
+              "wr": 26.4,
+              "pnl": -946.17,
+              "avg_r": -0.104,
+              "exp_r": -0.104,
+              "max_dd": -1842.91,
+              "pf": 0.88
+            },
+            "oos": {
+              "n": 45,
+              "wins": 11,
+              "losses": 34,
+              "wr": 24.4,
+              "pnl": -831.45,
+              "avg_r": -0.185,
+              "exp_r": -0.185,
+              "max_dd": -1373.74,
+              "pf": 0.79
+            },
+            "wf_green": 1,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": -9.49,
+              "p5_R": -37.714,
+              "p95_R": 18.956,
+              "mean_R": -9.125,
+              "prob_profit": 29.4,
+              "prob_ruin_10R": 72.7,
+              "median_maxDD_R": -22.851,
+              "p5_maxDD_R": -43.188
+            },
+            "sl_atr": 2.0,
+            "rr": 3.0,
+            "meta": {
+              "omni_cfg": {
+                "look_fast": 120,
+                "look_mid": 240,
+                "look_slow": 600,
+                "edge_min": 0.52,
+                "hysteresis": 25,
+                "min_agree": 2,
+                "sl_atr": 2.0,
+                "rr": 3.0
+              },
+              "sitout_bars": 1744944,
+              "active_bars": 8492
+            }
+          },
+          "full": {
+            "verdict": "DEAD",
+            "full": {
+              "n": 411,
+              "wins": 111,
+              "losses": 300,
+              "wr": 27.0,
+              "pnl": -3885.3,
+              "avg_r": -0.095,
+              "exp_r": -0.095,
+              "max_dd": -5207.69,
+              "pf": 0.89
+            },
+            "oos": {
+              "n": 149,
+              "wins": 39,
+              "losses": 110,
+              "wr": 26.2,
+              "pnl": -1868.92,
+              "avg_r": -0.125,
+              "exp_r": -0.125,
+              "max_dd": -2886.62,
+              "pf": 0.86
+            },
+            "wf_green": 1,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": -39.749,
+              "p5_R": -98.799,
+              "p95_R": 20.393,
+              "mean_R": -39.506,
+              "prob_profit": 14.3,
+              "prob_ruin_10R": 94.8,
+              "median_maxDD_R": -62.88,
+              "p5_maxDD_R": -110.552
+            },
+            "sl_atr": 2.0,
+            "rr": 3.0,
+            "meta": {
+              "omni_cfg": {
+                "look_fast": 120,
+                "look_mid": 240,
+                "look_slow": 600,
+                "edge_min": 0.52,
+                "hysteresis": 25,
+                "min_agree": 2,
+                "sl_atr": 2.0,
+                "rr": 3.0
+              },
+              "sitout_bars": 1744944,
+              "active_bars": 8492
+            }
+          }
+        }
+      },
+      "live_best_tf_1y": "3m"
+    },
+    "NAS100": {
+      "live_brain": "session_mix",
+      "live_tfs": [
+        "5m"
+      ],
+      "live_rr": 3.0,
+      "schwab_crown": {
+        "symbol": "NAS100",
+        "lookbacks": [
+          20,
+          21,
+          90
+        ],
+        "size_mode": "strict",
+        "lot_mult": 2.5,
+        "tp_r": null,
+        "hold_days": 4,
+        "id": "lb20-21-90_strict_x2.5_c2c_h4",
+        "v2_exp_r": 0.859,
+        "v2_verdict": "SURVIVES"
+      },
+      "horizons": {
+        "1y": {
+          "schwab": {
+            "verdict": "SURVIVES",
+            "full": {
+              "n": 73,
+              "wins": 49,
+              "losses": 24,
+              "wr": 67.1,
+              "pnl": 12542.41,
+              "avg_r": 0.859,
+              "exp_r": 0.859,
+              "max_dd": -3875.34,
+              "pf": 1.95
+            },
+            "oos": {
+              "n": 31,
+              "wins": 22,
+              "losses": 9,
+              "wr": 71.0,
+              "pnl": 7113.33,
+              "avg_r": 1.147,
+              "exp_r": 1.147,
+              "max_dd": -2445.43,
+              "pf": 2.43
+            },
+            "wf_green": 4,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": 65.157,
+              "p5_R": 18.318,
+              "p95_R": 113.173,
+              "mean_R": 64.951,
+              "prob_profit": 98.5,
+              "prob_ruin_10R": 19.3,
+              "median_maxDD_R": -16.438,
+              "p5_maxDD_R": -33.193
+            },
+            "tests": {
+              "1_full": {
+                "n": 73,
+                "exp_r": 0.859,
+                "pnl": 12542.41
+              },
+              "2_oos70": {
+                "n": 31,
+                "exp_r": 1.147,
+                "pnl": 7113.33
+              },
+              "3_wf_fold_1": {
+                "n": 15,
+                "exp_r": 0.216,
+                "pnl": 648.18
+              },
+              "4_wf_fold_2": {
+                "n": 16,
+                "exp_r": 0.331,
+                "pnl": 1059.1
+              },
+              "5_wf_fold_3": {
+                "n": 15,
+                "exp_r": 1.108,
+                "pnl": 3322.81
+              },
+              "6_wf_fold_4": {
+                "n": 16,
+                "exp_r": 1.185,
+                "pnl": 3790.52
+              },
+              "7_torture_spread": {
+                "n": 73,
+                "exp_r": 0.709,
+                "pnl": 10352.44
+              },
+              "8_torture_skip": {
+                "n": 50,
+                "exp_r": 1.128,
+                "pnl": 11283.03
+              },
+              "mc_prob_profit": 98.5
+            },
+            "crown_id": "lb20-21-90_strict_x2.5_c2c_h4"
+          },
+          "live": {
+            "verdict": "SURVIVES",
+            "full": {
+              "n": 617,
+              "wins": 187,
+              "losses": 430,
+              "wr": 30.3,
+              "pnl": 9520.46,
+              "avg_r": 0.154,
+              "exp_r": 0.154,
+              "max_dd": -2439.22,
+              "pf": 1.21
+            },
+            "oos": {
+              "n": 227,
+              "wins": 73,
+              "losses": 154,
+              "wr": 32.2,
+              "pnl": 5462.36,
+              "avg_r": 0.241,
+              "exp_r": 0.241,
+              "max_dd": -1605.63,
+              "pf": 1.34
+            },
+            "wf_green": 4,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": 93.685,
+              "p5_R": 22.412,
+              "p95_R": 175.865,
+              "mean_R": 94.438,
+              "prob_profit": 98.0,
+              "prob_ruin_10R": 36.5,
+              "median_maxDD_R": -27.573,
+              "p5_maxDD_R": -50.128
+            },
+            "sl_atr": 3.0,
+            "rr": 3.0,
+            "meta": {
+              "brain": "session_mix",
+              "thr": "0.32/0.42"
+            }
+          },
+          "live_tf": "5m"
+        },
+        "full": {
+          "schwab": {
+            "verdict": "FRAGILE",
+            "full": {
+              "n": 712,
+              "wins": 393,
+              "losses": 319,
+              "wr": 55.2,
+              "pnl": 14407.87,
+              "avg_r": 0.101,
+              "exp_r": 0.101,
+              "max_dd": -16135.39,
+              "pf": 1.08
+            },
+            "oos": {
+              "n": 219,
+              "wins": 117,
+              "losses": 102,
+              "wr": 53.4,
+              "pnl": -7142.51,
+              "avg_r": -0.163,
+              "exp_r": -0.163,
+              "max_dd": -15032.14,
+              "pf": 0.89
+            },
+            "wf_green": 3,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": 67.213,
+              "p5_R": -88.391,
+              "p95_R": 212.583,
+              "mean_R": 67.716,
+              "prob_profit": 76.4,
+              "prob_ruin_10R": 80.6,
+              "median_maxDD_R": -81.393,
+              "p5_maxDD_R": -161.562
+            },
+            "tests": {
+              "1_full": {
+                "n": 712,
+                "exp_r": 0.101,
+                "pnl": 14407.87
+              },
+              "2_oos70": {
+                "n": 219,
+                "exp_r": -0.163,
+                "pnl": -7142.51
+              },
+              "3_wf_fold_1": {
+                "n": 110,
+                "exp_r": 0.375,
+                "pnl": 8246.07
+              },
+              "4_wf_fold_2": {
+                "n": 109,
+                "exp_r": 0.148,
+                "pnl": 3222.84
+              },
+              "5_wf_fold_3": {
+                "n": 110,
+                "exp_r": -0.581,
+                "pnl": -12784.24
+              },
+              "6_wf_fold_4": {
+                "n": 109,
+                "exp_r": 0.259,
+                "pnl": 5641.73
+              },
+              "7_torture_spread": {
+                "n": 712,
+                "exp_r": -0.049,
+                "pnl": -6952.02
+              },
+              "8_torture_skip": {
+                "n": 473,
+                "exp_r": -0.03,
+                "pnl": -2857.65
+              },
+              "mc_prob_profit": 76.4
+            },
+            "crown_id": "lb20-21-90_strict_x2.5_c2c_h4"
+          },
+          "live": {
+            "verdict": "FRAGILE",
+            "full": {
+              "n": 4777,
+              "wins": 1276,
+              "losses": 3501,
+              "wr": 26.7,
+              "pnl": -5849.93,
+              "avg_r": -0.012,
+              "exp_r": -0.012,
+              "max_dd": -23927.72,
+              "pf": 0.98
+            },
+            "oos": {
+              "n": 1729,
+              "wins": 482,
+              "losses": 1247,
+              "wr": 27.9,
+              "pnl": 8390.95,
+              "avg_r": 0.049,
+              "exp_r": 0.049,
+              "max_dd": -6507.68,
+              "pf": 1.06
+            },
+            "wf_green": 3,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": -53.979,
+              "p5_R": -252.218,
+              "p95_R": 151.85,
+              "mean_R": -54.53,
+              "prob_profit": 31.9,
+              "prob_ruin_10R": 95.6,
+              "median_maxDD_R": -162.35,
+              "p5_maxDD_R": -313.909
+            },
+            "sl_atr": 3.0,
+            "rr": 3.0,
+            "meta": {
+              "brain": "session_mix",
+              "thr": "0.32/0.42"
+            }
+          },
+          "live_tf": "5m"
+        }
+      },
+      "live_by_tf": {
+        "5m": {
+          "1y": {
+            "verdict": "SURVIVES",
+            "full": {
+              "n": 617,
+              "wins": 187,
+              "losses": 430,
+              "wr": 30.3,
+              "pnl": 9520.46,
+              "avg_r": 0.154,
+              "exp_r": 0.154,
+              "max_dd": -2439.22,
+              "pf": 1.21
+            },
+            "oos": {
+              "n": 227,
+              "wins": 73,
+              "losses": 154,
+              "wr": 32.2,
+              "pnl": 5462.36,
+              "avg_r": 0.241,
+              "exp_r": 0.241,
+              "max_dd": -1605.63,
+              "pf": 1.34
+            },
+            "wf_green": 4,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": 93.685,
+              "p5_R": 22.412,
+              "p95_R": 175.865,
+              "mean_R": 94.438,
+              "prob_profit": 98.0,
+              "prob_ruin_10R": 36.5,
+              "median_maxDD_R": -27.573,
+              "p5_maxDD_R": -50.128
+            },
+            "sl_atr": 3.0,
+            "rr": 3.0,
+            "meta": {
+              "brain": "session_mix",
+              "thr": "0.32/0.42"
+            }
+          },
+          "full": {
+            "verdict": "FRAGILE",
+            "full": {
+              "n": 4777,
+              "wins": 1276,
+              "losses": 3501,
+              "wr": 26.7,
+              "pnl": -5849.93,
+              "avg_r": -0.012,
+              "exp_r": -0.012,
+              "max_dd": -23927.72,
+              "pf": 0.98
+            },
+            "oos": {
+              "n": 1729,
+              "wins": 482,
+              "losses": 1247,
+              "wr": 27.9,
+              "pnl": 8390.95,
+              "avg_r": 0.049,
+              "exp_r": 0.049,
+              "max_dd": -6507.68,
+              "pf": 1.06
+            },
+            "wf_green": 3,
+            "wf_n": 4,
+            "mc": {
+              "paths": 1000,
+              "median_R": -53.979,
+              "p5_R": -252.218,
+              "p95_R": 151.85,
+              "mean_R": -54.53,
+              "prob_profit": 31.9,
+              "prob_ruin_10R": 95.6,
+              "median_maxDD_R": -162.35,
+              "p5_maxDD_R": -313.909
+            },
+            "sl_atr": 3.0,
+            "rr": 3.0,
+            "meta": {
+              "brain": "session_mix",
+              "thr": "0.32/0.42"
+            }
+          }
+        }
+      },
+      "live_best_tf_1y": "5m"
+    }
+  },
+  "head_to_head": [
+    {
+      "symbol": "GOLD",
+      "horizon": "1y",
+      "winner": "schwab",
+      "schwab_exp_r": 2.152,
+      "live_exp_r": 0.071,
+      "schwab_verdict": "SURVIVES",
+      "live_verdict": "FRAGILE",
+      "live_tf": "5m",
+      "live_brain": "omni",
+      "schwab_pnl": 21090.42,
+      "live_pnl": 423.76
+    },
+    {
+      "symbol": "GOLD",
+      "horizon": "full",
+      "winner": "schwab",
+      "schwab_exp_r": 0.515,
+      "live_exp_r": 0.032,
+      "schwab_verdict": "SURVIVES",
+      "live_verdict": "FRAGILE",
+      "live_tf": "5m",
+      "live_brain": "omni",
+      "schwab_pnl": 48878.87,
+      "live_pnl": 1368.85
+    },
+    {
+      "symbol": "BTCUSD",
+      "horizon": "1y",
+      "winner": "schwab",
+      "schwab_exp_r": 0.953,
+      "live_exp_r": 0.086,
+      "schwab_verdict": "SURVIVES",
+      "live_verdict": "SURVIVES",
+      "live_tf": "3m",
+      "live_brain": "omni",
+      "schwab_pnl": 10678.12,
+      "live_pnl": 2859.74
+    },
+    {
+      "symbol": "BTCUSD",
+      "horizon": "full",
+      "winner": "schwab",
+      "schwab_exp_r": 0.293,
+      "live_exp_r": -0.012,
+      "schwab_verdict": "SURVIVES",
+      "live_verdict": "FRAGILE",
+      "live_tf": "3m",
+      "live_brain": "omni",
+      "schwab_pnl": 30268.63,
+      "live_pnl": -1833.9
+    },
+    {
+      "symbol": "UKOIL",
+      "horizon": "1y",
+      "winner": "schwab",
+      "schwab_exp_r": 1.026,
+      "live_exp_r": -0.104,
+      "schwab_verdict": "SURVIVES",
+      "live_verdict": "DEAD",
+      "live_tf": "3m",
+      "live_brain": "omni",
+      "schwab_pnl": 12110.56,
+      "live_pnl": -946.17
+    },
+    {
+      "symbol": "UKOIL",
+      "horizon": "full",
+      "winner": "schwab",
+      "schwab_exp_r": 0.213,
+      "live_exp_r": -0.095,
+      "schwab_verdict": "SURVIVES",
+      "live_verdict": "DEAD",
+      "live_tf": "3m",
+      "live_brain": "omni",
+      "schwab_pnl": 24930.58,
+      "live_pnl": -3885.3
+    },
+    {
+      "symbol": "NAS100",
+      "horizon": "1y",
+      "winner": "schwab",
+      "schwab_exp_r": 0.859,
+      "live_exp_r": 0.154,
+      "schwab_verdict": "SURVIVES",
+      "live_verdict": "SURVIVES",
+      "live_tf": "5m",
+      "live_brain": "session_mix",
+      "schwab_pnl": 12542.41,
+      "live_pnl": 9520.46
+    },
+    {
+      "symbol": "NAS100",
+      "horizon": "full",
+      "winner": "schwab",
+      "schwab_exp_r": 0.101,
+      "live_exp_r": -0.012,
+      "schwab_verdict": "FRAGILE",
+      "live_verdict": "FRAGILE",
+      "live_tf": "5m",
+      "live_brain": "session_mix",
+      "schwab_pnl": 14407.87,
+      "live_pnl": -5849.93
+    }
+  ],
+  "summary": {
+    "1y_schwab_wins": 4,
+    "1y_live_wins": 0,
+    "1y_ties": 0,
+    "recommendation": "SCHWAB_SLEEVE",
+    "note": "On 1y E[R]: Schwab 4 \u00b7 Live 0 \u00b7 tie 0. Research only \u2014 not wired.",
+    "elapsed_s": 19.7,
+    "finished": "2026-09-11T07:12:35.847571+00:00"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "status": "done_need_densify",
+  "pct": 100,
+  "cells_done": 34776,
+  "cells_est": 37788,
+  "elapsed_sec": 79209.1,
+  "wireable_count": 0,
+  "criteria_met": false,
+  "round": "v2_d2",
+  "next_densify": 3,
+  "updated_at": "2026-09-04T10:24:20.164426+00:00",
+  "hunt": "aud_eth_invent",
+  "book": [
+    "AUDUSD",
+    "ETHUSD"
+  ],
+  "densify": 2,
+  "min_pnl_1y": 1500.0,
+  "min_return": 0.15,
+  "note": "superseded by mega desk invent"
+}

@@ -1,0 +1,3538 @@
+DUKA DEEP HUNT · all retail+hedge · Dukascopy hist · $200.0/R · TFs=('15m', '5m', '1h')
+LIVE BRAINS NOT MODIFIED
+Note: max hist ≈10y on disk (not 125y). No L2/L3 on free Dukascopy candles.
+
+DUKA DEEP HUNT · all retail+hedge · Dukascopy hist · $200.0/R · TFs=('15m', '5m', '1h')
+LIVE BRAINS NOT MODIFIED
+Note: max hist ≈10y on disk (not 125y). No L2/L3 on free Dukascopy candles.
+
+Duka deep hunt · 8 pairs · 43 strategies · TFs ('15m', '5m', '1h')
+
+######## GOLD · live RR=4.0 ########
+
+######## GOLD · live RR=4.0 ########
+  load GOLD 5m: 1,049,184 bars 2016-07-23→2026-07-23
+  load GOLD 5m: 1,049,184 bars 2016-07-23→2026-07-23
+  load GOLD 15m: 349,728 bars 2016-07-23→2026-07-23
+  load GOLD 15m: 349,728 bars 2016-07-23→2026-07-23
+  load GOLD 1h: 87,432 bars (from 5m) 2016-07-23→2026-07-23
+  load GOLD 1h: 87,432 bars (from 5m) 2016-07-23→2026-07-23
+  … fib_liq@1h (87,432 bars)
+  … fib_liq@1h (87,432 bars)
+[GOLD] fib_liq@1h
+[GOLD] scored 1 cells · survives_cells=0
+  … ema_pull@1h (87,432 bars)
+  … ema_pull@1h (87,432 bars)
+[GOLD] ema_pull@1h
+[GOLD] scored 2 cells · survives_cells=0
+  … ema_tight@1h (87,432 bars)
+  … ema_tight@1h (87,432 bars)
+[GOLD] ema_tight@1h
+[GOLD] scored 3 cells · survives_cells=0
+  … sma_cross@15m (349,728 bars)
+  … sma_cross@15m (349,728 bars)
+[GOLD] sma_cross@15m
+  … sma_cross@5m (1,049,184 bars)
+  … sma_cross@5m (1,049,184 bars)
+[GOLD] sma_cross@5m
+  … sma_cross@1h (87,432 bars)
+  … sma_cross@1h (87,432 bars)
+[GOLD] sma_cross@1h
+[GOLD] scored 6 cells · survives_cells=0
+  … pa@1h (87,432 bars)
+  … pa@1h (87,432 bars)
+[GOLD] pa@1h
+  ✓ GATE pa           1h  RR=2.0 n=812 OOS_E[R]=+0.064 5yOOS=+0.026 SURVIVES
+  ✓ GATE pa           1h  RR=2.0 n=812 OOS_E[R]=+0.064 5yOOS=+0.026 SURVIVES
+[GOLD] scored 7 cells · survives_cells=1
+  … liq@1h (87,432 bars)
+  … liq@1h (87,432 bars)
+[GOLD] liq@1h
+[GOLD] scored 8 cells · survives_cells=1
+  … tl@1h (87,432 bars)
+  … tl@1h (87,432 bars)
+[GOLD] tl@1h
+[GOLD] scored 9 cells · survives_cells=1
+  … obfvg@1h (87,432 bars)
+  … obfvg@1h (87,432 bars)
+[GOLD] obfvg@1h
+[GOLD] scored 10 cells · survives_cells=1
+  … macd@1h (87,432 bars)
+  … macd@1h (87,432 bars)
+[GOLD] macd@1h
+[GOLD] scored 11 cells · survives_cells=1
+  … engulf@1h (87,432 bars)
+  … engulf@1h (87,432 bars)
+[GOLD] engulf@1h
+[GOLD] scored 12 cells · survives_cells=1
+  … inside@1h (87,432 bars)
+  … inside@1h (87,432 bars)
+[GOLD] inside@1h
+[GOLD] scored 13 cells · survives_cells=1
+  … ichi@1h (87,432 bars)
+  … ichi@1h (87,432 bars)
+[GOLD] ichi@1h
+[GOLD] scored 14 cells · survives_cells=1
+  … psar@1h (87,432 bars)
+  … psar@1h (87,432 bars)
+[GOLD] psar@1h
+[GOLD] scored 15 cells · survives_cells=1
+  … adx@1h (87,432 bars)
+  … adx@1h (87,432 bars)
+[GOLD] adx@1h
+[GOLD] scored 16 cells · survives_cells=1
+  … st_2@15m (349,728 bars)
+  … st_2@15m (349,728 bars)
+[GOLD] st_2@15m
+  … st_2@5m (1,049,184 bars)
+  … st_2@5m (1,049,184 bars)
+[GOLD] st_2@5m
+  … st_2@1h (87,432 bars)
+  … st_2@1h (87,432 bars)
+[GOLD] st_2@1h
+[GOLD] scored 19 cells · survives_cells=2
+  … st_3@15m (349,728 bars)
+  … st_3@15m (349,728 bars)
+[GOLD] st_3@15m
+  … st_3@5m (1,049,184 bars)
+  … st_3@5m (1,049,184 bars)
+[GOLD] st_3@5m
+  … st_3@1h (87,432 bars)
+  … st_3@1h (87,432 bars)
+[GOLD] st_3@1h
+[GOLD] scored 22 cells · survives_cells=2
+  … kelt_1@15m (349,728 bars)
+  … kelt_1@15m (349,728 bars)
+[GOLD] kelt_1@15m
+  … kelt_1@5m (1,049,184 bars)
+  … kelt_1@5m (1,049,184 bars)
+[GOLD] kelt_1@5m
+  … kelt_1@1h (87,432 bars)
+  … kelt_1@1h (87,432 bars)
+[GOLD] kelt_1@1h
+  ✓ GATE kelt_1       1h  RR=3.0 n=3553 OOS_E[R]=+0.095 5yOOS=+0.125 SURVIVES
+  ✓ GATE kelt_1       1h  RR=3.0 n=3553 OOS_E[R]=+0.095 5yOOS=+0.125 SURVIVES
+[GOLD] scored 25 cells · survives_cells=3
+  … kelt_1.5@15m (349,728 bars)
+  … kelt_1.5@15m (349,728 bars)
+[GOLD] kelt_1.5@15m
+  … kelt_1.5@5m (1,049,184 bars)
+  … kelt_1.5@5m (1,049,184 bars)
+[GOLD] kelt_1.5@5m
+  … kelt_1.5@1h (87,432 bars)
+  … kelt_1.5@1h (87,432 bars)
+[GOLD] kelt_1.5@1h
+  ✓ GATE kelt_1.5     1h  RR=4.0 n=2746 OOS_E[R]=+0.125 5yOOS=+0.188 SURVIVES
+  ✓ GATE kelt_1.5     1h  RR=4.0 n=2746 OOS_E[R]=+0.125 5yOOS=+0.188 SURVIVES
+[GOLD] scored 28 cells · survives_cells=4
+  … kelt_2@15m (349,728 bars)
+  … kelt_2@15m (349,728 bars)
+[GOLD] kelt_2@15m
+  … kelt_2@5m (1,049,184 bars)
+  … kelt_2@5m (1,049,184 bars)
+[GOLD] kelt_2@5m
+  … kelt_2@1h (87,432 bars)
+  … kelt_2@1h (87,432 bars)
+[GOLD] kelt_2@1h
+  ✓ GATE kelt_2       1h  RR=4.0 n=2277 OOS_E[R]=+0.182 5yOOS=+0.257 SURVIVES
+  ✓ GATE kelt_2       1h  RR=4.0 n=2277 OOS_E[R]=+0.182 5yOOS=+0.257 SURVIVES
+[GOLD] scored 31 cells · survives_cells=5
+  … stoch_20@15m (349,728 bars)
+  … stoch_20@15m (349,728 bars)
+[GOLD] stoch_20@15m
+  skip stoch_20@15m: No numeric types to aggregate
+  skip stoch_20@15m: No numeric types to aggregate
+  … stoch_20@5m (1,049,184 bars)
+  … stoch_20@5m (1,049,184 bars)
+[GOLD] stoch_20@5m
+  skip stoch_20@5m: No numeric types to aggregate
+  skip stoch_20@5m: No numeric types to aggregate
+  … stoch_20@1h (87,432 bars)
+  … stoch_20@1h (87,432 bars)
+[GOLD] stoch_20@1h
+  skip stoch_20@1h: No numeric types to aggregate
+  skip stoch_20@1h: No numeric types to aggregate
+[GOLD] scored 31 cells · survives_cells=5
+  … stoch_30@15m (349,728 bars)
+  … stoch_30@15m (349,728 bars)
+[GOLD] stoch_30@15m
+  skip stoch_30@15m: No numeric types to aggregate
+  skip stoch_30@15m: No numeric types to aggregate
+  … stoch_30@5m (1,049,184 bars)
+  … stoch_30@5m (1,049,184 bars)
+[GOLD] stoch_30@5m
+  skip stoch_30@5m: No numeric types to aggregate
+  skip stoch_30@5m: No numeric types to aggregate
+  … stoch_30@1h (87,432 bars)
+  … stoch_30@1h (87,432 bars)
+[GOLD] stoch_30@1h
+  skip stoch_30@1h: No numeric types to aggregate
+  skip stoch_30@1h: No numeric types to aggregate
+[GOLD] scored 31 cells · survives_cells=5
+  … don_10@15m (349,728 bars)
+  … don_10@15m (349,728 bars)
+[GOLD] don_10@15m
+  … don_10@5m (1,049,184 bars)
+  … don_10@5m (1,049,184 bars)
+[GOLD] don_10@5m
+  … don_10@1h (87,432 bars)
+  … don_10@1h (87,432 bars)
+[GOLD] don_10@1h
+[GOLD] scored 34 cells · survives_cells=5
+  … don_20@15m (349,728 bars)
+  … don_20@15m (349,728 bars)
+[GOLD] don_20@15m
+  … don_20@5m (1,049,184 bars)
+  … don_20@5m (1,049,184 bars)
+[GOLD] don_20@5m
+  … don_20@1h (87,432 bars)
+  … don_20@1h (87,432 bars)
+[GOLD] don_20@1h
+[GOLD] scored 37 cells · survives_cells=5
+  … don_30@15m (349,728 bars)
+  … don_30@15m (349,728 bars)
+[GOLD] don_30@15m
+  … don_30@5m (1,049,184 bars)
+  … don_30@5m (1,049,184 bars)
+[GOLD] don_30@5m
+  … don_30@1h (87,432 bars)
+  … don_30@1h (87,432 bars)
+[GOLD] don_30@1h
+[GOLD] scored 40 cells · survives_cells=5
+  … don_55@15m (349,728 bars)
+  … don_55@15m (349,728 bars)
+[GOLD] don_55@15m
+  … don_55@5m (1,049,184 bars)
+  … don_55@5m (1,049,184 bars)
+[GOLD] don_55@5m
+  … don_55@1h (87,432 bars)
+  … don_55@1h (87,432 bars)
+[GOLD] don_55@1h
+  ✓ GATE don_55       1h  RR=4.0 n=1960 OOS_E[R]=+0.151 5yOOS=+0.279 SURVIVES
+  ✓ GATE don_55       1h  RR=4.0 n=1960 OOS_E[R]=+0.151 5yOOS=+0.279 SURVIVES
+[GOLD] scored 43 cells · survives_cells=6
+  … don_100@15m (349,728 bars)
+  … don_100@15m (349,728 bars)
+[GOLD] don_100@15m
+  ✓ GATE don_100      15m RR=4.0 n=4486 OOS_E[R]=+0.143 5yOOS=+0.205 SURVIVES
+  ✓ GATE don_100      15m RR=4.0 n=4486 OOS_E[R]=+0.143 5yOOS=+0.205 SURVIVES
+  … don_100@5m (1,049,184 bars)
+  … don_100@5m (1,049,184 bars)
+[GOLD] don_100@5m
+  … don_100@1h (87,432 bars)
+  … don_100@1h (87,432 bars)
+[GOLD] don_100@1h
+  ✓ GATE don_100      1h  RR=4.0 n=1315 OOS_E[R]=+0.241 5yOOS=+0.512 SURVIVES
+  ✓ GATE don_100      1h  RR=4.0 n=1315 OOS_E[R]=+0.241 5yOOS=+0.512 SURVIVES
+[GOLD] scored 46 cells · survives_cells=8
+  … cta_5_20@15m (349,728 bars)
+  … cta_5_20@15m (349,728 bars)
+[GOLD] cta_5_20@15m
+  … cta_5_20@5m (1,049,184 bars)
+  … cta_5_20@5m (1,049,184 bars)
+[GOLD] cta_5_20@5m
+  … cta_5_20@1h (87,432 bars)
+  … cta_5_20@1h (87,432 bars)
+[GOLD] cta_5_20@1h
+[GOLD] scored 49 cells · survives_cells=8
+  … cta_10_40@15m (349,728 bars)
+  … cta_10_40@15m (349,728 bars)
+[GOLD] cta_10_40@15m
+  … cta_10_40@5m (1,049,184 bars)
+  … cta_10_40@5m (1,049,184 bars)
+[GOLD] cta_10_40@5m
+  … cta_10_40@1h (87,432 bars)
+  … cta_10_40@1h (87,432 bars)
+[GOLD] cta_10_40@1h
+[GOLD] scored 52 cells · survives_cells=8
+  … cta_12_26@15m (349,728 bars)
+  … cta_12_26@15m (349,728 bars)
+[GOLD] cta_12_26@15m
+  … cta_12_26@5m (1,049,184 bars)
+  … cta_12_26@5m (1,049,184 bars)
+[GOLD] cta_12_26@5m
+  … cta_12_26@1h (87,432 bars)
+  … cta_12_26@1h (87,432 bars)
+[GOLD] cta_12_26@1h
+[GOLD] scored 55 cells · survives_cells=9
+  … cta_20_50@15m (349,728 bars)
+  … cta_20_50@15m (349,728 bars)
+[GOLD] cta_20_50@15m
+  … cta_20_50@5m (1,049,184 bars)
+  … cta_20_50@5m (1,049,184 bars)
+[GOLD] cta_20_50@5m
+  … cta_20_50@1h (87,432 bars)
+  … cta_20_50@1h (87,432 bars)
+[GOLD] cta_20_50@1h
+[GOLD] scored 58 cells · survives_cells=9
+  … cta_50_200@15m (349,728 bars)
+  … cta_50_200@15m (349,728 bars)
+[GOLD] cta_50_200@15m
+  … cta_50_200@5m (1,049,184 bars)
+  … cta_50_200@5m (1,049,184 bars)
+[GOLD] cta_50_200@5m
+  … cta_50_200@1h (87,432 bars)
+  … cta_50_200@1h (87,432 bars)
+[GOLD] cta_50_200@1h
+  ✓ GATE cta_50_200   1h  RR=4.0 n=430 OOS_E[R]=+0.368 5yOOS=+0.545 SURVIVES
+  ✓ GATE cta_50_200   1h  RR=4.0 n=430 OOS_E[R]=+0.368 5yOOS=+0.545 SURVIVES
+[GOLD] scored 61 cells · survives_cells=10
+  … tsmom@15m (349,728 bars)
+  … tsmom@15m (349,728 bars)
+[GOLD] tsmom@15m
+  … tsmom@5m (1,049,184 bars)
+  … tsmom@5m (1,049,184 bars)
+[GOLD] tsmom@5m
+  … tsmom@1h (87,432 bars)
+  … tsmom@1h (87,432 bars)
+[GOLD] tsmom@1h
+  ✓ GATE tsmom        1h  RR=3.0 n=655 OOS_E[R]=+0.155 5yOOS=+0.277 SURVIVES
+  ✓ GATE tsmom        1h  RR=3.0 n=655 OOS_E[R]=+0.155 5yOOS=+0.277 SURVIVES
+[GOLD] scored 64 cells · survives_cells=11
+  … roc_20@15m (349,728 bars)
+  … roc_20@15m (349,728 bars)
+[GOLD] roc_20@15m
+  … roc_20@5m (1,049,184 bars)
+  … roc_20@5m (1,049,184 bars)
+[GOLD] roc_20@5m
+  … roc_20@1h (87,432 bars)
+  … roc_20@1h (87,432 bars)
+[GOLD] roc_20@1h
+[GOLD] scored 64 cells · survives_cells=11
+  … roc_60@15m (349,728 bars)
+  … roc_60@15m (349,728 bars)
+[GOLD] roc_60@15m
+  … roc_60@5m (1,049,184 bars)
+  … roc_60@5m (1,049,184 bars)
+[GOLD] roc_60@5m
+  … roc_60@1h (87,432 bars)
+  … roc_60@1h (87,432 bars)
+[GOLD] roc_60@1h
+[GOLD] scored 64 cells · survives_cells=11
+  … roc_120@15m (349,728 bars)
+  … roc_120@15m (349,728 bars)
+[GOLD] roc_120@15m
+  … roc_120@5m (1,049,184 bars)
+  … roc_120@5m (1,049,184 bars)
+[GOLD] roc_120@5m
+  … roc_120@1h (87,432 bars)
+  … roc_120@1h (87,432 bars)
+[GOLD] roc_120@1h
+[GOLD] scored 64 cells · survives_cells=11
+  … bb_1.5@15m (349,728 bars)
+  … bb_1.5@15m (349,728 bars)
+[GOLD] bb_1.5@15m
+  … bb_1.5@5m (1,049,184 bars)
+  … bb_1.5@5m (1,049,184 bars)
+[GOLD] bb_1.5@5m
+  … bb_1.5@1h (87,432 bars)
+  … bb_1.5@1h (87,432 bars)
+[GOLD] bb_1.5@1h
+[GOLD] scored 67 cells · survives_cells=12
+  … bb_2@15m (349,728 bars)
+  … bb_2@15m (349,728 bars)
+[GOLD] bb_2@15m
+  … bb_2@5m (1,049,184 bars)
+  … bb_2@5m (1,049,184 bars)
+[GOLD] bb_2@5m
+  … bb_2@1h (87,432 bars)
+  … bb_2@1h (87,432 bars)
+[GOLD] bb_2@1h
+[GOLD] scored 70 cells · survives_cells=12
+  … bb_2.5@15m (349,728 bars)
+  … bb_2.5@15m (349,728 bars)
+[GOLD] bb_2.5@15m
+  … bb_2.5@5m (1,049,184 bars)
+  … bb_2.5@5m (1,049,184 bars)
+[GOLD] bb_2.5@5m
+  ✓ GATE bb_2.5       5m  RR=4.0 n=627 OOS_E[R]=+0.136 5yOOS=+0.131 SURVIVES
+  ✓ GATE bb_2.5       5m  RR=4.0 n=627 OOS_E[R]=+0.136 5yOOS=+0.131 SURVIVES
+  … bb_2.5@1h (87,432 bars)
+  … bb_2.5@1h (87,432 bars)
+[GOLD] bb_2.5@1h
+[GOLD] scored 73 cells · survives_cells=13
+  … z_20_2@15m (349,728 bars)
+  … z_20_2@15m (349,728 bars)
+[GOLD] z_20_2@15m
+  … z_20_2@5m (1,049,184 bars)
+  … z_20_2@5m (1,049,184 bars)
+[GOLD] z_20_2@5m
+  … z_20_2@1h (87,432 bars)
+  … z_20_2@1h (87,432 bars)
+[GOLD] z_20_2@1h
+[GOLD] scored 76 cells · survives_cells=14
+  … z_40_2@15m (349,728 bars)
+  … z_40_2@15m (349,728 bars)
+[GOLD] z_40_2@15m
+  … z_40_2@5m (1,049,184 bars)
+  … z_40_2@5m (1,049,184 bars)
+[GOLD] z_40_2@5m
+  … z_40_2@1h (87,432 bars)
+  … z_40_2@1h (87,432 bars)
+[GOLD] z_40_2@1h
+[GOLD] scored 79 cells · survives_cells=14
+  … rsi@15m (349,728 bars)
+  … rsi@15m (349,728 bars)
+[GOLD] rsi@15m
+  … rsi@5m (1,049,184 bars)
+  … rsi@5m (1,049,184 bars)
+[GOLD] rsi@5m
+  … rsi@1h (87,432 bars)
+  … rsi@1h (87,432 bars)
+[GOLD] rsi@1h
+[GOLD] scored 82 cells · survives_cells=14
+  … atrbrk@15m (349,728 bars)
+  … atrbrk@15m (349,728 bars)
+[GOLD] atrbrk@15m
+  ✓ GATE atrbrk       15m RR=3.0 n=4830 OOS_E[R]=+0.048 5yOOS=+0.029 SURVIVES
+  ✓ GATE atrbrk       15m RR=3.0 n=4830 OOS_E[R]=+0.048 5yOOS=+0.029 SURVIVES
+  … atrbrk@5m (1,049,184 bars)
+  … atrbrk@5m (1,049,184 bars)
+[GOLD] atrbrk@5m
+  … atrbrk@1h (87,432 bars)
+  … atrbrk@1h (87,432 bars)
+[GOLD] atrbrk@1h
+  ✓ GATE atrbrk       1h  RR=4.0 n=1561 OOS_E[R]=+0.154 5yOOS=+0.307 SURVIVES
+  ✓ GATE atrbrk       1h  RR=4.0 n=1561 OOS_E[R]=+0.154 5yOOS=+0.307 SURVIVES
+[GOLD] scored 85 cells · survives_cells=16
+  … volmom@15m (349,728 bars)
+  … volmom@15m (349,728 bars)
+[GOLD] volmom@15m
+  … volmom@5m (1,049,184 bars)
+  … volmom@5m (1,049,184 bars)
+[GOLD] volmom@5m
+  … volmom@1h (87,432 bars)
+  … volmom@1h (87,432 bars)
+[GOLD] volmom@1h
+[GOLD] scored 88 cells · survives_cells=16
+  ★ GOLD WINNER don_100@1h RR=4.0 score=9.794 PnL=$41,000
+  ★ GOLD WINNER don_100@1h RR=4.0 score=9.794 PnL=$41,000
+
+######## USDCHF · live RR=2.4 ########
+
+######## USDCHF · live RR=2.4 ########
+  load USDCHF 5m: 1,052,064 bars 2016-07-23→2026-07-23
+  load USDCHF 5m: 1,052,064 bars 2016-07-23→2026-07-23
+  load USDCHF 15m: 350,688 bars 2016-07-23→2026-07-23
+  load USDCHF 15m: 350,688 bars 2016-07-23→2026-07-23
+  load USDCHF 1h: 87,672 bars (from 5m) 2016-07-23→2026-07-23
+  load USDCHF 1h: 87,672 bars (from 5m) 2016-07-23→2026-07-23
+  … fib_liq@1h (87,672 bars)
+  … fib_liq@1h (87,672 bars)
+[USDCHF] fib_liq@1h
+[USDCHF] scored 1 cells · survives_cells=16
+  … ema_pull@1h (87,672 bars)
+  … ema_pull@1h (87,672 bars)
+[USDCHF] ema_pull@1h
+[USDCHF] scored 2 cells · survives_cells=17
+  … ema_tight@1h (87,672 bars)
+  … ema_tight@1h (87,672 bars)
+[USDCHF] ema_tight@1h
+[USDCHF] scored 3 cells · survives_cells=18
+  … sma_cross@15m (350,688 bars)
+  … sma_cross@15m (350,688 bars)
+[USDCHF] sma_cross@15m
+  … sma_cross@5m (1,052,064 bars)
+  … sma_cross@5m (1,052,064 bars)
+[USDCHF] sma_cross@5m
+  … sma_cross@1h (87,672 bars)
+  … sma_cross@1h (87,672 bars)
+[USDCHF] sma_cross@1h
+[USDCHF] scored 6 cells · survives_cells=18
+  … pa@1h (87,672 bars)
+  … pa@1h (87,672 bars)
+[USDCHF] pa@1h
+  ✓ GATE pa           1h  RR=2.0 n=837 OOS_E[R]=+0.148 5yOOS=+0.080 SURVIVES
+  ✓ GATE pa           1h  RR=2.0 n=837 OOS_E[R]=+0.148 5yOOS=+0.080 SURVIVES
+[USDCHF] scored 7 cells · survives_cells=19
+  … liq@1h (87,672 bars)
+  … liq@1h (87,672 bars)
+[USDCHF] liq@1h
+[USDCHF] scored 8 cells · survives_cells=19
+  … tl@1h (87,672 bars)
+  … tl@1h (87,672 bars)
+[USDCHF] tl@1h
+[USDCHF] scored 9 cells · survives_cells=19
+  … obfvg@1h (87,672 bars)
+  … obfvg@1h (87,672 bars)
+[USDCHF] obfvg@1h
+[USDCHF] scored 10 cells · survives_cells=19
+  … macd@1h (87,672 bars)
+  … macd@1h (87,672 bars)
+[USDCHF] macd@1h
+[USDCHF] scored 11 cells · survives_cells=19
+  … engulf@1h (87,672 bars)
+  … engulf@1h (87,672 bars)
+[USDCHF] engulf@1h
+[USDCHF] scored 12 cells · survives_cells=19
+  … inside@1h (87,672 bars)
+  … inside@1h (87,672 bars)
+[USDCHF] inside@1h
+[USDCHF] scored 13 cells · survives_cells=19
+  … ichi@1h (87,672 bars)
+  … ichi@1h (87,672 bars)
+[USDCHF] ichi@1h
+[USDCHF] scored 14 cells · survives_cells=20
+  … psar@1h (87,672 bars)
+  … psar@1h (87,672 bars)
+[USDCHF] psar@1h
+[USDCHF] scored 15 cells · survives_cells=20
+  … adx@1h (87,672 bars)
+  … adx@1h (87,672 bars)
+[USDCHF] adx@1h
+  ✓ GATE adx          1h  RR=4.0 n=609 OOS_E[R]=+0.114 5yOOS=+0.122 SURVIVES
+  ✓ GATE adx          1h  RR=4.0 n=609 OOS_E[R]=+0.114 5yOOS=+0.122 SURVIVES
+[USDCHF] scored 16 cells · survives_cells=21
+  … st_2@15m (350,688 bars)
+  … st_2@15m (350,688 bars)
+[USDCHF] st_2@15m
+  … st_2@5m (1,052,064 bars)
+  … st_2@5m (1,052,064 bars)
+[USDCHF] st_2@5m
+  … st_2@1h (87,672 bars)
+  … st_2@1h (87,672 bars)
+[USDCHF] st_2@1h
+[USDCHF] scored 19 cells · survives_cells=21
+  … st_3@15m (350,688 bars)
+  … st_3@15m (350,688 bars)
+[USDCHF] st_3@15m
+  … st_3@5m (1,052,064 bars)
+  … st_3@5m (1,052,064 bars)
+[USDCHF] st_3@5m
+  … st_3@1h (87,672 bars)
+  … st_3@1h (87,672 bars)
+[USDCHF] st_3@1h
+[USDCHF] scored 22 cells · survives_cells=21
+  … kelt_1@15m (350,688 bars)
+  … kelt_1@15m (350,688 bars)
+[USDCHF] kelt_1@15m
+  … kelt_1@5m (1,052,064 bars)
+  … kelt_1@5m (1,052,064 bars)
+[USDCHF] kelt_1@5m
+  … kelt_1@1h (87,672 bars)
+  … kelt_1@1h (87,672 bars)
+[USDCHF] kelt_1@1h
+[USDCHF] scored 25 cells · survives_cells=21
+  … kelt_1.5@15m (350,688 bars)
+  … kelt_1.5@15m (350,688 bars)
+[USDCHF] kelt_1.5@15m
+  … kelt_1.5@5m (1,052,064 bars)
+  … kelt_1.5@5m (1,052,064 bars)
+[USDCHF] kelt_1.5@5m
+  … kelt_1.5@1h (87,672 bars)
+  … kelt_1.5@1h (87,672 bars)
+[USDCHF] kelt_1.5@1h
+[USDCHF] scored 28 cells · survives_cells=21
+  … kelt_2@15m (350,688 bars)
+  … kelt_2@15m (350,688 bars)
+[USDCHF] kelt_2@15m
+  … kelt_2@5m (1,052,064 bars)
+  … kelt_2@5m (1,052,064 bars)
+[USDCHF] kelt_2@5m
+  … kelt_2@1h (87,672 bars)
+  … kelt_2@1h (87,672 bars)
+[USDCHF] kelt_2@1h
+[USDCHF] scored 31 cells · survives_cells=21
+  … stoch_20@15m (350,688 bars)
+  … stoch_20@15m (350,688 bars)
+[USDCHF] stoch_20@15m
+  skip stoch_20@15m: No numeric types to aggregate
+  skip stoch_20@15m: No numeric types to aggregate
+  … stoch_20@5m (1,052,064 bars)
+  … stoch_20@5m (1,052,064 bars)
+[USDCHF] stoch_20@5m
+  skip stoch_20@5m: No numeric types to aggregate
+  skip stoch_20@5m: No numeric types to aggregate
+  … stoch_20@1h (87,672 bars)
+  … stoch_20@1h (87,672 bars)
+[USDCHF] stoch_20@1h
+  skip stoch_20@1h: No numeric types to aggregate
+  skip stoch_20@1h: No numeric types to aggregate
+[USDCHF] scored 31 cells · survives_cells=21
+  … stoch_30@15m (350,688 bars)
+  … stoch_30@15m (350,688 bars)
+[USDCHF] stoch_30@15m
+  skip stoch_30@15m: No numeric types to aggregate
+  skip stoch_30@15m: No numeric types to aggregate
+  … stoch_30@5m (1,052,064 bars)
+  … stoch_30@5m (1,052,064 bars)
+[USDCHF] stoch_30@5m
+  skip stoch_30@5m: No numeric types to aggregate
+  skip stoch_30@5m: No numeric types to aggregate
+  … stoch_30@1h (87,672 bars)
+  … stoch_30@1h (87,672 bars)
+[USDCHF] stoch_30@1h
+  skip stoch_30@1h: No numeric types to aggregate
+  skip stoch_30@1h: No numeric types to aggregate
+[USDCHF] scored 31 cells · survives_cells=21
+  … don_10@15m (350,688 bars)
+  … don_10@15m (350,688 bars)
+[USDCHF] don_10@15m
+  … don_10@5m (1,052,064 bars)
+  … don_10@5m (1,052,064 bars)
+[USDCHF] don_10@5m
+  … don_10@1h (87,672 bars)
+  … don_10@1h (87,672 bars)
+[USDCHF] don_10@1h
+[USDCHF] scored 34 cells · survives_cells=21
+  … don_20@15m (350,688 bars)
+  … don_20@15m (350,688 bars)
+[USDCHF] don_20@15m
+  … don_20@5m (1,052,064 bars)
+  … don_20@5m (1,052,064 bars)
+[USDCHF] don_20@5m
+  … don_20@1h (87,672 bars)
+  … don_20@1h (87,672 bars)
+[USDCHF] don_20@1h
+[USDCHF] scored 37 cells · survives_cells=21
+  … don_30@15m (350,688 bars)
+  … don_30@15m (350,688 bars)
+[USDCHF] don_30@15m
+  … don_30@5m (1,052,064 bars)
+  … don_30@5m (1,052,064 bars)
+[USDCHF] don_30@5m
+  … don_30@1h (87,672 bars)
+  … don_30@1h (87,672 bars)
+[USDCHF] don_30@1h
+[USDCHF] scored 40 cells · survives_cells=21
+  … don_55@15m (350,688 bars)
+  … don_55@15m (350,688 bars)
+[USDCHF] don_55@15m
+  … don_55@5m (1,052,064 bars)
+  … don_55@5m (1,052,064 bars)
+[USDCHF] don_55@5m
+  … don_55@1h (87,672 bars)
+  … don_55@1h (87,672 bars)
+[USDCHF] don_55@1h
+[USDCHF] scored 43 cells · survives_cells=21
+  … don_100@15m (350,688 bars)
+  … don_100@15m (350,688 bars)
+[USDCHF] don_100@15m
+  … don_100@5m (1,052,064 bars)
+  … don_100@5m (1,052,064 bars)
+[USDCHF] don_100@5m
+  … don_100@1h (87,672 bars)
+  … don_100@1h (87,672 bars)
+[USDCHF] don_100@1h
+[USDCHF] scored 46 cells · survives_cells=21
+  … cta_5_20@15m (350,688 bars)
+  … cta_5_20@15m (350,688 bars)
+[USDCHF] cta_5_20@15m
+  … cta_5_20@5m (1,052,064 bars)
+  … cta_5_20@5m (1,052,064 bars)
+[USDCHF] cta_5_20@5m
+  … cta_5_20@1h (87,672 bars)
+  … cta_5_20@1h (87,672 bars)
+[USDCHF] cta_5_20@1h
+[USDCHF] scored 49 cells · survives_cells=21
+  … cta_10_40@15m (350,688 bars)
+  … cta_10_40@15m (350,688 bars)
+[USDCHF] cta_10_40@15m
+  … cta_10_40@5m (1,052,064 bars)
+  … cta_10_40@5m (1,052,064 bars)
+[USDCHF] cta_10_40@5m
+  … cta_10_40@1h (87,672 bars)
+  … cta_10_40@1h (87,672 bars)
+[USDCHF] cta_10_40@1h
+[USDCHF] scored 52 cells · survives_cells=21
+  … cta_12_26@15m (350,688 bars)
+  … cta_12_26@15m (350,688 bars)
+[USDCHF] cta_12_26@15m
+  … cta_12_26@5m (1,052,064 bars)
+  … cta_12_26@5m (1,052,064 bars)
+[USDCHF] cta_12_26@5m
+  … cta_12_26@1h (87,672 bars)
+  … cta_12_26@1h (87,672 bars)
+[USDCHF] cta_12_26@1h
+[USDCHF] scored 55 cells · survives_cells=21
+  … cta_20_50@15m (350,688 bars)
+  … cta_20_50@15m (350,688 bars)
+[USDCHF] cta_20_50@15m
+  … cta_20_50@5m (1,052,064 bars)
+  … cta_20_50@5m (1,052,064 bars)
+[USDCHF] cta_20_50@5m
+  … cta_20_50@1h (87,672 bars)
+  … cta_20_50@1h (87,672 bars)
+[USDCHF] cta_20_50@1h
+[USDCHF] scored 58 cells · survives_cells=21
+  … cta_50_200@15m (350,688 bars)
+  … cta_50_200@15m (350,688 bars)
+[USDCHF] cta_50_200@15m
+  … cta_50_200@5m (1,052,064 bars)
+  … cta_50_200@5m (1,052,064 bars)
+[USDCHF] cta_50_200@5m
+  … cta_50_200@1h (87,672 bars)
+  … cta_50_200@1h (87,672 bars)
+[USDCHF] cta_50_200@1h
+[USDCHF] scored 61 cells · survives_cells=21
+  … tsmom@15m (350,688 bars)
+  … tsmom@15m (350,688 bars)
+[USDCHF] tsmom@15m
+  … tsmom@5m (1,052,064 bars)
+  … tsmom@5m (1,052,064 bars)
+[USDCHF] tsmom@5m
+  … tsmom@1h (87,672 bars)
+  … tsmom@1h (87,672 bars)
+[USDCHF] tsmom@1h
+[USDCHF] scored 64 cells · survives_cells=21
+  … roc_20@15m (350,688 bars)
+  … roc_20@15m (350,688 bars)
+[USDCHF] roc_20@15m
+  … roc_20@5m (1,052,064 bars)
+  … roc_20@5m (1,052,064 bars)
+[USDCHF] roc_20@5m
+  … roc_20@1h (87,672 bars)
+  … roc_20@1h (87,672 bars)
+[USDCHF] roc_20@1h
+[USDCHF] scored 64 cells · survives_cells=21
+  … roc_60@15m (350,688 bars)
+  … roc_60@15m (350,688 bars)
+[USDCHF] roc_60@15m
+  … roc_60@5m (1,052,064 bars)
+  … roc_60@5m (1,052,064 bars)
+[USDCHF] roc_60@5m
+  … roc_60@1h (87,672 bars)
+  … roc_60@1h (87,672 bars)
+[USDCHF] roc_60@1h
+[USDCHF] scored 64 cells · survives_cells=21
+  … roc_120@15m (350,688 bars)
+  … roc_120@15m (350,688 bars)
+[USDCHF] roc_120@15m
+  … roc_120@5m (1,052,064 bars)
+  … roc_120@5m (1,052,064 bars)
+[USDCHF] roc_120@5m
+  … roc_120@1h (87,672 bars)
+  … roc_120@1h (87,672 bars)
+[USDCHF] roc_120@1h
+[USDCHF] scored 64 cells · survives_cells=21
+  … bb_1.5@15m (350,688 bars)
+  … bb_1.5@15m (350,688 bars)
+[USDCHF] bb_1.5@15m
+  … bb_1.5@5m (1,052,064 bars)
+  … bb_1.5@5m (1,052,064 bars)
+[USDCHF] bb_1.5@5m
+  ✓ GATE bb_1.5       5m  RR=4.0 n=18462 OOS_E[R]=+0.096 5yOOS=+0.042 SURVIVES
+  ✓ GATE bb_1.5       5m  RR=4.0 n=18462 OOS_E[R]=+0.096 5yOOS=+0.042 SURVIVES
+  … bb_1.5@1h (87,672 bars)
+  … bb_1.5@1h (87,672 bars)
+[USDCHF] bb_1.5@1h
+[USDCHF] scored 67 cells · survives_cells=22
+  … bb_2@15m (350,688 bars)
+  … bb_2@15m (350,688 bars)
+[USDCHF] bb_2@15m
+  … bb_2@5m (1,052,064 bars)
+  … bb_2@5m (1,052,064 bars)
+[USDCHF] bb_2@5m
+  ✓ GATE bb_2         5m  RR=4.0 n=4854 OOS_E[R]=+0.095 5yOOS=+0.129 SURVIVES
+  ✓ GATE bb_2         5m  RR=4.0 n=4854 OOS_E[R]=+0.095 5yOOS=+0.129 SURVIVES
+  … bb_2@1h (87,672 bars)
+  … bb_2@1h (87,672 bars)
+[USDCHF] bb_2@1h
+[USDCHF] scored 70 cells · survives_cells=23
+  … bb_2.5@15m (350,688 bars)
+  … bb_2.5@15m (350,688 bars)
+[USDCHF] bb_2.5@15m
+  … bb_2.5@5m (1,052,064 bars)
+  … bb_2.5@5m (1,052,064 bars)
+[USDCHF] bb_2.5@5m
+  ✓ GATE bb_2.5       5m  RR=4.0 n=498 OOS_E[R]=+0.370 5yOOS=+0.357 SURVIVES
+  ✓ GATE bb_2.5       5m  RR=4.0 n=498 OOS_E[R]=+0.370 5yOOS=+0.357 SURVIVES
+  … bb_2.5@1h (87,672 bars)
+  … bb_2.5@1h (87,672 bars)
+[USDCHF] bb_2.5@1h
+  ✓ GATE bb_2.5       1h  RR=3.0 n=230 OOS_E[R]=+0.194 5yOOS=+0.412 SURVIVES
+  ✓ GATE bb_2.5       1h  RR=3.0 n=230 OOS_E[R]=+0.194 5yOOS=+0.412 SURVIVES
+[USDCHF] scored 73 cells · survives_cells=25
+  … z_20_2@15m (350,688 bars)
+  … z_20_2@15m (350,688 bars)
+[USDCHF] z_20_2@15m
+  … z_20_2@5m (1,052,064 bars)
+  … z_20_2@5m (1,052,064 bars)
+[USDCHF] z_20_2@5m
+  ✓ GATE z_20_2       5m  RR=4.0 n=19977 OOS_E[R]=+0.054 5yOOS=+0.065 SURVIVES
+  ✓ GATE z_20_2       5m  RR=4.0 n=19977 OOS_E[R]=+0.054 5yOOS=+0.065 SURVIVES
+  … z_20_2@1h (87,672 bars)
+  … z_20_2@1h (87,672 bars)
+[USDCHF] z_20_2@1h
+[USDCHF] scored 76 cells · survives_cells=26
+  … z_40_2@15m (350,688 bars)
+  … z_40_2@15m (350,688 bars)
+[USDCHF] z_40_2@15m
+  … z_40_2@5m (1,052,064 bars)
+  … z_40_2@5m (1,052,064 bars)
+[USDCHF] z_40_2@5m
+  ✓ GATE z_40_2       5m  RR=4.0 n=17845 OOS_E[R]=+0.045 5yOOS=+0.029 SURVIVES
+  ✓ GATE z_40_2       5m  RR=4.0 n=17845 OOS_E[R]=+0.045 5yOOS=+0.029 SURVIVES
+  … z_40_2@1h (87,672 bars)
+  … z_40_2@1h (87,672 bars)
+[USDCHF] z_40_2@1h
+[USDCHF] scored 79 cells · survives_cells=27
+  … rsi@15m (350,688 bars)
+  … rsi@15m (350,688 bars)
+[USDCHF] rsi@15m
+  … rsi@5m (1,052,064 bars)
+  … rsi@5m (1,052,064 bars)
+[USDCHF] rsi@5m
+  … rsi@1h (87,672 bars)
+  … rsi@1h (87,672 bars)
+[USDCHF] rsi@1h
+[USDCHF] scored 82 cells · survives_cells=27
+  … atrbrk@15m (350,688 bars)
+  … atrbrk@15m (350,688 bars)
+[USDCHF] atrbrk@15m
+  … atrbrk@5m (1,052,064 bars)
+  … atrbrk@5m (1,052,064 bars)
+[USDCHF] atrbrk@5m
+  … atrbrk@1h (87,672 bars)
+  … atrbrk@1h (87,672 bars)
+[USDCHF] atrbrk@1h
+[USDCHF] scored 85 cells · survives_cells=27
+  … volmom@15m (350,688 bars)
+  … volmom@15m (350,688 bars)
+[USDCHF] volmom@15m
+  … volmom@5m (1,052,064 bars)
+  … volmom@5m (1,052,064 bars)
+[USDCHF] volmom@5m
+  … volmom@1h (87,672 bars)
+  … volmom@1h (87,672 bars)
+[USDCHF] volmom@1h
+[USDCHF] scored 88 cells · survives_cells=27
+  ★ USDCHF WINNER bb_2.5@5m RR=4.0 score=11.359 PnL=$38,400
+  ★ USDCHF WINNER bb_2.5@5m RR=4.0 score=11.359 PnL=$38,400
+
+######## USDJPY · live RR=4.0 ########
+
+######## USDJPY · live RR=4.0 ########
+  load USDJPY 5m: 1,052,064 bars 2016-07-23→2026-07-23
+  load USDJPY 5m: 1,052,064 bars 2016-07-23→2026-07-23
+  load USDJPY 15m: 350,688 bars 2016-07-23→2026-07-23
+  load USDJPY 15m: 350,688 bars 2016-07-23→2026-07-23
+  load USDJPY 1h: 87,672 bars (from 5m) 2016-07-23→2026-07-23
+  load USDJPY 1h: 87,672 bars (from 5m) 2016-07-23→2026-07-23
+  … fib_liq@1h (87,672 bars)
+  … fib_liq@1h (87,672 bars)
+[USDJPY] fib_liq@1h
+  ✓ GATE fib_liq      1h  RR=2.0 n=271 OOS_E[R]=+0.245 5yOOS=+0.528 SURVIVES
+  ✓ GATE fib_liq      1h  RR=2.0 n=271 OOS_E[R]=+0.245 5yOOS=+0.528 SURVIVES
+[USDJPY] scored 1 cells · survives_cells=28
+  … ema_pull@1h (87,672 bars)
+  … ema_pull@1h (87,672 bars)
+[USDJPY] ema_pull@1h
+  ✓ GATE ema_pull     1h  RR=4.0 n=603 OOS_E[R]=+0.114 5yOOS=+0.235 SURVIVES
+  ✓ GATE ema_pull     1h  RR=4.0 n=603 OOS_E[R]=+0.114 5yOOS=+0.235 SURVIVES
+[USDJPY] scored 2 cells · survives_cells=29
+  … ema_tight@1h (87,672 bars)
+  … ema_tight@1h (87,672 bars)
+[USDJPY] ema_tight@1h
+[USDJPY] scored 3 cells · survives_cells=29
+  … sma_cross@15m (350,688 bars)
+  … sma_cross@15m (350,688 bars)
+[USDJPY] sma_cross@15m
+  … sma_cross@5m (1,052,064 bars)
+  … sma_cross@5m (1,052,064 bars)
+[USDJPY] sma_cross@5m
+  … sma_cross@1h (87,672 bars)
+  … sma_cross@1h (87,672 bars)
+[USDJPY] sma_cross@1h
+[USDJPY] scored 6 cells · survives_cells=29
+  … pa@1h (87,672 bars)
+  … pa@1h (87,672 bars)
+[USDJPY] pa@1h
+[USDJPY] scored 7 cells · survives_cells=29
+  … liq@1h (87,672 bars)
+  … liq@1h (87,672 bars)
+[USDJPY] liq@1h
+[USDJPY] scored 8 cells · survives_cells=29
+  … tl@1h (87,672 bars)
+  … tl@1h (87,672 bars)
+[USDJPY] tl@1h
+  ✓ GATE tl           1h  RR=4.0 n=928 OOS_E[R]=+0.109 5yOOS=+0.178 SURVIVES
+  ✓ GATE tl           1h  RR=4.0 n=928 OOS_E[R]=+0.109 5yOOS=+0.178 SURVIVES
+[USDJPY] scored 9 cells · survives_cells=30
+  … obfvg@1h (87,672 bars)
+  … obfvg@1h (87,672 bars)
+[USDJPY] obfvg@1h
+[USDJPY] scored 10 cells · survives_cells=30
+  … macd@1h (87,672 bars)
+  … macd@1h (87,672 bars)
+[USDJPY] macd@1h
+  ✓ GATE macd         1h  RR=3.0 n=2277 OOS_E[R]=+0.030 5yOOS=+0.085 SURVIVES
+  ✓ GATE macd         1h  RR=3.0 n=2277 OOS_E[R]=+0.030 5yOOS=+0.085 SURVIVES
+[USDJPY] scored 11 cells · survives_cells=31
+  … engulf@1h (87,672 bars)
+  … engulf@1h (87,672 bars)
+[USDJPY] engulf@1h
+[USDJPY] scored 12 cells · survives_cells=31
+  … inside@1h (87,672 bars)
+  … inside@1h (87,672 bars)
+[USDJPY] inside@1h
+[USDJPY] scored 13 cells · survives_cells=31
+  … ichi@1h (87,672 bars)
+  … ichi@1h (87,672 bars)
+[USDJPY] ichi@1h
+[USDJPY] scored 14 cells · survives_cells=31
+  … psar@1h (87,672 bars)
+  … psar@1h (87,672 bars)
+[USDJPY] psar@1h
+  ✓ GATE psar         1h  RR=4.0 n=2077 OOS_E[R]=+0.072 5yOOS=+0.139 SURVIVES
+  ✓ GATE psar         1h  RR=4.0 n=2077 OOS_E[R]=+0.072 5yOOS=+0.139 SURVIVES
+[USDJPY] scored 15 cells · survives_cells=32
+  … adx@1h (87,672 bars)
+  … adx@1h (87,672 bars)
+[USDJPY] adx@1h
+  ✓ GATE adx          1h  RR=4.0 n=619 OOS_E[R]=+0.043 5yOOS=+0.087 SURVIVES
+  ✓ GATE adx          1h  RR=4.0 n=619 OOS_E[R]=+0.043 5yOOS=+0.087 SURVIVES
+[USDJPY] scored 16 cells · survives_cells=33
+  … st_2@15m (350,688 bars)
+  … st_2@15m (350,688 bars)
+[USDJPY] st_2@15m
+  … st_2@5m (1,052,064 bars)
+  … st_2@5m (1,052,064 bars)
+[USDJPY] st_2@5m
+  … st_2@1h (87,672 bars)
+  … st_2@1h (87,672 bars)
+[USDJPY] st_2@1h
+  ✓ GATE st_2         1h  RR=4.0 n=1055 OOS_E[R]=+0.187 5yOOS=+0.242 SURVIVES
+  ✓ GATE st_2         1h  RR=4.0 n=1055 OOS_E[R]=+0.187 5yOOS=+0.242 SURVIVES
+[USDJPY] scored 19 cells · survives_cells=34
+  … st_3@15m (350,688 bars)
+  … st_3@15m (350,688 bars)
+[USDJPY] st_3@15m
+  ✓ GATE st_3         15m RR=4.0 n=1302 OOS_E[R]=+0.098 5yOOS=+0.138 SURVIVES
+  ✓ GATE st_3         15m RR=4.0 n=1302 OOS_E[R]=+0.098 5yOOS=+0.138 SURVIVES
+  … st_3@5m (1,052,064 bars)
+  … st_3@5m (1,052,064 bars)
+[USDJPY] st_3@5m
+  … st_3@1h (87,672 bars)
+  … st_3@1h (87,672 bars)
+[USDJPY] st_3@1h
+  ✓ GATE st_3         1h  RR=4.0 n=681 OOS_E[R]=+0.130 5yOOS=+0.188 SURVIVES
+  ✓ GATE st_3         1h  RR=4.0 n=681 OOS_E[R]=+0.130 5yOOS=+0.188 SURVIVES
+[USDJPY] scored 22 cells · survives_cells=36
+  … kelt_1@15m (350,688 bars)
+  … kelt_1@15m (350,688 bars)
+[USDJPY] kelt_1@15m
+  … kelt_1@5m (1,052,064 bars)
+  … kelt_1@5m (1,052,064 bars)
+[USDJPY] kelt_1@5m
+  … kelt_1@1h (87,672 bars)
+  … kelt_1@1h (87,672 bars)
+[USDJPY] kelt_1@1h
+  ✓ GATE kelt_1       1h  RR=4.0 n=2901 OOS_E[R]=+0.059 5yOOS=+0.222 SURVIVES
+  ✓ GATE kelt_1       1h  RR=4.0 n=2901 OOS_E[R]=+0.059 5yOOS=+0.222 SURVIVES
+[USDJPY] scored 25 cells · survives_cells=37
+  … kelt_1.5@15m (350,688 bars)
+  … kelt_1.5@15m (350,688 bars)
+[USDJPY] kelt_1.5@15m
+  … kelt_1.5@5m (1,052,064 bars)
+  … kelt_1.5@5m (1,052,064 bars)
+[USDJPY] kelt_1.5@5m
+  … kelt_1.5@1h (87,672 bars)
+  … kelt_1.5@1h (87,672 bars)
+[USDJPY] kelt_1.5@1h
+  ✓ GATE kelt_1.5     1h  RR=4.0 n=2590 OOS_E[R]=+0.172 5yOOS=+0.237 SURVIVES
+  ✓ GATE kelt_1.5     1h  RR=4.0 n=2590 OOS_E[R]=+0.172 5yOOS=+0.237 SURVIVES
+[USDJPY] scored 28 cells · survives_cells=38
+  … kelt_2@15m (350,688 bars)
+  … kelt_2@15m (350,688 bars)
+[USDJPY] kelt_2@15m
+  … kelt_2@5m (1,052,064 bars)
+  … kelt_2@5m (1,052,064 bars)
+[USDJPY] kelt_2@5m
+  … kelt_2@1h (87,672 bars)
+  … kelt_2@1h (87,672 bars)
+[USDJPY] kelt_2@1h
+  ✓ GATE kelt_2       1h  RR=4.0 n=2113 OOS_E[R]=+0.134 5yOOS=+0.250 SURVIVES
+  ✓ GATE kelt_2       1h  RR=4.0 n=2113 OOS_E[R]=+0.134 5yOOS=+0.250 SURVIVES
+[USDJPY] scored 31 cells · survives_cells=39
+  … stoch_20@15m (350,688 bars)
+  … stoch_20@15m (350,688 bars)
+[USDJPY] stoch_20@15m
+  skip stoch_20@15m: No numeric types to aggregate
+  skip stoch_20@15m: No numeric types to aggregate
+  … stoch_20@5m (1,052,064 bars)
+  … stoch_20@5m (1,052,064 bars)
+[USDJPY] stoch_20@5m
+  skip stoch_20@5m: No numeric types to aggregate
+  skip stoch_20@5m: No numeric types to aggregate
+  … stoch_20@1h (87,672 bars)
+  … stoch_20@1h (87,672 bars)
+[USDJPY] stoch_20@1h
+  skip stoch_20@1h: No numeric types to aggregate
+  skip stoch_20@1h: No numeric types to aggregate
+[USDJPY] scored 31 cells · survives_cells=39
+  … stoch_30@15m (350,688 bars)
+  … stoch_30@15m (350,688 bars)
+[USDJPY] stoch_30@15m
+  skip stoch_30@15m: No numeric types to aggregate
+  skip stoch_30@15m: No numeric types to aggregate
+  … stoch_30@5m (1,052,064 bars)
+  … stoch_30@5m (1,052,064 bars)
+[USDJPY] stoch_30@5m
+  skip stoch_30@5m: No numeric types to aggregate
+  skip stoch_30@5m: No numeric types to aggregate
+  … stoch_30@1h (87,672 bars)
+  … stoch_30@1h (87,672 bars)
+[USDJPY] stoch_30@1h
+  skip stoch_30@1h: No numeric types to aggregate
+  skip stoch_30@1h: No numeric types to aggregate
+[USDJPY] scored 31 cells · survives_cells=39
+  … don_10@15m (350,688 bars)
+  … don_10@15m (350,688 bars)
+[USDJPY] don_10@15m
+  … don_10@5m (1,052,064 bars)
+  … don_10@5m (1,052,064 bars)
+[USDJPY] don_10@5m
+  … don_10@1h (87,672 bars)
+  … don_10@1h (87,672 bars)
+[USDJPY] don_10@1h
+[USDJPY] scored 34 cells · survives_cells=39
+  … don_20@15m (350,688 bars)
+  … don_20@15m (350,688 bars)
+[USDJPY] don_20@15m
+  … don_20@5m (1,052,064 bars)
+  … don_20@5m (1,052,064 bars)
+[USDJPY] don_20@5m
+  … don_20@1h (87,672 bars)
+  … don_20@1h (87,672 bars)
+[USDJPY] don_20@1h
+[USDJPY] scored 37 cells · survives_cells=39
+  … don_30@15m (350,688 bars)
+  … don_30@15m (350,688 bars)
+[USDJPY] don_30@15m
+  … don_30@5m (1,052,064 bars)
+  … don_30@5m (1,052,064 bars)
+[USDJPY] don_30@5m
+  … don_30@1h (87,672 bars)
+  … don_30@1h (87,672 bars)
+[USDJPY] don_30@1h
+  ✓ GATE don_30       1h  RR=4.0 n=2341 OOS_E[R]=+0.093 5yOOS=+0.122 SURVIVES
+  ✓ GATE don_30       1h  RR=4.0 n=2341 OOS_E[R]=+0.093 5yOOS=+0.122 SURVIVES
+[USDJPY] scored 40 cells · survives_cells=40
+  … don_55@15m (350,688 bars)
+  … don_55@15m (350,688 bars)
+[USDJPY] don_55@15m
+  … don_55@5m (1,052,064 bars)
+  … don_55@5m (1,052,064 bars)
+[USDJPY] don_55@5m
+  … don_55@1h (87,672 bars)
+  … don_55@1h (87,672 bars)
+[USDJPY] don_55@1h
+[USDJPY] scored 43 cells · survives_cells=40
+  … don_100@15m (350,688 bars)
+  … don_100@15m (350,688 bars)
+[USDJPY] don_100@15m
+  … don_100@5m (1,052,064 bars)
+  … don_100@5m (1,052,064 bars)
+[USDJPY] don_100@5m
+  … don_100@1h (87,672 bars)
+  … don_100@1h (87,672 bars)
+[USDJPY] don_100@1h
+[USDJPY] scored 46 cells · survives_cells=41
+  … cta_5_20@15m (350,688 bars)
+  … cta_5_20@15m (350,688 bars)
+[USDJPY] cta_5_20@15m
+  … cta_5_20@5m (1,052,064 bars)
+  … cta_5_20@5m (1,052,064 bars)
+[USDJPY] cta_5_20@5m
+  … cta_5_20@1h (87,672 bars)
+  … cta_5_20@1h (87,672 bars)
+[USDJPY] cta_5_20@1h
+  ✓ GATE cta_5_20     1h  RR=4.0 n=1545 OOS_E[R]=+0.125 5yOOS=+0.250 SURVIVES
+  ✓ GATE cta_5_20     1h  RR=4.0 n=1545 OOS_E[R]=+0.125 5yOOS=+0.250 SURVIVES
+[USDJPY] scored 49 cells · survives_cells=42
+  … cta_10_40@15m (350,688 bars)
+  … cta_10_40@15m (350,688 bars)
+[USDJPY] cta_10_40@15m
+  … cta_10_40@5m (1,052,064 bars)
+  … cta_10_40@5m (1,052,064 bars)
+[USDJPY] cta_10_40@5m
+  … cta_10_40@1h (87,672 bars)
+  … cta_10_40@1h (87,672 bars)
+[USDJPY] cta_10_40@1h
+[USDJPY] scored 52 cells · survives_cells=42
+  … cta_12_26@15m (350,688 bars)
+  … cta_12_26@15m (350,688 bars)
+[USDJPY] cta_12_26@15m
+  … cta_12_26@5m (1,052,064 bars)
+  … cta_12_26@5m (1,052,064 bars)
+[USDJPY] cta_12_26@5m
+  … cta_12_26@1h (87,672 bars)
+  … cta_12_26@1h (87,672 bars)
+[USDJPY] cta_12_26@1h
+[USDJPY] scored 55 cells · survives_cells=42
+  … cta_20_50@15m (350,688 bars)
+  … cta_20_50@15m (350,688 bars)
+[USDJPY] cta_20_50@15m
+  … cta_20_50@5m (1,052,064 bars)
+  … cta_20_50@5m (1,052,064 bars)
+[USDJPY] cta_20_50@5m
+  … cta_20_50@1h (87,672 bars)
+  … cta_20_50@1h (87,672 bars)
+[USDJPY] cta_20_50@1h
+  ✓ GATE cta_20_50    1h  RR=4.0 n=989 OOS_E[R]=+0.007 5yOOS=+0.007 SURVIVES
+  ✓ GATE cta_20_50    1h  RR=4.0 n=989 OOS_E[R]=+0.007 5yOOS=+0.007 SURVIVES
+[USDJPY] scored 58 cells · survives_cells=43
+  … cta_50_200@15m (350,688 bars)
+  … cta_50_200@15m (350,688 bars)
+[USDJPY] cta_50_200@15m
+  … cta_50_200@5m (1,052,064 bars)
+  … cta_50_200@5m (1,052,064 bars)
+[USDJPY] cta_50_200@5m
+  … cta_50_200@1h (87,672 bars)
+  … cta_50_200@1h (87,672 bars)
+[USDJPY] cta_50_200@1h
+  ✓ GATE cta_50_200   1h  RR=2.4 n=479 OOS_E[R]=+0.054 5yOOS=+0.076 SURVIVES
+  ✓ GATE cta_50_200   1h  RR=2.4 n=479 OOS_E[R]=+0.054 5yOOS=+0.076 SURVIVES
+[USDJPY] scored 61 cells · survives_cells=44
+  … tsmom@15m (350,688 bars)
+  … tsmom@15m (350,688 bars)
+[USDJPY] tsmom@15m
+  ✓ GATE tsmom        15m RR=4.0 n=2078 OOS_E[R]=+0.061 5yOOS=+0.070 SURVIVES
+  ✓ GATE tsmom        15m RR=4.0 n=2078 OOS_E[R]=+0.061 5yOOS=+0.070 SURVIVES
+  … tsmom@5m (1,052,064 bars)
+  … tsmom@5m (1,052,064 bars)
+[USDJPY] tsmom@5m
+  … tsmom@1h (87,672 bars)
+  … tsmom@1h (87,672 bars)
+[USDJPY] tsmom@1h
+[USDJPY] scored 64 cells · survives_cells=45
+  … roc_20@15m (350,688 bars)
+  … roc_20@15m (350,688 bars)
+[USDJPY] roc_20@15m
+  … roc_20@5m (1,052,064 bars)
+  … roc_20@5m (1,052,064 bars)
+[USDJPY] roc_20@5m
+  … roc_20@1h (87,672 bars)
+  … roc_20@1h (87,672 bars)
+[USDJPY] roc_20@1h
+[USDJPY] scored 64 cells · survives_cells=45
+  … roc_60@15m (350,688 bars)
+  … roc_60@15m (350,688 bars)
+[USDJPY] roc_60@15m
+  … roc_60@5m (1,052,064 bars)
+  … roc_60@5m (1,052,064 bars)
+[USDJPY] roc_60@5m
+  … roc_60@1h (87,672 bars)
+  … roc_60@1h (87,672 bars)
+[USDJPY] roc_60@1h
+[USDJPY] scored 64 cells · survives_cells=45
+  … roc_120@15m (350,688 bars)
+  … roc_120@15m (350,688 bars)
+[USDJPY] roc_120@15m
+  … roc_120@5m (1,052,064 bars)
+  … roc_120@5m (1,052,064 bars)
+[USDJPY] roc_120@5m
+  … roc_120@1h (87,672 bars)
+  … roc_120@1h (87,672 bars)
+[USDJPY] roc_120@1h
+[USDJPY] scored 64 cells · survives_cells=45
+  … bb_1.5@15m (350,688 bars)
+  … bb_1.5@15m (350,688 bars)
+[USDJPY] bb_1.5@15m
+  … bb_1.5@5m (1,052,064 bars)
+  … bb_1.5@5m (1,052,064 bars)
+[USDJPY] bb_1.5@5m
+  ✓ GATE bb_1.5       5m  RR=4.0 n=19596 OOS_E[R]=+0.041 5yOOS=+0.063 SURVIVES
+  ✓ GATE bb_1.5       5m  RR=4.0 n=19596 OOS_E[R]=+0.041 5yOOS=+0.063 SURVIVES
+  … bb_1.5@1h (87,672 bars)
+  … bb_1.5@1h (87,672 bars)
+[USDJPY] bb_1.5@1h
+[USDJPY] scored 67 cells · survives_cells=46
+  … bb_2@15m (350,688 bars)
+  … bb_2@15m (350,688 bars)
+[USDJPY] bb_2@15m
+  … bb_2@5m (1,052,064 bars)
+  … bb_2@5m (1,052,064 bars)
+[USDJPY] bb_2@5m
+  ✓ GATE bb_2         5m  RR=4.0 n=5506 OOS_E[R]=+0.104 5yOOS=+0.102 SURVIVES
+  ✓ GATE bb_2         5m  RR=4.0 n=5506 OOS_E[R]=+0.104 5yOOS=+0.102 SURVIVES
+  … bb_2@1h (87,672 bars)
+  … bb_2@1h (87,672 bars)
+[USDJPY] bb_2@1h
+[USDJPY] scored 70 cells · survives_cells=47
+  … bb_2.5@15m (350,688 bars)
+  … bb_2.5@15m (350,688 bars)
+[USDJPY] bb_2.5@15m
+  ✓ GATE bb_2.5       15m RR=4.0 n=449 OOS_E[R]=-0.008 5yOOS=+0.154 SURVIVES
+  ✓ GATE bb_2.5       15m RR=4.0 n=449 OOS_E[R]=-0.008 5yOOS=+0.154 SURVIVES
+  … bb_2.5@5m (1,052,064 bars)
+  … bb_2.5@5m (1,052,064 bars)
+[USDJPY] bb_2.5@5m
+  ✓ GATE bb_2.5       5m  RR=4.0 n=656 OOS_E[R]=+0.693 5yOOS=+0.684 SURVIVES
+  ✓ GATE bb_2.5       5m  RR=4.0 n=656 OOS_E[R]=+0.693 5yOOS=+0.684 SURVIVES
+  … bb_2.5@1h (87,672 bars)
+  … bb_2.5@1h (87,672 bars)
+[USDJPY] bb_2.5@1h
+[USDJPY] scored 73 cells · survives_cells=50
+  … z_20_2@15m (350,688 bars)
+  … z_20_2@15m (350,688 bars)
+[USDJPY] z_20_2@15m
+  … z_20_2@5m (1,052,064 bars)
+  … z_20_2@5m (1,052,064 bars)
+[USDJPY] z_20_2@5m
+  ✓ GATE z_20_2       5m  RR=4.0 n=20289 OOS_E[R]=+0.059 5yOOS=+0.104 SURVIVES
+  ✓ GATE z_20_2       5m  RR=4.0 n=20289 OOS_E[R]=+0.059 5yOOS=+0.104 SURVIVES
+  … z_20_2@1h (87,672 bars)
+  … z_20_2@1h (87,672 bars)
+[USDJPY] z_20_2@1h
+[USDJPY] scored 76 cells · survives_cells=51
+  … z_40_2@15m (350,688 bars)
+  … z_40_2@15m (350,688 bars)
+[USDJPY] z_40_2@15m
+  … z_40_2@5m (1,052,064 bars)
+  … z_40_2@5m (1,052,064 bars)
+[USDJPY] z_40_2@5m
+  ✓ GATE z_40_2       5m  RR=4.0 n=17661 OOS_E[R]=+0.048 5yOOS=+0.056 SURVIVES
+  ✓ GATE z_40_2       5m  RR=4.0 n=17661 OOS_E[R]=+0.048 5yOOS=+0.056 SURVIVES
+  … z_40_2@1h (87,672 bars)
+  … z_40_2@1h (87,672 bars)
+[USDJPY] z_40_2@1h
+[USDJPY] scored 79 cells · survives_cells=52
+  … rsi@15m (350,688 bars)
+  … rsi@15m (350,688 bars)
+[USDJPY] rsi@15m
+  … rsi@5m (1,052,064 bars)
+  … rsi@5m (1,052,064 bars)
+[USDJPY] rsi@5m
+  ✓ GATE rsi          5m  RR=4.0 n=19545 OOS_E[R]=+0.050 5yOOS=+0.047 SURVIVES
+  ✓ GATE rsi          5m  RR=4.0 n=19545 OOS_E[R]=+0.050 5yOOS=+0.047 SURVIVES
+  … rsi@1h (87,672 bars)
+  … rsi@1h (87,672 bars)
+[USDJPY] rsi@1h
+[USDJPY] scored 82 cells · survives_cells=53
+  … atrbrk@15m (350,688 bars)
+  … atrbrk@15m (350,688 bars)
+[USDJPY] atrbrk@15m
+  … atrbrk@5m (1,052,064 bars)
+  … atrbrk@5m (1,052,064 bars)
+[USDJPY] atrbrk@5m
+  … atrbrk@1h (87,672 bars)
+  … atrbrk@1h (87,672 bars)
+[USDJPY] atrbrk@1h
+[USDJPY] scored 85 cells · survives_cells=53
+  … volmom@15m (350,688 bars)
+  … volmom@15m (350,688 bars)
+[USDJPY] volmom@15m
+  … volmom@5m (1,052,064 bars)
+  … volmom@5m (1,052,064 bars)
+[USDJPY] volmom@5m
+  … volmom@1h (87,672 bars)
+  … volmom@1h (87,672 bars)
+[USDJPY] volmom@1h
+  ✓ GATE volmom       1h  RR=4.0 n=1582 OOS_E[R]=+0.200 5yOOS=+0.411 SURVIVES
+  ✓ GATE volmom       1h  RR=4.0 n=1582 OOS_E[R]=+0.200 5yOOS=+0.411 SURVIVES
+[USDJPY] scored 88 cells · survives_cells=54
+  ★ USDJPY WINNER bb_2.5@5m RR=4.0 score=12.835 PnL=$66,800
+  ★ USDJPY WINNER bb_2.5@5m RR=4.0 score=12.835 PnL=$66,800
+
+######## NAS100 · live RR=4.0 ########
+
+######## NAS100 · live RR=4.0 ########
+  load NAS100 5m: 1,052,064 bars 2016-07-23→2026-07-23
+  load NAS100 5m: 1,052,064 bars 2016-07-23→2026-07-23
+  load NAS100 15m: 350,688 bars 2016-07-23→2026-07-23
+  load NAS100 15m: 350,688 bars 2016-07-23→2026-07-23
+  load NAS100 1h: 87,672 bars (from 5m) 2016-07-23→2026-07-23
+  load NAS100 1h: 87,672 bars (from 5m) 2016-07-23→2026-07-23
+  … fib_liq@1h (87,672 bars)
+  … fib_liq@1h (87,672 bars)
+[NAS100] fib_liq@1h
+[NAS100] scored 1 cells · survives_cells=54
+  … ema_pull@1h (87,672 bars)
+  … ema_pull@1h (87,672 bars)
+[NAS100] ema_pull@1h
+[NAS100] scored 2 cells · survives_cells=54
+  … ema_tight@1h (87,672 bars)
+  … ema_tight@1h (87,672 bars)
+[NAS100] ema_tight@1h
+[NAS100] scored 3 cells · survives_cells=54
+  … sma_cross@15m (350,688 bars)
+  … sma_cross@15m (350,688 bars)
+[NAS100] sma_cross@15m
+  … sma_cross@5m (1,052,064 bars)
+  … sma_cross@5m (1,052,064 bars)
+[NAS100] sma_cross@5m
+  ✓ GATE sma_cross    5m  RR=4.0 n=13027 OOS_E[R]=+0.007 5yOOS=+0.052 SURVIVES
+  ✓ GATE sma_cross    5m  RR=4.0 n=13027 OOS_E[R]=+0.007 5yOOS=+0.052 SURVIVES
+  … sma_cross@1h (87,672 bars)
+  … sma_cross@1h (87,672 bars)
+[NAS100] sma_cross@1h
+[NAS100] scored 6 cells · survives_cells=55
+  … pa@1h (87,672 bars)
+  … pa@1h (87,672 bars)
+[NAS100] pa@1h
+[NAS100] scored 7 cells · survives_cells=55
+  … liq@1h (87,672 bars)
+  … liq@1h (87,672 bars)
+[NAS100] liq@1h
+[NAS100] scored 8 cells · survives_cells=55
+  … tl@1h (87,672 bars)
+  … tl@1h (87,672 bars)
+[NAS100] tl@1h
+  ✓ GATE tl           1h  RR=1.5 n=853 OOS_E[R]=+0.199 5yOOS=+0.201 SURVIVES
+  ✓ GATE tl           1h  RR=1.5 n=853 OOS_E[R]=+0.199 5yOOS=+0.201 SURVIVES
+[NAS100] scored 9 cells · survives_cells=56
+  … obfvg@1h (87,672 bars)
+  … obfvg@1h (87,672 bars)
+[NAS100] obfvg@1h
+[NAS100] scored 10 cells · survives_cells=56
+  … macd@1h (87,672 bars)
+  … macd@1h (87,672 bars)
+[NAS100] macd@1h
+  ✓ GATE macd         1h  RR=4.0 n=2292 OOS_E[R]=+0.074 5yOOS=+0.028 SURVIVES
+  ✓ GATE macd         1h  RR=4.0 n=2292 OOS_E[R]=+0.074 5yOOS=+0.028 SURVIVES
+[NAS100] scored 11 cells · survives_cells=57
+  … engulf@1h (87,672 bars)
+  … engulf@1h (87,672 bars)
+[NAS100] engulf@1h
+[NAS100] scored 12 cells · survives_cells=57
+  … inside@1h (87,672 bars)
+  … inside@1h (87,672 bars)
+[NAS100] inside@1h
+[NAS100] scored 13 cells · survives_cells=57
+  … ichi@1h (87,672 bars)
+  … ichi@1h (87,672 bars)
+[NAS100] ichi@1h
+[NAS100] scored 14 cells · survives_cells=57
+  … psar@1h (87,672 bars)
+  … psar@1h (87,672 bars)
+[NAS100] psar@1h
+[NAS100] scored 15 cells · survives_cells=57
+  … adx@1h (87,672 bars)
+  … adx@1h (87,672 bars)
+[NAS100] adx@1h
+  ✓ GATE adx          1h  RR=4.0 n=680 OOS_E[R]=+0.244 5yOOS=+0.162 SURVIVES
+  ✓ GATE adx          1h  RR=4.0 n=680 OOS_E[R]=+0.244 5yOOS=+0.162 SURVIVES
+[NAS100] scored 16 cells · survives_cells=58
+  … st_2@15m (350,688 bars)
+  … st_2@15m (350,688 bars)
+[NAS100] st_2@15m
+  ✓ GATE st_2         15m RR=4.0 n=3505 OOS_E[R]=+0.165 5yOOS=+0.234 SURVIVES
+  ✓ GATE st_2         15m RR=4.0 n=3505 OOS_E[R]=+0.165 5yOOS=+0.234 SURVIVES
+  … st_2@5m (1,052,064 bars)
+  … st_2@5m (1,052,064 bars)
+[NAS100] st_2@5m
+  ✓ GATE st_2         5m  RR=4.0 n=7435 OOS_E[R]=+0.092 5yOOS=+0.096 SURVIVES
+  ✓ GATE st_2         5m  RR=4.0 n=7435 OOS_E[R]=+0.092 5yOOS=+0.096 SURVIVES
+  … st_2@1h (87,672 bars)
+  … st_2@1h (87,672 bars)
+[NAS100] st_2@1h
+  ✓ GATE st_2         1h  RR=3.0 n=1674 OOS_E[R]=+0.032 5yOOS=+0.026 SURVIVES
+  ✓ GATE st_2         1h  RR=3.0 n=1674 OOS_E[R]=+0.032 5yOOS=+0.026 SURVIVES
+[NAS100] scored 19 cells · survives_cells=61
+  … st_3@15m (350,688 bars)
+  … st_3@15m (350,688 bars)
+[NAS100] st_3@15m
+  ✓ GATE st_3         15m RR=4.0 n=1796 OOS_E[R]=+0.242 5yOOS=+0.188 SURVIVES
+  ✓ GATE st_3         15m RR=4.0 n=1796 OOS_E[R]=+0.242 5yOOS=+0.188 SURVIVES
+  … st_3@5m (1,052,064 bars)
+  … st_3@5m (1,052,064 bars)
+[NAS100] st_3@5m
+  ✓ GATE st_3         5m  RR=4.0 n=3598 OOS_E[R]=+0.217 5yOOS=+0.171 SURVIVES
+  ✓ GATE st_3         5m  RR=4.0 n=3598 OOS_E[R]=+0.217 5yOOS=+0.171 SURVIVES
+  … st_3@1h (87,672 bars)
+  … st_3@1h (87,672 bars)
+[NAS100] st_3@1h
+  ✓ GATE st_3         1h  RR=4.0 n=976 OOS_E[R]=+0.241 5yOOS=+0.250 SURVIVES
+  ✓ GATE st_3         1h  RR=4.0 n=976 OOS_E[R]=+0.241 5yOOS=+0.250 SURVIVES
+[NAS100] scored 22 cells · survives_cells=64
+  … kelt_1@15m (350,688 bars)
+  … kelt_1@15m (350,688 bars)
+[NAS100] kelt_1@15m
+  ✓ GATE kelt_1       15m RR=3.0 n=10935 OOS_E[R]=+0.093 5yOOS=+0.062 SURVIVES
+  ✓ GATE kelt_1       15m RR=3.0 n=10935 OOS_E[R]=+0.093 5yOOS=+0.062 SURVIVES
+  … kelt_1@5m (1,052,064 bars)
+  … kelt_1@5m (1,052,064 bars)
+[NAS100] kelt_1@5m
+  ✓ GATE kelt_1       5m  RR=4.0 n=23954 OOS_E[R]=+0.095 5yOOS=+0.096 SURVIVES
+  ✓ GATE kelt_1       5m  RR=4.0 n=23954 OOS_E[R]=+0.095 5yOOS=+0.096 SURVIVES
+  … kelt_1@1h (87,672 bars)
+  … kelt_1@1h (87,672 bars)
+[NAS100] kelt_1@1h
+  ✓ GATE kelt_1       1h  RR=3.0 n=4051 OOS_E[R]=+0.097 5yOOS=+0.140 SURVIVES
+  ✓ GATE kelt_1       1h  RR=3.0 n=4051 OOS_E[R]=+0.097 5yOOS=+0.140 SURVIVES
+[NAS100] scored 25 cells · survives_cells=67
+  … kelt_1.5@15m (350,688 bars)
+  … kelt_1.5@15m (350,688 bars)
+[NAS100] kelt_1.5@15m
+  ✓ GATE kelt_1.5     15m RR=4.0 n=8548 OOS_E[R]=+0.085 5yOOS=+0.077 SURVIVES
+  ✓ GATE kelt_1.5     15m RR=4.0 n=8548 OOS_E[R]=+0.085 5yOOS=+0.077 SURVIVES
+  … kelt_1.5@5m (1,052,064 bars)
+  … kelt_1.5@5m (1,052,064 bars)
+[NAS100] kelt_1.5@5m
+  ✓ GATE kelt_1.5     5m  RR=4.0 n=22104 OOS_E[R]=+0.076 5yOOS=+0.075 SURVIVES
+  ✓ GATE kelt_1.5     5m  RR=4.0 n=22104 OOS_E[R]=+0.076 5yOOS=+0.075 SURVIVES
+  … kelt_1.5@1h (87,672 bars)
+  … kelt_1.5@1h (87,672 bars)
+[NAS100] kelt_1.5@1h
+  ✓ GATE kelt_1.5     1h  RR=3.0 n=3665 OOS_E[R]=+0.211 5yOOS=+0.271 SURVIVES
+  ✓ GATE kelt_1.5     1h  RR=3.0 n=3665 OOS_E[R]=+0.211 5yOOS=+0.271 SURVIVES
+[NAS100] scored 28 cells · survives_cells=70
+  … kelt_2@15m (350,688 bars)
+  … kelt_2@15m (350,688 bars)
+[NAS100] kelt_2@15m
+  ✓ GATE kelt_2       15m RR=4.0 n=7409 OOS_E[R]=+0.144 5yOOS=+0.104 SURVIVES
+  ✓ GATE kelt_2       15m RR=4.0 n=7409 OOS_E[R]=+0.144 5yOOS=+0.104 SURVIVES
+  … kelt_2@5m (1,052,064 bars)
+  … kelt_2@5m (1,052,064 bars)
+[NAS100] kelt_2@5m
+  ✓ GATE kelt_2       5m  RR=4.0 n=18427 OOS_E[R]=+0.069 5yOOS=+0.061 SURVIVES
+  ✓ GATE kelt_2       5m  RR=4.0 n=18427 OOS_E[R]=+0.069 5yOOS=+0.061 SURVIVES
+  … kelt_2@1h (87,672 bars)
+  … kelt_2@1h (87,672 bars)
+[NAS100] kelt_2@1h
+  ✓ GATE kelt_2       1h  RR=4.0 n=2707 OOS_E[R]=+0.179 5yOOS=+0.184 SURVIVES
+  ✓ GATE kelt_2       1h  RR=4.0 n=2707 OOS_E[R]=+0.179 5yOOS=+0.184 SURVIVES
+[NAS100] scored 31 cells · survives_cells=73
+  … stoch_20@15m (350,688 bars)
+  … stoch_20@15m (350,688 bars)
+[NAS100] stoch_20@15m
+  skip stoch_20@15m: No numeric types to aggregate
+  skip stoch_20@15m: No numeric types to aggregate
+  … stoch_20@5m (1,052,064 bars)
+  … stoch_20@5m (1,052,064 bars)
+[NAS100] stoch_20@5m
+  skip stoch_20@5m: No numeric types to aggregate
+  skip stoch_20@5m: No numeric types to aggregate
+  … stoch_20@1h (87,672 bars)
+  … stoch_20@1h (87,672 bars)
+[NAS100] stoch_20@1h
+  skip stoch_20@1h: No numeric types to aggregate
+  skip stoch_20@1h: No numeric types to aggregate
+[NAS100] scored 31 cells · survives_cells=73
+  … stoch_30@15m (350,688 bars)
+  … stoch_30@15m (350,688 bars)
+[NAS100] stoch_30@15m
+  skip stoch_30@15m: No numeric types to aggregate
+  skip stoch_30@15m: No numeric types to aggregate
+  … stoch_30@5m (1,052,064 bars)
+  … stoch_30@5m (1,052,064 bars)
+[NAS100] stoch_30@5m
+  skip stoch_30@5m: No numeric types to aggregate
+  skip stoch_30@5m: No numeric types to aggregate
+  … stoch_30@1h (87,672 bars)
+  … stoch_30@1h (87,672 bars)
+[NAS100] stoch_30@1h
+  skip stoch_30@1h: No numeric types to aggregate
+  skip stoch_30@1h: No numeric types to aggregate
+[NAS100] scored 31 cells · survives_cells=73
+  … don_10@15m (350,688 bars)
+  … don_10@15m (350,688 bars)
+[NAS100] don_10@15m
+  ✓ GATE don_10       15m RR=3.0 n=10512 OOS_E[R]=+0.081 5yOOS=+0.093 SURVIVES
+  ✓ GATE don_10       15m RR=3.0 n=10512 OOS_E[R]=+0.081 5yOOS=+0.093 SURVIVES
+  … don_10@5m (1,052,064 bars)
+  … don_10@5m (1,052,064 bars)
+[NAS100] don_10@5m
+  ✓ GATE don_10       5m  RR=4.0 n=24646 OOS_E[R]=+0.065 5yOOS=+0.107 SURVIVES
+  ✓ GATE don_10       5m  RR=4.0 n=24646 OOS_E[R]=+0.065 5yOOS=+0.107 SURVIVES
+  … don_10@1h (87,672 bars)
+  … don_10@1h (87,672 bars)
+[NAS100] don_10@1h
+  ✓ GATE don_10       1h  RR=3.0 n=3785 OOS_E[R]=+0.092 5yOOS=+0.130 SURVIVES
+  ✓ GATE don_10       1h  RR=3.0 n=3785 OOS_E[R]=+0.092 5yOOS=+0.130 SURVIVES
+[NAS100] scored 34 cells · survives_cells=76
+  … don_20@15m (350,688 bars)
+  … don_20@15m (350,688 bars)
+[NAS100] don_20@15m
+  ✓ GATE don_20       15m RR=4.0 n=8014 OOS_E[R]=+0.131 5yOOS=+0.093 SURVIVES
+  ✓ GATE don_20       15m RR=4.0 n=8014 OOS_E[R]=+0.131 5yOOS=+0.093 SURVIVES
+  … don_20@5m (1,052,064 bars)
+  … don_20@5m (1,052,064 bars)
+[NAS100] don_20@5m
+  ✓ GATE don_20       5m  RR=4.0 n=22312 OOS_E[R]=+0.076 5yOOS=+0.093 SURVIVES
+  ✓ GATE don_20       5m  RR=4.0 n=22312 OOS_E[R]=+0.076 5yOOS=+0.093 SURVIVES
+  … don_20@1h (87,672 bars)
+  … don_20@1h (87,672 bars)
+[NAS100] don_20@1h
+  ✓ GATE don_20       1h  RR=4.0 n=2737 OOS_E[R]=+0.141 5yOOS=+0.176 SURVIVES
+  ✓ GATE don_20       1h  RR=4.0 n=2737 OOS_E[R]=+0.141 5yOOS=+0.176 SURVIVES
+[NAS100] scored 37 cells · survives_cells=79
+  … don_30@15m (350,688 bars)
+  … don_30@15m (350,688 bars)
+[NAS100] don_30@15m
+  ✓ GATE don_30       15m RR=4.0 n=7207 OOS_E[R]=+0.170 5yOOS=+0.158 SURVIVES
+  ✓ GATE don_30       15m RR=4.0 n=7207 OOS_E[R]=+0.170 5yOOS=+0.158 SURVIVES
+  … don_30@5m (1,052,064 bars)
+  … don_30@5m (1,052,064 bars)
+[NAS100] don_30@5m
+  ✓ GATE don_30       5m  RR=4.0 n=19636 OOS_E[R]=+0.089 5yOOS=+0.085 SURVIVES
+  ✓ GATE don_30       5m  RR=4.0 n=19636 OOS_E[R]=+0.089 5yOOS=+0.085 SURVIVES
+  … don_30@1h (87,672 bars)
+  … don_30@1h (87,672 bars)
+[NAS100] don_30@1h
+  ✓ GATE don_30       1h  RR=4.0 n=2493 OOS_E[R]=+0.128 5yOOS=+0.153 SURVIVES
+  ✓ GATE don_30       1h  RR=4.0 n=2493 OOS_E[R]=+0.128 5yOOS=+0.153 SURVIVES
+[NAS100] scored 40 cells · survives_cells=82
+  … don_55@15m (350,688 bars)
+  … don_55@15m (350,688 bars)
+[NAS100] don_55@15m
+  ✓ GATE don_55       15m RR=4.0 n=5918 OOS_E[R]=+0.132 5yOOS=+0.060 SURVIVES
+  ✓ GATE don_55       15m RR=4.0 n=5918 OOS_E[R]=+0.132 5yOOS=+0.060 SURVIVES
+  … don_55@5m (1,052,064 bars)
+  … don_55@5m (1,052,064 bars)
+[NAS100] don_55@5m
+  ✓ GATE don_55       5m  RR=4.0 n=15768 OOS_E[R]=+0.049 5yOOS=+0.070 SURVIVES
+  ✓ GATE don_55       5m  RR=4.0 n=15768 OOS_E[R]=+0.049 5yOOS=+0.070 SURVIVES
+  … don_55@1h (87,672 bars)
+  … don_55@1h (87,672 bars)
+[NAS100] don_55@1h
+  ✓ GATE don_55       1h  RR=4.0 n=2124 OOS_E[R]=+0.216 5yOOS=+0.199 SURVIVES
+  ✓ GATE don_55       1h  RR=4.0 n=2124 OOS_E[R]=+0.216 5yOOS=+0.199 SURVIVES
+[NAS100] scored 43 cells · survives_cells=85
+  … don_100@15m (350,688 bars)
+  … don_100@15m (350,688 bars)
+[NAS100] don_100@15m
+  ✓ GATE don_100      15m RR=4.0 n=4510 OOS_E[R]=+0.199 5yOOS=+0.087 SURVIVES
+  ✓ GATE don_100      15m RR=4.0 n=4510 OOS_E[R]=+0.199 5yOOS=+0.087 SURVIVES
+  … don_100@5m (1,052,064 bars)
+  … don_100@5m (1,052,064 bars)
+[NAS100] don_100@5m
+  ✓ GATE don_100      5m  RR=4.0 n=12633 OOS_E[R]=+0.053 5yOOS=+0.068 SURVIVES
+  ✓ GATE don_100      5m  RR=4.0 n=12633 OOS_E[R]=+0.053 5yOOS=+0.068 SURVIVES
+  … don_100@1h (87,672 bars)
+  … don_100@1h (87,672 bars)
+[NAS100] don_100@1h
+  ✓ GATE don_100      1h  RR=4.0 n=1466 OOS_E[R]=+0.319 5yOOS=+0.262 SURVIVES
+  ✓ GATE don_100      1h  RR=4.0 n=1466 OOS_E[R]=+0.319 5yOOS=+0.262 SURVIVES
+[NAS100] scored 46 cells · survives_cells=88
+  … cta_5_20@15m (350,688 bars)
+  … cta_5_20@15m (350,688 bars)
+[NAS100] cta_5_20@15m
+  ✓ GATE cta_5_20     15m RR=2.0 n=6504 OOS_E[R]=+0.058 5yOOS=+0.074 SURVIVES
+  ✓ GATE cta_5_20     15m RR=2.0 n=6504 OOS_E[R]=+0.058 5yOOS=+0.074 SURVIVES
+  … cta_5_20@5m (1,052,064 bars)
+  … cta_5_20@5m (1,052,064 bars)
+[NAS100] cta_5_20@5m
+  ✓ GATE cta_5_20     5m  RR=3.0 n=15599 OOS_E[R]=+0.004 5yOOS=+0.019 SURVIVES
+  ✓ GATE cta_5_20     5m  RR=3.0 n=15599 OOS_E[R]=+0.004 5yOOS=+0.019 SURVIVES
+  … cta_5_20@1h (87,672 bars)
+  … cta_5_20@1h (87,672 bars)
+[NAS100] cta_5_20@1h
+[NAS100] scored 49 cells · survives_cells=90
+  … cta_10_40@15m (350,688 bars)
+  … cta_10_40@15m (350,688 bars)
+[NAS100] cta_10_40@15m
+  … cta_10_40@5m (1,052,064 bars)
+  … cta_10_40@5m (1,052,064 bars)
+[NAS100] cta_10_40@5m
+  … cta_10_40@1h (87,672 bars)
+  … cta_10_40@1h (87,672 bars)
+[NAS100] cta_10_40@1h
+  ✓ GATE cta_10_40    1h  RR=4.0 n=1201 OOS_E[R]=+0.285 5yOOS=+0.264 SURVIVES
+  ✓ GATE cta_10_40    1h  RR=4.0 n=1201 OOS_E[R]=+0.285 5yOOS=+0.264 SURVIVES
+[NAS100] scored 52 cells · survives_cells=92
+  … cta_12_26@15m (350,688 bars)
+  … cta_12_26@15m (350,688 bars)
+[NAS100] cta_12_26@15m
+  … cta_12_26@5m (1,052,064 bars)
+  … cta_12_26@5m (1,052,064 bars)
+[NAS100] cta_12_26@5m
+  ✓ GATE cta_12_26    5m  RR=3.0 n=13005 OOS_E[R]=+0.027 5yOOS=+0.022 SURVIVES
+  ✓ GATE cta_12_26    5m  RR=3.0 n=13005 OOS_E[R]=+0.027 5yOOS=+0.022 SURVIVES
+  … cta_12_26@1h (87,672 bars)
+  … cta_12_26@1h (87,672 bars)
+[NAS100] cta_12_26@1h
+  ✓ GATE cta_12_26    1h  RR=4.0 n=1326 OOS_E[R]=+0.179 5yOOS=+0.166 SURVIVES
+  ✓ GATE cta_12_26    1h  RR=4.0 n=1326 OOS_E[R]=+0.179 5yOOS=+0.166 SURVIVES
+[NAS100] scored 55 cells · survives_cells=94
+  … cta_20_50@15m (350,688 bars)
+  … cta_20_50@15m (350,688 bars)
+[NAS100] cta_20_50@15m
+  … cta_20_50@5m (1,052,064 bars)
+  … cta_20_50@5m (1,052,064 bars)
+[NAS100] cta_20_50@5m
+  ✓ GATE cta_20_50    5m  RR=4.0 n=8778 OOS_E[R]=+0.072 5yOOS=+0.076 SURVIVES
+  ✓ GATE cta_20_50    5m  RR=4.0 n=8778 OOS_E[R]=+0.072 5yOOS=+0.076 SURVIVES
+  … cta_20_50@1h (87,672 bars)
+  … cta_20_50@1h (87,672 bars)
+[NAS100] cta_20_50@1h
+  ✓ GATE cta_20_50    1h  RR=4.0 n=1001 OOS_E[R]=+0.266 5yOOS=+0.396 SURVIVES
+  ✓ GATE cta_20_50    1h  RR=4.0 n=1001 OOS_E[R]=+0.266 5yOOS=+0.396 SURVIVES
+[NAS100] scored 58 cells · survives_cells=96
+  … cta_50_200@15m (350,688 bars)
+  … cta_50_200@15m (350,688 bars)
+[NAS100] cta_50_200@15m
+  ✓ GATE cta_50_200   15m RR=4.0 n=1517 OOS_E[R]=+0.237 5yOOS=+0.162 SURVIVES
+  ✓ GATE cta_50_200   15m RR=4.0 n=1517 OOS_E[R]=+0.237 5yOOS=+0.162 SURVIVES
+  … cta_50_200@5m (1,052,064 bars)
+  … cta_50_200@5m (1,052,064 bars)
+[NAS100] cta_50_200@5m
+  … cta_50_200@1h (87,672 bars)
+  … cta_50_200@1h (87,672 bars)
+[NAS100] cta_50_200@1h
+  ✓ GATE cta_50_200   1h  RR=4.0 n=469 OOS_E[R]=+0.159 5yOOS=+0.053 SURVIVES
+  ✓ GATE cta_50_200   1h  RR=4.0 n=469 OOS_E[R]=+0.159 5yOOS=+0.053 SURVIVES
+[NAS100] scored 61 cells · survives_cells=98
+  … tsmom@15m (350,688 bars)
+  … tsmom@15m (350,688 bars)
+[NAS100] tsmom@15m
+  ✓ GATE tsmom        15m RR=4.0 n=2065 OOS_E[R]=+0.180 5yOOS=+0.168 SURVIVES
+  ✓ GATE tsmom        15m RR=4.0 n=2065 OOS_E[R]=+0.180 5yOOS=+0.168 SURVIVES
+  … tsmom@5m (1,052,064 bars)
+  … tsmom@5m (1,052,064 bars)
+[NAS100] tsmom@5m
+  ✓ GATE tsmom        5m  RR=4.0 n=4722 OOS_E[R]=+0.067 5yOOS=+0.187 SURVIVES
+  ✓ GATE tsmom        5m  RR=4.0 n=4722 OOS_E[R]=+0.067 5yOOS=+0.187 SURVIVES
+  … tsmom@1h (87,672 bars)
+  … tsmom@1h (87,672 bars)
+[NAS100] tsmom@1h
+  ✓ GATE tsmom        1h  RR=2.4 n=651 OOS_E[R]=+0.077 5yOOS=+0.046 SURVIVES
+  ✓ GATE tsmom        1h  RR=2.4 n=651 OOS_E[R]=+0.077 5yOOS=+0.046 SURVIVES
+[NAS100] scored 64 cells · survives_cells=101
+  … roc_20@15m (350,688 bars)
+  … roc_20@15m (350,688 bars)
+[NAS100] roc_20@15m
+  … roc_20@5m (1,052,064 bars)
+  … roc_20@5m (1,052,064 bars)
+[NAS100] roc_20@5m
+  … roc_20@1h (87,672 bars)
+  … roc_20@1h (87,672 bars)
+[NAS100] roc_20@1h
+[NAS100] scored 64 cells · survives_cells=101
+  … roc_60@15m (350,688 bars)
+  … roc_60@15m (350,688 bars)
+[NAS100] roc_60@15m
+  … roc_60@5m (1,052,064 bars)
+  … roc_60@5m (1,052,064 bars)
+[NAS100] roc_60@5m
+  … roc_60@1h (87,672 bars)
+  … roc_60@1h (87,672 bars)
+[NAS100] roc_60@1h
+[NAS100] scored 64 cells · survives_cells=101
+  … roc_120@15m (350,688 bars)
+  … roc_120@15m (350,688 bars)
+[NAS100] roc_120@15m
+  … roc_120@5m (1,052,064 bars)
+  … roc_120@5m (1,052,064 bars)
+[NAS100] roc_120@5m
+  … roc_120@1h (87,672 bars)
+  … roc_120@1h (87,672 bars)
+[NAS100] roc_120@1h
+[NAS100] scored 64 cells · survives_cells=101
+  … bb_1.5@15m (350,688 bars)
+  … bb_1.5@15m (350,688 bars)
+[NAS100] bb_1.5@15m
+  … bb_1.5@5m (1,052,064 bars)
+  … bb_1.5@5m (1,052,064 bars)
+[NAS100] bb_1.5@5m
+  … bb_1.5@1h (87,672 bars)
+  … bb_1.5@1h (87,672 bars)
+[NAS100] bb_1.5@1h
+[NAS100] scored 67 cells · survives_cells=101
+  … bb_2@15m (350,688 bars)
+  … bb_2@15m (350,688 bars)
+[NAS100] bb_2@15m
+  ✓ GATE bb_2         15m RR=4.0 n=2831 OOS_E[R]=+0.134 5yOOS=+0.119 SURVIVES
+  ✓ GATE bb_2         15m RR=4.0 n=2831 OOS_E[R]=+0.134 5yOOS=+0.119 SURVIVES
+  … bb_2@5m (1,052,064 bars)
+  … bb_2@5m (1,052,064 bars)
+[NAS100] bb_2@5m
+  … bb_2@1h (87,672 bars)
+  … bb_2@1h (87,672 bars)
+[NAS100] bb_2@1h
+[NAS100] scored 70 cells · survives_cells=102
+  … bb_2.5@15m (350,688 bars)
+  … bb_2.5@15m (350,688 bars)
+[NAS100] bb_2.5@15m
+  … bb_2.5@5m (1,052,064 bars)
+  … bb_2.5@5m (1,052,064 bars)
+[NAS100] bb_2.5@5m
+  … bb_2.5@1h (87,672 bars)
+  … bb_2.5@1h (87,672 bars)
+[NAS100] bb_2.5@1h
+[NAS100] scored 73 cells · survives_cells=104
+  … z_20_2@15m (350,688 bars)
+  … z_20_2@15m (350,688 bars)
+[NAS100] z_20_2@15m
+  … z_20_2@5m (1,052,064 bars)
+  … z_20_2@5m (1,052,064 bars)
+[NAS100] z_20_2@5m
+  ✓ GATE z_20_2       5m  RR=4.0 n=18632 OOS_E[R]=+0.027 5yOOS=+0.052 SURVIVES
+  ✓ GATE z_20_2       5m  RR=4.0 n=18632 OOS_E[R]=+0.027 5yOOS=+0.052 SURVIVES
+  … z_20_2@1h (87,672 bars)
+  … z_20_2@1h (87,672 bars)
+[NAS100] z_20_2@1h
+[NAS100] scored 76 cells · survives_cells=105
+  … z_40_2@15m (350,688 bars)
+  … z_40_2@15m (350,688 bars)
+[NAS100] z_40_2@15m
+  … z_40_2@5m (1,052,064 bars)
+  … z_40_2@5m (1,052,064 bars)
+[NAS100] z_40_2@5m
+  ✓ GATE z_40_2       5m  RR=3.0 n=19299 OOS_E[R]=+0.045 5yOOS=+0.043 SURVIVES
+  ✓ GATE z_40_2       5m  RR=3.0 n=19299 OOS_E[R]=+0.045 5yOOS=+0.043 SURVIVES
+  … z_40_2@1h (87,672 bars)
+  … z_40_2@1h (87,672 bars)
+[NAS100] z_40_2@1h
+  ✓ GATE z_40_2       1h  RR=3.0 n=2380 OOS_E[R]=+0.162 5yOOS=+0.236 SURVIVES
+  ✓ GATE z_40_2       1h  RR=3.0 n=2380 OOS_E[R]=+0.162 5yOOS=+0.236 SURVIVES
+[NAS100] scored 79 cells · survives_cells=107
+  … rsi@15m (350,688 bars)
+  … rsi@15m (350,688 bars)
+[NAS100] rsi@15m
+  ✓ GATE rsi          15m RR=4.0 n=6914 OOS_E[R]=+0.083 5yOOS=+0.114 SURVIVES
+  ✓ GATE rsi          15m RR=4.0 n=6914 OOS_E[R]=+0.083 5yOOS=+0.114 SURVIVES
+  … rsi@5m (1,052,064 bars)
+  … rsi@5m (1,052,064 bars)
+[NAS100] rsi@5m
+  ✓ GATE rsi          5m  RR=4.0 n=17721 OOS_E[R]=+0.041 5yOOS=+0.018 SURVIVES
+  ✓ GATE rsi          5m  RR=4.0 n=17721 OOS_E[R]=+0.041 5yOOS=+0.018 SURVIVES
+  … rsi@1h (87,672 bars)
+  … rsi@1h (87,672 bars)
+[NAS100] rsi@1h
+[NAS100] scored 82 cells · survives_cells=109
+  … atrbrk@15m (350,688 bars)
+  … atrbrk@15m (350,688 bars)
+[NAS100] atrbrk@15m
+  ✓ GATE atrbrk       15m RR=4.0 n=5083 OOS_E[R]=+0.144 5yOOS=+0.132 SURVIVES
+  ✓ GATE atrbrk       15m RR=4.0 n=5083 OOS_E[R]=+0.144 5yOOS=+0.132 SURVIVES
+  … atrbrk@5m (1,052,064 bars)
+  … atrbrk@5m (1,052,064 bars)
+[NAS100] atrbrk@5m
+  ✓ GATE atrbrk       5m  RR=4.0 n=10852 OOS_E[R]=+0.102 5yOOS=+0.080 SURVIVES
+  ✓ GATE atrbrk       5m  RR=4.0 n=10852 OOS_E[R]=+0.102 5yOOS=+0.080 SURVIVES
+  … atrbrk@1h (87,672 bars)
+  … atrbrk@1h (87,672 bars)
+[NAS100] atrbrk@1h
+  ✓ GATE atrbrk       1h  RR=2.4 n=2116 OOS_E[R]=+0.113 5yOOS=+0.144 SURVIVES
+  ✓ GATE atrbrk       1h  RR=2.4 n=2116 OOS_E[R]=+0.113 5yOOS=+0.144 SURVIVES
+[NAS100] scored 85 cells · survives_cells=112
+  … volmom@15m (350,688 bars)
+  … volmom@15m (350,688 bars)
+[NAS100] volmom@15m
+  ✓ GATE volmom       15m RR=4.0 n=5248 OOS_E[R]=+0.155 5yOOS=+0.127 SURVIVES
+  ✓ GATE volmom       15m RR=4.0 n=5248 OOS_E[R]=+0.155 5yOOS=+0.127 SURVIVES
+  … volmom@5m (1,052,064 bars)
+  … volmom@5m (1,052,064 bars)
+[NAS100] volmom@5m
+  ✓ GATE volmom       5m  RR=4.0 n=13465 OOS_E[R]=+0.054 5yOOS=+0.067 SURVIVES
+  ✓ GATE volmom       5m  RR=4.0 n=13465 OOS_E[R]=+0.054 5yOOS=+0.067 SURVIVES
+  … volmom@1h (87,672 bars)
+  … volmom@1h (87,672 bars)
+[NAS100] volmom@1h
+[NAS100] scored 88 cells · survives_cells=114
+  ★ NAS100 WINNER don_100@1h RR=4.0 score=10.979 PnL=$78,800
+  ★ NAS100 WINNER don_100@1h RR=4.0 score=10.979 PnL=$78,800
+
+######## UKOIL · live RR=3.0 ########
+
+######## UKOIL · live RR=3.0 ########
+  load UKOIL 5m: 1,052,064 bars 2016-07-23→2026-07-23
+  load UKOIL 5m: 1,052,064 bars 2016-07-23→2026-07-23
+  load UKOIL 15m: 350,688 bars 2016-07-23→2026-07-23
+  load UKOIL 15m: 350,688 bars 2016-07-23→2026-07-23
+  load UKOIL 1h: 87,672 bars (from 5m) 2016-07-23→2026-07-23
+  load UKOIL 1h: 87,672 bars (from 5m) 2016-07-23→2026-07-23
+  … fib_liq@1h (87,672 bars)
+  … fib_liq@1h (87,672 bars)
+[UKOIL] fib_liq@1h
+[UKOIL] scored 1 cells · survives_cells=115
+  … ema_pull@1h (87,672 bars)
+  … ema_pull@1h (87,672 bars)
+[UKOIL] ema_pull@1h
+[UKOIL] scored 2 cells · survives_cells=115
+  … ema_tight@1h (87,672 bars)
+  … ema_tight@1h (87,672 bars)
+[UKOIL] ema_tight@1h
+  ✓ GATE ema_tight    1h  RR=2.4 n=330 OOS_E[R]=+0.337 5yOOS=+0.112 SURVIVES
+  ✓ GATE ema_tight    1h  RR=2.4 n=330 OOS_E[R]=+0.337 5yOOS=+0.112 SURVIVES
+[UKOIL] scored 3 cells · survives_cells=116
+  … sma_cross@15m (350,688 bars)
+  … sma_cross@15m (350,688 bars)
+[UKOIL] sma_cross@15m
+  ✓ GATE sma_cross    15m RR=4.0 n=4839 OOS_E[R]=+0.105 5yOOS=+0.177 SURVIVES
+  ✓ GATE sma_cross    15m RR=4.0 n=4839 OOS_E[R]=+0.105 5yOOS=+0.177 SURVIVES
+  … sma_cross@5m (1,052,064 bars)
+  … sma_cross@5m (1,052,064 bars)
+[UKOIL] sma_cross@5m
+  ✓ GATE sma_cross    5m  RR=4.0 n=13292 OOS_E[R]=+0.051 5yOOS=+0.059 SURVIVES
+  ✓ GATE sma_cross    5m  RR=4.0 n=13292 OOS_E[R]=+0.051 5yOOS=+0.059 SURVIVES
+  … sma_cross@1h (87,672 bars)
+  … sma_cross@1h (87,672 bars)
+[UKOIL] sma_cross@1h
+[UKOIL] scored 6 cells · survives_cells=118
+  … pa@1h (87,672 bars)
+  … pa@1h (87,672 bars)
+[UKOIL] pa@1h
+[UKOIL] scored 7 cells · survives_cells=118
+  … liq@1h (87,672 bars)
+  … liq@1h (87,672 bars)
+[UKOIL] liq@1h
+  ✓ GATE liq          1h  RR=3.0 n=1394 OOS_E[R]=+0.109 5yOOS=+0.132 SURVIVES
+  ✓ GATE liq          1h  RR=3.0 n=1394 OOS_E[R]=+0.109 5yOOS=+0.132 SURVIVES
+[UKOIL] scored 8 cells · survives_cells=119
+  … tl@1h (87,672 bars)
+  … tl@1h (87,672 bars)
+[UKOIL] tl@1h
+  ✓ GATE tl           1h  RR=4.0 n=873 OOS_E[R]=+0.120 5yOOS=+0.198 SURVIVES
+  ✓ GATE tl           1h  RR=4.0 n=873 OOS_E[R]=+0.120 5yOOS=+0.198 SURVIVES
+[UKOIL] scored 9 cells · survives_cells=120
+  … obfvg@1h (87,672 bars)
+  … obfvg@1h (87,672 bars)
+[UKOIL] obfvg@1h
+[UKOIL] scored 10 cells · survives_cells=120
+  … macd@1h (87,672 bars)
+  … macd@1h (87,672 bars)
+[UKOIL] macd@1h
+[UKOIL] scored 11 cells · survives_cells=120
+  … engulf@1h (87,672 bars)
+  … engulf@1h (87,672 bars)
+[UKOIL] engulf@1h
+[UKOIL] scored 12 cells · survives_cells=120
+  … inside@1h (87,672 bars)
+  … inside@1h (87,672 bars)
+[UKOIL] inside@1h
+[UKOIL] scored 13 cells · survives_cells=120
+  … ichi@1h (87,672 bars)
+  … ichi@1h (87,672 bars)
+[UKOIL] ichi@1h
+[UKOIL] scored 14 cells · survives_cells=120
+  … psar@1h (87,672 bars)
+  … psar@1h (87,672 bars)
+[UKOIL] psar@1h
+[UKOIL] scored 15 cells · survives_cells=120
+  … adx@1h (87,672 bars)
+  … adx@1h (87,672 bars)
+[UKOIL] adx@1h
+[UKOIL] scored 16 cells · survives_cells=120
+  … st_2@15m (350,688 bars)
+  … st_2@15m (350,688 bars)
+[UKOIL] st_2@15m
+  … st_2@5m (1,052,064 bars)
+  … st_2@5m (1,052,064 bars)
+[UKOIL] st_2@5m
+  … st_2@1h (87,672 bars)
+  … st_2@1h (87,672 bars)
+[UKOIL] st_2@1h
+  ✓ GATE st_2         1h  RR=4.0 n=1510 OOS_E[R]=+0.046 5yOOS=+0.159 SURVIVES
+  ✓ GATE st_2         1h  RR=4.0 n=1510 OOS_E[R]=+0.046 5yOOS=+0.159 SURVIVES
+[UKOIL] scored 19 cells · survives_cells=121
+  … st_3@15m (350,688 bars)
+  … st_3@15m (350,688 bars)
+[UKOIL] st_3@15m
+  … st_3@5m (1,052,064 bars)
+  … st_3@5m (1,052,064 bars)
+[UKOIL] st_3@5m
+  ✓ GATE st_3         5m  RR=4.0 n=3466 OOS_E[R]=+0.109 5yOOS=+0.136 SURVIVES
+  ✓ GATE st_3         5m  RR=4.0 n=3466 OOS_E[R]=+0.109 5yOOS=+0.136 SURVIVES
+  … st_3@1h (87,672 bars)
+  … st_3@1h (87,672 bars)
+[UKOIL] st_3@1h
+  ✓ GATE st_3         1h  RR=4.0 n=828 OOS_E[R]=+0.120 5yOOS=+0.389 SURVIVES
+  ✓ GATE st_3         1h  RR=4.0 n=828 OOS_E[R]=+0.120 5yOOS=+0.389 SURVIVES
+[UKOIL] scored 22 cells · survives_cells=123
+  … kelt_1@15m (350,688 bars)
+  … kelt_1@15m (350,688 bars)
+[UKOIL] kelt_1@15m
+  … kelt_1@5m (1,052,064 bars)
+  … kelt_1@5m (1,052,064 bars)
+[UKOIL] kelt_1@5m
+  … kelt_1@1h (87,672 bars)
+  … kelt_1@1h (87,672 bars)
+[UKOIL] kelt_1@1h
+[UKOIL] scored 25 cells · survives_cells=123
+  … kelt_1.5@15m (350,688 bars)
+  … kelt_1.5@15m (350,688 bars)
+[UKOIL] kelt_1.5@15m
+  … kelt_1.5@5m (1,052,064 bars)
+  … kelt_1.5@5m (1,052,064 bars)
+[UKOIL] kelt_1.5@5m
+  … kelt_1.5@1h (87,672 bars)
+  … kelt_1.5@1h (87,672 bars)
+[UKOIL] kelt_1.5@1h
+[UKOIL] scored 28 cells · survives_cells=123
+  … kelt_2@15m (350,688 bars)
+  … kelt_2@15m (350,688 bars)
+[UKOIL] kelt_2@15m
+  … kelt_2@5m (1,052,064 bars)
+  … kelt_2@5m (1,052,064 bars)
+[UKOIL] kelt_2@5m
+  … kelt_2@1h (87,672 bars)
+  … kelt_2@1h (87,672 bars)
+[UKOIL] kelt_2@1h
+[UKOIL] scored 31 cells · survives_cells=123
+  … stoch_20@15m (350,688 bars)
+  … stoch_20@15m (350,688 bars)
+[UKOIL] stoch_20@15m
+  skip stoch_20@15m: No numeric types to aggregate
+  skip stoch_20@15m: No numeric types to aggregate
+  … stoch_20@5m (1,052,064 bars)
+  … stoch_20@5m (1,052,064 bars)
+[UKOIL] stoch_20@5m
+  skip stoch_20@5m: No numeric types to aggregate
+  skip stoch_20@5m: No numeric types to aggregate
+  … stoch_20@1h (87,672 bars)
+  … stoch_20@1h (87,672 bars)
+[UKOIL] stoch_20@1h
+  skip stoch_20@1h: No numeric types to aggregate
+  skip stoch_20@1h: No numeric types to aggregate
+[UKOIL] scored 31 cells · survives_cells=123
+  … stoch_30@15m (350,688 bars)
+  … stoch_30@15m (350,688 bars)
+[UKOIL] stoch_30@15m
+  skip stoch_30@15m: No numeric types to aggregate
+  skip stoch_30@15m: No numeric types to aggregate
+  … stoch_30@5m (1,052,064 bars)
+  … stoch_30@5m (1,052,064 bars)
+[UKOIL] stoch_30@5m
+  skip stoch_30@5m: No numeric types to aggregate
+  skip stoch_30@5m: No numeric types to aggregate
+  … stoch_30@1h (87,672 bars)
+  … stoch_30@1h (87,672 bars)
+[UKOIL] stoch_30@1h
+  skip stoch_30@1h: No numeric types to aggregate
+  skip stoch_30@1h: No numeric types to aggregate
+[UKOIL] scored 31 cells · survives_cells=123
+  … don_10@15m (350,688 bars)
+  … don_10@15m (350,688 bars)
+[UKOIL] don_10@15m
+  … don_10@5m (1,052,064 bars)
+  … don_10@5m (1,052,064 bars)
+[UKOIL] don_10@5m
+  … don_10@1h (87,672 bars)
+  … don_10@1h (87,672 bars)
+[UKOIL] don_10@1h
+[UKOIL] scored 34 cells · survives_cells=123
+  … don_20@15m (350,688 bars)
+  … don_20@15m (350,688 bars)
+[UKOIL] don_20@15m
+  … don_20@5m (1,052,064 bars)
+  … don_20@5m (1,052,064 bars)
+[UKOIL] don_20@5m
+  … don_20@1h (87,672 bars)
+  … don_20@1h (87,672 bars)
+[UKOIL] don_20@1h
+  ✓ GATE don_20       1h  RR=4.0 n=2651 OOS_E[R]=+0.011 5yOOS=+0.190 SURVIVES
+  ✓ GATE don_20       1h  RR=4.0 n=2651 OOS_E[R]=+0.011 5yOOS=+0.190 SURVIVES
+[UKOIL] scored 37 cells · survives_cells=124
+  … don_30@15m (350,688 bars)
+  … don_30@15m (350,688 bars)
+[UKOIL] don_30@15m
+  … don_30@5m (1,052,064 bars)
+  … don_30@5m (1,052,064 bars)
+[UKOIL] don_30@5m
+  … don_30@1h (87,672 bars)
+  … don_30@1h (87,672 bars)
+[UKOIL] don_30@1h
+[UKOIL] scored 40 cells · survives_cells=124
+  … don_55@15m (350,688 bars)
+  … don_55@15m (350,688 bars)
+[UKOIL] don_55@15m
+  … don_55@5m (1,052,064 bars)
+  … don_55@5m (1,052,064 bars)
+[UKOIL] don_55@5m
+  … don_55@1h (87,672 bars)
+  … don_55@1h (87,672 bars)
+[UKOIL] don_55@1h
+  ✓ GATE don_55       1h  RR=4.0 n=2111 OOS_E[R]=-0.035 5yOOS=+0.033 SURVIVES
+  ✓ GATE don_55       1h  RR=4.0 n=2111 OOS_E[R]=-0.035 5yOOS=+0.033 SURVIVES
+[UKOIL] scored 43 cells · survives_cells=125
+  … don_100@15m (350,688 bars)
+  … don_100@15m (350,688 bars)
+[UKOIL] don_100@15m
+  … don_100@5m (1,052,064 bars)
+  … don_100@5m (1,052,064 bars)
+[UKOIL] don_100@5m
+  … don_100@1h (87,672 bars)
+  … don_100@1h (87,672 bars)
+[UKOIL] don_100@1h
+[UKOIL] scored 46 cells · survives_cells=125
+  … cta_5_20@15m (350,688 bars)
+  … cta_5_20@15m (350,688 bars)
+[UKOIL] cta_5_20@15m
+  ✓ GATE cta_5_20     15m RR=2.4 n=6545 OOS_E[R]=+0.041 5yOOS=+0.056 SURVIVES
+  ✓ GATE cta_5_20     15m RR=2.4 n=6545 OOS_E[R]=+0.041 5yOOS=+0.056 SURVIVES
+  … cta_5_20@5m (1,052,064 bars)
+  … cta_5_20@5m (1,052,064 bars)
+[UKOIL] cta_5_20@5m
+  ✓ GATE cta_5_20     5m  RR=4.0 n=13818 OOS_E[R]=+0.019 5yOOS=+0.034 SURVIVES
+  ✓ GATE cta_5_20     5m  RR=4.0 n=13818 OOS_E[R]=+0.019 5yOOS=+0.034 SURVIVES
+  … cta_5_20@1h (87,672 bars)
+  … cta_5_20@1h (87,672 bars)
+[UKOIL] cta_5_20@1h
+[UKOIL] scored 49 cells · survives_cells=127
+  … cta_10_40@15m (350,688 bars)
+  … cta_10_40@15m (350,688 bars)
+[UKOIL] cta_10_40@15m
+  … cta_10_40@5m (1,052,064 bars)
+  … cta_10_40@5m (1,052,064 bars)
+[UKOIL] cta_10_40@5m
+  … cta_10_40@1h (87,672 bars)
+  … cta_10_40@1h (87,672 bars)
+[UKOIL] cta_10_40@1h
+[UKOIL] scored 52 cells · survives_cells=127
+  … cta_12_26@15m (350,688 bars)
+  … cta_12_26@15m (350,688 bars)
+[UKOIL] cta_12_26@15m
+  … cta_12_26@5m (1,052,064 bars)
+  … cta_12_26@5m (1,052,064 bars)
+[UKOIL] cta_12_26@5m
+  … cta_12_26@1h (87,672 bars)
+  … cta_12_26@1h (87,672 bars)
+[UKOIL] cta_12_26@1h
+[UKOIL] scored 55 cells · survives_cells=127
+  … cta_20_50@15m (350,688 bars)
+  … cta_20_50@15m (350,688 bars)
+[UKOIL] cta_20_50@15m
+  … cta_20_50@5m (1,052,064 bars)
+  … cta_20_50@5m (1,052,064 bars)
+[UKOIL] cta_20_50@5m
+  … cta_20_50@1h (87,672 bars)
+  … cta_20_50@1h (87,672 bars)
+[UKOIL] cta_20_50@1h
+[UKOIL] scored 58 cells · survives_cells=127
+  … cta_50_200@15m (350,688 bars)
+  … cta_50_200@15m (350,688 bars)
+[UKOIL] cta_50_200@15m
+  ✓ GATE cta_50_200   15m RR=2.4 n=1675 OOS_E[R]=+0.138 5yOOS=+0.024 SURVIVES
+  ✓ GATE cta_50_200   15m RR=2.4 n=1675 OOS_E[R]=+0.138 5yOOS=+0.024 SURVIVES
+  … cta_50_200@5m (1,052,064 bars)
+  … cta_50_200@5m (1,052,064 bars)
+[UKOIL] cta_50_200@5m
+  ✓ GATE cta_50_200   5m  RR=4.0 n=4111 OOS_E[R]=+0.098 5yOOS=+0.098 SURVIVES
+  ✓ GATE cta_50_200   5m  RR=4.0 n=4111 OOS_E[R]=+0.098 5yOOS=+0.098 SURVIVES
+  … cta_50_200@1h (87,672 bars)
+  … cta_50_200@1h (87,672 bars)
+[UKOIL] cta_50_200@1h
+  ✓ GATE cta_50_200   1h  RR=4.0 n=483 OOS_E[R]=+0.444 5yOOS=+0.268 SURVIVES
+  ✓ GATE cta_50_200   1h  RR=4.0 n=483 OOS_E[R]=+0.444 5yOOS=+0.268 SURVIVES
+[UKOIL] scored 61 cells · survives_cells=130
+  … tsmom@15m (350,688 bars)
+  … tsmom@15m (350,688 bars)
+[UKOIL] tsmom@15m
+  ✓ GATE tsmom        15m RR=4.0 n=2104 OOS_E[R]=+0.202 5yOOS=+0.300 SURVIVES
+  ✓ GATE tsmom        15m RR=4.0 n=2104 OOS_E[R]=+0.202 5yOOS=+0.300 SURVIVES
+  … tsmom@5m (1,052,064 bars)
+  … tsmom@5m (1,052,064 bars)
+[UKOIL] tsmom@5m
+  ✓ GATE tsmom        5m  RR=4.0 n=4932 OOS_E[R]=+0.140 5yOOS=+0.195 SURVIVES
+  ✓ GATE tsmom        5m  RR=4.0 n=4932 OOS_E[R]=+0.140 5yOOS=+0.195 SURVIVES
+  … tsmom@1h (87,672 bars)
+  … tsmom@1h (87,672 bars)
+[UKOIL] tsmom@1h
+[UKOIL] scored 64 cells · survives_cells=132
+  … roc_20@15m (350,688 bars)
+  … roc_20@15m (350,688 bars)
+[UKOIL] roc_20@15m
+  ✓ GATE roc_20       15m RR=3.0 n=105 OOS_E[R]=+0.600 5yOOS=+0.500 SURVIVES
+  ✓ GATE roc_20       15m RR=3.0 n=105 OOS_E[R]=+0.600 5yOOS=+0.500 SURVIVES
+  … roc_20@5m (1,052,064 bars)
+  … roc_20@5m (1,052,064 bars)
+[UKOIL] roc_20@5m
+  ✓ GATE roc_20       5m  RR=2.4 n=97 OOS_E[R]=+0.263 5yOOS=+0.169 SURVIVES
+  ✓ GATE roc_20       5m  RR=2.4 n=97 OOS_E[R]=+0.263 5yOOS=+0.169 SURVIVES
+  … roc_20@1h (87,672 bars)
+  … roc_20@1h (87,672 bars)
+[UKOIL] roc_20@1h
+[UKOIL] scored 67 cells · survives_cells=134
+  … roc_60@15m (350,688 bars)
+  … roc_60@15m (350,688 bars)
+[UKOIL] roc_60@15m
+  … roc_60@5m (1,052,064 bars)
+  … roc_60@5m (1,052,064 bars)
+[UKOIL] roc_60@5m
+  … roc_60@1h (87,672 bars)
+  … roc_60@1h (87,672 bars)
+[UKOIL] roc_60@1h
+[UKOIL] scored 70 cells · survives_cells=136
+  … roc_120@15m (350,688 bars)
+  … roc_120@15m (350,688 bars)
+[UKOIL] roc_120@15m
+  ✓ GATE roc_120      15m RR=4.0 n=83 OOS_E[R]=+0.944 5yOOS=+0.818 SURVIVES
+  ✓ GATE roc_120      15m RR=4.0 n=83 OOS_E[R]=+0.944 5yOOS=+0.818 SURVIVES
+  … roc_120@5m (1,052,064 bars)
+  … roc_120@5m (1,052,064 bars)
+[UKOIL] roc_120@5m
+  ✓ GATE roc_120      5m  RR=2.4 n=71 OOS_E[R]=+0.172 5yOOS=+0.046 SURVIVES
+  ✓ GATE roc_120      5m  RR=2.4 n=71 OOS_E[R]=+0.172 5yOOS=+0.046 SURVIVES
+  … roc_120@1h (87,672 bars)
+  … roc_120@1h (87,672 bars)
+[UKOIL] roc_120@1h
+[UKOIL] scored 73 cells · survives_cells=139
+  … bb_1.5@15m (350,688 bars)
+  … bb_1.5@15m (350,688 bars)
+[UKOIL] bb_1.5@15m
+  … bb_1.5@5m (1,052,064 bars)
+  … bb_1.5@5m (1,052,064 bars)
+[UKOIL] bb_1.5@5m
+  ✓ GATE bb_1.5       5m  RR=4.0 n=17893 OOS_E[R]=+0.050 5yOOS=+0.056 SURVIVES
+  ✓ GATE bb_1.5       5m  RR=4.0 n=17893 OOS_E[R]=+0.050 5yOOS=+0.056 SURVIVES
+  … bb_1.5@1h (87,672 bars)
+  … bb_1.5@1h (87,672 bars)
+[UKOIL] bb_1.5@1h
+  ✓ GATE bb_1.5       1h  RR=4.0 n=2127 OOS_E[R]=+0.114 5yOOS=+0.030 SURVIVES
+  ✓ GATE bb_1.5       1h  RR=4.0 n=2127 OOS_E[R]=+0.114 5yOOS=+0.030 SURVIVES
+[UKOIL] scored 76 cells · survives_cells=141
+  … bb_2@15m (350,688 bars)
+  … bb_2@15m (350,688 bars)
+[UKOIL] bb_2@15m
+  … bb_2@5m (1,052,064 bars)
+  … bb_2@5m (1,052,064 bars)
+[UKOIL] bb_2@5m
+  ✓ GATE bb_2         5m  RR=4.0 n=6062 OOS_E[R]=+0.114 5yOOS=+0.120 SURVIVES
+  ✓ GATE bb_2         5m  RR=4.0 n=6062 OOS_E[R]=+0.114 5yOOS=+0.120 SURVIVES
+  … bb_2@1h (87,672 bars)
+  … bb_2@1h (87,672 bars)
+[UKOIL] bb_2@1h
+[UKOIL] scored 79 cells · survives_cells=142
+  … bb_2.5@15m (350,688 bars)
+  … bb_2.5@15m (350,688 bars)
+[UKOIL] bb_2.5@15m
+  ✓ GATE bb_2.5       15m RR=4.0 n=738 OOS_E[R]=+0.208 5yOOS=+0.111 SURVIVES
+  ✓ GATE bb_2.5       15m RR=4.0 n=738 OOS_E[R]=+0.208 5yOOS=+0.111 SURVIVES
+  … bb_2.5@5m (1,052,064 bars)
+  … bb_2.5@5m (1,052,064 bars)
+[UKOIL] bb_2.5@5m
+  … bb_2.5@1h (87,672 bars)
+  … bb_2.5@1h (87,672 bars)
+[UKOIL] bb_2.5@1h
+[UKOIL] scored 82 cells · survives_cells=143
+  … z_20_2@15m (350,688 bars)
+  … z_20_2@15m (350,688 bars)
+[UKOIL] z_20_2@15m
+  … z_20_2@5m (1,052,064 bars)
+  … z_20_2@5m (1,052,064 bars)
+[UKOIL] z_20_2@5m
+  ✓ GATE z_20_2       5m  RR=3.0 n=22562 OOS_E[R]=+0.053 5yOOS=+0.059 SURVIVES
+  ✓ GATE z_20_2       5m  RR=3.0 n=22562 OOS_E[R]=+0.053 5yOOS=+0.059 SURVIVES
+  … z_20_2@1h (87,672 bars)
+  … z_20_2@1h (87,672 bars)
+[UKOIL] z_20_2@1h
+[UKOIL] scored 85 cells · survives_cells=145
+  … z_40_2@15m (350,688 bars)
+  … z_40_2@15m (350,688 bars)
+[UKOIL] z_40_2@15m
+  … z_40_2@5m (1,052,064 bars)
+  … z_40_2@5m (1,052,064 bars)
+[UKOIL] z_40_2@5m
+  ✓ GATE z_40_2       5m  RR=4.0 n=17040 OOS_E[R]=+0.060 5yOOS=+0.079 SURVIVES
+  ✓ GATE z_40_2       5m  RR=4.0 n=17040 OOS_E[R]=+0.060 5yOOS=+0.079 SURVIVES
+  … z_40_2@1h (87,672 bars)
+  … z_40_2@1h (87,672 bars)
+[UKOIL] z_40_2@1h
+  ✓ GATE z_40_2       1h  RR=4.0 n=1996 OOS_E[R]=+0.041 5yOOS=+0.111 SURVIVES
+  ✓ GATE z_40_2       1h  RR=4.0 n=1996 OOS_E[R]=+0.041 5yOOS=+0.111 SURVIVES
+[UKOIL] scored 88 cells · survives_cells=147
+  … rsi@15m (350,688 bars)
+  … rsi@15m (350,688 bars)
+[UKOIL] rsi@15m
+  ✓ GATE rsi          15m RR=4.0 n=6867 OOS_E[R]=+0.082 5yOOS=+0.072 SURVIVES
+  ✓ GATE rsi          15m RR=4.0 n=6867 OOS_E[R]=+0.082 5yOOS=+0.072 SURVIVES
+  … rsi@5m (1,052,064 bars)
+  … rsi@5m (1,052,064 bars)
+[UKOIL] rsi@5m
+  ✓ GATE rsi          5m  RR=4.0 n=17947 OOS_E[R]=+0.084 5yOOS=+0.064 SURVIVES
+  ✓ GATE rsi          5m  RR=4.0 n=17947 OOS_E[R]=+0.084 5yOOS=+0.064 SURVIVES
+  … rsi@1h (87,672 bars)
+  … rsi@1h (87,672 bars)
+[UKOIL] rsi@1h
+[UKOIL] scored 91 cells · survives_cells=149
+  … atrbrk@15m (350,688 bars)
+  … atrbrk@15m (350,688 bars)
+[UKOIL] atrbrk@15m
+  … atrbrk@5m (1,052,064 bars)
+  … atrbrk@5m (1,052,064 bars)
+[UKOIL] atrbrk@5m
+  … atrbrk@1h (87,672 bars)
+  … atrbrk@1h (87,672 bars)
+[UKOIL] atrbrk@1h
+[UKOIL] scored 94 cells · survives_cells=149
+  … volmom@15m (350,688 bars)
+  … volmom@15m (350,688 bars)
+[UKOIL] volmom@15m
+  ✓ GATE volmom       15m RR=4.0 n=5611 OOS_E[R]=+0.025 5yOOS=+0.045 SURVIVES
+  ✓ GATE volmom       15m RR=4.0 n=5611 OOS_E[R]=+0.025 5yOOS=+0.045 SURVIVES
+  … volmom@5m (1,052,064 bars)
+  … volmom@5m (1,052,064 bars)
+[UKOIL] volmom@5m
+  ✓ GATE volmom       5m  RR=4.0 n=14078 OOS_E[R]=+0.033 5yOOS=+0.042 SURVIVES
+  ✓ GATE volmom       5m  RR=4.0 n=14078 OOS_E[R]=+0.033 5yOOS=+0.042 SURVIVES
+  … volmom@1h (87,672 bars)
+  … volmom@1h (87,672 bars)
+[UKOIL] volmom@1h
+[UKOIL] scored 97 cells · survives_cells=151
+  ★ UKOIL WINNER roc_120@15m RR=4.0 score=12.293 PnL=$3,400
+  ★ UKOIL WINNER roc_120@15m RR=4.0 score=12.293 PnL=$3,400
+
+######## AUDUSD · live RR=1.5 ########
+
+######## AUDUSD · live RR=1.5 ########
+  load AUDUSD 5m: 1,052,064 bars 2016-07-23→2026-07-23
+  load AUDUSD 5m: 1,052,064 bars 2016-07-23→2026-07-23
+  load AUDUSD 15m: 350,688 bars 2016-07-23→2026-07-23
+  load AUDUSD 15m: 350,688 bars 2016-07-23→2026-07-23
+  load AUDUSD 1h: 87,672 bars (from 5m) 2016-07-23→2026-07-23
+  load AUDUSD 1h: 87,672 bars (from 5m) 2016-07-23→2026-07-23
+  … fib_liq@1h (87,672 bars)
+  … fib_liq@1h (87,672 bars)
+[AUDUSD] fib_liq@1h
+[AUDUSD] scored 1 cells · survives_cells=151
+  … ema_pull@1h (87,672 bars)
+  … ema_pull@1h (87,672 bars)
+[AUDUSD] ema_pull@1h
+[AUDUSD] scored 2 cells · survives_cells=151
+  … ema_tight@1h (87,672 bars)
+  … ema_tight@1h (87,672 bars)
+[AUDUSD] ema_tight@1h
+[AUDUSD] scored 3 cells · survives_cells=151
+  … sma_cross@15m (350,688 bars)
+  … sma_cross@15m (350,688 bars)
+[AUDUSD] sma_cross@15m
+  … sma_cross@5m (1,052,064 bars)
+  … sma_cross@5m (1,052,064 bars)
+[AUDUSD] sma_cross@5m
+  … sma_cross@1h (87,672 bars)
+  … sma_cross@1h (87,672 bars)
+[AUDUSD] sma_cross@1h
+[AUDUSD] scored 6 cells · survives_cells=151
+  … pa@1h (87,672 bars)
+  … pa@1h (87,672 bars)
+[AUDUSD] pa@1h
+[AUDUSD] scored 7 cells · survives_cells=151
+  … liq@1h (87,672 bars)
+  … liq@1h (87,672 bars)
+[AUDUSD] liq@1h
+[AUDUSD] scored 8 cells · survives_cells=151
+  … tl@1h (87,672 bars)
+  … tl@1h (87,672 bars)
+[AUDUSD] tl@1h
+[AUDUSD] scored 9 cells · survives_cells=151
+  … obfvg@1h (87,672 bars)
+  … obfvg@1h (87,672 bars)
+[AUDUSD] obfvg@1h
+[AUDUSD] scored 10 cells · survives_cells=151
+  … macd@1h (87,672 bars)
+  … macd@1h (87,672 bars)
+[AUDUSD] macd@1h
+[AUDUSD] scored 11 cells · survives_cells=152
+  … engulf@1h (87,672 bars)
+  … engulf@1h (87,672 bars)
+[AUDUSD] engulf@1h
+[AUDUSD] scored 12 cells · survives_cells=152
+  … inside@1h (87,672 bars)
+  … inside@1h (87,672 bars)
+[AUDUSD] inside@1h
+[AUDUSD] scored 13 cells · survives_cells=152
+  … ichi@1h (87,672 bars)
+  … ichi@1h (87,672 bars)
+[AUDUSD] ichi@1h
+[AUDUSD] scored 14 cells · survives_cells=152
+  … psar@1h (87,672 bars)
+  … psar@1h (87,672 bars)
+[AUDUSD] psar@1h
+[AUDUSD] scored 15 cells · survives_cells=152
+  … adx@1h (87,672 bars)
+  … adx@1h (87,672 bars)
+[AUDUSD] adx@1h
+[AUDUSD] scored 16 cells · survives_cells=152
+  … st_2@15m (350,688 bars)
+  … st_2@15m (350,688 bars)
+[AUDUSD] st_2@15m
+  … st_2@5m (1,052,064 bars)
+  … st_2@5m (1,052,064 bars)
+[AUDUSD] st_2@5m
+  … st_2@1h (87,672 bars)
+  … st_2@1h (87,672 bars)
+[AUDUSD] st_2@1h
+[AUDUSD] scored 19 cells · survives_cells=152
+  … st_3@15m (350,688 bars)
+  … st_3@15m (350,688 bars)
+[AUDUSD] st_3@15m
+  … st_3@5m (1,052,064 bars)
+  … st_3@5m (1,052,064 bars)
+[AUDUSD] st_3@5m
+  … st_3@1h (87,672 bars)
+  … st_3@1h (87,672 bars)
+[AUDUSD] st_3@1h
+[AUDUSD] scored 22 cells · survives_cells=152
+  … kelt_1@15m (350,688 bars)
+  … kelt_1@15m (350,688 bars)
+[AUDUSD] kelt_1@15m
+  … kelt_1@5m (1,052,064 bars)
+  … kelt_1@5m (1,052,064 bars)
+[AUDUSD] kelt_1@5m
+  … kelt_1@1h (87,672 bars)
+  … kelt_1@1h (87,672 bars)
+[AUDUSD] kelt_1@1h
+[AUDUSD] scored 25 cells · survives_cells=152
+  … kelt_1.5@15m (350,688 bars)
+  … kelt_1.5@15m (350,688 bars)
+[AUDUSD] kelt_1.5@15m
+  … kelt_1.5@5m (1,052,064 bars)
+  … kelt_1.5@5m (1,052,064 bars)
+[AUDUSD] kelt_1.5@5m
+  … kelt_1.5@1h (87,672 bars)
+  … kelt_1.5@1h (87,672 bars)
+[AUDUSD] kelt_1.5@1h
+[AUDUSD] scored 28 cells · survives_cells=152
+  … kelt_2@15m (350,688 bars)
+  … kelt_2@15m (350,688 bars)
+[AUDUSD] kelt_2@15m
+  … kelt_2@5m (1,052,064 bars)
+  … kelt_2@5m (1,052,064 bars)
+[AUDUSD] kelt_2@5m
+  … kelt_2@1h (87,672 bars)
+  … kelt_2@1h (87,672 bars)
+[AUDUSD] kelt_2@1h
+[AUDUSD] scored 31 cells · survives_cells=152
+  … stoch_20@15m (350,688 bars)
+  … stoch_20@15m (350,688 bars)
+[AUDUSD] stoch_20@15m
+  skip stoch_20@15m: No numeric types to aggregate
+  skip stoch_20@15m: No numeric types to aggregate
+  … stoch_20@5m (1,052,064 bars)
+  … stoch_20@5m (1,052,064 bars)
+[AUDUSD] stoch_20@5m
+  skip stoch_20@5m: No numeric types to aggregate
+  skip stoch_20@5m: No numeric types to aggregate
+  … stoch_20@1h (87,672 bars)
+  … stoch_20@1h (87,672 bars)
+[AUDUSD] stoch_20@1h
+  skip stoch_20@1h: No numeric types to aggregate
+  skip stoch_20@1h: No numeric types to aggregate
+[AUDUSD] scored 31 cells · survives_cells=152
+  … stoch_30@15m (350,688 bars)
+  … stoch_30@15m (350,688 bars)
+[AUDUSD] stoch_30@15m
+  skip stoch_30@15m: No numeric types to aggregate
+  skip stoch_30@15m: No numeric types to aggregate
+  … stoch_30@5m (1,052,064 bars)
+  … stoch_30@5m (1,052,064 bars)
+[AUDUSD] stoch_30@5m
+  skip stoch_30@5m: No numeric types to aggregate
+  skip stoch_30@5m: No numeric types to aggregate
+  … stoch_30@1h (87,672 bars)
+  … stoch_30@1h (87,672 bars)
+[AUDUSD] stoch_30@1h
+  skip stoch_30@1h: No numeric types to aggregate
+  skip stoch_30@1h: No numeric types to aggregate
+[AUDUSD] scored 31 cells · survives_cells=152
+  … don_10@15m (350,688 bars)
+  … don_10@15m (350,688 bars)
+[AUDUSD] don_10@15m
+  … don_10@5m (1,052,064 bars)
+  … don_10@5m (1,052,064 bars)
+[AUDUSD] don_10@5m
+  … don_10@1h (87,672 bars)
+  … don_10@1h (87,672 bars)
+[AUDUSD] don_10@1h
+[AUDUSD] scored 34 cells · survives_cells=152
+  … don_20@15m (350,688 bars)
+  … don_20@15m (350,688 bars)
+[AUDUSD] don_20@15m
+  … don_20@5m (1,052,064 bars)
+  … don_20@5m (1,052,064 bars)
+[AUDUSD] don_20@5m
+  … don_20@1h (87,672 bars)
+  … don_20@1h (87,672 bars)
+[AUDUSD] don_20@1h
+[AUDUSD] scored 37 cells · survives_cells=152
+  … don_30@15m (350,688 bars)
+  … don_30@15m (350,688 bars)
+[AUDUSD] don_30@15m
+  … don_30@5m (1,052,064 bars)
+  … don_30@5m (1,052,064 bars)
+[AUDUSD] don_30@5m
+  … don_30@1h (87,672 bars)
+  … don_30@1h (87,672 bars)
+[AUDUSD] don_30@1h
+[AUDUSD] scored 40 cells · survives_cells=152
+  … don_55@15m (350,688 bars)
+  … don_55@15m (350,688 bars)
+[AUDUSD] don_55@15m
+  … don_55@5m (1,052,064 bars)
+  … don_55@5m (1,052,064 bars)
+[AUDUSD] don_55@5m
+  … don_55@1h (87,672 bars)
+  … don_55@1h (87,672 bars)
+[AUDUSD] don_55@1h
+[AUDUSD] scored 43 cells · survives_cells=152
+  … don_100@15m (350,688 bars)
+  … don_100@15m (350,688 bars)
+[AUDUSD] don_100@15m
+  … don_100@5m (1,052,064 bars)
+  … don_100@5m (1,052,064 bars)
+[AUDUSD] don_100@5m
+  … don_100@1h (87,672 bars)
+  … don_100@1h (87,672 bars)
+[AUDUSD] don_100@1h
+[AUDUSD] scored 46 cells · survives_cells=152
+  … cta_5_20@15m (350,688 bars)
+  … cta_5_20@15m (350,688 bars)
+[AUDUSD] cta_5_20@15m
+  … cta_5_20@5m (1,052,064 bars)
+  … cta_5_20@5m (1,052,064 bars)
+[AUDUSD] cta_5_20@5m
+  … cta_5_20@1h (87,672 bars)
+  … cta_5_20@1h (87,672 bars)
+[AUDUSD] cta_5_20@1h
+  ✓ GATE cta_5_20     1h  RR=4.0 n=1609 OOS_E[R]=+0.129 5yOOS=+0.038 SURVIVES
+  ✓ GATE cta_5_20     1h  RR=4.0 n=1609 OOS_E[R]=+0.129 5yOOS=+0.038 SURVIVES
+[AUDUSD] scored 49 cells · survives_cells=153
+  … cta_10_40@15m (350,688 bars)
+  … cta_10_40@15m (350,688 bars)
+[AUDUSD] cta_10_40@15m
+  … cta_10_40@5m (1,052,064 bars)
+  … cta_10_40@5m (1,052,064 bars)
+[AUDUSD] cta_10_40@5m
+  … cta_10_40@1h (87,672 bars)
+  … cta_10_40@1h (87,672 bars)
+[AUDUSD] cta_10_40@1h
+[AUDUSD] scored 52 cells · survives_cells=153
+  … cta_12_26@15m (350,688 bars)
+  … cta_12_26@15m (350,688 bars)
+[AUDUSD] cta_12_26@15m
+  … cta_12_26@5m (1,052,064 bars)
+  … cta_12_26@5m (1,052,064 bars)
+[AUDUSD] cta_12_26@5m
+  … cta_12_26@1h (87,672 bars)
+  … cta_12_26@1h (87,672 bars)
+[AUDUSD] cta_12_26@1h
+[AUDUSD] scored 55 cells · survives_cells=153
+  … cta_20_50@15m (350,688 bars)
+  … cta_20_50@15m (350,688 bars)
+[AUDUSD] cta_20_50@15m
+  … cta_20_50@5m (1,052,064 bars)
+  … cta_20_50@5m (1,052,064 bars)
+[AUDUSD] cta_20_50@5m
+  … cta_20_50@1h (87,672 bars)
+  … cta_20_50@1h (87,672 bars)
+[AUDUSD] cta_20_50@1h
+[AUDUSD] scored 58 cells · survives_cells=153
+  … cta_50_200@15m (350,688 bars)
+  … cta_50_200@15m (350,688 bars)
+[AUDUSD] cta_50_200@15m
+  … cta_50_200@5m (1,052,064 bars)
+  … cta_50_200@5m (1,052,064 bars)
+[AUDUSD] cta_50_200@5m
+  … cta_50_200@1h (87,672 bars)
+  … cta_50_200@1h (87,672 bars)
+[AUDUSD] cta_50_200@1h
+[AUDUSD] scored 61 cells · survives_cells=153
+  … tsmom@15m (350,688 bars)
+  … tsmom@15m (350,688 bars)
+[AUDUSD] tsmom@15m
+  … tsmom@5m (1,052,064 bars)
+  … tsmom@5m (1,052,064 bars)
+[AUDUSD] tsmom@5m
+  ✓ GATE tsmom        5m  RR=4.0 n=5608 OOS_E[R]=+0.072 5yOOS=+0.095 SURVIVES
+  ✓ GATE tsmom        5m  RR=4.0 n=5608 OOS_E[R]=+0.072 5yOOS=+0.095 SURVIVES
+  … tsmom@1h (87,672 bars)
+  … tsmom@1h (87,672 bars)
+[AUDUSD] tsmom@1h
+[AUDUSD] scored 64 cells · survives_cells=155
+  … roc_20@15m (350,688 bars)
+  … roc_20@15m (350,688 bars)
+[AUDUSD] roc_20@15m
+  … roc_20@5m (1,052,064 bars)
+  … roc_20@5m (1,052,064 bars)
+[AUDUSD] roc_20@5m
+  … roc_20@1h (87,672 bars)
+  … roc_20@1h (87,672 bars)
+[AUDUSD] roc_20@1h
+[AUDUSD] scored 64 cells · survives_cells=155
+  … roc_60@15m (350,688 bars)
+  … roc_60@15m (350,688 bars)
+[AUDUSD] roc_60@15m
+  … roc_60@5m (1,052,064 bars)
+  … roc_60@5m (1,052,064 bars)
+[AUDUSD] roc_60@5m
+  … roc_60@1h (87,672 bars)
+  … roc_60@1h (87,672 bars)
+[AUDUSD] roc_60@1h
+[AUDUSD] scored 64 cells · survives_cells=155
+  … roc_120@15m (350,688 bars)
+  … roc_120@15m (350,688 bars)
+[AUDUSD] roc_120@15m
+  … roc_120@5m (1,052,064 bars)
+  … roc_120@5m (1,052,064 bars)
+[AUDUSD] roc_120@5m
+  … roc_120@1h (87,672 bars)
+  … roc_120@1h (87,672 bars)
+[AUDUSD] roc_120@1h
+[AUDUSD] scored 64 cells · survives_cells=155
+  … bb_1.5@15m (350,688 bars)
+  … bb_1.5@15m (350,688 bars)
+[AUDUSD] bb_1.5@15m
+  ✓ GATE bb_1.5       15m RR=4.0 n=6987 OOS_E[R]=+0.092 5yOOS=+0.087 SURVIVES
+  ✓ GATE bb_1.5       15m RR=4.0 n=6987 OOS_E[R]=+0.092 5yOOS=+0.087 SURVIVES
+  … bb_1.5@5m (1,052,064 bars)
+  … bb_1.5@5m (1,052,064 bars)
+[AUDUSD] bb_1.5@5m
+  ✓ GATE bb_1.5       5m  RR=4.0 n=19361 OOS_E[R]=+0.092 5yOOS=+0.127 SURVIVES
+  ✓ GATE bb_1.5       5m  RR=4.0 n=19361 OOS_E[R]=+0.092 5yOOS=+0.127 SURVIVES
+  … bb_1.5@1h (87,672 bars)
+  … bb_1.5@1h (87,672 bars)
+[AUDUSD] bb_1.5@1h
+[AUDUSD] scored 67 cells · survives_cells=157
+  … bb_2@15m (350,688 bars)
+  … bb_2@15m (350,688 bars)
+[AUDUSD] bb_2@15m
+  ✓ GATE bb_2         15m RR=4.0 n=2263 OOS_E[R]=+0.089 5yOOS=+0.007 SURVIVES
+  ✓ GATE bb_2         15m RR=4.0 n=2263 OOS_E[R]=+0.089 5yOOS=+0.007 SURVIVES
+  … bb_2@5m (1,052,064 bars)
+  … bb_2@5m (1,052,064 bars)
+[AUDUSD] bb_2@5m
+  ✓ GATE bb_2         5m  RR=3.0 n=5060 OOS_E[R]=+0.218 5yOOS=+0.250 SURVIVES
+  ✓ GATE bb_2         5m  RR=3.0 n=5060 OOS_E[R]=+0.218 5yOOS=+0.250 SURVIVES
+  … bb_2@1h (87,672 bars)
+  … bb_2@1h (87,672 bars)
+[AUDUSD] bb_2@1h
+[AUDUSD] scored 70 cells · survives_cells=160
+  … bb_2.5@15m (350,688 bars)
+  … bb_2.5@15m (350,688 bars)
+[AUDUSD] bb_2.5@15m
+  ✓ GATE bb_2.5       15m RR=3.0 n=416 OOS_E[R]=+0.181 5yOOS=+0.615 SURVIVES
+  ✓ GATE bb_2.5       15m RR=3.0 n=416 OOS_E[R]=+0.181 5yOOS=+0.615 SURVIVES
+  … bb_2.5@5m (1,052,064 bars)
+  … bb_2.5@5m (1,052,064 bars)
+[AUDUSD] bb_2.5@5m
+  ✓ GATE bb_2.5       5m  RR=4.0 n=594 OOS_E[R]=+0.704 5yOOS=+0.526 SURVIVES
+  ✓ GATE bb_2.5       5m  RR=4.0 n=594 OOS_E[R]=+0.704 5yOOS=+0.526 SURVIVES
+  … bb_2.5@1h (87,672 bars)
+  … bb_2.5@1h (87,672 bars)
+[AUDUSD] bb_2.5@1h
+  ✓ GATE bb_2.5       1h  RR=4.0 n=287 OOS_E[R]=+0.369 5yOOS=+0.282 SURVIVES
+  ✓ GATE bb_2.5       1h  RR=4.0 n=287 OOS_E[R]=+0.369 5yOOS=+0.282 SURVIVES
+[AUDUSD] scored 73 cells · survives_cells=163
+  … z_20_2@15m (350,688 bars)
+  … z_20_2@15m (350,688 bars)
+[AUDUSD] z_20_2@15m
+  … z_20_2@5m (1,052,064 bars)
+  … z_20_2@5m (1,052,064 bars)
+[AUDUSD] z_20_2@5m
+  ✓ GATE z_20_2       5m  RR=3.0 n=24885 OOS_E[R]=+0.083 5yOOS=+0.093 SURVIVES
+  ✓ GATE z_20_2       5m  RR=3.0 n=24885 OOS_E[R]=+0.083 5yOOS=+0.093 SURVIVES
+  … z_20_2@1h (87,672 bars)
+  … z_20_2@1h (87,672 bars)
+[AUDUSD] z_20_2@1h
+[AUDUSD] scored 76 cells · survives_cells=165
+  … z_40_2@15m (350,688 bars)
+  … z_40_2@15m (350,688 bars)
+[AUDUSD] z_40_2@15m
+  ✓ GATE z_40_2       15m RR=3.0 n=7641 OOS_E[R]=+0.036 5yOOS=+0.015 SURVIVES
+  ✓ GATE z_40_2       15m RR=3.0 n=7641 OOS_E[R]=+0.036 5yOOS=+0.015 SURVIVES
+  … z_40_2@5m (1,052,064 bars)
+  … z_40_2@5m (1,052,064 bars)
+[AUDUSD] z_40_2@5m
+  ✓ GATE z_40_2       5m  RR=4.0 n=18647 OOS_E[R]=+0.077 5yOOS=+0.088 SURVIVES
+  ✓ GATE z_40_2       5m  RR=4.0 n=18647 OOS_E[R]=+0.077 5yOOS=+0.088 SURVIVES
+  … z_40_2@1h (87,672 bars)
+  … z_40_2@1h (87,672 bars)
+[AUDUSD] z_40_2@1h
+[AUDUSD] scored 79 cells · survives_cells=167
+  … rsi@15m (350,688 bars)
+  … rsi@15m (350,688 bars)
+[AUDUSD] rsi@15m
+  … rsi@5m (1,052,064 bars)
+  … rsi@5m (1,052,064 bars)
+[AUDUSD] rsi@5m
+  ✓ GATE rsi          5m  RR=4.0 n=20446 OOS_E[R]=+0.031 5yOOS=+0.002 SURVIVES
+  ✓ GATE rsi          5m  RR=4.0 n=20446 OOS_E[R]=+0.031 5yOOS=+0.002 SURVIVES
+  … rsi@1h (87,672 bars)
+  … rsi@1h (87,672 bars)
+[AUDUSD] rsi@1h
+  ✓ GATE rsi          1h  RR=4.0 n=2206 OOS_E[R]=+0.112 5yOOS=+0.030 SURVIVES
+  ✓ GATE rsi          1h  RR=4.0 n=2206 OOS_E[R]=+0.112 5yOOS=+0.030 SURVIVES
+[AUDUSD] scored 82 cells · survives_cells=169
+  … atrbrk@15m (350,688 bars)
+  … atrbrk@15m (350,688 bars)
+[AUDUSD] atrbrk@15m
+  … atrbrk@5m (1,052,064 bars)
+  … atrbrk@5m (1,052,064 bars)
+[AUDUSD] atrbrk@5m
+  … atrbrk@1h (87,672 bars)
+  … atrbrk@1h (87,672 bars)
+[AUDUSD] atrbrk@1h
+[AUDUSD] scored 85 cells · survives_cells=169
+  … volmom@15m (350,688 bars)
+  … volmom@15m (350,688 bars)
+[AUDUSD] volmom@15m
+  … volmom@5m (1,052,064 bars)
+  … volmom@5m (1,052,064 bars)
+[AUDUSD] volmom@5m
+  … volmom@1h (87,672 bars)
+  … volmom@1h (87,672 bars)
+[AUDUSD] volmom@1h
+[AUDUSD] scored 88 cells · survives_cells=169
+  ★ AUDUSD WINNER bb_2.5@5m RR=4.0 score=13.04 PnL=$73,200
+  ★ AUDUSD WINNER bb_2.5@5m RR=4.0 score=13.04 PnL=$73,200
+
+######## BTCUSD · live RR=3.0 ########
+
+######## BTCUSD · live RR=3.0 ########
+  load BTCUSD 5m: 969,120 bars 2017-05-07→2026-07-23
+  load BTCUSD 5m: 969,120 bars 2017-05-07→2026-07-23
+  load BTCUSD 15m: 323,040 bars 2017-05-07→2026-07-23
+  load BTCUSD 15m: 323,040 bars 2017-05-07→2026-07-23
+  load BTCUSD 1h: 80,760 bars (from 5m) 2017-05-07→2026-07-23
+  load BTCUSD 1h: 80,760 bars (from 5m) 2017-05-07→2026-07-23
+  … fib_liq@1h (80,760 bars)
+  … fib_liq@1h (80,760 bars)
+[BTCUSD] fib_liq@1h
+  ✓ GATE fib_liq      1h  RR=3.0 n=279 OOS_E[R]=+0.250 5yOOS=+0.021 SURVIVES
+  ✓ GATE fib_liq      1h  RR=3.0 n=279 OOS_E[R]=+0.250 5yOOS=+0.021 SURVIVES
+[BTCUSD] scored 1 cells · survives_cells=170
+  … ema_pull@1h (80,760 bars)
+  … ema_pull@1h (80,760 bars)
+[BTCUSD] ema_pull@1h
+  ✓ GATE ema_pull     1h  RR=1.5 n=825 OOS_E[R]=+0.119 5yOOS=+0.076 SURVIVES
+  ✓ GATE ema_pull     1h  RR=1.5 n=825 OOS_E[R]=+0.119 5yOOS=+0.076 SURVIVES
+[BTCUSD] scored 2 cells · survives_cells=171
+  … ema_tight@1h (80,760 bars)
+  … ema_tight@1h (80,760 bars)
+[BTCUSD] ema_tight@1h
+  ✓ GATE ema_tight    1h  RR=1.5 n=376 OOS_E[R]=+0.224 5yOOS=+0.118 SURVIVES
+  ✓ GATE ema_tight    1h  RR=1.5 n=376 OOS_E[R]=+0.224 5yOOS=+0.118 SURVIVES
+[BTCUSD] scored 3 cells · survives_cells=172
+  … sma_cross@15m (323,040 bars)
+  … sma_cross@15m (323,040 bars)
+[BTCUSD] sma_cross@15m
+  ✓ GATE sma_cross    15m RR=4.0 n=5961 OOS_E[R]=+0.053 5yOOS=+0.011 SURVIVES
+  ✓ GATE sma_cross    15m RR=4.0 n=5961 OOS_E[R]=+0.053 5yOOS=+0.011 SURVIVES
+  … sma_cross@5m (969,120 bars)
+  … sma_cross@5m (969,120 bars)
+[BTCUSD] sma_cross@5m
+  … sma_cross@1h (80,760 bars)
+  … sma_cross@1h (80,760 bars)
+[BTCUSD] sma_cross@1h
+[BTCUSD] scored 6 cells · survives_cells=174
+  … pa@1h (80,760 bars)
+  … pa@1h (80,760 bars)
+[BTCUSD] pa@1h
+[BTCUSD] scored 7 cells · survives_cells=175
+  … liq@1h (80,760 bars)
+  … liq@1h (80,760 bars)
+[BTCUSD] liq@1h
+[BTCUSD] scored 8 cells · survives_cells=175
+  … tl@1h (80,760 bars)
+  … tl@1h (80,760 bars)
+[BTCUSD] tl@1h
+[BTCUSD] scored 9 cells · survives_cells=175
+  … obfvg@1h (80,760 bars)
+  … obfvg@1h (80,760 bars)
+[BTCUSD] obfvg@1h
+  ✓ GATE obfvg        1h  RR=3.0 n=1876 OOS_E[R]=+0.158 5yOOS=+0.204 SURVIVES
+  ✓ GATE obfvg        1h  RR=3.0 n=1876 OOS_E[R]=+0.158 5yOOS=+0.204 SURVIVES
+[BTCUSD] scored 10 cells · survives_cells=176
+  … macd@1h (80,760 bars)
+  … macd@1h (80,760 bars)
+[BTCUSD] macd@1h
+[BTCUSD] scored 11 cells · survives_cells=177
+  … engulf@1h (80,760 bars)
+  … engulf@1h (80,760 bars)
+[BTCUSD] engulf@1h
+[BTCUSD] scored 12 cells · survives_cells=178
+  … inside@1h (80,760 bars)
+  … inside@1h (80,760 bars)
+[BTCUSD] inside@1h
+[BTCUSD] scored 13 cells · survives_cells=178
+  … ichi@1h (80,760 bars)
+  … ichi@1h (80,760 bars)
+[BTCUSD] ichi@1h
+  ✓ GATE ichi         1h  RR=4.0 n=1707 OOS_E[R]=+0.062 5yOOS=+0.018 SURVIVES
+  ✓ GATE ichi         1h  RR=4.0 n=1707 OOS_E[R]=+0.062 5yOOS=+0.018 SURVIVES
+[BTCUSD] scored 14 cells · survives_cells=179
+  … psar@1h (80,760 bars)
+  … psar@1h (80,760 bars)
+[BTCUSD] psar@1h
+[BTCUSD] scored 15 cells · survives_cells=179
+  … adx@1h (80,760 bars)
+  … adx@1h (80,760 bars)
+[BTCUSD] adx@1h
+[BTCUSD] scored 16 cells · survives_cells=180
+  … st_2@15m (323,040 bars)
+  … st_2@15m (323,040 bars)
+[BTCUSD] st_2@15m
+  ✓ GATE st_2         15m RR=4.0 n=3148 OOS_E[R]=+0.228 5yOOS=+0.227 SURVIVES
+  ✓ GATE st_2         15m RR=4.0 n=3148 OOS_E[R]=+0.228 5yOOS=+0.227 SURVIVES
+  … st_2@5m (969,120 bars)
+  … st_2@5m (969,120 bars)
+[BTCUSD] st_2@5m
+  ✓ GATE st_2         5m  RR=4.0 n=10317 OOS_E[R]=+0.055 5yOOS=+0.057 SURVIVES
+  ✓ GATE st_2         5m  RR=4.0 n=10317 OOS_E[R]=+0.055 5yOOS=+0.057 SURVIVES
+  … st_2@1h (80,760 bars)
+  … st_2@1h (80,760 bars)
+[BTCUSD] st_2@1h
+  ✓ GATE st_2         1h  RR=3.0 n=953 OOS_E[R]=+0.160 5yOOS=+0.165 SURVIVES
+  ✓ GATE st_2         1h  RR=3.0 n=953 OOS_E[R]=+0.160 5yOOS=+0.165 SURVIVES
+[BTCUSD] scored 19 cells · survives_cells=183
+  … st_3@15m (323,040 bars)
+  … st_3@15m (323,040 bars)
+[BTCUSD] st_3@15m
+  ✓ GATE st_3         15m RR=3.0 n=1382 OOS_E[R]=+0.225 5yOOS=+0.191 SURVIVES
+  ✓ GATE st_3         15m RR=3.0 n=1382 OOS_E[R]=+0.225 5yOOS=+0.191 SURVIVES
+  … st_3@5m (969,120 bars)
+  … st_3@5m (969,120 bars)
+[BTCUSD] st_3@5m
+  ✓ GATE st_3         5m  RR=4.0 n=4054 OOS_E[R]=+0.164 5yOOS=+0.302 SURVIVES
+  ✓ GATE st_3         5m  RR=4.0 n=4054 OOS_E[R]=+0.164 5yOOS=+0.302 SURVIVES
+  … st_3@1h (80,760 bars)
+  … st_3@1h (80,760 bars)
+[BTCUSD] st_3@1h
+  ✓ GATE st_3         1h  RR=4.0 n=490 OOS_E[R]=+0.212 5yOOS=+0.111 SURVIVES
+  ✓ GATE st_3         1h  RR=4.0 n=490 OOS_E[R]=+0.212 5yOOS=+0.111 SURVIVES
+[BTCUSD] scored 22 cells · survives_cells=186
+  … kelt_1@15m (323,040 bars)
+  … kelt_1@15m (323,040 bars)
+[BTCUSD] kelt_1@15m
+  ✓ GATE kelt_1       15m RR=4.0 n=11701 OOS_E[R]=+0.093 5yOOS=+0.055 SURVIVES
+  ✓ GATE kelt_1       15m RR=4.0 n=11701 OOS_E[R]=+0.093 5yOOS=+0.055 SURVIVES
+  … kelt_1@5m (969,120 bars)
+  … kelt_1@5m (969,120 bars)
+[BTCUSD] kelt_1@5m
+  ✓ GATE kelt_1       5m  RR=4.0 n=37634 OOS_E[R]=+0.056 5yOOS=+0.007 SURVIVES
+  ✓ GATE kelt_1       5m  RR=4.0 n=37634 OOS_E[R]=+0.056 5yOOS=+0.007 SURVIVES
+  … kelt_1@1h (80,760 bars)
+  … kelt_1@1h (80,760 bars)
+[BTCUSD] kelt_1@1h
+  ✓ GATE kelt_1       1h  RR=4.0 n=3034 OOS_E[R]=+0.099 5yOOS=+0.002 SURVIVES
+  ✓ GATE kelt_1       1h  RR=4.0 n=3034 OOS_E[R]=+0.099 5yOOS=+0.002 SURVIVES
+[BTCUSD] scored 25 cells · survives_cells=189
+  … kelt_1.5@15m (323,040 bars)
+  … kelt_1.5@15m (323,040 bars)
+[BTCUSD] kelt_1.5@15m
+  ✓ GATE kelt_1.5     15m RR=4.0 n=10383 OOS_E[R]=+0.086 5yOOS=+0.034 SURVIVES
+  ✓ GATE kelt_1.5     15m RR=4.0 n=10383 OOS_E[R]=+0.086 5yOOS=+0.034 SURVIVES
+  … kelt_1.5@5m (969,120 bars)
+  … kelt_1.5@5m (969,120 bars)
+[BTCUSD] kelt_1.5@5m
+  … kelt_1.5@1h (80,760 bars)
+  … kelt_1.5@1h (80,760 bars)
+[BTCUSD] kelt_1.5@1h
+  ✓ GATE kelt_1.5     1h  RR=4.0 n=2763 OOS_E[R]=+0.091 5yOOS=+0.007 SURVIVES
+  ✓ GATE kelt_1.5     1h  RR=4.0 n=2763 OOS_E[R]=+0.091 5yOOS=+0.007 SURVIVES
+[BTCUSD] scored 28 cells · survives_cells=191
+  … kelt_2@15m (323,040 bars)
+  … kelt_2@15m (323,040 bars)
+[BTCUSD] kelt_2@15m
+  ✓ GATE kelt_2       15m RR=4.0 n=8064 OOS_E[R]=+0.063 5yOOS=+0.030 SURVIVES
+  ✓ GATE kelt_2       15m RR=4.0 n=8064 OOS_E[R]=+0.063 5yOOS=+0.030 SURVIVES
+  … kelt_2@5m (969,120 bars)
+  … kelt_2@5m (969,120 bars)
+[BTCUSD] kelt_2@5m
+  … kelt_2@1h (80,760 bars)
+  … kelt_2@1h (80,760 bars)
+[BTCUSD] kelt_2@1h
+[BTCUSD] scored 31 cells · survives_cells=193
+  … stoch_20@15m (323,040 bars)
+  … stoch_20@15m (323,040 bars)
+[BTCUSD] stoch_20@15m
+  skip stoch_20@15m: No numeric types to aggregate
+  skip stoch_20@15m: No numeric types to aggregate
+  … stoch_20@5m (969,120 bars)
+  … stoch_20@5m (969,120 bars)
+[BTCUSD] stoch_20@5m
+  skip stoch_20@5m: No numeric types to aggregate
+  skip stoch_20@5m: No numeric types to aggregate
+  … stoch_20@1h (80,760 bars)
+  … stoch_20@1h (80,760 bars)
+[BTCUSD] stoch_20@1h
+  skip stoch_20@1h: No numeric types to aggregate
+  skip stoch_20@1h: No numeric types to aggregate
+[BTCUSD] scored 31 cells · survives_cells=193
+  … stoch_30@15m (323,040 bars)
+  … stoch_30@15m (323,040 bars)
+[BTCUSD] stoch_30@15m
+  skip stoch_30@15m: No numeric types to aggregate
+  skip stoch_30@15m: No numeric types to aggregate
+  … stoch_30@5m (969,120 bars)
+  … stoch_30@5m (969,120 bars)
+[BTCUSD] stoch_30@5m
+  skip stoch_30@5m: No numeric types to aggregate
+  skip stoch_30@5m: No numeric types to aggregate
+  … stoch_30@1h (80,760 bars)
+  … stoch_30@1h (80,760 bars)
+[BTCUSD] stoch_30@1h
+  skip stoch_30@1h: No numeric types to aggregate
+  skip stoch_30@1h: No numeric types to aggregate
+[BTCUSD] scored 31 cells · survives_cells=193
+  … don_10@15m (323,040 bars)
+  … don_10@15m (323,040 bars)
+[BTCUSD] don_10@15m
+  … don_10@5m (969,120 bars)
+  … don_10@5m (969,120 bars)
+[BTCUSD] don_10@5m
+  … don_10@1h (80,760 bars)
+  … don_10@1h (80,760 bars)
+[BTCUSD] don_10@1h
+  ✓ GATE don_10       1h  RR=4.0 n=3047 OOS_E[R]=+0.107 5yOOS=+0.068 SURVIVES
+  ✓ GATE don_10       1h  RR=4.0 n=3047 OOS_E[R]=+0.107 5yOOS=+0.068 SURVIVES
+[BTCUSD] scored 34 cells · survives_cells=194
+  … don_20@15m (323,040 bars)
+  … don_20@15m (323,040 bars)
+[BTCUSD] don_20@15m
+  … don_20@5m (969,120 bars)
+  … don_20@5m (969,120 bars)
+[BTCUSD] don_20@5m
+  … don_20@1h (80,760 bars)
+  … don_20@1h (80,760 bars)
+[BTCUSD] don_20@1h
+  ✓ GATE don_20       1h  RR=2.4 n=3081 OOS_E[R]=+0.063 5yOOS=+0.009 SURVIVES
+  ✓ GATE don_20       1h  RR=2.4 n=3081 OOS_E[R]=+0.063 5yOOS=+0.009 SURVIVES
+[BTCUSD] scored 37 cells · survives_cells=195
+  … don_30@15m (323,040 bars)
+  … don_30@15m (323,040 bars)
+[BTCUSD] don_30@15m
+  … don_30@5m (969,120 bars)
+  … don_30@5m (969,120 bars)
+[BTCUSD] don_30@5m
+  … don_30@1h (80,760 bars)
+  … don_30@1h (80,760 bars)
+[BTCUSD] don_30@1h
+  ✓ GATE don_30       1h  RR=4.0 n=2182 OOS_E[R]=+0.098 5yOOS=+0.090 SURVIVES
+  ✓ GATE don_30       1h  RR=4.0 n=2182 OOS_E[R]=+0.098 5yOOS=+0.090 SURVIVES
+[BTCUSD] scored 40 cells · survives_cells=196
+  … don_55@15m (323,040 bars)
+  … don_55@15m (323,040 bars)
+[BTCUSD] don_55@15m
+  … don_55@5m (969,120 bars)
+  … don_55@5m (969,120 bars)
+[BTCUSD] don_55@5m
+  … don_55@1h (80,760 bars)
+  … don_55@1h (80,760 bars)
+[BTCUSD] don_55@1h
+  ✓ GATE don_55       1h  RR=4.0 n=1719 OOS_E[R]=+0.088 5yOOS=+0.084 SURVIVES
+  ✓ GATE don_55       1h  RR=4.0 n=1719 OOS_E[R]=+0.088 5yOOS=+0.084 SURVIVES
+[BTCUSD] scored 43 cells · survives_cells=198
+  … don_100@15m (323,040 bars)
+  … don_100@15m (323,040 bars)
+[BTCUSD] don_100@15m
+  ✓ GATE don_100      15m RR=4.0 n=4438 OOS_E[R]=+0.049 5yOOS=+0.051 SURVIVES
+  ✓ GATE don_100      15m RR=4.0 n=4438 OOS_E[R]=+0.049 5yOOS=+0.051 SURVIVES
+  … don_100@5m (969,120 bars)
+  … don_100@5m (969,120 bars)
+[BTCUSD] don_100@5m
+  … don_100@1h (80,760 bars)
+  … don_100@1h (80,760 bars)
+[BTCUSD] don_100@1h
+  ✓ GATE don_100      1h  RR=3.0 n=1287 OOS_E[R]=+0.101 5yOOS=+0.103 SURVIVES
+  ✓ GATE don_100      1h  RR=3.0 n=1287 OOS_E[R]=+0.101 5yOOS=+0.103 SURVIVES
+[BTCUSD] scored 46 cells · survives_cells=200
+  … cta_5_20@15m (323,040 bars)
+  … cta_5_20@15m (323,040 bars)
+[BTCUSD] cta_5_20@15m
+  … cta_5_20@5m (969,120 bars)
+  … cta_5_20@5m (969,120 bars)
+[BTCUSD] cta_5_20@5m
+  … cta_5_20@1h (80,760 bars)
+  … cta_5_20@1h (80,760 bars)
+[BTCUSD] cta_5_20@1h
+[BTCUSD] scored 49 cells · survives_cells=201
+  … cta_10_40@15m (323,040 bars)
+  … cta_10_40@15m (323,040 bars)
+[BTCUSD] cta_10_40@15m
+  … cta_10_40@5m (969,120 bars)
+  … cta_10_40@5m (969,120 bars)
+[BTCUSD] cta_10_40@5m
+  ✓ GATE cta_10_40    5m  RR=2.4 n=17862 OOS_E[R]=+0.052 5yOOS=+0.020 SURVIVES
+  ✓ GATE cta_10_40    5m  RR=2.4 n=17862 OOS_E[R]=+0.052 5yOOS=+0.020 SURVIVES
+  … cta_10_40@1h (80,760 bars)
+  … cta_10_40@1h (80,760 bars)
+[BTCUSD] cta_10_40@1h
+  ✓ GATE cta_10_40    1h  RR=4.0 n=1161 OOS_E[R]=+0.247 5yOOS=+0.019 SURVIVES
+  ✓ GATE cta_10_40    1h  RR=4.0 n=1161 OOS_E[R]=+0.247 5yOOS=+0.019 SURVIVES
+[BTCUSD] scored 52 cells · survives_cells=203
+  … cta_12_26@15m (323,040 bars)
+  … cta_12_26@15m (323,040 bars)
+[BTCUSD] cta_12_26@15m
+  … cta_12_26@5m (969,120 bars)
+  … cta_12_26@5m (969,120 bars)
+[BTCUSD] cta_12_26@5m
+  ✓ GATE cta_12_26    5m  RR=2.4 n=19831 OOS_E[R]=+0.065 5yOOS=+0.035 SURVIVES
+  ✓ GATE cta_12_26    5m  RR=2.4 n=19831 OOS_E[R]=+0.065 5yOOS=+0.035 SURVIVES
+  … cta_12_26@1h (80,760 bars)
+  … cta_12_26@1h (80,760 bars)
+[BTCUSD] cta_12_26@1h
+[BTCUSD] scored 55 cells · survives_cells=205
+  … cta_20_50@15m (323,040 bars)
+  … cta_20_50@15m (323,040 bars)
+[BTCUSD] cta_20_50@15m
+  ✓ GATE cta_20_50    15m RR=4.0 n=3929 OOS_E[R]=+0.068 5yOOS=+0.042 SURVIVES
+  ✓ GATE cta_20_50    15m RR=4.0 n=3929 OOS_E[R]=+0.068 5yOOS=+0.042 SURVIVES
+  … cta_20_50@5m (969,120 bars)
+  … cta_20_50@5m (969,120 bars)
+[BTCUSD] cta_20_50@5m
+  … cta_20_50@1h (80,760 bars)
+  … cta_20_50@1h (80,760 bars)
+[BTCUSD] cta_20_50@1h
+[BTCUSD] scored 58 cells · survives_cells=208
+  … cta_50_200@15m (323,040 bars)
+  … cta_50_200@15m (323,040 bars)
+[BTCUSD] cta_50_200@15m
+  ✓ GATE cta_50_200   15m RR=2.4 n=1622 OOS_E[R]=+0.053 5yOOS=+0.049 SURVIVES
+  ✓ GATE cta_50_200   15m RR=2.4 n=1622 OOS_E[R]=+0.053 5yOOS=+0.049 SURVIVES
+  … cta_50_200@5m (969,120 bars)
+  … cta_50_200@5m (969,120 bars)
+[BTCUSD] cta_50_200@5m
+  … cta_50_200@1h (80,760 bars)
+  … cta_50_200@1h (80,760 bars)
+[BTCUSD] cta_50_200@1h
+  ✓ GATE cta_50_200   1h  RR=4.0 n=442 OOS_E[R]=+0.224 5yOOS=+0.154 SURVIVES
+  ✓ GATE cta_50_200   1h  RR=4.0 n=442 OOS_E[R]=+0.224 5yOOS=+0.154 SURVIVES
+[BTCUSD] scored 61 cells · survives_cells=210
+  … tsmom@15m (323,040 bars)
+  … tsmom@15m (323,040 bars)
+[BTCUSD] tsmom@15m
+  ✓ GATE tsmom        15m RR=1.5 n=2911 OOS_E[R]=+0.052 5yOOS=+0.068 SURVIVES
+  ✓ GATE tsmom        15m RR=1.5 n=2911 OOS_E[R]=+0.052 5yOOS=+0.068 SURVIVES
+  … tsmom@5m (969,120 bars)
+  … tsmom@5m (969,120 bars)
+[BTCUSD] tsmom@5m
+  ✓ GATE tsmom        5m  RR=4.0 n=6248 OOS_E[R]=+0.092 5yOOS=+0.032 SURVIVES
+  ✓ GATE tsmom        5m  RR=4.0 n=6248 OOS_E[R]=+0.092 5yOOS=+0.032 SURVIVES
+  … tsmom@1h (80,760 bars)
+  … tsmom@1h (80,760 bars)
+[BTCUSD] tsmom@1h
+  ✓ GATE tsmom        1h  RR=4.0 n=529 OOS_E[R]=+0.087 5yOOS=+0.205 SURVIVES
+  ✓ GATE tsmom        1h  RR=4.0 n=529 OOS_E[R]=+0.087 5yOOS=+0.205 SURVIVES
+[BTCUSD] scored 64 cells · survives_cells=213
+  … roc_20@15m (323,040 bars)
+  … roc_20@15m (323,040 bars)
+[BTCUSD] roc_20@15m
+  … roc_20@5m (969,120 bars)
+  … roc_20@5m (969,120 bars)
+[BTCUSD] roc_20@5m
+  … roc_20@1h (80,760 bars)
+  … roc_20@1h (80,760 bars)
+[BTCUSD] roc_20@1h
+[BTCUSD] scored 67 cells · survives_cells=214
+  … roc_60@15m (323,040 bars)
+  … roc_60@15m (323,040 bars)
+[BTCUSD] roc_60@15m
+  … roc_60@5m (969,120 bars)
+  … roc_60@5m (969,120 bars)
+[BTCUSD] roc_60@5m
+  … roc_60@1h (80,760 bars)
+  … roc_60@1h (80,760 bars)
+[BTCUSD] roc_60@1h
+[BTCUSD] scored 70 cells · survives_cells=214
+  … roc_120@15m (323,040 bars)
+  … roc_120@15m (323,040 bars)
+[BTCUSD] roc_120@15m
+  … roc_120@5m (969,120 bars)
+  … roc_120@5m (969,120 bars)
+[BTCUSD] roc_120@5m
+  … roc_120@1h (80,760 bars)
+  … roc_120@1h (80,760 bars)
+[BTCUSD] roc_120@1h
+[BTCUSD] scored 73 cells · survives_cells=215
+  … bb_1.5@15m (323,040 bars)
+  … bb_1.5@15m (323,040 bars)
+[BTCUSD] bb_1.5@15m
+  ✓ GATE bb_1.5       15m RR=4.0 n=7347 OOS_E[R]=+0.066 5yOOS=+0.030 SURVIVES
+  ✓ GATE bb_1.5       15m RR=4.0 n=7347 OOS_E[R]=+0.066 5yOOS=+0.030 SURVIVES
+  … bb_1.5@5m (969,120 bars)
+  … bb_1.5@5m (969,120 bars)
+[BTCUSD] bb_1.5@5m
+  ✓ GATE bb_1.5       5m  RR=4.0 n=22167 OOS_E[R]=+0.036 5yOOS=+0.011 SURVIVES
+  ✓ GATE bb_1.5       5m  RR=4.0 n=22167 OOS_E[R]=+0.036 5yOOS=+0.011 SURVIVES
+  … bb_1.5@1h (80,760 bars)
+  … bb_1.5@1h (80,760 bars)
+[BTCUSD] bb_1.5@1h
+[BTCUSD] scored 76 cells · survives_cells=217
+  … bb_2@15m (323,040 bars)
+  … bb_2@15m (323,040 bars)
+[BTCUSD] bb_2@15m
+  … bb_2@5m (969,120 bars)
+  … bb_2@5m (969,120 bars)
+[BTCUSD] bb_2@5m
+  ✓ GATE bb_2         5m  RR=4.0 n=6705 OOS_E[R]=+0.022 5yOOS=+0.040 SURVIVES
+  ✓ GATE bb_2         5m  RR=4.0 n=6705 OOS_E[R]=+0.022 5yOOS=+0.040 SURVIVES
+  … bb_2@1h (80,760 bars)
+  … bb_2@1h (80,760 bars)
+[BTCUSD] bb_2@1h
+[BTCUSD] scored 79 cells · survives_cells=218
+  … bb_2.5@15m (323,040 bars)
+  … bb_2.5@15m (323,040 bars)
+[BTCUSD] bb_2.5@15m
+  … bb_2.5@5m (969,120 bars)
+  … bb_2.5@5m (969,120 bars)
+[BTCUSD] bb_2.5@5m
+  … bb_2.5@1h (80,760 bars)
+  … bb_2.5@1h (80,760 bars)
+[BTCUSD] bb_2.5@1h
+[BTCUSD] scored 82 cells · survives_cells=218
+  … z_20_2@15m (323,040 bars)
+  … z_20_2@15m (323,040 bars)
+[BTCUSD] z_20_2@15m
+  ✓ GATE z_20_2       15m RR=4.0 n=7575 OOS_E[R]=+0.046 5yOOS=+0.009 SURVIVES
+  ✓ GATE z_20_2       15m RR=4.0 n=7575 OOS_E[R]=+0.046 5yOOS=+0.009 SURVIVES
+  … z_20_2@5m (969,120 bars)
+  … z_20_2@5m (969,120 bars)
+[BTCUSD] z_20_2@5m
+  ✓ GATE z_20_2       5m  RR=4.0 n=22960 OOS_E[R]=+0.065 5yOOS=+0.031 SURVIVES
+  ✓ GATE z_20_2       5m  RR=4.0 n=22960 OOS_E[R]=+0.065 5yOOS=+0.031 SURVIVES
+  … z_20_2@1h (80,760 bars)
+  … z_20_2@1h (80,760 bars)
+[BTCUSD] z_20_2@1h
+[BTCUSD] scored 85 cells · survives_cells=220
+  … z_40_2@15m (323,040 bars)
+  … z_40_2@15m (323,040 bars)
+[BTCUSD] z_40_2@15m
+  ✓ GATE z_40_2       15m RR=4.0 n=6332 OOS_E[R]=+0.063 5yOOS=+0.080 SURVIVES
+  ✓ GATE z_40_2       15m RR=4.0 n=6332 OOS_E[R]=+0.063 5yOOS=+0.080 SURVIVES
+  … z_40_2@5m (969,120 bars)
+  … z_40_2@5m (969,120 bars)
+[BTCUSD] z_40_2@5m
+  ✓ GATE z_40_2       5m  RR=4.0 n=19083 OOS_E[R]=+0.097 5yOOS=+0.061 SURVIVES
+  ✓ GATE z_40_2       5m  RR=4.0 n=19083 OOS_E[R]=+0.097 5yOOS=+0.061 SURVIVES
+  … z_40_2@1h (80,760 bars)
+  … z_40_2@1h (80,760 bars)
+[BTCUSD] z_40_2@1h
+[BTCUSD] scored 88 cells · survives_cells=222
+  … rsi@15m (323,040 bars)
+  … rsi@15m (323,040 bars)
+[BTCUSD] rsi@15m
+  … rsi@5m (969,120 bars)
+  … rsi@5m (969,120 bars)
+[BTCUSD] rsi@5m
+  ✓ GATE rsi          5m  RR=4.0 n=21519 OOS_E[R]=+0.017 5yOOS=+0.012 SURVIVES
+  ✓ GATE rsi          5m  RR=4.0 n=21519 OOS_E[R]=+0.017 5yOOS=+0.012 SURVIVES
+  … rsi@1h (80,760 bars)
+  … rsi@1h (80,760 bars)
+[BTCUSD] rsi@1h
+[BTCUSD] scored 91 cells · survives_cells=223
+  … atrbrk@15m (323,040 bars)
+  … atrbrk@15m (323,040 bars)
+[BTCUSD] atrbrk@15m
+  ✓ GATE atrbrk       15m RR=3.0 n=4076 OOS_E[R]=+0.094 5yOOS=+0.062 SURVIVES
+  ✓ GATE atrbrk       15m RR=3.0 n=4076 OOS_E[R]=+0.094 5yOOS=+0.062 SURVIVES
+  … atrbrk@5m (969,120 bars)
+  … atrbrk@5m (969,120 bars)
+[BTCUSD] atrbrk@5m
+  ✓ GATE atrbrk       5m  RR=4.0 n=10433 OOS_E[R]=+0.032 5yOOS=+0.073 SURVIVES
+  ✓ GATE atrbrk       5m  RR=4.0 n=10433 OOS_E[R]=+0.032 5yOOS=+0.073 SURVIVES
+  … atrbrk@1h (80,760 bars)
+  … atrbrk@1h (80,760 bars)
+[BTCUSD] atrbrk@1h
+  ✓ GATE atrbrk       1h  RR=4.0 n=1085 OOS_E[R]=+0.215 5yOOS=+0.203 SURVIVES
+  ✓ GATE atrbrk       1h  RR=4.0 n=1085 OOS_E[R]=+0.215 5yOOS=+0.203 SURVIVES
+[BTCUSD] scored 94 cells · survives_cells=226
+  … volmom@15m (323,040 bars)
+  … volmom@15m (323,040 bars)
+[BTCUSD] volmom@15m
+  … volmom@5m (969,120 bars)
+  … volmom@5m (969,120 bars)
+[BTCUSD] volmom@5m
+  … volmom@1h (80,760 bars)
+  … volmom@1h (80,760 bars)
+[BTCUSD] volmom@1h
+[BTCUSD] scored 97 cells · survives_cells=227
+  ★ BTCUSD WINNER cta_50_200@1h RR=4.0 score=10.682 PnL=$28,600
+  ★ BTCUSD WINNER cta_50_200@1h RR=4.0 score=10.682 PnL=$28,600
+
+######## ETHUSD · live RR=4.0 ########
+
+######## ETHUSD · live RR=4.0 ########
+  load ETHUSD 5m: 906,336 bars 2017-12-11→2026-07-23
+  load ETHUSD 5m: 906,336 bars 2017-12-11→2026-07-23
+  load ETHUSD 15m: 302,112 bars 2017-12-11→2026-07-23
+  load ETHUSD 15m: 302,112 bars 2017-12-11→2026-07-23
+  load ETHUSD 1h: 75,528 bars (from 5m) 2017-12-11→2026-07-23
+  load ETHUSD 1h: 75,528 bars (from 5m) 2017-12-11→2026-07-23
+  … fib_liq@1h (75,528 bars)
+  … fib_liq@1h (75,528 bars)
+[ETHUSD] fib_liq@1h
+[ETHUSD] scored 1 cells · survives_cells=227
+  … ema_pull@1h (75,528 bars)
+  … ema_pull@1h (75,528 bars)
+[ETHUSD] ema_pull@1h
+  ✓ GATE ema_pull     1h  RR=4.0 n=623 OOS_E[R]=+0.204 5yOOS=+0.259 SURVIVES
+  ✓ GATE ema_pull     1h  RR=4.0 n=623 OOS_E[R]=+0.204 5yOOS=+0.259 SURVIVES
+[ETHUSD] scored 2 cells · survives_cells=228
+  … ema_tight@1h (75,528 bars)
+  … ema_tight@1h (75,528 bars)
+[ETHUSD] ema_tight@1h
+  ✓ GATE ema_tight    1h  RR=4.0 n=322 OOS_E[R]=+0.683 5yOOS=+0.917 SURVIVES
+  ✓ GATE ema_tight    1h  RR=4.0 n=322 OOS_E[R]=+0.683 5yOOS=+0.917 SURVIVES
+[ETHUSD] scored 3 cells · survives_cells=229
+  … sma_cross@15m (302,112 bars)
+  … sma_cross@15m (302,112 bars)
+[ETHUSD] sma_cross@15m
+  ✓ GATE sma_cross    15m RR=4.0 n=5601 OOS_E[R]=+0.070 5yOOS=+0.022 SURVIVES
+  ✓ GATE sma_cross    15m RR=4.0 n=5601 OOS_E[R]=+0.070 5yOOS=+0.022 SURVIVES
+  … sma_cross@5m (906,336 bars)
+  … sma_cross@5m (906,336 bars)
+[ETHUSD] sma_cross@5m
+  … sma_cross@1h (75,528 bars)
+  … sma_cross@1h (75,528 bars)
+[ETHUSD] sma_cross@1h
+[ETHUSD] scored 6 cells · survives_cells=230
+  … pa@1h (75,528 bars)
+  … pa@1h (75,528 bars)
+[ETHUSD] pa@1h
+  ✓ GATE pa           1h  RR=4.0 n=778 OOS_E[R]=+0.216 5yOOS=+0.215 SURVIVES
+  ✓ GATE pa           1h  RR=4.0 n=778 OOS_E[R]=+0.216 5yOOS=+0.215 SURVIVES
+[ETHUSD] scored 7 cells · survives_cells=231
+  … liq@1h (75,528 bars)
+  … liq@1h (75,528 bars)
+[ETHUSD] liq@1h
+[ETHUSD] scored 8 cells · survives_cells=231
+  … tl@1h (75,528 bars)
+  … tl@1h (75,528 bars)
+[ETHUSD] tl@1h
+[ETHUSD] scored 9 cells · survives_cells=232
+  … obfvg@1h (75,528 bars)
+  … obfvg@1h (75,528 bars)
+[ETHUSD] obfvg@1h
+  ✓ GATE obfvg        1h  RR=2.4 n=2072 OOS_E[R]=+0.050 5yOOS=+0.009 SURVIVES
+  ✓ GATE obfvg        1h  RR=2.4 n=2072 OOS_E[R]=+0.050 5yOOS=+0.009 SURVIVES
+[ETHUSD] scored 10 cells · survives_cells=233
+  … macd@1h (75,528 bars)
+  … macd@1h (75,528 bars)
+[ETHUSD] macd@1h
+[ETHUSD] scored 11 cells · survives_cells=234
+  … engulf@1h (75,528 bars)
+  … engulf@1h (75,528 bars)
+[ETHUSD] engulf@1h
+  ✓ GATE engulf       1h  RR=2.4 n=3191 OOS_E[R]=+0.044 5yOOS=+0.030 SURVIVES
+  ✓ GATE engulf       1h  RR=2.4 n=3191 OOS_E[R]=+0.044 5yOOS=+0.030 SURVIVES
+[ETHUSD] scored 12 cells · survives_cells=235
+  … inside@1h (75,528 bars)
+  … inside@1h (75,528 bars)
+[ETHUSD] inside@1h
+[ETHUSD] scored 13 cells · survives_cells=235
+  … ichi@1h (75,528 bars)
+  … ichi@1h (75,528 bars)
+[ETHUSD] ichi@1h
+[ETHUSD] scored 14 cells · survives_cells=235
+  … psar@1h (75,528 bars)
+  … psar@1h (75,528 bars)
+[ETHUSD] psar@1h
+[ETHUSD] scored 15 cells · survives_cells=235
+  … adx@1h (75,528 bars)
+  … adx@1h (75,528 bars)
+[ETHUSD] adx@1h
+  ✓ GATE adx          1h  RR=4.0 n=657 OOS_E[R]=+0.084 5yOOS=+0.057 SURVIVES
+  ✓ GATE adx          1h  RR=4.0 n=657 OOS_E[R]=+0.084 5yOOS=+0.057 SURVIVES
+[ETHUSD] scored 16 cells · survives_cells=236
+  … st_2@15m (302,112 bars)
+  … st_2@15m (302,112 bars)
+[ETHUSD] st_2@15m
+  ✓ GATE st_2         15m RR=4.0 n=2760 OOS_E[R]=+0.025 5yOOS=+0.029 SURVIVES
+  ✓ GATE st_2         15m RR=4.0 n=2760 OOS_E[R]=+0.025 5yOOS=+0.029 SURVIVES
+  … st_2@5m (906,336 bars)
+  … st_2@5m (906,336 bars)
+[ETHUSD] st_2@5m
+  … st_2@1h (75,528 bars)
+  … st_2@1h (75,528 bars)
+[ETHUSD] st_2@1h
+  ✓ GATE st_2         1h  RR=3.0 n=821 OOS_E[R]=+0.063 5yOOS=+0.030 SURVIVES
+  ✓ GATE st_2         1h  RR=3.0 n=821 OOS_E[R]=+0.063 5yOOS=+0.030 SURVIVES
+[ETHUSD] scored 19 cells · survives_cells=239
+  … st_3@15m (302,112 bars)
+  … st_3@15m (302,112 bars)
+[ETHUSD] st_3@15m
+  ✓ GATE st_3         15m RR=4.0 n=1144 OOS_E[R]=+0.061 5yOOS=+0.081 SURVIVES
+  ✓ GATE st_3         15m RR=4.0 n=1144 OOS_E[R]=+0.061 5yOOS=+0.081 SURVIVES
+  … st_3@5m (906,336 bars)
+  … st_3@5m (906,336 bars)
+[ETHUSD] st_3@5m
+  ✓ GATE st_3         5m  RR=1.5 n=3357 OOS_E[R]=+0.003 5yOOS=+0.003 SURVIVES
+  ✓ GATE st_3         5m  RR=1.5 n=3357 OOS_E[R]=+0.003 5yOOS=+0.003 SURVIVES
+  … st_3@1h (75,528 bars)
+  … st_3@1h (75,528 bars)
+[ETHUSD] st_3@1h
+  ✓ GATE st_3         1h  RR=3.0 n=388 OOS_E[R]=+0.220 5yOOS=+0.020 SURVIVES
+  ✓ GATE st_3         1h  RR=3.0 n=388 OOS_E[R]=+0.220 5yOOS=+0.020 SURVIVES
+[ETHUSD] scored 22 cells · survives_cells=242
+  … kelt_1@15m (302,112 bars)
+  … kelt_1@15m (302,112 bars)
+[ETHUSD] kelt_1@15m
+  ✓ GATE kelt_1       15m RR=4.0 n=10927 OOS_E[R]=+0.060 5yOOS=+0.044 SURVIVES
+  ✓ GATE kelt_1       15m RR=4.0 n=10927 OOS_E[R]=+0.060 5yOOS=+0.044 SURVIVES
+  … kelt_1@5m (906,336 bars)
+  … kelt_1@5m (906,336 bars)
+[ETHUSD] kelt_1@5m
+  ✓ GATE kelt_1       5m  RR=4.0 n=35723 OOS_E[R]=+0.062 5yOOS=+0.049 SURVIVES
+  ✓ GATE kelt_1       5m  RR=4.0 n=35723 OOS_E[R]=+0.062 5yOOS=+0.049 SURVIVES
+  … kelt_1@1h (75,528 bars)
+  … kelt_1@1h (75,528 bars)
+[ETHUSD] kelt_1@1h
+  ✓ GATE kelt_1       1h  RR=3.0 n=3535 OOS_E[R]=+0.123 5yOOS=+0.093 SURVIVES
+  ✓ GATE kelt_1       1h  RR=3.0 n=3535 OOS_E[R]=+0.123 5yOOS=+0.093 SURVIVES
+[ETHUSD] scored 25 cells · survives_cells=245
+  … kelt_1.5@15m (302,112 bars)
+  … kelt_1.5@15m (302,112 bars)
+[ETHUSD] kelt_1.5@15m
+  ✓ GATE kelt_1.5     15m RR=4.0 n=9568 OOS_E[R]=+0.060 5yOOS=+0.070 SURVIVES
+  ✓ GATE kelt_1.5     15m RR=4.0 n=9568 OOS_E[R]=+0.060 5yOOS=+0.070 SURVIVES
+  … kelt_1.5@5m (906,336 bars)
+  … kelt_1.5@5m (906,336 bars)
+[ETHUSD] kelt_1.5@5m
+  ✓ GATE kelt_1.5     5m  RR=4.0 n=31519 OOS_E[R]=+0.074 5yOOS=+0.060 SURVIVES
+  ✓ GATE kelt_1.5     5m  RR=4.0 n=31519 OOS_E[R]=+0.074 5yOOS=+0.060 SURVIVES
+  … kelt_1.5@1h (75,528 bars)
+  … kelt_1.5@1h (75,528 bars)
+[ETHUSD] kelt_1.5@1h
+  ✓ GATE kelt_1.5     1h  RR=4.0 n=2525 OOS_E[R]=+0.138 5yOOS=+0.155 SURVIVES
+  ✓ GATE kelt_1.5     1h  RR=4.0 n=2525 OOS_E[R]=+0.138 5yOOS=+0.155 SURVIVES
+[ETHUSD] scored 28 cells · survives_cells=248
+  … kelt_2@15m (302,112 bars)
+  … kelt_2@15m (302,112 bars)
+[ETHUSD] kelt_2@15m
+  ✓ GATE kelt_2       15m RR=4.0 n=7448 OOS_E[R]=+0.056 5yOOS=+0.074 SURVIVES
+  ✓ GATE kelt_2       15m RR=4.0 n=7448 OOS_E[R]=+0.056 5yOOS=+0.074 SURVIVES
+  … kelt_2@5m (906,336 bars)
+  … kelt_2@5m (906,336 bars)
+[ETHUSD] kelt_2@5m
+  ✓ GATE kelt_2       5m  RR=4.0 n=24573 OOS_E[R]=+0.060 5yOOS=+0.065 SURVIVES
+  ✓ GATE kelt_2       5m  RR=4.0 n=24573 OOS_E[R]=+0.060 5yOOS=+0.065 SURVIVES
+  … kelt_2@1h (75,528 bars)
+  … kelt_2@1h (75,528 bars)
+[ETHUSD] kelt_2@1h
+  ✓ GATE kelt_2       1h  RR=4.0 n=1957 OOS_E[R]=+0.172 5yOOS=+0.154 SURVIVES
+  ✓ GATE kelt_2       1h  RR=4.0 n=1957 OOS_E[R]=+0.172 5yOOS=+0.154 SURVIVES
+[ETHUSD] scored 31 cells · survives_cells=251
+  … stoch_20@15m (302,112 bars)
+  … stoch_20@15m (302,112 bars)
+[ETHUSD] stoch_20@15m
+  skip stoch_20@15m: No numeric types to aggregate
+  skip stoch_20@15m: No numeric types to aggregate
+  … stoch_20@5m (906,336 bars)
+  … stoch_20@5m (906,336 bars)
+[ETHUSD] stoch_20@5m
+  skip stoch_20@5m: No numeric types to aggregate
+  skip stoch_20@5m: No numeric types to aggregate
+  … stoch_20@1h (75,528 bars)
+  … stoch_20@1h (75,528 bars)
+[ETHUSD] stoch_20@1h
+  skip stoch_20@1h: No numeric types to aggregate
+  skip stoch_20@1h: No numeric types to aggregate
+[ETHUSD] scored 31 cells · survives_cells=251
+  … stoch_30@15m (302,112 bars)
+  … stoch_30@15m (302,112 bars)
+[ETHUSD] stoch_30@15m
+  skip stoch_30@15m: No numeric types to aggregate
+  skip stoch_30@15m: No numeric types to aggregate
+  … stoch_30@5m (906,336 bars)
+  … stoch_30@5m (906,336 bars)
+[ETHUSD] stoch_30@5m
+  skip stoch_30@5m: No numeric types to aggregate
+  skip stoch_30@5m: No numeric types to aggregate
+  … stoch_30@1h (75,528 bars)
+  … stoch_30@1h (75,528 bars)
+[ETHUSD] stoch_30@1h
+  skip stoch_30@1h: No numeric types to aggregate
+  skip stoch_30@1h: No numeric types to aggregate
+[ETHUSD] scored 31 cells · survives_cells=251
+  … don_10@15m (302,112 bars)
+  … don_10@15m (302,112 bars)
+[ETHUSD] don_10@15m
+  ✓ GATE don_10       15m RR=2.4 n=14552 OOS_E[R]=+0.043 5yOOS=+0.027 SURVIVES
+  ✓ GATE don_10       15m RR=2.4 n=14552 OOS_E[R]=+0.043 5yOOS=+0.027 SURVIVES
+  … don_10@5m (906,336 bars)
+  … don_10@5m (906,336 bars)
+[ETHUSD] don_10@5m
+  ✓ GATE don_10       5m  RR=4.0 n=34957 OOS_E[R]=+0.074 5yOOS=+0.070 SURVIVES
+  ✓ GATE don_10       5m  RR=4.0 n=34957 OOS_E[R]=+0.074 5yOOS=+0.070 SURVIVES
+  … don_10@1h (75,528 bars)
+  … don_10@1h (75,528 bars)
+[ETHUSD] don_10@1h
+  ✓ GATE don_10       1h  RR=3.0 n=3262 OOS_E[R]=+0.030 5yOOS=+0.059 SURVIVES
+  ✓ GATE don_10       1h  RR=3.0 n=3262 OOS_E[R]=+0.030 5yOOS=+0.059 SURVIVES
+[ETHUSD] scored 34 cells · survives_cells=254
+  … don_20@15m (302,112 bars)
+  … don_20@15m (302,112 bars)
+[ETHUSD] don_20@15m
+  ✓ GATE don_20       15m RR=4.0 n=9271 OOS_E[R]=+0.092 5yOOS=+0.073 SURVIVES
+  ✓ GATE don_20       15m RR=4.0 n=9271 OOS_E[R]=+0.092 5yOOS=+0.073 SURVIVES
+  … don_20@5m (906,336 bars)
+  … don_20@5m (906,336 bars)
+[ETHUSD] don_20@5m
+  ✓ GATE don_20       5m  RR=4.0 n=30229 OOS_E[R]=+0.064 5yOOS=+0.050 SURVIVES
+  ✓ GATE don_20       5m  RR=4.0 n=30229 OOS_E[R]=+0.064 5yOOS=+0.050 SURVIVES
+  … don_20@1h (75,528 bars)
+  … don_20@1h (75,528 bars)
+[ETHUSD] don_20@1h
+  ✓ GATE don_20       1h  RR=4.0 n=2381 OOS_E[R]=+0.105 5yOOS=+0.121 SURVIVES
+  ✓ GATE don_20       1h  RR=4.0 n=2381 OOS_E[R]=+0.105 5yOOS=+0.121 SURVIVES
+[ETHUSD] scored 37 cells · survives_cells=257
+  … don_30@15m (302,112 bars)
+  … don_30@15m (302,112 bars)
+[ETHUSD] don_30@15m
+  ✓ GATE don_30       15m RR=4.0 n=7803 OOS_E[R]=+0.059 5yOOS=+0.024 SURVIVES
+  ✓ GATE don_30       15m RR=4.0 n=7803 OOS_E[R]=+0.059 5yOOS=+0.024 SURVIVES
+  … don_30@5m (906,336 bars)
+  … don_30@5m (906,336 bars)
+[ETHUSD] don_30@5m
+  ✓ GATE don_30       5m  RR=4.0 n=25463 OOS_E[R]=+0.069 5yOOS=+0.048 SURVIVES
+  ✓ GATE don_30       5m  RR=4.0 n=25463 OOS_E[R]=+0.069 5yOOS=+0.048 SURVIVES
+  … don_30@1h (75,528 bars)
+  … don_30@1h (75,528 bars)
+[ETHUSD] don_30@1h
+  ✓ GATE don_30       1h  RR=4.0 n=2042 OOS_E[R]=+0.131 5yOOS=+0.102 SURVIVES
+  ✓ GATE don_30       1h  RR=4.0 n=2042 OOS_E[R]=+0.131 5yOOS=+0.102 SURVIVES
+[ETHUSD] scored 40 cells · survives_cells=260
+  … don_55@15m (302,112 bars)
+  … don_55@15m (302,112 bars)
+[ETHUSD] don_55@15m
+  ✓ GATE don_55       15m RR=2.0 n=6883 OOS_E[R]=+0.004 5yOOS=+0.019 SURVIVES
+  ✓ GATE don_55       15m RR=2.0 n=6883 OOS_E[R]=+0.004 5yOOS=+0.019 SURVIVES
+  … don_55@5m (906,336 bars)
+  … don_55@5m (906,336 bars)
+[ETHUSD] don_55@5m
+  ✓ GATE don_55       5m  RR=4.0 n=18406 OOS_E[R]=+0.071 5yOOS=+0.051 SURVIVES
+  ✓ GATE don_55       5m  RR=4.0 n=18406 OOS_E[R]=+0.071 5yOOS=+0.051 SURVIVES
+  … don_55@1h (75,528 bars)
+  … don_55@1h (75,528 bars)
+[ETHUSD] don_55@1h
+  ✓ GATE don_55       1h  RR=4.0 n=1574 OOS_E[R]=+0.124 5yOOS=+0.105 SURVIVES
+  ✓ GATE don_55       1h  RR=4.0 n=1574 OOS_E[R]=+0.124 5yOOS=+0.105 SURVIVES
+[ETHUSD] scored 43 cells · survives_cells=263
+  … don_100@15m (302,112 bars)
+  … don_100@15m (302,112 bars)
+[ETHUSD] don_100@15m
+  ✓ GATE don_100      15m RR=4.0 n=4124 OOS_E[R]=+0.063 5yOOS=+0.042 SURVIVES
+  ✓ GATE don_100      15m RR=4.0 n=4124 OOS_E[R]=+0.063 5yOOS=+0.042 SURVIVES
+  … don_100@5m (906,336 bars)
+  … don_100@5m (906,336 bars)
+[ETHUSD] don_100@5m
+  ✓ GATE don_100      5m  RR=4.0 n=12805 OOS_E[R]=+0.074 5yOOS=+0.035 SURVIVES
+  ✓ GATE don_100      5m  RR=4.0 n=12805 OOS_E[R]=+0.074 5yOOS=+0.035 SURVIVES
+  … don_100@1h (75,528 bars)
+  … don_100@1h (75,528 bars)
+[ETHUSD] don_100@1h
+  ✓ GATE don_100      1h  RR=4.0 n=1104 OOS_E[R]=+0.299 5yOOS=+0.172 SURVIVES
+  ✓ GATE don_100      1h  RR=4.0 n=1104 OOS_E[R]=+0.299 5yOOS=+0.172 SURVIVES
+[ETHUSD] scored 46 cells · survives_cells=266
+  … cta_5_20@15m (302,112 bars)
+  … cta_5_20@15m (302,112 bars)
+[ETHUSD] cta_5_20@15m
+  … cta_5_20@5m (906,336 bars)
+  … cta_5_20@5m (906,336 bars)
+[ETHUSD] cta_5_20@5m
+  … cta_5_20@1h (75,528 bars)
+  … cta_5_20@1h (75,528 bars)
+[ETHUSD] cta_5_20@1h
+[ETHUSD] scored 49 cells · survives_cells=268
+  … cta_10_40@15m (302,112 bars)
+  … cta_10_40@15m (302,112 bars)
+[ETHUSD] cta_10_40@15m
+  ✓ GATE cta_10_40    15m RR=4.0 n=4415 OOS_E[R]=+0.127 5yOOS=+0.046 SURVIVES
+  ✓ GATE cta_10_40    15m RR=4.0 n=4415 OOS_E[R]=+0.127 5yOOS=+0.046 SURVIVES
+  … cta_10_40@5m (906,336 bars)
+  … cta_10_40@5m (906,336 bars)
+[ETHUSD] cta_10_40@5m
+  ✓ GATE cta_10_40    5m  RR=4.0 n=14021 OOS_E[R]=+0.068 5yOOS=+0.071 SURVIVES
+  ✓ GATE cta_10_40    5m  RR=4.0 n=14021 OOS_E[R]=+0.068 5yOOS=+0.071 SURVIVES
+  … cta_10_40@1h (75,528 bars)
+  … cta_10_40@1h (75,528 bars)
+[ETHUSD] cta_10_40@1h
+  ✓ GATE cta_10_40    1h  RR=4.0 n=1108 OOS_E[R]=+0.058 5yOOS=+0.041 SURVIVES
+  ✓ GATE cta_10_40    1h  RR=4.0 n=1108 OOS_E[R]=+0.058 5yOOS=+0.041 SURVIVES
+[ETHUSD] scored 52 cells · survives_cells=271
+  … cta_12_26@15m (302,112 bars)
+  … cta_12_26@15m (302,112 bars)
+[ETHUSD] cta_12_26@15m
+  … cta_12_26@5m (906,336 bars)
+  … cta_12_26@5m (906,336 bars)
+[ETHUSD] cta_12_26@5m
+  ✓ GATE cta_12_26    5m  RR=4.0 n=15106 OOS_E[R]=+0.071 5yOOS=+0.046 SURVIVES
+  ✓ GATE cta_12_26    5m  RR=4.0 n=15106 OOS_E[R]=+0.071 5yOOS=+0.046 SURVIVES
+  … cta_12_26@1h (75,528 bars)
+  … cta_12_26@1h (75,528 bars)
+[ETHUSD] cta_12_26@1h
+[ETHUSD] scored 55 cells · survives_cells=272
+  … cta_20_50@15m (302,112 bars)
+  … cta_20_50@15m (302,112 bars)
+[ETHUSD] cta_20_50@15m
+  ✓ GATE cta_20_50    15m RR=4.0 n=3744 OOS_E[R]=+0.102 5yOOS=+0.079 SURVIVES
+  ✓ GATE cta_20_50    15m RR=4.0 n=3744 OOS_E[R]=+0.102 5yOOS=+0.079 SURVIVES
+  … cta_20_50@5m (906,336 bars)
+  … cta_20_50@5m (906,336 bars)
+[ETHUSD] cta_20_50@5m
+  ✓ GATE cta_20_50    5m  RR=4.0 n=11884 OOS_E[R]=+0.105 5yOOS=+0.074 SURVIVES
+  ✓ GATE cta_20_50    5m  RR=4.0 n=11884 OOS_E[R]=+0.105 5yOOS=+0.074 SURVIVES
+  … cta_20_50@1h (75,528 bars)
+  … cta_20_50@1h (75,528 bars)
+[ETHUSD] cta_20_50@1h
+  ✓ GATE cta_20_50    1h  RR=1.5 n=1092 OOS_E[R]=+0.018 5yOOS=+0.068 SURVIVES
+  ✓ GATE cta_20_50    1h  RR=1.5 n=1092 OOS_E[R]=+0.018 5yOOS=+0.068 SURVIVES
+[ETHUSD] scored 58 cells · survives_cells=275
+  … cta_50_200@15m (302,112 bars)
+  … cta_50_200@15m (302,112 bars)
+[ETHUSD] cta_50_200@15m
+  ✓ GATE cta_50_200   15m RR=4.0 n=1493 OOS_E[R]=+0.077 5yOOS=+0.069 SURVIVES
+  ✓ GATE cta_50_200   15m RR=4.0 n=1493 OOS_E[R]=+0.077 5yOOS=+0.069 SURVIVES
+  … cta_50_200@5m (906,336 bars)
+  … cta_50_200@5m (906,336 bars)
+[ETHUSD] cta_50_200@5m
+  ✓ GATE cta_50_200   5m  RR=4.0 n=4634 OOS_E[R]=+0.125 5yOOS=+0.141 SURVIVES
+  ✓ GATE cta_50_200   5m  RR=4.0 n=4634 OOS_E[R]=+0.125 5yOOS=+0.141 SURVIVES
+  … cta_50_200@1h (75,528 bars)
+  … cta_50_200@1h (75,528 bars)
+[ETHUSD] cta_50_200@1h
+  ✓ GATE cta_50_200   1h  RR=3.0 n=410 OOS_E[R]=+0.134 5yOOS=+0.215 SURVIVES
+  ✓ GATE cta_50_200   1h  RR=3.0 n=410 OOS_E[R]=+0.134 5yOOS=+0.215 SURVIVES
+[ETHUSD] scored 61 cells · survives_cells=278
+  … tsmom@15m (302,112 bars)
+  … tsmom@15m (302,112 bars)
+[ETHUSD] tsmom@15m
+  ✓ GATE tsmom        15m RR=4.0 n=1937 OOS_E[R]=+0.131 5yOOS=+0.163 SURVIVES
+  ✓ GATE tsmom        15m RR=4.0 n=1937 OOS_E[R]=+0.131 5yOOS=+0.163 SURVIVES
+  … tsmom@5m (906,336 bars)
+  … tsmom@5m (906,336 bars)
+[ETHUSD] tsmom@5m
+  ✓ GATE tsmom        5m  RR=4.0 n=5656 OOS_E[R]=+0.184 5yOOS=+0.106 SURVIVES
+  ✓ GATE tsmom        5m  RR=4.0 n=5656 OOS_E[R]=+0.184 5yOOS=+0.106 SURVIVES
+  … tsmom@1h (75,528 bars)
+  … tsmom@1h (75,528 bars)
+[ETHUSD] tsmom@1h
+  ✓ GATE tsmom        1h  RR=2.4 n=601 OOS_E[R]=+0.054 5yOOS=+0.210 SURVIVES
+  ✓ GATE tsmom        1h  RR=2.4 n=601 OOS_E[R]=+0.054 5yOOS=+0.210 SURVIVES
+[ETHUSD] scored 64 cells · survives_cells=281
+  … roc_20@15m (302,112 bars)
+  … roc_20@15m (302,112 bars)
+[ETHUSD] roc_20@15m
+  … roc_20@5m (906,336 bars)
+  … roc_20@5m (906,336 bars)
+[ETHUSD] roc_20@5m
+  ✓ GATE roc_20       5m  RR=2.4 n=269 OOS_E[R]=+0.400 5yOOS=+0.360 SURVIVES
+  ✓ GATE roc_20       5m  RR=2.4 n=269 OOS_E[R]=+0.400 5yOOS=+0.360 SURVIVES
+  … roc_20@1h (75,528 bars)
+  … roc_20@1h (75,528 bars)
+[ETHUSD] roc_20@1h
+  ✓ GATE roc_20       1h  RR=4.0 n=439 OOS_E[R]=+0.200 5yOOS=+0.707 SURVIVES
+  ✓ GATE roc_20       1h  RR=4.0 n=439 OOS_E[R]=+0.200 5yOOS=+0.707 SURVIVES
+[ETHUSD] scored 67 cells · survives_cells=283
+  … roc_60@15m (302,112 bars)
+  … roc_60@15m (302,112 bars)
+[ETHUSD] roc_60@15m
+  … roc_60@5m (906,336 bars)
+  … roc_60@5m (906,336 bars)
+[ETHUSD] roc_60@5m
+  ✓ GATE roc_60       5m  RR=4.0 n=245 OOS_E[R]=+0.923 5yOOS=+1.500 SURVIVES
+  ✓ GATE roc_60       5m  RR=4.0 n=245 OOS_E[R]=+0.923 5yOOS=+1.500 SURVIVES
+  … roc_60@1h (75,528 bars)
+  … roc_60@1h (75,528 bars)
+[ETHUSD] roc_60@1h
+[ETHUSD] scored 70 cells · survives_cells=285
+  … roc_120@15m (302,112 bars)
+  … roc_120@15m (302,112 bars)
+[ETHUSD] roc_120@15m
+  … roc_120@5m (906,336 bars)
+  … roc_120@5m (906,336 bars)
+[ETHUSD] roc_120@5m
+  … roc_120@1h (75,528 bars)
+  … roc_120@1h (75,528 bars)
+[ETHUSD] roc_120@1h
+[ETHUSD] scored 73 cells · survives_cells=286
+  … bb_1.5@15m (302,112 bars)
+  … bb_1.5@15m (302,112 bars)
+[ETHUSD] bb_1.5@15m
+  … bb_1.5@5m (906,336 bars)
+  … bb_1.5@5m (906,336 bars)
+[ETHUSD] bb_1.5@5m
+  … bb_1.5@1h (75,528 bars)
+  … bb_1.5@1h (75,528 bars)
+[ETHUSD] bb_1.5@1h
+[ETHUSD] scored 76 cells · survives_cells=287
+  … bb_2@15m (302,112 bars)
+  … bb_2@15m (302,112 bars)
+[ETHUSD] bb_2@15m
+  … bb_2@5m (906,336 bars)
+  … bb_2@5m (906,336 bars)
+[ETHUSD] bb_2@5m
+  ✓ GATE bb_2         5m  RR=4.0 n=6114 OOS_E[R]=+0.073 5yOOS=+0.013 SURVIVES
+  ✓ GATE bb_2         5m  RR=4.0 n=6114 OOS_E[R]=+0.073 5yOOS=+0.013 SURVIVES
+  … bb_2@1h (75,528 bars)
+  … bb_2@1h (75,528 bars)
+[ETHUSD] bb_2@1h
+[ETHUSD] scored 79 cells · survives_cells=288
+  … bb_2.5@15m (302,112 bars)
+  … bb_2.5@15m (302,112 bars)
+[ETHUSD] bb_2.5@15m
+  ✓ GATE bb_2.5       15m RR=4.0 n=245 OOS_E[R]=+0.102 5yOOS=+0.216 SURVIVES
+  ✓ GATE bb_2.5       15m RR=4.0 n=245 OOS_E[R]=+0.102 5yOOS=+0.216 SURVIVES
+  … bb_2.5@5m (906,336 bars)
+  … bb_2.5@5m (906,336 bars)
+[ETHUSD] bb_2.5@5m
+  … bb_2.5@1h (75,528 bars)
+  … bb_2.5@1h (75,528 bars)
+[ETHUSD] bb_2.5@1h
+[ETHUSD] scored 82 cells · survives_cells=289
+  … z_20_2@15m (302,112 bars)
+  … z_20_2@15m (302,112 bars)
+[ETHUSD] z_20_2@15m
+  … z_20_2@5m (906,336 bars)
+  … z_20_2@5m (906,336 bars)
+[ETHUSD] z_20_2@5m
+  ✓ GATE z_20_2       5m  RR=4.0 n=21616 OOS_E[R]=+0.081 5yOOS=+0.023 SURVIVES
+  ✓ GATE z_20_2       5m  RR=4.0 n=21616 OOS_E[R]=+0.081 5yOOS=+0.023 SURVIVES
+  … z_20_2@1h (75,528 bars)
+  … z_20_2@1h (75,528 bars)
+[ETHUSD] z_20_2@1h
+[ETHUSD] scored 85 cells · survives_cells=290
+  … z_40_2@15m (302,112 bars)
+  … z_40_2@15m (302,112 bars)
+[ETHUSD] z_40_2@15m
+  … z_40_2@5m (906,336 bars)
+  … z_40_2@5m (906,336 bars)
+[ETHUSD] z_40_2@5m
+  ✓ GATE z_40_2       5m  RR=4.0 n=17872 OOS_E[R]=+0.059 5yOOS=+0.031 SURVIVES
+  ✓ GATE z_40_2       5m  RR=4.0 n=17872 OOS_E[R]=+0.059 5yOOS=+0.031 SURVIVES
+  … z_40_2@1h (75,528 bars)
+  … z_40_2@1h (75,528 bars)
+[ETHUSD] z_40_2@1h
+[ETHUSD] scored 88 cells · survives_cells=292
+  … rsi@15m (302,112 bars)
+  … rsi@15m (302,112 bars)
+[ETHUSD] rsi@15m
+  ✓ GATE rsi          15m RR=4.0 n=6717 OOS_E[R]=+0.061 5yOOS=+0.096 SURVIVES
+  ✓ GATE rsi          15m RR=4.0 n=6717 OOS_E[R]=+0.061 5yOOS=+0.096 SURVIVES
+  … rsi@5m (906,336 bars)
+  … rsi@5m (906,336 bars)
+[ETHUSD] rsi@5m
+  ✓ GATE rsi          5m  RR=2.4 n=28237 OOS_E[R]=+0.016 5yOOS=+0.005 SURVIVES
+  ✓ GATE rsi          5m  RR=2.4 n=28237 OOS_E[R]=+0.016 5yOOS=+0.005 SURVIVES
+  … rsi@1h (75,528 bars)
+  … rsi@1h (75,528 bars)
+[ETHUSD] rsi@1h
+[ETHUSD] scored 91 cells · survives_cells=294
+  … atrbrk@15m (302,112 bars)
+  … atrbrk@15m (302,112 bars)
+[ETHUSD] atrbrk@15m
+  ✓ GATE atrbrk       15m RR=4.0 n=3284 OOS_E[R]=+0.127 5yOOS=+0.074 SURVIVES
+  ✓ GATE atrbrk       15m RR=4.0 n=3284 OOS_E[R]=+0.127 5yOOS=+0.074 SURVIVES
+  … atrbrk@5m (906,336 bars)
+  … atrbrk@5m (906,336 bars)
+[ETHUSD] atrbrk@5m
+  ✓ GATE atrbrk       5m  RR=3.0 n=9755 OOS_E[R]=+0.079 5yOOS=+0.078 SURVIVES
+  ✓ GATE atrbrk       5m  RR=3.0 n=9755 OOS_E[R]=+0.079 5yOOS=+0.078 SURVIVES
+  … atrbrk@1h (75,528 bars)
+  … atrbrk@1h (75,528 bars)
+[ETHUSD] atrbrk@1h
+  ✓ GATE atrbrk       1h  RR=4.0 n=906 OOS_E[R]=+0.327 5yOOS=+0.309 SURVIVES
+  ✓ GATE atrbrk       1h  RR=4.0 n=906 OOS_E[R]=+0.327 5yOOS=+0.309 SURVIVES
+[ETHUSD] scored 94 cells · survives_cells=297
+  … volmom@15m (302,112 bars)
+  … volmom@15m (302,112 bars)
+[ETHUSD] volmom@15m
+  ✓ GATE volmom       15m RR=4.0 n=5965 OOS_E[R]=+0.100 5yOOS=+0.044 SURVIVES
+  ✓ GATE volmom       15m RR=4.0 n=5965 OOS_E[R]=+0.100 5yOOS=+0.044 SURVIVES
+  … volmom@5m (906,336 bars)
+  … volmom@5m (906,336 bars)
+[ETHUSD] volmom@5m
+  ✓ GATE volmom       5m  RR=4.0 n=18035 OOS_E[R]=+0.039 5yOOS=+0.042 SURVIVES
+  ✓ GATE volmom       5m  RR=4.0 n=18035 OOS_E[R]=+0.039 5yOOS=+0.042 SURVIVES
+  … volmom@1h (75,528 bars)
+  … volmom@1h (75,528 bars)
+[ETHUSD] volmom@1h
+  ✓ GATE volmom       1h  RR=2.4 n=1805 OOS_E[R]=+0.002 5yOOS=+0.030 SURVIVES
+  ✓ GATE volmom       1h  RR=2.4 n=1805 OOS_E[R]=+0.002 5yOOS=+0.030 SURVIVES
+[ETHUSD] scored 97 cells · survives_cells=300
+  ★ ETHUSD WINNER ema_tight@1h RR=4.0 score=11.782 PnL=$21,600
+  ★ ETHUSD WINNER ema_tight@1h RR=4.0 score=11.782 PnL=$21,600
+Duka deep hunt done · 8/8 deep-gate pairs · 300 SURVIVES cells · 25012.2s
+
+→ Deep-gate survivors: 8/8
+→ Proposed map (NOT applied): GOLD:don_100,USDCHF:bb_2.5,USDJPY:bb_2.5,NAS100:don_100,UKOIL:roc_120,AUDUSD:bb_2.5,BTCUSD:cta_50_200,ETHUSD:ema_tight
+→ Wrote /app/data/lab_duka_deep_hunt.json in 25012.2s
+
+→ Deep-gate survivors: 8/8
+→ Proposed map (NOT applied): GOLD:don_100,USDCHF:bb_2.5,USDJPY:bb_2.5,NAS100:don_100,UKOIL:roc_120,AUDUSD:bb_2.5,BTCUSD:cta_50_200,ETHUSD:ema_tight
+→ Wrote /app/data/lab_duka_deep_hunt.json in 25012.2s

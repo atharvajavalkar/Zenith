@@ -1,0 +1,46 @@
+LIVE-WIRED 1m capital variations · Dukascopy native TFs
+Window: last 30d ending 2026-07-25
+Brains: {'GOLD': 'don_100', 'USDCHF': 'bb_2.5', 'USDJPY': 'bb_2.5', 'NAS100': 'don_100', 'UKOIL': 'roc_120', 'AUDUSD': 'bb_2.5', 'BTCUSD': 'cta_50_200', 'ETHUSD': 'ema_tight'}
+Scan TFs: {'GOLD': '1h', 'USDCHF': '5m', 'USDJPY': '5m', 'NAS100': '1h', 'UKOIL': '15m', 'AUDUSD': '5m', 'BTCUSD': '1h', 'ETHUSD': '1h'}
+Variants: $10k→$200/R vs $20k→$400/R (2× lots)
+
+
+### 10k_x1 · capital=$10,000 · $200/R · 30d
+  GOLD     don_100            1h   n=   8 PnL=$     -600 OOS=$     400 E[R]=+0.667 WR=12.5% DEAD
+  USDCHF   bb_2.5             5m   n=   3 PnL=$      400 OOS=$       0 E[R]=+0.000 WR=33.3% FRAGILE
+  USDJPY   bb_2.5             5m   n=   8 PnL=$      400 OOS=$   1,600 E[R]=+4.000 WR=25.0% FRAGILE
+  NAS100   don_100            1h   n=   4 PnL=$    1,200 OOS=$     600 E[R]=+1.500 WR=50.0% FRAGILE
+  UKOIL    roc_120            15m  n=   3 PnL=$      400 OOS=$    -400 E[R]=-1.000 WR=33.3% FRAGILE
+  AUDUSD   bb_2.5             5m   n=   6 PnL=$     -200 OOS=$    -200 E[R]=-1.000 WR=16.7% DEAD
+  BTCUSD   cta_50_200         1h   n=   2 PnL=$     -400 OOS=$       0 E[R]=+0.000 WR=0.0% DEAD
+  ETHUSD   ema_tight          1h   n=   1 PnL=$     -200 OOS=$       0 E[R]=+0.000 WR=0.0% DEAD
+  → Desk 0S/4F/4D · Full $1,000 · OOS $2,000 · fit 1.9/10 · DOES NOT FIT
+
+### 20k_x2 · capital=$20,000 · $400/R · 30d
+  GOLD     don_100            1h   n=   8 PnL=$   -1,200 OOS=$     800 E[R]=+0.667 WR=12.5% DEAD
+  USDCHF   bb_2.5             5m   n=   3 PnL=$      800 OOS=$       0 E[R]=+0.000 WR=33.3% FRAGILE
+  USDJPY   bb_2.5             5m   n=   8 PnL=$      800 OOS=$   3,200 E[R]=+4.000 WR=25.0% FRAGILE
+  NAS100   don_100            1h   n=   4 PnL=$    2,400 OOS=$   1,200 E[R]=+1.500 WR=50.0% FRAGILE
+  UKOIL    roc_120            15m  n=   3 PnL=$      800 OOS=$    -800 E[R]=-1.000 WR=33.3% FRAGILE
+  AUDUSD   bb_2.5             5m   n=   6 PnL=$     -400 OOS=$    -400 E[R]=-1.000 WR=16.7% DEAD
+  BTCUSD   cta_50_200         1h   n=   2 PnL=$     -800 OOS=$       0 E[R]=+0.000 WR=0.0% DEAD
+  ETHUSD   ema_tight          1h   n=   1 PnL=$     -400 OOS=$       0 E[R]=+0.000 WR=0.0% DEAD
+  → Desk 0S/4F/4D · Full $2,000 · OOS $4,000 · fit 1.9/10 · DOES NOT FIT
+
+========================================================================================
+Pair     Brain        TF      n   $10k PnL   $20k PnL     Δ (2×)
+------------------------------------------------------------------------
+GOLD     don_100      1h      8 $     -600 $   -1,200 $     -600
+USDCHF   bb_2.5       5m      3 $      400 $      800 $      400
+USDJPY   bb_2.5       5m      8 $      400 $      800 $      400
+NAS100   don_100      1h      4 $    1,200 $    2,400 $    1,200
+UKOIL    roc_120      15m     3 $      400 $      800 $      400
+AUDUSD   bb_2.5       5m      6 $     -200 $     -400 $     -200
+BTCUSD   cta_50_200   1h      2 $     -400 $     -800 $     -400
+ETHUSD   ema_tight    1h      1 $     -200 $     -400 $     -200
+
+Desk Full: $10k $1,000 → $20k $2,000 (Δ $1,000)
+Desk OOS:  $10k $2,000 → $20k $4,000 (Δ $2,000)
+Return on start capital: $10k +10.0% · $20k +10.0%
+
+Wrote /app/data/live_wired_1m_capital.json in 73.6s

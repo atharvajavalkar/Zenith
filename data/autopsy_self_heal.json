@@ -1,0 +1,210 @@
+{
+  "cleared_reason": "stale_wipe_2026-08-05_no_trades",
+  "cleared_at": "2026-08-05T09:59:04.654870+00:00",
+  "last_run_at": "2026-08-13T19:24:44.745118+00:00",
+  "last_result": {
+    "bleeding": [
+      "USDCHF",
+      "USDJPY",
+      "UKOIL",
+      "AUDUSD",
+      "BTCUSD"
+    ],
+    "n_proposals": 4,
+    "n_applied": 3,
+    "n_emergency": 2,
+    "battery_summary": {
+      "survives": 0,
+      "fragile": 2,
+      "dead": 3
+    },
+    "battery_dead": [
+      "BTCUSD",
+      "USDCHF",
+      "USDJPY"
+    ],
+    "errors": [],
+    "finished_at": "2026-08-13T19:24:44.745118+00:00"
+  },
+  "runs": [
+    {
+      "bleeding": [
+        "USDCHF",
+        "USDJPY",
+        "UKOIL",
+        "AUDUSD",
+        "BTCUSD"
+      ],
+      "n_proposals": 4,
+      "n_applied": 3,
+      "n_emergency": 2,
+      "battery_summary": {
+        "survives": 0,
+        "fragile": 2,
+        "dead": 3
+      },
+      "battery_dead": [
+        "BTCUSD",
+        "USDCHF",
+        "USDJPY"
+      ],
+      "errors": [],
+      "finished_at": "2026-08-13T19:24:44.745118+00:00"
+    },
+    {
+      "bleeding": [
+        "USDCHF",
+        "USDJPY",
+        "UKOIL",
+        "AUDUSD"
+      ],
+      "n_proposals": 3,
+      "n_applied": 3,
+      "n_emergency": 1,
+      "battery_summary": {
+        "survives": 0,
+        "fragile": 2,
+        "dead": 2
+      },
+      "battery_dead": [
+        "USDCHF",
+        "USDJPY"
+      ],
+      "errors": [],
+      "finished_at": "2026-08-13T18:28:52.535276+00:00"
+    },
+    {
+      "bleeding": [
+        "UKOIL",
+        "BTCUSD",
+        "ETHUSD"
+      ],
+      "n_proposals": 2,
+      "n_applied": 2,
+      "n_emergency": 1,
+      "battery_summary": {
+        "survives": 0,
+        "fragile": 1,
+        "dead": 2
+      },
+      "battery_dead": [
+        "BTCUSD",
+        "ETHUSD"
+      ],
+      "errors": [],
+      "finished_at": "2026-08-11T11:08:36.149359+00:00"
+    },
+    {
+      "bleeding": [
+        "USDJPY",
+        "UKOIL",
+        "AUDUSD",
+        "BTCUSD",
+        "ETHUSD"
+      ],
+      "n_proposals": 4,
+      "n_applied": 3,
+      "n_emergency": 2,
+      "battery_summary": {
+        "survives": 0,
+        "fragile": 0,
+        "dead": 5
+      },
+      "battery_dead": [
+        "AUDUSD",
+        "BTCUSD",
+        "ETHUSD",
+        "UKOIL",
+        "USDJPY"
+      ],
+      "errors": [],
+      "finished_at": "2026-08-10T07:34:36.330913+00:00"
+    },
+    {
+      "bleeding": [
+        "USDJPY",
+        "UKOIL",
+        "AUDUSD"
+      ],
+      "n_proposals": 3,
+      "n_applied": 3,
+      "n_emergency": 0,
+      "battery_summary": {
+        "survives": 0,
+        "fragile": 1,
+        "dead": 2
+      },
+      "battery_dead": [
+        "AUDUSD",
+        "UKOIL"
+      ],
+      "errors": [],
+      "finished_at": "2026-08-06T01:02:27.644234+00:00"
+    },
+    {
+      "bleeding": [
+        "USDJPY",
+        "UKOIL",
+        "AUDUSD"
+      ],
+      "n_proposals": 3,
+      "n_applied": 3,
+      "n_emergency": 0,
+      "battery_summary": {
+        "survives": 0,
+        "fragile": 1,
+        "dead": 2
+      },
+      "battery_dead": [
+        "AUDUSD",
+        "UKOIL"
+      ],
+      "errors": [],
+      "finished_at": "2026-08-05T23:59:22.931128+00:00"
+    },
+    {
+      "bleeding": [
+        "USDJPY",
+        "AUDUSD"
+      ],
+      "n_proposals": 2,
+      "n_applied": 2,
+      "n_emergency": 0,
+      "battery_summary": {
+        "survives": 0,
+        "fragile": 1,
+        "dead": 1
+      },
+      "battery_dead": [
+        "AUDUSD"
+      ],
+      "errors": [],
+      "finished_at": "2026-08-05T16:28:02.748910+00:00"
+    },
+    {
+      "bleeding": [
+        "GOLD",
+        "USDJPY",
+        "AUDUSD",
+        "BTCUSD",
+        "ETHUSD"
+      ],
+      "n_proposals": 4,
+      "n_applied": 3,
+      "n_emergency": 2,
+      "battery_summary": {
+        "survives": 0,
+        "fragile": 2,
+        "dead": 3
+      },
+      "battery_dead": [
+        "AUDUSD",
+        "BTCUSD",
+        "ETHUSD"
+      ],
+      "errors": [],
+      "finished_at": "2026-08-05T13:04:46.154204+00:00"
+    }
+  ],
+  "updated_at": "2026-08-13T19:24:44.745413+00:00"
+}

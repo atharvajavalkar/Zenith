@@ -1,0 +1,78 @@
+=== XM fine-tune v2 · $100.0/R · brains=('session_mix', 'circadian_kalman_z', 'entropy_tod', 'volmom') · risk_mult=(1.0, 5.0, 8.0, 10.0) · max_spr=(None, 0.12, 0.18) · off=(False, True) ===
+
+[1/8] ETHUSD live=session_mix tf=5m RR=4.0
+  … 24/96 configs
+  … 48/96 configs
+  … 72/96 configs
+  … 96/96 configs
+  BASE 1y $-52,008 FAIL wf=0/4
+  BEST  session_mix mult=8.0 maxSp=None off=False → SOFT wf=2/4 1y $1,925 E[R]=+0.047 n=406 spR=0.122
+  LIVE+ session_mix mult=8.0 maxSp=None off=False → SOFT wf=2/4 1y $1,925 E[R]=+0.047
+
+[2/8] BTCUSD live=circadian_kalman_z tf=5m RR=3.0
+  … 24/96 configs
+  … 48/96 configs
+  … 72/96 configs
+  … 96/96 configs
+  BASE 1y $-13,590 FAIL wf=0/4
+  BEST  entropy_tod mult=1.0 maxSp=0.18 off=False → NO_TRADES wf=0/4 1y $0 E[R]=+0.000 n=0 spR=0.000
+  LIVE+ circadian_kalman_z mult=1.0 maxSp=0.12 off=True → FAIL wf=0/4 1y $-8,713 E[R]=-0.243
+
+[3/8] GOLD live=entropy_tod tf=5m RR=4.0
+  … 24/96 configs
+  … 48/96 configs
+  … 72/96 configs
+  … 96/96 configs
+  BASE 1y $2,204 SOFT wf=2/4
+  BEST  entropy_tod mult=10.0 maxSp=None off=True → PASS wf=3/4 1y $2,528 E[R]=+0.665 n=38 spR=0.045
+  LIVE+ entropy_tod mult=10.0 maxSp=None off=True → PASS wf=3/4 1y $2,528 E[R]=+0.665
+
+[4/8] NAS100 live=volmom tf=15m RR=4.0
+  … 24/96 configs
+  … 48/96 configs
+  … 72/96 configs
+  … 96/96 configs
+  BASE 1y $5,970 PASS wf=4/4
+  BEST  volmom mult=8.0 maxSp=None off=False → PASS wf=4/4 1y $6,367 E[R]=+0.172 n=369 spR=0.047
+  LIVE+ volmom mult=8.0 maxSp=None off=False → PASS wf=4/4 1y $6,367 E[R]=+0.172
+
+[5/8] USDJPY live=circadian_kalman_z tf=5m RR=2.0
+  … 24/96 configs
+  … 48/96 configs
+  … 72/96 configs
+  … 96/96 configs
+  BASE 1y $1,719 SOFT wf=2/4
+  BEST  circadian_kalman_z mult=10.0 maxSp=None off=False → PASS wf=3/4 1y $2,187 E[R]=+0.050 n=434 spR=0.097
+  LIVE+ circadian_kalman_z mult=10.0 maxSp=None off=False → PASS wf=3/4 1y $2,187 E[R]=+0.050
+
+[6/8] AUDUSD live=circadian_kalman_z tf=5m RR=2.0
+  … 24/96 configs
+  … 48/96 configs
+  … 72/96 configs
+  … 96/96 configs
+  BASE 1y $-3,441 FAIL wf=2/4
+  BEST  entropy_tod mult=8.0 maxSp=None off=False → FAIL wf=0/4 1y $225 E[R]=+0.375 n=6 spR=0.125
+  LIVE+ circadian_kalman_z mult=10.0 maxSp=None off=False → FAIL wf=1/4 1y $-2,339 E[R]=-0.109
+
+[7/8] USDCHF live=session_mix tf=5m RR=2.0
+  … 24/96 configs
+  … 48/96 configs
+  … 72/96 configs
+  … 96/96 configs
+  BASE 1y $-5,032 FAIL wf=0/4
+  BEST  entropy_tod mult=10.0 maxSp=None off=True → NO_TRADES wf=0/4 1y $0 E[R]=+0.000 n=0 spR=0.000
+  LIVE+ session_mix mult=10.0 maxSp=None off=False → FAIL wf=1/4 1y $-3,069 E[R]=-0.224
+
+[8/8] UKOIL live=session_mix tf=5m RR=4.0
+  … 24/96 configs
+  … 48/96 configs
+  … 72/96 configs
+  … 96/96 configs
+  BASE 1y $703 PASS wf=3/4
+  BEST  session_mix mult=1.0 maxSp=None off=True → PASS wf=3/4 1y $1,707 E[R]=+0.029 n=590 spR=0.166
+  LIVE+ session_mix mult=1.0 maxSp=None off=True → PASS wf=3/4 1y $1,707 E[R]=+0.029
+
+=== DESK ===
+BASE live: 7d $2,713 · 30d $131 · 90d $-14,532 · 180d $-30,187 · 1y $-63,476 · 3y $-249,299
+BEST any:  7d $887 · 30d $1,195 · 90d $5,932 · 180d $9,965 · 1y $14,939 · 3y $-15,989
+wrote /app/data/xm_cost_finetune_v2.json

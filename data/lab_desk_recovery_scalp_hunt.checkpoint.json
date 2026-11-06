@@ -1,0 +1,2968 @@
+{
+  "saved_at": "2026-08-12T09:33:51.158391+00:00",
+  "elapsed_sec": 7990.7,
+  "per_pair": {
+    "ETHUSD": {
+      "symbol": "ETHUSD",
+      "live_brain": "breakout_20",
+      "live_rr": 4.0,
+      "resumed": true,
+      "winner": {
+        "strategy": "bb_2+hf0.45_e0.30",
+        "family": "resumed",
+        "label": "resumed",
+        "tf": "1m",
+        "rr": 4.0,
+        "math": null,
+        "full": {
+          "n": 448,
+          "exp_r": 0.272,
+          "oos_exp_r": 0.609,
+          "wf_green": 3,
+          "mc": 99.7,
+          "verdict": "SURVIVES"
+        },
+        "last_90d": {},
+        "deep_gate": true,
+        "score": 15.075000000000001
+      },
+      "top5": [],
+      "gated": []
+    },
+    "BTCUSD": {
+      "symbol": "BTCUSD",
+      "live_brain": "bb_2.5",
+      "live_rr": 2.0,
+      "resumed": true,
+      "winner": {
+        "strategy": "bb_2.5+e0.35",
+        "family": "resumed",
+        "label": "resumed",
+        "tf": "1m",
+        "rr": 4.0,
+        "math": null,
+        "full": {
+          "n": 88,
+          "exp_r": 1.045,
+          "oos_exp_r": 1.188,
+          "wf_green": 4,
+          "mc": 100.0,
+          "verdict": "SURVIVES"
+        },
+        "last_90d": {},
+        "deep_gate": true,
+        "score": 16.506
+      },
+      "top5": [],
+      "gated": []
+    },
+    "GOLD": {
+      "symbol": "GOLD",
+      "live_brain": "pa_liq_engulf",
+      "live_rr": 2.0,
+      "n_scored": 113,
+      "n_math": 240,
+      "n_gated": 70,
+      "winner": {
+        "strategy": "don_30+hf0.55",
+        "family": "hedge",
+        "label": "Donchian 30 \u00b7 math hf0.55",
+        "tf": "15m",
+        "rr": 4.0,
+        "math": {
+          "tag": "hf0.55",
+          "hf_max": 0.55,
+          "min_eff": null
+        },
+        "full": {
+          "verdict": "SURVIVES",
+          "n": 399,
+          "pnl": 23200.0,
+          "exp_r": 0.291,
+          "win_rate": null,
+          "oos_exp_r": 0.408,
+          "wf_green": 4,
+          "mc": 99.8
+        },
+        "last_90d": {
+          "verdict": "SURVIVES",
+          "n": 75,
+          "oos_exp_r": 0.042,
+          "wf_green": 3
+        },
+        "deep_gate": true,
+        "score": 14.324
+      },
+      "top5": [
+        {
+          "strategy": "don_30+hf0.55",
+          "family": "hedge",
+          "label": "Donchian 30 \u00b7 math hf0.55",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.55",
+            "hf_max": 0.55,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 399,
+            "pnl": 23200.0,
+            "exp_r": 0.291,
+            "win_rate": null,
+            "oos_exp_r": 0.408,
+            "wf_green": 4,
+            "mc": 99.8
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 75,
+            "oos_exp_r": 0.042,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 14.324
+        },
+        {
+          "strategy": "don_100+hf0.50",
+          "family": "hedge",
+          "label": "Donchian 100 \u00b7 math hf0.50",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.50",
+            "hf_max": 0.5,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 173,
+            "pnl": 22400.0,
+            "exp_r": 0.647,
+            "win_rate": null,
+            "oos_exp_r": 0.625,
+            "wf_green": 3,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 33,
+            "oos_exp_r": 1.0,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 13.874
+        },
+        {
+          "strategy": "don_100+hf0.55",
+          "family": "hedge",
+          "label": "Donchian 100 \u00b7 math hf0.55",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.55",
+            "hf_max": 0.55,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 227,
+            "pnl": 24600.0,
+            "exp_r": 0.542,
+            "win_rate": null,
+            "oos_exp_r": 0.471,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 41,
+            "oos_exp_r": 0.667,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 13.81
+        },
+        {
+          "strategy": "don_30+hf0.45",
+          "family": "hedge",
+          "label": "Donchian 30 \u00b7 math hf0.45",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.45",
+            "hf_max": 0.45,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 156,
+            "pnl": 17800.0,
+            "exp_r": 0.571,
+            "win_rate": null,
+            "oos_exp_r": 0.512,
+            "wf_green": 4,
+            "mc": 99.9
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 32,
+            "oos_exp_r": 0.667,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 13.542000000000002
+        },
+        {
+          "strategy": "don_30+hf0.50",
+          "family": "hedge",
+          "label": "Donchian 30 \u00b7 math hf0.50",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.50",
+            "hf_max": 0.5,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 284,
+            "pnl": 20200.0,
+            "exp_r": 0.356,
+            "win_rate": null,
+            "oos_exp_r": 0.364,
+            "wf_green": 4,
+            "mc": 99.7
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 59,
+            "oos_exp_r": 0.053,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 13.477
+        }
+      ],
+      "gated": [
+        {
+          "strategy": "don_30+hf0.55",
+          "family": "hedge",
+          "label": "Donchian 30 \u00b7 math hf0.55",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.55",
+            "hf_max": 0.55,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 399,
+            "pnl": 23200.0,
+            "exp_r": 0.291,
+            "win_rate": null,
+            "oos_exp_r": 0.408,
+            "wf_green": 4,
+            "mc": 99.8
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 75,
+            "oos_exp_r": 0.042,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 14.324
+        },
+        {
+          "strategy": "don_100+hf0.50",
+          "family": "hedge",
+          "label": "Donchian 100 \u00b7 math hf0.50",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.50",
+            "hf_max": 0.5,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 173,
+            "pnl": 22400.0,
+            "exp_r": 0.647,
+            "win_rate": null,
+            "oos_exp_r": 0.625,
+            "wf_green": 3,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 33,
+            "oos_exp_r": 1.0,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 13.874
+        },
+        {
+          "strategy": "don_100+hf0.55",
+          "family": "hedge",
+          "label": "Donchian 100 \u00b7 math hf0.55",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.55",
+            "hf_max": 0.55,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 227,
+            "pnl": 24600.0,
+            "exp_r": 0.542,
+            "win_rate": null,
+            "oos_exp_r": 0.471,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 41,
+            "oos_exp_r": 0.667,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 13.81
+        },
+        {
+          "strategy": "don_30+hf0.45",
+          "family": "hedge",
+          "label": "Donchian 30 \u00b7 math hf0.45",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.45",
+            "hf_max": 0.45,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 156,
+            "pnl": 17800.0,
+            "exp_r": 0.571,
+            "win_rate": null,
+            "oos_exp_r": 0.512,
+            "wf_green": 4,
+            "mc": 99.9
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 32,
+            "oos_exp_r": 0.667,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 13.542000000000002
+        },
+        {
+          "strategy": "don_30+hf0.50",
+          "family": "hedge",
+          "label": "Donchian 30 \u00b7 math hf0.50",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.50",
+            "hf_max": 0.5,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 284,
+            "pnl": 20200.0,
+            "exp_r": 0.356,
+            "win_rate": null,
+            "oos_exp_r": 0.364,
+            "wf_green": 4,
+            "mc": 99.7
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 59,
+            "oos_exp_r": 0.053,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 13.477
+        },
+        {
+          "strategy": "don_30+hf0.45_e0.30",
+          "family": "hedge",
+          "label": "Donchian 30 \u00b7 math hf0.45_e0.30",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.45_e0.30",
+            "hf_max": 0.45,
+            "min_eff": 0.3
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 155,
+            "pnl": 18000.0,
+            "exp_r": 0.581,
+            "win_rate": null,
+            "oos_exp_r": 0.477,
+            "wf_green": 4,
+            "mc": 99.9
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 33,
+            "oos_exp_r": 0.5,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 13.411000000000001
+        },
+        {
+          "strategy": "don_100+e0.35",
+          "family": "hedge",
+          "label": "Donchian 100 \u00b7 math e0.35",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 434,
+            "pnl": 16200.0,
+            "exp_r": 0.187,
+            "win_rate": null,
+            "oos_exp_r": 0.163,
+            "wf_green": 4,
+            "mc": 96.6
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 95,
+            "oos_exp_r": 0.154,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 13.358
+        },
+        {
+          "strategy": "atrbrk+hf0.50",
+          "family": "hedge",
+          "label": "ATR vol break \u00b7 math hf0.50",
+          "tf": "5m",
+          "rr": 3.0,
+          "math": {
+            "tag": "hf0.50",
+            "hf_max": 0.5,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 419,
+            "pnl": 14600.0,
+            "exp_r": 0.174,
+            "win_rate": null,
+            "oos_exp_r": 0.147,
+            "wf_green": 4,
+            "mc": 98.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 91,
+            "oos_exp_r": 0.25,
+            "wf_green": 1
+          },
+          "deep_gate": true,
+          "score": 13.202
+        },
+        {
+          "strategy": "don_100",
+          "family": "hedge",
+          "label": "Donchian 100",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": null,
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 449,
+            "pnl": 17200.0,
+            "exp_r": 0.192,
+            "win_rate": null,
+            "oos_exp_r": 0.145,
+            "wf_green": 4,
+            "mc": 97.9
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 96,
+            "oos_exp_r": 0.111,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 13.119
+        },
+        {
+          "strategy": "atrbrk+hf0.50_e0.25",
+          "family": "hedge",
+          "label": "ATR vol break \u00b7 math hf0.50_e0.25",
+          "tf": "5m",
+          "rr": 3.0,
+          "math": {
+            "tag": "hf0.50_e0.25",
+            "hf_max": 0.5,
+            "min_eff": 0.25
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 411,
+            "pnl": 13800.0,
+            "exp_r": 0.168,
+            "win_rate": null,
+            "oos_exp_r": 0.143,
+            "wf_green": 4,
+            "mc": 97.2
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 89,
+            "oos_exp_r": 0.032,
+            "wf_green": 2
+          },
+          "deep_gate": true,
+          "score": 13.108
+        }
+      ]
+    },
+    "NAS100": {
+      "symbol": "NAS100",
+      "live_brain": "volmom",
+      "live_rr": 4.0,
+      "n_scored": 113,
+      "n_math": 240,
+      "n_gated": 79,
+      "winner": {
+        "strategy": "volmom",
+        "family": "hedge",
+        "label": "Vol-scaled mom",
+        "tf": "15m",
+        "rr": 4.0,
+        "math": null,
+        "full": {
+          "verdict": "SURVIVES",
+          "n": 499,
+          "pnl": 26200.0,
+          "exp_r": 0.263,
+          "win_rate": null,
+          "oos_exp_r": 0.389,
+          "wf_green": 4,
+          "mc": 99.9
+        },
+        "last_90d": {
+          "verdict": "SURVIVES",
+          "n": 120,
+          "oos_exp_r": 0.429,
+          "wf_green": 4
+        },
+        "deep_gate": true,
+        "score": 14.248
+      },
+      "top5": [
+        {
+          "strategy": "volmom",
+          "family": "hedge",
+          "label": "Vol-scaled mom",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": null,
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 499,
+            "pnl": 26200.0,
+            "exp_r": 0.263,
+            "win_rate": null,
+            "oos_exp_r": 0.389,
+            "wf_green": 4,
+            "mc": 99.9
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 120,
+            "oos_exp_r": 0.429,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 14.248
+        },
+        {
+          "strategy": "volmom+hf0.50",
+          "family": "hedge",
+          "label": "Vol-scaled mom \u00b7 math hf0.50",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.50",
+            "hf_max": 0.5,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 245,
+            "pnl": 10000.0,
+            "exp_r": 0.204,
+            "win_rate": null,
+            "oos_exp_r": 0.479,
+            "wf_green": 4,
+            "mc": 93.5
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 53,
+            "oos_exp_r": 1.222,
+            "wf_green": 2
+          },
+          "deep_gate": true,
+          "score": 13.325000000000001
+        },
+        {
+          "strategy": "cta_20_50+hf0.45",
+          "family": "hedge",
+          "label": "CTA 20/50 \u00b7 math hf0.45",
+          "tf": "3m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.45",
+            "hf_max": 0.45,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 351,
+            "pnl": 18800.0,
+            "exp_r": 0.268,
+            "win_rate": null,
+            "oos_exp_r": 0.304,
+            "wf_green": 3,
+            "mc": 98.9
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 73,
+            "oos_exp_r": 0.053,
+            "wf_green": 2
+          },
+          "deep_gate": true,
+          "score": 13.186
+        },
+        {
+          "strategy": "volmom+e0.35",
+          "family": "hedge",
+          "label": "Vol-scaled mom \u00b7 math e0.35",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 443,
+            "pnl": 16400.0,
+            "exp_r": 0.185,
+            "win_rate": null,
+            "oos_exp_r": 0.099,
+            "wf_green": 3,
+            "mc": 96.9
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 100,
+            "oos_exp_r": 0.739,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 12.815000000000001
+        },
+        {
+          "strategy": "volmom+hf0.50",
+          "family": "hedge",
+          "label": "Vol-scaled mom \u00b7 math hf0.50",
+          "tf": "15m",
+          "rr": 3.0,
+          "math": {
+            "tag": "hf0.50",
+            "hf_max": 0.5,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 263,
+            "pnl": 8200.0,
+            "exp_r": 0.156,
+            "win_rate": null,
+            "oos_exp_r": 0.266,
+            "wf_green": 4,
+            "mc": 93.3
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 61,
+            "oos_exp_r": 0.429,
+            "wf_green": 2
+          },
+          "deep_gate": true,
+          "score": 12.517000000000001
+        }
+      ],
+      "gated": [
+        {
+          "strategy": "volmom",
+          "family": "hedge",
+          "label": "Vol-scaled mom",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": null,
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 499,
+            "pnl": 26200.0,
+            "exp_r": 0.263,
+            "win_rate": null,
+            "oos_exp_r": 0.389,
+            "wf_green": 4,
+            "mc": 99.9
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 120,
+            "oos_exp_r": 0.429,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 14.248
+        },
+        {
+          "strategy": "volmom+hf0.50",
+          "family": "hedge",
+          "label": "Vol-scaled mom \u00b7 math hf0.50",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.50",
+            "hf_max": 0.5,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 245,
+            "pnl": 10000.0,
+            "exp_r": 0.204,
+            "win_rate": null,
+            "oos_exp_r": 0.479,
+            "wf_green": 4,
+            "mc": 93.5
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 53,
+            "oos_exp_r": 1.222,
+            "wf_green": 2
+          },
+          "deep_gate": true,
+          "score": 13.325000000000001
+        },
+        {
+          "strategy": "cta_20_50+hf0.45",
+          "family": "hedge",
+          "label": "CTA 20/50 \u00b7 math hf0.45",
+          "tf": "3m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.45",
+            "hf_max": 0.45,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 351,
+            "pnl": 18800.0,
+            "exp_r": 0.268,
+            "win_rate": null,
+            "oos_exp_r": 0.304,
+            "wf_green": 3,
+            "mc": 98.9
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 73,
+            "oos_exp_r": 0.053,
+            "wf_green": 2
+          },
+          "deep_gate": true,
+          "score": 13.186
+        },
+        {
+          "strategy": "volmom+e0.35",
+          "family": "hedge",
+          "label": "Vol-scaled mom \u00b7 math e0.35",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 443,
+            "pnl": 16400.0,
+            "exp_r": 0.185,
+            "win_rate": null,
+            "oos_exp_r": 0.099,
+            "wf_green": 3,
+            "mc": 96.9
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 100,
+            "oos_exp_r": 0.739,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 12.815000000000001
+        },
+        {
+          "strategy": "volmom+hf0.50",
+          "family": "hedge",
+          "label": "Vol-scaled mom \u00b7 math hf0.50",
+          "tf": "15m",
+          "rr": 3.0,
+          "math": {
+            "tag": "hf0.50",
+            "hf_max": 0.5,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 263,
+            "pnl": 8200.0,
+            "exp_r": 0.156,
+            "win_rate": null,
+            "oos_exp_r": 0.266,
+            "wf_green": 4,
+            "mc": 93.3
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 61,
+            "oos_exp_r": 0.429,
+            "wf_green": 2
+          },
+          "deep_gate": true,
+          "score": 12.517000000000001
+        },
+        {
+          "strategy": "cta_20_50+hf0.45_e0.30",
+          "family": "hedge",
+          "label": "CTA 20/50 \u00b7 math hf0.45_e0.30",
+          "tf": "3m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.45_e0.30",
+            "hf_max": 0.45,
+            "min_eff": 0.3
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 263,
+            "pnl": 17400.0,
+            "exp_r": 0.331,
+            "win_rate": null,
+            "oos_exp_r": 0.236,
+            "wf_green": 3,
+            "mc": 99.4
+          },
+          "last_90d": {
+            "verdict": "FRAGILE",
+            "n": 55,
+            "oos_exp_r": 0.154,
+            "wf_green": 1
+          },
+          "deep_gate": true,
+          "score": 12.432
+        },
+        {
+          "strategy": "st_3",
+          "family": "retail",
+          "label": "Supertrend 3",
+          "tf": "3m",
+          "rr": 4.0,
+          "math": null,
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 404,
+            "pnl": 12200.0,
+            "exp_r": 0.151,
+            "win_rate": null,
+            "oos_exp_r": 0.26,
+            "wf_green": 3,
+            "mc": 92.4
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 87,
+            "oos_exp_r": 0.538,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 12.358
+        },
+        {
+          "strategy": "volmom+hf0.45",
+          "family": "hedge",
+          "label": "Vol-scaled mom \u00b7 math hf0.45",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.45",
+            "hf_max": 0.45,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 151,
+            "pnl": 5800.0,
+            "exp_r": 0.192,
+            "win_rate": null,
+            "oos_exp_r": 0.429,
+            "wf_green": 4,
+            "mc": 84.4
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 36,
+            "oos_exp_r": 1.5,
+            "wf_green": 2
+          },
+          "deep_gate": true,
+          "score": 12.299000000000001
+        },
+        {
+          "strategy": "engulf+hf0.45",
+          "family": "retail",
+          "label": "Engulfing \u00b7 math hf0.45",
+          "tf": "15m",
+          "rr": 3.0,
+          "math": {
+            "tag": "hf0.45",
+            "hf_max": 0.45,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 171,
+            "pnl": 9000.0,
+            "exp_r": 0.263,
+            "win_rate": null,
+            "oos_exp_r": 0.333,
+            "wf_green": 4,
+            "mc": 97.7
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 36,
+            "oos_exp_r": 0.143,
+            "wf_green": 1
+          },
+          "deep_gate": true,
+          "score": 12.021
+        },
+        {
+          "strategy": "volmom+hf0.55",
+          "family": "hedge",
+          "label": "Vol-scaled mom \u00b7 math hf0.55",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.55",
+            "hf_max": 0.55,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 336,
+            "pnl": 9800.0,
+            "exp_r": 0.146,
+            "win_rate": null,
+            "oos_exp_r": 0.422,
+            "wf_green": 4,
+            "mc": 88.6
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 75,
+            "oos_exp_r": 0.875,
+            "wf_green": 2
+          },
+          "deep_gate": true,
+          "score": 12.019
+        }
+      ]
+    },
+    "USDJPY": {
+      "symbol": "USDJPY",
+      "live_brain": "pa_opp_gold",
+      "live_rr": 4.0,
+      "n_scored": 113,
+      "n_math": 215,
+      "n_gated": 108,
+      "winner": {
+        "strategy": "bb_2.5+hf0.55",
+        "family": "hedge",
+        "label": "BB 2.5\u03c3 \u00b7 math hf0.55",
+        "tf": "1m",
+        "rr": 4.0,
+        "math": {
+          "tag": "hf0.55",
+          "hf_max": 0.55,
+          "min_eff": null
+        },
+        "full": {
+          "verdict": "SURVIVES",
+          "n": 98,
+          "pnl": 19400.0,
+          "exp_r": 0.99,
+          "win_rate": null,
+          "oos_exp_r": 1.121,
+          "wf_green": 4,
+          "mc": 100.0
+        },
+        "last_90d": {
+          "verdict": "SURVIVES",
+          "n": 20,
+          "oos_exp_r": 2.333,
+          "wf_green": 4
+        },
+        "deep_gate": true,
+        "score": 16.222
+      },
+      "top5": [
+        {
+          "strategy": "bb_2.5+hf0.45",
+          "family": "hedge",
+          "label": "BB 2.5\u03c3 \u00b7 math hf0.45",
+          "tf": "1m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.45",
+            "hf_max": 0.45,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 31,
+            "pnl": 10800.0,
+            "exp_r": 1.742,
+            "win_rate": null,
+            "oos_exp_r": 3.375,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "DEAD",
+            "n": 0,
+            "oos_exp_r": 0,
+            "wf_green": 0
+          },
+          "deep_gate": false,
+          "score": 23.12
+        },
+        {
+          "strategy": "bb_2.5+hf0.45",
+          "family": "hedge",
+          "label": "BB 2.5\u03c3 \u00b7 math hf0.45",
+          "tf": "1m",
+          "rr": 3.0,
+          "math": {
+            "tag": "hf0.45",
+            "hf_max": 0.45,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 31,
+            "pnl": 7400.0,
+            "exp_r": 1.194,
+            "win_rate": null,
+            "oos_exp_r": 2.5,
+            "wf_green": 3,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "DEAD",
+            "n": 0,
+            "oos_exp_r": 0,
+            "wf_green": 0
+          },
+          "deep_gate": false,
+          "score": 18.448
+        },
+        {
+          "strategy": "bb_2.5+hf0.45",
+          "family": "hedge",
+          "label": "BB 2.5\u03c3 \u00b7 math hf0.45",
+          "tf": "1m",
+          "rr": 2.4,
+          "math": {
+            "tag": "hf0.45",
+            "hf_max": 0.45,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 31,
+            "pnl": 6040.0,
+            "exp_r": 0.974,
+            "win_rate": null,
+            "oos_exp_r": 1.975,
+            "wf_green": 4,
+            "mc": 99.9
+          },
+          "last_90d": {
+            "verdict": "DEAD",
+            "n": 0,
+            "oos_exp_r": 0,
+            "wf_green": 0
+          },
+          "deep_gate": false,
+          "score": 16.366
+        },
+        {
+          "strategy": "bb_2.5+hf0.50_e0.25",
+          "family": "hedge",
+          "label": "BB 2.5\u03c3 \u00b7 math hf0.50_e0.25",
+          "tf": "1m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.50_e0.25",
+            "hf_max": 0.5,
+            "min_eff": 0.25
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 46,
+            "pnl": 15800.0,
+            "exp_r": 1.717,
+            "win_rate": null,
+            "oos_exp_r": 1.667,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "DEAD",
+            "n": 0,
+            "oos_exp_r": 0,
+            "wf_green": 0
+          },
+          "deep_gate": false,
+          "score": 16.35
+        },
+        {
+          "strategy": "bb_2.5+hf0.45",
+          "family": "hedge",
+          "label": "BB 2.5\u03c3 \u00b7 math hf0.45",
+          "tf": "1m",
+          "rr": 2.0,
+          "math": {
+            "tag": "hf0.45",
+            "hf_max": 0.45,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 31,
+            "pnl": 5200.0,
+            "exp_r": 0.839,
+            "win_rate": null,
+            "oos_exp_r": 2.0,
+            "wf_green": 4,
+            "mc": 99.9
+          },
+          "last_90d": {
+            "verdict": "DEAD",
+            "n": 0,
+            "oos_exp_r": 0,
+            "wf_green": 0
+          },
+          "deep_gate": false,
+          "score": 16.263
+        }
+      ],
+      "gated": [
+        {
+          "strategy": "bb_2.5+hf0.55",
+          "family": "hedge",
+          "label": "BB 2.5\u03c3 \u00b7 math hf0.55",
+          "tf": "1m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.55",
+            "hf_max": 0.55,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 98,
+            "pnl": 19400.0,
+            "exp_r": 0.99,
+            "win_rate": null,
+            "oos_exp_r": 1.121,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 20,
+            "oos_exp_r": 2.333,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 16.222
+        },
+        {
+          "strategy": "bb_2.5+e0.35",
+          "family": "hedge",
+          "label": "BB 2.5\u03c3 \u00b7 math e0.35",
+          "tf": "1m",
+          "rr": 4.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 118,
+            "pnl": 22400.0,
+            "exp_r": 0.949,
+            "win_rate": null,
+            "oos_exp_r": 0.939,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 34,
+            "oos_exp_r": 3.444,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 15.566
+        },
+        {
+          "strategy": "bb_2.5+hf0.55",
+          "family": "hedge",
+          "label": "BB 2.5\u03c3 \u00b7 math hf0.55",
+          "tf": "1m",
+          "rr": 3.0,
+          "math": {
+            "tag": "hf0.55",
+            "hf_max": 0.55,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 99,
+            "pnl": 18600.0,
+            "exp_r": 0.939,
+            "win_rate": null,
+            "oos_exp_r": 0.939,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 20,
+            "oos_exp_r": 1.667,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 15.424000000000001
+        },
+        {
+          "strategy": "bb_2.5",
+          "family": "hedge",
+          "label": "BB 2.5\u03c3",
+          "tf": "1m",
+          "rr": 4.0,
+          "math": null,
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 230,
+            "pnl": 28000.0,
+            "exp_r": 0.609,
+            "win_rate": null,
+            "oos_exp_r": 0.761,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 64,
+            "oos_exp_r": 2.0,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 14.791
+        },
+        {
+          "strategy": "bb_2.5+e0.35",
+          "family": "hedge",
+          "label": "BB 2.5\u03c3 \u00b7 math e0.35",
+          "tf": "1m",
+          "rr": 3.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 120,
+            "pnl": 18400.0,
+            "exp_r": 0.767,
+            "win_rate": null,
+            "oos_exp_r": 0.76,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 34,
+            "oos_exp_r": 2.556,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 14.591000000000001
+        },
+        {
+          "strategy": "bb_2+hf0.50_e0.25",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math hf0.50_e0.25",
+          "tf": "1m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.50_e0.25",
+            "hf_max": 0.5,
+            "min_eff": 0.25
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 378,
+            "pnl": 25400.0,
+            "exp_r": 0.336,
+            "win_rate": null,
+            "oos_exp_r": 0.415,
+            "wf_green": 4,
+            "mc": 99.8
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 71,
+            "oos_exp_r": 0.667,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 14.280000000000001
+        },
+        {
+          "strategy": "bb_2+e0.35",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math e0.35",
+          "tf": "1m",
+          "rr": 4.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 1042,
+            "pnl": 41600.0,
+            "exp_r": 0.2,
+            "win_rate": null,
+            "oos_exp_r": 0.329,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 269,
+            "oos_exp_r": 0.528,
+            "wf_green": 2
+          },
+          "deep_gate": true,
+          "score": 14.216000000000001
+        },
+        {
+          "strategy": "bb_2+e0.35",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math e0.35",
+          "tf": "1m",
+          "rr": 3.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 1059,
+            "pnl": 39400.0,
+            "exp_r": 0.186,
+            "win_rate": null,
+            "oos_exp_r": 0.298,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 274,
+            "oos_exp_r": 0.315,
+            "wf_green": 2
+          },
+          "deep_gate": true,
+          "score": 14.071000000000002
+        },
+        {
+          "strategy": "z_40_2+hf0.45",
+          "family": "hedge",
+          "label": "Z 40/2 \u00b7 math hf0.45",
+          "tf": "5m",
+          "rr": 3.0,
+          "math": {
+            "tag": "hf0.45",
+            "hf_max": 0.45,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 380,
+            "pnl": 25600.0,
+            "exp_r": 0.337,
+            "win_rate": null,
+            "oos_exp_r": 0.333,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 62,
+            "oos_exp_r": 0.6,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 13.971
+        },
+        {
+          "strategy": "bb_2+hf0.50",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math hf0.50",
+          "tf": "1m",
+          "rr": 3.0,
+          "math": {
+            "tag": "hf0.50",
+            "hf_max": 0.5,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 657,
+            "pnl": 22200.0,
+            "exp_r": 0.169,
+            "win_rate": null,
+            "oos_exp_r": 0.269,
+            "wf_green": 4,
+            "mc": 99.2
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 116,
+            "oos_exp_r": 0.405,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 13.914000000000001
+        }
+      ]
+    },
+    "AUDUSD": {
+      "symbol": "AUDUSD",
+      "live_brain": "bb_2.5",
+      "live_rr": 4.0,
+      "n_scored": 113,
+      "n_math": 230,
+      "n_gated": 127,
+      "winner": {
+        "strategy": "bb_2.5+e0.35",
+        "family": "hedge",
+        "label": "BB 2.5\u03c3 \u00b7 math e0.35",
+        "tf": "1m",
+        "rr": 4.0,
+        "math": {
+          "tag": "e0.35",
+          "hf_max": null,
+          "min_eff": 0.35
+        },
+        "full": {
+          "verdict": "SURVIVES",
+          "n": 92,
+          "pnl": 14600.0,
+          "exp_r": 0.793,
+          "win_rate": null,
+          "oos_exp_r": 0.897,
+          "wf_green": 4,
+          "mc": 100.0
+        },
+        "last_90d": {
+          "verdict": "SURVIVES",
+          "n": 22,
+          "oos_exp_r": 1.0,
+          "wf_green": 3
+        },
+        "deep_gate": true,
+        "score": 14.991000000000001
+      },
+      "top5": [
+        {
+          "strategy": "bb_2.5+hf0.50_e0.25",
+          "family": "hedge",
+          "label": "BB 2.5\u03c3 \u00b7 math hf0.50_e0.25",
+          "tf": "1m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.50_e0.25",
+            "hf_max": 0.5,
+            "min_eff": 0.25
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 32,
+            "pnl": 11600.0,
+            "exp_r": 1.812,
+            "win_rate": null,
+            "oos_exp_r": 1.778,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "DEAD",
+            "n": 0,
+            "oos_exp_r": 0,
+            "wf_green": 0
+          },
+          "deep_gate": false,
+          "score": 16.843
+        },
+        {
+          "strategy": "bb_2.5+hf0.45",
+          "family": "hedge",
+          "label": "BB 2.5\u03c3 \u00b7 math hf0.45",
+          "tf": "1m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.45",
+            "hf_max": 0.45,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 28,
+            "pnl": 8400.0,
+            "exp_r": 1.5,
+            "win_rate": null,
+            "oos_exp_r": 1.778,
+            "wf_green": 3,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "DEAD",
+            "n": 0,
+            "oos_exp_r": 0,
+            "wf_green": 0
+          },
+          "deep_gate": false,
+          "score": 15.999
+        },
+        {
+          "strategy": "bb_2.5+e0.35",
+          "family": "hedge",
+          "label": "BB 2.5\u03c3 \u00b7 math e0.35",
+          "tf": "1m",
+          "rr": 4.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 92,
+            "pnl": 14600.0,
+            "exp_r": 0.793,
+            "win_rate": null,
+            "oos_exp_r": 0.897,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 22,
+            "oos_exp_r": 1.0,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 14.991000000000001
+        },
+        {
+          "strategy": "bb_2+hf0.50_e0.25",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math hf0.50_e0.25",
+          "tf": "1m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.50_e0.25",
+            "hf_max": 0.5,
+            "min_eff": 0.25
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 389,
+            "pnl": 26200.0,
+            "exp_r": 0.337,
+            "win_rate": null,
+            "oos_exp_r": 0.435,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 80,
+            "oos_exp_r": 0.522,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 14.439
+        },
+        {
+          "strategy": "bb_2+e0.35",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math e0.35",
+          "tf": "1m",
+          "rr": 4.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 931,
+            "pnl": 57800.0,
+            "exp_r": 0.31,
+            "win_rate": null,
+            "oos_exp_r": 0.341,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 201,
+            "oos_exp_r": 0.607,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 14.429
+        }
+      ],
+      "gated": [
+        {
+          "strategy": "bb_2.5+e0.35",
+          "family": "hedge",
+          "label": "BB 2.5\u03c3 \u00b7 math e0.35",
+          "tf": "1m",
+          "rr": 4.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 92,
+            "pnl": 14600.0,
+            "exp_r": 0.793,
+            "win_rate": null,
+            "oos_exp_r": 0.897,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 22,
+            "oos_exp_r": 1.0,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 14.991000000000001
+        },
+        {
+          "strategy": "bb_2+hf0.50_e0.25",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math hf0.50_e0.25",
+          "tf": "1m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.50_e0.25",
+            "hf_max": 0.5,
+            "min_eff": 0.25
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 389,
+            "pnl": 26200.0,
+            "exp_r": 0.337,
+            "win_rate": null,
+            "oos_exp_r": 0.435,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 80,
+            "oos_exp_r": 0.522,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 14.439
+        },
+        {
+          "strategy": "bb_2+e0.35",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math e0.35",
+          "tf": "1m",
+          "rr": 4.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 931,
+            "pnl": 57800.0,
+            "exp_r": 0.31,
+            "win_rate": null,
+            "oos_exp_r": 0.341,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 201,
+            "oos_exp_r": 0.607,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 14.429
+        },
+        {
+          "strategy": "bb_2+hf0.50",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math hf0.50",
+          "tf": "1m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.50",
+            "hf_max": 0.5,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 629,
+            "pnl": 30200.0,
+            "exp_r": 0.24,
+            "win_rate": null,
+            "oos_exp_r": 0.341,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 124,
+            "oos_exp_r": 0.406,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 14.324
+        },
+        {
+          "strategy": "bb_2+e0.35",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math e0.35",
+          "tf": "1m",
+          "rr": 3.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 944,
+            "pnl": 56000.0,
+            "exp_r": 0.297,
+            "win_rate": null,
+            "oos_exp_r": 0.3,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 202,
+            "oos_exp_r": 0.357,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 14.246
+        },
+        {
+          "strategy": "bb_2+hf0.50_e0.25",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math hf0.50_e0.25",
+          "tf": "1m",
+          "rr": 3.0,
+          "math": {
+            "tag": "hf0.50_e0.25",
+            "hf_max": 0.5,
+            "min_eff": 0.25
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 390,
+            "pnl": 21200.0,
+            "exp_r": 0.272,
+            "win_rate": null,
+            "oos_exp_r": 0.391,
+            "wf_green": 4,
+            "mc": 99.8
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 80,
+            "oos_exp_r": 0.565,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 14.168000000000001
+        },
+        {
+          "strategy": "bb_2+e0.35",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math e0.35",
+          "tf": "1m",
+          "rr": 2.4,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 950,
+            "pnl": 51400.0,
+            "exp_r": 0.271,
+            "win_rate": null,
+            "oos_exp_r": 0.26,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 203,
+            "oos_exp_r": 0.214,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 14.047
+        },
+        {
+          "strategy": "bb_2+hf0.50",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math hf0.50",
+          "tf": "1m",
+          "rr": 3.0,
+          "math": {
+            "tag": "hf0.50",
+            "hf_max": 0.5,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 633,
+            "pnl": 24600.0,
+            "exp_r": 0.194,
+            "win_rate": null,
+            "oos_exp_r": 0.267,
+            "wf_green": 4,
+            "mc": 99.5
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 125,
+            "oos_exp_r": 0.375,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 13.949
+        },
+        {
+          "strategy": "bb_2",
+          "family": "hedge",
+          "label": "BB 2\u03c3",
+          "tf": "1m",
+          "rr": 4.0,
+          "math": null,
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 2021,
+            "pnl": 111800.0,
+            "exp_r": 0.277,
+            "win_rate": null,
+            "oos_exp_r": 0.306,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 414,
+            "oos_exp_r": 0.496,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 13.94
+        },
+        {
+          "strategy": "z_20_2+e0.35",
+          "family": "hedge",
+          "label": "Z 20/2 \u00b7 math e0.35",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 505,
+            "pnl": 16000.0,
+            "exp_r": 0.158,
+            "win_rate": null,
+            "oos_exp_r": 0.385,
+            "wf_green": 3,
+            "mc": 95.5
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 99,
+            "oos_exp_r": 0.029,
+            "wf_green": 2
+          },
+          "deep_gate": true,
+          "score": 13.937000000000001
+        }
+      ]
+    },
+    "USDCHF": {
+      "symbol": "USDCHF",
+      "live_brain": "bb_2.5",
+      "live_rr": 4.0,
+      "n_scored": 113,
+      "n_math": 230,
+      "n_gated": 95,
+      "winner": {
+        "strategy": "bb_2+hf0.55",
+        "family": "hedge",
+        "label": "BB 2\u03c3 \u00b7 math hf0.55",
+        "tf": "3m",
+        "rr": 4.0,
+        "math": {
+          "tag": "hf0.55",
+          "hf_max": 0.55,
+          "min_eff": null
+        },
+        "full": {
+          "verdict": "SURVIVES",
+          "n": 341,
+          "pnl": 12800.0,
+          "exp_r": 0.188,
+          "win_rate": null,
+          "oos_exp_r": 0.619,
+          "wf_green": 4,
+          "mc": 93.7
+        },
+        "last_90d": {
+          "verdict": "SURVIVES",
+          "n": 75,
+          "oos_exp_r": 0.731,
+          "wf_green": 4
+        },
+        "deep_gate": true,
+        "score": 14.505
+      },
+      "top5": [
+        {
+          "strategy": "bb_2+hf0.55",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math hf0.55",
+          "tf": "3m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.55",
+            "hf_max": 0.55,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 341,
+            "pnl": 12800.0,
+            "exp_r": 0.188,
+            "win_rate": null,
+            "oos_exp_r": 0.619,
+            "wf_green": 4,
+            "mc": 93.7
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 75,
+            "oos_exp_r": 0.731,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 14.505
+        },
+        {
+          "strategy": "bb_2+hf0.50",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math hf0.50",
+          "tf": "3m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.50",
+            "hf_max": 0.5,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 218,
+            "pnl": 14400.0,
+            "exp_r": 0.33,
+            "win_rate": null,
+            "oos_exp_r": 0.714,
+            "wf_green": 4,
+            "mc": 99.1
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 51,
+            "oos_exp_r": 0.471,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 14.386000000000001
+        },
+        {
+          "strategy": "bb_2+e0.35",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math e0.35",
+          "tf": "3m",
+          "rr": 4.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 263,
+            "pnl": 18400.0,
+            "exp_r": 0.35,
+            "win_rate": null,
+            "oos_exp_r": 0.628,
+            "wf_green": 4,
+            "mc": 99.6
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 55,
+            "oos_exp_r": 0.538,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 14.382000000000001
+        },
+        {
+          "strategy": "bb_1.5+hf0.50",
+          "family": "hedge",
+          "label": "BB 1.5\u03c3 \u00b7 math hf0.50",
+          "tf": "5m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.50",
+            "hf_max": 0.5,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 700,
+            "pnl": 25000.0,
+            "exp_r": 0.179,
+            "win_rate": null,
+            "oos_exp_r": 0.368,
+            "wf_green": 4,
+            "mc": 98.4
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 144,
+            "oos_exp_r": 0.765,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 14.308
+        },
+        {
+          "strategy": "bb_2+e0.35",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math e0.35",
+          "tf": "3m",
+          "rr": 3.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 269,
+            "pnl": 15000.0,
+            "exp_r": 0.279,
+            "win_rate": null,
+            "oos_exp_r": 0.591,
+            "wf_green": 4,
+            "mc": 99.6
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 57,
+            "oos_exp_r": 0.714,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 14.168000000000001
+        }
+      ],
+      "gated": [
+        {
+          "strategy": "bb_2+hf0.55",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math hf0.55",
+          "tf": "3m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.55",
+            "hf_max": 0.55,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 341,
+            "pnl": 12800.0,
+            "exp_r": 0.188,
+            "win_rate": null,
+            "oos_exp_r": 0.619,
+            "wf_green": 4,
+            "mc": 93.7
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 75,
+            "oos_exp_r": 0.731,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 14.505
+        },
+        {
+          "strategy": "bb_2+hf0.50",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math hf0.50",
+          "tf": "3m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.50",
+            "hf_max": 0.5,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 218,
+            "pnl": 14400.0,
+            "exp_r": 0.33,
+            "win_rate": null,
+            "oos_exp_r": 0.714,
+            "wf_green": 4,
+            "mc": 99.1
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 51,
+            "oos_exp_r": 0.471,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 14.386000000000001
+        },
+        {
+          "strategy": "bb_2+e0.35",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math e0.35",
+          "tf": "3m",
+          "rr": 4.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 263,
+            "pnl": 18400.0,
+            "exp_r": 0.35,
+            "win_rate": null,
+            "oos_exp_r": 0.628,
+            "wf_green": 4,
+            "mc": 99.6
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 55,
+            "oos_exp_r": 0.538,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 14.382000000000001
+        },
+        {
+          "strategy": "bb_1.5+hf0.50",
+          "family": "hedge",
+          "label": "BB 1.5\u03c3 \u00b7 math hf0.50",
+          "tf": "5m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.50",
+            "hf_max": 0.5,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 700,
+            "pnl": 25000.0,
+            "exp_r": 0.179,
+            "win_rate": null,
+            "oos_exp_r": 0.368,
+            "wf_green": 4,
+            "mc": 98.4
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 144,
+            "oos_exp_r": 0.765,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 14.308
+        },
+        {
+          "strategy": "bb_2+e0.35",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math e0.35",
+          "tf": "3m",
+          "rr": 3.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 269,
+            "pnl": 15000.0,
+            "exp_r": 0.279,
+            "win_rate": null,
+            "oos_exp_r": 0.591,
+            "wf_green": 4,
+            "mc": 99.6
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 57,
+            "oos_exp_r": 0.714,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 14.168000000000001
+        },
+        {
+          "strategy": "bb_2.5+e0.35",
+          "family": "hedge",
+          "label": "BB 2.5\u03c3 \u00b7 math e0.35",
+          "tf": "1m",
+          "rr": 3.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 104,
+            "pnl": 16800.0,
+            "exp_r": 0.808,
+            "win_rate": null,
+            "oos_exp_r": 0.6,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "FRAGILE",
+            "n": 20,
+            "oos_exp_r": 0.333,
+            "wf_green": 1
+          },
+          "deep_gate": true,
+          "score": 13.905000000000001
+        },
+        {
+          "strategy": "bb_2",
+          "family": "hedge",
+          "label": "BB 2\u03c3",
+          "tf": "3m",
+          "rr": 4.0,
+          "math": null,
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 710,
+            "pnl": 22000.0,
+            "exp_r": 0.155,
+            "win_rate": null,
+            "oos_exp_r": 0.344,
+            "wf_green": 4,
+            "mc": 97.3
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 154,
+            "oos_exp_r": 0.346,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 13.854
+        },
+        {
+          "strategy": "bb_2+hf0.55",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math hf0.55",
+          "tf": "3m",
+          "rr": 2.4,
+          "math": {
+            "tag": "hf0.55",
+            "hf_max": 0.55,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 353,
+            "pnl": 16440.0,
+            "exp_r": 0.233,
+            "win_rate": null,
+            "oos_exp_r": 0.372,
+            "wf_green": 4,
+            "mc": 99.9
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 78,
+            "oos_exp_r": 0.385,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 13.789000000000001
+        },
+        {
+          "strategy": "bb_2+hf0.55",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math hf0.55",
+          "tf": "3m",
+          "rr": 1.5,
+          "math": {
+            "tag": "hf0.55",
+            "hf_max": 0.55,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 355,
+            "pnl": 17000.0,
+            "exp_r": 0.239,
+            "win_rate": null,
+            "oos_exp_r": 0.364,
+            "wf_green": 4,
+            "mc": 100.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 79,
+            "oos_exp_r": 0.481,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 13.781
+        },
+        {
+          "strategy": "bb_2+hf0.55",
+          "family": "hedge",
+          "label": "BB 2\u03c3 \u00b7 math hf0.55",
+          "tf": "3m",
+          "rr": 3.0,
+          "math": {
+            "tag": "hf0.55",
+            "hf_max": 0.55,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 351,
+            "pnl": 10600.0,
+            "exp_r": 0.151,
+            "win_rate": null,
+            "oos_exp_r": 0.383,
+            "wf_green": 4,
+            "mc": 94.3
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 76,
+            "oos_exp_r": 0.538,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 13.584000000000001
+        }
+      ]
+    },
+    "UKOIL": {
+      "symbol": "UKOIL",
+      "live_brain": "cta_10_40",
+      "live_rr": 4.0,
+      "n_scored": 113,
+      "n_math": 240,
+      "n_gated": 76,
+      "winner": {
+        "strategy": "cta_10_40+hf0.55",
+        "family": "hedge",
+        "label": "CTA 10/40 \u00b7 math hf0.55",
+        "tf": "5m",
+        "rr": 4.0,
+        "math": {
+          "tag": "hf0.55",
+          "hf_max": 0.55,
+          "min_eff": null
+        },
+        "full": {
+          "verdict": "SURVIVES",
+          "n": 637,
+          "pnl": 28600.0,
+          "exp_r": 0.224,
+          "win_rate": null,
+          "oos_exp_r": 0.429,
+          "wf_green": 4,
+          "mc": 99.6
+        },
+        "last_90d": {
+          "verdict": "SURVIVES",
+          "n": 137,
+          "oos_exp_r": 0.667,
+          "wf_green": 4
+        },
+        "deep_gate": true,
+        "score": 14.644
+      },
+      "top5": [
+        {
+          "strategy": "cta_10_40+hf0.55",
+          "family": "hedge",
+          "label": "CTA 10/40 \u00b7 math hf0.55",
+          "tf": "5m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.55",
+            "hf_max": 0.55,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 637,
+            "pnl": 28600.0,
+            "exp_r": 0.224,
+            "win_rate": null,
+            "oos_exp_r": 0.429,
+            "wf_green": 4,
+            "mc": 99.6
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 137,
+            "oos_exp_r": 0.667,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 14.644
+        },
+        {
+          "strategy": "cta_10_40",
+          "family": "hedge",
+          "label": "CTA 10/40",
+          "tf": "5m",
+          "rr": 4.0,
+          "math": null,
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 1052,
+            "pnl": 38600.0,
+            "exp_r": 0.183,
+            "win_rate": null,
+            "oos_exp_r": 0.378,
+            "wf_green": 4,
+            "mc": 99.9
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 224,
+            "oos_exp_r": 0.689,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 14.085
+        },
+        {
+          "strategy": "cta_12_26+hf0.45_e0.30",
+          "family": "hedge",
+          "label": "CTA 12/26 \u00b7 math hf0.45_e0.30",
+          "tf": "5m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.45_e0.30",
+            "hf_max": 0.45,
+            "min_eff": 0.3
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 247,
+            "pnl": 12600.0,
+            "exp_r": 0.255,
+            "win_rate": null,
+            "oos_exp_r": 0.513,
+            "wf_green": 3,
+            "mc": 97.3
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 53,
+            "oos_exp_r": 0.5,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 13.277000000000001
+        },
+        {
+          "strategy": "cta_10_40+hf0.45",
+          "family": "hedge",
+          "label": "CTA 10/40 \u00b7 math hf0.45",
+          "tf": "5m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.45",
+            "hf_max": 0.45,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 281,
+            "pnl": 10800.0,
+            "exp_r": 0.192,
+            "win_rate": null,
+            "oos_exp_r": 0.359,
+            "wf_green": 4,
+            "mc": 92.5
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 66,
+            "oos_exp_r": 0.389,
+            "wf_green": 2
+          },
+          "deep_gate": true,
+          "score": 13.047
+        },
+        {
+          "strategy": "tl+e0.35",
+          "family": "retail",
+          "label": "Trendline \u00b7 math e0.35",
+          "tf": "15m",
+          "rr": 3.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 297,
+            "pnl": 15000.0,
+            "exp_r": 0.253,
+            "win_rate": null,
+            "oos_exp_r": 0.362,
+            "wf_green": 4,
+            "mc": 98.7
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 60,
+            "oos_exp_r": 0.067,
+            "wf_green": 2
+          },
+          "deep_gate": true,
+          "score": 12.981
+        }
+      ],
+      "gated": [
+        {
+          "strategy": "cta_10_40+hf0.55",
+          "family": "hedge",
+          "label": "CTA 10/40 \u00b7 math hf0.55",
+          "tf": "5m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.55",
+            "hf_max": 0.55,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 637,
+            "pnl": 28600.0,
+            "exp_r": 0.224,
+            "win_rate": null,
+            "oos_exp_r": 0.429,
+            "wf_green": 4,
+            "mc": 99.6
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 137,
+            "oos_exp_r": 0.667,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 14.644
+        },
+        {
+          "strategy": "cta_10_40",
+          "family": "hedge",
+          "label": "CTA 10/40",
+          "tf": "5m",
+          "rr": 4.0,
+          "math": null,
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 1052,
+            "pnl": 38600.0,
+            "exp_r": 0.183,
+            "win_rate": null,
+            "oos_exp_r": 0.378,
+            "wf_green": 4,
+            "mc": 99.9
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 224,
+            "oos_exp_r": 0.689,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 14.085
+        },
+        {
+          "strategy": "cta_12_26+hf0.45_e0.30",
+          "family": "hedge",
+          "label": "CTA 12/26 \u00b7 math hf0.45_e0.30",
+          "tf": "5m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.45_e0.30",
+            "hf_max": 0.45,
+            "min_eff": 0.3
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 247,
+            "pnl": 12600.0,
+            "exp_r": 0.255,
+            "win_rate": null,
+            "oos_exp_r": 0.513,
+            "wf_green": 3,
+            "mc": 97.3
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 53,
+            "oos_exp_r": 0.5,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 13.277000000000001
+        },
+        {
+          "strategy": "cta_10_40+hf0.45",
+          "family": "hedge",
+          "label": "CTA 10/40 \u00b7 math hf0.45",
+          "tf": "5m",
+          "rr": 4.0,
+          "math": {
+            "tag": "hf0.45",
+            "hf_max": 0.45,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 281,
+            "pnl": 10800.0,
+            "exp_r": 0.192,
+            "win_rate": null,
+            "oos_exp_r": 0.359,
+            "wf_green": 4,
+            "mc": 92.5
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 66,
+            "oos_exp_r": 0.389,
+            "wf_green": 2
+          },
+          "deep_gate": true,
+          "score": 13.047
+        },
+        {
+          "strategy": "tl+e0.35",
+          "family": "retail",
+          "label": "Trendline \u00b7 math e0.35",
+          "tf": "15m",
+          "rr": 3.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 297,
+            "pnl": 15000.0,
+            "exp_r": 0.253,
+            "win_rate": null,
+            "oos_exp_r": 0.362,
+            "wf_green": 4,
+            "mc": 98.7
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 60,
+            "oos_exp_r": 0.067,
+            "wf_green": 2
+          },
+          "deep_gate": true,
+          "score": 12.981
+        },
+        {
+          "strategy": "tl+e0.35",
+          "family": "retail",
+          "label": "Trendline \u00b7 math e0.35",
+          "tf": "15m",
+          "rr": 4.0,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 285,
+            "pnl": 12000.0,
+            "exp_r": 0.211,
+            "win_rate": null,
+            "oos_exp_r": 0.5,
+            "wf_green": 3,
+            "mc": 93.7
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 58,
+            "oos_exp_r": 0.333,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 12.941
+        },
+        {
+          "strategy": "cta_10_40+hf0.45",
+          "family": "hedge",
+          "label": "CTA 10/40 \u00b7 math hf0.45",
+          "tf": "5m",
+          "rr": 3.0,
+          "math": {
+            "tag": "hf0.45",
+            "hf_max": 0.45,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 286,
+            "pnl": 10000.0,
+            "exp_r": 0.175,
+            "win_rate": null,
+            "oos_exp_r": 0.29,
+            "wf_green": 4,
+            "mc": 94.7
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 67,
+            "oos_exp_r": 0.556,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 12.823
+        },
+        {
+          "strategy": "tsmom+hf0.45",
+          "family": "hedge",
+          "label": "TSM 12-1 \u00b7 math hf0.45",
+          "tf": "5m",
+          "rr": 2.4,
+          "math": {
+            "tag": "hf0.45",
+            "hf_max": 0.45,
+            "min_eff": null
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 146,
+            "pnl": 9560.0,
+            "exp_r": 0.327,
+            "win_rate": null,
+            "oos_exp_r": 0.53,
+            "wf_green": 3,
+            "mc": 99.0
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 25,
+            "oos_exp_r": 0.7,
+            "wf_green": 4
+          },
+          "deep_gate": true,
+          "score": 12.814
+        },
+        {
+          "strategy": "tsmom+e0.35",
+          "family": "hedge",
+          "label": "TSM 12-1 \u00b7 math e0.35",
+          "tf": "5m",
+          "rr": 2.4,
+          "math": {
+            "tag": "e0.35",
+            "hf_max": null,
+            "min_eff": 0.35
+          },
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 434,
+            "pnl": 13840.0,
+            "exp_r": 0.159,
+            "win_rate": null,
+            "oos_exp_r": 0.104,
+            "wf_green": 3,
+            "mc": 97.8
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 85,
+            "oos_exp_r": 0.062,
+            "wf_green": 3
+          },
+          "deep_gate": true,
+          "score": 12.754000000000001
+        },
+        {
+          "strategy": "tl",
+          "family": "retail",
+          "label": "Trendline",
+          "tf": "15m",
+          "rr": 3.0,
+          "math": null,
+          "full": {
+            "verdict": "SURVIVES",
+            "n": 320,
+            "pnl": 12800.0,
+            "exp_r": 0.2,
+            "win_rate": null,
+            "oos_exp_r": 0.278,
+            "wf_green": 4,
+            "mc": 97.5
+          },
+          "last_90d": {
+            "verdict": "SURVIVES",
+            "n": 61,
+            "oos_exp_r": 0.067,
+            "wf_green": 2
+          },
+          "deep_gate": true,
+          "score": 12.395
+        }
+      ]
+    }
+  }
+}

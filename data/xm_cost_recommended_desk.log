@@ -1,0 +1,45 @@
+=== Recommended desk validation · $100.0/R · XM spreads ===
+
+ETHUSD session_mix tf=5m RR=4.0 mult=8.0 off=False
+  1y $1,925 E[R]=+0.047 n=406 spR=0.122 SOFT wf=2/4 oosE[R]=-0.0466
+    7d $      -338 E[R]=-1.125 n=3
+   30d $       712 E[R]=+1.018 n=7
+   90d $       450 E[R]=+0.125 n=36
+  180d $     1,805 E[R]=+0.160 n=113
+    3y $     3,812 E[R]=+0.035 n=1093
+
+GOLD entropy_tod tf=5m RR=4.0 mult=10.0 off=True
+  1y $2,528 E[R]=+0.665 n=38 spR=0.045 PASS wf=3/4 oosE[R]=0.7706
+    7d $         0 E[R]=+0.000 n=0
+   30d $       184 E[R]=+0.612 n=3
+   90d $       451 E[R]=+0.451 n=10
+  180d $       -71 E[R]=-0.035 n=20
+    3y $     4,078 E[R]=+0.420 n=97
+
+NAS100 volmom tf=15m RR=4.0 mult=8.0 off=False
+  1y $6,367 E[R]=+0.172 n=369 spR=0.047 PASS wf=4/4 oosE[R]=0.0509
+    7d $       278 E[R]=+0.398 n=7
+   30d $      -700 E[R]=-0.226 n=31
+   90d $     1,314 E[R]=+0.122 n=108
+  180d $     2,017 E[R]=+0.100 n=202
+    3y $     4,105 E[R]=+0.037 n=1117
+
+USDJPY circadian_kalman_z tf=5m RR=2.0 mult=10.0 off=False
+  1y $2,187 E[R]=+0.050 n=434 spR=0.097 PASS wf=3/4 oosE[R]=0.1823
+    7d $        50 E[R]=+0.100 n=5
+   30d $       771 E[R]=+0.335 n=23
+   90d $     1,263 E[R]=+0.194 n=65
+  180d $     3,374 E[R]=+0.170 n=199
+    3y $    -4,619 E[R]=-0.031 n=1477
+
+UKOIL session_mix tf=5m RR=4.0 mult=1.0 off=True
+  1y $1,707 E[R]=+0.029 n=590 spR=0.166 PASS wf=3/4 oosE[R]=0.1333
+    7d $       897 E[R]=+0.640 n=14
+   30d $       341 E[R]=+0.056 n=61
+   90d $     2,492 E[R]=+0.133 n=188
+  180d $     2,690 E[R]=+0.076 n=352
+    3y $   -23,802 E[R]=-0.140 n=1702
+
+=== DESK recommended ===
+7d $887 · 30d $1,308 · 90d $5,969 · 180d $9,815 · 1y $14,714 · 3y $-16,425
+wrote /app/data/xm_cost_recommended_desk.json

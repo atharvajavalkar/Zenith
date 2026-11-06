@@ -1,0 +1,113 @@
+=== Omni-horizon adaptive router (XM spreads) ===
+Objective: maximize multi-window green count, not 1y PnL alone
+
+
+######## ETHUSD @ 5m · 5.0y ########
+  BEST green=5/6 all_six=False 1y=PASS $1097.29 · omni|f120|m400|s600|e0.55|h25|a2|sl3.0|rr3.0|g3
+  usage={'static': 16, 'session_mix': 3874, 'session_mix_strict': 1893, 'circadian': 365, 'circadian_tight': 0, 'entropy': 0, 'entropy_snr': 0, 'ou_fade': 0, 'vol_clock': 3, 'weekday': 11, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## ETHUSD @ 15m · 5.0y ########
+  BEST green=4/6 all_six=False 1y=PASS $1317.09 · omni|f120|m240|s600|e0.52|h25|a2|sl3.0|rr4.0|g3
+  usage={'static': 52, 'session_mix': 3933, 'session_mix_strict': 1192, 'circadian': 120, 'circadian_tight': 0, 'entropy': 0, 'entropy_snr': 0, 'ou_fade': 0, 'vol_clock': 0, 'weekday': 0, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## ETHUSD @ 3m · 3.0y ########
+  BEST green=5/6 all_six=False 1y=SOFT $1358.05 · omni|f80|m240|s600|e0.55|h25|a2|sl3.0|rr3.0|g3
+  usage={'static': 25, 'session_mix': 4191, 'session_mix_strict': 2189, 'circadian': 410, 'circadian_tight': 0, 'entropy': 0, 'entropy_snr': 0, 'ou_fade': 0, 'vol_clock': 11, 'weekday': 0, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## BTCUSD @ 5m · 5.0y ########
+  BEST green=6/6 all_six=True 1y=PASS $1910.48 · omni|f80|m240|s600|e0.52|h25|a2|sl2.0|rr3.0|g2
+  usage={'static': 81, 'session_mix': 13122, 'session_mix_strict': 4504, 'circadian': 902, 'circadian_tight': 0, 'entropy': 3, 'entropy_snr': 0, 'ou_fade': 0, 'vol_clock': 0, 'weekday': 0, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## BTCUSD @ 15m · 5.0y ########
+  BEST green=3/6 all_six=False 1y=FAIL $633.08 · omni|f120|m240|s600|e0.55|h25|a3|sl2.0|rr3.0|g2
+  usage={'static': 0, 'session_mix': 19, 'session_mix_strict': 22, 'circadian': 0, 'circadian_tight': 0, 'entropy': 0, 'entropy_snr': 0, 'ou_fade': 0, 'vol_clock': 1, 'weekday': 15, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## BTCUSD @ 3m · 3.0y ########
+  BEST green=6/6 all_six=True 1y=SOFT $234.05 · omni|f120|m240|s600|e0.55|h25|a2|sl2.5|rr3.0|g2
+  usage={'static': 20, 'session_mix': 5528, 'session_mix_strict': 4217, 'circadian': 881, 'circadian_tight': 0, 'entropy': 0, 'entropy_snr': 0, 'ou_fade': 0, 'vol_clock': 4, 'weekday': 17, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## GOLD @ 5m · 5.0y ########
+  BEST green=6/6 all_six=True 1y=PASS $1433.09 · omni|f80|m400|s600|e0.55|h25|a2|sl2.0|rr3.0|g2
+  usage={'static': 76, 'session_mix': 543, 'session_mix_strict': 162, 'circadian': 158, 'circadian_tight': 0, 'entropy': 91, 'entropy_snr': 0, 'ou_fade': 1, 'vol_clock': 1, 'weekday': 7, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## GOLD @ 15m · 5.0y ########
+  BEST green=3/6 all_six=False 1y=FAIL $1953.36 · omni|f80|m400|s600|e0.52|h25|a2|sl3.0|rr4.0|g2
+  usage={'static': 61, 'session_mix': 122, 'session_mix_strict': 31, 'circadian': 9, 'circadian_tight': 0, 'entropy': 16, 'entropy_snr': 0, 'ou_fade': 0, 'vol_clock': 42, 'weekday': 0, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## GOLD @ 3m · 3.0y ########
+  BEST green=6/6 all_six=True 1y=SOFT $3656.07 · omni|f120|m240|s600|e0.52|h25|a2|sl2.0|rr3.0|g2
+  usage={'static': 98, 'session_mix': 3031, 'session_mix_strict': 475, 'circadian': 1222, 'circadian_tight': 0, 'entropy': 20, 'entropy_snr': 1, 'ou_fade': 0, 'vol_clock': 10, 'weekday': 5, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## NAS100 @ 5m · 5.0y ########
+  BEST green=3/6 all_six=False 1y=FAIL $175.58 · omni|f80|m240|s600|e0.55|h25|a2|sl3.0|rr3.0|g2
+  usage={'static': 131, 'session_mix': 188, 'session_mix_strict': 11, 'circadian': 83, 'circadian_tight': 0, 'entropy': 146, 'entropy_snr': 2, 'ou_fade': 0, 'vol_clock': 22, 'weekday': 14, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## NAS100 @ 15m · 5.0y ########
+  BEST green=3/6 all_six=False 1y=FAIL $579.19 · omni|f120|m240|s600|e0.55|h25|a2|sl2.5|rr4.0|g2
+  usage={'static': 4, 'session_mix': 130, 'session_mix_strict': 17, 'circadian': 3, 'circadian_tight': 0, 'entropy': 20, 'entropy_snr': 0, 'ou_fade': 0, 'vol_clock': 5, 'weekday': 1, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## NAS100 @ 3m · 3.0y ########
+  BEST green=5/6 all_six=False 1y=PASS $993.91 · omni|f80|m240|s600|e0.55|h25|a2|sl2.0|rr4.0|g2
+  usage={'static': 115, 'session_mix': 1246, 'session_mix_strict': 377, 'circadian': 179, 'circadian_tight': 0, 'entropy': 89, 'entropy_snr': 11, 'ou_fade': 0, 'vol_clock': 24, 'weekday': 14, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## USDJPY @ 5m · 5.0y ########
+  BEST green=4/6 all_six=False 1y=SOFT $2328.29 · omni|f80|m240|s600|e0.55|h25|a2|sl3.0|rr3.0|g2
+  usage={'static': 82, 'session_mix': 1959, 'session_mix_strict': 420, 'circadian': 266, 'circadian_tight': 0, 'entropy': 12, 'entropy_snr': 0, 'ou_fade': 0, 'vol_clock': 0, 'weekday': 10, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## USDJPY @ 15m · 5.0y ########
+  BEST green=5/6 all_six=False 1y=PASS $617.47 · omni|f120|m400|s600|e0.52|h25|a2|sl3.0|rr3.0|g3
+  usage={'static': 16, 'session_mix': 1011, 'session_mix_strict': 353, 'circadian': 57, 'circadian_tight': 0, 'entropy': 7, 'entropy_snr': 0, 'ou_fade': 0, 'vol_clock': 2, 'weekday': 0, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## USDJPY @ 3m · 3.0y ########
+  BEST green=4/6 all_six=False 1y=PASS $87.72 · omni|f80|m240|s600|e0.52|h25|a2|sl2.5|rr3.0|g2
+  usage={'static': 159, 'session_mix': 5840, 'session_mix_strict': 2562, 'circadian': 1251, 'circadian_tight': 0, 'entropy': 0, 'entropy_snr': 0, 'ou_fade': 0, 'vol_clock': 1, 'weekday': 1, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## AUDUSD @ 5m · 5.0y ########
+  BEST green=4/6 all_six=False 1y=PASS $461.62 · omni|f80|m240|s600|e0.52|h25|a2|sl3.0|rr4.0|g2
+  usage={'static': 113, 'session_mix': 5473, 'session_mix_strict': 2008, 'circadian': 520, 'circadian_tight': 0, 'entropy': 0, 'entropy_snr': 0, 'ou_fade': 0, 'vol_clock': 6, 'weekday': 37, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## AUDUSD @ 15m · 5.0y ########
+  BEST green=2/6 all_six=False 1y=FAIL $1410.29 · omni|f80|m240|s600|e0.52|h25|a2|sl3.0|rr4.0|g2
+  usage={'static': 50, 'session_mix': 473, 'session_mix_strict': 171, 'circadian': 8, 'circadian_tight': 0, 'entropy': 19, 'entropy_snr': 0, 'ou_fade': 0, 'vol_clock': 2, 'weekday': 2, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## AUDUSD @ 3m · 3.0y ########
+  BEST green=4/6 all_six=False 1y=FAIL $920.0 · omni|f120|m240|s600|e0.52|h25|a3|sl2.0|rr3.0|g2
+  usage={'static': 90, 'session_mix': 207, 'session_mix_strict': 105, 'circadian': 169, 'circadian_tight': 0, 'entropy': 0, 'entropy_snr': 0, 'ou_fade': 0, 'vol_clock': 3, 'weekday': 0, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## USDCHF @ 5m · 5.0y ########
+  BEST green=4/6 all_six=False 1y=FAIL $270.0 · omni|f120|m240|s600|e0.55|h25|a2|sl2.0|rr3.0|g2
+  usage={'static': 43, 'session_mix': 1952, 'session_mix_strict': 512, 'circadian': 215, 'circadian_tight': 0, 'entropy': 0, 'entropy_snr': 0, 'ou_fade': 0, 'vol_clock': 0, 'weekday': 16, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## USDCHF @ 15m · 5.0y ########
+  BEST green=4/6 all_six=False 1y=SOFT $1082.63 · omni|f120|m240|s600|e0.52|h25|a2|sl3.0|rr4.0|g2
+  usage={'static': 17, 'session_mix': 1265, 'session_mix_strict': 460, 'circadian': 29, 'circadian_tight': 0, 'entropy': 10, 'entropy_snr': 0, 'ou_fade': 0, 'vol_clock': 0, 'weekday': 0, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## USDCHF @ 3m · 3.0y ########
+  BEST green=4/6 all_six=False 1y=FAIL $-2320.0 · omni|f120|m240|s600|e0.52|h25|a2|sl2.0|rr3.0|g2
+  usage={'static': 38, 'session_mix': 4994, 'session_mix_strict': 2885, 'circadian': 1608, 'circadian_tight': 4, 'entropy': 0, 'entropy_snr': 0, 'ou_fade': 0, 'vol_clock': 3, 'weekday': 0, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## UKOIL @ 5m · 5.0y ########
+  BEST green=3/6 all_six=False 1y=FAIL $1137.21 · omni|f120|m400|s600|e0.55|h25|a2|sl3.0|rr4.0|g2
+  usage={'static': 72, 'session_mix': 142, 'session_mix_strict': 2, 'circadian': 63, 'circadian_tight': 0, 'entropy': 149, 'entropy_snr': 0, 'ou_fade': 0, 'vol_clock': 14, 'weekday': 11, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## UKOIL @ 15m · 5.0y ########
+  BEST green=1/6 all_six=False 1y=FAIL $108.26 · omni|f80|m240|s600|e0.55|h25|a2|sl2.5|rr3.0|g2
+  usage={'static': 9, 'session_mix': 11, 'session_mix_strict': 1, 'circadian': 0, 'circadian_tight': 0, 'entropy': 27, 'entropy_snr': 0, 'ou_fade': 0, 'vol_clock': 12, 'weekday': 1, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+######## UKOIL @ 3m · 3.0y ########
+  BEST green=6/6 all_six=True 1y=PASS $1152.28 · omni|f120|m240|s600|e0.52|h25|a2|sl2.0|rr3.0|g2
+  usage={'static': 115, 'session_mix': 1419, 'session_mix_strict': 122, 'circadian': 1021, 'circadian_tight': 0, 'entropy': 38, 'entropy_snr': 38, 'ou_fade': 0, 'vol_clock': 10, 'weekday': 1, 'volmom': 0, 'snr': 0, 'kalman_fade': 0}
+
+DONE · 1956.1s · all_six=5/24
+  GOLD    3m  green=6/6 all=True 1y=$3656.07 30d=$1046.93
+  BTCUSD  5m  green=6/6 all=True 1y=$1910.48 30d=$2392.71
+  GOLD    5m  green=6/6 all=True 1y=$1433.09 30d=$351.28
+  UKOIL   3m  green=6/6 all=True 1y=$1152.28 30d=$262.92
+  BTCUSD  3m  green=6/6 all=True 1y=$234.05 30d=$562.5
+  ETHUSD  3m  green=5/6 all=False 1y=$1358.05 30d=$412.5
+  ETHUSD  5m  green=5/6 all=False 1y=$1097.29 30d=$1100.0
+  NAS100  3m  green=5/6 all=False 1y=$993.91 30d=$536.83
+  USDJPY  15m green=5/6 all=False 1y=$617.47 30d=$142.67
+  USDJPY  5m  green=4/6 all=False 1y=$2328.29 30d=$250.0
+  ETHUSD  15m green=4/6 all=False 1y=$1317.09 30d=$662.5
+  USDCHF  15m green=4/6 all=False 1y=$1082.63 30d=$670.0

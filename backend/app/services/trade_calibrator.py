@@ -11,6 +11,7 @@ from typing import Any, Optional
 from sqlalchemy import select
 
 from analysis.adaptive_guard import get_state, rebuild
+from analysis.concept_engine import get_state as concept_get_state
 from analysis.trade_learning import (
     LogisticCalibrator,
     analyze_patterns,
@@ -58,6 +59,14 @@ class TradeCalibrator:
         try:
             row_dicts = rows if rows is not None else await self.load_all_rows()
             closed = [d for d in row_dicts if d.get("status") == "closed"]
+            # Research / gates learn only from the current desk session (new brains)
+            try:
+                from app.services.desk_epoch import filter_rows_since_epoch
+
+                closed = filter_rows_since_epoch(closed)
+                row_dicts = filter_rows_since_epoch(row_dicts)
+            except Exception:
+                pass
 
             if ADAPTIVE_LEARNING:
                 rebuild(closed, loss_pnl_protect=LOSS_PNL_PROTECT, mc_floor_base=MC_FLOOR_BASE)
@@ -97,6 +106,27 @@ class TradeCalibrator:
             model = self._model
 
         features = extract_features_from_signal(sig, trade_sig)
+        features["exec_tf"] = trade_sig.get("EXEC_TF") or sig.get("EXEC_TF") or features.get("exec_tf")
+        features["EXEC_TF"] = features["exec_tf"]
+        features["mtf_independent"] = bool(
+            trade_sig.get("MTF_INDEPENDENT") or sig.get("MTF_INDEPENDENT")
+        )
+        sym = str(
+            trade_sig.get("SYMBOL")
+            or trade_sig.get("INSTRUMENT")
+            or sig.get("SYMBOL")
+            or features.get("symbol")
+            or "GOLD"
+        ).upper()
+        features["symbol"] = sym
+        features["SYMBOL"] = sym
+        try:
+            from analysis.instrument_rl import get_active_arm, overlays_for
+
+            features["rl_arm"] = get_active_arm(sym)
+            features["rl_overlays"] = overlays_for(sym)
+        except Exception:
+            pass
         if not ML_GATE_ENABLED and not ADAPTIVE_LEARNING:
             return True, 0.55, "Gates off", features
 
@@ -111,6 +141,27 @@ class TradeCalibrator:
         if stale:
             await self.refresh(force=True)
         markov_data = await markov_cache.get_insights()
+        try:
+            from analysis.instrument_rl import get_state as rl_state
+
+            instrument_rl = rl_state()
+        except Exception:
+            instrument_rl = {"instruments": {}, "total_updates": 0}
+        try:
+            from analysis.minute_learn import get_minute_state
+            from analysis.correlation_matrix import get_correlation_state
+
+            minute_learn = get_minute_state()
+            correlation = get_correlation_state()
+        except Exception:
+            minute_learn = {}
+            correlation = {}
+        try:
+            from analysis.candle_edge import snapshot as candle_edge_snap
+
+            candle_edge = candle_edge_snap()
+        except Exception:
+            candle_edge = {"symbols": []}
         async with self._lock:
             return {
                 "patterns": self._patterns,
@@ -119,10 +170,24 @@ class TradeCalibrator:
                 "last_error": self._last_error,
                 "closes_learned": self._closes_learned,
                 "adaptive": get_state(),
+                "concepts": concept_get_state(),
+                "instrument_rl": instrument_rl,
+                "minute_learn": minute_learn,
+                "candle_edge": candle_edge,
+                "correlation": {
+                    "pairs": correlation.get("pairs"),
+                    "leaders": correlation.get("leaders"),
+                    "updated_at": correlation.get("updated_at"),
+                },
                 "gates": {
                     "ml_gate_enabled": ML_GATE_ENABLED,
                     "bias_gate_enabled": BIAS_GATE_ENABLED,
                     "adaptive_learning": ADAPTIVE_LEARNING,
+                    "instrument_rl": True,
+                    "minute_candle_learn": True,
+                    "candle_walk_forward": True,
+                    "frvp_poc": True,
+                    "correlation": True,
                 },
                 "markov": markov_data.get("markov"),
                 "markov_updated_at": markov_data.get("updated_at"),

@@ -1,0 +1,3267 @@
+{
+  "generated_at": "2026-08-06T14:22:27.494003+00:00",
+  "research_only": true,
+  "symbol": "GOLD",
+  "risk_usd": 200.0,
+  "manual_rules": {
+    "zone": "15m bullish/bearish OB (optional OB+FVG)",
+    "trigger": "wick pierce beyond zone + reclaim close > mid",
+    "no_ema_bias": true,
+    "sl": "under/over sweep wick + pad",
+    "tp": "fixed RR or opposing OB"
+  },
+  "pa_live": {
+    "liq_tf": "3m",
+    "bias_a": "15m",
+    "bias_b": "5m",
+    "entry_tf": "1m",
+    "rr": 2.0
+  },
+  "windows": [
+    {
+      "label": "2m",
+      "days": 61,
+      "start": "2026-05-23 23:55:00",
+      "end": "2026-07-23 23:55:00",
+      "arms": [
+        {
+          "name": "pa_live_liq3m_bias15+5_entry1m_rr2",
+          "liq_tf": "3m",
+          "bias_a": "15m",
+          "bias_b": "5m",
+          "entry_tf": "1m",
+          "rr": 2.0,
+          "family": "pa_liq_engulf",
+          "trades": 212,
+          "pnl": 11000.0,
+          "exp_r": 0.2594,
+          "win_rate": 42.0,
+          "verdict": "SURVIVES",
+          "wf_green": 4,
+          "wf_n": 4,
+          "mc_prob_profit": 99.6,
+          "equity": {
+            "n": 212,
+            "final_pnl": 11000.0,
+            "max_dd_usd": 1800.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 28,
+              "cum_pnl": 400.0,
+              "at": "2026-05-27 13:07:00",
+              "days_from_start": 3.55
+            },
+            "be_after_dd": {
+              "trade_n": 27,
+              "cum_pnl": 0.0,
+              "at": "2026-05-27 10:46:00",
+              "days_from_start": 3.45
+            },
+            "profit_after_be": {
+              "trade_n": 28,
+              "cum_pnl": 400.0,
+              "at": "2026-05-27 13:07:00",
+              "days_from_start": 3.55
+            },
+            "locked_be": {
+              "trade_n": 44,
+              "cum_pnl": 200.0,
+              "at": "2026-06-01 03:06:00",
+              "days_from_start": 8.13,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 212,
+              "pnl": 11000.0,
+              "exp_r": 0.2594
+            },
+            "2_oos70": {
+              "n": 61,
+              "pnl": 2800.0,
+              "exp_r": 0.2295
+            },
+            "3_wf_fold_1": {
+              "n": 19,
+              "pnl": 2200.0,
+              "exp_r": 0.5789
+            },
+            "4_wf_fold_2": {
+              "n": 34,
+              "pnl": 1600.0,
+              "exp_r": 0.2353
+            },
+            "5_wf_fold_3": {
+              "n": 31,
+              "pnl": 2200.0,
+              "exp_r": 0.3548
+            },
+            "6_wf_fold_4": {
+              "n": 30,
+              "pnl": 600.0,
+              "exp_r": 0.1
+            },
+            "7_torture_spread": {
+              "n": 212,
+              "pnl": 4640.0,
+              "exp_r": 0.1094
+            },
+            "8_torture_skip": {
+              "n": 139,
+              "pnl": 5800.0,
+              "exp_r": 0.2086
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_ob_5m_rr2",
+          "family": "demand_sweep_ob",
+          "entry_tf": "5m",
+          "zone_mode": "ob",
+          "tp_mode": "rr2",
+          "rr": 2.0,
+          "trades": 174,
+          "pnl": 6000.0,
+          "exp_r": 0.1724,
+          "win_rate": 39.1,
+          "verdict": "SURVIVES",
+          "wf_green": 3,
+          "wf_n": 4,
+          "mc_prob_profit": 93.5,
+          "equity": {
+            "n": 174,
+            "final_pnl": 6000.0,
+            "max_dd_usd": 2200.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 4,
+              "cum_pnl": 400.0,
+              "at": "2026-05-25 23:30:00",
+              "days_from_start": 1.98
+            },
+            "be_after_dd": {
+              "trade_n": 3,
+              "cum_pnl": 0.0,
+              "at": "2026-05-25 17:45:00",
+              "days_from_start": 1.74
+            },
+            "profit_after_be": {
+              "trade_n": 4,
+              "cum_pnl": 400.0,
+              "at": "2026-05-25 23:30:00",
+              "days_from_start": 1.98
+            },
+            "locked_be": {
+              "trade_n": 23,
+              "cum_pnl": 200.0,
+              "at": "2026-06-02 00:30:00",
+              "days_from_start": 9.02,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 174,
+              "pnl": 6000.0,
+              "exp_r": 0.1724
+            },
+            "2_oos70": {
+              "n": 58,
+              "pnl": 4600.0,
+              "exp_r": 0.3966
+            },
+            "3_wf_fold_1": {
+              "n": 22,
+              "pnl": 1000.0,
+              "exp_r": 0.2273
+            },
+            "4_wf_fold_2": {
+              "n": 35,
+              "pnl": -1000.0,
+              "exp_r": -0.1429
+            },
+            "5_wf_fold_3": {
+              "n": 32,
+              "pnl": 2000.0,
+              "exp_r": 0.3125
+            },
+            "6_wf_fold_4": {
+              "n": 26,
+              "pnl": 2600.0,
+              "exp_r": 0.5
+            },
+            "7_torture_spread": {
+              "n": 174,
+              "pnl": 780.0,
+              "exp_r": 0.0224
+            },
+            "8_torture_skip": {
+              "n": 112,
+              "pnl": 2800.0,
+              "exp_r": 0.125
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_ob_5m_struct",
+          "family": "demand_sweep_ob",
+          "entry_tf": "5m",
+          "zone_mode": "ob",
+          "tp_mode": "struct",
+          "rr": 2.0,
+          "trades": 171,
+          "pnl": 4265.58,
+          "exp_r": 0.1247,
+          "win_rate": 35.7,
+          "verdict": "SURVIVES",
+          "wf_green": 3,
+          "wf_n": 4,
+          "mc_prob_profit": 85.5,
+          "equity": {
+            "n": 171,
+            "final_pnl": 4265.54,
+            "max_dd_usd": 2614.16,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 27,
+              "cum_pnl": 254.11,
+              "at": "2026-06-03 01:00:00",
+              "days_from_start": 10.05
+            },
+            "be_after_dd": {
+              "trade_n": 27,
+              "cum_pnl": 254.11,
+              "at": "2026-06-03 01:00:00",
+              "days_from_start": 10.05
+            },
+            "profit_after_be": {
+              "trade_n": 28,
+              "cum_pnl": 54.11,
+              "at": "2026-06-03 05:30:00",
+              "days_from_start": 10.23
+            },
+            "locked_be": {
+              "trade_n": 115,
+              "cum_pnl": 338.73,
+              "at": "2026-07-03 14:05:00",
+              "days_from_start": 40.59,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 171,
+              "pnl": 4265.58,
+              "exp_r": 0.1247
+            },
+            "2_oos70": {
+              "n": 57,
+              "pnl": 4326.84,
+              "exp_r": 0.3795
+            },
+            "3_wf_fold_1": {
+              "n": 22,
+              "pnl": 632.48,
+              "exp_r": 0.1437
+            },
+            "4_wf_fold_2": {
+              "n": 34,
+              "pnl": -400.0,
+              "exp_r": -0.0588
+            },
+            "5_wf_fold_3": {
+              "n": 31,
+              "pnl": 1390.82,
+              "exp_r": 0.2243
+            },
+            "6_wf_fold_4": {
+              "n": 26,
+              "pnl": 2936.02,
+              "exp_r": 0.5646
+            },
+            "7_torture_spread": {
+              "n": 171,
+              "pnl": -864.42,
+              "exp_r": -0.0253
+            },
+            "8_torture_skip": {
+              "n": 109,
+              "pnl": 116.28,
+              "exp_r": 0.0053
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_obfvg_5m_rr2",
+          "family": "demand_sweep_ob",
+          "entry_tf": "5m",
+          "zone_mode": "both",
+          "tp_mode": "rr2",
+          "rr": 2.0,
+          "trades": 97,
+          "pnl": 5800.0,
+          "exp_r": 0.299,
+          "win_rate": 43.3,
+          "verdict": "SURVIVES",
+          "wf_green": 4,
+          "wf_n": 4,
+          "mc_prob_profit": 97.2,
+          "equity": {
+            "n": 97,
+            "final_pnl": 5800.0,
+            "max_dd_usd": 1600.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 2,
+              "cum_pnl": 200.0,
+              "at": "2026-05-26 00:15:00",
+              "days_from_start": 2.01
+            },
+            "be_after_dd": {
+              "trade_n": 2,
+              "cum_pnl": 200.0,
+              "at": "2026-05-26 00:15:00",
+              "days_from_start": 2.01
+            },
+            "profit_after_be": {
+              "trade_n": 11,
+              "cum_pnl": 200.0,
+              "at": "2026-05-29 09:45:00",
+              "days_from_start": 5.41
+            },
+            "locked_be": {
+              "trade_n": 11,
+              "cum_pnl": 200.0,
+              "at": "2026-05-29 09:45:00",
+              "days_from_start": 5.41,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 97,
+              "pnl": 5800.0,
+              "exp_r": 0.299
+            },
+            "2_oos70": {
+              "n": 34,
+              "pnl": 1600.0,
+              "exp_r": 0.2353
+            },
+            "3_wf_fold_1": {
+              "n": 18,
+              "pnl": 600.0,
+              "exp_r": 0.1667
+            },
+            "4_wf_fold_2": {
+              "n": 14,
+              "pnl": 1400.0,
+              "exp_r": 0.5
+            },
+            "5_wf_fold_3": {
+              "n": 19,
+              "pnl": 1000.0,
+              "exp_r": 0.2632
+            },
+            "6_wf_fold_4": {
+              "n": 15,
+              "pnl": 600.0,
+              "exp_r": 0.2
+            },
+            "7_torture_spread": {
+              "n": 97,
+              "pnl": 2890.0,
+              "exp_r": 0.149
+            },
+            "8_torture_skip": {
+              "n": 65,
+              "pnl": 3800.0,
+              "exp_r": 0.2923
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_ob_1m_rr2",
+          "family": "demand_sweep_ob",
+          "entry_tf": "1m",
+          "zone_mode": "ob",
+          "tp_mode": "rr2",
+          "rr": 2.0,
+          "trades": 302,
+          "pnl": 2600.0,
+          "exp_r": 0.043,
+          "win_rate": 34.8,
+          "verdict": "FRAGILE",
+          "wf_green": 2,
+          "wf_n": 4,
+          "mc_prob_profit": 70.5,
+          "equity": {
+            "n": 302,
+            "final_pnl": 2600.0,
+            "max_dd_usd": 6800.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 1,
+              "cum_pnl": 400.0,
+              "at": "2026-05-25 12:08:00",
+              "days_from_start": 1.51
+            },
+            "be_after_dd": {
+              "trade_n": 122,
+              "cum_pnl": 200.0,
+              "at": "2026-06-16 11:07:00",
+              "days_from_start": 23.47
+            },
+            "profit_after_be": {
+              "trade_n": 123,
+              "cum_pnl": 600.0,
+              "at": "2026-06-16 13:20:00",
+              "days_from_start": 23.56
+            },
+            "locked_be": {
+              "trade_n": 284,
+              "cum_pnl": 200.0,
+              "at": "2026-07-17 12:39:00",
+              "days_from_start": 54.53,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 302,
+              "pnl": 2600.0,
+              "exp_r": 0.043
+            },
+            "2_oos70": {
+              "n": 93,
+              "pnl": 4800.0,
+              "exp_r": 0.2581
+            },
+            "3_wf_fold_1": {
+              "n": 49,
+              "pnl": -800.0,
+              "exp_r": -0.0816
+            },
+            "4_wf_fold_2": {
+              "n": 55,
+              "pnl": -2000.0,
+              "exp_r": -0.1818
+            },
+            "5_wf_fold_3": {
+              "n": 57,
+              "pnl": 1200.0,
+              "exp_r": 0.1053
+            },
+            "6_wf_fold_4": {
+              "n": 36,
+              "pnl": 3600.0,
+              "exp_r": 0.5
+            },
+            "7_torture_spread": {
+              "n": 302,
+              "pnl": -6460.0,
+              "exp_r": -0.107
+            },
+            "8_torture_skip": {
+              "n": 203,
+              "pnl": 5600.0,
+              "exp_r": 0.1379
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_ob_5m_rr2.4",
+          "family": "demand_sweep_ob",
+          "entry_tf": "5m",
+          "zone_mode": "ob",
+          "tp_mode": "rr2",
+          "rr": 2.4,
+          "trades": 166,
+          "pnl": 6920.0,
+          "exp_r": 0.2084,
+          "win_rate": 35.5,
+          "verdict": "SURVIVES",
+          "wf_green": 4,
+          "wf_n": 4,
+          "mc_prob_profit": 96.0,
+          "equity": {
+            "n": 166,
+            "final_pnl": 6920.0,
+            "max_dd_usd": 2760.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 3,
+              "cum_pnl": 80.0,
+              "at": "2026-05-25 17:45:00",
+              "days_from_start": 1.74
+            },
+            "be_after_dd": {
+              "trade_n": 3,
+              "cum_pnl": 80.0,
+              "at": "2026-05-25 17:45:00",
+              "days_from_start": 1.74
+            },
+            "profit_after_be": {
+              "trade_n": 4,
+              "cum_pnl": 560.0,
+              "at": "2026-05-25 23:35:00",
+              "days_from_start": 1.99
+            },
+            "locked_be": {
+              "trade_n": 98,
+              "cum_pnl": 120.0,
+              "at": "2026-06-30 14:15:00",
+              "days_from_start": 37.6,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 166,
+              "pnl": 6920.0,
+              "exp_r": 0.2084
+            },
+            "2_oos70": {
+              "n": 58,
+              "pnl": 6080.0,
+              "exp_r": 0.5241
+            },
+            "3_wf_fold_1": {
+              "n": 20,
+              "pnl": 80.0,
+              "exp_r": 0.02
+            },
+            "4_wf_fold_2": {
+              "n": 32,
+              "pnl": 400.0,
+              "exp_r": 0.0625
+            },
+            "5_wf_fold_3": {
+              "n": 32,
+              "pnl": 2440.0,
+              "exp_r": 0.3812
+            },
+            "6_wf_fold_4": {
+              "n": 26,
+              "pnl": 3640.0,
+              "exp_r": 0.7
+            },
+            "7_torture_spread": {
+              "n": 166,
+              "pnl": 1940.0,
+              "exp_r": 0.0584
+            },
+            "8_torture_skip": {
+              "n": 105,
+              "pnl": 6200.0,
+              "exp_r": 0.2952
+            }
+          }
+        }
+      ],
+      "best": {
+        "name": "pa_live_liq3m_bias15+5_entry1m_rr2",
+        "liq_tf": "3m",
+        "bias_a": "15m",
+        "bias_b": "5m",
+        "entry_tf": "1m",
+        "rr": 2.0,
+        "family": "pa_liq_engulf",
+        "trades": 212,
+        "pnl": 11000.0,
+        "exp_r": 0.2594,
+        "win_rate": 42.0,
+        "verdict": "SURVIVES",
+        "wf_green": 4,
+        "wf_n": 4,
+        "mc_prob_profit": 99.6,
+        "equity": {
+          "n": 212,
+          "final_pnl": 11000.0,
+          "max_dd_usd": 1800.0,
+          "went_red": true,
+          "first_profit": {
+            "trade_n": 28,
+            "cum_pnl": 400.0,
+            "at": "2026-05-27 13:07:00",
+            "days_from_start": 3.55
+          },
+          "be_after_dd": {
+            "trade_n": 27,
+            "cum_pnl": 0.0,
+            "at": "2026-05-27 10:46:00",
+            "days_from_start": 3.45
+          },
+          "profit_after_be": {
+            "trade_n": 28,
+            "cum_pnl": 400.0,
+            "at": "2026-05-27 13:07:00",
+            "days_from_start": 3.55
+          },
+          "locked_be": {
+            "trade_n": 44,
+            "cum_pnl": 200.0,
+            "at": "2026-06-01 03:06:00",
+            "days_from_start": 8.13,
+            "note": "from this trade onward equity never < 0"
+          }
+        },
+        "tests": {
+          "1_full": {
+            "n": 212,
+            "pnl": 11000.0,
+            "exp_r": 0.2594
+          },
+          "2_oos70": {
+            "n": 61,
+            "pnl": 2800.0,
+            "exp_r": 0.2295
+          },
+          "3_wf_fold_1": {
+            "n": 19,
+            "pnl": 2200.0,
+            "exp_r": 0.5789
+          },
+          "4_wf_fold_2": {
+            "n": 34,
+            "pnl": 1600.0,
+            "exp_r": 0.2353
+          },
+          "5_wf_fold_3": {
+            "n": 31,
+            "pnl": 2200.0,
+            "exp_r": 0.3548
+          },
+          "6_wf_fold_4": {
+            "n": 30,
+            "pnl": 600.0,
+            "exp_r": 0.1
+          },
+          "7_torture_spread": {
+            "n": 212,
+            "pnl": 4640.0,
+            "exp_r": 0.1094
+          },
+          "8_torture_skip": {
+            "n": 139,
+            "pnl": 5800.0,
+            "exp_r": 0.2086
+          }
+        }
+      },
+      "pa_live": {
+        "name": "pa_live_liq3m_bias15+5_entry1m_rr2",
+        "liq_tf": "3m",
+        "bias_a": "15m",
+        "bias_b": "5m",
+        "entry_tf": "1m",
+        "rr": 2.0,
+        "family": "pa_liq_engulf",
+        "trades": 212,
+        "pnl": 11000.0,
+        "exp_r": 0.2594,
+        "win_rate": 42.0,
+        "verdict": "SURVIVES",
+        "wf_green": 4,
+        "wf_n": 4,
+        "mc_prob_profit": 99.6,
+        "equity": {
+          "n": 212,
+          "final_pnl": 11000.0,
+          "max_dd_usd": 1800.0,
+          "went_red": true,
+          "first_profit": {
+            "trade_n": 28,
+            "cum_pnl": 400.0,
+            "at": "2026-05-27 13:07:00",
+            "days_from_start": 3.55
+          },
+          "be_after_dd": {
+            "trade_n": 27,
+            "cum_pnl": 0.0,
+            "at": "2026-05-27 10:46:00",
+            "days_from_start": 3.45
+          },
+          "profit_after_be": {
+            "trade_n": 28,
+            "cum_pnl": 400.0,
+            "at": "2026-05-27 13:07:00",
+            "days_from_start": 3.55
+          },
+          "locked_be": {
+            "trade_n": 44,
+            "cum_pnl": 200.0,
+            "at": "2026-06-01 03:06:00",
+            "days_from_start": 8.13,
+            "note": "from this trade onward equity never < 0"
+          }
+        },
+        "tests": {
+          "1_full": {
+            "n": 212,
+            "pnl": 11000.0,
+            "exp_r": 0.2594
+          },
+          "2_oos70": {
+            "n": 61,
+            "pnl": 2800.0,
+            "exp_r": 0.2295
+          },
+          "3_wf_fold_1": {
+            "n": 19,
+            "pnl": 2200.0,
+            "exp_r": 0.5789
+          },
+          "4_wf_fold_2": {
+            "n": 34,
+            "pnl": 1600.0,
+            "exp_r": 0.2353
+          },
+          "5_wf_fold_3": {
+            "n": 31,
+            "pnl": 2200.0,
+            "exp_r": 0.3548
+          },
+          "6_wf_fold_4": {
+            "n": 30,
+            "pnl": 600.0,
+            "exp_r": 0.1
+          },
+          "7_torture_spread": {
+            "n": 212,
+            "pnl": 4640.0,
+            "exp_r": 0.1094
+          },
+          "8_torture_skip": {
+            "n": 139,
+            "pnl": 5800.0,
+            "exp_r": 0.2086
+          }
+        }
+      },
+      "best_manual": {
+        "name": "demand_sweep_ob_5m_rr2.4",
+        "family": "demand_sweep_ob",
+        "entry_tf": "5m",
+        "zone_mode": "ob",
+        "tp_mode": "rr2",
+        "rr": 2.4,
+        "trades": 166,
+        "pnl": 6920.0,
+        "exp_r": 0.2084,
+        "win_rate": 35.5,
+        "verdict": "SURVIVES",
+        "wf_green": 4,
+        "wf_n": 4,
+        "mc_prob_profit": 96.0,
+        "equity": {
+          "n": 166,
+          "final_pnl": 6920.0,
+          "max_dd_usd": 2760.0,
+          "went_red": true,
+          "first_profit": {
+            "trade_n": 3,
+            "cum_pnl": 80.0,
+            "at": "2026-05-25 17:45:00",
+            "days_from_start": 1.74
+          },
+          "be_after_dd": {
+            "trade_n": 3,
+            "cum_pnl": 80.0,
+            "at": "2026-05-25 17:45:00",
+            "days_from_start": 1.74
+          },
+          "profit_after_be": {
+            "trade_n": 4,
+            "cum_pnl": 560.0,
+            "at": "2026-05-25 23:35:00",
+            "days_from_start": 1.99
+          },
+          "locked_be": {
+            "trade_n": 98,
+            "cum_pnl": 120.0,
+            "at": "2026-06-30 14:15:00",
+            "days_from_start": 37.6,
+            "note": "from this trade onward equity never < 0"
+          }
+        },
+        "tests": {
+          "1_full": {
+            "n": 166,
+            "pnl": 6920.0,
+            "exp_r": 0.2084
+          },
+          "2_oos70": {
+            "n": 58,
+            "pnl": 6080.0,
+            "exp_r": 0.5241
+          },
+          "3_wf_fold_1": {
+            "n": 20,
+            "pnl": 80.0,
+            "exp_r": 0.02
+          },
+          "4_wf_fold_2": {
+            "n": 32,
+            "pnl": 400.0,
+            "exp_r": 0.0625
+          },
+          "5_wf_fold_3": {
+            "n": 32,
+            "pnl": 2440.0,
+            "exp_r": 0.3812
+          },
+          "6_wf_fold_4": {
+            "n": 26,
+            "pnl": 3640.0,
+            "exp_r": 0.7
+          },
+          "7_torture_spread": {
+            "n": 166,
+            "pnl": 1940.0,
+            "exp_r": 0.0584
+          },
+          "8_torture_skip": {
+            "n": 105,
+            "pnl": 6200.0,
+            "exp_r": 0.2952
+          }
+        }
+      },
+      "delta_manual_minus_pa": -4080.0,
+      "elapsed_s": 22.1
+    },
+    {
+      "label": "6m",
+      "days": 183,
+      "start": "2026-01-21 23:55:00",
+      "end": "2026-07-23 23:55:00",
+      "arms": [
+        {
+          "name": "pa_live_liq3m_bias15+5_entry1m_rr2",
+          "liq_tf": "3m",
+          "bias_a": "15m",
+          "bias_b": "5m",
+          "entry_tf": "1m",
+          "rr": 2.0,
+          "family": "pa_liq_engulf",
+          "trades": 705,
+          "pnl": 22800.0,
+          "exp_r": 0.1617,
+          "win_rate": 38.7,
+          "verdict": "SURVIVES",
+          "wf_green": 3,
+          "wf_n": 4,
+          "mc_prob_profit": 99.9,
+          "equity": {
+            "n": 705,
+            "final_pnl": 22800.0,
+            "max_dd_usd": 4000.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 13,
+              "cum_pnl": 400.0,
+              "at": "2026-01-22 23:03:00",
+              "days_from_start": 0.96
+            },
+            "be_after_dd": {
+              "trade_n": 12,
+              "cum_pnl": 0.0,
+              "at": "2026-01-22 19:07:00",
+              "days_from_start": 0.8
+            },
+            "profit_after_be": {
+              "trade_n": 13,
+              "cum_pnl": 400.0,
+              "at": "2026-01-22 23:03:00",
+              "days_from_start": 0.96
+            },
+            "locked_be": {
+              "trade_n": 12,
+              "cum_pnl": 0.0,
+              "at": "2026-01-22 19:07:00",
+              "days_from_start": 0.8,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 705,
+              "pnl": 22800.0,
+              "exp_r": 0.1617
+            },
+            "2_oos70": {
+              "n": 178,
+              "pnl": 11200.0,
+              "exp_r": 0.3146
+            },
+            "3_wf_fold_1": {
+              "n": 97,
+              "pnl": -800.0,
+              "exp_r": -0.0412
+            },
+            "4_wf_fold_2": {
+              "n": 155,
+              "pnl": 3800.0,
+              "exp_r": 0.1226
+            },
+            "5_wf_fold_3": {
+              "n": 88,
+              "pnl": 7600.0,
+              "exp_r": 0.4318
+            },
+            "6_wf_fold_4": {
+              "n": 90,
+              "pnl": 3600.0,
+              "exp_r": 0.2
+            },
+            "7_torture_spread": {
+              "n": 705,
+              "pnl": 1650.0,
+              "exp_r": 0.0117
+            },
+            "8_torture_skip": {
+              "n": 468,
+              "pnl": 21600.0,
+              "exp_r": 0.2308
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_ob_5m_rr2",
+          "family": "demand_sweep_ob",
+          "entry_tf": "5m",
+          "zone_mode": "ob",
+          "tp_mode": "rr2",
+          "rr": 2.0,
+          "trades": 502,
+          "pnl": 14200.0,
+          "exp_r": 0.1414,
+          "win_rate": 38.0,
+          "verdict": "SURVIVES",
+          "wf_green": 3,
+          "wf_n": 4,
+          "mc_prob_profit": 98.7,
+          "equity": {
+            "n": 502,
+            "final_pnl": 14200.0,
+            "max_dd_usd": 4800.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 1,
+              "cum_pnl": 400.0,
+              "at": "2026-01-22 09:30:00",
+              "days_from_start": 0.4
+            },
+            "be_after_dd": {
+              "trade_n": 15,
+              "cum_pnl": 0.0,
+              "at": "2026-01-28 19:45:00",
+              "days_from_start": 6.83
+            },
+            "profit_after_be": {
+              "trade_n": 17,
+              "cum_pnl": 200.0,
+              "at": "2026-01-30 13:15:00",
+              "days_from_start": 8.56
+            },
+            "locked_be": {
+              "trade_n": 17,
+              "cum_pnl": 200.0,
+              "at": "2026-01-30 13:15:00",
+              "days_from_start": 8.56,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 502,
+              "pnl": 14200.0,
+              "exp_r": 0.1414
+            },
+            "2_oos70": {
+              "n": 161,
+              "pnl": 6200.0,
+              "exp_r": 0.1925
+            },
+            "3_wf_fold_1": {
+              "n": 80,
+              "pnl": -2800.0,
+              "exp_r": -0.175
+            },
+            "4_wf_fold_2": {
+              "n": 87,
+              "pnl": 4200.0,
+              "exp_r": 0.2414
+            },
+            "5_wf_fold_3": {
+              "n": 76,
+              "pnl": 2200.0,
+              "exp_r": 0.1447
+            },
+            "6_wf_fold_4": {
+              "n": 85,
+              "pnl": 4000.0,
+              "exp_r": 0.2353
+            },
+            "7_torture_spread": {
+              "n": 502,
+              "pnl": -860.0,
+              "exp_r": -0.0086
+            },
+            "8_torture_skip": {
+              "n": 334,
+              "pnl": 8800.0,
+              "exp_r": 0.1317
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_ob_5m_struct",
+          "family": "demand_sweep_ob",
+          "entry_tf": "5m",
+          "zone_mode": "ob",
+          "tp_mode": "struct",
+          "rr": 2.0,
+          "trades": 497,
+          "pnl": 14250.86,
+          "exp_r": 0.1434,
+          "win_rate": 36.8,
+          "verdict": "SURVIVES",
+          "wf_green": 3,
+          "wf_n": 4,
+          "mc_prob_profit": 98.4,
+          "equity": {
+            "n": 497,
+            "final_pnl": 14250.78,
+            "max_dd_usd": 4600.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 17,
+              "cum_pnl": 235.13,
+              "at": "2026-01-30 20:55:00",
+              "days_from_start": 8.88
+            },
+            "be_after_dd": {
+              "trade_n": 17,
+              "cum_pnl": 235.13,
+              "at": "2026-01-30 20:55:00",
+              "days_from_start": 8.88
+            },
+            "profit_after_be": {
+              "trade_n": 18,
+              "cum_pnl": 35.13,
+              "at": "2026-02-02 12:45:00",
+              "days_from_start": 11.53
+            },
+            "locked_be": {
+              "trade_n": 17,
+              "cum_pnl": 235.13,
+              "at": "2026-01-30 20:55:00",
+              "days_from_start": 8.88,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 497,
+              "pnl": 14250.86,
+              "exp_r": 0.1434
+            },
+            "2_oos70": {
+              "n": 158,
+              "pnl": 5010.7,
+              "exp_r": 0.1586
+            },
+            "3_wf_fold_1": {
+              "n": 80,
+              "pnl": -2070.8,
+              "exp_r": -0.1294
+            },
+            "4_wf_fold_2": {
+              "n": 86,
+              "pnl": 5095.76,
+              "exp_r": 0.2963
+            },
+            "5_wf_fold_3": {
+              "n": 75,
+              "pnl": 683.86,
+              "exp_r": 0.0456
+            },
+            "6_wf_fold_4": {
+              "n": 83,
+              "pnl": 4326.84,
+              "exp_r": 0.2607
+            },
+            "7_torture_spread": {
+              "n": 497,
+              "pnl": -659.14,
+              "exp_r": -0.0066
+            },
+            "8_torture_skip": {
+              "n": 332,
+              "pnl": 3413.98,
+              "exp_r": 0.0514
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_obfvg_5m_rr2",
+          "family": "demand_sweep_ob",
+          "entry_tf": "5m",
+          "zone_mode": "both",
+          "tp_mode": "rr2",
+          "rr": 2.0,
+          "trades": 271,
+          "pnl": 7000.0,
+          "exp_r": 0.1292,
+          "win_rate": 37.6,
+          "verdict": "SURVIVES",
+          "wf_green": 3,
+          "wf_n": 4,
+          "mc_prob_profit": 92.5,
+          "equity": {
+            "n": 271,
+            "final_pnl": 7000.0,
+            "max_dd_usd": 3400.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 34,
+              "cum_pnl": 400.0,
+              "at": "2026-02-19 09:25:00",
+              "days_from_start": 28.4
+            },
+            "be_after_dd": {
+              "trade_n": 21,
+              "cum_pnl": 0.0,
+              "at": "2026-02-09 23:10:00",
+              "days_from_start": 18.97
+            },
+            "profit_after_be": {
+              "trade_n": 34,
+              "cum_pnl": 400.0,
+              "at": "2026-02-19 09:25:00",
+              "days_from_start": 28.4
+            },
+            "locked_be": {
+              "trade_n": 143,
+              "cum_pnl": 200.0,
+              "at": "2026-05-04 08:00:00",
+              "days_from_start": 102.34,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 271,
+              "pnl": 7000.0,
+              "exp_r": 0.1292
+            },
+            "2_oos70": {
+              "n": 88,
+              "pnl": 6400.0,
+              "exp_r": 0.3636
+            },
+            "3_wf_fold_1": {
+              "n": 46,
+              "pnl": -800.0,
+              "exp_r": -0.087
+            },
+            "4_wf_fold_2": {
+              "n": 46,
+              "pnl": 1000.0,
+              "exp_r": 0.1087
+            },
+            "5_wf_fold_3": {
+              "n": 43,
+              "pnl": 4000.0,
+              "exp_r": 0.4651
+            },
+            "6_wf_fold_4": {
+              "n": 45,
+              "pnl": 2400.0,
+              "exp_r": 0.2667
+            },
+            "7_torture_spread": {
+              "n": 271,
+              "pnl": -1130.0,
+              "exp_r": -0.0208
+            },
+            "8_torture_skip": {
+              "n": 179,
+              "pnl": 1400.0,
+              "exp_r": 0.0391
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_ob_1m_rr2",
+          "family": "demand_sweep_ob",
+          "entry_tf": "1m",
+          "zone_mode": "ob",
+          "tp_mode": "rr2",
+          "rr": 2.0,
+          "trades": 822,
+          "pnl": 21000.0,
+          "exp_r": 0.1277,
+          "win_rate": 37.6,
+          "verdict": "SURVIVES",
+          "wf_green": 2,
+          "wf_n": 4,
+          "mc_prob_profit": 99.2,
+          "equity": {
+            "n": 822,
+            "final_pnl": 21000.0,
+            "max_dd_usd": 6800.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 1,
+              "cum_pnl": 400.0,
+              "at": "2026-01-22 09:32:00",
+              "days_from_start": 0.4
+            },
+            "be_after_dd": {
+              "trade_n": 8,
+              "cum_pnl": 200.0,
+              "at": "2026-01-23 05:47:00",
+              "days_from_start": 1.24
+            },
+            "profit_after_be": {
+              "trade_n": 16,
+              "cum_pnl": 400.0,
+              "at": "2026-01-26 18:40:00",
+              "days_from_start": 4.78
+            },
+            "locked_be": {
+              "trade_n": 15,
+              "cum_pnl": 0.0,
+              "at": "2026-01-26 17:45:00",
+              "days_from_start": 4.74,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 822,
+              "pnl": 21000.0,
+              "exp_r": 0.1277
+            },
+            "2_oos70": {
+              "n": 283,
+              "pnl": 1000.0,
+              "exp_r": 0.0177
+            },
+            "3_wf_fold_1": {
+              "n": 121,
+              "pnl": -200.0,
+              "exp_r": -0.0083
+            },
+            "4_wf_fold_2": {
+              "n": 137,
+              "pnl": 3800.0,
+              "exp_r": 0.1387
+            },
+            "5_wf_fold_3": {
+              "n": 146,
+              "pnl": -3400.0,
+              "exp_r": -0.1164
+            },
+            "6_wf_fold_4": {
+              "n": 137,
+              "pnl": 4400.0,
+              "exp_r": 0.1606
+            },
+            "7_torture_spread": {
+              "n": 822,
+              "pnl": -3660.0,
+              "exp_r": -0.0223
+            },
+            "8_torture_skip": {
+              "n": 544,
+              "pnl": 14800.0,
+              "exp_r": 0.136
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_ob_5m_rr2.4",
+          "family": "demand_sweep_ob",
+          "entry_tf": "5m",
+          "zone_mode": "ob",
+          "tp_mode": "rr2",
+          "rr": 2.4,
+          "trades": 469,
+          "pnl": 15000.0,
+          "exp_r": 0.1599,
+          "win_rate": 34.1,
+          "verdict": "SURVIVES",
+          "wf_green": 3,
+          "wf_n": 4,
+          "mc_prob_profit": 98.8,
+          "equity": {
+            "n": 469,
+            "final_pnl": 15000.0,
+            "max_dd_usd": 4760.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 1,
+              "cum_pnl": 480.0,
+              "at": "2026-01-22 09:30:00",
+              "days_from_start": 0.4
+            },
+            "be_after_dd": {
+              "trade_n": 16,
+              "cum_pnl": 200.0,
+              "at": "2026-01-30 13:20:00",
+              "days_from_start": 8.56
+            },
+            "profit_after_be": {
+              "trade_n": 17,
+              "cum_pnl": 680.0,
+              "at": "2026-01-30 17:30:00",
+              "days_from_start": 8.73
+            },
+            "locked_be": {
+              "trade_n": 16,
+              "cum_pnl": 200.0,
+              "at": "2026-01-30 13:20:00",
+              "days_from_start": 8.56,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 469,
+              "pnl": 15000.0,
+              "exp_r": 0.1599
+            },
+            "2_oos70": {
+              "n": 152,
+              "pnl": 7000.0,
+              "exp_r": 0.2303
+            },
+            "3_wf_fold_1": {
+              "n": 84,
+              "pnl": -1160.0,
+              "exp_r": -0.069
+            },
+            "4_wf_fold_2": {
+              "n": 75,
+              "pnl": 5400.0,
+              "exp_r": 0.36
+            },
+            "5_wf_fold_3": {
+              "n": 70,
+              "pnl": 280.0,
+              "exp_r": 0.02
+            },
+            "6_wf_fold_4": {
+              "n": 82,
+              "pnl": 6720.0,
+              "exp_r": 0.4098
+            },
+            "7_torture_spread": {
+              "n": 469,
+              "pnl": 930.0,
+              "exp_r": 0.0099
+            },
+            "8_torture_skip": {
+              "n": 310,
+              "pnl": 12800.0,
+              "exp_r": 0.2065
+            }
+          }
+        }
+      ],
+      "best": {
+        "name": "pa_live_liq3m_bias15+5_entry1m_rr2",
+        "liq_tf": "3m",
+        "bias_a": "15m",
+        "bias_b": "5m",
+        "entry_tf": "1m",
+        "rr": 2.0,
+        "family": "pa_liq_engulf",
+        "trades": 705,
+        "pnl": 22800.0,
+        "exp_r": 0.1617,
+        "win_rate": 38.7,
+        "verdict": "SURVIVES",
+        "wf_green": 3,
+        "wf_n": 4,
+        "mc_prob_profit": 99.9,
+        "equity": {
+          "n": 705,
+          "final_pnl": 22800.0,
+          "max_dd_usd": 4000.0,
+          "went_red": true,
+          "first_profit": {
+            "trade_n": 13,
+            "cum_pnl": 400.0,
+            "at": "2026-01-22 23:03:00",
+            "days_from_start": 0.96
+          },
+          "be_after_dd": {
+            "trade_n": 12,
+            "cum_pnl": 0.0,
+            "at": "2026-01-22 19:07:00",
+            "days_from_start": 0.8
+          },
+          "profit_after_be": {
+            "trade_n": 13,
+            "cum_pnl": 400.0,
+            "at": "2026-01-22 23:03:00",
+            "days_from_start": 0.96
+          },
+          "locked_be": {
+            "trade_n": 12,
+            "cum_pnl": 0.0,
+            "at": "2026-01-22 19:07:00",
+            "days_from_start": 0.8,
+            "note": "from this trade onward equity never < 0"
+          }
+        },
+        "tests": {
+          "1_full": {
+            "n": 705,
+            "pnl": 22800.0,
+            "exp_r": 0.1617
+          },
+          "2_oos70": {
+            "n": 178,
+            "pnl": 11200.0,
+            "exp_r": 0.3146
+          },
+          "3_wf_fold_1": {
+            "n": 97,
+            "pnl": -800.0,
+            "exp_r": -0.0412
+          },
+          "4_wf_fold_2": {
+            "n": 155,
+            "pnl": 3800.0,
+            "exp_r": 0.1226
+          },
+          "5_wf_fold_3": {
+            "n": 88,
+            "pnl": 7600.0,
+            "exp_r": 0.4318
+          },
+          "6_wf_fold_4": {
+            "n": 90,
+            "pnl": 3600.0,
+            "exp_r": 0.2
+          },
+          "7_torture_spread": {
+            "n": 705,
+            "pnl": 1650.0,
+            "exp_r": 0.0117
+          },
+          "8_torture_skip": {
+            "n": 468,
+            "pnl": 21600.0,
+            "exp_r": 0.2308
+          }
+        }
+      },
+      "pa_live": {
+        "name": "pa_live_liq3m_bias15+5_entry1m_rr2",
+        "liq_tf": "3m",
+        "bias_a": "15m",
+        "bias_b": "5m",
+        "entry_tf": "1m",
+        "rr": 2.0,
+        "family": "pa_liq_engulf",
+        "trades": 705,
+        "pnl": 22800.0,
+        "exp_r": 0.1617,
+        "win_rate": 38.7,
+        "verdict": "SURVIVES",
+        "wf_green": 3,
+        "wf_n": 4,
+        "mc_prob_profit": 99.9,
+        "equity": {
+          "n": 705,
+          "final_pnl": 22800.0,
+          "max_dd_usd": 4000.0,
+          "went_red": true,
+          "first_profit": {
+            "trade_n": 13,
+            "cum_pnl": 400.0,
+            "at": "2026-01-22 23:03:00",
+            "days_from_start": 0.96
+          },
+          "be_after_dd": {
+            "trade_n": 12,
+            "cum_pnl": 0.0,
+            "at": "2026-01-22 19:07:00",
+            "days_from_start": 0.8
+          },
+          "profit_after_be": {
+            "trade_n": 13,
+            "cum_pnl": 400.0,
+            "at": "2026-01-22 23:03:00",
+            "days_from_start": 0.96
+          },
+          "locked_be": {
+            "trade_n": 12,
+            "cum_pnl": 0.0,
+            "at": "2026-01-22 19:07:00",
+            "days_from_start": 0.8,
+            "note": "from this trade onward equity never < 0"
+          }
+        },
+        "tests": {
+          "1_full": {
+            "n": 705,
+            "pnl": 22800.0,
+            "exp_r": 0.1617
+          },
+          "2_oos70": {
+            "n": 178,
+            "pnl": 11200.0,
+            "exp_r": 0.3146
+          },
+          "3_wf_fold_1": {
+            "n": 97,
+            "pnl": -800.0,
+            "exp_r": -0.0412
+          },
+          "4_wf_fold_2": {
+            "n": 155,
+            "pnl": 3800.0,
+            "exp_r": 0.1226
+          },
+          "5_wf_fold_3": {
+            "n": 88,
+            "pnl": 7600.0,
+            "exp_r": 0.4318
+          },
+          "6_wf_fold_4": {
+            "n": 90,
+            "pnl": 3600.0,
+            "exp_r": 0.2
+          },
+          "7_torture_spread": {
+            "n": 705,
+            "pnl": 1650.0,
+            "exp_r": 0.0117
+          },
+          "8_torture_skip": {
+            "n": 468,
+            "pnl": 21600.0,
+            "exp_r": 0.2308
+          }
+        }
+      },
+      "best_manual": {
+        "name": "demand_sweep_ob_1m_rr2",
+        "family": "demand_sweep_ob",
+        "entry_tf": "1m",
+        "zone_mode": "ob",
+        "tp_mode": "rr2",
+        "rr": 2.0,
+        "trades": 822,
+        "pnl": 21000.0,
+        "exp_r": 0.1277,
+        "win_rate": 37.6,
+        "verdict": "SURVIVES",
+        "wf_green": 2,
+        "wf_n": 4,
+        "mc_prob_profit": 99.2,
+        "equity": {
+          "n": 822,
+          "final_pnl": 21000.0,
+          "max_dd_usd": 6800.0,
+          "went_red": true,
+          "first_profit": {
+            "trade_n": 1,
+            "cum_pnl": 400.0,
+            "at": "2026-01-22 09:32:00",
+            "days_from_start": 0.4
+          },
+          "be_after_dd": {
+            "trade_n": 8,
+            "cum_pnl": 200.0,
+            "at": "2026-01-23 05:47:00",
+            "days_from_start": 1.24
+          },
+          "profit_after_be": {
+            "trade_n": 16,
+            "cum_pnl": 400.0,
+            "at": "2026-01-26 18:40:00",
+            "days_from_start": 4.78
+          },
+          "locked_be": {
+            "trade_n": 15,
+            "cum_pnl": 0.0,
+            "at": "2026-01-26 17:45:00",
+            "days_from_start": 4.74,
+            "note": "from this trade onward equity never < 0"
+          }
+        },
+        "tests": {
+          "1_full": {
+            "n": 822,
+            "pnl": 21000.0,
+            "exp_r": 0.1277
+          },
+          "2_oos70": {
+            "n": 283,
+            "pnl": 1000.0,
+            "exp_r": 0.0177
+          },
+          "3_wf_fold_1": {
+            "n": 121,
+            "pnl": -200.0,
+            "exp_r": -0.0083
+          },
+          "4_wf_fold_2": {
+            "n": 137,
+            "pnl": 3800.0,
+            "exp_r": 0.1387
+          },
+          "5_wf_fold_3": {
+            "n": 146,
+            "pnl": -3400.0,
+            "exp_r": -0.1164
+          },
+          "6_wf_fold_4": {
+            "n": 137,
+            "pnl": 4400.0,
+            "exp_r": 0.1606
+          },
+          "7_torture_spread": {
+            "n": 822,
+            "pnl": -3660.0,
+            "exp_r": -0.0223
+          },
+          "8_torture_skip": {
+            "n": 544,
+            "pnl": 14800.0,
+            "exp_r": 0.136
+          }
+        }
+      },
+      "delta_manual_minus_pa": -1800.0,
+      "elapsed_s": 49.3
+    },
+    {
+      "label": "12m",
+      "days": 365,
+      "start": "2025-07-23 23:55:00",
+      "end": "2026-07-23 23:55:00",
+      "arms": [
+        {
+          "name": "pa_live_liq3m_bias15+5_entry1m_rr2",
+          "liq_tf": "3m",
+          "bias_a": "15m",
+          "bias_b": "5m",
+          "entry_tf": "1m",
+          "rr": 2.0,
+          "family": "pa_liq_engulf",
+          "trades": 1513,
+          "pnl": 65800.0,
+          "exp_r": 0.2174,
+          "win_rate": 40.6,
+          "verdict": "SURVIVES",
+          "wf_green": 4,
+          "wf_n": 4,
+          "mc_prob_profit": 100.0,
+          "equity": {
+            "n": 1513,
+            "final_pnl": 65800.0,
+            "max_dd_usd": 4000.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 2,
+              "cum_pnl": 200.0,
+              "at": "2025-07-24 03:06:00",
+              "days_from_start": 0.13
+            },
+            "be_after_dd": {
+              "trade_n": 2,
+              "cum_pnl": 200.0,
+              "at": "2025-07-24 03:06:00",
+              "days_from_start": 0.13
+            },
+            "profit_after_be": {
+              "trade_n": 3,
+              "cum_pnl": 600.0,
+              "at": "2025-07-24 07:49:00",
+              "days_from_start": 0.33
+            },
+            "locked_be": {
+              "trade_n": 2,
+              "cum_pnl": 200.0,
+              "at": "2025-07-24 03:06:00",
+              "days_from_start": 0.13,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 1513,
+              "pnl": 65800.0,
+              "exp_r": 0.2174
+            },
+            "2_oos70": {
+              "n": 416,
+              "pnl": 12800.0,
+              "exp_r": 0.1538
+            },
+            "3_wf_fold_1": {
+              "n": 246,
+              "pnl": 17400.0,
+              "exp_r": 0.3537
+            },
+            "4_wf_fold_2": {
+              "n": 222,
+              "pnl": 5400.0,
+              "exp_r": 0.1216
+            },
+            "5_wf_fold_3": {
+              "n": 239,
+              "pnl": 2000.0,
+              "exp_r": 0.0418
+            },
+            "6_wf_fold_4": {
+              "n": 177,
+              "pnl": 10800.0,
+              "exp_r": 0.3051
+            },
+            "7_torture_spread": {
+              "n": 1513,
+              "pnl": 20410.0,
+              "exp_r": 0.0674
+            },
+            "8_torture_skip": {
+              "n": 1020,
+              "pnl": 42600.0,
+              "exp_r": 0.2088
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_ob_5m_rr2",
+          "family": "demand_sweep_ob",
+          "entry_tf": "5m",
+          "zone_mode": "ob",
+          "tp_mode": "rr2",
+          "rr": 2.0,
+          "trades": 1084,
+          "pnl": 29200.0,
+          "exp_r": 0.1347,
+          "win_rate": 37.8,
+          "verdict": "SURVIVES",
+          "wf_green": 4,
+          "wf_n": 4,
+          "mc_prob_profit": 99.9,
+          "equity": {
+            "n": 1084,
+            "final_pnl": 29200.0,
+            "max_dd_usd": 4800.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 5,
+              "cum_pnl": 200.0,
+              "at": "2025-07-28 03:55:00",
+              "days_from_start": 4.17
+            },
+            "be_after_dd": {
+              "trade_n": 5,
+              "cum_pnl": 200.0,
+              "at": "2025-07-28 03:55:00",
+              "days_from_start": 4.17
+            },
+            "profit_after_be": {
+              "trade_n": 7,
+              "cum_pnl": 400.0,
+              "at": "2025-07-28 08:40:00",
+              "days_from_start": 4.36
+            },
+            "locked_be": {
+              "trade_n": 15,
+              "cum_pnl": 0.0,
+              "at": "2025-07-30 01:50:00",
+              "days_from_start": 6.08,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 1084,
+              "pnl": 29200.0,
+              "exp_r": 0.1347
+            },
+            "2_oos70": {
+              "n": 323,
+              "pnl": 6800.0,
+              "exp_r": 0.1053
+            },
+            "3_wf_fold_1": {
+              "n": 132,
+              "pnl": 10800.0,
+              "exp_r": 0.4091
+            },
+            "4_wf_fold_2": {
+              "n": 147,
+              "pnl": 4200.0,
+              "exp_r": 0.1429
+            },
+            "5_wf_fold_3": {
+              "n": 168,
+              "pnl": 1200.0,
+              "exp_r": 0.0357
+            },
+            "6_wf_fold_4": {
+              "n": 155,
+              "pnl": 5600.0,
+              "exp_r": 0.1806
+            },
+            "7_torture_spread": {
+              "n": 1084,
+              "pnl": -3320.0,
+              "exp_r": -0.0153
+            },
+            "8_torture_skip": {
+              "n": 719,
+              "pnl": 17600.0,
+              "exp_r": 0.1224
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_ob_5m_struct",
+          "family": "demand_sweep_ob",
+          "entry_tf": "5m",
+          "zone_mode": "ob",
+          "tp_mode": "struct",
+          "rr": 2.0,
+          "trades": 1059,
+          "pnl": 28167.24,
+          "exp_r": 0.133,
+          "win_rate": 36.6,
+          "verdict": "SURVIVES",
+          "wf_green": 4,
+          "wf_n": 4,
+          "mc_prob_profit": 99.6,
+          "equity": {
+            "n": 1059,
+            "final_pnl": 28167.23,
+            "max_dd_usd": 4600.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 5,
+              "cum_pnl": 200.0,
+              "at": "2025-07-28 03:55:00",
+              "days_from_start": 4.17
+            },
+            "be_after_dd": {
+              "trade_n": 5,
+              "cum_pnl": 200.0,
+              "at": "2025-07-28 03:55:00",
+              "days_from_start": 4.17
+            },
+            "profit_after_be": {
+              "trade_n": 7,
+              "cum_pnl": 441.66,
+              "at": "2025-07-28 08:40:00",
+              "days_from_start": 4.36
+            },
+            "locked_be": {
+              "trade_n": 15,
+              "cum_pnl": 41.66,
+              "at": "2025-07-30 01:50:00",
+              "days_from_start": 6.08,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 1059,
+              "pnl": 28167.24,
+              "exp_r": 0.133
+            },
+            "2_oos70": {
+              "n": 319,
+              "pnl": 6835.66,
+              "exp_r": 0.1071
+            },
+            "3_wf_fold_1": {
+              "n": 126,
+              "pnl": 8301.98,
+              "exp_r": 0.3294
+            },
+            "4_wf_fold_2": {
+              "n": 147,
+              "pnl": 5244.24,
+              "exp_r": 0.1784
+            },
+            "5_wf_fold_3": {
+              "n": 166,
+              "pnl": 1424.96,
+              "exp_r": 0.0429
+            },
+            "6_wf_fold_4": {
+              "n": 153,
+              "pnl": 5410.7,
+              "exp_r": 0.1768
+            },
+            "7_torture_spread": {
+              "n": 1059,
+              "pnl": -3602.76,
+              "exp_r": -0.017
+            },
+            "8_torture_skip": {
+              "n": 705,
+              "pnl": 17806.84,
+              "exp_r": 0.1263
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_obfvg_5m_rr2",
+          "family": "demand_sweep_ob",
+          "entry_tf": "5m",
+          "zone_mode": "both",
+          "tp_mode": "rr2",
+          "rr": 2.0,
+          "trades": 537,
+          "pnl": 13200.0,
+          "exp_r": 0.1229,
+          "win_rate": 37.4,
+          "verdict": "SURVIVES",
+          "wf_green": 4,
+          "wf_n": 4,
+          "mc_prob_profit": 97.5,
+          "equity": {
+            "n": 537,
+            "final_pnl": 13200.0,
+            "max_dd_usd": 3800.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 23,
+              "cum_pnl": 200.0,
+              "at": "2025-08-07 01:30:00",
+              "days_from_start": 14.07
+            },
+            "be_after_dd": {
+              "trade_n": 23,
+              "cum_pnl": 200.0,
+              "at": "2025-08-07 01:30:00",
+              "days_from_start": 14.07
+            },
+            "profit_after_be": {
+              "trade_n": 25,
+              "cum_pnl": 400.0,
+              "at": "2025-08-07 22:35:00",
+              "days_from_start": 14.94
+            },
+            "locked_be": {
+              "trade_n": 23,
+              "cum_pnl": 200.0,
+              "at": "2025-08-07 01:30:00",
+              "days_from_start": 14.07,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 537,
+              "pnl": 13200.0,
+              "exp_r": 0.1229
+            },
+            "2_oos70": {
+              "n": 177,
+              "pnl": 6600.0,
+              "exp_r": 0.1864
+            },
+            "3_wf_fold_1": {
+              "n": 60,
+              "pnl": 1800.0,
+              "exp_r": 0.15
+            },
+            "4_wf_fold_2": {
+              "n": 76,
+              "pnl": 1000.0,
+              "exp_r": 0.0658
+            },
+            "5_wf_fold_3": {
+              "n": 91,
+              "pnl": 1000.0,
+              "exp_r": 0.0549
+            },
+            "6_wf_fold_4": {
+              "n": 86,
+              "pnl": 5600.0,
+              "exp_r": 0.3256
+            },
+            "7_torture_spread": {
+              "n": 537,
+              "pnl": -2910.0,
+              "exp_r": -0.0271
+            },
+            "8_torture_skip": {
+              "n": 356,
+              "pnl": 5000.0,
+              "exp_r": 0.0702
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_ob_1m_rr2",
+          "family": "demand_sweep_ob",
+          "entry_tf": "1m",
+          "zone_mode": "ob",
+          "tp_mode": "rr2",
+          "rr": 2.0,
+          "trades": 1735,
+          "pnl": 47800.0,
+          "exp_r": 0.1378,
+          "win_rate": 37.9,
+          "verdict": "SURVIVES",
+          "wf_green": 4,
+          "wf_n": 4,
+          "mc_prob_profit": 100.0,
+          "equity": {
+            "n": 1735,
+            "final_pnl": 47800.0,
+            "max_dd_usd": 6800.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 5,
+              "cum_pnl": 200.0,
+              "at": "2025-07-28 01:04:00",
+              "days_from_start": 4.05
+            },
+            "be_after_dd": {
+              "trade_n": 3,
+              "cum_pnl": 0.0,
+              "at": "2025-07-25 02:18:00",
+              "days_from_start": 1.1
+            },
+            "profit_after_be": {
+              "trade_n": 5,
+              "cum_pnl": 200.0,
+              "at": "2025-07-28 01:04:00",
+              "days_from_start": 4.05
+            },
+            "locked_be": {
+              "trade_n": 33,
+              "cum_pnl": 0.0,
+              "at": "2025-07-30 01:44:00",
+              "days_from_start": 6.08,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 1735,
+              "pnl": 47800.0,
+              "exp_r": 0.1378
+            },
+            "2_oos70": {
+              "n": 534,
+              "pnl": 4800.0,
+              "exp_r": 0.0449
+            },
+            "3_wf_fold_1": {
+              "n": 195,
+              "pnl": 16200.0,
+              "exp_r": 0.4154
+            },
+            "4_wf_fold_2": {
+              "n": 233,
+              "pnl": 11600.0,
+              "exp_r": 0.2489
+            },
+            "5_wf_fold_3": {
+              "n": 257,
+              "pnl": 3800.0,
+              "exp_r": 0.0739
+            },
+            "6_wf_fold_4": {
+              "n": 277,
+              "pnl": 1000.0,
+              "exp_r": 0.0181
+            },
+            "7_torture_spread": {
+              "n": 1735,
+              "pnl": -4250.0,
+              "exp_r": -0.0122
+            },
+            "8_torture_skip": {
+              "n": 1181,
+              "pnl": 30800.0,
+              "exp_r": 0.1304
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_ob_5m_rr2.4",
+          "family": "demand_sweep_ob",
+          "entry_tf": "5m",
+          "zone_mode": "ob",
+          "tp_mode": "rr2",
+          "rr": 2.4,
+          "trades": 987,
+          "pnl": 24280.0,
+          "exp_r": 0.123,
+          "win_rate": 33.0,
+          "verdict": "SURVIVES",
+          "wf_green": 4,
+          "wf_n": 4,
+          "mc_prob_profit": 99.1,
+          "equity": {
+            "n": 987,
+            "final_pnl": 24280.0,
+            "max_dd_usd": 5320.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 5,
+              "cum_pnl": 360.0,
+              "at": "2025-07-28 04:00:00",
+              "days_from_start": 4.17
+            },
+            "be_after_dd": {
+              "trade_n": 5,
+              "cum_pnl": 360.0,
+              "at": "2025-07-28 04:00:00",
+              "days_from_start": 4.17
+            },
+            "profit_after_be": {
+              "trade_n": 6,
+              "cum_pnl": 160.0,
+              "at": "2025-07-28 06:55:00",
+              "days_from_start": 4.29
+            },
+            "locked_be": {
+              "trade_n": 22,
+              "cum_pnl": 360.0,
+              "at": "2025-08-04 07:30:00",
+              "days_from_start": 11.32,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 987,
+              "pnl": 24280.0,
+              "exp_r": 0.123
+            },
+            "2_oos70": {
+              "n": 306,
+              "pnl": 10200.0,
+              "exp_r": 0.1667
+            },
+            "3_wf_fold_1": {
+              "n": 119,
+              "pnl": 8160.0,
+              "exp_r": 0.3429
+            },
+            "4_wf_fold_2": {
+              "n": 133,
+              "pnl": 1960.0,
+              "exp_r": 0.0737
+            },
+            "5_wf_fold_3": {
+              "n": 159,
+              "pnl": 2880.0,
+              "exp_r": 0.0906
+            },
+            "6_wf_fold_4": {
+              "n": 147,
+              "pnl": 7320.0,
+              "exp_r": 0.249
+            },
+            "7_torture_spread": {
+              "n": 987,
+              "pnl": -5330.0,
+              "exp_r": -0.027
+            },
+            "8_torture_skip": {
+              "n": 655,
+              "pnl": 16560.0,
+              "exp_r": 0.1264
+            }
+          }
+        }
+      ],
+      "best": {
+        "name": "pa_live_liq3m_bias15+5_entry1m_rr2",
+        "liq_tf": "3m",
+        "bias_a": "15m",
+        "bias_b": "5m",
+        "entry_tf": "1m",
+        "rr": 2.0,
+        "family": "pa_liq_engulf",
+        "trades": 1513,
+        "pnl": 65800.0,
+        "exp_r": 0.2174,
+        "win_rate": 40.6,
+        "verdict": "SURVIVES",
+        "wf_green": 4,
+        "wf_n": 4,
+        "mc_prob_profit": 100.0,
+        "equity": {
+          "n": 1513,
+          "final_pnl": 65800.0,
+          "max_dd_usd": 4000.0,
+          "went_red": true,
+          "first_profit": {
+            "trade_n": 2,
+            "cum_pnl": 200.0,
+            "at": "2025-07-24 03:06:00",
+            "days_from_start": 0.13
+          },
+          "be_after_dd": {
+            "trade_n": 2,
+            "cum_pnl": 200.0,
+            "at": "2025-07-24 03:06:00",
+            "days_from_start": 0.13
+          },
+          "profit_after_be": {
+            "trade_n": 3,
+            "cum_pnl": 600.0,
+            "at": "2025-07-24 07:49:00",
+            "days_from_start": 0.33
+          },
+          "locked_be": {
+            "trade_n": 2,
+            "cum_pnl": 200.0,
+            "at": "2025-07-24 03:06:00",
+            "days_from_start": 0.13,
+            "note": "from this trade onward equity never < 0"
+          }
+        },
+        "tests": {
+          "1_full": {
+            "n": 1513,
+            "pnl": 65800.0,
+            "exp_r": 0.2174
+          },
+          "2_oos70": {
+            "n": 416,
+            "pnl": 12800.0,
+            "exp_r": 0.1538
+          },
+          "3_wf_fold_1": {
+            "n": 246,
+            "pnl": 17400.0,
+            "exp_r": 0.3537
+          },
+          "4_wf_fold_2": {
+            "n": 222,
+            "pnl": 5400.0,
+            "exp_r": 0.1216
+          },
+          "5_wf_fold_3": {
+            "n": 239,
+            "pnl": 2000.0,
+            "exp_r": 0.0418
+          },
+          "6_wf_fold_4": {
+            "n": 177,
+            "pnl": 10800.0,
+            "exp_r": 0.3051
+          },
+          "7_torture_spread": {
+            "n": 1513,
+            "pnl": 20410.0,
+            "exp_r": 0.0674
+          },
+          "8_torture_skip": {
+            "n": 1020,
+            "pnl": 42600.0,
+            "exp_r": 0.2088
+          }
+        }
+      },
+      "pa_live": {
+        "name": "pa_live_liq3m_bias15+5_entry1m_rr2",
+        "liq_tf": "3m",
+        "bias_a": "15m",
+        "bias_b": "5m",
+        "entry_tf": "1m",
+        "rr": 2.0,
+        "family": "pa_liq_engulf",
+        "trades": 1513,
+        "pnl": 65800.0,
+        "exp_r": 0.2174,
+        "win_rate": 40.6,
+        "verdict": "SURVIVES",
+        "wf_green": 4,
+        "wf_n": 4,
+        "mc_prob_profit": 100.0,
+        "equity": {
+          "n": 1513,
+          "final_pnl": 65800.0,
+          "max_dd_usd": 4000.0,
+          "went_red": true,
+          "first_profit": {
+            "trade_n": 2,
+            "cum_pnl": 200.0,
+            "at": "2025-07-24 03:06:00",
+            "days_from_start": 0.13
+          },
+          "be_after_dd": {
+            "trade_n": 2,
+            "cum_pnl": 200.0,
+            "at": "2025-07-24 03:06:00",
+            "days_from_start": 0.13
+          },
+          "profit_after_be": {
+            "trade_n": 3,
+            "cum_pnl": 600.0,
+            "at": "2025-07-24 07:49:00",
+            "days_from_start": 0.33
+          },
+          "locked_be": {
+            "trade_n": 2,
+            "cum_pnl": 200.0,
+            "at": "2025-07-24 03:06:00",
+            "days_from_start": 0.13,
+            "note": "from this trade onward equity never < 0"
+          }
+        },
+        "tests": {
+          "1_full": {
+            "n": 1513,
+            "pnl": 65800.0,
+            "exp_r": 0.2174
+          },
+          "2_oos70": {
+            "n": 416,
+            "pnl": 12800.0,
+            "exp_r": 0.1538
+          },
+          "3_wf_fold_1": {
+            "n": 246,
+            "pnl": 17400.0,
+            "exp_r": 0.3537
+          },
+          "4_wf_fold_2": {
+            "n": 222,
+            "pnl": 5400.0,
+            "exp_r": 0.1216
+          },
+          "5_wf_fold_3": {
+            "n": 239,
+            "pnl": 2000.0,
+            "exp_r": 0.0418
+          },
+          "6_wf_fold_4": {
+            "n": 177,
+            "pnl": 10800.0,
+            "exp_r": 0.3051
+          },
+          "7_torture_spread": {
+            "n": 1513,
+            "pnl": 20410.0,
+            "exp_r": 0.0674
+          },
+          "8_torture_skip": {
+            "n": 1020,
+            "pnl": 42600.0,
+            "exp_r": 0.2088
+          }
+        }
+      },
+      "best_manual": {
+        "name": "demand_sweep_ob_1m_rr2",
+        "family": "demand_sweep_ob",
+        "entry_tf": "1m",
+        "zone_mode": "ob",
+        "tp_mode": "rr2",
+        "rr": 2.0,
+        "trades": 1735,
+        "pnl": 47800.0,
+        "exp_r": 0.1378,
+        "win_rate": 37.9,
+        "verdict": "SURVIVES",
+        "wf_green": 4,
+        "wf_n": 4,
+        "mc_prob_profit": 100.0,
+        "equity": {
+          "n": 1735,
+          "final_pnl": 47800.0,
+          "max_dd_usd": 6800.0,
+          "went_red": true,
+          "first_profit": {
+            "trade_n": 5,
+            "cum_pnl": 200.0,
+            "at": "2025-07-28 01:04:00",
+            "days_from_start": 4.05
+          },
+          "be_after_dd": {
+            "trade_n": 3,
+            "cum_pnl": 0.0,
+            "at": "2025-07-25 02:18:00",
+            "days_from_start": 1.1
+          },
+          "profit_after_be": {
+            "trade_n": 5,
+            "cum_pnl": 200.0,
+            "at": "2025-07-28 01:04:00",
+            "days_from_start": 4.05
+          },
+          "locked_be": {
+            "trade_n": 33,
+            "cum_pnl": 0.0,
+            "at": "2025-07-30 01:44:00",
+            "days_from_start": 6.08,
+            "note": "from this trade onward equity never < 0"
+          }
+        },
+        "tests": {
+          "1_full": {
+            "n": 1735,
+            "pnl": 47800.0,
+            "exp_r": 0.1378
+          },
+          "2_oos70": {
+            "n": 534,
+            "pnl": 4800.0,
+            "exp_r": 0.0449
+          },
+          "3_wf_fold_1": {
+            "n": 195,
+            "pnl": 16200.0,
+            "exp_r": 0.4154
+          },
+          "4_wf_fold_2": {
+            "n": 233,
+            "pnl": 11600.0,
+            "exp_r": 0.2489
+          },
+          "5_wf_fold_3": {
+            "n": 257,
+            "pnl": 3800.0,
+            "exp_r": 0.0739
+          },
+          "6_wf_fold_4": {
+            "n": 277,
+            "pnl": 1000.0,
+            "exp_r": 0.0181
+          },
+          "7_torture_spread": {
+            "n": 1735,
+            "pnl": -4250.0,
+            "exp_r": -0.0122
+          },
+          "8_torture_skip": {
+            "n": 1181,
+            "pnl": 30800.0,
+            "exp_r": 0.1304
+          }
+        }
+      },
+      "delta_manual_minus_pa": -18000.0,
+      "elapsed_s": 130.1
+    },
+    {
+      "label": "2y",
+      "days": 730,
+      "start": "2024-07-23 23:55:00",
+      "end": "2026-07-23 23:55:00",
+      "arms": [
+        {
+          "name": "pa_live_liq3m_bias15+5_entry1m_rr2",
+          "liq_tf": "3m",
+          "bias_a": "15m",
+          "bias_b": "5m",
+          "entry_tf": "1m",
+          "rr": 2.0,
+          "family": "pa_liq_engulf",
+          "trades": 2999,
+          "pnl": 153200.0,
+          "exp_r": 0.2554,
+          "win_rate": 41.8,
+          "verdict": "SURVIVES",
+          "wf_green": 4,
+          "wf_n": 4,
+          "mc_prob_profit": 100.0,
+          "equity": {
+            "n": 2999,
+            "final_pnl": 153200.0,
+            "max_dd_usd": 4200.0,
+            "went_red": false,
+            "first_profit": {
+              "trade_n": 1,
+              "cum_pnl": 400.0,
+              "at": "2024-07-24 00:13:00",
+              "days_from_start": 0.01
+            },
+            "be_after_dd": null,
+            "profit_after_be": {
+              "trade_n": 1,
+              "cum_pnl": 400.0,
+              "at": "2024-07-24 00:13:00",
+              "days_from_start": 0.01,
+              "note": "never went red \u2014 first green is profit"
+            },
+            "locked_be": {
+              "trade_n": 1,
+              "cum_pnl": 400.0,
+              "at": "2024-07-24 00:13:00",
+              "days_from_start": 0.01,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 2999,
+              "pnl": 153200.0,
+              "exp_r": 0.2554
+            },
+            "2_oos70": {
+              "n": 876,
+              "pnl": 35400.0,
+              "exp_r": 0.2021
+            },
+            "3_wf_fold_1": {
+              "n": 469,
+              "pnl": 28600.0,
+              "exp_r": 0.3049
+            },
+            "4_wf_fold_2": {
+              "n": 461,
+              "pnl": 23000.0,
+              "exp_r": 0.2495
+            },
+            "5_wf_fold_3": {
+              "n": 464,
+              "pnl": 22400.0,
+              "exp_r": 0.2414
+            },
+            "6_wf_fold_4": {
+              "n": 412,
+              "pnl": 13000.0,
+              "exp_r": 0.1578
+            },
+            "7_torture_spread": {
+              "n": 2999,
+              "pnl": 63230.0,
+              "exp_r": 0.1054
+            },
+            "8_torture_skip": {
+              "n": 2037,
+              "pnl": 100800.0,
+              "exp_r": 0.2474
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_ob_5m_rr2",
+          "family": "demand_sweep_ob",
+          "entry_tf": "5m",
+          "zone_mode": "ob",
+          "tp_mode": "rr2",
+          "rr": 2.0,
+          "trades": 2325,
+          "pnl": 57600.0,
+          "exp_r": 0.1239,
+          "win_rate": 37.5,
+          "verdict": "SURVIVES",
+          "wf_green": 3,
+          "wf_n": 4,
+          "mc_prob_profit": 100.0,
+          "equity": {
+            "n": 2325,
+            "final_pnl": 57600.0,
+            "max_dd_usd": 4800.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 2,
+              "cum_pnl": 200.0,
+              "at": "2024-07-24 02:15:00",
+              "days_from_start": 0.1
+            },
+            "be_after_dd": {
+              "trade_n": 2,
+              "cum_pnl": 200.0,
+              "at": "2024-07-24 02:15:00",
+              "days_from_start": 0.1
+            },
+            "profit_after_be": {
+              "trade_n": 3,
+              "cum_pnl": 600.0,
+              "at": "2024-07-24 12:55:00",
+              "days_from_start": 0.54
+            },
+            "locked_be": {
+              "trade_n": 2,
+              "cum_pnl": 200.0,
+              "at": "2024-07-24 02:15:00",
+              "days_from_start": 0.1,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 2325,
+              "pnl": 57600.0,
+              "exp_r": 0.1239
+            },
+            "2_oos70": {
+              "n": 597,
+              "pnl": 22200.0,
+              "exp_r": 0.1859
+            },
+            "3_wf_fold_1": {
+              "n": 415,
+              "pnl": 16600.0,
+              "exp_r": 0.2
+            },
+            "4_wf_fold_2": {
+              "n": 360,
+              "pnl": -600.0,
+              "exp_r": -0.0083
+            },
+            "5_wf_fold_3": {
+              "n": 279,
+              "pnl": 15000.0,
+              "exp_r": 0.2688
+            },
+            "6_wf_fold_4": {
+              "n": 318,
+              "pnl": 7200.0,
+              "exp_r": 0.1132
+            },
+            "7_torture_spread": {
+              "n": 2325,
+              "pnl": -12150.0,
+              "exp_r": -0.0261
+            },
+            "8_torture_skip": {
+              "n": 1583,
+              "pnl": 39800.0,
+              "exp_r": 0.1257
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_ob_5m_struct",
+          "family": "demand_sweep_ob",
+          "entry_tf": "5m",
+          "zone_mode": "ob",
+          "tp_mode": "struct",
+          "rr": 2.0,
+          "trades": 2278,
+          "pnl": 54819.36,
+          "exp_r": 0.1203,
+          "win_rate": 36.0,
+          "verdict": "SURVIVES",
+          "wf_green": 3,
+          "wf_n": 4,
+          "mc_prob_profit": 100.0,
+          "equity": {
+            "n": 2278,
+            "final_pnl": 54819.34,
+            "max_dd_usd": 5806.55,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 2,
+              "cum_pnl": 200.0,
+              "at": "2024-07-24 02:15:00",
+              "days_from_start": 0.1
+            },
+            "be_after_dd": {
+              "trade_n": 2,
+              "cum_pnl": 200.0,
+              "at": "2024-07-24 02:15:00",
+              "days_from_start": 0.1
+            },
+            "profit_after_be": {
+              "trade_n": 3,
+              "cum_pnl": 600.0,
+              "at": "2024-07-24 12:55:00",
+              "days_from_start": 0.54
+            },
+            "locked_be": {
+              "trade_n": 2,
+              "cum_pnl": 200.0,
+              "at": "2024-07-24 02:15:00",
+              "days_from_start": 0.1,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 2278,
+              "pnl": 54819.36,
+              "exp_r": 0.1203
+            },
+            "2_oos70": {
+              "n": 587,
+              "pnl": 20781.88,
+              "exp_r": 0.177
+            },
+            "3_wf_fold_1": {
+              "n": 395,
+              "pnl": 17909.46,
+              "exp_r": 0.2267
+            },
+            "4_wf_fold_2": {
+              "n": 357,
+              "pnl": -356.72,
+              "exp_r": -0.005
+            },
+            "5_wf_fold_3": {
+              "n": 273,
+              "pnl": 13546.22,
+              "exp_r": 0.2481
+            },
+            "6_wf_fold_4": {
+              "n": 314,
+              "pnl": 7235.66,
+              "exp_r": 0.1152
+            },
+            "7_torture_spread": {
+              "n": 2278,
+              "pnl": -13520.64,
+              "exp_r": -0.0297
+            },
+            "8_torture_skip": {
+              "n": 1552,
+              "pnl": 34684.32,
+              "exp_r": 0.1117
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_obfvg_5m_rr2",
+          "family": "demand_sweep_ob",
+          "entry_tf": "5m",
+          "zone_mode": "both",
+          "tp_mode": "rr2",
+          "rr": 2.0,
+          "trades": 1129,
+          "pnl": 17200.0,
+          "exp_r": 0.0762,
+          "win_rate": 35.9,
+          "verdict": "SURVIVES",
+          "wf_green": 4,
+          "wf_n": 4,
+          "mc_prob_profit": 96.5,
+          "equity": {
+            "n": 1129,
+            "final_pnl": 17200.0,
+            "max_dd_usd": 6200.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 7,
+              "cum_pnl": 400.0,
+              "at": "2024-07-26 02:45:00",
+              "days_from_start": 2.12
+            },
+            "be_after_dd": {
+              "trade_n": 3,
+              "cum_pnl": 0.0,
+              "at": "2024-07-24 18:00:00",
+              "days_from_start": 0.75
+            },
+            "profit_after_be": {
+              "trade_n": 7,
+              "cum_pnl": 400.0,
+              "at": "2024-07-26 02:45:00",
+              "days_from_start": 2.12
+            },
+            "locked_be": {
+              "trade_n": 507,
+              "cum_pnl": 0.0,
+              "at": "2025-05-26 16:40:00",
+              "days_from_start": 306.7,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 1129,
+              "pnl": 17200.0,
+              "exp_r": 0.0762
+            },
+            "2_oos70": {
+              "n": 309,
+              "pnl": 10200.0,
+              "exp_r": 0.165
+            },
+            "3_wf_fold_1": {
+              "n": 170,
+              "pnl": 6200.0,
+              "exp_r": 0.1824
+            },
+            "4_wf_fold_2": {
+              "n": 168,
+              "pnl": 600.0,
+              "exp_r": 0.0179
+            },
+            "5_wf_fold_3": {
+              "n": 135,
+              "pnl": 3000.0,
+              "exp_r": 0.1111
+            },
+            "6_wf_fold_4": {
+              "n": 174,
+              "pnl": 7200.0,
+              "exp_r": 0.2069
+            },
+            "7_torture_spread": {
+              "n": 1129,
+              "pnl": -16670.0,
+              "exp_r": -0.0738
+            },
+            "8_torture_skip": {
+              "n": 748,
+              "pnl": 22600.0,
+              "exp_r": 0.1511
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_ob_1m_rr2",
+          "family": "demand_sweep_ob",
+          "entry_tf": "1m",
+          "zone_mode": "ob",
+          "tp_mode": "rr2",
+          "rr": 2.0,
+          "trades": 3722,
+          "pnl": 75200.0,
+          "exp_r": 0.101,
+          "win_rate": 36.7,
+          "verdict": "SURVIVES",
+          "wf_green": 4,
+          "wf_n": 4,
+          "mc_prob_profit": 100.0,
+          "equity": {
+            "n": 3722,
+            "final_pnl": 75200.0,
+            "max_dd_usd": 7200.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 2,
+              "cum_pnl": 200.0,
+              "at": "2024-07-24 01:27:00",
+              "days_from_start": 0.06
+            },
+            "be_after_dd": {
+              "trade_n": 2,
+              "cum_pnl": 200.0,
+              "at": "2024-07-24 01:27:00",
+              "days_from_start": 0.06
+            },
+            "profit_after_be": {
+              "trade_n": 5,
+              "cum_pnl": 200.0,
+              "at": "2024-07-24 02:09:00",
+              "days_from_start": 0.09
+            },
+            "locked_be": {
+              "trade_n": 374,
+              "cum_pnl": 200.0,
+              "at": "2024-09-25 07:59:00",
+              "days_from_start": 63.34,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 3722,
+              "pnl": 75200.0,
+              "exp_r": 0.101
+            },
+            "2_oos70": {
+              "n": 957,
+              "pnl": 32400.0,
+              "exp_r": 0.1693
+            },
+            "3_wf_fold_1": {
+              "n": 615,
+              "pnl": 13800.0,
+              "exp_r": 0.1122
+            },
+            "4_wf_fold_2": {
+              "n": 582,
+              "pnl": 10200.0,
+              "exp_r": 0.0876
+            },
+            "5_wf_fold_3": {
+              "n": 425,
+              "pnl": 27200.0,
+              "exp_r": 0.32
+            },
+            "6_wf_fold_4": {
+              "n": 532,
+              "pnl": 5200.0,
+              "exp_r": 0.0489
+            },
+            "7_torture_spread": {
+              "n": 3722,
+              "pnl": -36460.0,
+              "exp_r": -0.049
+            },
+            "8_torture_skip": {
+              "n": 2554,
+              "pnl": 48400.0,
+              "exp_r": 0.0948
+            }
+          }
+        },
+        {
+          "name": "demand_sweep_ob_5m_rr2.4",
+          "family": "demand_sweep_ob",
+          "entry_tf": "5m",
+          "zone_mode": "ob",
+          "tp_mode": "rr2",
+          "rr": 2.4,
+          "trades": 2143,
+          "pnl": 49440.0,
+          "exp_r": 0.1154,
+          "win_rate": 32.8,
+          "verdict": "SURVIVES",
+          "wf_green": 3,
+          "wf_n": 4,
+          "mc_prob_profit": 100.0,
+          "equity": {
+            "n": 2143,
+            "final_pnl": 49440.0,
+            "max_dd_usd": 5880.0,
+            "went_red": true,
+            "first_profit": {
+              "trade_n": 2,
+              "cum_pnl": 280.0,
+              "at": "2024-07-24 03:20:00",
+              "days_from_start": 0.14
+            },
+            "be_after_dd": {
+              "trade_n": 2,
+              "cum_pnl": 280.0,
+              "at": "2024-07-24 03:20:00",
+              "days_from_start": 0.14
+            },
+            "profit_after_be": {
+              "trade_n": 3,
+              "cum_pnl": 760.0,
+              "at": "2024-07-24 13:35:00",
+              "days_from_start": 0.57
+            },
+            "locked_be": {
+              "trade_n": 168,
+              "cum_pnl": 400.0,
+              "at": "2024-09-17 02:55:00",
+              "days_from_start": 55.12,
+              "note": "from this trade onward equity never < 0"
+            }
+          },
+          "tests": {
+            "1_full": {
+              "n": 2143,
+              "pnl": 49440.0,
+              "exp_r": 0.1154
+            },
+            "2_oos70": {
+              "n": 553,
+              "pnl": 20640.0,
+              "exp_r": 0.1866
+            },
+            "3_wf_fold_1": {
+              "n": 368,
+              "pnl": 14120.0,
+              "exp_r": 0.1918
+            },
+            "4_wf_fold_2": {
+              "n": 334,
+              "pnl": -1520.0,
+              "exp_r": -0.0228
+            },
+            "5_wf_fold_3": {
+              "n": 252,
+              "pnl": 10120.0,
+              "exp_r": 0.2008
+            },
+            "6_wf_fold_4": {
+              "n": 301,
+              "pnl": 10520.0,
+              "exp_r": 0.1748
+            },
+            "7_torture_spread": {
+              "n": 2143,
+              "pnl": -14850.0,
+              "exp_r": -0.0346
+            },
+            "8_torture_skip": {
+              "n": 1459,
+              "pnl": 32560.0,
+              "exp_r": 0.1116
+            }
+          }
+        }
+      ],
+      "best": {
+        "name": "pa_live_liq3m_bias15+5_entry1m_rr2",
+        "liq_tf": "3m",
+        "bias_a": "15m",
+        "bias_b": "5m",
+        "entry_tf": "1m",
+        "rr": 2.0,
+        "family": "pa_liq_engulf",
+        "trades": 2999,
+        "pnl": 153200.0,
+        "exp_r": 0.2554,
+        "win_rate": 41.8,
+        "verdict": "SURVIVES",
+        "wf_green": 4,
+        "wf_n": 4,
+        "mc_prob_profit": 100.0,
+        "equity": {
+          "n": 2999,
+          "final_pnl": 153200.0,
+          "max_dd_usd": 4200.0,
+          "went_red": false,
+          "first_profit": {
+            "trade_n": 1,
+            "cum_pnl": 400.0,
+            "at": "2024-07-24 00:13:00",
+            "days_from_start": 0.01
+          },
+          "be_after_dd": null,
+          "profit_after_be": {
+            "trade_n": 1,
+            "cum_pnl": 400.0,
+            "at": "2024-07-24 00:13:00",
+            "days_from_start": 0.01,
+            "note": "never went red \u2014 first green is profit"
+          },
+          "locked_be": {
+            "trade_n": 1,
+            "cum_pnl": 400.0,
+            "at": "2024-07-24 00:13:00",
+            "days_from_start": 0.01,
+            "note": "from this trade onward equity never < 0"
+          }
+        },
+        "tests": {
+          "1_full": {
+            "n": 2999,
+            "pnl": 153200.0,
+            "exp_r": 0.2554
+          },
+          "2_oos70": {
+            "n": 876,
+            "pnl": 35400.0,
+            "exp_r": 0.2021
+          },
+          "3_wf_fold_1": {
+            "n": 469,
+            "pnl": 28600.0,
+            "exp_r": 0.3049
+          },
+          "4_wf_fold_2": {
+            "n": 461,
+            "pnl": 23000.0,
+            "exp_r": 0.2495
+          },
+          "5_wf_fold_3": {
+            "n": 464,
+            "pnl": 22400.0,
+            "exp_r": 0.2414
+          },
+          "6_wf_fold_4": {
+            "n": 412,
+            "pnl": 13000.0,
+            "exp_r": 0.1578
+          },
+          "7_torture_spread": {
+            "n": 2999,
+            "pnl": 63230.0,
+            "exp_r": 0.1054
+          },
+          "8_torture_skip": {
+            "n": 2037,
+            "pnl": 100800.0,
+            "exp_r": 0.2474
+          }
+        }
+      },
+      "pa_live": {
+        "name": "pa_live_liq3m_bias15+5_entry1m_rr2",
+        "liq_tf": "3m",
+        "bias_a": "15m",
+        "bias_b": "5m",
+        "entry_tf": "1m",
+        "rr": 2.0,
+        "family": "pa_liq_engulf",
+        "trades": 2999,
+        "pnl": 153200.0,
+        "exp_r": 0.2554,
+        "win_rate": 41.8,
+        "verdict": "SURVIVES",
+        "wf_green": 4,
+        "wf_n": 4,
+        "mc_prob_profit": 100.0,
+        "equity": {
+          "n": 2999,
+          "final_pnl": 153200.0,
+          "max_dd_usd": 4200.0,
+          "went_red": false,
+          "first_profit": {
+            "trade_n": 1,
+            "cum_pnl": 400.0,
+            "at": "2024-07-24 00:13:00",
+            "days_from_start": 0.01
+          },
+          "be_after_dd": null,
+          "profit_after_be": {
+            "trade_n": 1,
+            "cum_pnl": 400.0,
+            "at": "2024-07-24 00:13:00",
+            "days_from_start": 0.01,
+            "note": "never went red \u2014 first green is profit"
+          },
+          "locked_be": {
+            "trade_n": 1,
+            "cum_pnl": 400.0,
+            "at": "2024-07-24 00:13:00",
+            "days_from_start": 0.01,
+            "note": "from this trade onward equity never < 0"
+          }
+        },
+        "tests": {
+          "1_full": {
+            "n": 2999,
+            "pnl": 153200.0,
+            "exp_r": 0.2554
+          },
+          "2_oos70": {
+            "n": 876,
+            "pnl": 35400.0,
+            "exp_r": 0.2021
+          },
+          "3_wf_fold_1": {
+            "n": 469,
+            "pnl": 28600.0,
+            "exp_r": 0.3049
+          },
+          "4_wf_fold_2": {
+            "n": 461,
+            "pnl": 23000.0,
+            "exp_r": 0.2495
+          },
+          "5_wf_fold_3": {
+            "n": 464,
+            "pnl": 22400.0,
+            "exp_r": 0.2414
+          },
+          "6_wf_fold_4": {
+            "n": 412,
+            "pnl": 13000.0,
+            "exp_r": 0.1578
+          },
+          "7_torture_spread": {
+            "n": 2999,
+            "pnl": 63230.0,
+            "exp_r": 0.1054
+          },
+          "8_torture_skip": {
+            "n": 2037,
+            "pnl": 100800.0,
+            "exp_r": 0.2474
+          }
+        }
+      },
+      "best_manual": {
+        "name": "demand_sweep_ob_1m_rr2",
+        "family": "demand_sweep_ob",
+        "entry_tf": "1m",
+        "zone_mode": "ob",
+        "tp_mode": "rr2",
+        "rr": 2.0,
+        "trades": 3722,
+        "pnl": 75200.0,
+        "exp_r": 0.101,
+        "win_rate": 36.7,
+        "verdict": "SURVIVES",
+        "wf_green": 4,
+        "wf_n": 4,
+        "mc_prob_profit": 100.0,
+        "equity": {
+          "n": 3722,
+          "final_pnl": 75200.0,
+          "max_dd_usd": 7200.0,
+          "went_red": true,
+          "first_profit": {
+            "trade_n": 2,
+            "cum_pnl": 200.0,
+            "at": "2024-07-24 01:27:00",
+            "days_from_start": 0.06
+          },
+          "be_after_dd": {
+            "trade_n": 2,
+            "cum_pnl": 200.0,
+            "at": "2024-07-24 01:27:00",
+            "days_from_start": 0.06
+          },
+          "profit_after_be": {
+            "trade_n": 5,
+            "cum_pnl": 200.0,
+            "at": "2024-07-24 02:09:00",
+            "days_from_start": 0.09
+          },
+          "locked_be": {
+            "trade_n": 374,
+            "cum_pnl": 200.0,
+            "at": "2024-09-25 07:59:00",
+            "days_from_start": 63.34,
+            "note": "from this trade onward equity never < 0"
+          }
+        },
+        "tests": {
+          "1_full": {
+            "n": 3722,
+            "pnl": 75200.0,
+            "exp_r": 0.101
+          },
+          "2_oos70": {
+            "n": 957,
+            "pnl": 32400.0,
+            "exp_r": 0.1693
+          },
+          "3_wf_fold_1": {
+            "n": 615,
+            "pnl": 13800.0,
+            "exp_r": 0.1122
+          },
+          "4_wf_fold_2": {
+            "n": 582,
+            "pnl": 10200.0,
+            "exp_r": 0.0876
+          },
+          "5_wf_fold_3": {
+            "n": 425,
+            "pnl": 27200.0,
+            "exp_r": 0.32
+          },
+          "6_wf_fold_4": {
+            "n": 532,
+            "pnl": 5200.0,
+            "exp_r": 0.0489
+          },
+          "7_torture_spread": {
+            "n": 3722,
+            "pnl": -36460.0,
+            "exp_r": -0.049
+          },
+          "8_torture_skip": {
+            "n": 2554,
+            "pnl": 48400.0,
+            "exp_r": 0.0948
+          }
+        }
+      },
+      "delta_manual_minus_pa": -78000.0,
+      "elapsed_s": 425.5
+    }
+  ],
+  "elapsed_s": 627.1
+}

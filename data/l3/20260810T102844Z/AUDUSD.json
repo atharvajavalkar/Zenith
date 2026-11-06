@@ -1,0 +1,41 @@
+{
+  "zenith": "AUDUSD",
+  "map": {
+    "true_l3": false,
+    "primary": "xm_dom",
+    "product": "AUDUSD",
+    "databento": {
+      "dataset": "DBFX.PLUS",
+      "symbol": "AUD/USD",
+      "schema": "mbp-10"
+    },
+    "tardis": null,
+    "note": "Spot FX aggregated L2 at best; XM DOM primary without keys"
+  },
+  "sources": {
+    "xm_dom": {
+      "ok": false,
+      "zenith": "AUDUSD",
+      "schema": "L2_AGG_BROKER_DOM",
+      "broker_tried": [
+        "AUDUSD"
+      ],
+      "error": "empty book / symbol unsupported on this XM account",
+      "fetched_at": "2026-08-10T10:31:48Z"
+    },
+    "databento": {
+      "ok": false,
+      "skipped": true,
+      "reason": "DATABENTO_API_KEY not set",
+      "would_fetch": {
+        "dataset": "DBFX.PLUS",
+        "symbol": "AUD/USD",
+        "schema": "mbp-10"
+      }
+    }
+  },
+  "fetched_at": "2026-08-10T10:31:34Z",
+  "best_schema": null,
+  "best_source": null,
+  "blocked_reason": "XM account has no Market Depth for this CFD; set DATABENTO_API_KEY for CME/FX proxy L3/L2"
+}

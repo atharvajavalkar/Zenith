@@ -1,0 +1,34 @@
+{
+  "zenith": "GOLD",
+  "map": {
+    "true_l3": false,
+    "primary": "xm_dom",
+    "product": "GOLD",
+    "databento": {
+      "dataset": "GLBX.MDP3",
+      "symbol": "GC.c.0",
+      "schema": "mbo"
+    },
+    "tardis": null,
+    "note": "XM DOM now; CME GC MBO via DATABENTO_API_KEY for true order chain"
+  },
+  "sources": {
+    "xm_dom": {
+      "ok": false,
+      "error": "No module named 'requests'"
+    },
+    "databento": {
+      "ok": false,
+      "skipped": true,
+      "reason": "DATABENTO_API_KEY not set",
+      "would_fetch": {
+        "dataset": "GLBX.MDP3",
+        "symbol": "GC.c.0",
+        "schema": "mbo"
+      }
+    }
+  },
+  "fetched_at": "2026-08-10T10:13:42Z",
+  "best_schema": null,
+  "best_source": null
+}

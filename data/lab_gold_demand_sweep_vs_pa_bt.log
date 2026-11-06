@@ -1,0 +1,109 @@
+=== GOLD demand-sweep/OB vs live PA · Dukascopy · RESEARCH ===
+Risk $200.0/R · Live wiring NOT changed
+Manual: 15m OB(+FVG) ← wick sweep → reclaim on 5m/1m · no EMA bias · TP RR2 or opposing OB
+PA live: liq=3m bias=15m+5m entry=1m RR=2.0
+
+================================================================
+===== WINDOW 2m (61d) =====
+  load GOLD 1m: 67,054 2026-05-17 22:00:00→2026-07-23 23:59:00
+  load GOLD 3m: 22,312 2026-05-17 22:06:00→2026-07-23 23:57:00
+  load GOLD 5m: 13,374 2026-05-17 22:10:00→2026-07-23 23:55:00
+  load GOLD 15m: 4,466 2026-05-17 22:15:00→2026-07-23 23:45:00
+  trade window: 2026-05-23 → 2026-07-23
+  15m zones built: 1250 (0.1s)
+  PA live: n=212 pnl=$11,000 E[R]=0.2594 SURVIVES (1.3s) | BE=t27@2026-05-27(3.45d) locked=t44@2026-06-01(8.13d)
+  demand_sweep_ob_5m_rr2: entries=388 n=174 pnl=$6,000 E[R]=0.1724 SURVIVES (0.7s) | BE=t3@2026-05-25(1.74d) → profit=t4@2026-05-25(1.98d) locked=t23@2026-06-02(9.02d) maxDD=$2200.0
+  demand_sweep_ob_5m_struct: entries=388 n=171 pnl=$4,266 E[R]=0.1247 SURVIVES (1.2s) | BE=t27@2026-06-03(10.05d) → profit=t28@2026-06-03(10.23d) locked=t115@2026-07-03(40.59d) maxDD=$2614.16
+  demand_sweep_obfvg_5m_rr2: entries=163 n=97 pnl=$5,800 E[R]=0.299 SURVIVES (0.9s) | BE=t2@2026-05-26(2.01d) → profit=t11@2026-05-29(5.41d) locked=t11@2026-05-29(5.41d) maxDD=$1600.0
+  demand_sweep_ob_1m_rr2: entries=468 n=302 pnl=$2,600 E[R]=0.043 FRAGILE (3.2s) | BE=t122@2026-06-16(23.47d) → profit=t123@2026-06-16(23.56d) locked=t284@2026-07-17(54.53d) maxDD=$6800.0
+  demand_sweep_ob_5m_rr2.4: entries=388 n=166 pnl=$6,920 E[R]=0.2084 SURVIVES (0.7s) | BE=t3@2026-05-25(1.74d) → profit=t4@2026-05-25(1.99d) locked=t98@2026-06-30(37.6d) maxDD=$2760.0
+
+--- 2m BEST: pa_live_liq3m_bias15+5_entry1m_rr2 pnl=$11,000 SURVIVES E[R]=0.2594
+Δ best_manual − PA: $-4,080 (demand_sweep_ob_5m_rr2.4 vs pa_live_liq3m_bias15+5_entry1m_rr2)
+
+================================================================
+===== WINDOW 6m (183d) =====
+  load GOLD 1m: 185,206 2026-01-14 23:55:00→2026-07-23 23:59:00
+  load GOLD 3m: 61,635 2026-01-14 23:57:00→2026-07-23 23:57:00
+  load GOLD 5m: 36,961 2026-01-14 23:55:00→2026-07-23 23:55:00
+  load GOLD 15m: 12,333 2026-01-15 00:00:00→2026-07-23 23:45:00
+  trade window: 2026-01-21 → 2026-07-23
+  15m zones built: 3456 (0.3s)
+  PA live: n=705 pnl=$22,800 E[R]=0.1617 SURVIVES (3.9s) | BE=t12@2026-01-22(0.8d) locked=t12@2026-01-22(0.8d)
+  demand_sweep_ob_5m_rr2: entries=1031 n=502 pnl=$14,200 E[R]=0.1414 SURVIVES (3.5s) | BE=t15@2026-01-28(6.83d) → profit=t17@2026-01-30(8.56d) locked=t17@2026-01-30(8.56d) maxDD=$4800.0
+  demand_sweep_ob_5m_struct: entries=1031 n=497 pnl=$14,251 E[R]=0.1434 SURVIVES (3.5s) | BE=t17@2026-01-30(8.88d) → profit=t18@2026-02-02(11.53d) locked=t17@2026-01-30(8.88d) maxDD=$4600.0
+  demand_sweep_obfvg_5m_rr2: entries=449 n=271 pnl=$7,000 E[R]=0.1292 SURVIVES (3.5s) | BE=t21@2026-02-09(18.97d) → profit=t34@2026-02-19(28.4d) locked=t143@2026-05-04(102.34d) maxDD=$3400.0
+  demand_sweep_ob_1m_rr2: entries=1224 n=822 pnl=$21,000 E[R]=0.1277 SURVIVES (17.4s) | BE=t8@2026-01-23(1.24d) → profit=t16@2026-01-26(4.78d) locked=t15@2026-01-26(4.74d) maxDD=$6800.0
+  demand_sweep_ob_5m_rr2.4: entries=1031 n=469 pnl=$15,000 E[R]=0.1599 SURVIVES (3.9s) | BE=t16@2026-01-30(8.56d) → profit=t17@2026-01-30(8.73d) locked=t16@2026-01-30(8.56d) maxDD=$4760.0
+
+--- 6m BEST: pa_live_liq3m_bias15+5_entry1m_rr2 pnl=$22,800 SURVIVES E[R]=0.1617
+Δ best_manual − PA: $-1,800 (demand_sweep_ob_1m_rr2 vs pa_live_liq3m_bias15+5_entry1m_rr2)
+
+================================================================
+===== WINDOW 12m (365d) =====
+  load GOLD 1m: 360,856 2025-07-16 23:55:00→2026-07-23 23:59:00
+  load GOLD 3m: 120,085 2025-07-16 23:57:00→2026-07-23 23:57:00
+  load GOLD 5m: 72,009 2025-07-16 23:55:00→2026-07-23 23:55:00
+  load GOLD 15m: 24,021 2025-07-17 00:00:00→2026-07-23 23:45:00
+  trade window: 2025-07-23 → 2026-07-23
+  15m zones built: 6852 (0.7s)
+  PA live: n=1513 pnl=$65,800 E[R]=0.2174 SURVIVES (8.4s) | BE=t2@2025-07-24(0.13d) locked=t2@2025-07-24(0.13d)
+  demand_sweep_ob_5m_rr2: entries=2197 n=1084 pnl=$29,200 E[R]=0.1347 SURVIVES (11.8s) | BE=t5@2025-07-28(4.17d) → profit=t7@2025-07-28(4.36d) locked=t15@2025-07-30(6.08d) maxDD=$4800.0
+  demand_sweep_ob_5m_struct: entries=2197 n=1059 pnl=$28,167 E[R]=0.133 SURVIVES (12.6s) | BE=t5@2025-07-28(4.17d) → profit=t7@2025-07-28(4.36d) locked=t15@2025-07-30(6.08d) maxDD=$4600.0
+  demand_sweep_obfvg_5m_rr2: entries=902 n=537 pnl=$13,200 E[R]=0.1229 SURVIVES (11.8s) | BE=t23@2025-08-07(14.07d) → profit=t25@2025-08-07(14.94d) locked=t23@2025-08-07(14.07d) maxDD=$3800.0
+  demand_sweep_ob_1m_rr2: entries=2720 n=1735 pnl=$47,800 E[R]=0.1378 SURVIVES (58.2s) | BE=t3@2025-07-25(1.1d) → profit=t5@2025-07-28(4.05d) locked=t33@2025-07-30(6.08d) maxDD=$6800.0
+  demand_sweep_ob_5m_rr2.4: entries=2197 n=987 pnl=$24,280 E[R]=0.123 SURVIVES (12.2s) | BE=t5@2025-07-28(4.17d) → profit=t6@2025-07-28(4.29d) locked=t22@2025-08-04(11.32d) maxDD=$5320.0
+
+--- 12m BEST: pa_live_liq3m_bias15+5_entry1m_rr2 pnl=$65,800 SURVIVES E[R]=0.2174
+Δ best_manual − PA: $-18,000 (demand_sweep_ob_1m_rr2 vs pa_live_liq3m_bias15+5_entry1m_rr2)
+
+================================================================
+===== WINDOW 2y (730d) =====
+  load GOLD 1m: 714,824 2024-07-16 23:55:00→2026-07-23 23:59:00
+  load GOLD 3m: 237,918 2024-07-16 23:57:00→2026-07-23 23:57:00
+  load GOLD 5m: 142,664 2024-07-16 23:55:00→2026-07-23 23:55:00
+  load GOLD 15m: 47,579 2024-07-17 00:00:00→2026-07-23 23:45:00
+  trade window: 2024-07-23 → 2026-07-23
+  15m zones built: 13689 (1.3s)
+  PA live: n=2999 pnl=$153,200 E[R]=0.2554 SURVIVES (18.5s) | BE=— locked=t1@2024-07-24(0.01d)
+  demand_sweep_ob_5m_rr2: entries=4632 n=2325 pnl=$57,600 E[R]=0.1239 SURVIVES (44.4s) | BE=t2@2024-07-24(0.1d) → profit=t3@2024-07-24(0.54d) locked=t2@2024-07-24(0.1d) maxDD=$4800.0
+  demand_sweep_ob_5m_struct: entries=4632 n=2278 pnl=$54,819 E[R]=0.1203 SURVIVES (44.2s) | BE=t2@2024-07-24(0.1d) → profit=t3@2024-07-24(0.54d) locked=t2@2024-07-24(0.1d) maxDD=$5806.55
+  demand_sweep_obfvg_5m_rr2: entries=1893 n=1129 pnl=$17,200 E[R]=0.0762 SURVIVES (43.4s) | BE=t3@2024-07-24(0.75d) → profit=t7@2024-07-26(2.12d) locked=t507@2025-05-26(306.7d) maxDD=$6200.0
+  demand_sweep_ob_1m_rr2: entries=5777 n=3722 pnl=$75,200 E[R]=0.101 SURVIVES (215.9s) | BE=t2@2024-07-24(0.06d) → profit=t5@2024-07-24(0.09d) locked=t374@2024-09-25(63.34d) maxDD=$7200.0
+  demand_sweep_ob_5m_rr2.4: entries=4632 n=2143 pnl=$49,440 E[R]=0.1154 SURVIVES (43.5s) | BE=t2@2024-07-24(0.14d) → profit=t3@2024-07-24(0.57d) locked=t168@2024-09-17(55.12d) maxDD=$5880.0
+
+--- 2y BEST: pa_live_liq3m_bias15+5_entry1m_rr2 pnl=$153,200 SURVIVES E[R]=0.2554
+Δ best_manual − PA: $-78,000 (demand_sweep_ob_1m_rr2 vs pa_live_liq3m_bias15+5_entry1m_rr2)
+
+Wrote /app/data/lab_gold_demand_sweep_vs_pa_bt.json (627.1s)
+
+======== CROSS-HORIZON SCOREBOARD ========
+ win arm                                             pnl     n    E[R]    verdict
+  2m pa_live_liq3m_bias15+5_entry1m_rr2       $   11,000   212   0.259   SURVIVES
+  2m demand_sweep_ob_5m_rr2                   $    6,000   174   0.172   SURVIVES
+  2m demand_sweep_ob_5m_struct                $    4,266   171   0.125   SURVIVES
+  2m demand_sweep_obfvg_5m_rr2                $    5,800    97   0.299   SURVIVES
+  2m demand_sweep_ob_1m_rr2                   $    2,600   302   0.043    FRAGILE
+  2m demand_sweep_ob_5m_rr2.4                 $    6,920   166   0.208   SURVIVES
+     → Δ best_manual−PA = $-4080.0
+  6m pa_live_liq3m_bias15+5_entry1m_rr2       $   22,800   705   0.162   SURVIVES
+  6m demand_sweep_ob_5m_rr2                   $   14,200   502   0.141   SURVIVES
+  6m demand_sweep_ob_5m_struct                $   14,251   497   0.143   SURVIVES
+  6m demand_sweep_obfvg_5m_rr2                $    7,000   271   0.129   SURVIVES
+  6m demand_sweep_ob_1m_rr2                   $   21,000   822   0.128   SURVIVES
+  6m demand_sweep_ob_5m_rr2.4                 $   15,000   469   0.160   SURVIVES
+     → Δ best_manual−PA = $-1800.0
+ 12m pa_live_liq3m_bias15+5_entry1m_rr2       $   65,800  1513   0.217   SURVIVES
+ 12m demand_sweep_ob_5m_rr2                   $   29,200  1084   0.135   SURVIVES
+ 12m demand_sweep_ob_5m_struct                $   28,167  1059   0.133   SURVIVES
+ 12m demand_sweep_obfvg_5m_rr2                $   13,200   537   0.123   SURVIVES
+ 12m demand_sweep_ob_1m_rr2                   $   47,800  1735   0.138   SURVIVES
+ 12m demand_sweep_ob_5m_rr2.4                 $   24,280   987   0.123   SURVIVES
+     → Δ best_manual−PA = $-18000.0
+  2y pa_live_liq3m_bias15+5_entry1m_rr2       $  153,200  2999   0.255   SURVIVES
+  2y demand_sweep_ob_5m_rr2                   $   57,600  2325   0.124   SURVIVES
+  2y demand_sweep_ob_5m_struct                $   54,819  2278   0.120   SURVIVES
+  2y demand_sweep_obfvg_5m_rr2                $   17,200  1129   0.076   SURVIVES
+  2y demand_sweep_ob_1m_rr2                   $   75,200  3722   0.101   SURVIVES
+  2y demand_sweep_ob_5m_rr2.4                 $   49,440  2143   0.115   SURVIVES
+     → Δ best_manual−PA = $-78000.0

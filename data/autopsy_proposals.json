@@ -1,0 +1,526 @@
+{
+  "updated_at": "2026-08-20T17:21:15.541670+00:00",
+  "days": 14,
+  "lookback_days": 90,
+  "board_n": 68,
+  "desk_efficiency": 3,
+  "proposals": [
+    {
+      "id": "1cb20523",
+      "symbol": "AUDUSD",
+      "tag": "stop_loss_hit",
+      "experiment_id": "tighter_entry",
+      "label": "Tighter EMA pull / displacement",
+      "kind": "brain_param",
+      "brain": "bb_1.5",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "brain_kw": {
+        "pull_atr": 0.7,
+        "disp_atr": 0.7
+      },
+      "status": "promoted_soft",
+      "apply_safe": true,
+      "confidence": "high",
+      "reason": "oos_er 0.286\u21920.500",
+      "gate": "oos_wf_mc",
+      "ab": {
+        "baseline": {
+          "verdict": "SURVIVES",
+          "full_er": 0.286,
+          "oos_er": 0.286,
+          "mc_profit": 76.0,
+          "n": 21
+        },
+        "alt": {
+          "verdict": "SURVIVES",
+          "full_er": 0.5,
+          "oos_er": 0.5,
+          "mc_profit": 80.7,
+          "n": 12
+        }
+      },
+      "soft_applied_at": "2026-08-13T19:24:18.308226+00:00",
+      "validation": {
+        "previous_knobs": {},
+        "candidate_knobs": {
+          "pull_atr": 0.7,
+          "disp_atr": 0.7
+        },
+        "brain": "bb_1.5",
+        "previous": {
+          "verdict": "SURVIVES",
+          "full_er": 0.286,
+          "oos_er": 0.286,
+          "mc_profit": 76.0,
+          "n": 21
+        },
+        "candidate": {
+          "verdict": "SURVIVES",
+          "full_er": 0.5,
+          "oos_er": 0.5,
+          "mc_profit": 80.7,
+          "n": 12
+        },
+        "compare_reason": "oos_er 0.286\u21920.500",
+        "decision": "soft_retained",
+        "compare_ok": true
+      },
+      "applied_at": "2026-08-13T19:24:18.313373+00:00"
+    },
+    {
+      "id": "99e12805",
+      "symbol": "BTCUSD",
+      "tag": "stop_loss_hit",
+      "experiment_id": "tighter_entry",
+      "label": "Tighter EMA pull / displacement",
+      "kind": "soft_overlay",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "status": "promoted_soft",
+      "apply_safe": true,
+      "confidence": "high",
+      "reason": "Autopsy tip 'stop_loss_hit' on BTCUSD (eff 2/10, 1W/2L) \u2014 soft gate only, no brain rewrite.",
+      "ab": null,
+      "gate": "score_only_soft",
+      "soft_applied_at": "2026-08-13T19:24:18.349933+00:00",
+      "validation": {
+        "previous_knobs": {},
+        "candidate_knobs": {},
+        "brain": "fib_liq",
+        "decision": "soft_retained",
+        "compare_ok": false,
+        "compare_reason": "soft_only_no_brain_kw"
+      },
+      "applied_at": "2026-08-13T19:24:18.350084+00:00"
+    },
+    {
+      "id": "632a636f",
+      "symbol": "USDJPY",
+      "tag": "stop_loss_hit",
+      "experiment_id": "tighter_entry",
+      "label": "Tighter EMA pull / displacement",
+      "kind": "brain_param",
+      "brain": "bb_1.5",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "brain_kw": {
+        "pull_atr": 0.7,
+        "disp_atr": 0.7
+      },
+      "status": "promoted_soft",
+      "apply_safe": true,
+      "confidence": "high",
+      "reason": "oos_er 0.200\u21920.500",
+      "gate": "oos_wf_mc",
+      "ab": {
+        "baseline": {
+          "verdict": "FRAGILE",
+          "full_er": 0.0,
+          "oos_er": 0.2,
+          "mc_profit": 42.0,
+          "n": 18
+        },
+        "alt": {
+          "verdict": "SURVIVES",
+          "full_er": 0.125,
+          "oos_er": 0.5,
+          "mc_profit": 62.7,
+          "n": 8
+        }
+      },
+      "soft_applied_at": "2026-08-13T19:24:18.362650+00:00",
+      "validation": {
+        "previous_knobs": {},
+        "candidate_knobs": {
+          "pull_atr": 0.7,
+          "disp_atr": 0.7
+        },
+        "brain": "bb_1.5",
+        "previous": {
+          "verdict": "FRAGILE",
+          "full_er": 0.0,
+          "oos_er": 0.2,
+          "mc_profit": 42.0,
+          "n": 18
+        },
+        "candidate": {
+          "verdict": "SURVIVES",
+          "full_er": 0.125,
+          "oos_er": 0.5,
+          "mc_profit": 62.7,
+          "n": 8
+        },
+        "compare_reason": "oos_er 0.200\u21920.500",
+        "decision": "soft_retained",
+        "compare_ok": true
+      },
+      "applied_at": "2026-08-13T19:24:18.362778+00:00"
+    },
+    {
+      "id": "ca7135c9",
+      "symbol": "UKOIL",
+      "tag": "stop_loss_hit",
+      "experiment_id": "tighter_entry",
+      "label": "Tighter EMA pull / displacement",
+      "kind": "brain_param",
+      "brain": "st_3",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "brain_kw": {
+        "pull_atr": 0.7,
+        "disp_atr": 0.7
+      },
+      "status": "promoted_soft",
+      "apply_safe": true,
+      "confidence": "medium",
+      "reason": "oos_er 1.250\u21922.000",
+      "gate": "oos_wf_mc",
+      "ab": {
+        "baseline": {
+          "verdict": "SURVIVES",
+          "full_er": 0.385,
+          "oos_er": 1.25,
+          "mc_profit": 79.7,
+          "n": 13
+        },
+        "alt": {
+          "verdict": "FRAGILE",
+          "full_er": 1.25,
+          "oos_er": 2.0,
+          "mc_profit": null,
+          "n": 4
+        }
+      },
+      "soft_applied_at": "2026-08-20T17:21:15.541143+00:00",
+      "validation": {
+        "previous_knobs": {},
+        "candidate_knobs": {
+          "pull_atr": 0.7,
+          "disp_atr": 0.7
+        },
+        "brain": "st_3",
+        "previous": {
+          "verdict": "SURVIVES",
+          "full_er": 0.385,
+          "oos_er": 1.25,
+          "mc_profit": 79.7,
+          "n": 13
+        },
+        "candidate": {
+          "verdict": "FRAGILE",
+          "full_er": 1.25,
+          "oos_er": 2.0,
+          "mc_profit": null,
+          "n": 4
+        },
+        "compare_reason": "oos_er 1.250\u21922.000",
+        "decision": "soft_retained",
+        "compare_ok": true
+      },
+      "applied_at": "2026-08-20T17:21:15.541631+00:00"
+    },
+    {
+      "id": "d03bb7bd",
+      "symbol": "AUDUSD",
+      "tag": "stop_loss_hit",
+      "experiment_id": "wider_sl",
+      "label": "Slightly wider stops (less noise stop-outs)",
+      "kind": "brain_param",
+      "brain": "bb_1.5",
+      "patch": {
+        "risk_scale": 0.92
+      },
+      "brain_kw": {
+        "sl_widen": 1.15
+      },
+      "status": "rejected",
+      "apply_safe": false,
+      "confidence": "low",
+      "reason": "rejected:no_edge_gain",
+      "gate": "oos_wf_mc",
+      "ab": {
+        "baseline": {
+          "verdict": "SURVIVES",
+          "full_er": 0.286,
+          "oos_er": 0.286,
+          "mc_profit": 76.0,
+          "n": 21
+        },
+        "alt": {
+          "verdict": "FRAGILE",
+          "full_er": -0.053,
+          "oos_er": 0.0,
+          "mc_profit": 40.0,
+          "n": 19
+        }
+      }
+    },
+    {
+      "id": "b7530053",
+      "symbol": "BTCUSD",
+      "tag": "stop_loss_hit",
+      "experiment_id": "wider_sl",
+      "label": "Slightly wider stops (less noise stop-outs)",
+      "kind": "brain_param",
+      "brain": "fib_liq",
+      "patch": {
+        "risk_scale": 0.92
+      },
+      "brain_kw": {
+        "sl_widen": 1.15
+      },
+      "status": "rejected",
+      "apply_safe": false,
+      "confidence": "low",
+      "reason": "rejected:no_edge_gain",
+      "gate": "oos_wf_mc",
+      "ab": {
+        "baseline": {
+          "verdict": "DEAD",
+          "full_er": 0.0,
+          "oos_er": 0.0,
+          "mc_profit": 37.0,
+          "n": 12
+        },
+        "alt": {
+          "verdict": "FRAGILE",
+          "full_er": 0.091,
+          "oos_er": -0.25,
+          "mc_profit": 55.7,
+          "n": 11
+        }
+      }
+    },
+    {
+      "id": "7d83f4ef",
+      "symbol": "UKOIL",
+      "tag": "stop_loss_hit",
+      "experiment_id": "wider_sl",
+      "label": "Slightly wider stops (less noise stop-outs)",
+      "kind": "brain_param",
+      "brain": "st_3",
+      "patch": {
+        "risk_scale": 0.92
+      },
+      "brain_kw": {
+        "sl_widen": 1.15
+      },
+      "status": "rejected",
+      "apply_safe": false,
+      "confidence": "low",
+      "reason": "rejected:no_edge_gain",
+      "gate": "oos_wf_mc",
+      "ab": {
+        "baseline": {
+          "verdict": "SURVIVES",
+          "full_er": 0.385,
+          "oos_er": 1.25,
+          "mc_profit": 79.7,
+          "n": 13
+        },
+        "alt": {
+          "verdict": "SURVIVES",
+          "full_er": 0.25,
+          "oos_er": 1.25,
+          "mc_profit": 63.0,
+          "n": 12
+        }
+      }
+    },
+    {
+      "id": "55be2507",
+      "symbol": "USDCHF",
+      "tag": "stop_loss_hit",
+      "experiment_id": "tighter_entry",
+      "label": "Tighter EMA pull / displacement",
+      "kind": "brain_param",
+      "brain": "rsi",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "brain_kw": {
+        "pull_atr": 0.7,
+        "disp_atr": 0.7
+      },
+      "status": "rejected",
+      "apply_safe": false,
+      "confidence": "low",
+      "reason": "rejected:no_edge_gain",
+      "gate": "oos_wf_mc",
+      "ab": {
+        "baseline": {
+          "verdict": "FRAGILE",
+          "full_er": -0.045,
+          "oos_er": 0.125,
+          "mc_profit": 43.0,
+          "n": 22
+        },
+        "alt": {
+          "verdict": "FRAGILE",
+          "full_er": 0.2,
+          "oos_er": -0.25,
+          "mc_profit": 59.7,
+          "n": 10
+        }
+      }
+    },
+    {
+      "id": "75bb79b4",
+      "symbol": "USDCHF",
+      "tag": "stop_loss_hit",
+      "experiment_id": "wider_sl",
+      "label": "Slightly wider stops (less noise stop-outs)",
+      "kind": "brain_param",
+      "brain": "rsi",
+      "patch": {
+        "risk_scale": 0.92
+      },
+      "brain_kw": {
+        "sl_widen": 1.15
+      },
+      "status": "rejected",
+      "apply_safe": false,
+      "confidence": "low",
+      "reason": "rejected:alt_dead",
+      "gate": "oos_wf_mc",
+      "ab": {
+        "baseline": {
+          "verdict": "FRAGILE",
+          "full_er": -0.045,
+          "oos_er": 0.125,
+          "mc_profit": 43.0,
+          "n": 22
+        },
+        "alt": {
+          "verdict": "DEAD",
+          "full_er": -0.053,
+          "oos_er": -0.143,
+          "mc_profit": 37.3,
+          "n": 19
+        }
+      }
+    },
+    {
+      "id": "ca1b6da8",
+      "symbol": "USDJPY",
+      "tag": "stop_loss_hit",
+      "experiment_id": "wider_sl",
+      "label": "Slightly wider stops (less noise stop-outs)",
+      "kind": "brain_param",
+      "brain": "bb_1.5",
+      "patch": {
+        "risk_scale": 0.92
+      },
+      "brain_kw": {
+        "sl_widen": 1.15
+      },
+      "status": "rejected",
+      "apply_safe": false,
+      "confidence": "low",
+      "reason": "rejected:alt_dead",
+      "gate": "oos_wf_mc",
+      "ab": {
+        "baseline": {
+          "verdict": "FRAGILE",
+          "full_er": 0.0,
+          "oos_er": 0.2,
+          "mc_profit": 42.0,
+          "n": 18
+        },
+        "alt": {
+          "verdict": "DEAD",
+          "full_er": 0.0,
+          "oos_er": -0.25,
+          "mc_profit": 38.3,
+          "n": 12
+        }
+      }
+    }
+  ],
+  "runs": [
+    {
+      "symbol": "USDCHF",
+      "exp": "tighter_entry",
+      "ok": false,
+      "why": "no_edge_gain",
+      "base_v": "FRAGILE",
+      "alt_v": "FRAGILE"
+    },
+    {
+      "symbol": "USDCHF",
+      "exp": "wider_sl",
+      "ok": false,
+      "why": "alt_dead",
+      "base_v": "FRAGILE",
+      "alt_v": "DEAD"
+    },
+    {
+      "symbol": "UKOIL",
+      "exp": "tighter_entry",
+      "ok": true,
+      "why": "oos_er 1.250\u21922.000",
+      "base_v": "SURVIVES",
+      "alt_v": "FRAGILE"
+    },
+    {
+      "symbol": "UKOIL",
+      "exp": "wider_sl",
+      "ok": false,
+      "why": "no_edge_gain",
+      "base_v": "SURVIVES",
+      "alt_v": "SURVIVES"
+    },
+    {
+      "symbol": "AUDUSD",
+      "exp": "tighter_entry",
+      "ok": true,
+      "why": "oos_er 0.286\u21920.500",
+      "base_v": "SURVIVES",
+      "alt_v": "SURVIVES"
+    },
+    {
+      "symbol": "AUDUSD",
+      "exp": "wider_sl",
+      "ok": false,
+      "why": "no_edge_gain",
+      "base_v": "SURVIVES",
+      "alt_v": "FRAGILE"
+    },
+    {
+      "symbol": "USDJPY",
+      "exp": "tighter_entry",
+      "ok": true,
+      "why": "oos_er 0.200\u21920.500",
+      "base_v": "FRAGILE",
+      "alt_v": "SURVIVES"
+    },
+    {
+      "symbol": "USDJPY",
+      "exp": "wider_sl",
+      "ok": false,
+      "why": "alt_dead",
+      "base_v": "FRAGILE",
+      "alt_v": "DEAD"
+    },
+    {
+      "symbol": "BTCUSD",
+      "exp": "wider_sl",
+      "ok": false,
+      "why": "no_edge_gain",
+      "base_v": "DEAD",
+      "alt_v": "FRAGILE"
+    }
+  ],
+  "mode": "agentic_research",
+  "note": "Soft-apply runs OOS/WF/MC vs previous setup. Better \u2192 brain knobs promoted; worse \u2192 soft rolled back."
+}

@@ -1,0 +1,17 @@
+{
+  "status": "done",
+  "pct": 100,
+  "cells_done": 10690,
+  "elapsed_sec": 1077.0,
+  "wireable_count": 4,
+  "criteria_met": true,
+  "updated_at": "2026-10-07T01:08:37.825261+00:00",
+  "hunt": "solution_xm",
+  "book": [
+    "BTCUSD",
+    "UKOIL",
+    "GOLD",
+    "NAS100"
+  ],
+  "holdout_start": "2026-07-24 00:00:00+00:00"
+}

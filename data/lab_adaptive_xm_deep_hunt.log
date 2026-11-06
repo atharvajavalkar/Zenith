@@ -1,0 +1,367 @@
+=== DEEP XM adaptive hunt ===
+pairs=8 tfs=('5m', '15m', '3m', '1m') full_variants=78 lean_1m=17 rr=(2.0, 3.0, 4.0)
+est_cells≈52,464 · risk=$100.0/R · session spreads ON
+windows=['7d', '15d', '30d', '90d', '180d', '1y', '3y', 'full']
+
+
+######## ETHUSD @ 5m · 10.0y ########
+  bars=906336 modes=81 combos=2916
+=== DEEP XM adaptive hunt ===
+pairs=8 tfs=('5m', '15m', '3m', '1m') full_variants=78 lean_1m=17 rr=(2.0, 3.0, 4.0)
+est_cells≈52,464 · risk=$100.0/R · session spreads ON
+windows=['7d', '15d', '30d', '90d', '180d', '1y', '3y', 'full']
+
+
+######## ETHUSD @ 5m · 10.0y ########
+  bars=906336 modes=81 combos=2916
+=== DEEP XM adaptive hunt ===
+pairs=8 tfs=('5m', '15m', '3m', '1m') full_variants=78 lean_1m=17 rr=(2.0, 3.0, 4.0)
+est_cells≈52,464 · risk=$100.0/R · session spreads ON
+windows=['7d', '15d', '30d', '90d', '180d', '1y', '3y', 'full']
+
+
+######## ETHUSD @ 5m · 10.0y ########
+  bars=906336 modes=81 combos=2916
+  … 10/81 modes · cells=360 · 1050s
+  … 20/81 modes · cells=720 · 1993s
+  … 30/81 modes · cells=1080 · 2925s
+  … 40/81 modes · cells=1440 · 3840s
+  … 50/81 modes · cells=1800 · 4744s
+  … 60/81 modes · cells=2160 · 5686s
+  … 70/81 modes · cells=2520 · 6600s
+  … 80/81 modes · cells=2880 · 7516s
+  BEST 5m: ou_fade_z2.2|sl1.5|rr4.0|g2 PASS 1y $2,526
+
+######## ETHUSD @ 15m · 10.0y ########
+  bars=302112 modes=81 combos=1944
+  … 10/81 modes · cells=3156 · 7800s
+  … 20/81 modes · cells=3396 · 7991s
+  … 30/81 modes · cells=3636 · 8182s
+  … 40/81 modes · cells=3876 · 8366s
+  … 50/81 modes · cells=4116 · 8551s
+  … 60/81 modes · cells=4356 · 8742s
+  … 70/81 modes · cells=4596 · 8934s
+  … 80/81 modes · cells=4836 · 9127s
+  BEST 15m: circadian_z1.7_s0.6|sl3.0|rr4.0|g2 PASS 1y $5,611
+
+######## ETHUSD @ 3m · 5.0y ########
+  bars=898081 modes=81 combos=1458
+  … 10/81 modes · cells=5040 · 9623s
+  … 20/81 modes · cells=5220 · 10085s
+  … 30/81 modes · cells=5400 · 10551s
+  … 40/81 modes · cells=5580 · 10999s
+  … 50/81 modes · cells=5760 · 11446s
+  … 60/81 modes · cells=5940 · 11903s
+  … 70/81 modes · cells=6120 · 12355s
+  … 80/81 modes · cells=6300 · 12813s
+  BEST 3m: static|sl2.5|rr4.0|g2 PASS 1y $7,238
+
+######## ETHUSD @ 1m · 1.0y ########
+  bars=590401 modes=20 combos=240
+  … 10/20 modes · cells=6438 · 13065s
+  … 20/20 modes · cells=6558 · 13257s
+  BEST 1m: switch|sl2.5|rr4.0|g5 SOFT 1y $3,851
+
+######## BTCUSD @ 5m · 10.0y ########
+  bars=969120 modes=81 combos=2916
+  … 10/81 modes · cells=6918 · 14281s
+  … 20/81 modes · cells=7278 · 46969s
+  … 30/81 modes · cells=7638 · 77512s
+  … 40/81 modes · cells=7998 · 80351s
+  … 50/81 modes · cells=8358 · 81346s
+  … 60/81 modes · cells=8718 · 141258s
+  … 70/81 modes · cells=9078 · 149364s
+  … 80/81 modes · cells=9438 · 150360s
+  BEST 5m: circadian_z1.5_s0.8|sl2.5|rr4.0|g3 PASS 1y $5,960
+
+######## BTCUSD @ 15m · 10.0y ########
+  bars=323040 modes=81 combos=1944
+  … 10/81 modes · cells=9714 · 150676s
+  … 20/81 modes · cells=9954 · 150887s
+  … 30/81 modes · cells=10194 · 151096s
+  … 40/81 modes · cells=10434 · 151298s
+  … 50/81 modes · cells=10674 · 151500s
+  … 60/81 modes · cells=10914 · 151706s
+  … 70/81 modes · cells=11154 · 151911s
+  … 80/81 modes · cells=11394 · 152116s
+  BEST 15m: circadian_z1.5_s0.4|sl2.0|rr4.0|g3 PASS 1y $6,792
+
+######## BTCUSD @ 3m · 5.0y ########
+  bars=898081 modes=81 combos=1458
+  … 10/81 modes · cells=11598 · 152615s
+  … 20/81 modes · cells=11778 · 153079s
+  … 30/81 modes · cells=11958 · 153538s
+  … 40/81 modes · cells=12138 · 153980s
+  … 50/81 modes · cells=12318 · 154421s
+  … 60/81 modes · cells=12498 · 154878s
+  … 70/81 modes · cells=12678 · 155331s
+  … 80/81 modes · cells=12858 · 155787s
+  BEST 3m: session_mix_edgegate|sl3.0|rr4.0|g2 PASS 1y $5,900
+
+######## BTCUSD @ 1m · 1.0y ########
+  bars=590401 modes=20 combos=240
+  … 10/20 modes · cells=12996 · 156038s
+  … 20/20 modes · cells=13116 · 156228s
+  BEST 1m: static|sl2.5|rr4.0|g5 PASS 1y $2,077
+
+######## GOLD @ 5m · 10.0y ########
+  bars=1049184 modes=81 combos=2916
+  … 10/81 modes · cells=13476 · 157332s
+  … 20/81 modes · cells=13836 · 158430s
+  … 30/81 modes · cells=14196 · 159530s
+  … 40/81 modes · cells=14556 · 160597s
+  … 50/81 modes · cells=14916 · 161755s
+  … 60/81 modes · cells=15276 · 162876s
+  … 70/81 modes · cells=15636 · 164013s
+  … 80/81 modes · cells=15996 · 165122s
+  BEST 5m: session_mix_t0.22_o0.30|sl3.0|rr4.0|g2 PASS 1y $15,123
+
+######## GOLD @ 15m · 10.0y ########
+  bars=349728 modes=81 combos=1944
+  … 10/81 modes · cells=16272 · 165487s
+  … 20/81 modes · cells=16512 · 165729s
+  … 30/81 modes · cells=16752 · 165954s
+  … 40/81 modes · cells=16992 · 166173s
+  … 50/81 modes · cells=17232 · 166399s
+  … 60/81 modes · cells=17472 · 166633s
+  … 70/81 modes · cells=17712 · 166859s
+  … 80/81 modes · cells=17952 · 167090s
+  BEST 15m: entropy_p0.85_s0.00|sl2.5|rr4.0|g2 PASS 1y $10,711
+
+######## GOLD @ 3m · 5.0y ########
+  bars=893281 modes=81 combos=1458
+  … 10/81 modes · cells=18156 · 167586s
+  … 20/81 modes · cells=18336 · 168047s
+  … 30/81 modes · cells=18516 · 168505s
+  … 40/81 modes · cells=18696 · 168949s
+  … 50/81 modes · cells=18876 · 169629s
+  … 60/81 modes · cells=19056 · 170345s
+  … 70/81 modes · cells=19236 · 170800s
+  … 80/81 modes · cells=19416 · 171261s
+  BEST 3m: weekday_regime_prior|sl3.0|rr4.0|g3 PASS 1y $9,558
+
+######## GOLD @ 1m · 1.0y ########
+  bars=590401 modes=20 combos=240
+  … 10/20 modes · cells=19554 · 171516s
+  … 20/20 modes · cells=19674 · 171708s
+  BEST 1m: entropy_p0.72_s0.22|sl2.5|rr2.0|g5 FAIL 1y $-586
+
+######## NAS100 @ 5m · 10.0y ########
+  bars=1052064 modes=81 combos=2916
+  … 10/81 modes · cells=20034 · 172839s
+  … 20/81 modes · cells=20394 · 173959s
+  … 30/81 modes · cells=20754 · 175066s
+  … 40/81 modes · cells=21114 · 176138s
+  … 50/81 modes · cells=21474 · 177209s
+  … 60/81 modes · cells=21834 · 178305s
+  … 70/81 modes · cells=22194 · 179391s
+  … 80/81 modes · cells=22554 · 180482s
+  BEST 5m: entropy_p0.85_s0.18|sl1.5|rr4.0|g5 PASS 1y $10,816
+
+######## NAS100 @ 15m · 10.0y ########
+  bars=350688 modes=81 combos=1944
+  … 10/81 modes · cells=22830 · 180819s
+  … 20/81 modes · cells=23070 · 181047s
+  … 30/81 modes · cells=23310 · 181275s
+  … 40/81 modes · cells=23550 · 181495s
+  … 50/81 modes · cells=23790 · 181716s
+  … 60/81 modes · cells=24030 · 181942s
+  … 70/81 modes · cells=24270 · 182166s
+  … 80/81 modes · cells=24510 · 182388s
+  BEST 15m: volmom_t0.5_l20|sl2.0|rr3.0|g2 PASS 1y $9,428
+
+######## NAS100 @ 3m · 5.0y ########
+  bars=898081 modes=81 combos=1458
+  … 10/81 modes · cells=24714 · 182888s
+  … 20/81 modes · cells=24894 · 183362s
+  … 30/81 modes · cells=25074 · 183842s
+  … 40/81 modes · cells=25254 · 184336s
+  … 50/81 modes · cells=25434 · 184799s
+  … 60/81 modes · cells=25614 · 185270s
+  … 70/81 modes · cells=25794 · 185737s
+  … 80/81 modes · cells=25974 · 186212s
+  BEST 3m: session_mix_t0.32_o0.42|sl2.0|rr4.0|g3 PASS 1y $15,990
+
+######## NAS100 @ 1m · 1.0y ########
+  bars=590401 modes=20 combos=240
+  … 10/20 modes · cells=26112 · 186466s
+  … 20/20 modes · cells=26232 · 186659s
+  BEST 1m: ou_fade_z1.5|sl2.0|rr4.0|g5 PASS 1y $20,073
+
+######## USDJPY @ 5m · 10.0y ########
+  bars=1052064 modes=81 combos=2916
+  … 10/81 modes · cells=26502 · 187512s
+  … 20/81 modes · cells=26772 · 188354s
+  … 30/81 modes · cells=27042 · 189188s
+  … 40/81 modes · cells=27312 · 189999s
+  … 50/81 modes · cells=27582 · 190809s
+  … 60/81 modes · cells=27852 · 191636s
+  … 70/81 modes · cells=28122 · 192455s
+  … 80/81 modes · cells=28392 · 193282s
+  BEST 5m: snr_0.30|sl2.0|rr4.0|g2 PASS 1y $8,707
+
+######## USDJPY @ 15m · 10.0y ########
+  bars=350688 modes=81 combos=1944
+  … 10/81 modes · cells=28599 · 193546s
+  … 20/81 modes · cells=28779 · 193724s
+  … 30/81 modes · cells=28959 · 193901s
+  … 40/81 modes · cells=29139 · 194072s
+  … 50/81 modes · cells=29319 · 194244s
+  … 60/81 modes · cells=29499 · 194419s
+  … 70/81 modes · cells=29679 · 194591s
+  … 80/81 modes · cells=29859 · 194762s
+  BEST 15m: session_mix_t0.32_o0.30|sl2.5|rr4.0|g2 PASS 1y $5,421
+
+######## USDJPY @ 3m · 5.0y ########
+  bars=898081 modes=81 combos=1458
+  … 10/81 modes · cells=30057 · 195264s
+  … 20/81 modes · cells=30237 · 195734s
+  … 30/81 modes · cells=30417 · 196198s
+  … 40/81 modes · cells=30597 · 196647s
+  … 50/81 modes · cells=30777 · 197097s
+  … 60/81 modes · cells=30957 · 197559s
+  … 70/81 modes · cells=31137 · 198013s
+  … 80/81 modes · cells=31317 · 198473s
+  BEST 3m: circadian_z2.0_s0.4|sl2.0|rr4.0|g2 PASS 1y $9,239
+
+######## USDJPY @ 1m · 1.0y ########
+  bars=590401 modes=20 combos=240
+  … 10/20 modes · cells=31455 · 198727s
+  … 20/20 modes · cells=31575 · 198922s
+  BEST 1m: gated|sl2.0|rr3.0|g5 PASS 1y $2,188
+
+######## AUDUSD @ 5m · 10.0y ########
+  bars=1052064 modes=81 combos=2916
+  … 10/81 modes · cells=31845 · 199769s
+  … 20/81 modes · cells=32115 · 200603s
+  … 30/81 modes · cells=32385 · 201435s
+  … 40/81 modes · cells=32655 · 202247s
+  … 50/81 modes · cells=32925 · 203057s
+  … 60/81 modes · cells=33195 · 203883s
+  … 70/81 modes · cells=33465 · 205703s
+  … 80/81 modes · cells=33735 · 207168s
+  BEST 5m: gated|sl3.0|rr3.0|g2 PASS 1y $3,250
+
+######## AUDUSD @ 15m · 10.0y ########
+  bars=350688 modes=81 combos=1944
+  … 10/81 modes · cells=33942 · 207522s
+  … 20/81 modes · cells=34122 · 207756s
+  … 30/81 modes · cells=34302 · 207988s
+  … 40/81 modes · cells=34482 · 208209s
+  … 50/81 modes · cells=34662 · 208434s
+  … 60/81 modes · cells=34842 · 208654s
+  … 70/81 modes · cells=35022 · 208871s
+  … 80/81 modes · cells=35202 · 209089s
+  BEST 15m: session_mix_t0.28_o0.30|sl3.0|rr2.0|g2 PASS 1y $2,515
+
+######## AUDUSD @ 3m · 5.0y ########
+  bars=898081 modes=81 combos=1458
+  … 10/81 modes · cells=35400 · 209734s
+  … 20/81 modes · cells=35580 · 210363s
+  … 30/81 modes · cells=35760 · 210980s
+  … 40/81 modes · cells=35940 · 211577s
+  … 50/81 modes · cells=36120 · 212165s
+  … 60/81 modes · cells=36300 · 212764s
+  … 70/81 modes · cells=36480 · 213365s
+  … 80/81 modes · cells=36660 · 213973s
+  BEST 3m: circadian_z2.5_s0.6|sl2.5|rr2.0|g3 PASS 1y $4,093
+
+######## AUDUSD @ 1m · 1.0y ########
+  bars=590401 modes=20 combos=240
+  … 10/20 modes · cells=36798 · 214308s
+  … 20/20 modes · cells=36918 · 214566s
+  BEST 1m: volmom_t0.5_l20|sl2.5|rr2.0|g3 PASS 1y $5,064
+
+######## USDCHF @ 5m · 10.0y ########
+  bars=1052064 modes=81 combos=2916
+  … 10/81 modes · cells=37188 · 215675s
+  … 20/81 modes · cells=37458 · 216770s
+  … 30/81 modes · cells=37728 · 217856s
+  … 40/81 modes · cells=37998 · 218887s
+  … 50/81 modes · cells=38268 · 219919s
+  … 60/81 modes · cells=38538 · 220970s
+  … 70/81 modes · cells=38808 · 222012s
+  … 80/81 modes · cells=39078 · 223054s
+  BEST 5m: circadian_z1.7_s0.4|sl2.0|rr3.0|g2 PASS 1y $3,700
+
+######## USDCHF @ 15m · 10.0y ########
+  bars=350688 modes=81 combos=1944
+  … 10/81 modes · cells=39285 · 223404s
+  … 20/81 modes · cells=39465 · 223640s
+  … 30/81 modes · cells=39645 · 223875s
+  … 40/81 modes · cells=39825 · 224109s
+  … 50/81 modes · cells=40005 · 224336s
+  … 60/81 modes · cells=40185 · 224569s
+  … 70/81 modes · cells=40365 · 224792s
+  … 80/81 modes · cells=40545 · 225022s
+  BEST 15m: switch|sl2.0|rr2.0|g3 PASS 1y $3,563
+
+######## USDCHF @ 3m · 5.0y ########
+  bars=898081 modes=81 combos=1458
+  … 10/81 modes · cells=40743 · 225668s
+  … 20/81 modes · cells=40923 · 226281s
+  … 30/81 modes · cells=41103 · 226891s
+  … 40/81 modes · cells=41283 · 227485s
+  … 50/81 modes · cells=41463 · 228082s
+  … 60/81 modes · cells=41643 · 228677s
+  … 70/81 modes · cells=41823 · 229268s
+  … 80/81 modes · cells=42003 · 229853s
+  BEST 3m: circadian_z1.7_s0.8|sl3.0|rr4.0|g2 PASS 1y $3,456
+
+######## USDCHF @ 1m · 1.0y ########
+  bars=590401 modes=20 combos=240
+  … 10/20 modes · cells=42141 · 230171s
+  … 20/20 modes · cells=42261 · 230408s
+  BEST 1m: circadian_edgegate|sl2.0|rr3.0|g3 PASS 1y $2,530
+
+######## UKOIL @ 5m · 10.0y ########
+  bars=1052064 modes=81 combos=2916
+  … 10/81 modes · cells=42621 · 231861s
+  … 20/81 modes · cells=42981 · 233260s
+  … 30/81 modes · cells=43341 · 234501s
+  … 40/81 modes · cells=43701 · 235804s
+  … 50/81 modes · cells=44061 · 237153s
+  … 60/81 modes · cells=44421 · 238401s
+  … 70/81 modes · cells=44781 · 239727s
+  … 80/81 modes · cells=45141 · 241090s
+  BEST 5m: circadian_z2.0_s0.8|sl2.0|rr4.0|g2 PASS 1y $8,490
+
+######## UKOIL @ 15m · 10.0y ########
+  bars=350688 modes=81 combos=1944
+  … 10/81 modes · cells=45417 · 241518s
+  … 20/81 modes · cells=45657 · 241811s
+  … 30/81 modes · cells=45897 · 242090s
+  … 40/81 modes · cells=46137 · 242359s
+  … 50/81 modes · cells=46377 · 242635s
+  … 60/81 modes · cells=46617 · 242916s
+  … 70/81 modes · cells=46857 · 243194s
+  … 80/81 modes · cells=47097 · 243467s
+  BEST 15m: session_mix_t0.28_o0.30|sl1.5|rr4.0|g2 PASS 1y $9,804
+
+######## UKOIL @ 3m · 5.0y ########
+  bars=898081 modes=81 combos=1458
+  … 10/81 modes · cells=47301 · 244068s
+  … 20/81 modes · cells=47481 · 244621s
+  … 30/81 modes · cells=47661 · 245177s
+  … 40/81 modes · cells=47841 · 245727s
+  … 50/81 modes · cells=48021 · 246275s
+  … 60/81 modes · cells=48201 · 246848s
+  … 70/81 modes · cells=48381 · 247436s
+  … 80/81 modes · cells=48561 · 248017s
+  BEST 3m: circadian_z1.5_s0.4|sl3.0|rr4.0|g3 PASS 1y $4,993
+
+######## UKOIL @ 1m · 1.0y ########
+  bars=590401 modes=20 combos=240
+  … 10/20 modes · cells=48699 · 248320s
+  … 20/20 modes · cells=48819 · 248515s
+  BEST 1m: entropy_p0.72_s0.22|sl2.5|rr4.0|g5 FAIL 1y $-242
+
+DONE · 48819 cells · 248515s · wrote /app/data/lab_adaptive_xm_deep_hunt.json
+  REC ETHUSD   3m   static                       PASS  1y $7,238 30d $-175 90d $975
+  REC BTCUSD   15m  circadian_z1.5_s0.4          PASS  1y $6,792 30d $-511 90d $2,541
+  REC GOLD     5m   session_mix_t0.22_o0.30      PASS  1y $15,123 30d $2,314 90d $4,995
+  REC NAS100   1m   ou_fade_z1.5                 PASS  1y $20,073 30d $-446 90d $5,202
+  REC USDJPY   3m   circadian_z2.0_s0.4          PASS  1y $9,239 30d $742 90d $2,894
+  REC AUDUSD   1m   volmom_t0.5_l20              PASS  1y $5,064 30d $700 90d $1,480
+  REC USDCHF   5m   circadian_z1.7_s0.4          PASS  1y $3,700 30d $900 90d $2,160
+  REC UKOIL    15m  session_mix_t0.28_o0.30      PASS  1y $9,804 30d $1,493 90d $4,163

@@ -1,0 +1,1633 @@
+{
+  "generated_at": "2026-08-14T12:06:29.729427+00:00",
+  "research_only": true,
+  "risk_usd": 100.0,
+  "grid": {
+    "brains": [
+      "session_mix",
+      "circadian_kalman_z",
+      "entropy_tod",
+      "volmom"
+    ],
+    "risk_mults": [
+      1.0,
+      5.0,
+      8.0,
+      10.0
+    ],
+    "max_spread_r": [
+      null,
+      0.12,
+      0.18
+    ],
+    "off_sitout": [
+      false,
+      true
+    ]
+  },
+  "elapsed_sec": 721.8,
+  "desk_baseline_live": {
+    "7d": 2713.31,
+    "30d": 131.2,
+    "90d": -14531.98,
+    "180d": -30186.85,
+    "1y": -63475.71,
+    "3y": -249299.33
+  },
+  "desk_best_any": {
+    "7d": 887.33,
+    "30d": 1195.33,
+    "90d": 5931.68,
+    "180d": 9964.85,
+    "1y": 14938.93,
+    "3y": -15989.22
+  },
+  "recommendations": [
+    {
+      "symbol": "ETHUSD",
+      "live_brain": "session_mix",
+      "tf": "5m",
+      "rr": 4.0,
+      "baseline_1y": {
+        "pnl": -52008.5,
+        "exp_r": -0.3805,
+        "verdict": "FAIL",
+        "wf": 0
+      },
+      "best": {
+        "brain": "session_mix",
+        "risk_mult": 8.0,
+        "max_spread_r": null,
+        "off_sitout": false,
+        "verdict_1y": "SOFT",
+        "wf_1y": 2,
+        "pnl_1y": 1925.32,
+        "exp_r_1y": 0.0474,
+        "n_1y": 406,
+        "avg_spr_1y": 0.1225
+      },
+      "best_live_settings": {
+        "brain": "session_mix",
+        "risk_mult": 8.0,
+        "max_spread_r": null,
+        "off_sitout": false,
+        "verdict_1y": "SOFT",
+        "wf_1y": 2,
+        "pnl_1y": 1925.32,
+        "exp_r_1y": 0.0474,
+        "n_1y": 406
+      },
+      "top5": [
+        {
+          "brain": "session_mix",
+          "risk_mult": 8.0,
+          "max_spread_r": null,
+          "off_sitout": false,
+          "verdict_1y": "SOFT",
+          "wf_1y": 2,
+          "pnl_1y": 1925.32,
+          "exp_r_1y": 0.0474,
+          "n_1y": 406,
+          "avg_spr_1y": 0.1225
+        },
+        {
+          "brain": "session_mix",
+          "risk_mult": 8.0,
+          "max_spread_r": 0.18,
+          "off_sitout": false,
+          "verdict_1y": "SOFT",
+          "wf_1y": 2,
+          "pnl_1y": 1925.32,
+          "exp_r_1y": 0.0474,
+          "n_1y": 406,
+          "avg_spr_1y": 0.1225
+        },
+        {
+          "brain": "session_mix",
+          "risk_mult": 1.0,
+          "max_spread_r": 0.12,
+          "off_sitout": false,
+          "verdict_1y": "FAIL",
+          "wf_1y": 1,
+          "pnl_1y": 322.49,
+          "exp_r_1y": 0.0576,
+          "n_1y": 56,
+          "avg_spr_1y": 0.1031
+        },
+        {
+          "brain": "session_mix",
+          "risk_mult": 5.0,
+          "max_spread_r": 0.12,
+          "off_sitout": false,
+          "verdict_1y": "FAIL",
+          "wf_1y": 1,
+          "pnl_1y": 322.49,
+          "exp_r_1y": 0.0576,
+          "n_1y": 56,
+          "avg_spr_1y": 0.1031
+        },
+        {
+          "brain": "session_mix",
+          "risk_mult": 8.0,
+          "max_spread_r": 0.12,
+          "off_sitout": false,
+          "verdict_1y": "FAIL",
+          "wf_1y": 1,
+          "pnl_1y": 322.49,
+          "exp_r_1y": 0.0576,
+          "n_1y": 56,
+          "avg_spr_1y": 0.1031
+        }
+      ]
+    },
+    {
+      "symbol": "BTCUSD",
+      "live_brain": "circadian_kalman_z",
+      "tf": "5m",
+      "rr": 3.0,
+      "baseline_1y": {
+        "pnl": -13590.47,
+        "exp_r": -0.123,
+        "verdict": "FAIL",
+        "wf": 0
+      },
+      "best": {
+        "brain": "entropy_tod",
+        "risk_mult": 1.0,
+        "max_spread_r": 0.18,
+        "off_sitout": false,
+        "verdict_1y": "NO_TRADES",
+        "wf_1y": 0,
+        "pnl_1y": 0.0,
+        "exp_r_1y": 0.0,
+        "n_1y": 0,
+        "avg_spr_1y": 0.0
+      },
+      "best_live_settings": {
+        "brain": "circadian_kalman_z",
+        "risk_mult": 1.0,
+        "max_spread_r": 0.12,
+        "off_sitout": true,
+        "verdict_1y": "FAIL",
+        "wf_1y": 0,
+        "pnl_1y": -8712.8,
+        "exp_r_1y": -0.2434,
+        "n_1y": 358
+      },
+      "top5": [
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 1.0,
+          "max_spread_r": 0.18,
+          "off_sitout": false,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 1.0,
+          "max_spread_r": 0.18,
+          "off_sitout": true,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 5.0,
+          "max_spread_r": 0.18,
+          "off_sitout": false,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 5.0,
+          "max_spread_r": 0.18,
+          "off_sitout": true,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 10.0,
+          "max_spread_r": null,
+          "off_sitout": true,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        }
+      ]
+    },
+    {
+      "symbol": "GOLD",
+      "live_brain": "entropy_tod",
+      "tf": "5m",
+      "rr": 4.0,
+      "baseline_1y": {
+        "pnl": 2204.16,
+        "exp_r": 0.3444,
+        "verdict": "SOFT",
+        "wf": 2
+      },
+      "best": {
+        "brain": "entropy_tod",
+        "risk_mult": 10.0,
+        "max_spread_r": null,
+        "off_sitout": true,
+        "verdict_1y": "PASS",
+        "wf_1y": 3,
+        "pnl_1y": 2527.64,
+        "exp_r_1y": 0.6652,
+        "n_1y": 38,
+        "avg_spr_1y": 0.0454
+      },
+      "best_live_settings": {
+        "brain": "entropy_tod",
+        "risk_mult": 10.0,
+        "max_spread_r": null,
+        "off_sitout": true,
+        "verdict_1y": "PASS",
+        "wf_1y": 3,
+        "pnl_1y": 2527.64,
+        "exp_r_1y": 0.6652,
+        "n_1y": 38
+      },
+      "top5": [
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 10.0,
+          "max_spread_r": null,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 2527.64,
+          "exp_r_1y": 0.6652,
+          "n_1y": 38,
+          "avg_spr_1y": 0.0454
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 10.0,
+          "max_spread_r": 0.12,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 2527.64,
+          "exp_r_1y": 0.6652,
+          "n_1y": 38,
+          "avg_spr_1y": 0.0454
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 10.0,
+          "max_spread_r": 0.18,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 2527.64,
+          "exp_r_1y": 0.6652,
+          "n_1y": 38,
+          "avg_spr_1y": 0.0454
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 1.0,
+          "max_spread_r": null,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 2526.47,
+          "exp_r_1y": 0.6649,
+          "n_1y": 38,
+          "avg_spr_1y": 0.0457
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 1.0,
+          "max_spread_r": 0.12,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 2526.47,
+          "exp_r_1y": 0.6649,
+          "n_1y": 38,
+          "avg_spr_1y": 0.0457
+        }
+      ]
+    },
+    {
+      "symbol": "NAS100",
+      "live_brain": "volmom",
+      "tf": "15m",
+      "rr": 4.0,
+      "baseline_1y": {
+        "pnl": 5970.02,
+        "exp_r": 0.1605,
+        "verdict": "PASS",
+        "wf": 4
+      },
+      "best": {
+        "brain": "volmom",
+        "risk_mult": 8.0,
+        "max_spread_r": null,
+        "off_sitout": false,
+        "verdict_1y": "PASS",
+        "wf_1y": 4,
+        "pnl_1y": 6366.94,
+        "exp_r_1y": 0.1725,
+        "n_1y": 369,
+        "avg_spr_1y": 0.047
+      },
+      "best_live_settings": {
+        "brain": "volmom",
+        "risk_mult": 8.0,
+        "max_spread_r": null,
+        "off_sitout": false,
+        "verdict_1y": "PASS",
+        "wf_1y": 4,
+        "pnl_1y": 6366.94,
+        "exp_r_1y": 0.1725,
+        "n_1y": 369
+      },
+      "top5": [
+        {
+          "brain": "volmom",
+          "risk_mult": 8.0,
+          "max_spread_r": null,
+          "off_sitout": false,
+          "verdict_1y": "PASS",
+          "wf_1y": 4,
+          "pnl_1y": 6366.94,
+          "exp_r_1y": 0.1725,
+          "n_1y": 369,
+          "avg_spr_1y": 0.047
+        },
+        {
+          "brain": "volmom",
+          "risk_mult": 8.0,
+          "max_spread_r": null,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 4,
+          "pnl_1y": 6366.94,
+          "exp_r_1y": 0.1725,
+          "n_1y": 369,
+          "avg_spr_1y": 0.047
+        },
+        {
+          "brain": "volmom",
+          "risk_mult": 8.0,
+          "max_spread_r": 0.18,
+          "off_sitout": false,
+          "verdict_1y": "PASS",
+          "wf_1y": 4,
+          "pnl_1y": 6366.94,
+          "exp_r_1y": 0.1725,
+          "n_1y": 369,
+          "avg_spr_1y": 0.047
+        },
+        {
+          "brain": "volmom",
+          "risk_mult": 8.0,
+          "max_spread_r": 0.18,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 4,
+          "pnl_1y": 6366.94,
+          "exp_r_1y": 0.1725,
+          "n_1y": 369,
+          "avg_spr_1y": 0.047
+        },
+        {
+          "brain": "volmom",
+          "risk_mult": 1.0,
+          "max_spread_r": null,
+          "off_sitout": false,
+          "verdict_1y": "PASS",
+          "wf_1y": 4,
+          "pnl_1y": 5970.02,
+          "exp_r_1y": 0.1605,
+          "n_1y": 372,
+          "avg_spr_1y": 0.0492
+        }
+      ]
+    },
+    {
+      "symbol": "USDJPY",
+      "live_brain": "circadian_kalman_z",
+      "tf": "5m",
+      "rr": 2.0,
+      "baseline_1y": {
+        "pnl": 1719.04,
+        "exp_r": 0.0347,
+        "verdict": "SOFT",
+        "wf": 2
+      },
+      "best": {
+        "brain": "circadian_kalman_z",
+        "risk_mult": 10.0,
+        "max_spread_r": null,
+        "off_sitout": false,
+        "verdict_1y": "PASS",
+        "wf_1y": 3,
+        "pnl_1y": 2186.83,
+        "exp_r_1y": 0.0504,
+        "n_1y": 434,
+        "avg_spr_1y": 0.0971
+      },
+      "best_live_settings": {
+        "brain": "circadian_kalman_z",
+        "risk_mult": 10.0,
+        "max_spread_r": null,
+        "off_sitout": false,
+        "verdict_1y": "PASS",
+        "wf_1y": 3,
+        "pnl_1y": 2186.83,
+        "exp_r_1y": 0.0504,
+        "n_1y": 434
+      },
+      "top5": [
+        {
+          "brain": "circadian_kalman_z",
+          "risk_mult": 10.0,
+          "max_spread_r": null,
+          "off_sitout": false,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 2186.83,
+          "exp_r_1y": 0.0504,
+          "n_1y": 434,
+          "avg_spr_1y": 0.0971
+        },
+        {
+          "brain": "circadian_kalman_z",
+          "risk_mult": 10.0,
+          "max_spread_r": 0.12,
+          "off_sitout": false,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 2186.83,
+          "exp_r_1y": 0.0504,
+          "n_1y": 434,
+          "avg_spr_1y": 0.0971
+        },
+        {
+          "brain": "circadian_kalman_z",
+          "risk_mult": 10.0,
+          "max_spread_r": 0.18,
+          "off_sitout": false,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 2186.83,
+          "exp_r_1y": 0.0504,
+          "n_1y": 434,
+          "avg_spr_1y": 0.0971
+        },
+        {
+          "brain": "circadian_kalman_z",
+          "risk_mult": 8.0,
+          "max_spread_r": null,
+          "off_sitout": false,
+          "verdict_1y": "SOFT",
+          "wf_1y": 2,
+          "pnl_1y": 1879.93,
+          "exp_r_1y": 0.0388,
+          "n_1y": 484,
+          "avg_spr_1y": 0.1079
+        },
+        {
+          "brain": "circadian_kalman_z",
+          "risk_mult": 8.0,
+          "max_spread_r": 0.18,
+          "off_sitout": false,
+          "verdict_1y": "SOFT",
+          "wf_1y": 2,
+          "pnl_1y": 1879.93,
+          "exp_r_1y": 0.0388,
+          "n_1y": 484,
+          "avg_spr_1y": 0.1079
+        }
+      ]
+    },
+    {
+      "symbol": "AUDUSD",
+      "live_brain": "circadian_kalman_z",
+      "tf": "5m",
+      "rr": 2.0,
+      "baseline_1y": {
+        "pnl": -3441.33,
+        "exp_r": -0.1275,
+        "verdict": "FAIL",
+        "wf": 2
+      },
+      "best": {
+        "brain": "entropy_tod",
+        "risk_mult": 8.0,
+        "max_spread_r": null,
+        "off_sitout": false,
+        "verdict_1y": "FAIL",
+        "wf_1y": 0,
+        "pnl_1y": 225.0,
+        "exp_r_1y": 0.375,
+        "n_1y": 6,
+        "avg_spr_1y": 0.125
+      },
+      "best_live_settings": {
+        "brain": "circadian_kalman_z",
+        "risk_mult": 10.0,
+        "max_spread_r": null,
+        "off_sitout": false,
+        "verdict_1y": "FAIL",
+        "wf_1y": 1,
+        "pnl_1y": -2339.36,
+        "exp_r_1y": -0.1088,
+        "n_1y": 215
+      },
+      "top5": [
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 8.0,
+          "max_spread_r": null,
+          "off_sitout": false,
+          "verdict_1y": "FAIL",
+          "wf_1y": 0,
+          "pnl_1y": 225.0,
+          "exp_r_1y": 0.375,
+          "n_1y": 6,
+          "avg_spr_1y": 0.125
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 8.0,
+          "max_spread_r": 0.18,
+          "off_sitout": false,
+          "verdict_1y": "FAIL",
+          "wf_1y": 0,
+          "pnl_1y": 225.0,
+          "exp_r_1y": 0.375,
+          "n_1y": 6,
+          "avg_spr_1y": 0.125
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 5.0,
+          "max_spread_r": null,
+          "off_sitout": false,
+          "verdict_1y": "FAIL",
+          "wf_1y": 0,
+          "pnl_1y": 180.0,
+          "exp_r_1y": 0.3,
+          "n_1y": 6,
+          "avg_spr_1y": 0.2
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 1.0,
+          "max_spread_r": null,
+          "off_sitout": false,
+          "verdict_1y": "FAIL",
+          "wf_1y": 0,
+          "pnl_1y": 171.3,
+          "exp_r_1y": 0.2855,
+          "n_1y": 6,
+          "avg_spr_1y": 0.2145
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 1.0,
+          "max_spread_r": null,
+          "off_sitout": true,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        }
+      ]
+    },
+    {
+      "symbol": "USDCHF",
+      "live_brain": "session_mix",
+      "tf": "5m",
+      "rr": 2.0,
+      "baseline_1y": {
+        "pnl": -5032.09,
+        "exp_r": -0.1689,
+        "verdict": "FAIL",
+        "wf": 0
+      },
+      "best": {
+        "brain": "entropy_tod",
+        "risk_mult": 10.0,
+        "max_spread_r": null,
+        "off_sitout": true,
+        "verdict_1y": "NO_TRADES",
+        "wf_1y": 0,
+        "pnl_1y": 0.0,
+        "exp_r_1y": 0.0,
+        "n_1y": 0,
+        "avg_spr_1y": 0.0
+      },
+      "best_live_settings": {
+        "brain": "session_mix",
+        "risk_mult": 10.0,
+        "max_spread_r": null,
+        "off_sitout": false,
+        "verdict_1y": "FAIL",
+        "wf_1y": 1,
+        "pnl_1y": -3068.73,
+        "exp_r_1y": -0.224,
+        "n_1y": 137
+      },
+      "top5": [
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 10.0,
+          "max_spread_r": null,
+          "off_sitout": true,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 10.0,
+          "max_spread_r": 0.12,
+          "off_sitout": true,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 10.0,
+          "max_spread_r": 0.18,
+          "off_sitout": true,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 1.0,
+          "max_spread_r": null,
+          "off_sitout": true,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 1.0,
+          "max_spread_r": 0.12,
+          "off_sitout": false,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        }
+      ]
+    },
+    {
+      "symbol": "UKOIL",
+      "live_brain": "session_mix",
+      "tf": "5m",
+      "rr": 4.0,
+      "baseline_1y": {
+        "pnl": 703.46,
+        "exp_r": 0.0114,
+        "verdict": "PASS",
+        "wf": 3
+      },
+      "best": {
+        "brain": "session_mix",
+        "risk_mult": 1.0,
+        "max_spread_r": null,
+        "off_sitout": true,
+        "verdict_1y": "PASS",
+        "wf_1y": 3,
+        "pnl_1y": 1707.2,
+        "exp_r_1y": 0.0289,
+        "n_1y": 590,
+        "avg_spr_1y": 0.166
+      },
+      "best_live_settings": {
+        "brain": "session_mix",
+        "risk_mult": 1.0,
+        "max_spread_r": null,
+        "off_sitout": true,
+        "verdict_1y": "PASS",
+        "wf_1y": 3,
+        "pnl_1y": 1707.2,
+        "exp_r_1y": 0.0289,
+        "n_1y": 590
+      },
+      "top5": [
+        {
+          "brain": "session_mix",
+          "risk_mult": 1.0,
+          "max_spread_r": null,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 1707.2,
+          "exp_r_1y": 0.0289,
+          "n_1y": 590,
+          "avg_spr_1y": 0.166
+        },
+        {
+          "brain": "session_mix",
+          "risk_mult": 1.0,
+          "max_spread_r": 0.12,
+          "off_sitout": false,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 1494.38,
+          "exp_r_1y": 0.0787,
+          "n_1y": 190,
+          "avg_spr_1y": 0.0792
+        },
+        {
+          "brain": "session_mix",
+          "risk_mult": 1.0,
+          "max_spread_r": 0.12,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 1494.38,
+          "exp_r_1y": 0.0787,
+          "n_1y": 190,
+          "avg_spr_1y": 0.0792
+        },
+        {
+          "brain": "session_mix",
+          "risk_mult": 5.0,
+          "max_spread_r": 0.12,
+          "off_sitout": false,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 1494.38,
+          "exp_r_1y": 0.0787,
+          "n_1y": 190,
+          "avg_spr_1y": 0.0792
+        },
+        {
+          "brain": "session_mix",
+          "risk_mult": 5.0,
+          "max_spread_r": 0.12,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 1494.38,
+          "exp_r_1y": 0.0787,
+          "n_1y": 190,
+          "avg_spr_1y": 0.0792
+        }
+      ]
+    }
+  ],
+  "per_pair": {
+    "ETHUSD": {
+      "symbol": "ETHUSD",
+      "live_brain": "session_mix",
+      "tf": "5m",
+      "rr": 4.0,
+      "baseline_1y": {
+        "pnl": -52008.5,
+        "exp_r": -0.3805,
+        "verdict": "FAIL",
+        "wf": 0
+      },
+      "best": {
+        "brain": "session_mix",
+        "risk_mult": 8.0,
+        "max_spread_r": null,
+        "off_sitout": false,
+        "verdict_1y": "SOFT",
+        "wf_1y": 2,
+        "pnl_1y": 1925.32,
+        "exp_r_1y": 0.0474,
+        "n_1y": 406,
+        "avg_spr_1y": 0.1225
+      },
+      "best_live_settings": {
+        "brain": "session_mix",
+        "risk_mult": 8.0,
+        "max_spread_r": null,
+        "off_sitout": false,
+        "verdict_1y": "SOFT",
+        "wf_1y": 2,
+        "pnl_1y": 1925.32,
+        "exp_r_1y": 0.0474,
+        "n_1y": 406
+      },
+      "top5": [
+        {
+          "brain": "session_mix",
+          "risk_mult": 8.0,
+          "max_spread_r": null,
+          "off_sitout": false,
+          "verdict_1y": "SOFT",
+          "wf_1y": 2,
+          "pnl_1y": 1925.32,
+          "exp_r_1y": 0.0474,
+          "n_1y": 406,
+          "avg_spr_1y": 0.1225
+        },
+        {
+          "brain": "session_mix",
+          "risk_mult": 8.0,
+          "max_spread_r": 0.18,
+          "off_sitout": false,
+          "verdict_1y": "SOFT",
+          "wf_1y": 2,
+          "pnl_1y": 1925.32,
+          "exp_r_1y": 0.0474,
+          "n_1y": 406,
+          "avg_spr_1y": 0.1225
+        },
+        {
+          "brain": "session_mix",
+          "risk_mult": 1.0,
+          "max_spread_r": 0.12,
+          "off_sitout": false,
+          "verdict_1y": "FAIL",
+          "wf_1y": 1,
+          "pnl_1y": 322.49,
+          "exp_r_1y": 0.0576,
+          "n_1y": 56,
+          "avg_spr_1y": 0.1031
+        },
+        {
+          "brain": "session_mix",
+          "risk_mult": 5.0,
+          "max_spread_r": 0.12,
+          "off_sitout": false,
+          "verdict_1y": "FAIL",
+          "wf_1y": 1,
+          "pnl_1y": 322.49,
+          "exp_r_1y": 0.0576,
+          "n_1y": 56,
+          "avg_spr_1y": 0.1031
+        },
+        {
+          "brain": "session_mix",
+          "risk_mult": 8.0,
+          "max_spread_r": 0.12,
+          "off_sitout": false,
+          "verdict_1y": "FAIL",
+          "wf_1y": 1,
+          "pnl_1y": 322.49,
+          "exp_r_1y": 0.0576,
+          "n_1y": 56,
+          "avg_spr_1y": 0.1031
+        }
+      ],
+      "n_bars": 328321,
+      "n_configs": 96,
+      "pass_count": 0,
+      "soft_count": 2
+    },
+    "BTCUSD": {
+      "symbol": "BTCUSD",
+      "live_brain": "circadian_kalman_z",
+      "tf": "5m",
+      "rr": 3.0,
+      "baseline_1y": {
+        "pnl": -13590.47,
+        "exp_r": -0.123,
+        "verdict": "FAIL",
+        "wf": 0
+      },
+      "best": {
+        "brain": "entropy_tod",
+        "risk_mult": 1.0,
+        "max_spread_r": 0.18,
+        "off_sitout": false,
+        "verdict_1y": "NO_TRADES",
+        "wf_1y": 0,
+        "pnl_1y": 0.0,
+        "exp_r_1y": 0.0,
+        "n_1y": 0,
+        "avg_spr_1y": 0.0
+      },
+      "best_live_settings": {
+        "brain": "circadian_kalman_z",
+        "risk_mult": 1.0,
+        "max_spread_r": 0.12,
+        "off_sitout": true,
+        "verdict_1y": "FAIL",
+        "wf_1y": 0,
+        "pnl_1y": -8712.8,
+        "exp_r_1y": -0.2434,
+        "n_1y": 358
+      },
+      "top5": [
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 1.0,
+          "max_spread_r": 0.18,
+          "off_sitout": false,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 1.0,
+          "max_spread_r": 0.18,
+          "off_sitout": true,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 5.0,
+          "max_spread_r": 0.18,
+          "off_sitout": false,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 5.0,
+          "max_spread_r": 0.18,
+          "off_sitout": true,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 10.0,
+          "max_spread_r": null,
+          "off_sitout": true,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        }
+      ],
+      "n_bars": 328321,
+      "n_configs": 96,
+      "pass_count": 0,
+      "soft_count": 0
+    },
+    "GOLD": {
+      "symbol": "GOLD",
+      "live_brain": "entropy_tod",
+      "tf": "5m",
+      "rr": 4.0,
+      "baseline_1y": {
+        "pnl": 2204.16,
+        "exp_r": 0.3444,
+        "verdict": "SOFT",
+        "wf": 2
+      },
+      "best": {
+        "brain": "entropy_tod",
+        "risk_mult": 10.0,
+        "max_spread_r": null,
+        "off_sitout": true,
+        "verdict_1y": "PASS",
+        "wf_1y": 3,
+        "pnl_1y": 2527.64,
+        "exp_r_1y": 0.6652,
+        "n_1y": 38,
+        "avg_spr_1y": 0.0454
+      },
+      "best_live_settings": {
+        "brain": "entropy_tod",
+        "risk_mult": 10.0,
+        "max_spread_r": null,
+        "off_sitout": true,
+        "verdict_1y": "PASS",
+        "wf_1y": 3,
+        "pnl_1y": 2527.64,
+        "exp_r_1y": 0.6652,
+        "n_1y": 38
+      },
+      "top5": [
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 10.0,
+          "max_spread_r": null,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 2527.64,
+          "exp_r_1y": 0.6652,
+          "n_1y": 38,
+          "avg_spr_1y": 0.0454
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 10.0,
+          "max_spread_r": 0.12,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 2527.64,
+          "exp_r_1y": 0.6652,
+          "n_1y": 38,
+          "avg_spr_1y": 0.0454
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 10.0,
+          "max_spread_r": 0.18,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 2527.64,
+          "exp_r_1y": 0.6652,
+          "n_1y": 38,
+          "avg_spr_1y": 0.0454
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 1.0,
+          "max_spread_r": null,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 2526.47,
+          "exp_r_1y": 0.6649,
+          "n_1y": 38,
+          "avg_spr_1y": 0.0457
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 1.0,
+          "max_spread_r": 0.12,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 2526.47,
+          "exp_r_1y": 0.6649,
+          "n_1y": 38,
+          "avg_spr_1y": 0.0457
+        }
+      ],
+      "n_bars": 328321,
+      "n_configs": 96,
+      "pass_count": 12,
+      "soft_count": 24
+    },
+    "NAS100": {
+      "symbol": "NAS100",
+      "live_brain": "volmom",
+      "tf": "15m",
+      "rr": 4.0,
+      "baseline_1y": {
+        "pnl": 5970.02,
+        "exp_r": 0.1605,
+        "verdict": "PASS",
+        "wf": 4
+      },
+      "best": {
+        "brain": "volmom",
+        "risk_mult": 8.0,
+        "max_spread_r": null,
+        "off_sitout": false,
+        "verdict_1y": "PASS",
+        "wf_1y": 4,
+        "pnl_1y": 6366.94,
+        "exp_r_1y": 0.1725,
+        "n_1y": 369,
+        "avg_spr_1y": 0.047
+      },
+      "best_live_settings": {
+        "brain": "volmom",
+        "risk_mult": 8.0,
+        "max_spread_r": null,
+        "off_sitout": false,
+        "verdict_1y": "PASS",
+        "wf_1y": 4,
+        "pnl_1y": 6366.94,
+        "exp_r_1y": 0.1725,
+        "n_1y": 369
+      },
+      "top5": [
+        {
+          "brain": "volmom",
+          "risk_mult": 8.0,
+          "max_spread_r": null,
+          "off_sitout": false,
+          "verdict_1y": "PASS",
+          "wf_1y": 4,
+          "pnl_1y": 6366.94,
+          "exp_r_1y": 0.1725,
+          "n_1y": 369,
+          "avg_spr_1y": 0.047
+        },
+        {
+          "brain": "volmom",
+          "risk_mult": 8.0,
+          "max_spread_r": null,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 4,
+          "pnl_1y": 6366.94,
+          "exp_r_1y": 0.1725,
+          "n_1y": 369,
+          "avg_spr_1y": 0.047
+        },
+        {
+          "brain": "volmom",
+          "risk_mult": 8.0,
+          "max_spread_r": 0.18,
+          "off_sitout": false,
+          "verdict_1y": "PASS",
+          "wf_1y": 4,
+          "pnl_1y": 6366.94,
+          "exp_r_1y": 0.1725,
+          "n_1y": 369,
+          "avg_spr_1y": 0.047
+        },
+        {
+          "brain": "volmom",
+          "risk_mult": 8.0,
+          "max_spread_r": 0.18,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 4,
+          "pnl_1y": 6366.94,
+          "exp_r_1y": 0.1725,
+          "n_1y": 369,
+          "avg_spr_1y": 0.047
+        },
+        {
+          "brain": "volmom",
+          "risk_mult": 1.0,
+          "max_spread_r": null,
+          "off_sitout": false,
+          "verdict_1y": "PASS",
+          "wf_1y": 4,
+          "pnl_1y": 5970.02,
+          "exp_r_1y": 0.1605,
+          "n_1y": 372,
+          "avg_spr_1y": 0.0492
+        }
+      ],
+      "n_bars": 109441,
+      "n_configs": 96,
+      "pass_count": 24,
+      "soft_count": 24
+    },
+    "USDJPY": {
+      "symbol": "USDJPY",
+      "live_brain": "circadian_kalman_z",
+      "tf": "5m",
+      "rr": 2.0,
+      "baseline_1y": {
+        "pnl": 1719.04,
+        "exp_r": 0.0347,
+        "verdict": "SOFT",
+        "wf": 2
+      },
+      "best": {
+        "brain": "circadian_kalman_z",
+        "risk_mult": 10.0,
+        "max_spread_r": null,
+        "off_sitout": false,
+        "verdict_1y": "PASS",
+        "wf_1y": 3,
+        "pnl_1y": 2186.83,
+        "exp_r_1y": 0.0504,
+        "n_1y": 434,
+        "avg_spr_1y": 0.0971
+      },
+      "best_live_settings": {
+        "brain": "circadian_kalman_z",
+        "risk_mult": 10.0,
+        "max_spread_r": null,
+        "off_sitout": false,
+        "verdict_1y": "PASS",
+        "wf_1y": 3,
+        "pnl_1y": 2186.83,
+        "exp_r_1y": 0.0504,
+        "n_1y": 434
+      },
+      "top5": [
+        {
+          "brain": "circadian_kalman_z",
+          "risk_mult": 10.0,
+          "max_spread_r": null,
+          "off_sitout": false,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 2186.83,
+          "exp_r_1y": 0.0504,
+          "n_1y": 434,
+          "avg_spr_1y": 0.0971
+        },
+        {
+          "brain": "circadian_kalman_z",
+          "risk_mult": 10.0,
+          "max_spread_r": 0.12,
+          "off_sitout": false,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 2186.83,
+          "exp_r_1y": 0.0504,
+          "n_1y": 434,
+          "avg_spr_1y": 0.0971
+        },
+        {
+          "brain": "circadian_kalman_z",
+          "risk_mult": 10.0,
+          "max_spread_r": 0.18,
+          "off_sitout": false,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 2186.83,
+          "exp_r_1y": 0.0504,
+          "n_1y": 434,
+          "avg_spr_1y": 0.0971
+        },
+        {
+          "brain": "circadian_kalman_z",
+          "risk_mult": 8.0,
+          "max_spread_r": null,
+          "off_sitout": false,
+          "verdict_1y": "SOFT",
+          "wf_1y": 2,
+          "pnl_1y": 1879.93,
+          "exp_r_1y": 0.0388,
+          "n_1y": 484,
+          "avg_spr_1y": 0.1079
+        },
+        {
+          "brain": "circadian_kalman_z",
+          "risk_mult": 8.0,
+          "max_spread_r": 0.18,
+          "off_sitout": false,
+          "verdict_1y": "SOFT",
+          "wf_1y": 2,
+          "pnl_1y": 1879.93,
+          "exp_r_1y": 0.0388,
+          "n_1y": 484,
+          "avg_spr_1y": 0.1079
+        }
+      ],
+      "n_bars": 328321,
+      "n_configs": 96,
+      "pass_count": 3,
+      "soft_count": 21
+    },
+    "AUDUSD": {
+      "symbol": "AUDUSD",
+      "live_brain": "circadian_kalman_z",
+      "tf": "5m",
+      "rr": 2.0,
+      "baseline_1y": {
+        "pnl": -3441.33,
+        "exp_r": -0.1275,
+        "verdict": "FAIL",
+        "wf": 2
+      },
+      "best": {
+        "brain": "entropy_tod",
+        "risk_mult": 8.0,
+        "max_spread_r": null,
+        "off_sitout": false,
+        "verdict_1y": "FAIL",
+        "wf_1y": 0,
+        "pnl_1y": 225.0,
+        "exp_r_1y": 0.375,
+        "n_1y": 6,
+        "avg_spr_1y": 0.125
+      },
+      "best_live_settings": {
+        "brain": "circadian_kalman_z",
+        "risk_mult": 10.0,
+        "max_spread_r": null,
+        "off_sitout": false,
+        "verdict_1y": "FAIL",
+        "wf_1y": 1,
+        "pnl_1y": -2339.36,
+        "exp_r_1y": -0.1088,
+        "n_1y": 215
+      },
+      "top5": [
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 8.0,
+          "max_spread_r": null,
+          "off_sitout": false,
+          "verdict_1y": "FAIL",
+          "wf_1y": 0,
+          "pnl_1y": 225.0,
+          "exp_r_1y": 0.375,
+          "n_1y": 6,
+          "avg_spr_1y": 0.125
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 8.0,
+          "max_spread_r": 0.18,
+          "off_sitout": false,
+          "verdict_1y": "FAIL",
+          "wf_1y": 0,
+          "pnl_1y": 225.0,
+          "exp_r_1y": 0.375,
+          "n_1y": 6,
+          "avg_spr_1y": 0.125
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 5.0,
+          "max_spread_r": null,
+          "off_sitout": false,
+          "verdict_1y": "FAIL",
+          "wf_1y": 0,
+          "pnl_1y": 180.0,
+          "exp_r_1y": 0.3,
+          "n_1y": 6,
+          "avg_spr_1y": 0.2
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 1.0,
+          "max_spread_r": null,
+          "off_sitout": false,
+          "verdict_1y": "FAIL",
+          "wf_1y": 0,
+          "pnl_1y": 171.3,
+          "exp_r_1y": 0.2855,
+          "n_1y": 6,
+          "avg_spr_1y": 0.2145
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 1.0,
+          "max_spread_r": null,
+          "off_sitout": true,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        }
+      ],
+      "n_bars": 328321,
+      "n_configs": 96,
+      "pass_count": 0,
+      "soft_count": 0
+    },
+    "USDCHF": {
+      "symbol": "USDCHF",
+      "live_brain": "session_mix",
+      "tf": "5m",
+      "rr": 2.0,
+      "baseline_1y": {
+        "pnl": -5032.09,
+        "exp_r": -0.1689,
+        "verdict": "FAIL",
+        "wf": 0
+      },
+      "best": {
+        "brain": "entropy_tod",
+        "risk_mult": 10.0,
+        "max_spread_r": null,
+        "off_sitout": true,
+        "verdict_1y": "NO_TRADES",
+        "wf_1y": 0,
+        "pnl_1y": 0.0,
+        "exp_r_1y": 0.0,
+        "n_1y": 0,
+        "avg_spr_1y": 0.0
+      },
+      "best_live_settings": {
+        "brain": "session_mix",
+        "risk_mult": 10.0,
+        "max_spread_r": null,
+        "off_sitout": false,
+        "verdict_1y": "FAIL",
+        "wf_1y": 1,
+        "pnl_1y": -3068.73,
+        "exp_r_1y": -0.224,
+        "n_1y": 137
+      },
+      "top5": [
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 10.0,
+          "max_spread_r": null,
+          "off_sitout": true,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 10.0,
+          "max_spread_r": 0.12,
+          "off_sitout": true,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 10.0,
+          "max_spread_r": 0.18,
+          "off_sitout": true,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 1.0,
+          "max_spread_r": null,
+          "off_sitout": true,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        },
+        {
+          "brain": "entropy_tod",
+          "risk_mult": 1.0,
+          "max_spread_r": 0.12,
+          "off_sitout": false,
+          "verdict_1y": "NO_TRADES",
+          "wf_1y": 0,
+          "pnl_1y": 0.0,
+          "exp_r_1y": 0.0,
+          "n_1y": 0,
+          "avg_spr_1y": 0.0
+        }
+      ],
+      "n_bars": 328321,
+      "n_configs": 96,
+      "pass_count": 0,
+      "soft_count": 0
+    },
+    "UKOIL": {
+      "symbol": "UKOIL",
+      "live_brain": "session_mix",
+      "tf": "5m",
+      "rr": 4.0,
+      "baseline_1y": {
+        "pnl": 703.46,
+        "exp_r": 0.0114,
+        "verdict": "PASS",
+        "wf": 3
+      },
+      "best": {
+        "brain": "session_mix",
+        "risk_mult": 1.0,
+        "max_spread_r": null,
+        "off_sitout": true,
+        "verdict_1y": "PASS",
+        "wf_1y": 3,
+        "pnl_1y": 1707.2,
+        "exp_r_1y": 0.0289,
+        "n_1y": 590,
+        "avg_spr_1y": 0.166
+      },
+      "best_live_settings": {
+        "brain": "session_mix",
+        "risk_mult": 1.0,
+        "max_spread_r": null,
+        "off_sitout": true,
+        "verdict_1y": "PASS",
+        "wf_1y": 3,
+        "pnl_1y": 1707.2,
+        "exp_r_1y": 0.0289,
+        "n_1y": 590
+      },
+      "top5": [
+        {
+          "brain": "session_mix",
+          "risk_mult": 1.0,
+          "max_spread_r": null,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 1707.2,
+          "exp_r_1y": 0.0289,
+          "n_1y": 590,
+          "avg_spr_1y": 0.166
+        },
+        {
+          "brain": "session_mix",
+          "risk_mult": 1.0,
+          "max_spread_r": 0.12,
+          "off_sitout": false,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 1494.38,
+          "exp_r_1y": 0.0787,
+          "n_1y": 190,
+          "avg_spr_1y": 0.0792
+        },
+        {
+          "brain": "session_mix",
+          "risk_mult": 1.0,
+          "max_spread_r": 0.12,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 1494.38,
+          "exp_r_1y": 0.0787,
+          "n_1y": 190,
+          "avg_spr_1y": 0.0792
+        },
+        {
+          "brain": "session_mix",
+          "risk_mult": 5.0,
+          "max_spread_r": 0.12,
+          "off_sitout": false,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 1494.38,
+          "exp_r_1y": 0.0787,
+          "n_1y": 190,
+          "avg_spr_1y": 0.0792
+        },
+        {
+          "brain": "session_mix",
+          "risk_mult": 5.0,
+          "max_spread_r": 0.12,
+          "off_sitout": true,
+          "verdict_1y": "PASS",
+          "wf_1y": 3,
+          "pnl_1y": 1494.38,
+          "exp_r_1y": 0.0787,
+          "n_1y": 190,
+          "avg_spr_1y": 0.0792
+        }
+      ],
+      "n_bars": 328321,
+      "n_configs": 96,
+      "pass_count": 17,
+      "soft_count": 9
+    }
+  }
+}

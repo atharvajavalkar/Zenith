@@ -1,0 +1,51 @@
+PEAK-DD 1y COMPARE · 2025-08-04→2026-08-04 · $200.0/R · cap=$10000 peak_dd=15% bank=100% harvest=50%
+LIVE BRAINS NOT MODIFIED
+
+  load GOLD 1m: 509,760 bars 2025-08-04→2026-07-23
+  load GOLD 3m: 169,920 bars 2025-08-04→2026-07-23
+  load GOLD 5m: 101,952 bars 2025-08-04→2026-07-23
+  load GOLD 15m: 33,984 bars 2025-08-04→2026-07-23
+  GOLD don_100@15m RR=4.0: n=456 pnl=$17,800
+  load USDCHF 1m: 509,760 bars 2025-08-04→2026-07-23
+  load USDCHF 3m: 169,920 bars 2025-08-04→2026-07-23
+  load USDCHF 5m: 101,952 bars 2025-08-04→2026-07-23
+  load USDCHF 15m: 33,984 bars 2025-08-04→2026-07-23
+  USDCHF bb_2.5@1m RR=4.0: n=175 pnl=$25,000
+  load USDJPY 1m: 509,760 bars 2025-08-04→2026-07-23
+  load USDJPY 3m: 169,920 bars 2025-08-04→2026-07-23
+  load USDJPY 5m: 101,952 bars 2025-08-04→2026-07-23
+  load USDJPY 15m: 33,984 bars 2025-08-04→2026-07-23
+  USDJPY bb_2.5@1m RR=4.0: n=234 pnl=$28,200
+  load NAS100 1m: 509,760 bars 2025-08-04→2026-07-23
+  load NAS100 3m: 169,920 bars 2025-08-04→2026-07-23
+  load NAS100 5m: 101,952 bars 2025-08-04→2026-07-23
+  load NAS100 15m: 33,984 bars 2025-08-04→2026-07-23
+  NAS100 volmom@15m RR=4.0: n=508 pnl=$26,400
+  load UKOIL 1m: 509,760 bars 2025-08-04→2026-07-23
+  load UKOIL 3m: 169,920 bars 2025-08-04→2026-07-23
+  load UKOIL 5m: 101,952 bars 2025-08-04→2026-07-23
+  load UKOIL 15m: 33,984 bars 2025-08-04→2026-07-23
+  UKOIL cta_10_40@5m RR=4.0: n=1069 pnl=$39,200
+  load AUDUSD 1m: 509,760 bars 2025-08-04→2026-07-23
+  load AUDUSD 3m: 169,920 bars 2025-08-04→2026-07-23
+  load AUDUSD 5m: 101,952 bars 2025-08-04→2026-07-23
+  load AUDUSD 15m: 33,984 bars 2025-08-04→2026-07-23
+  AUDUSD bb_2@1m RR=4.0: n=2076 pnl=$109,800
+  load BTCUSD 1m: 509,760 bars 2025-08-04→2026-07-23
+  load BTCUSD 3m: 169,920 bars 2025-08-04→2026-07-23
+  load BTCUSD 5m: 101,952 bars 2025-08-04→2026-07-23
+  load BTCUSD 15m: 33,984 bars 2025-08-04→2026-07-23
+  BTCUSD bb_2.5@1m RR=2.4: n=278 pnl=$23,960
+  load ETHUSD 1m: 509,760 bars 2025-08-04→2026-07-23
+  load ETHUSD 3m: 169,920 bars 2025-08-04→2026-07-23
+  load ETHUSD 5m: 101,952 bars 2025-08-04→2026-07-23
+  load ETHUSD 15m: 33,984 bars 2025-08-04→2026-07-23
+  ETHUSD bb_1.5@1m RR=4.0: n=13712 pnl=$452,600
+
+===== DESK =====
+Current brains (no protect): n=18508 pnl=$722,960 E[R]=+0.195
+With peak-DD 15% ($1500): n=53 pnl=$3,400 E[R]=+0.321 blocked=18455
+First block: {'at_trade_exit': '2025-08-04 23:09:00', 'symbol': 'AUDUSD', 'reason': 'Peak drawdown $1600 ≥ 15% of capital — pause entries to stop giveback', 'realized_pnl': 3400.0, 'peak_pnl': 5000.0, 'drawdown': 1600.0}
+Delta (protect - baseline): $-719,560
+VERDICT: current_brains_no_protect
+Wrote /app/data/lab_peak_dd_1y_compare.json

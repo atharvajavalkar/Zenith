@@ -2,156 +2,205 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --zenith-void: #080807;
+  --zenith-raised: #0e0e0c;
+  --zenith-card: #121210;
+  --zenith-border: #242420;
+  --zenith-gold: #c9a66b;
+  --zenith-buy: #2f9e6f;
+  --zenith-buy-deep: #1f7350;
+  --zenith-sell: #d45b5b;
+  --zenith-sell-deep: #a63d3d;
+  --zenith-ink: #f2eee6;
+  --zenith-muted: #9a948a;
+}
+
+html {
+  background: var(--zenith-void);
+}
+
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: Outfit, ui-sans-serif, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.01em;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-  background-color: #0a0e14;
+  color: var(--zenith-ink);
+  background-color: var(--zenith-void);
   background-image:
-    radial-gradient(900px circle at 12% -8%, rgba(243, 185, 74, 0.08), transparent 45%),
-    radial-gradient(1100px circle at 100% 0%, rgba(41, 98, 255, 0.07), transparent 42%);
+    radial-gradient(ellipse 90% 55% at 50% -10%, rgba(196, 165, 116, 0.07), transparent 55%),
+    radial-gradient(ellipse 70% 45% at 100% 100%, rgba(196, 165, 116, 0.03), transparent 50%),
+    linear-gradient(180deg, #0b0b0a 0%, #080807 40%, #070706 100%);
   background-attachment: fixed;
 }
 
 ::selection {
-  background: rgba(243, 185, 74, 0.28);
+  background: rgba(196, 165, 116, 0.28);
   color: #fff;
 }
 
-/* Refined scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #26344a;
-  border-radius: 8px;
-  border: 2px solid transparent;
-  background-clip: padding-box;
+  background: #2c2c28;
+  border-radius: 0;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #34465f;
-  background-clip: padding-box;
+  background: #3a3a34;
 }
 
 @layer components {
-  /* Elevated surface card with subtle gradient + hover lift */
+  .app-shell {
+    @apply min-h-screen relative;
+  }
+
+  .app-shell::before {
+    content: '';
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
   .zcard {
-    @apply relative rounded-2xl border border-surface-border bg-surface-card shadow-card transition-all duration-300;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0));
+    @apply rounded-sm border border-white/[0.06] bg-surface-card/80;
+    transition: border-color 0.25s ease, background-color 0.25s ease;
   }
-  .zcard-hover:hover {
-    @apply border-accent-gold/30 shadow-card-hover;
-    transform: translateY(-2px);
+
+  .section-label {
+    @apply text-[10px] font-medium uppercase tracking-label text-surface-muted;
   }
-  /* Section label above panel groups */
-  .section-eyebrow {
-    @apply text-[11px] font-semibold uppercase tracking-[0.18em] text-accent-gold/80;
+
+  .page-title {
+    @apply font-display text-[2.15rem] sm:text-[2.5rem] font-medium tracking-[0.06em] text-ink leading-none;
   }
-  /* Thin gold top accent for premium panels */
-  .gold-rule {
-    @apply h-px w-full bg-gradient-to-r from-transparent via-accent-gold/40 to-transparent;
+
+  .page-subtitle {
+    @apply text-sm font-light text-surface-muted mt-3 leading-relaxed max-w-xl;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-sm bg-accent-gold px-5 py-2.5 text-[11px] font-medium uppercase tracking-nav text-[#1a1610] transition hover:bg-accent-gold-soft disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-sm border border-white/[0.1] px-4 py-2 text-[11px] font-medium uppercase tracking-nav text-ink-soft transition hover:border-accent-gold/40 hover:text-ink disabled:opacity-40;
+  }
+
+  .btn-buy {
+    @apply inline-flex items-center justify-center rounded-sm bg-accent-buy-deep px-5 py-2.5 text-[11px] font-medium uppercase tracking-nav text-[#f5f0e8] transition hover:bg-accent-buy disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+
+  .btn-sell {
+    @apply inline-flex items-center justify-center rounded-sm bg-accent-sell-deep px-5 py-2.5 text-[11px] font-medium uppercase tracking-nav text-[#f5f0e8] transition hover:bg-accent-sell disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+
+  .btn-danger-ghost {
+    @apply inline-flex items-center justify-center rounded-sm border border-accent-sell/45 px-5 py-2.5 text-[11px] font-medium uppercase tracking-nav text-accent-sell transition hover:bg-accent-sell/15 disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+
+  .gate-meta {
+    @apply text-[11px] font-light tracking-wide text-surface-muted;
+  }
+
+  .gate-meta-on {
+    @apply text-accent-buy;
+  }
+
+  .gate-meta-off {
+    @apply text-surface-muted/70;
+  }
+
+  .control-cell {
+    @apply border-b border-white/[0.05] pb-3;
+  }
+
+  .nav-link {
+    @apply relative text-[11px] font-medium uppercase tracking-nav px-3 py-2 text-surface-muted transition-colors hover:text-ink;
+  }
+
+  .nav-link-active {
+    @apply text-ink;
+  }
+
+  .nav-link-active::after {
+    content: '';
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    bottom: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--zenith-gold), transparent);
+  }
+
+  .panel-title {
+    @apply font-display text-[1.35rem] font-medium tracking-[0.03em] text-ink;
+  }
+
+  .panel-desc {
+    @apply text-[13px] font-light text-surface-muted mt-1.5 leading-relaxed;
+  }
+
+  .stat-tile {
+    @apply zcard flex flex-col justify-center px-5 py-4 min-h-[92px] min-w-0;
+  }
+
+  .field-input {
+    @apply w-full bg-surface-raised border border-surface-border rounded-sm px-3.5 py-2.5 text-ink text-sm font-light transition placeholder:text-surface-muted/60 focus:outline-none focus:border-accent-gold/45;
+  }
+
+  .status-chip {
+    @apply inline-flex items-center gap-2 text-[10px] uppercase tracking-label text-surface-muted;
   }
 }
 
-.brand-zenith {
-  position: relative;
-  display: inline-block;
-  font-family: 'Cinzel Decorative', 'Cinzel', 'Times New Roman', serif;
-  font-weight: 900;
-  letter-spacing: 0.12em;
-  background: linear-gradient(
-    100deg,
-    #5c3410 0%,
-    #9a6224 14%,
-    #d9a441 30%,
-    #e7c067 42%,
-    #fff6d2 50%,
-    #e7c067 58%,
-    #d9a441 70%,
-    #c5862f 86%,
-    #6b3f15 100%
-  );
-  background-size: 220% auto;
+/* Zenith wordmark — quiet champagne, no chrome glow */
+  .brand-zenith {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #c9a66b;
+  line-height: 1;
+}
+
+.brand-zenith--auth {
+  background: linear-gradient(105deg, #8a6a42 0%, #d4bc8e 42%, #c4a574 58%, #8a6a42 100%);
+  background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.45))
-    drop-shadow(0 0 16px rgba(231, 192, 103, 0.38));
-  animation: brand-sheen 7s ease-in-out infinite;
+  animation: brand-drift 14s ease-in-out infinite;
 }
 
-/* Sweeping specular highlight overlay */
-.brand-zenith::after {
-  content: 'Zenith';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    105deg,
-    transparent 0%,
-    transparent 40%,
-    rgba(255, 255, 255, 0.9) 48%,
-    rgba(255, 255, 255, 1) 50%,
-    rgba(255, 255, 255, 0.9) 52%,
-    transparent 60%,
-    transparent 100%
-  );
-  background-size: 220% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  pointer-events: none;
-  animation: brand-shine 6s ease-in-out infinite;
+.brand-zenith--light {
+  color: #6e5535;
+  background: none;
+  -webkit-text-fill-color: unset;
 }
 
-@keyframes brand-sheen {
-  0% {
+@keyframes brand-drift {
+  0%,
+  100% {
     background-position: 0% center;
   }
   50% {
     background-position: 100% center;
   }
-  100% {
-    background-position: 0% center;
-  }
 }
 
-@keyframes brand-shine {
-  0% {
-    background-position: 150% center;
-  }
-  55% {
-    background-position: -50% center;
-  }
-  100% {
-    background-position: -50% center;
-  }
-}
-
-.brand-zenith--light {
-  background: linear-gradient(
-    100deg,
-    #5c3410 0%,
-    #8a5a22 25%,
-    #c08a2e 50%,
-    #8a5a22 75%,
-    #5c3410 100%
-  );
-  background-size: 220% auto;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.4));
-}
-
-.brand-zenith--light::after {
-  display: none;
+/* Quiet transitions across the app shell */
+.fade-page > * {
+  animation: fade-in 0.55s ease-out both;
 }

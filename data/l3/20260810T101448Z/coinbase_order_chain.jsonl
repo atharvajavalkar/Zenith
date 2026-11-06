@@ -1,0 +1,2 @@
+{"t": "error", "time": null, "product_id": null, "order_id": null, "side": null, "price": null, "size": null, "reason": "level2, level3, and full channels now require authentication. https://docs.cloud.coinbase.com/exchange/docs/websocket-auth", "sequence": null}
+{"t": "error", "time": null, "product_id": null, "order_id": null, "side": null, "price": null, "size": null, "reason": "level2, level3, and full channels now require authentication. https://docs.cloud.coinbase.com/exchange/docs/websocket-auth", "sequence": null}

@@ -1,0 +1,32 @@
+# Production overlay — use with:
+#   docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
+#
+# Requires .env on the server (never commit it). Set at minimum:
+#   CORS_ORIGINS=http://YOUR_IP:3000
+#   VITE_API_URL=http://YOUR_IP:8000
+#   VITE_WS_URL=ws://YOUR_IP:8000
+#   JWT_SECRET=<long random>
+#   POSTGRES_PASSWORD=<strong>
+
+services:
+  postgres:
+    # Bind DB to localhost only (not public 0.0.0.0)
+    ports:
+      - "127.0.0.1:5432:5432"
+    restart: always
+
+  backend:
+    restart: always
+    # No hot-reload in prod — survives laptop close / reboot
+    command: ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]
+    environment:
+      CORS_ORIGINS: ${CORS_ORIGINS}
+
+  frontend:
+    restart: always
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: ${VITE_API_URL}
+        VITE_WS_URL: ${VITE_WS_URL}

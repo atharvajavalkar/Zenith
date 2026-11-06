@@ -1,0 +1,104 @@
+{
+  "run_id": "20260810T102844Z",
+  "generated_at": "2026-08-10T10:33:06Z",
+  "symbols": [
+    "GOLD",
+    "USDCHF",
+    "USDJPY",
+    "NAS100",
+    "UKOIL",
+    "AUDUSD",
+    "BTCUSD",
+    "ETHUSD"
+  ],
+  "results": [
+    {
+      "zenith": "GOLD",
+      "best_source": null,
+      "best_schema": null,
+      "file": "data/l3/20260810T102844Z/GOLD.json",
+      "xm_ok": false,
+      "coinbase_orders": null,
+      "orders_file": null,
+      "blocked_reason": "XM account has no Market Depth for this CFD; set DATABENTO_API_KEY for CME/FX proxy L3/L2"
+    },
+    {
+      "zenith": "USDCHF",
+      "best_source": null,
+      "best_schema": null,
+      "file": "data/l3/20260810T102844Z/USDCHF.json",
+      "xm_ok": false,
+      "coinbase_orders": null,
+      "orders_file": null,
+      "blocked_reason": "XM account has no Market Depth for this CFD; set DATABENTO_API_KEY for CME/FX proxy L3/L2"
+    },
+    {
+      "zenith": "USDJPY",
+      "best_source": null,
+      "best_schema": null,
+      "file": "data/l3/20260810T102844Z/USDJPY.json",
+      "xm_ok": false,
+      "coinbase_orders": null,
+      "orders_file": null,
+      "blocked_reason": "XM account has no Market Depth for this CFD; set DATABENTO_API_KEY for CME/FX proxy L3/L2"
+    },
+    {
+      "zenith": "NAS100",
+      "best_source": null,
+      "best_schema": null,
+      "file": "data/l3/20260810T102844Z/NAS100.json",
+      "xm_ok": false,
+      "coinbase_orders": null,
+      "orders_file": null,
+      "blocked_reason": "XM account has no Market Depth for this CFD; set DATABENTO_API_KEY for CME/FX proxy L3/L2"
+    },
+    {
+      "zenith": "UKOIL",
+      "best_source": null,
+      "best_schema": null,
+      "file": "data/l3/20260810T102844Z/UKOIL.json",
+      "xm_ok": false,
+      "coinbase_orders": null,
+      "orders_file": null,
+      "blocked_reason": "XM account has no Market Depth for this CFD; set DATABENTO_API_KEY for CME/FX proxy L3/L2"
+    },
+    {
+      "zenith": "AUDUSD",
+      "best_source": null,
+      "best_schema": null,
+      "file": "data/l3/20260810T102844Z/AUDUSD.json",
+      "xm_ok": false,
+      "coinbase_orders": null,
+      "orders_file": null,
+      "blocked_reason": "XM account has no Market Depth for this CFD; set DATABENTO_API_KEY for CME/FX proxy L3/L2"
+    },
+    {
+      "zenith": "BTCUSD",
+      "best_source": "coinbase_l3",
+      "best_schema": "L3_MBO",
+      "file": "data/l3/20260810T102844Z/BTCUSD.json",
+      "xm_ok": false,
+      "coinbase_orders": 58122,
+      "orders_file": "data/l3/20260810T102844Z/BTCUSD_l3_orders.jsonl.gz",
+      "blocked_reason": null
+    },
+    {
+      "zenith": "ETHUSD",
+      "best_source": "coinbase_l3",
+      "best_schema": "L3_MBO",
+      "file": "data/l3/20260810T102844Z/ETHUSD.json",
+      "xm_ok": false,
+      "coinbase_orders": 19001,
+      "orders_file": "data/l3/20260810T102844Z/ETHUSD_l3_orders.jsonl.gz",
+      "blocked_reason": null
+    }
+  ],
+  "matches_tape": "data/l3/20260810T102844Z/coinbase_matches.jsonl",
+  "notes": {
+    "true_l3_now": "BTCUSD + ETHUSD Coinbase REST level=3 (order_id gzip JSONL)",
+    "xm_dom": "This XM/MetaAPI account returns 404 \u2014 no Market Depth on these CFDs",
+    "futures_fx_true_l3": "Set DATABENTO_API_KEY (+ pip install databento) for CME GC/NQ/CL MBO",
+    "crypto_history_l3": "Set TARDIS_API_KEY for historical Coinbase L3",
+    "live_order_chain_ws": "Coinbase full/L3 WS needs API key auth; matches tape is public"
+  }
+}

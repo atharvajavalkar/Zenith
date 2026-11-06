@@ -1,0 +1,680 @@
+=== REST-5 XM adaptive hunt (Nebula) ===
+book=('AUDUSD', 'USDCHF', 'ETHUSD', 'NAS100', 'USDJPY')
+live untouched: GOLD BTCUSD UKOIL
+tfs=('5m', '15m', '3m', '1m') full_variants=44 lean_1m=28
+est_cells≈20,190 · score=n_green(7d→1y) first · XM spreads ON
+
+
+######## AUDUSD @ 5m · 10.0y ########
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/app/analysis/lab_adaptive_xm_rest5_hunt_bt.py", line 680, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/app/analysis/lab_adaptive_xm_rest5_hunt_bt.py", line 553, in main
+    cell["_score"] = _cell_score(wins)
+                     ^^^^^^^^^^^^^^^^^
+  File "/app/analysis/lab_adaptive_xm_rest5_hunt_bt.py", line 384, in _cell_score
+    ng * 10_000.0
+TypeError: unsupported operand type(s) for +: 'float' and 'tuple'
+=== REST-5 XM adaptive hunt (Nebula) ===
+book=('AUDUSD', 'USDCHF', 'ETHUSD', 'NAS100', 'USDJPY')
+live untouched: GOLD BTCUSD UKOIL
+tfs=('5m', '15m', '3m', '1m') full_variants=44 lean_1m=28
+est_cells≈20,190 · score=n_green(7d→1y) first · XM spreads ON
+
+
+######## AUDUSD @ 5m · 10.0y ########
+=== REST-5 XM adaptive hunt (Nebula) ===
+book=('AUDUSD', 'USDCHF', 'ETHUSD', 'NAS100', 'USDJPY')
+live untouched: GOLD BTCUSD UKOIL
+tfs=('5m', '15m', '3m', '1m') full_variants=44 lean_1m=28
+est_cells≈20,190 · score=n_green(7d→1y) first · XM spreads ON
+
+
+######## AUDUSD @ 5m · 10.0y ########
+  … 1/47 modes · cells=36 · 135s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 1/47 modes · cells=36 · 137s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+=== REST-5 XM adaptive hunt (Nebula) ===
+book=('AUDUSD', 'USDCHF', 'ETHUSD', 'NAS100', 'USDJPY')
+live untouched: GOLD BTCUSD UKOIL
+tfs=('5m', '15m', '3m', '1m') full_variants=44 lean_1m=28
+est_cells≈20,190 · score=n_green(7d→1y) first · XM spreads ON
+
+
+######## AUDUSD @ 5m · 10.0y ########
+  … 1/47 modes · cells=36 · 143s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+=== REST-5 XM adaptive hunt (Nebula) ===
+book=('AUDUSD', 'USDCHF', 'ETHUSD', 'NAS100', 'USDJPY')
+live untouched: GOLD BTCUSD UKOIL
+tfs=('5m', '15m', '3m', '1m') full_variants=44 lean_1m=28
+est_cells≈20,190 · score=n_green(7d→1y) first · XM spreads ON
+
+
+######## AUDUSD @ 5m · 10.0y ########
+  … 8/47 modes · cells=216 · 767s · entropy_p0.72_s0.22
+  … 8/47 modes · cells=216 · 771s · entropy_p0.72_s0.22
+  … 1/47 modes · cells=36 · 150s · static
+  … 8/47 modes · cells=216 · 758s · entropy_p0.72_s0.22
+  … 8/47 modes · cells=288 · 946s · entropy_p0.72_s0.22
+  … 16/47 modes · cells=504 · 1693s · agree_sm_cir
+  … 16/47 modes · cells=504 · 1678s · agree_sm_cir
+  … 16/47 modes · cells=504 · 1665s · agree_sm_cir
+  … 24/47 modes · cells=720 · 2388s · offflat_cir
+  … 24/47 modes · cells=720 · 2368s · offflat_cir
+  … 24/47 modes · cells=720 · 2356s · offflat_cir
+  … 16/47 modes · cells=576 · 1865s · agree_sm_cir
+  … 24/47 modes · cells=792 · 2559s · offflat_cir
+  … 32/47 modes · cells=1008 · 3309s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 32/47 modes · cells=1008 · 3286s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 32/47 modes · cells=1008 · 3293s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 32/47 modes · cells=1080 · 3520s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 40/47 modes · cells=1296 · 4270s · session_mix_t0.25_o0.40
+  … 40/47 modes · cells=1296 · 4244s · session_mix_t0.25_o0.40
+  … 40/47 modes · cells=1296 · 4235s · session_mix_t0.25_o0.40
+  BEST 5m: omni_fade_f100_m200_s480_e0.5_h15_a1|sl3.5|rr2.0|g3 green=6/6 1y $1,063 all_six_in_top=1
+
+######## AUDUSD @ 15m · 10.0y ########
+  … 1/47 modes · cells=1572 · 5112s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  BEST 5m: omni_fade_f100_m200_s480_e0.5_h15_a1|sl3.5|rr2.0|g3 green=6/6 1y $1,063 all_six_in_top=1
+
+######## AUDUSD @ 15m · 10.0y ########
+  … 1/47 modes · cells=1572 · 5083s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 40/47 modes · cells=1368 · 4448s · session_mix_t0.25_o0.40
+  … 8/47 modes · cells=1692 · 5229s · entropy_p0.72_s0.22
+  … 8/47 modes · cells=1692 · 5214s · entropy_p0.72_s0.22
+  BEST 5m: omni_fade_f100_m200_s480_e0.5_h15_a1|sl3.5|rr2.0|g3 green=6/6 1y $1,063 all_six_in_top=1
+
+######## AUDUSD @ 15m · 10.0y ########
+  … 1/47 modes · cells=1572 · 5119s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 16/47 modes · cells=1884 · 5535s · agree_sm_cir
+  … 8/47 modes · cells=1692 · 5331s · entropy_p0.72_s0.22
+  … 16/47 modes · cells=1884 · 5555s · agree_sm_cir
+  … 24/47 modes · cells=2028 · 5791s · offflat_cir
+  … 24/47 modes · cells=2028 · 5816s · offflat_cir
+  … 16/47 modes · cells=1884 · 5674s · agree_sm_cir
+  … 32/47 modes · cells=2196 · 6095s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 24/47 modes · cells=2028 · 5935s · offflat_cir
+  … 32/47 modes · cells=2196 · 6123s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 40/47 modes · cells=2388 · 7503s · session_mix_t0.25_o0.40
+  … 32/47 modes · cells=2196 · 7276s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 40/47 modes · cells=2388 · 7479s · session_mix_t0.25_o0.40
+  BEST 5m: omni_fade_f100_m200_s480_e0.5_h15_a1|sl3.5|rr2.0|g3 green=6/6 1y $1,063 all_six_in_top=1
+
+######## AUDUSD @ 15m · 10.0y ########
+  … 1/47 modes · cells=1644 · 6886s · static
+  BEST 15m: omni_fade_f80_m240_s500_e0.52_h20_a2|sl2.0|rr2.0|g2 green=6/6 1y $80 all_six_in_top=8
+
+######## AUDUSD @ 3m · 5.0y ########
+  … 40/47 modes · cells=2388 · 7474s · session_mix_t0.25_o0.40
+  BEST 15m: omni_fade_f80_m240_s500_e0.52_h20_a2|sl2.0|rr2.0|g2 green=6/6 1y $80 all_six_in_top=8
+
+######## AUDUSD @ 3m · 5.0y ########
+  … 1/47 modes · cells=2574 · 7742s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 8/47 modes · cells=1812 · 7049s · entropy_p0.72_s0.22
+  … 1/47 modes · cells=2574 · 7710s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  BEST 15m: omni_fade_f80_m240_s500_e0.52_h20_a2|sl2.0|rr2.0|g2 green=6/6 1y $80 all_six_in_top=8
+
+######## AUDUSD @ 3m · 5.0y ########
+  … 1/47 modes · cells=2574 · 7697s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 16/47 modes · cells=2004 · 7235s · agree_sm_cir
+  … 8/47 modes · cells=2664 · 7984s · entropy_p0.72_s0.22
+  … 8/47 modes · cells=2664 · 7952s · entropy_p0.72_s0.22
+  … 24/47 modes · cells=2148 · 7378s · offflat_cir
+  … 8/47 modes · cells=2664 · 7939s · entropy_p0.72_s0.22
+  … 32/47 modes · cells=2316 · 7768s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 16/47 modes · cells=2808 · 8602s · agree_sm_cir
+  … 16/47 modes · cells=2808 · 8569s · agree_sm_cir
+  … 40/47 modes · cells=2508 · 7959s · session_mix_t0.25_o0.40
+  … 16/47 modes · cells=2808 · 8559s · agree_sm_cir
+  BEST 15m: omni_fade_f80_m240_s500_e0.52_h20_a2|sl2.0|rr2.0|g2 green=6/6 1y $80 all_six_in_top=8
+
+######## AUDUSD @ 3m · 5.0y ########
+  … 24/47 modes · cells=2916 · 8901s · offflat_cir
+  … 1/47 modes · cells=2694 · 8197s · static
+  … 24/47 modes · cells=2916 · 8870s · offflat_cir
+  … 24/47 modes · cells=2916 · 8858s · offflat_cir
+  … 8/47 modes · cells=2820 · 8541s · entropy_p0.72_s0.22
+  … 32/47 modes · cells=3060 · 9296s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 32/47 modes · cells=3060 · 9261s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 32/47 modes · cells=3060 · 9249s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 16/47 modes · cells=2964 · 8933s · agree_sm_cir
+  … 40/47 modes · cells=3204 · 9689s · session_mix_t0.25_o0.40
+  … 40/47 modes · cells=3204 · 9651s · session_mix_t0.25_o0.40
+  … 40/47 modes · cells=3204 · 9639s · session_mix_t0.25_o0.40
+  … 24/47 modes · cells=3072 · 9225s · offflat_cir
+  BEST 3m: volmom_t0.5_l20|sl3.5|rr2.0|g2 green=6/6 1y $660 all_six_in_top=24
+
+######## AUDUSD @ 1m · 1.0y ########
+  … 1/31 modes · cells=3342 · 10067s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  BEST 3m: volmom_t0.5_l20|sl3.5|rr2.0|g2 green=6/6 1y $660 all_six_in_top=24
+
+######## AUDUSD @ 1m · 1.0y ########
+  … 1/31 modes · cells=3342 · 10026s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 8/31 modes · cells=3402 · 10171s · entropy_p0.72_s0.22
+  … 8/31 modes · cells=3402 · 10129s · entropy_p0.72_s0.22
+  BEST 3m: volmom_t0.5_l20|sl3.5|rr2.0|g2 green=6/6 1y $660 all_six_in_top=24
+
+######## AUDUSD @ 1m · 1.0y ########
+  … 1/31 modes · cells=3342 · 10015s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 16/31 modes · cells=3498 · 10336s · agree_sm_cir
+  … 32/47 modes · cells=3216 · 9617s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 8/31 modes · cells=3402 · 10118s · entropy_p0.72_s0.22
+  … 16/31 modes · cells=3498 · 10292s · agree_sm_cir
+  … 24/31 modes · cells=3570 · 10460s · offflat_cir
+  … 24/31 modes · cells=3570 · 10415s · offflat_cir
+  … 16/31 modes · cells=3498 · 10281s · agree_sm_cir
+  BEST 1m: volmom_t0.5_l20|sl3.0|rr2.0|g3 green=6/6 1y $5,065 all_six_in_top=4
+
+######## USDCHF @ 5m · 10.0y ########
+  BEST 1m: volmom_t0.5_l20|sl3.0|rr2.0|g3 green=6/6 1y $5,065 all_six_in_top=4
+
+######## USDCHF @ 5m · 10.0y ########
+  … 24/31 modes · cells=3570 · 10404s · offflat_cir
+  … 1/47 modes · cells=3690 · 10733s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 40/47 modes · cells=3360 · 10007s · session_mix_t0.25_o0.40
+  … 1/47 modes · cells=3690 · 10686s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  BEST 1m: volmom_t0.5_l20|sl3.0|rr2.0|g3 green=6/6 1y $5,065 all_six_in_top=4
+
+######## USDCHF @ 5m · 10.0y ########
+  … 1/47 modes · cells=3690 · 10676s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  BEST 3m: volmom_t0.5_l20|sl3.5|rr2.0|g2 green=6/6 1y $660 all_six_in_top=24
+
+######## AUDUSD @ 1m · 1.0y ########
+  … 1/31 modes · cells=3498 · 10384s · static
+  … 8/31 modes · cells=3582 · 10528s · entropy_p0.72_s0.22
+  … 8/47 modes · cells=3870 · 11311s · entropy_p0.72_s0.22
+  … 8/47 modes · cells=3870 · 11264s · entropy_p0.72_s0.22
+  … 16/31 modes · cells=3678 · 10693s · agree_sm_cir
+  … 8/47 modes · cells=3870 · 11255s · entropy_p0.72_s0.22
+  … 24/31 modes · cells=3750 · 10817s · offflat_cir
+  BEST 1m: volmom_t0.5_l20|sl3.0|rr2.0|g3 green=6/6 1y $5,065 all_six_in_top=4
+
+######## USDCHF @ 5m · 10.0y ########
+  … 1/47 modes · cells=3870 · 11095s · static
+  … 16/47 modes · cells=4158 · 12234s · agree_sm_cir
+  … 16/47 modes · cells=4158 · 12188s · agree_sm_cir
+  … 16/47 modes · cells=4158 · 12179s · agree_sm_cir
+  … 8/47 modes · cells=4122 · 11915s · entropy_p0.72_s0.22
+  … 24/47 modes · cells=4374 · 12934s · offflat_cir
+  … 24/47 modes · cells=4374 · 12888s · offflat_cir
+  … 24/47 modes · cells=4374 · 12879s · offflat_cir
+  … 16/47 modes · cells=4410 · 12847s · agree_sm_cir
+  … 32/47 modes · cells=4662 · 13860s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 32/47 modes · cells=4662 · 13815s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 32/47 modes · cells=4662 · 13805s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 24/47 modes · cells=4626 · 15730s · offflat_cir
+  … 40/47 modes · cells=4950 · 45004s · session_mix_t0.25_o0.40
+  … 40/47 modes · cells=4950 · 46519s · session_mix_t0.25_o0.40
+  … 40/47 modes · cells=4950 · 46512s · session_mix_t0.25_o0.40
+  … 32/47 modes · cells=4914 · 46264s · omni_core_f100_m200_s480_e0.55_h15_a2
+  BEST 5m: offflat_cir|sl3.0|rr3.0|g5 green=6/6 1y $1,777 all_six_in_top=29
+
+######## USDCHF @ 15m · 10.0y ########
+  … 1/47 modes · cells=5226 · 47405s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  BEST 5m: offflat_cir|sl3.0|rr3.0|g5 green=6/6 1y $1,777 all_six_in_top=29
+
+######## USDCHF @ 15m · 10.0y ########
+  … 1/47 modes · cells=5226 · 47359s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 8/47 modes · cells=5346 · 47521s · entropy_p0.72_s0.22
+  … 8/47 modes · cells=5346 · 47475s · entropy_p0.72_s0.22
+  BEST 5m: offflat_cir|sl3.0|rr3.0|g5 green=6/6 1y $1,777 all_six_in_top=29
+
+######## USDCHF @ 15m · 10.0y ########
+  … 1/47 modes · cells=5226 · 47349s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 16/47 modes · cells=5538 · 47704s · agree_sm_cir
+  … 8/47 modes · cells=5346 · 47465s · entropy_p0.72_s0.22
+  … 16/47 modes · cells=5538 · 47659s · agree_sm_cir
+  … 24/47 modes · cells=5682 · 47844s · offflat_cir
+  … 24/47 modes · cells=5682 · 47798s · offflat_cir
+  … 16/47 modes · cells=5538 · 47648s · agree_sm_cir
+  … 40/47 modes · cells=5202 · 47184s · session_mix_t0.25_o0.40
+  … 32/47 modes · cells=5850 · 48007s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 24/47 modes · cells=5682 · 47787s · offflat_cir
+  … 32/47 modes · cells=5850 · 47959s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 40/47 modes · cells=6018 · 48169s · session_mix_t0.25_o0.40
+  … 32/47 modes · cells=5850 · 47948s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 40/47 modes · cells=6018 · 48121s · session_mix_t0.25_o0.40
+  BEST 15m: session_mix_t0.25_o0.40|sl3.0|rr2.0|g2 green=6/6 1y $1,233 all_six_in_top=30
+
+######## USDCHF @ 3m · 5.0y ########
+  … 40/47 modes · cells=6018 · 48111s · session_mix_t0.25_o0.40
+  BEST 15m: session_mix_t0.25_o0.40|sl3.0|rr2.0|g2 green=6/6 1y $1,233 all_six_in_top=30
+
+######## USDCHF @ 3m · 5.0y ########
+  … 1/47 modes · cells=6204 · 48393s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 1/47 modes · cells=6204 · 48343s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  BEST 15m: session_mix_t0.25_o0.40|sl3.0|rr2.0|g2 green=6/6 1y $1,233 all_six_in_top=30
+
+######## USDCHF @ 3m · 5.0y ########
+  … 1/47 modes · cells=6204 · 48334s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 8/47 modes · cells=6294 · 48635s · entropy_p0.72_s0.22
+  … 8/47 modes · cells=6294 · 48582s · entropy_p0.72_s0.22
+  BEST 5m: offflat_cir|sl3.0|rr3.0|g5 green=6/6 1y $1,777 all_six_in_top=29
+
+######## USDCHF @ 15m · 10.0y ########
+  … 1/47 modes · cells=5478 · 48015s · static
+  … 8/47 modes · cells=6294 · 48575s · entropy_p0.72_s0.22
+  … 8/47 modes · cells=5646 · 48177s · entropy_p0.72_s0.22
+  … 16/47 modes · cells=6438 · 49020s · agree_sm_cir
+  … 16/47 modes · cells=6438 · 48962s · agree_sm_cir
+  … 16/47 modes · cells=5838 · 48362s · agree_sm_cir
+  … 16/47 modes · cells=6438 · 48959s · agree_sm_cir
+  … 24/47 modes · cells=5982 · 48504s · offflat_cir
+  … 24/47 modes · cells=6546 · 49313s · offflat_cir
+  … 24/47 modes · cells=6546 · 49251s · offflat_cir
+  … 32/47 modes · cells=6150 · 48666s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 24/47 modes · cells=6546 · 49248s · offflat_cir
+  … 40/47 modes · cells=6318 · 48829s · session_mix_t0.25_o0.40
+  … 32/47 modes · cells=6690 · 49698s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 32/47 modes · cells=6690 · 49633s · omni_core_f100_m200_s480_e0.55_h15_a2
+  BEST 15m: session_mix_t0.25_o0.40|sl3.0|rr2.0|g2 green=6/6 1y $1,233 all_six_in_top=30
+
+######## USDCHF @ 3m · 5.0y ########
+  … 1/47 modes · cells=6504 · 49056s · static
+  … 32/47 modes · cells=6690 · 49632s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 40/47 modes · cells=6834 · 50085s · session_mix_t0.25_o0.40
+  … 40/47 modes · cells=6834 · 50019s · session_mix_t0.25_o0.40
+  … 8/47 modes · cells=6630 · 49395s · entropy_p0.72_s0.22
+  … 40/47 modes · cells=6834 · 50018s · session_mix_t0.25_o0.40
+  BEST 3m: circadian_z1.8_s0.9|sl3.0|rr3.0|g2 green=6/6 1y $1,939 all_six_in_top=25
+
+######## USDCHF @ 1m · 1.0y ########
+  BEST 3m: circadian_z1.8_s0.9|sl3.0|rr3.0|g2 green=6/6 1y $1,939 all_six_in_top=25
+
+######## USDCHF @ 1m · 1.0y ########
+  … 1/31 modes · cells=6972 · 50459s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 1/31 modes · cells=6972 · 50389s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 16/47 modes · cells=6774 · 49779s · agree_sm_cir
+  … 8/31 modes · cells=7032 · 50561s · entropy_p0.72_s0.22
+  … 8/31 modes · cells=7032 · 50491s · entropy_p0.72_s0.22
+  BEST 3m: circadian_z1.8_s0.9|sl3.0|rr3.0|g2 green=6/6 1y $1,939 all_six_in_top=25
+
+######## USDCHF @ 1m · 1.0y ########
+  … 1/31 modes · cells=6972 · 50388s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 16/31 modes · cells=7128 · 56247s · agree_sm_cir
+  … 16/31 modes · cells=7128 · 57241s · agree_sm_cir
+  … 8/31 modes · cells=7032 · 57084s · entropy_p0.72_s0.22
+  … 24/47 modes · cells=6882 · 61538s · offflat_cir
+  … 24/31 modes · cells=7200 · 62510s · offflat_cir
+  … 24/31 modes · cells=7200 · 62494s · offflat_cir
+  … 16/31 modes · cells=7128 · 62474s · agree_sm_cir
+  BEST 1m: weekday_regime_prior|sl2.5|rr2.0|g5 green=6/6 1y $2,280 all_six_in_top=6
+
+######## ETHUSD @ 5m · 10.0y ########
+  BEST 1m: weekday_regime_prior|sl2.5|rr2.0|g5 green=6/6 1y $2,280 all_six_in_top=6
+
+######## ETHUSD @ 5m · 10.0y ########
+  … 24/31 modes · cells=7200 · 62599s · offflat_cir
+  … 1/47 modes · cells=7320 · 62922s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 1/47 modes · cells=7320 · 62850s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  BEST 1m: weekday_regime_prior|sl2.5|rr2.0|g5 green=6/6 1y $2,280 all_six_in_top=6
+
+######## ETHUSD @ 5m · 10.0y ########
+  … 32/47 modes · cells=7026 · 62286s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 1/47 modes · cells=7320 · 62855s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 8/47 modes · cells=7500 · 63422s · entropy_p0.72_s0.22
+  … 40/47 modes · cells=7170 · 62678s · session_mix_t0.25_o0.40
+  … 8/47 modes · cells=7500 · 63348s · entropy_p0.72_s0.22
+  … 8/47 modes · cells=7500 · 63351s · entropy_p0.72_s0.22
+  BEST 3m: circadian_z1.8_s0.9|sl3.0|rr3.0|g2 green=6/6 1y $1,939 all_six_in_top=25
+
+######## USDCHF @ 1m · 1.0y ########
+  … 1/31 modes · cells=7308 · 63056s · static
+  … 8/31 modes · cells=7392 · 63199s · entropy_p0.72_s0.22
+  … 16/31 modes · cells=7488 · 63363s · agree_sm_cir
+  … 16/47 modes · cells=7788 · 64200s · agree_sm_cir
+  … 16/47 modes · cells=7788 · 64126s · agree_sm_cir
+  … 24/31 modes · cells=7560 · 63487s · offflat_cir
+  BEST 1m: weekday_regime_prior|sl2.5|rr2.0|g5 green=6/6 1y $2,280 all_six_in_top=6
+
+######## ETHUSD @ 5m · 10.0y ########
+  … 16/47 modes · cells=7788 · 64126s · agree_sm_cir
+  … 1/47 modes · cells=7680 · 63740s · static
+  … 24/47 modes · cells=8004 · 64789s · offflat_cir
+  … 24/47 modes · cells=8004 · 64714s · offflat_cir
+  … 24/47 modes · cells=8004 · 64715s · offflat_cir
+  … 8/47 modes · cells=7932 · 64420s · entropy_p0.72_s0.22
+  … 32/47 modes · cells=8292 · 65552s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 32/47 modes · cells=8292 · 65480s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 32/47 modes · cells=8292 · 65476s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 16/47 modes · cells=8220 · 65185s · agree_sm_cir
+  … 40/47 modes · cells=8580 · 66322s · session_mix_t0.25_o0.40
+  … 40/47 modes · cells=8580 · 66251s · session_mix_t0.25_o0.40
+  … 40/47 modes · cells=8580 · 66247s · session_mix_t0.25_o0.40
+  … 24/47 modes · cells=8436 · 65767s · offflat_cir
+  BEST 5m: omni_core_f120_m320_s600_e0.52_h25_a2|sl3.0|rr3.0|g5 green=6/6 1y $1,483 all_six_in_top=12
+
+######## ETHUSD @ 15m · 10.0y ########
+  BEST 5m: omni_core_f120_m320_s600_e0.52_h25_a2|sl3.0|rr3.0|g5 green=6/6 1y $1,483 all_six_in_top=12
+
+######## ETHUSD @ 15m · 10.0y ########
+  … 1/47 modes · cells=8856 · 67290s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 1/47 modes · cells=8856 · 67227s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 8/47 modes · cells=8976 · 67505s · entropy_p0.72_s0.22
+  … 8/47 modes · cells=8976 · 76837s · entropy_p0.72_s0.22
+  BEST 5m: omni_core_f120_m320_s600_e0.52_h25_a2|sl3.0|rr3.0|g5 green=6/6 1y $1,483 all_six_in_top=12
+
+######## ETHUSD @ 15m · 10.0y ########
+  … 1/47 modes · cells=8856 · 76777s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 32/47 modes · cells=8724 · 76420s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 16/47 modes · cells=9168 · 77166s · agree_sm_cir
+  … 16/47 modes · cells=9168 · 77095s · agree_sm_cir
+  … 8/47 modes · cells=8976 · 76938s · entropy_p0.72_s0.22
+  … 24/47 modes · cells=9312 · 77303s · offflat_cir
+  … 24/47 modes · cells=9312 · 77227s · offflat_cir
+  … 16/47 modes · cells=9168 · 77111s · agree_sm_cir
+  … 32/47 modes · cells=9504 · 77475s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 32/47 modes · cells=9504 · 77398s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 24/47 modes · cells=9312 · 77245s · offflat_cir
+  … 40/47 modes · cells=9696 · 78264s · session_mix_t0.25_o0.40
+  … 40/47 modes · cells=9696 · 78188s · session_mix_t0.25_o0.40
+  … 32/47 modes · cells=9504 · 78034s · omni_core_f100_m200_s480_e0.55_h15_a2
+  BEST 15m: offflat_cir|sl2.5|rr3.0|g2 green=6/6 1y $4,292 all_six_in_top=30
+
+######## ETHUSD @ 3m · 5.0y ########
+  BEST 15m: offflat_cir|sl2.5|rr3.0|g2 green=6/6 1y $4,292 all_six_in_top=30
+
+######## ETHUSD @ 3m · 5.0y ########
+  … 40/47 modes · cells=9696 · 78421s · session_mix_t0.25_o0.40
+  … 1/47 modes · cells=9882 · 78762s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 1/47 modes · cells=9882 · 78698s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  BEST 15m: offflat_cir|sl2.5|rr3.0|g2 green=6/6 1y $4,292 all_six_in_top=30
+
+######## ETHUSD @ 3m · 5.0y ########
+  … 40/47 modes · cells=9012 · 78497s · session_mix_t0.25_o0.40
+  … 1/47 modes · cells=9882 · 79077s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 8/47 modes · cells=9972 · 79632s · entropy_p0.72_s0.22
+  … 8/47 modes · cells=9972 · 79556s · entropy_p0.72_s0.22
+  … 8/47 modes · cells=9972 · 79929s · entropy_p0.72_s0.22
+  … 16/47 modes · cells=10116 · 80523s · agree_sm_cir
+  … 16/47 modes · cells=10116 · 80609s · agree_sm_cir
+  … 16/47 modes · cells=10116 · 80736s · agree_sm_cir
+  BEST 5m: omni_core_f120_m320_s600_e0.52_h25_a2|sl3.0|rr3.0|g5 green=6/6 1y $1,483 all_six_in_top=12
+
+######## ETHUSD @ 15m · 10.0y ########
+  … 1/47 modes · cells=9288 · 80310s · static
+  … 24/47 modes · cells=10224 · 81158s · offflat_cir
+  … 24/47 modes · cells=10224 · 81247s · offflat_cir
+  … 8/47 modes · cells=9456 · 80636s · entropy_p0.72_s0.22
+  … 24/47 modes · cells=10224 · 81386s · offflat_cir
+  … 16/47 modes · cells=9648 · 81014s · agree_sm_cir
+  … 24/47 modes · cells=9792 · 81312s · offflat_cir
+  … 32/47 modes · cells=10368 · 82041s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 32/47 modes · cells=10368 · 82133s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 32/47 modes · cells=9984 · 81730s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 32/47 modes · cells=10368 · 82308s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 40/47 modes · cells=10176 · 82156s · session_mix_t0.25_o0.40
+  … 40/47 modes · cells=10512 · 83011s · session_mix_t0.25_o0.40
+  … 40/47 modes · cells=10512 · 83106s · session_mix_t0.25_o0.40
+  BEST 15m: offflat_cir|sl2.5|rr3.0|g2 green=6/6 1y $4,292 all_six_in_top=30
+
+######## ETHUSD @ 3m · 5.0y ########
+  … 1/47 modes · cells=10362 · 82580s · static
+  … 40/47 modes · cells=10512 · 83112s · session_mix_t0.25_o0.40
+  BEST 3m: tod_blend_z2.4|sl3.0|rr2.0|g3 green=5/6 1y $-5,433 all_six_in_top=0
+
+######## ETHUSD @ 1m · 1.0y ########
+  BEST 3m: tod_blend_z2.4|sl3.0|rr2.0|g3 green=5/6 1y $-5,433 all_six_in_top=0
+
+######## ETHUSD @ 1m · 1.0y ########
+  … 1/31 modes · cells=10650 · 83512s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 1/31 modes · cells=10650 · 83602s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 8/31 modes · cells=10710 · 83618s · entropy_p0.72_s0.22
+  … 8/31 modes · cells=10710 · 83708s · entropy_p0.72_s0.22
+  … 8/47 modes · cells=10488 · 82974s · entropy_p0.72_s0.22
+  BEST 3m: tod_blend_z2.4|sl3.0|rr2.0|g3 green=5/6 1y $-5,433 all_six_in_top=0
+
+######## ETHUSD @ 1m · 1.0y ########
+  … 1/31 modes · cells=10650 · 83524s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 16/31 modes · cells=10806 · 83811s · agree_sm_cir
+  … 16/31 modes · cells=10806 · 83902s · agree_sm_cir
+  … 8/31 modes · cells=10710 · 83656s · entropy_p0.72_s0.22
+  … 24/31 modes · cells=10878 · 83974s · offflat_cir
+  … 24/31 modes · cells=10878 · 84063s · offflat_cir
+  … 16/31 modes · cells=10806 · 83857s · agree_sm_cir
+  … 16/47 modes · cells=10632 · 83447s · agree_sm_cir
+  BEST 1m: tod_blend_z2.4|sl2.5|rr3.0|g5 green=5/6 1y $-5,401 all_six_in_top=0
+
+######## NAS100 @ 5m · 10.0y ########
+  BEST 1m: tod_blend_z2.4|sl2.5|rr3.0|g5 green=5/6 1y $-5,401 all_six_in_top=0
+
+######## NAS100 @ 5m · 10.0y ########
+  … 24/31 modes · cells=10878 · 83978s · offflat_cir
+  … 1/47 modes · cells=10998 · 84239s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 1/47 modes · cells=10998 · 84327s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  BEST 1m: tod_blend_z2.4|sl2.5|rr3.0|g5 green=5/6 1y $-5,401 all_six_in_top=0
+
+######## NAS100 @ 5m · 10.0y ########
+  … 1/47 modes · cells=10998 · 84242s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 24/47 modes · cells=10740 · 83748s · offflat_cir
+  … 32/47 modes · cells=10884 · 84145s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 8/47 modes · cells=11178 · 84814s · entropy_p0.72_s0.22
+  … 8/47 modes · cells=11178 · 84905s · entropy_p0.72_s0.22
+  … 8/47 modes · cells=11178 · 84816s · entropy_p0.72_s0.22
+  … 40/47 modes · cells=11028 · 84545s · session_mix_t0.25_o0.40
+  BEST 3m: tod_blend_z2.4|sl3.0|rr2.0|g3 green=5/6 1y $-5,433 all_six_in_top=0
+
+######## ETHUSD @ 1m · 1.0y ########
+  … 1/31 modes · cells=11166 · 84932s · static
+  … 16/47 modes · cells=11466 · 85724s · agree_sm_cir
+  … 16/47 modes · cells=11466 · 85816s · agree_sm_cir
+  … 8/31 modes · cells=11250 · 85085s · entropy_p0.72_s0.22
+  … 16/47 modes · cells=11466 · 85725s · agree_sm_cir
+  … 16/31 modes · cells=11346 · 85259s · agree_sm_cir
+  … 24/31 modes · cells=11418 · 85391s · offflat_cir
+  BEST 1m: tod_blend_z2.4|sl2.5|rr3.0|g5 green=5/6 1y $-5,401 all_six_in_top=0
+
+######## NAS100 @ 5m · 10.0y ########
+  … 1/47 modes · cells=11538 · 85674s · static
+  … 24/47 modes · cells=11718 · 86523s · offflat_cir
+  … 24/47 modes · cells=11718 · 86618s · offflat_cir
+  … 24/47 modes · cells=11718 · 86525s · offflat_cir
+  … 8/47 modes · cells=11790 · 86500s · entropy_p0.72_s0.22
+  … 32/47 modes · cells=12006 · 87421s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 32/47 modes · cells=12006 · 87523s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 32/47 modes · cells=12006 · 87422s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 16/47 modes · cells=12078 · 87439s · agree_sm_cir
+  … 40/47 modes · cells=12222 · 88104s · session_mix_t0.25_o0.40
+  … 40/47 modes · cells=12222 · 88210s · session_mix_t0.25_o0.40
+  … 40/47 modes · cells=12222 · 88106s · session_mix_t0.25_o0.40
+  BEST 5m: session_mix_t0.35_o0.45|sl3.0|rr3.0|g2 green=6/6 1y $8,930 all_six_in_top=30
+
+######## NAS100 @ 15m · 10.0y ########
+  … 24/47 modes · cells=12330 · 88397s · offflat_cir
+  BEST 5m: session_mix_t0.35_o0.45|sl3.0|rr3.0|g2 green=6/6 1y $8,930 all_six_in_top=30
+
+######## NAS100 @ 15m · 10.0y ########
+  … 1/47 modes · cells=12498 · 89061s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 1/47 modes · cells=12498 · 89172s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 8/47 modes · cells=12618 · 89183s · entropy_p0.72_s0.22
+  BEST 5m: session_mix_t0.35_o0.45|sl3.0|rr3.0|g2 green=6/6 1y $8,930 all_six_in_top=30
+
+######## NAS100 @ 15m · 10.0y ########
+  … 8/47 modes · cells=12618 · 89296s · entropy_p0.72_s0.22
+  … 1/47 modes · cells=12498 · 89067s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 8/47 modes · cells=12618 · 89185s · entropy_p0.72_s0.22
+  … 16/47 modes · cells=12810 · 89369s · agree_sm_cir
+  … 16/47 modes · cells=12810 · 89486s · agree_sm_cir
+  … 24/47 modes · cells=12978 · 89533s · offflat_cir
+  … 16/47 modes · cells=12810 · 89372s · agree_sm_cir
+  … 24/47 modes · cells=12978 · 89654s · offflat_cir
+  … 32/47 modes · cells=13146 · 89699s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 24/47 modes · cells=12978 · 89539s · offflat_cir
+  … 32/47 modes · cells=13146 · 89821s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 40/47 modes · cells=13266 · 89819s · session_mix_t0.25_o0.40
+  … 40/47 modes · cells=13266 · 89943s · session_mix_t0.25_o0.40
+  … 32/47 modes · cells=13146 · 89703s · omni_core_f100_m200_s480_e0.55_h15_a2
+  BEST 15m: ou_fade_z1.8|sl2.0|rr4.0|g2 green=6/6 1y $6,088 all_six_in_top=30
+
+######## NAS100 @ 3m · 5.0y ########
+  … 40/47 modes · cells=13266 · 89822s · session_mix_t0.25_o0.40
+  … 32/47 modes · cells=12618 · 89351s · omni_core_f100_m200_s480_e0.55_h15_a2
+  BEST 15m: ou_fade_z1.8|sl2.0|rr4.0|g2 green=6/6 1y $6,088 all_six_in_top=30
+
+######## NAS100 @ 3m · 5.0y ########
+  … 1/47 modes · cells=13452 · 90042s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 1/47 modes · cells=13452 · 90172s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  BEST 15m: ou_fade_z1.8|sl2.0|rr4.0|g2 green=6/6 1y $6,088 all_six_in_top=30
+
+######## NAS100 @ 3m · 5.0y ########
+  … 1/47 modes · cells=13452 · 90051s · static
+  skip gated: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+  skip switch: _switch_sides() missing 2 required positional arguments: 'alt_trend' and 'alt_fade'
+  … 8/47 modes · cells=13542 · 90290s · entropy_p0.72_s0.22
+  … 8/47 modes · cells=13542 · 90418s · entropy_p0.72_s0.22
+  … 8/47 modes · cells=13542 · 90317s · entropy_p0.72_s0.22
+  … 16/47 modes · cells=13686 · 90711s · agree_sm_cir
+  … 16/47 modes · cells=13686 · 90839s · agree_sm_cir
+  … 40/47 modes · cells=12834 · 90107s · session_mix_t0.25_o0.40
+  BEST 5m: session_mix_t0.35_o0.45|sl3.0|rr3.0|g2 green=6/6 1y $8,930 all_six_in_top=30
+
+######## NAS100 @ 15m · 10.0y ########
+  … 1/47 modes · cells=13110 · 90949s · static
+  … 8/47 modes · cells=13278 · 91110s · entropy_p0.72_s0.22
+  … 16/47 modes · cells=13470 · 91321s · agree_sm_cir
+  … 24/47 modes · cells=13638 · 91487s · offflat_cir
+  … 32/47 modes · cells=13806 · 91654s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 40/47 modes · cells=13926 · 91773s · session_mix_t0.25_o0.40
+  BEST 15m: ou_fade_z1.8|sl2.0|rr4.0|g2 green=6/6 1y $6,088 all_six_in_top=30
+
+######## NAS100 @ 3m · 5.0y ########
+  … 1/47 modes · cells=14112 · 92002s · static
+  … 8/47 modes · cells=14238 · 92341s · entropy_p0.72_s0.22
+  … 16/47 modes · cells=14382 · 92725s · agree_sm_cir
+  … 24/47 modes · cells=14490 · 93018s · offflat_cir
+  … 32/47 modes · cells=14634 · 93398s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 40/47 modes · cells=14778 · 93775s · session_mix_t0.25_o0.40
+  BEST 3m: ou_fade_z1.8|sl2.0|rr3.0|g3 green=6/6 1y $4,509 all_six_in_top=28
+
+######## NAS100 @ 1m · 1.0y ########
+  … 1/31 modes · cells=14916 · 94142s · static
+  … 8/31 modes · cells=15000 · 94282s · entropy_p0.72_s0.22
+  … 16/31 modes · cells=15096 · 94442s · agree_sm_cir
+  … 24/31 modes · cells=15168 · 94563s · offflat_cir
+  BEST 1m: session_mix_t0.28_o0.38|sl2.0|rr3.0|g5 green=6/6 1y $1,321 all_six_in_top=30
+
+######## USDJPY @ 5m · 10.0y ########
+  … 1/47 modes · cells=15288 · 94835s · static
+  … 8/47 modes · cells=15540 · 95631s · entropy_p0.72_s0.22
+  … 16/47 modes · cells=15828 · 96542s · agree_sm_cir
+  … 24/47 modes · cells=16044 · 97233s · offflat_cir
+  … 32/47 modes · cells=16332 · 98972s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 40/47 modes · cells=16620 · 102769s · session_mix_t0.25_o0.40
+  BEST 5m: offflat_sm|sl2.0|rr3.0|g3 green=6/6 1y $2,028 all_six_in_top=30
+
+######## USDJPY @ 15m · 10.0y ########
+  … 1/47 modes · cells=16896 · 105469s · static
+  … 8/47 modes · cells=17064 · 105781s · entropy_p0.72_s0.22
+  … 16/47 modes · cells=17256 · 105968s · agree_sm_cir
+  … 24/47 modes · cells=17400 · 106109s · offflat_cir
+  … 32/47 modes · cells=17568 · 106272s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 40/47 modes · cells=17760 · 106458s · session_mix_t0.25_o0.40
+  BEST 15m: offflat_cir|sl3.0|rr2.0|g3 green=6/6 1y $1,520 all_six_in_top=22
+
+######## USDJPY @ 3m · 5.0y ########
+  … 1/47 modes · cells=17946 · 106685s · static
+  … 8/47 modes · cells=18072 · 107014s · entropy_p0.72_s0.22
+  … 16/47 modes · cells=18216 · 107388s · agree_sm_cir
+  … 24/47 modes · cells=18324 · 107671s · offflat_cir
+  … 32/47 modes · cells=18468 · 108046s · omni_core_f100_m200_s480_e0.55_h15_a2
+  … 40/47 modes · cells=18612 · 108417s · session_mix_t0.25_o0.40
+  BEST 3m: tod_blend_z2.0|sl3.0|rr3.0|g2 green=6/6 1y $638 all_six_in_top=8
+
+######## USDJPY @ 1m · 1.0y ########
+  … 1/31 modes · cells=18750 · 108774s · static
+  … 8/31 modes · cells=18834 · 108912s · entropy_p0.72_s0.22
+  … 16/31 modes · cells=18930 · 109070s · agree_sm_cir
+  … 24/31 modes · cells=19002 · 110274s · offflat_cir
+  BEST 1m: session_mix_t0.28_o0.38|sl3.0|rr2.0|g5 green=6/6 1y $2,560 all_six_in_top=5
+
+=== DONE · 111415s · cells=19086 · all_six survivors=152 ===

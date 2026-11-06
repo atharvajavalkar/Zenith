@@ -1,0 +1,34 @@
+{
+  "zenith": "USDJPY",
+  "map": {
+    "true_l3": false,
+    "primary": "xm_dom",
+    "product": "USDJPY",
+    "databento": {
+      "dataset": "DBFX.PLUS",
+      "symbol": "USD/JPY",
+      "schema": "mbp-10"
+    },
+    "tardis": null,
+    "note": "Spot FX aggregated L2 at best; XM DOM primary without keys"
+  },
+  "sources": {
+    "xm_dom": {
+      "ok": false,
+      "error": "No module named 'requests'"
+    },
+    "databento": {
+      "ok": false,
+      "skipped": true,
+      "reason": "DATABENTO_API_KEY not set",
+      "would_fetch": {
+        "dataset": "DBFX.PLUS",
+        "symbol": "USD/JPY",
+        "schema": "mbp-10"
+      }
+    }
+  },
+  "fetched_at": "2026-08-10T10:13:43Z",
+  "best_schema": null,
+  "best_source": null
+}

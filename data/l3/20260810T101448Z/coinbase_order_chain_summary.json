@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "venue": "coinbase",
+  "schema": "L3_ORDER_CHAIN",
+  "channel": "full",
+  "products": [
+    "BTC-USD",
+    "ETH-USD"
+  ],
+  "seconds": 30.0,
+  "n_events": 2,
+  "by_type": {
+    "error": 2
+  },
+  "fetched_at": "2026-08-10T10:18:56Z"
+}

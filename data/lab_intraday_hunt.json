@@ -1,0 +1,83 @@
+{
+  "generated_at": "2026-07-24T19:20:36.304718+00:00",
+  "best_by_pair": {
+    "GOLD": "cta_10_40",
+    "USDCHF": "rsi",
+    "USDJPY": "bb_1.5",
+    "NAS100": "ema_tight",
+    "UKOIL": "st_3",
+    "AUDUSD": "bb_1.5",
+    "BTCUSD": "fib_liq",
+    "ETHUSD": "bb_2"
+  },
+  "honest_score_1_to_10": 7.5,
+  "honest": {
+    "GOLD": {
+      "tf": "15m",
+      "verdict": "SURVIVES",
+      "oos_exp_r": 0.0,
+      "full_n": 23,
+      "mc": 75.5
+    },
+    "USDCHF": {
+      "tf": "1m",
+      "verdict": "SURVIVES",
+      "oos_exp_r": 0.117,
+      "full_n": 182,
+      "mc": 83.0
+    },
+    "USDJPY": {
+      "tf": "15m",
+      "verdict": "FRAGILE",
+      "oos_exp_r": 0.875,
+      "full_n": 42,
+      "mc": 54.8
+    },
+    "NAS100": {
+      "tf": "15m",
+      "verdict": "FRAGILE",
+      "oos_exp_r": 1.5,
+      "full_n": 5,
+      "mc": 91.4
+    },
+    "UKOIL": {
+      "tf": "15m",
+      "verdict": "SURVIVES",
+      "oos_exp_r": 1.4,
+      "full_n": 7,
+      "mc": 96.7
+    },
+    "AUDUSD": {
+      "tf": "15m",
+      "verdict": "DEAD",
+      "oos_exp_r": -0.559,
+      "full_n": 57,
+      "mc": 25.9
+    },
+    "BTCUSD": {
+      "tf": "3m",
+      "verdict": "SURVIVES",
+      "oos_exp_r": 3.0,
+      "full_n": 8,
+      "mc": 84.6
+    },
+    "ETHUSD": {
+      "tf": "1m",
+      "verdict": "SURVIVES",
+      "oos_exp_r": 1.778,
+      "full_n": 42,
+      "mc": 99.5
+    }
+  },
+  "pair_trades": {
+    "GOLD": 1001309,
+    "USDCHF": 1001042,
+    "USDJPY": 1001635,
+    "NAS100": 1003077,
+    "UKOIL": 1004440,
+    "AUDUSD": 1001091,
+    "BTCUSD": 1002829,
+    "ETHUSD": 1000042
+  },
+  "limitations": "TV/YF intraday depth is weeks\u2013months, not 15 years. 1M trades/pair use structured multi-TF + dense next-bar layers."
+}

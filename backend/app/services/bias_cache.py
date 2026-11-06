@@ -44,7 +44,8 @@ class BiasCache:
                 self._updated_at = time.time()
                 self._last_error = None
             logger.info(
-                "Market bias updated: %s (%.1f%%)",
+                "Market bias updated: %s instruments · primary %s (%.1f%%)",
+                len(result.get("instruments") or []),
                 result["overall"]["label"],
                 result["overall"]["confidence"],
             )
@@ -55,6 +56,13 @@ class BiasCache:
         finally:
             async with self._lock:
                 self._refreshing = False
+
+    async def invalidate(self) -> None:
+        """Force next get() to re-fetch (e.g. after paper ↔ live switch)."""
+        async with self._lock:
+            self._data = None
+            self._updated_at = 0.0
+            self._last_error = None
 
     async def status(self) -> dict[str, Any]:
         async with self._lock:

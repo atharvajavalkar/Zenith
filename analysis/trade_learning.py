@@ -32,18 +32,33 @@ FEATURE_NAMES = [
     "score_margin",
     "smc_score",
     "bias_aligned",
+    "news_bias_score",
+    "news_aligned",
+    "vp_score",
+    "vp_aligned",
+    "vp_dist_poc_atr",
+    "vp_in_value",
+    "vp_above_value",
+    "vp_below_value",
     "laminar_bull",
     "laminar_bear",
+    "lot_size",
+    "capital_band",
+    "asset_vol",
+    "trail_lock",
+    "tp1_frac",
 ]
 
-# Hard rules — only reject clearly bad setups (not normal ATR-sized stops)
+# Hard rules — only reject clearly bad setups
+# SL cap raised to $10 — user accepts up to $10 risk per trade;
+# data shows $3–$10 is tradeable, only >$10 has poor win rate.
 HARD_RULES = [
     {
         "id": "risk_oversized",
-        "label": "Oversized SL (>$6) wins only 26%",
-        "check": lambda f: f.get("risk_usd") is not None and f["risk_usd"] > 6.0,
+        "label": "Oversized $ risk vs SL — poor historical win rate",
+        "check": lambda f: f.get("risk_usd") is not None and f["risk_usd"] > 250.0,
         "action": "reject",
-        "reason": "SL risk > $6 — historically 26% win rate",
+        "reason": "SL risk > $250 — historically poor win rate",
     },
 ]
 
@@ -91,7 +106,7 @@ def extract_features_from_trade(row: dict) -> dict[str, Any]:
         "rr_ratio": round(rr, 3) if rr is not None else None,
         "is_buy": 1.0 if signal == "BUY" else 0.0,
         "hour_utc": hour,
-        "prime_hour": 1.0 if hour in {6, 9, 10, 11} else 0.0,
+        "prime_hour": 1.0 if hour in {6, 8, 9, 10, 11, 13, 14, 15, 16, 17} else 0.0,
         "mc_prob": _float(features.get("mc_prob") or features.get("SUCCESS_PERCENT")),
         "markov_mc_prob": _float(features.get("markov_mc_prob") or features.get("MARKOV_MC_PROB")),
         "markov_persist": _float(features.get("markov_persist") or features.get("MARKOV_PERSIST")),
@@ -100,10 +115,83 @@ def extract_features_from_trade(row: dict) -> dict[str, Any]:
         "score_margin": _float(features.get("score_margin")),
         "smc_score": _float(features.get("smc_score") or features.get("SMC_SCORE")),
         "bias_aligned": _float(features.get("bias_aligned")),
+        "news_bias_score": _float(
+            features.get("news_bias_score") or features.get("WORLD_NEWS_SCORE")
+        ),
+        "news_aligned": (
+            _float(features.get("news_aligned"))
+            if features.get("news_aligned") is not None
+            else (
+                1.0
+                if features.get("WORLD_NEWS_ALIGNED") is True
+                else 0.0
+                if features.get("WORLD_NEWS_ALIGNED") is False
+                else None
+            )
+        ),
+        "vp_score": _float(features.get("vp_score") or features.get("VP_SCORE")),
+        "vp_aligned": (
+            _float(features.get("vp_aligned"))
+            if features.get("vp_aligned") is not None
+            else (
+                1.0
+                if features.get("VP_ALIGNED") is True
+                else 0.0
+                if features.get("VP_ALIGNED") is False
+                else None
+            )
+        ),
+        "vp_dist_poc_atr": _float(
+            features.get("vp_dist_poc_atr") or features.get("VP_DIST_POC_ATR")
+        ),
+        "vp_in_value": _float(
+            features.get("vp_in_value")
+            if features.get("vp_in_value") is not None
+            else (1.0 if features.get("VP_IN_VALUE") else 0.0 if features.get("VP_IN_VALUE") is False else None)
+        ),
+        "vp_above_value": _float(
+            features.get("vp_above_value")
+            if features.get("vp_above_value") is not None
+            else (1.0 if features.get("VP_ABOVE_VALUE") else 0.0 if features.get("VP_ABOVE_VALUE") is False else None)
+        ),
+        "vp_below_value": _float(
+            features.get("vp_below_value")
+            if features.get("vp_below_value") is not None
+            else (1.0 if features.get("VP_BELOW_VALUE") else 0.0 if features.get("VP_BELOW_VALUE") is False else None)
+        ),
         "laminar_bull": 1.0 if features.get("STATE") == "LAMINAR_BULL" else 0.0,
         "laminar_bear": 1.0 if features.get("STATE") == "LAMINAR_BEAR" else 0.0,
+        "lot_size": _float(features.get("lot_size") or row.get("lot_size")),
+        "capital_band": _capital_band(features.get("capital")),
+        "asset_vol": _asset_vol_score(features.get("asset_class") or features.get("symbol") or row.get("symbol")),
+        "trail_lock": _float(features.get("trail_lock")),
+        "tp1_frac": _float(features.get("tp1_frac")),
         "signal": signal,
     }
+
+
+def _capital_band(capital: Any) -> Optional[float]:
+    """Normalize capital into 0..1 learning feature (log-ish)."""
+    try:
+        c = float(capital)
+    except (TypeError, ValueError):
+        return None
+    if c <= 0:
+        return 0.0
+    import math
+
+    return round(min(1.0, math.log10(max(c, 10.0)) / 5.0), 4)
+
+
+def _asset_vol_score(symbol_or_class: Any) -> Optional[float]:
+    try:
+        from strategy.dynamic_lots import asset_class, _VOL_MULT
+
+        raw = str(symbol_or_class or "").upper()
+        cls = raw if raw in _VOL_MULT else asset_class(raw)
+        return float(_VOL_MULT.get(cls, 1.0))
+    except Exception:
+        return None
 
 
 def extract_features_from_signal(sig: dict, trade_sig: Optional[dict] = None) -> dict[str, Any]:
@@ -125,14 +213,57 @@ def extract_features_from_signal(sig: dict, trade_sig: Optional[dict] = None) ->
         or (signal == "SELL" and bias_1h == "BEARISH")
     )
 
+    news_score = _float(ts.get("WORLD_NEWS_SCORE") or sig.get("WORLD_NEWS_SCORE"))
+    news_aligned_raw = ts.get("WORLD_NEWS_ALIGNED")
+    if news_aligned_raw is None:
+        news_aligned_raw = sig.get("WORLD_NEWS_ALIGNED")
+    if news_aligned_raw is None and news_score is not None and signal in ("BUY", "SELL"):
+        # Derive alignment if signal payload lacked the flag
+        news_aligned_raw = (signal == "BUY" and news_score > 0.15) or (
+            signal == "SELL" and news_score < -0.15
+        )
+
+    vp_score = _float(ts.get("VP_SCORE") or sig.get("VP_SCORE"))
+    vp_aligned_raw = ts.get("VP_ALIGNED")
+    if vp_aligned_raw is None:
+        vp_aligned_raw = sig.get("VP_ALIGNED")
+    vp_in = ts.get("VP_IN_VALUE")
+    if vp_in is None:
+        vp_in = sig.get("VP_IN_VALUE")
+    vp_above = ts.get("VP_ABOVE_VALUE")
+    if vp_above is None:
+        vp_above = sig.get("VP_ABOVE_VALUE")
+    vp_below = ts.get("VP_BELOW_VALUE")
+    if vp_below is None:
+        vp_below = sig.get("VP_BELOW_VALUE")
+
     hour = _parse_hour(sig.get("CANDLE_TIME") or sig.get("LIVE_TIME"))
+    sym = str(ts.get("SYMBOL") or ts.get("INSTRUMENT") or sig.get("SYMBOL") or "GOLD").upper()
+    lot = _float(ts.get("LOT_SIZE") or ts.get("lot_size"))
+    capital = _float(ts.get("capital") or sig.get("capital"))
+    trail = _float(ts.get("trail_lock"))
+    tp1f = _float(ts.get("tp1_frac"))
+    asset_cls = ts.get("asset_class")
+
+    # Prefer true $ risk at SL when lot is known
+    risk_usd = None
+    if entry is not None and sl is not None:
+        if lot is not None:
+            try:
+                from strategy.position_sizing import leg_pnl
+
+                risk_usd = abs(leg_pnl(signal or "BUY", float(entry), float(sl), lot, symbol=sym))
+            except Exception:
+                risk_usd = round(risk, 3) if risk is not None else None
+        else:
+            risk_usd = round(risk, 3) if risk is not None else None
 
     return {
-        "risk_usd": round(risk, 3) if risk is not None else None,
+        "risk_usd": risk_usd,
         "rr_ratio": round(rr, 3) if rr is not None else None,
         "is_buy": 1.0 if signal == "BUY" else 0.0,
         "hour_utc": hour,
-        "prime_hour": 1.0 if hour in {6, 9, 10, 11} else 0.0,
+        "prime_hour": 1.0 if hour in {6, 8, 9, 10, 11, 13, 14, 15, 16, 17} else 0.0,
         "mc_prob": _float(ts.get("SUCCESS_PERCENT") or sig.get("SUCCESS_PERCENT")),
         "markov_mc_prob": _float(ts.get("MARKOV_MC_PROB") or sig.get("MARKOV_MC_PROB")),
         "markov_persist": _float(sig.get("MARKOV_PERSIST")),
@@ -141,18 +272,51 @@ def extract_features_from_signal(sig: dict, trade_sig: Optional[dict] = None) ->
         "score_margin": abs(buy_score - sell_score),
         "smc_score": _float(sig.get("SMC_SCORE")),
         "bias_aligned": 1.0 if aligned else 0.0,
+        "news_bias_score": news_score,
+        "news_aligned": 1.0 if news_aligned_raw else 0.0 if news_aligned_raw is not None else None,
+        "vp_score": vp_score,
+        "vp_aligned": 1.0 if vp_aligned_raw else 0.0 if vp_aligned_raw is not None else None,
+        "vp_dist_poc_atr": _float(ts.get("VP_DIST_POC_ATR") or sig.get("VP_DIST_POC_ATR")),
+        "vp_in_value": 1.0 if vp_in else 0.0 if vp_in is not None else None,
+        "vp_above_value": 1.0 if vp_above else 0.0 if vp_above is not None else None,
+        "vp_below_value": 1.0 if vp_below else 0.0 if vp_below is not None else None,
         "laminar_bull": 1.0 if sig.get("STATE") == "LAMINAR_BULL" else 0.0,
         "laminar_bear": 1.0 if sig.get("STATE") == "LAMINAR_BEAR" else 0.0,
+        "lot_size": lot,
+        "capital_band": _capital_band(capital),
+        "asset_vol": _asset_vol_score(asset_cls or sym),
+        "trail_lock": trail,
+        "tp1_frac": tp1f,
         "signal": signal,
-        "STATE": sig.get("STATE"),
+        "STATE": sig.get("STATE") or ts.get("STATE"),
+        "exec_tf": ts.get("EXEC_TF") or sig.get("EXEC_TF"),
+        "EXEC_TF": ts.get("EXEC_TF") or sig.get("EXEC_TF"),
+        "mtf_independent": bool(ts.get("MTF_INDEPENDENT") or sig.get("MTF_INDEPENDENT")),
         "BUY_SCORE": buy_score,
         "SELL_SCORE": sell_score,
+        "concepts": sig.get("CONCEPTS") or {},
+        "symbol": sym,
+        "SYMBOL": sym,
+        "concept_quality": _float(sig.get("CONCEPT_QUALITY")),
         "SUCCESS_PERCENT": _float(ts.get("SUCCESS_PERCENT") or sig.get("SUCCESS_PERCENT")),
         "MARKOV_MC_PROB": _float(ts.get("MARKOV_MC_PROB") or sig.get("MARKOV_MC_PROB")),
         "MARKOV_PERSIST": _float(sig.get("MARKOV_PERSIST")),
         "MARKOV_BULL_PROB": _float(sig.get("MARKOV_BULL_PROB")),
         "STATE_WIN_RATE": _float(sig.get("STATE_WIN_RATE")),
         "SMC_SCORE": _float(sig.get("SMC_SCORE")),
+        "WORLD_NEWS_SCORE": news_score,
+        "WORLD_NEWS_ALIGNED": news_aligned_raw,
+        "WORLD_NEWS_DIRECTION": ts.get("WORLD_NEWS_DIRECTION") or sig.get("WORLD_NEWS_DIRECTION"),
+        "WORLD_NEWS_MC_ADJUST": _float(
+            ts.get("WORLD_NEWS_MC_ADJUST") or sig.get("WORLD_NEWS_MC_ADJUST")
+        ),
+        "VP_SCORE": vp_score,
+        "VP_ALIGNED": vp_aligned_raw,
+        "VP_LOCATION": ts.get("VP_LOCATION") or sig.get("VP_LOCATION"),
+        "VP_POC": ts.get("VP_POC") or sig.get("VP_POC"),
+        "VP_VAH": ts.get("VP_VAH") or sig.get("VP_VAH"),
+        "VP_VAL": ts.get("VP_VAL") or sig.get("VP_VAL"),
+        "VP_MC_ADJUST": _float(ts.get("VP_MC_ADJUST") or sig.get("VP_MC_ADJUST")),
     }
 
 
@@ -172,8 +336,12 @@ def _feature_vector(features: dict[str, Any], means: dict, stds: dict) -> np.nda
         if val is None:
             val = means.get(name, 0.0)
         mean = means.get(name, 0.0)
-        std = stds.get(name, 1.0) or 1.0
-        vec.append((float(val) - mean) / std)
+        # Floor std at 0.1 — prevents catastrophic extrapolation for features rarely
+        # seen in training (e.g. laminar_bull/bear present in <0.1% of historical rows)
+        std = max(stds.get(name, 1.0) or 1.0, 0.1)
+        # Clip to ±5 std — standard practice to cap rare-feature explosion at inference
+        normed = np.clip((float(val) - mean) / std, -5.0, 5.0)
+        vec.append(normed)
     return np.array(vec, dtype=float)
 
 
@@ -217,9 +385,7 @@ class LogisticCalibrator:
         for name in FEATURE_NAMES:
             vals = [f.get(name) for f in X_raw if f.get(name) is not None]
             self.means[name] = float(np.mean(vals)) if vals else 0.0
-            self.stds[name] = float(np.std(vals)) if vals else 1.0
-            if self.stds[name] < 1e-6:
-                self.stds[name] = 1.0
+            self.stds[name] = max(float(np.std(vals)) if vals else 1.0, 0.1)
 
         X = np.array([_feature_vector(f, self.means, self.stds) for f in X_raw])
         y_arr = np.array(y, dtype=float)
@@ -243,6 +409,8 @@ class LogisticCalibrator:
 
         probs = _sigmoid(X @ w + b)
         self.threshold = _find_threshold(probs, y_arr, TARGET_WIN_RATE)
+        # Cap so a 6% train WR model cannot demand 55%+ and freeze the desk
+        self.threshold = min(float(self.threshold or 0.40), 0.40)
         mask = probs >= self.threshold
         if mask.any():
             self.filtered_win_rate = float(np.mean(y_arr[mask]))
@@ -365,28 +533,116 @@ def evaluate_trade(
     if not ok:
         return False, 0.0, adaptive_reason
 
+    # Concept quality (learned expectancy across EMA/SMC/AVP/MC/…)
+    cq = features.get("concept_quality")
+    concepts = features.get("concepts")
+    if concepts and cq is None:
+        try:
+            from analysis.concept_engine import passes_concept_gate
+            ok_c, cq, creason = passes_concept_gate(concepts if isinstance(concepts, dict) else {})
+            if not ok_c:
+                return False, 0.0, creason
+        except Exception:
+            pass
+    elif cq is not None:
+        try:
+            from analysis.concept_engine import get_state as concept_state
+            min_q = float(concept_state().get("min_quality") or 0.35)
+            if float(cq) < min_q:
+                return False, float(cq), f"Concept quality {float(cq):.2f} below {min_q:.2f}"
+        except Exception:
+            pass
+
     for rule in HARD_RULES:
         if rule["check"](features):
             return False, 0.0, rule["reason"]
 
     prob = model.predict_proba(features)
 
+    mc_val = features.get("markov_mc_prob") or features.get("mc_prob")
+    sym = str(features.get("symbol") or features.get("SYMBOL") or "").upper() or None
+    try:
+        from analysis.instrument_rl import mc_floor_for, min_ml_for
+
+        floor_mc = mc_floor_for(sym)
+        floor_ml_extra = min_ml_for(sym)
+    except Exception:
+        floor_mc = mc_floor()
+        floor_ml_extra = min_ml_prob()
+
     if use_ml_gate and model.weights is not None:
-        floor_prob = max(model.threshold, min_ml_prob())
-        if prob < floor_prob:
+        exec_tf = str(features.get("exec_tf") or features.get("EXEC_TF") or "").lower()
+        is_swing = exec_tf in ("15m", "1h", "4h") or bool(features.get("mtf_independent"))
+        if is_swing:
+            floor_prob = min(float(model.threshold or 0.40), 0.34)
+        else:
+            floor_prob = min(
+                0.36,
+                max(0.26, max(float(model.threshold or 0.32), float(floor_ml_extra))),
+            )
+
+        # Learn mode: if a real setup has MC near the floor, never kill on ML.
+        # RL needs closes — risk control is lots/RR from overlays, not a dead gate.
+        has_setup = str(features.get("signal") or features.get("SIGNAL") or "").upper() in (
+            "BUY",
+            "SELL",
+        )
+        mc_present = mc_val is not None
+        mc_ok = mc_present and float(mc_val) + 1e-6 >= float(floor_mc) - 3.0  # 3pp grace
+        skip_ml_hard = bool(has_setup and (mc_ok or not mc_present))
+
+        if not skip_ml_hard and prob < floor_prob:
             return (
                 False,
                 prob,
-                f"ML win probability {prob:.0%} below gate {floor_prob:.0%} (target {TARGET_WIN_RATE:.0%})",
+                f"ML win probability {prob:.0%} below gate {floor_prob:.0%} "
+                f"({sym or 'desk'} target {TARGET_WIN_RATE:.0%})",
             )
 
-    if features.get("rr_ratio") is not None and features["rr_ratio"] < 1.5:
-        return False, prob, f"RR {features['rr_ratio']:.2f} below 1:1.5 minimum"
+    if features.get("rr_ratio") is not None and features["rr_ratio"] < 1.15:
+        return False, prob, f"RR {features['rr_ratio']:.2f} below 1:1.15 minimum"
 
-    mc_val = features.get("markov_mc_prob") or features.get("mc_prob")
-    floor_mc = mc_floor()
-    if mc_val is not None and mc_val < floor_mc:
-        label = "Markov MC" if features.get("markov_mc_prob") is not None else "Monte Carlo"
-        return False, prob, f"{label} {mc_val:.0f}% below adaptive floor {floor_mc:.0f}%"
+    # Per-entry Markov/path-MC floor — OFF when MARKOV_MC_GATE_ENABLED=false so
+    # live matches Dukascopy hunt brains (bootstrap MC only, no entry Markov gate).
+    try:
+        from config import MARKOV_MC_GATE_ENABLED
+    except Exception:
+        MARKOV_MC_GATE_ENABLED = False
+    if MARKOV_MC_GATE_ENABLED:
+        # 3pp grace so borderline zone setups aren't sniped by floating MC floors
+        if mc_val is not None and float(mc_val) + 3.0 + 1e-6 < float(floor_mc):
+            label = (
+                "Markov MC"
+                if features.get("markov_mc_prob") is not None
+                else "Monte Carlo"
+            )
+            return (
+                False,
+                prob,
+                f"{label} {float(mc_val):.0f}% below {sym or 'desk'} floor {float(floor_mc):.0f}%",
+            )
 
-    return True, prob, f"Approved — ML win probability {prob:.0%}"
+    # Soft structure hints only — do not hard-kill setups (RL needs the closes)
+    try:
+        from analysis.correlation_matrix import correlation_bias_for
+        from analysis.minute_learn import get_minute_state
+
+        sig_dir = str(features.get("signal") or features.get("SIGNAL") or "")
+        cb = correlation_bias_for(sym or "GOLD", sig_dir)
+        # Extreme anti-gold correlation alone is not enough to kill; just annotate
+        mstate = get_minute_state(sym)
+        if mstate.get("structure_bias") and sig_dir in ("BUY", "SELL"):
+            sb = mstate["structure_bias"]
+            vp_sc = float(mstate.get("vp_score") or 0)
+            fights_stack = (sig_dir == "BUY" and sb == "BEARISH" and vp_sc < -0.85) or (
+                sig_dir == "SELL" and sb == "BULLISH" and vp_sc > 0.85
+            )
+            # Only block obvious fights — leave mild conflicts for RL to sort
+            if fights_stack and abs(vp_sc) >= 0.9:
+                return False, prob, f"Minute stack conflicts trade ({mstate.get('message')})"
+        _ = cb  # retained for logging / future soft score
+    except Exception:
+        pass
+
+    tag = f"{sym} · " if sym else ""
+    return True, prob, f"Approved — {tag}ML win probability {prob:.0%}"

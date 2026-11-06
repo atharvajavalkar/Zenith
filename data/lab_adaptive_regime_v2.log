@@ -1,0 +1,57 @@
+=== ADAPTIVE v2 · GATED STATIC + SWITCH ===
+TF=5m 3.0y
+Modes: static | gated(sit-out) | switch(gated+alt)
+LIVE BRAINS NOT TOUCHED
+
+
+######## ETHUSD ########
+  7d   static n=   0 WR=  0.0 E[R]=+0.000 $       0 | gated n=   0 WR=  0.0 E[R]=+0.000 $       0 | switch n=  17 WR= 11.8 E[R]=-0.412 $  -1,400
+  90d  static n=  57 WR= 15.8 E[R]=-0.211 $  -2,400 | gated n=  40 WR= 20.0 E[R]=+0.000 $       0 | switch n= 215 WR= 15.8 E[R]=-0.209 $  -9,000
+  1y   static n= 223 WR= 25.6 E[R]=+0.278 $  12,400 | gated n= 130 WR= 24.6 E[R]=+0.231 $   6,000 | switch n= 754 WR= 19.5 E[R]=-0.025 $  -3,800
+  3y   static n= 573 WR= 24.1 E[R]=+0.204 $  23,400 | gated n= 321 WR= 22.7 E[R]=+0.137 $   8,800 | switch n=2079 WR= 20.1 E[R]=+0.003 $   1,200
+
+######## BTCUSD ########
+  7d   static n=   0 WR=  0.0 E[R]=+0.000 $       0 | gated n=   0 WR=  0.0 E[R]=+0.000 $       0 | switch n=  23 WR= 26.1 E[R]=+0.043 $     200
+  90d  static n=  57 WR= 19.3 E[R]=-0.228 $  -2,600 | gated n=  31 WR=  9.7 E[R]=-0.613 $  -3,800 | switch n= 228 WR= 21.1 E[R]=-0.158 $  -7,200
+  1y   static n= 191 WR= 23.6 E[R]=-0.058 $  -2,200 | gated n=  99 WR= 23.2 E[R]=-0.071 $  -1,400 | switch n= 864 WR= 25.1 E[R]=+0.005 $     800
+  3y   static n= 542 WR= 26.4 E[R]=+0.055 $   6,000 | gated n= 291 WR= 25.8 E[R]=+0.031 $   1,800 | switch n=2560 WR= 25.4 E[R]=+0.016 $   8,000
+
+######## GOLD ########
+  7d   static n=   5 WR= 20.0 E[R]=+0.000 $       0 | gated n=   2 WR= 50.0 E[R]=+1.500 $     600 | switch n=  11 WR= 27.3 E[R]=+0.364 $     800
+  90d  static n=  74 WR= 28.4 E[R]=+0.419 $   6,200 | gated n=  48 WR= 27.1 E[R]=+0.354 $   3,400 | switch n= 188 WR= 21.8 E[R]=+0.090 $   3,400
+  1y   static n= 275 WR= 30.9 E[R]=+0.545 $  30,000 | gated n= 173 WR= 28.9 E[R]=+0.445 $  15,400 | switch n= 688 WR= 22.1 E[R]=+0.105 $  14,400
+  3y   static n= 862 WR= 25.4 E[R]=+0.270 $  46,600 | gated n= 453 WR= 24.5 E[R]=+0.225 $  20,400 | switch n=1891 WR= 21.8 E[R]=+0.092 $  34,800
+
+######## NAS100 ########
+  7d   static n=   1 WR=100.0 E[R]=+2.000 $     400 | gated n=   1 WR=100.0 E[R]=+2.000 $     400 | switch n=  10 WR= 40.0 E[R]=+0.200 $     400
+  90d  static n=  37 WR= 37.8 E[R]=+0.135 $   1,000 | gated n=  30 WR= 43.3 E[R]=+0.300 $   1,800 | switch n= 140 WR= 33.6 E[R]=+0.007 $     200
+  1y   static n= 152 WR= 37.5 E[R]=+0.125 $   3,800 | gated n= 117 WR= 36.8 E[R]=+0.103 $   2,400 | switch n= 517 WR= 31.7 E[R]=-0.048 $  -5,000
+  3y   static n= 439 WR= 35.8 E[R]=+0.073 $   6,400 | gated n= 359 WR= 36.2 E[R]=+0.086 $   6,200 | switch n=1639 WR= 34.2 E[R]=+0.025 $   8,200
+
+######## USDJPY ########
+  7d   static n=  45 WR= 46.7 E[R]=+0.400 $   3,600 | gated n=  23 WR= 47.8 E[R]=+0.435 $   2,000 | switch n=  24 WR= 45.8 E[R]=+0.375 $   1,800
+  90d  static n= 586 WR= 38.4 E[R]=+0.152 $  17,800 | gated n= 300 WR= 38.3 E[R]=+0.150 $   9,000 | switch n= 318 WR= 37.1 E[R]=+0.113 $   7,200
+  1y   static n=2211 WR= 36.9 E[R]=+0.107 $  47,400 | gated n= 938 WR= 34.0 E[R]=+0.020 $   3,800 | switch n=1059 WR= 33.1 E[R]=-0.006 $  -1,200
+  3y   static n=6559 WR= 35.9 E[R]=+0.076 $ 100,000 | gated n=2586 WR= 35.3 E[R]=+0.060 $  31,200 | switch n=2979 WR= 34.2 E[R]=+0.025 $  15,000
+
+######## AUDUSD ########
+  7d   static n=  27 WR= 18.5 E[R]=-0.444 $  -2,400 | gated n=  13 WR= 15.4 E[R]=-0.538 $  -1,400 | switch n=  13 WR= 15.4 E[R]=-0.538 $  -1,400
+  90d  static n= 285 WR= 35.4 E[R]=+0.063 $   3,600 | gated n= 148 WR= 37.8 E[R]=+0.135 $   4,000 | switch n= 172 WR= 37.8 E[R]=+0.134 $   4,600
+  1y   static n=1137 WR= 37.2 E[R]=+0.116 $  26,400 | gated n= 531 WR= 37.5 E[R]=+0.124 $  13,200 | switch n= 660 WR= 37.0 E[R]=+0.109 $  14,400
+  3y   static n=3385 WR= 37.0 E[R]=+0.111 $  75,400 | gated n=1492 WR= 37.0 E[R]=+0.110 $  32,800 | switch n=1886 WR= 36.2 E[R]=+0.086 $  32,600
+
+######## USDCHF ########
+  7d   static n=  18 WR= 22.2 E[R]=-0.333 $  -1,200 | gated n=   6 WR=  0.0 E[R]=-1.000 $  -1,200 | switch n=   7 WR=  0.0 E[R]=-1.000 $  -1,400
+  90d  static n= 278 WR= 39.2 E[R]=+0.176 $   9,800 | gated n= 131 WR= 34.4 E[R]=+0.031 $     800 | switch n= 166 WR= 32.5 E[R]=-0.024 $    -800
+  1y   static n=1146 WR= 38.0 E[R]=+0.141 $  32,400 | gated n= 521 WR= 35.3 E[R]=+0.060 $   6,200 | switch n= 659 WR= 35.4 E[R]=+0.061 $   8,000
+  3y   static n=3490 WR= 37.7 E[R]=+0.132 $  92,200 | gated n=1643 WR= 37.7 E[R]=+0.132 $  43,400 | switch n=2010 WR= 36.5 E[R]=+0.094 $  37,800
+
+######## UKOIL ########
+  7d   static n=  22 WR= 31.8 E[R]=+0.591 $   2,600 | gated n=   8 WR= 25.0 E[R]=+0.250 $     400 | switch n=   8 WR= 25.0 E[R]=+0.250 $     400
+  90d  static n= 232 WR= 28.9 E[R]=+0.444 $  20,600 | gated n=  98 WR= 27.6 E[R]=+0.378 $   7,400 | switch n= 107 WR= 27.1 E[R]=+0.355 $   7,600
+  1y   static n= 877 WR= 24.4 E[R]=+0.220 $  38,600 | gated n= 368 WR= 23.4 E[R]=+0.168 $  12,400 | switch n= 457 WR= 22.5 E[R]=+0.127 $  11,600
+  3y   static n=2439 WR= 24.6 E[R]=+0.228 $ 111,200 | gated n=1048 WR= 22.9 E[R]=+0.145 $  30,400 | switch n=1343 WR= 22.8 E[R]=+0.139 $  37,400
+
+DESK 1y: static=$188,800, gated=$58,000, switch=$39,200
+DESK 7d: static=$3,000, gated=$800, switch=$-600
+Wrote /app/data/lab_adaptive_regime_v2.json

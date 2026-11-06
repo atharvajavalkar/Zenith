@@ -1,0 +1,235 @@
+=== USDCHF PA horizons × TF grid · Dukascopy · RESEARCH ===
+Windows: 2m(61d), 6m(183d), 12m(365d), 2y(730d)
+Risk $200.0/R · Live PA NOT changed
+
+================================================================
+===== WINDOW 2m (61d) =====
+  load USDCHF 1m: 97,921 bars 2026-05-16 23:59:00→2026-07-23 23:59:00
+  load USDCHF 3m: 32,640 bars 2026-05-17 00:00:00→2026-07-23 23:57:00
+  load USDCHF 5m: 19,584 bars 2026-05-17 00:00:00→2026-07-23 23:55:00
+  load USDCHF 15m: 6,528 bars 2026-05-17 00:00:00→2026-07-23 23:45:00
+  trade window: 2026-05-23 → 2026-07-23
+  sweeps 3m: 5666 (1.1s)
+  sweeps 5m: 3455 (0.8s)
+  sweeps 15m: 1128 (0.2s)
+[1/30] liq=3m|bias=3m+1m|entry=1m: entries=1365 (0.8s)
+[2/30] liq=3m|bias=5m+1m|entry=1m: entries=1158 (0.7s)
+[3/30] liq=3m|bias=15m+1m|entry=1m: entries=949 (0.6s)
+[4/30] liq=3m|bias=5m+3m|entry=1m: entries=1329 (0.8s)
+[5/30] liq=3m|bias=15m+3m|entry=1m: entries=1000 (0.6s)
+[6/30] liq=3m|bias=15m+5m|entry=1m: entries=1075 (0.6s)
+[7/30] liq=3m|bias=5m+3m|entry=3m: entries=710 (0.3s)
+[8/30] liq=3m|bias=15m+3m|entry=3m: entries=561 (0.3s)
+[9/30] liq=3m|bias=15m+5m|entry=3m: entries=548 (0.3s)
+[10/30] liq=5m|bias=3m+1m|entry=1m: entries=1059 (0.6s)
+[11/30] liq=5m|bias=5m+1m|entry=1m: entries=879 (0.5s)
+[12/30] liq=5m|bias=15m+1m|entry=1m: entries=712 (0.5s)
+[13/30] liq=5m|bias=5m+3m|entry=1m: entries=983 (0.6s)
+[14/30] liq=5m|bias=15m+3m|entry=1m: entries=707 (0.5s)
+[15/30] liq=5m|bias=15m+5m|entry=1m: entries=749 (0.5s)
+[16/30] liq=5m|bias=5m+3m|entry=3m: entries=564 (0.3s)
+[17/30] liq=5m|bias=15m+3m|entry=3m: entries=430 (0.2s)
+[18/30] liq=5m|bias=15m+5m|entry=3m: entries=420 (0.2s)
+[19/30] liq=5m|bias=15m+5m|entry=5m: entries=310 (0.1s)
+[20/30] liq=15m|bias=3m+1m|entry=1m: entries=534 (0.4s)
+[21/30] liq=15m|bias=5m+1m|entry=1m: entries=408 (0.3s)
+[22/30] liq=15m|bias=15m+1m|entry=1m: entries=269 (0.3s)
+[23/30] liq=15m|bias=5m+3m|entry=1m: entries=451 (0.3s)
+[24/30] liq=15m|bias=15m+3m|entry=1m: entries=255 (0.3s)
+[25/30] liq=15m|bias=15m+5m|entry=1m: entries=251 (0.2s)
+[26/30] liq=15m|bias=5m+3m|entry=3m: entries=313 (0.2s)
+[27/30] liq=15m|bias=15m+3m|entry=3m: entries=190 (0.1s)
+[28/30] liq=15m|bias=15m+5m|entry=3m: entries=172 (0.1s)
+[29/30] liq=15m|bias=15m+5m|entry=5m: entries=130 (0.1s)
+[30/30] liq=15m|bias=15m+15m|entry=15m: entries=83 (0.0s)
+  BB entries: 34
+  bb_2.5 RR=2.0 : n=28 pnl=$1,000 SURVIVES | BE=t3@2026-05-26(2.92d) profit=t8@2026-06-07(14.88d) locked=t8@2026-06-07(14.88d)
+  bb_2.5 RR=2.4 : n=28 pnl=$1,880 SURVIVES | BE=t3@2026-05-26(2.92d) profit=t6@2026-06-02(9.55d) locked=t8@2026-06-07(14.88d)
+  bb_2.5 RR=3.0 : n=28 pnl=$2,400 SURVIVES | BE=t3@2026-05-26(2.93d) profit=t6@2026-06-02(9.55d) locked=t6@2026-06-02(9.55d)
+  bb_2.5 RR=4.0 WIRED: n=28 pnl=$2,400 SURVIVES | BE=t3@2026-05-26(2.93d) profit=t4@2026-05-28(4.0d) locked=t3@2026-05-26(2.93d)
+
+--- 2m SUMMARY ---
+LIVE PA liq=3m|bias=15m+5m|entry=1m RR=2: n=191 pnl=$11,000 E[R]=0.288 SURVIVES
+  went_red=True maxDD=$1800.0
+  first_profit: t5@2026-05-26(2.48d)
+  BE after DD:  t5@2026-05-26(2.48d)
+  profit after BE: t6@2026-05-26(2.58d)
+  locked BE+:   t5@2026-05-26(2.48d)
+BEST PA: liq=15m|bias=5m+1m|entry=1m RR=4.0 pnl=$12,800 SURVIVES
+  BE after DD: t2@2026-05-28(4.07d) | profit after BE: t3@2026-05-28(4.34d) | locked: t2@2026-05-28(4.07d)
+
+================================================================
+===== WINDOW 6m (183d) =====
+  load USDCHF 1m: 273,601 bars 2026-01-14 23:59:00→2026-07-23 23:59:00
+  load USDCHF 3m: 91,200 bars 2026-01-15 00:00:00→2026-07-23 23:57:00
+  load USDCHF 5m: 54,720 bars 2026-01-15 00:00:00→2026-07-23 23:55:00
+  load USDCHF 15m: 18,240 bars 2026-01-15 00:00:00→2026-07-23 23:45:00
+  trade window: 2026-01-21 → 2026-07-23
+  sweeps 3m: 17058 (4.5s)
+  sweeps 5m: 10527 (2.3s)
+  sweeps 15m: 3399 (0.6s)
+[1/30] liq=3m|bias=3m+1m|entry=1m: entries=4114 (2.2s)
+[2/30] liq=3m|bias=5m+1m|entry=1m: entries=3490 (1.9s)
+[3/30] liq=3m|bias=15m+1m|entry=1m: entries=2770 (1.7s)
+[4/30] liq=3m|bias=5m+3m|entry=1m: entries=3942 (2.1s)
+[5/30] liq=3m|bias=15m+3m|entry=1m: entries=2853 (1.8s)
+[6/30] liq=3m|bias=15m+5m|entry=1m: entries=3065 (1.8s)
+[7/30] liq=3m|bias=5m+3m|entry=3m: entries=2049 (0.9s)
+[8/30] liq=3m|bias=15m+3m|entry=3m: entries=1551 (0.8s)
+[9/30] liq=3m|bias=15m+5m|entry=3m: entries=1560 (0.8s)
+[10/30] liq=5m|bias=3m+1m|entry=1m: entries=3189 (1.8s)
+[11/30] liq=5m|bias=5m+1m|entry=1m: entries=2637 (1.5s)
+[12/30] liq=5m|bias=15m+1m|entry=1m: entries=2043 (1.3s)
+[13/30] liq=5m|bias=5m+3m|entry=1m: entries=2890 (1.7s)
+[14/30] liq=5m|bias=15m+3m|entry=1m: entries=1968 (1.4s)
+[15/30] liq=5m|bias=15m+5m|entry=1m: entries=2075 (1.4s)
+[16/30] liq=5m|bias=5m+3m|entry=3m: entries=1603 (1.3s)
+[17/30] liq=5m|bias=15m+3m|entry=3m: entries=1152 (0.6s)
+[18/30] liq=5m|bias=15m+5m|entry=3m: entries=1149 (0.6s)
+[19/30] liq=5m|bias=15m+5m|entry=5m: entries=867 (0.4s)
+[20/30] liq=15m|bias=3m+1m|entry=1m: entries=1649 (1.1s)
+[21/30] liq=15m|bias=5m+1m|entry=1m: entries=1285 (0.9s)
+[22/30] liq=15m|bias=15m+1m|entry=1m: entries=841 (0.8s)
+[23/30] liq=15m|bias=5m+3m|entry=1m: entries=1374 (1.0s)
+[24/30] liq=15m|bias=15m+3m|entry=1m: entries=775 (0.8s)
+[25/30] liq=15m|bias=15m+5m|entry=1m: entries=762 (0.7s)
+[26/30] liq=15m|bias=5m+3m|entry=3m: entries=932 (0.5s)
+[27/30] liq=15m|bias=15m+3m|entry=3m: entries=561 (0.3s)
+[28/30] liq=15m|bias=15m+5m|entry=3m: entries=528 (0.3s)
+[29/30] liq=15m|bias=15m+5m|entry=5m: entries=409 (0.2s)
+[30/30] liq=15m|bias=15m+15m|entry=15m: entries=271 (0.1s)
+  BB entries: 83
+  bb_2.5 RR=2.0 : n=75 pnl=$9,000 SURVIVES | BE=— profit=t1@2026-01-22(0.92d) locked=t1@2026-01-22(0.92d)
+  bb_2.5 RR=2.4 : n=75 pnl=$10,840 SURVIVES | BE=— profit=t1@2026-01-22(0.92d) locked=t1@2026-01-22(0.92d)
+  bb_2.5 RR=3.0 : n=75 pnl=$11,400 SURVIVES | BE=— profit=t1@2026-01-22(0.92d) locked=t1@2026-01-22(0.92d)
+  bb_2.5 RR=4.0 WIRED: n=74 pnl=$13,200 SURVIVES | BE=— profit=t1@2026-01-22(0.94d) locked=t1@2026-01-22(0.94d)
+
+--- 6m SUMMARY ---
+LIVE PA liq=3m|bias=15m+5m|entry=1m RR=2: n=571 pnl=$27,400 E[R]=0.2399 SURVIVES
+  went_red=True maxDD=$2200.0
+  first_profit: t2@2026-01-22(0.66d)
+  BE after DD:  t2@2026-01-22(0.66d)
+  profit after BE: t5@2026-01-23(1.34d)
+  locked BE+:   t9@2026-01-23(1.66d)
+BEST PA: liq=3m|bias=15m+5m|entry=1m RR=2.0 pnl=$27,400 SURVIVES
+  BE after DD: t2@2026-01-22(0.66d) | profit after BE: t5@2026-01-23(1.34d) | locked: t9@2026-01-23(1.66d)
+
+================================================================
+===== WINDOW 12m (365d) =====
+  load USDCHF 1m: 535,681 bars 2025-07-16 23:59:00→2026-07-23 23:59:00
+  load USDCHF 3m: 178,560 bars 2025-07-17 00:00:00→2026-07-23 23:57:00
+  load USDCHF 5m: 107,136 bars 2025-07-17 00:00:00→2026-07-23 23:55:00
+  load USDCHF 15m: 35,712 bars 2025-07-17 00:00:00→2026-07-23 23:45:00
+  trade window: 2025-07-23 → 2026-07-23
+  sweeps 3m: 33732 (12.2s)
+  sweeps 5m: 20756 (5.8s)
+  sweeps 15m: 6803 (1.3s)
+[1/30] liq=3m|bias=3m+1m|entry=1m: entries=7920 (4.5s)
+[2/30] liq=3m|bias=5m+1m|entry=1m: entries=6750 (4.0s)
+[3/30] liq=3m|bias=15m+1m|entry=1m: entries=5410 (4.3s)
+[4/30] liq=3m|bias=5m+3m|entry=1m: entries=7667 (4.4s)
+[5/30] liq=3m|bias=15m+3m|entry=1m: entries=5600 (3.5s)
+[6/30] liq=3m|bias=15m+5m|entry=1m: entries=5998 (3.6s)
+[7/30] liq=3m|bias=5m+3m|entry=3m: entries=4076 (1.8s)
+[8/30] liq=3m|bias=15m+3m|entry=3m: entries=3094 (1.5s)
+[9/30] liq=3m|bias=15m+5m|entry=3m: entries=3118 (1.7s)
+[10/30] liq=5m|bias=3m+1m|entry=1m: entries=6162 (3.6s)
+[11/30] liq=5m|bias=5m+1m|entry=1m: entries=5078 (3.1s)
+[12/30] liq=5m|bias=15m+1m|entry=1m: entries=3927 (3.1s)
+[13/30] liq=5m|bias=5m+3m|entry=1m: entries=5593 (3.5s)
+[14/30] liq=5m|bias=15m+3m|entry=1m: entries=3791 (2.7s)
+[15/30] liq=5m|bias=15m+5m|entry=1m: entries=3968 (2.9s)
+[16/30] liq=5m|bias=5m+3m|entry=3m: entries=3156 (1.5s)
+[17/30] liq=5m|bias=15m+3m|entry=3m: entries=2253 (1.3s)
+[18/30] liq=5m|bias=15m+5m|entry=3m: entries=2258 (1.2s)
+[19/30] liq=5m|bias=15m+5m|entry=5m: entries=1717 (0.8s)
+[20/30] liq=15m|bias=3m+1m|entry=1m: entries=3308 (2.2s)
+[21/30] liq=15m|bias=5m+1m|entry=1m: entries=2610 (2.1s)
+[22/30] liq=15m|bias=15m+1m|entry=1m: entries=1705 (1.5s)
+[23/30] liq=15m|bias=5m+3m|entry=1m: entries=2770 (2.0s)
+[24/30] liq=15m|bias=15m+3m|entry=1m: entries=1573 (1.9s)
+[25/30] liq=15m|bias=15m+5m|entry=1m: entries=1542 (1.6s)
+[26/30] liq=15m|bias=5m+3m|entry=3m: entries=1841 (0.9s)
+[27/30] liq=15m|bias=15m+3m|entry=3m: entries=1090 (0.6s)
+[28/30] liq=15m|bias=15m+5m|entry=3m: entries=1036 (0.7s)
+[29/30] liq=15m|bias=15m+5m|entry=5m: entries=788 (0.5s)
+[30/30] liq=15m|bias=15m+15m|entry=15m: entries=542 (0.3s)
+  BB entries: 191
+  bb_2.5 RR=2.0 : n=177 pnl=$13,800 SURVIVES | BE=t12@2025-08-26(33.91d) profit=t13@2025-08-27(34.88d) locked=t20@2025-09-09(47.22d)
+  bb_2.5 RR=2.4 : n=177 pnl=$16,960 SURVIVES | BE=t12@2025-08-26(33.91d) profit=t13@2025-08-27(34.88d) locked=t19@2025-09-03(41.88d)
+  bb_2.5 RR=3.0 : n=177 pnl=$19,800 SURVIVES | BE=t11@2025-08-20(27.88d) profit=t12@2025-08-26(33.91d) locked=t11@2025-08-20(27.88d)
+  bb_2.5 RR=4.0 WIRED: n=176 pnl=$25,800 SURVIVES | BE=t13@2025-08-27(34.88d) profit=t14@2025-08-29(36.8d) locked=t29@2025-09-29(67.88d)
+
+--- 12m SUMMARY ---
+LIVE PA liq=3m|bias=15m+5m|entry=1m RR=2: n=1115 pnl=$57,800 E[R]=0.2592 SURVIVES
+  went_red=True maxDD=$2400.0
+  first_profit: t26@2025-07-30(6.67d)
+  BE after DD:  t6@2025-07-24(0.42d)
+  profit after BE: t26@2025-07-30(6.67d)
+  locked BE+:   t51@2025-09-22(60.75d)
+BEST PA: liq=3m|bias=15m+5m|entry=1m RR=2.0 pnl=$57,800 SURVIVES
+  BE after DD: t6@2025-07-24(0.42d) | profit after BE: t26@2025-07-30(6.67d) | locked: t51@2025-09-22(60.75d)
+
+================================================================
+===== WINDOW 2y (730d) =====
+  load USDCHF 1m: 1,061,281 bars 2024-07-16 23:59:00→2026-07-23 23:59:00
+  load USDCHF 3m: 353,760 bars 2024-07-17 00:00:00→2026-07-23 23:57:00
+  load USDCHF 5m: 212,256 bars 2024-07-17 00:00:00→2026-07-23 23:55:00
+  load USDCHF 15m: 70,752 bars 2024-07-17 00:00:00→2026-07-23 23:45:00
+  trade window: 2024-07-23 → 2026-07-23
+  sweeps 3m: 68842 (38.2s)
+  sweeps 5m: 41776 (15.3s)
+  sweeps 15m: 13697 (3.1s)
+[1/30] liq=3m|bias=3m+1m|entry=1m: entries=16448 (8.4s)
+[2/30] liq=3m|bias=5m+1m|entry=1m: entries=14013 (8.3s)
+[3/30] liq=3m|bias=15m+1m|entry=1m: entries=11272 (6.6s)
+[4/30] liq=3m|bias=5m+3m|entry=1m: entries=15829 (8.8s)
+[5/30] liq=3m|bias=15m+3m|entry=1m: entries=11626 (8.0s)
+[6/30] liq=3m|bias=15m+5m|entry=1m: entries=12520 (8.0s)
+[7/30] liq=3m|bias=5m+3m|entry=3m: entries=8386 (3.6s)
+[8/30] liq=3m|bias=15m+3m|entry=3m: entries=6351 (2.9s)
+[9/30] liq=3m|bias=15m+5m|entry=3m: entries=6453 (3.1s)
+[10/30] liq=5m|bias=3m+1m|entry=1m: entries=12666 (6.9s)
+[11/30] liq=5m|bias=5m+1m|entry=1m: entries=10416 (6.2s)
+[12/30] liq=5m|bias=15m+1m|entry=1m: entries=8057 (5.3s)
+[13/30] liq=5m|bias=5m+3m|entry=1m: entries=11415 (6.8s)
+[14/30] liq=5m|bias=15m+3m|entry=1m: entries=7762 (5.3s)
+[15/30] liq=5m|bias=15m+5m|entry=1m: entries=8184 (6.1s)
+[16/30] liq=5m|bias=5m+3m|entry=3m: entries=6454 (3.0s)
+[17/30] liq=5m|bias=15m+3m|entry=3m: entries=4549 (2.4s)
+[18/30] liq=5m|bias=15m+5m|entry=3m: entries=4607 (2.5s)
+[19/30] liq=5m|bias=15m+5m|entry=5m: entries=3483 (1.6s)
+[20/30] liq=15m|bias=3m+1m|entry=1m: entries=6761 (4.1s)
+[21/30] liq=15m|bias=5m+1m|entry=1m: entries=5337 (3.6s)
+[22/30] liq=15m|bias=15m+1m|entry=1m: entries=3395 (2.9s)
+[23/30] liq=15m|bias=5m+3m|entry=1m: entries=5660 (3.9s)
+[24/30] liq=15m|bias=15m+3m|entry=1m: entries=3170 (3.0s)
+[25/30] liq=15m|bias=15m+5m|entry=1m: entries=3150 (2.9s)
+[26/30] liq=15m|bias=5m+3m|entry=3m: entries=3712 (1.7s)
+[27/30] liq=15m|bias=15m+3m|entry=3m: entries=2152 (1.3s)
+[28/30] liq=15m|bias=15m+5m|entry=3m: entries=2081 (1.3s)
+[29/30] liq=15m|bias=15m+5m|entry=5m: entries=1604 (0.9s)
+[30/30] liq=15m|bias=15m+15m|entry=15m: entries=1148 (0.4s)
+  BB entries: 363
+  bb_2.5 RR=2.0 : n=343 pnl=$27,400 SURVIVES | BE=t2@2024-07-28(4.88d) profit=t3@2024-07-29(5.88d) locked=t2@2024-07-28(4.88d)
+  bb_2.5 RR=2.4 : n=343 pnl=$33,400 SURVIVES | BE=t2@2024-07-28(4.88d) profit=t3@2024-07-29(5.88d) locked=t2@2024-07-28(4.88d)
+  bb_2.5 RR=3.0 : n=343 pnl=$41,000 SURVIVES | BE=t2@2024-07-28(4.88d) profit=t3@2024-07-29(5.88d) locked=t2@2024-07-28(4.88d)
+  bb_2.5 RR=4.0 WIRED: n=342 pnl=$49,600 SURVIVES | BE=t2@2024-07-28(4.88d) profit=t3@2024-07-29(5.91d) locked=t2@2024-07-28(4.88d)
+
+--- 2y SUMMARY ---
+LIVE PA liq=3m|bias=15m+5m|entry=1m RR=2: n=2415 pnl=$118,800 E[R]=0.246 SURVIVES
+  went_red=True maxDD=$4600.0
+  first_profit: t2@2024-07-24(0.1d)
+  BE after DD:  t2@2024-07-24(0.1d)
+  profit after BE: t3@2024-07-24(0.29d)
+  locked BE+:   t2@2024-07-24(0.1d)
+BEST PA: liq=3m|bias=15m+5m|entry=1m RR=2.0 pnl=$118,800 SURVIVES
+  BE after DD: t2@2024-07-24(0.1d) | profit after BE: t3@2024-07-24(0.29d) | locked: t2@2024-07-24(0.1d)
+
+Wrote /app/data/lab_usdchf_pa_horizons_tf_bt.json (436.4s)
+
+======== LIVE PA CROSS-HORIZON ========
+  2m: pnl=$    11,000 n=191 SURVIVES | BE=t5@2026-05-26(2.48d) → profit=t6@2026-05-26(2.58d) | locked=t5@2026-05-26(2.48d) maxDD=$1800.0
+  6m: pnl=$    27,400 n=571 SURVIVES | BE=t2@2026-01-22(0.66d) → profit=t5@2026-01-23(1.34d) | locked=t9@2026-01-23(1.66d) maxDD=$2200.0
+ 12m: pnl=$    57,800 n=1115 SURVIVES | BE=t6@2025-07-24(0.42d) → profit=t26@2025-07-30(6.67d) | locked=t51@2025-09-22(60.75d) maxDD=$2400.0
+  2y: pnl=$   118,800 n=2415 SURVIVES | BE=t2@2024-07-24(0.1d) → profit=t3@2024-07-24(0.29d) | locked=t2@2024-07-24(0.1d) maxDD=$4600.0

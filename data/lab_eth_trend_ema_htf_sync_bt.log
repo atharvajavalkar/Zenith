@@ -1,0 +1,69 @@
+=== ETHUSD BB-MR vs EMA8/14 + 15m/1h sync · Dukascopy · RESEARCH ===
+Live SYMBOL_ENTRY_BRAIN NOT changed.
+load ETHUSD 15m: 38,401 bars 2025-06-18→2026-07-23
+load ETHUSD 1h: 9,601 bars 2025-06-18→2026-07-23
+load ETHUSD 1m: 576,001 bars 2025-06-18→2026-07-23
+
+===== ETHUSD exec=1m =====
+  LIVE_bb1.5_rr4: 6m n=7014 E[R]=0.1769 SURVIVES | 1y n=14221 E[R]=0.1712 SURVIVES
+  LIVE_bb1.5_firm_sl2_rr4: 6m n=927 E[R]=0.1219 SURVIVES | 1y n=3397 E[R]=0.1069 SURVIVES
+  BB_mr_with_htf_ema_sync: 6m n=401 E[R]=0.0224 FRAGILE | 1y n=1620 E[R]=0.0833 FRAGILE
+  EMA814_cross_htf_candle_sl1.5_rr2: 6m n=148 E[R]=0.1554 FRAGILE | 1y n=809 E[R]=0.1125 FRAGILE
+  EMA814_cross_htf_ema_sl1.5_rr2: 6m n=283 E[R]=0.1131 FRAGILE | 1y n=1634 E[R]=0.0722 FRAGILE
+  EMA814_cross_htf_ema_sl2_rr2.4: 6m n=507 E[R]=0.073 FRAGILE | 1y n=2313 E[R]=0.0466 FRAGILE
+  EMA814_cross_htf_ema_sl2_rr4: 6m n=436 E[R]=0.0321 FRAGILE | 1y n=1961 E[R]=0.002 FRAGILE
+  EMA814_pull_htf_ema_sl1.5_rr2: 6m n=712 E[R]=0.0154 FRAGILE | 1y n=3166 E[R]=0.0262 FRAGILE
+  EMA814_pull_htf_candle_sl2_rr2: 6m n=1122 E[R]=0.0134 FRAGILE | 1y n=4346 E[R]=0.0044 FRAGILE
+  EMA814_pull_htf_ema_sl2_rr2.4: 6m n=926 E[R]=0.0134 FRAGILE | 1y n=3382 E[R]=0.0395 FRAGILE
+  EMA814_cross_NO_htf_sl1.5_rr2: 6m n=632 E[R]=0.0396 FRAGILE | 1y n=3388 E[R]=0.0351 FRAGILE
+  VAL 1w: winner n=294 E[R]=0.1735 $10,200 | live n=294 E[R]=0.1735 $10,200
+  VAL 2w: winner n=554 E[R]=0.1823 $20,200 | live n=554 E[R]=0.1823 $20,200
+  VAL 1m: winner n=1201 E[R]=0.199 $47,800 | live n=1201 E[R]=0.199 $47,800
+load ETHUSD 3m: 192,001 bars 2025-06-18→2026-07-23
+
+===== ETHUSD exec=3m =====
+  LIVE_bb1.5_rr4: 6m n=2291 E[R]=-0.0244 DEAD | 1y n=4446 E[R]=0.0009 FRAGILE
+  LIVE_bb1.5_firm_sl2_rr4: 6m n=838 E[R]=-0.1647 DEAD | 1y n=1807 E[R]=-0.0481 DEAD
+  BB_mr_with_htf_ema_sync: 6m n=380 E[R]=-0.0526 DEAD | 1y n=966 E[R]=-0.0528 DEAD
+  EMA814_cross_htf_candle_sl1.5_rr2: 6m n=181 E[R]=-0.1547 DEAD | 1y n=698 E[R]=-0.0458 DEAD
+  EMA814_cross_htf_ema_sl1.5_rr2: 6m n=353 E[R]=-0.1161 DEAD | 1y n=1293 E[R]=-0.0023 DEAD
+  EMA814_cross_htf_ema_sl2_rr2.4: 6m n=478 E[R]=-0.0682 DEAD | 1y n=1359 E[R]=-0.0118 DEAD
+  EMA814_cross_htf_ema_sl2_rr4: 6m n=440 E[R]=0.0 DEAD | 1y n=1192 E[R]=0.0109 FRAGILE
+  EMA814_pull_htf_ema_sl1.5_rr2: 6m n=925 E[R]=-0.0368 DEAD | 1y n=2762 E[R]=-0.004 DEAD
+  EMA814_pull_htf_candle_sl2_rr2: 6m n=1222 E[R]=-0.0573 DEAD | 1y n=3165 E[R]=-0.0341 DEAD
+  EMA814_pull_htf_ema_sl2_rr2.4: 6m n=876 E[R]=0.0053 FRAGILE | 1y n=2160 E[R]=-0.0099 DEAD
+  EMA814_cross_NO_htf_sl1.5_rr2: 6m n=874 E[R]=0.0332 FRAGILE | 1y n=2957 E[R]=-0.0017 FRAGILE
+  VAL 1w: winner n=13 E[R]=-0.3077 $-800 | live n=82 E[R]=-0.0854 $-1,400
+  VAL 2w: winner n=25 E[R]=-0.28 $-1,400 | live n=189 E[R]=-0.0741 $-2,800
+  VAL 1m: winner n=58 E[R]=-0.2241 $-2,600 | live n=392 E[R]=-0.0051 $-400
+load ETHUSD 5m: 115,201 bars 2025-06-18→2026-07-23
+
+===== ETHUSD exec=5m =====
+  LIVE_bb1.5_rr4: 6m n=1291 E[R]=-0.0085 DEAD | 1y n=2566 E[R]=-0.0004 DEAD
+  LIVE_bb1.5_firm_sl2_rr4: 6m n=598 E[R]=-0.0719 DEAD | 1y n=1294 E[R]=-0.0611 DEAD
+  BB_mr_with_htf_ema_sync: 6m n=291 E[R]=-0.1409 DEAD | 1y n=618 E[R]=-0.0939 DEAD
+  EMA814_cross_htf_candle_sl1.5_rr2: 6m n=233 E[R]=0.0043 FRAGILE | 1y n=670 E[R]=-0.0776 DEAD
+  EMA814_cross_htf_ema_sl1.5_rr2: 6m n=302 E[R]=-0.096 DEAD | 1y n=866 E[R]=-0.0266 DEAD
+  EMA814_cross_htf_ema_sl2_rr2.4: 6m n=355 E[R]=0.0631 FRAGILE | 1y n=830 E[R]=0.02 FRAGILE
+  EMA814_cross_htf_ema_sl2_rr4: 6m n=313 E[R]=0.0064 FRAGILE | 1y n=716 E[R]=-0.0154 DEAD
+  EMA814_pull_htf_ema_sl1.5_rr2: 6m n=874 E[R]=-0.0149 FRAGILE | 1y n=2219 E[R]=-0.009 FRAGILE
+  EMA814_pull_htf_candle_sl2_rr2: 6m n=1003 E[R]=-0.0728 DEAD | 1y n=2201 E[R]=-0.035 DEAD
+  EMA814_pull_htf_ema_sl2_rr2.4: 6m n=710 E[R]=0.02 FRAGILE | 1y n=1513 E[R]=-0.0135 FRAGILE
+  EMA814_cross_NO_htf_sl1.5_rr2: 6m n=804 E[R]=0.0522 SURVIVES | 1y n=2231 E[R]=0.0166 FRAGILE
+  VAL 1w: winner n=15 E[R]=0.4 $1,200 | live n=45 E[R]=-0.1111 $-1,000
+  VAL 2w: winner n=29 E[R]=0.2414 $1,400 | live n=106 E[R]=-0.1981 $-4,200
+  VAL 1m: winner n=74 E[R]=-0.027 $-400 | live n=227 E[R]=-0.207 $-9,400
+
+### BEST EXEC TF
+BEST=1m · LIVE_bb1.5_rr4 · 6m E[R]=0.1769 SURVIVES · 1y E[R]=0.1712 SURVIVES
+  note: live ETH bb_1.5 mean-revert (no HTF sync)
+  1w: winner $10,200 E[R]=0.1735 n=294 | live-MR $10,200 E[R]=0.1735 n=294
+  2w: winner $20,200 E[R]=0.1823 n=554 | live-MR $20,200 E[R]=0.1823 n=554
+  1m: winner $47,800 E[R]=0.199 n=1201 | live-MR $47,800 E[R]=0.199 n=1201
+
+### HEAD-TO-HEAD (per TF: LIVE_bb1.5 vs best EMA-with-HTF)
+1m: LIVE_MR 6m E[R]=0.1769 SURVIVES | best_trend=EMA814_cross_htf_candle_sl1.5_rr2 6m E[R]=0.1554 FRAGILE / 1y E[R]=0.1125 FRAGILE
+3m: LIVE_MR 6m E[R]=-0.0244 DEAD | best_trend=EMA814_pull_htf_ema_sl2_rr2.4 6m E[R]=0.0053 FRAGILE / 1y E[R]=-0.0099 DEAD
+5m: LIVE_MR 6m E[R]=-0.0085 DEAD | best_trend=EMA814_cross_htf_ema_sl2_rr2.4 6m E[R]=0.0631 FRAGILE / 1y E[R]=0.02 FRAGILE
+
+Wrote /app/data/lab_eth_trend_ema_htf_sync_bt.json in 44.2s

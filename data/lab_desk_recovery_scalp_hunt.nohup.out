@@ -1,0 +1,3990 @@
+=== DESK RECOVERY SCALP HUNT ===
+Scalper/intraday TFs=('1m', '3m', '5m', '15m') · RR=[1.5, 2.0, 2.4, 3.0, 4.0]
+Window 2025-08-11→2026-08-11 · recent gate 90d
+Order=('ETHUSD', 'BTCUSD', 'GOLD', 'NAS100', 'USDJPY', 'AUDUSD', 'USDCHF', 'UKOIL')
+min_runtime=28800s max=36000s
+catalog=43 · heavy_ok_tf=['15m'] · Obsidian=/app/data/ZenithRecovery
+LIVE .env NOT auto-wired · resume via checkpoint/Obsidian
+
+Recovery scalp · 8 pairs · 43 strats
+
+######## ETHUSD · RESUME checkpoint winner=bb_2+hf0.45_e0.30 ########
+
+######## BTCUSD · RESUME checkpoint winner=bb_2.5+e0.35 ########
+
+######## GOLD · live=pa_liq_engulf RR=2.0 ########
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+  … fib_liq@15m (33,312 bars)
+[GOLD] fib_liq@15m scored=0
+[GOLD] fib_liq@15m scored=1
+  … ema_pull@15m (33,312 bars)
+[GOLD] ema_pull@15m scored=1
+[GOLD] ema_pull@15m scored=2
+  … ema_tight@15m (33,312 bars)
+[GOLD] ema_tight@15m scored=2
+[GOLD] ema_tight@15m scored=3
+  … sma_cross@1m (499,680 bars)
+[GOLD] sma_cross@1m scored=3
+[GOLD] sma_cross@1m scored=4
+  … sma_cross@3m (166,560 bars)
+[GOLD] sma_cross@3m scored=4
+[GOLD] sma_cross@3m scored=5
+  … sma_cross@5m (99,936 bars)
+[GOLD] sma_cross@5m scored=5
+[GOLD] sma_cross@5m scored=6
+  … sma_cross@15m (33,312 bars)
+[GOLD] sma_cross@15m scored=6
+[GOLD] sma_cross@15m scored=7
+  … pa@15m (33,312 bars)
+[GOLD] pa@15m scored=7
+[GOLD] pa@15m scored=8
+  … liq@15m (33,312 bars)
+[GOLD] liq@15m scored=8
+[GOLD] liq@15m scored=9
+  … tl@15m (33,312 bars)
+[GOLD] tl@15m scored=9
+  ✓ GATE tl           15m RR=3.0 n=424 E[R]=0.17 90dOOS=0.333
+[GOLD] tl@15m scored=10
+  … obfvg@15m (33,312 bars)
+[GOLD] obfvg@15m scored=10
+[GOLD] obfvg@15m scored=11
+  … macd@15m (33,312 bars)
+[GOLD] macd@15m scored=11
+[GOLD] macd@15m scored=12
+  … engulf@15m (33,312 bars)
+[GOLD] engulf@15m scored=12
+[GOLD] engulf@15m scored=13
+  … inside@15m (33,312 bars)
+[GOLD] inside@15m scored=13
+[GOLD] inside@15m scored=14
+  … ichi@15m (33,312 bars)
+[GOLD] ichi@15m scored=14
+  ✓ GATE ichi         15m RR=4.0 n=537 E[R]=0.164 90dOOS=0.667
+[GOLD] ichi@15m scored=15
+  … psar@15m (33,312 bars)
+[GOLD] psar@15m scored=15
+[GOLD] psar@15m scored=16
+  … adx@15m (33,312 bars)
+[GOLD] adx@15m scored=16
+[GOLD] adx@15m scored=17
+  … st_2@1m (499,680 bars)
+[GOLD] st_2@1m scored=17
+[GOLD] st_2@1m scored=18
+  … st_2@3m (166,560 bars)
+[GOLD] st_2@3m scored=18
+[GOLD] st_2@3m scored=19
+  … st_2@5m (99,936 bars)
+[GOLD] st_2@5m scored=19
+[GOLD] st_2@5m scored=20
+  … st_2@15m (33,312 bars)
+[GOLD] st_2@15m scored=20
+  ✓ GATE st_2         15m RR=3.0 n=293 E[R]=0.078 90dOOS=0.556
+[GOLD] st_2@15m scored=21
+  … st_3@1m (499,680 bars)
+[GOLD] st_3@1m scored=21
+[GOLD] st_3@1m scored=22
+  … st_3@3m (166,560 bars)
+[GOLD] st_3@3m scored=22
+[GOLD] st_3@3m scored=23
+  … st_3@5m (99,936 bars)
+[GOLD] st_3@5m scored=23
+[GOLD] st_3@5m scored=24
+  … st_3@15m (33,312 bars)
+[GOLD] st_3@15m scored=24
+[GOLD] st_3@15m scored=25
+  … kelt_1@1m (499,680 bars)
+[GOLD] kelt_1@1m scored=25
+[GOLD] kelt_1@1m scored=26
+  … kelt_1@3m (166,560 bars)
+[GOLD] kelt_1@3m scored=26
+[GOLD] kelt_1@3m scored=27
+  … kelt_1@5m (99,936 bars)
+[GOLD] kelt_1@5m scored=27
+[GOLD] kelt_1@5m scored=28
+  … kelt_1@15m (33,312 bars)
+[GOLD] kelt_1@15m scored=28
+[GOLD] kelt_1@15m scored=29
+  … kelt_1.5@1m (499,680 bars)
+[GOLD] kelt_1.5@1m scored=29
+[GOLD] kelt_1.5@1m scored=30
+  … kelt_1.5@3m (166,560 bars)
+[GOLD] kelt_1.5@3m scored=30
+[GOLD] kelt_1.5@3m scored=31
+  … kelt_1.5@5m (99,936 bars)
+[GOLD] kelt_1.5@5m scored=31
+[GOLD] kelt_1.5@5m scored=32
+  … kelt_1.5@15m (33,312 bars)
+[GOLD] kelt_1.5@15m scored=32
+[GOLD] kelt_1.5@15m scored=33
+  … kelt_2@1m (499,680 bars)
+[GOLD] kelt_2@1m scored=33
+[GOLD] kelt_2@1m scored=34
+  … kelt_2@3m (166,560 bars)
+[GOLD] kelt_2@3m scored=34
+[GOLD] kelt_2@3m scored=35
+  … kelt_2@5m (99,936 bars)
+[GOLD] kelt_2@5m scored=35
+[GOLD] kelt_2@5m scored=36
+  … kelt_2@15m (33,312 bars)
+[GOLD] kelt_2@15m scored=36
+  ✓ GATE kelt_2       15m RR=4.0 n=705 E[R]=0.092 90dOOS=0.146
+[GOLD] kelt_2@15m scored=37
+  … stoch_20@1m (499,680 bars)
+[GOLD] stoch_20@1m scored=37
+  skip stoch_20@1m: No numeric types to aggregate
+[GOLD] stoch_20@1m scored=37
+  … stoch_20@3m (166,560 bars)
+[GOLD] stoch_20@3m scored=37
+  skip stoch_20@3m: No numeric types to aggregate
+[GOLD] stoch_20@3m scored=37
+  … stoch_20@5m (99,936 bars)
+[GOLD] stoch_20@5m scored=37
+  skip stoch_20@5m: No numeric types to aggregate
+[GOLD] stoch_20@5m scored=37
+  … stoch_20@15m (33,312 bars)
+[GOLD] stoch_20@15m scored=37
+  skip stoch_20@15m: No numeric types to aggregate
+[GOLD] stoch_20@15m scored=37
+  … stoch_30@1m (499,680 bars)
+[GOLD] stoch_30@1m scored=37
+  skip stoch_30@1m: No numeric types to aggregate
+[GOLD] stoch_30@1m scored=37
+  … stoch_30@3m (166,560 bars)
+[GOLD] stoch_30@3m scored=37
+  skip stoch_30@3m: No numeric types to aggregate
+[GOLD] stoch_30@3m scored=37
+  … stoch_30@5m (99,936 bars)
+[GOLD] stoch_30@5m scored=37
+  skip stoch_30@5m: No numeric types to aggregate
+[GOLD] stoch_30@5m scored=37
+  … stoch_30@15m (33,312 bars)
+[GOLD] stoch_30@15m scored=37
+  skip stoch_30@15m: No numeric types to aggregate
+[GOLD] stoch_30@15m scored=37
+  … don_10@1m (499,680 bars)
+[GOLD] don_10@1m scored=37
+[GOLD] don_10@1m scored=38
+  … don_10@3m (166,560 bars)
+[GOLD] don_10@3m scored=38
+[GOLD] don_10@3m scored=39
+  … don_10@5m (99,936 bars)
+[GOLD] don_10@5m scored=39
+[GOLD] don_10@5m scored=40
+  … don_10@15m (33,312 bars)
+[GOLD] don_10@15m scored=40
+[GOLD] don_10@15m scored=41
+  … don_20@1m (499,680 bars)
+[GOLD] don_20@1m scored=41
+[GOLD] don_20@1m scored=42
+  … don_20@3m (166,560 bars)
+[GOLD] don_20@3m scored=42
+[GOLD] don_20@3m scored=43
+  … don_20@5m (99,936 bars)
+[GOLD] don_20@5m scored=43
+[GOLD] don_20@5m scored=44
+  … don_20@15m (33,312 bars)
+[GOLD] don_20@15m scored=44
+[GOLD] don_20@15m scored=45
+  … don_30@1m (499,680 bars)
+[GOLD] don_30@1m scored=45
+[GOLD] don_30@1m scored=46
+  … don_30@3m (166,560 bars)
+[GOLD] don_30@3m scored=46
+[GOLD] don_30@3m scored=47
+  … don_30@5m (99,936 bars)
+[GOLD] don_30@5m scored=47
+[GOLD] don_30@5m scored=48
+  … don_30@15m (33,312 bars)
+[GOLD] don_30@15m scored=48
+  ✓ GATE don_30       15m RR=4.0 n=753 E[R]=0.069 90dOOS=0.026
+[GOLD] don_30@15m scored=49
+  … don_55@1m (499,680 bars)
+[GOLD] don_55@1m scored=49
+[GOLD] don_55@1m scored=50
+  … don_55@3m (166,560 bars)
+[GOLD] don_55@3m scored=50
+[GOLD] don_55@3m scored=51
+  … don_55@5m (99,936 bars)
+[GOLD] don_55@5m scored=51
+[GOLD] don_55@5m scored=52
+  … don_55@15m (33,312 bars)
+[GOLD] don_55@15m scored=52
+  ✓ GATE don_55       15m RR=4.0 n=568 E[R]=0.083 90dOOS=0.094
+[GOLD] don_55@15m scored=53
+  … don_100@1m (499,680 bars)
+[GOLD] don_100@1m scored=53
+[GOLD] don_100@1m scored=54
+  … don_100@3m (166,560 bars)
+[GOLD] don_100@3m scored=54
+[GOLD] don_100@3m scored=55
+  … don_100@5m (99,936 bars)
+[GOLD] don_100@5m scored=55
+[GOLD] don_100@5m scored=56
+  … don_100@15m (33,312 bars)
+[GOLD] don_100@15m scored=56
+  ✓ GATE don_100      15m RR=4.0 n=449 E[R]=0.192 90dOOS=0.111
+[GOLD] don_100@15m scored=57
+  … cta_5_20@1m (499,680 bars)
+[GOLD] cta_5_20@1m scored=57
+[GOLD] cta_5_20@1m scored=58
+  … cta_5_20@3m (166,560 bars)
+[GOLD] cta_5_20@3m scored=58
+[GOLD] cta_5_20@3m scored=59
+  … cta_5_20@5m (99,936 bars)
+[GOLD] cta_5_20@5m scored=59
+[GOLD] cta_5_20@5m scored=60
+  … cta_5_20@15m (33,312 bars)
+[GOLD] cta_5_20@15m scored=60
+[GOLD] cta_5_20@15m scored=61
+  … cta_10_40@1m (499,680 bars)
+[GOLD] cta_10_40@1m scored=61
+[GOLD] cta_10_40@1m scored=62
+  … cta_10_40@3m (166,560 bars)
+[GOLD] cta_10_40@3m scored=62
+[GOLD] cta_10_40@3m scored=63
+  … cta_10_40@5m (99,936 bars)
+[GOLD] cta_10_40@5m scored=63
+[GOLD] cta_10_40@5m scored=64
+  … cta_10_40@15m (33,312 bars)
+[GOLD] cta_10_40@15m scored=64
+[GOLD] cta_10_40@15m scored=65
+  … cta_12_26@1m (499,680 bars)
+[GOLD] cta_12_26@1m scored=65
+[GOLD] cta_12_26@1m scored=66
+  … cta_12_26@3m (166,560 bars)
+[GOLD] cta_12_26@3m scored=66
+[GOLD] cta_12_26@3m scored=67
+  … cta_12_26@5m (99,936 bars)
+[GOLD] cta_12_26@5m scored=67
+[GOLD] cta_12_26@5m scored=68
+  … cta_12_26@15m (33,312 bars)
+[GOLD] cta_12_26@15m scored=68
+  ✓ GATE cta_12_26    15m RR=2.0 n=510 E[R]=0.053 90dOOS=0.333
+[GOLD] cta_12_26@15m scored=69
+  … cta_20_50@1m (499,680 bars)
+[GOLD] cta_20_50@1m scored=69
+[GOLD] cta_20_50@1m scored=70
+  … cta_20_50@3m (166,560 bars)
+[GOLD] cta_20_50@3m scored=70
+[GOLD] cta_20_50@3m scored=71
+  … cta_20_50@5m (99,936 bars)
+[GOLD] cta_20_50@5m scored=71
+[GOLD] cta_20_50@5m scored=72
+  … cta_20_50@15m (33,312 bars)
+[GOLD] cta_20_50@15m scored=72
+[GOLD] cta_20_50@15m scored=73
+  … cta_50_200@1m (499,680 bars)
+[GOLD] cta_50_200@1m scored=73
+[GOLD] cta_50_200@1m scored=74
+  … cta_50_200@3m (166,560 bars)
+[GOLD] cta_50_200@3m scored=74
+  ✓ GATE cta_50_200   3m  RR=3.0 n=648 E[R]=0.056 90dOOS=0.684
+[GOLD] cta_50_200@3m scored=75
+  … cta_50_200@5m (99,936 bars)
+[GOLD] cta_50_200@5m scored=75
+[GOLD] cta_50_200@5m scored=76
+  … cta_50_200@15m (33,312 bars)
+[GOLD] cta_50_200@15m scored=76
+[GOLD] cta_50_200@15m scored=77
+  … tsmom@1m (499,680 bars)
+[GOLD] tsmom@1m scored=77
+[GOLD] tsmom@1m scored=78
+  … tsmom@3m (166,560 bars)
+[GOLD] tsmom@3m scored=78
+[GOLD] tsmom@3m scored=79
+  … tsmom@5m (99,936 bars)
+[GOLD] tsmom@5m scored=79
+[GOLD] tsmom@5m scored=80
+  … tsmom@15m (33,312 bars)
+[GOLD] tsmom@15m scored=80
+[GOLD] tsmom@15m scored=81
+  … roc_20@1m (499,680 bars)
+[GOLD] roc_20@1m scored=81
+  … roc_20@3m (166,560 bars)
+[GOLD] roc_20@3m scored=81
+  … roc_20@5m (99,936 bars)
+[GOLD] roc_20@5m scored=81
+  … roc_20@15m (33,312 bars)
+[GOLD] roc_20@15m scored=81
+  … roc_60@1m (499,680 bars)
+[GOLD] roc_60@1m scored=81
+  … roc_60@3m (166,560 bars)
+[GOLD] roc_60@3m scored=81
+  … roc_60@5m (99,936 bars)
+[GOLD] roc_60@5m scored=81
+  … roc_60@15m (33,312 bars)
+[GOLD] roc_60@15m scored=81
+  … roc_120@1m (499,680 bars)
+[GOLD] roc_120@1m scored=81
+  … roc_120@3m (166,560 bars)
+[GOLD] roc_120@3m scored=81
+  … roc_120@5m (99,936 bars)
+[GOLD] roc_120@5m scored=81
+  … roc_120@15m (33,312 bars)
+[GOLD] roc_120@15m scored=81
+  … bb_1.5@1m (499,680 bars)
+[GOLD] bb_1.5@1m scored=81
+[GOLD] bb_1.5@1m scored=82
+  … bb_1.5@3m (166,560 bars)
+[GOLD] bb_1.5@3m scored=82
+[GOLD] bb_1.5@3m scored=83
+  … bb_1.5@5m (99,936 bars)
+[GOLD] bb_1.5@5m scored=83
+  ✓ GATE bb_1.5       5m  RR=2.0 n=2346 E[R]=0.063 90dOOS=0.187
+[GOLD] bb_1.5@5m scored=84
+  … bb_1.5@15m (33,312 bars)
+[GOLD] bb_1.5@15m scored=84
+[GOLD] bb_1.5@15m scored=85
+  … bb_2@1m (499,680 bars)
+[GOLD] bb_2@1m scored=85
+[GOLD] bb_2@1m scored=86
+  … bb_2@3m (166,560 bars)
+[GOLD] bb_2@3m scored=86
+[GOLD] bb_2@3m scored=87
+  … bb_2@5m (99,936 bars)
+[GOLD] bb_2@5m scored=87
+  ✓ GATE bb_2         5m  RR=2.0 n=556 E[R]=0.138 90dOOS=0.059
+[GOLD] bb_2@5m scored=88
+  … bb_2@15m (33,312 bars)
+[GOLD] bb_2@15m scored=88
+[GOLD] bb_2@15m scored=89
+  … bb_2.5@1m (499,680 bars)
+[GOLD] bb_2.5@1m scored=89
+[GOLD] bb_2.5@1m scored=90
+  … bb_2.5@3m (166,560 bars)
+[GOLD] bb_2.5@3m scored=90
+[GOLD] bb_2.5@3m scored=91
+  … bb_2.5@5m (99,936 bars)
+[GOLD] bb_2.5@5m scored=91
+[GOLD] bb_2.5@5m scored=92
+  … bb_2.5@15m (33,312 bars)
+[GOLD] bb_2.5@15m scored=92
+[GOLD] bb_2.5@15m scored=93
+  … z_20_2@1m (499,680 bars)
+[GOLD] z_20_2@1m scored=93
+[GOLD] z_20_2@1m scored=94
+  … z_20_2@3m (166,560 bars)
+[GOLD] z_20_2@3m scored=94
+  ✓ GATE z_20_2       3m  RR=2.4 n=4233 E[R]=0.04 90dOOS=0.115
+[GOLD] z_20_2@3m scored=95
+  … z_20_2@5m (99,936 bars)
+[GOLD] z_20_2@5m scored=95
+[GOLD] z_20_2@5m scored=96
+  … z_20_2@15m (33,312 bars)
+[GOLD] z_20_2@15m scored=96
+[GOLD] z_20_2@15m scored=97
+  … z_40_2@1m (499,680 bars)
+[GOLD] z_40_2@1m scored=97
+[GOLD] z_40_2@1m scored=98
+  … z_40_2@3m (166,560 bars)
+[GOLD] z_40_2@3m scored=98
+[GOLD] z_40_2@3m scored=99
+  … z_40_2@5m (99,936 bars)
+[GOLD] z_40_2@5m scored=99
+[GOLD] z_40_2@5m scored=100
+  … z_40_2@15m (33,312 bars)
+[GOLD] z_40_2@15m scored=100
+[GOLD] z_40_2@15m scored=101
+  … rsi@1m (499,680 bars)
+[GOLD] rsi@1m scored=101
+[GOLD] rsi@1m scored=102
+  … rsi@3m (166,560 bars)
+[GOLD] rsi@3m scored=102
+[GOLD] rsi@3m scored=103
+  … rsi@5m (99,936 bars)
+[GOLD] rsi@5m scored=103
+[GOLD] rsi@5m scored=104
+  … rsi@15m (33,312 bars)
+[GOLD] rsi@15m scored=104
+[GOLD] rsi@15m scored=105
+  … atrbrk@1m (499,680 bars)
+[GOLD] atrbrk@1m scored=105
+[GOLD] atrbrk@1m scored=106
+  … atrbrk@3m (166,560 bars)
+[GOLD] atrbrk@3m scored=106
+[GOLD] atrbrk@3m scored=107
+  … atrbrk@5m (99,936 bars)
+[GOLD] atrbrk@5m scored=107
+  ✓ GATE atrbrk       5m  RR=2.4 n=1074 E[R]=0.102 90dOOS=0.103
+[GOLD] atrbrk@5m scored=108
+  … atrbrk@15m (33,312 bars)
+[GOLD] atrbrk@15m scored=108
+[GOLD] atrbrk@15m scored=109
+  … volmom@1m (499,680 bars)
+[GOLD] volmom@1m scored=109
+[GOLD] volmom@1m scored=110
+  … volmom@3m (166,560 bars)
+[GOLD] volmom@3m scored=110
+[GOLD] volmom@3m scored=111
+  … volmom@5m (99,936 bars)
+[GOLD] volmom@5m scored=111
+[GOLD] volmom@5m scored=112
+  … volmom@15m (33,312 bars)
+[GOLD] volmom@15m scored=112
+[GOLD] volmom@15m scored=113
+  ✓ MATH don_100+hf0.55       15m RR=3.0 n=239 E[R]=0.406
+  ✓ MATH don_100+hf0.55       15m RR=4.0 n=227 E[R]=0.542
+  ✓ MATH don_100+hf0.50       15m RR=2.4 n=195 E[R]=0.273
+  ✓ MATH don_100+hf0.50       15m RR=3.0 n=182 E[R]=0.429
+  ✓ MATH don_100+hf0.50       15m RR=4.0 n=173 E[R]=0.647
+  ✓ MATH don_100+hf0.50_e0.25 15m RR=4.0 n=173 E[R]=0.59
+  ✓ MATH don_100+e0.35        15m RR=3.0 n=457 E[R]=0.155
+  ✓ MATH don_100+e0.35        15m RR=4.0 n=434 E[R]=0.187
+  ✓ MATH ichi+hf0.55          15m RR=4.0 n=351 E[R]=0.14
+  ✓ MATH ichi+hf0.50          15m RR=3.0 n=266 E[R]=0.113
+  ✓ MATH ichi+hf0.45          15m RR=4.0 n=145 E[R]=0.207
+  ✓ MATH ichi+hf0.45_e0.30    15m RR=1.5 n=124 E[R]=0.089
+  ✓ MATH tl+hf0.55            15m RR=1.5 n=250 E[R]=0.13
+  ✓ MATH tl+hf0.55            15m RR=2.0 n=244 E[R]=0.18
+  ✓ MATH tl+hf0.55            15m RR=2.4 n=242 E[R]=0.18
+  ✓ MATH tl+hf0.55            15m RR=4.0 n=227 E[R]=0.278
+  ✓ MATH tl+hf0.50            15m RR=2.4 n=161 E[R]=0.204
+  ✓ MATH tl+hf0.50            15m RR=3.0 n=158 E[R]=0.266
+  ✓ MATH tl+hf0.50            15m RR=4.0 n=153 E[R]=0.438
+  ✓ MATH tl+hf0.50_e0.25      15m RR=2.4 n=159 E[R]=0.219
+  ✓ MATH tl+hf0.50_e0.25      15m RR=3.0 n=156 E[R]=0.282
+  ✓ MATH tl+hf0.50_e0.25      15m RR=4.0 n=151 E[R]=0.457
+  ✓ MATH tl+e0.35             15m RR=2.0 n=434 E[R]=0.141
+  ✓ MATH tl+e0.35             15m RR=2.4 n=423 E[R]=0.141
+  ✓ MATH tl+e0.35             15m RR=3.0 n=408 E[R]=0.206
+  ✓ MATH tl+e0.35             15m RR=4.0 n=376 E[R]=0.184
+  ✓ MATH atrbrk+hf0.55        5m RR=2.4 n=609 E[R]=0.111
+  ✓ MATH atrbrk+hf0.55        5m RR=3.0 n=581 E[R]=0.177
+  ✓ MATH atrbrk+hf0.55        5m RR=4.0 n=538 E[R]=0.171
+  ✓ MATH atrbrk+hf0.50        5m RR=2.4 n=433 E[R]=0.099
+  ✓ MATH atrbrk+hf0.50        5m RR=3.0 n=419 E[R]=0.174
+  ✓ MATH atrbrk+hf0.50        5m RR=4.0 n=403 E[R]=0.241
+  ✓ MATH atrbrk+hf0.45        5m RR=2.4 n=278 E[R]=0.199
+  ✓ MATH atrbrk+hf0.45        5m RR=3.0 n=271 E[R]=0.255
+  ✓ MATH atrbrk+hf0.50_e0.25  5m RR=3.0 n=411 E[R]=0.168
+  ✓ MATH atrbrk+hf0.50_e0.25  5m RR=4.0 n=396 E[R]=0.225
+  ✓ MATH atrbrk+hf0.45_e0.30  5m RR=3.0 n=263 E[R]=0.232
+  ✓ MATH bb_2+hf0.55          5m RR=1.5 n=311 E[R]=0.141
+  ✓ MATH bb_2+hf0.55          5m RR=2.0 n=305 E[R]=0.17
+  ✓ MATH bb_2+hf0.55          5m RR=2.4 n=302 E[R]=0.137
+  ✓ MATH bb_2+hf0.50          5m RR=1.5 n=212 E[R]=0.179
+  ✓ MATH bb_2+hf0.50          5m RR=2.0 n=208 E[R]=0.168
+  ✓ MATH bb_2+hf0.50          5m RR=2.4 n=208 E[R]=0.112
+  ✓ MATH bb_2+hf0.50_e0.25    5m RR=1.5 n=93 E[R]=0.21
+  ✓ MATH bb_2+hf0.50_e0.25    5m RR=2.0 n=93 E[R]=0.226
+  ✓ MATH bb_2+hf0.50_e0.25    5m RR=2.4 n=93 E[R]=0.243
+  ✓ MATH bb_2+e0.35           5m RR=1.5 n=163 E[R]=0.089
+  ✓ MATH bb_2+e0.35           5m RR=2.0 n=163 E[R]=0.104
+  ✓ MATH bb_1.5+hf0.50        5m RR=1.5 n=910 E[R]=0.066
+  ✓ MATH bb_1.5+hf0.50_e0.25  5m RR=1.5 n=583 E[R]=0.068
+  ✓ MATH bb_1.5+hf0.45_e0.30  5m RR=1.5 n=299 E[R]=0.079
+  ✓ MATH don_30+hf0.55        15m RR=4.0 n=399 E[R]=0.291
+  ✓ MATH don_30+hf0.50        15m RR=4.0 n=284 E[R]=0.356
+  ✓ MATH don_30+hf0.45        15m RR=3.0 n=166 E[R]=0.349
+  ✓ MATH don_30+hf0.45        15m RR=4.0 n=156 E[R]=0.571
+  ✓ MATH don_30+hf0.45_e0.30  15m RR=3.0 n=165 E[R]=0.333
+  ✓ MATH don_30+hf0.45_e0.30  15m RR=4.0 n=155 E[R]=0.581
+
+######## NAS100 · live=volmom RR=4.0 ########
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+  … fib_liq@15m (33,312 bars)
+[NAS100] fib_liq@15m scored=0
+[NAS100] fib_liq@15m scored=1
+  … ema_pull@15m (33,312 bars)
+[NAS100] ema_pull@15m scored=1
+  ✓ GATE ema_pull     15m RR=2.4 n=216 E[R]=0.07 90dOOS=0.035
+[NAS100] ema_pull@15m scored=2
+  … ema_tight@15m (33,312 bars)
+[NAS100] ema_tight@15m scored=2
+[NAS100] ema_tight@15m scored=3
+  … sma_cross@1m (499,680 bars)
+[NAS100] sma_cross@1m scored=3
+[NAS100] sma_cross@1m scored=4
+  … sma_cross@3m (166,560 bars)
+[NAS100] sma_cross@3m scored=4
+[NAS100] sma_cross@3m scored=5
+  … sma_cross@5m (99,936 bars)
+[NAS100] sma_cross@5m scored=5
+[NAS100] sma_cross@5m scored=6
+  … sma_cross@15m (33,312 bars)
+[NAS100] sma_cross@15m scored=6
+[NAS100] sma_cross@15m scored=7
+  … pa@15m (33,312 bars)
+[NAS100] pa@15m scored=7
+  ✓ GATE pa           15m RR=4.0 n=247 E[R]=0.235 90dOOS=0.333
+[NAS100] pa@15m scored=8
+  … liq@15m (33,312 bars)
+[NAS100] liq@15m scored=8
+[NAS100] liq@15m scored=9
+  … tl@15m (33,312 bars)
+[NAS100] tl@15m scored=9
+  ✓ GATE tl           15m RR=1.5 n=385 E[R]=0.11 90dOOS=0.1
+[NAS100] tl@15m scored=10
+  … obfvg@15m (33,312 bars)
+[NAS100] obfvg@15m scored=10
+[NAS100] obfvg@15m scored=11
+  … macd@15m (33,312 bars)
+[NAS100] macd@15m scored=11
+  ✓ GATE macd         15m RR=4.0 n=563 E[R]=0.092 90dOOS=0.053
+[NAS100] macd@15m scored=12
+  … engulf@15m (33,312 bars)
+[NAS100] engulf@15m scored=12
+  ✓ GATE engulf       15m RR=4.0 n=720 E[R]=0.111 90dOOS=0.429
+[NAS100] engulf@15m scored=13
+  … inside@15m (33,312 bars)
+[NAS100] inside@15m scored=13
+[NAS100] inside@15m scored=14
+  … ichi@15m (33,312 bars)
+[NAS100] ichi@15m scored=14
+[NAS100] ichi@15m scored=15
+  … psar@15m (33,312 bars)
+[NAS100] psar@15m scored=15
+[NAS100] psar@15m scored=16
+  … adx@15m (33,312 bars)
+[NAS100] adx@15m scored=16
+[NAS100] adx@15m scored=17
+  … st_2@1m (499,680 bars)
+[NAS100] st_2@1m scored=17
+[NAS100] st_2@1m scored=18
+  … st_2@3m (166,560 bars)
+[NAS100] st_2@3m scored=18
+[NAS100] st_2@3m scored=19
+  … st_2@5m (99,936 bars)
+[NAS100] st_2@5m scored=19
+  ✓ GATE st_2         5m  RR=4.0 n=736 E[R]=0.128 90dOOS=0.081
+[NAS100] st_2@5m scored=20
+  … st_2@15m (33,312 bars)
+[NAS100] st_2@15m scored=20
+  ✓ GATE st_2         15m RR=2.4 n=337 E[R]=0.16 90dOOS=0.02
+[NAS100] st_2@15m scored=21
+  … st_3@1m (499,680 bars)
+[NAS100] st_3@1m scored=21
+  ✓ GATE st_3         1m  RR=4.0 n=692 E[R]=0.134 90dOOS=0.25
+[NAS100] st_3@1m scored=22
+  … st_3@3m (166,560 bars)
+[NAS100] st_3@3m scored=22
+  ✓ GATE st_3         3m  RR=4.0 n=404 E[R]=0.151 90dOOS=0.538
+[NAS100] st_3@3m scored=23
+  … st_3@5m (99,936 bars)
+[NAS100] st_3@5m scored=23
+  ✓ GATE st_3         5m  RR=3.0 n=335 E[R]=0.087 90dOOS=0.333
+[NAS100] st_3@5m scored=24
+  … st_3@15m (33,312 bars)
+[NAS100] st_3@15m scored=24
+[NAS100] st_3@15m scored=25
+  … kelt_1@1m (499,680 bars)
+[NAS100] kelt_1@1m scored=25
+[NAS100] kelt_1@1m scored=26
+  … kelt_1@3m (166,560 bars)
+[NAS100] kelt_1@3m scored=26
+[NAS100] kelt_1@3m scored=27
+  … kelt_1@5m (99,936 bars)
+[NAS100] kelt_1@5m scored=27
+  ✓ GATE kelt_1       5m  RR=3.0 n=3066 E[R]=0.072 90dOOS=0.005
+[NAS100] kelt_1@5m scored=28
+  … kelt_1@15m (33,312 bars)
+[NAS100] kelt_1@15m scored=28
+[NAS100] kelt_1@15m scored=29
+  … kelt_1.5@1m (499,680 bars)
+[NAS100] kelt_1.5@1m scored=29
+[NAS100] kelt_1.5@1m scored=30
+  … kelt_1.5@3m (166,560 bars)
+[NAS100] kelt_1.5@3m scored=30
+[NAS100] kelt_1.5@3m scored=31
+  … kelt_1.5@5m (99,936 bars)
+[NAS100] kelt_1.5@5m scored=31
+[NAS100] kelt_1.5@5m scored=32
+  … kelt_1.5@15m (33,312 bars)
+[NAS100] kelt_1.5@15m scored=32
+  ✓ GATE kelt_1.5     15m RR=4.0 n=823 E[R]=0.051 90dOOS=0.122
+[NAS100] kelt_1.5@15m scored=33
+  … kelt_2@1m (499,680 bars)
+[NAS100] kelt_2@1m scored=33
+[NAS100] kelt_2@1m scored=34
+  … kelt_2@3m (166,560 bars)
+[NAS100] kelt_2@3m scored=34
+[NAS100] kelt_2@3m scored=35
+  … kelt_2@5m (99,936 bars)
+[NAS100] kelt_2@5m scored=35
+[NAS100] kelt_2@5m scored=36
+  … kelt_2@15m (33,312 bars)
+[NAS100] kelt_2@15m scored=36
+  ✓ GATE kelt_2       15m RR=1.5 n=1066 E[R]=0.081 90dOOS=0.008
+[NAS100] kelt_2@15m scored=37
+  … stoch_20@1m (499,680 bars)
+[NAS100] stoch_20@1m scored=37
+  skip stoch_20@1m: No numeric types to aggregate
+[NAS100] stoch_20@1m scored=37
+  … stoch_20@3m (166,560 bars)
+[NAS100] stoch_20@3m scored=37
+  skip stoch_20@3m: No numeric types to aggregate
+[NAS100] stoch_20@3m scored=37
+  … stoch_20@5m (99,936 bars)
+[NAS100] stoch_20@5m scored=37
+  skip stoch_20@5m: No numeric types to aggregate
+[NAS100] stoch_20@5m scored=37
+  … stoch_20@15m (33,312 bars)
+[NAS100] stoch_20@15m scored=37
+  skip stoch_20@15m: No numeric types to aggregate
+[NAS100] stoch_20@15m scored=37
+  … stoch_30@1m (499,680 bars)
+[NAS100] stoch_30@1m scored=37
+  skip stoch_30@1m: No numeric types to aggregate
+[NAS100] stoch_30@1m scored=37
+  … stoch_30@3m (166,560 bars)
+[NAS100] stoch_30@3m scored=37
+  skip stoch_30@3m: No numeric types to aggregate
+[NAS100] stoch_30@3m scored=37
+  … stoch_30@5m (99,936 bars)
+[NAS100] stoch_30@5m scored=37
+  skip stoch_30@5m: No numeric types to aggregate
+[NAS100] stoch_30@5m scored=37
+  … stoch_30@15m (33,312 bars)
+[NAS100] stoch_30@15m scored=37
+  skip stoch_30@15m: No numeric types to aggregate
+[NAS100] stoch_30@15m scored=37
+  … don_10@1m (499,680 bars)
+[NAS100] don_10@1m scored=37
+[NAS100] don_10@1m scored=38
+  … don_10@3m (166,560 bars)
+[NAS100] don_10@3m scored=38
+[NAS100] don_10@3m scored=39
+  … don_10@5m (99,936 bars)
+[NAS100] don_10@5m scored=39
+[NAS100] don_10@5m scored=40
+  … don_10@15m (33,312 bars)
+[NAS100] don_10@15m scored=40
+[NAS100] don_10@15m scored=41
+  … don_20@1m (499,680 bars)
+[NAS100] don_20@1m scored=41
+[NAS100] don_20@1m scored=42
+  … don_20@3m (166,560 bars)
+[NAS100] don_20@3m scored=42
+[NAS100] don_20@3m scored=43
+  … don_20@5m (99,936 bars)
+[NAS100] don_20@5m scored=43
+  ✓ GATE don_20       5m  RR=3.0 n=2631 E[R]=0.082 90dOOS=0.038
+[NAS100] don_20@5m scored=44
+  … don_20@15m (33,312 bars)
+[NAS100] don_20@15m scored=44
+[NAS100] don_20@15m scored=45
+  … don_30@1m (499,680 bars)
+[NAS100] don_30@1m scored=45
+[NAS100] don_30@1m scored=46
+  … don_30@3m (166,560 bars)
+[NAS100] don_30@3m scored=46
+[NAS100] don_30@3m scored=47
+  … don_30@5m (99,936 bars)
+[NAS100] don_30@5m scored=47
+[NAS100] don_30@5m scored=48
+  … don_30@15m (33,312 bars)
+[NAS100] don_30@15m scored=48
+  ✓ GATE don_30       15m RR=4.0 n=670 E[R]=0.134 90dOOS=0.087
+[NAS100] don_30@15m scored=49
+  … don_55@1m (499,680 bars)
+[NAS100] don_55@1m scored=49
+[NAS100] don_55@1m scored=50
+  … don_55@3m (166,560 bars)
+[NAS100] don_55@3m scored=50
+[NAS100] don_55@3m scored=51
+  … don_55@5m (99,936 bars)
+[NAS100] don_55@5m scored=51
+[NAS100] don_55@5m scored=52
+  … don_55@15m (33,312 bars)
+[NAS100] don_55@15m scored=52
+[NAS100] don_55@15m scored=53
+  … don_100@1m (499,680 bars)
+[NAS100] don_100@1m scored=53
+[NAS100] don_100@1m scored=54
+  … don_100@3m (166,560 bars)
+[NAS100] don_100@3m scored=54
+[NAS100] don_100@3m scored=55
+  … don_100@5m (99,936 bars)
+[NAS100] don_100@5m scored=55
+[NAS100] don_100@5m scored=56
+  … don_100@15m (33,312 bars)
+[NAS100] don_100@15m scored=56
+[NAS100] don_100@15m scored=57
+  … cta_5_20@1m (499,680 bars)
+[NAS100] cta_5_20@1m scored=57
+[NAS100] cta_5_20@1m scored=58
+  … cta_5_20@3m (166,560 bars)
+[NAS100] cta_5_20@3m scored=58
+[NAS100] cta_5_20@3m scored=59
+  … cta_5_20@5m (99,936 bars)
+[NAS100] cta_5_20@5m scored=59
+[NAS100] cta_5_20@5m scored=60
+  … cta_5_20@15m (33,312 bars)
+[NAS100] cta_5_20@15m scored=60
+[NAS100] cta_5_20@15m scored=61
+  … cta_10_40@1m (499,680 bars)
+[NAS100] cta_10_40@1m scored=61
+  ✓ GATE cta_10_40    1m  RR=4.0 n=5558 E[R]=0.057 90dOOS=0.12
+[NAS100] cta_10_40@1m scored=62
+  … cta_10_40@3m (166,560 bars)
+[NAS100] cta_10_40@3m scored=62
+  ✓ GATE cta_10_40    3m  RR=2.4 n=2091 E[R]=0.072 90dOOS=0.038
+[NAS100] cta_10_40@3m scored=63
+  … cta_10_40@5m (99,936 bars)
+[NAS100] cta_10_40@5m scored=63
+[NAS100] cta_10_40@5m scored=64
+  … cta_10_40@15m (33,312 bars)
+[NAS100] cta_10_40@15m scored=64
+[NAS100] cta_10_40@15m scored=65
+  … cta_12_26@1m (499,680 bars)
+[NAS100] cta_12_26@1m scored=65
+[NAS100] cta_12_26@1m scored=66
+  … cta_12_26@3m (166,560 bars)
+[NAS100] cta_12_26@3m scored=66
+[NAS100] cta_12_26@3m scored=67
+  … cta_12_26@5m (99,936 bars)
+[NAS100] cta_12_26@5m scored=67
+[NAS100] cta_12_26@5m scored=68
+  … cta_12_26@15m (33,312 bars)
+[NAS100] cta_12_26@15m scored=68
+[NAS100] cta_12_26@15m scored=69
+  … cta_20_50@1m (499,680 bars)
+[NAS100] cta_20_50@1m scored=69
+[NAS100] cta_20_50@1m scored=70
+  … cta_20_50@3m (166,560 bars)
+[NAS100] cta_20_50@3m scored=70
+  ✓ GATE cta_20_50    3m  RR=4.0 n=1482 E[R]=0.11 90dOOS=0.071
+[NAS100] cta_20_50@3m scored=71
+  … cta_20_50@5m (99,936 bars)
+[NAS100] cta_20_50@5m scored=71
+[NAS100] cta_20_50@5m scored=72
+  … cta_20_50@15m (33,312 bars)
+[NAS100] cta_20_50@15m scored=72
+[NAS100] cta_20_50@15m scored=73
+  … cta_50_200@1m (499,680 bars)
+[NAS100] cta_50_200@1m scored=73
+  ✓ GATE cta_50_200   1m  RR=4.0 n=1904 E[R]=0.082 90dOOS=0.059
+[NAS100] cta_50_200@1m scored=74
+  … cta_50_200@3m (166,560 bars)
+[NAS100] cta_50_200@3m scored=74
+[NAS100] cta_50_200@3m scored=75
+  … cta_50_200@5m (99,936 bars)
+[NAS100] cta_50_200@5m scored=75
+[NAS100] cta_50_200@5m scored=76
+  … cta_50_200@15m (33,312 bars)
+[NAS100] cta_50_200@15m scored=76
+  ✓ GATE cta_50_200   15m RR=4.0 n=152 E[R]=0.217 90dOOS=0.364
+[NAS100] cta_50_200@15m scored=77
+  … tsmom@1m (499,680 bars)
+[NAS100] tsmom@1m scored=77
+[NAS100] tsmom@1m scored=78
+  … tsmom@3m (166,560 bars)
+[NAS100] tsmom@3m scored=78
+[NAS100] tsmom@3m scored=79
+  … tsmom@5m (99,936 bars)
+[NAS100] tsmom@5m scored=79
+[NAS100] tsmom@5m scored=80
+  … tsmom@15m (33,312 bars)
+[NAS100] tsmom@15m scored=80
+[NAS100] tsmom@15m scored=81
+  … roc_20@1m (499,680 bars)
+[NAS100] roc_20@1m scored=81
+  … roc_20@3m (166,560 bars)
+[NAS100] roc_20@3m scored=81
+  … roc_20@5m (99,936 bars)
+[NAS100] roc_20@5m scored=81
+  … roc_20@15m (33,312 bars)
+[NAS100] roc_20@15m scored=81
+  … roc_60@1m (499,680 bars)
+[NAS100] roc_60@1m scored=81
+  … roc_60@3m (166,560 bars)
+[NAS100] roc_60@3m scored=81
+  … roc_60@5m (99,936 bars)
+[NAS100] roc_60@5m scored=81
+  … roc_60@15m (33,312 bars)
+[NAS100] roc_60@15m scored=81
+  … roc_120@1m (499,680 bars)
+[NAS100] roc_120@1m scored=81
+  … roc_120@3m (166,560 bars)
+[NAS100] roc_120@3m scored=81
+  … roc_120@5m (99,936 bars)
+[NAS100] roc_120@5m scored=81
+  … roc_120@15m (33,312 bars)
+[NAS100] roc_120@15m scored=81
+  … bb_1.5@1m (499,680 bars)
+[NAS100] bb_1.5@1m scored=81
+[NAS100] bb_1.5@1m scored=82
+  … bb_1.5@3m (166,560 bars)
+[NAS100] bb_1.5@3m scored=82
+[NAS100] bb_1.5@3m scored=83
+  … bb_1.5@5m (99,936 bars)
+[NAS100] bb_1.5@5m scored=83
+[NAS100] bb_1.5@5m scored=84
+  … bb_1.5@15m (33,312 bars)
+[NAS100] bb_1.5@15m scored=84
+[NAS100] bb_1.5@15m scored=85
+  … bb_2@1m (499,680 bars)
+[NAS100] bb_2@1m scored=85
+[NAS100] bb_2@1m scored=86
+  … bb_2@3m (166,560 bars)
+[NAS100] bb_2@3m scored=86
+[NAS100] bb_2@3m scored=87
+  … bb_2@5m (99,936 bars)
+[NAS100] bb_2@5m scored=87
+[NAS100] bb_2@5m scored=88
+  … bb_2@15m (33,312 bars)
+[NAS100] bb_2@15m scored=88
+[NAS100] bb_2@15m scored=89
+  … bb_2.5@1m (499,680 bars)
+[NAS100] bb_2.5@1m scored=89
+[NAS100] bb_2.5@1m scored=90
+  … bb_2.5@3m (166,560 bars)
+[NAS100] bb_2.5@3m scored=90
+[NAS100] bb_2.5@3m scored=91
+  … bb_2.5@5m (99,936 bars)
+[NAS100] bb_2.5@5m scored=91
+[NAS100] bb_2.5@5m scored=92
+  … bb_2.5@15m (33,312 bars)
+[NAS100] bb_2.5@15m scored=92
+[NAS100] bb_2.5@15m scored=93
+  … z_20_2@1m (499,680 bars)
+[NAS100] z_20_2@1m scored=93
+[NAS100] z_20_2@1m scored=94
+  … z_20_2@3m (166,560 bars)
+[NAS100] z_20_2@3m scored=94
+[NAS100] z_20_2@3m scored=95
+  … z_20_2@5m (99,936 bars)
+[NAS100] z_20_2@5m scored=95
+[NAS100] z_20_2@5m scored=96
+  … z_20_2@15m (33,312 bars)
+[NAS100] z_20_2@15m scored=96
+[NAS100] z_20_2@15m scored=97
+  … z_40_2@1m (499,680 bars)
+[NAS100] z_40_2@1m scored=97
+[NAS100] z_40_2@1m scored=98
+  … z_40_2@3m (166,560 bars)
+[NAS100] z_40_2@3m scored=98
+[NAS100] z_40_2@3m scored=99
+  … z_40_2@5m (99,936 bars)
+[NAS100] z_40_2@5m scored=99
+[NAS100] z_40_2@5m scored=100
+  … z_40_2@15m (33,312 bars)
+[NAS100] z_40_2@15m scored=100
+[NAS100] z_40_2@15m scored=101
+  … rsi@1m (499,680 bars)
+[NAS100] rsi@1m scored=101
+[NAS100] rsi@1m scored=102
+  … rsi@3m (166,560 bars)
+[NAS100] rsi@3m scored=102
+[NAS100] rsi@3m scored=103
+  … rsi@5m (99,936 bars)
+[NAS100] rsi@5m scored=103
+[NAS100] rsi@5m scored=104
+  … rsi@15m (33,312 bars)
+[NAS100] rsi@15m scored=104
+  ✓ GATE rsi          15m RR=4.0 n=742 E[R]=0.071 90dOOS=0.2
+[NAS100] rsi@15m scored=105
+  … atrbrk@1m (499,680 bars)
+[NAS100] atrbrk@1m scored=105
+[NAS100] atrbrk@1m scored=106
+  … atrbrk@3m (166,560 bars)
+[NAS100] atrbrk@3m scored=106
+[NAS100] atrbrk@3m scored=107
+  … atrbrk@5m (99,936 bars)
+[NAS100] atrbrk@5m scored=107
+[NAS100] atrbrk@5m scored=108
+  … atrbrk@15m (33,312 bars)
+[NAS100] atrbrk@15m scored=108
+[NAS100] atrbrk@15m scored=109
+  … volmom@1m (499,680 bars)
+[NAS100] volmom@1m scored=109
+[NAS100] volmom@1m scored=110
+  … volmom@3m (166,560 bars)
+[NAS100] volmom@3m scored=110
+  ✓ GATE volmom       3m  RR=4.0 n=2160 E[R]=0.083 90dOOS=0.076
+[NAS100] volmom@3m scored=111
+  … volmom@5m (99,936 bars)
+[NAS100] volmom@5m scored=111
+[NAS100] volmom@5m scored=112
+  … volmom@15m (33,312 bars)
+[NAS100] volmom@15m scored=112
+  ✓ GATE volmom       15m RR=4.0 n=499 E[R]=0.263 90dOOS=0.429
+[NAS100] volmom@15m scored=113
+  ✓ MATH volmom+hf0.55        15m RR=2.4 n=382 E[R]=0.059
+  ✓ MATH volmom+hf0.55        15m RR=3.0 n=369 E[R]=0.073
+  ✓ MATH volmom+hf0.55        15m RR=4.0 n=336 E[R]=0.146
+  ✓ MATH volmom+hf0.50        15m RR=1.5 n=287 E[R]=0.089
+  ✓ MATH volmom+hf0.50        15m RR=2.0 n=271 E[R]=0.107
+  ✓ MATH volmom+hf0.50        15m RR=2.4 n=269 E[R]=0.125
+  ✓ MATH volmom+hf0.50        15m RR=3.0 n=263 E[R]=0.156
+  ✓ MATH volmom+hf0.50        15m RR=4.0 n=245 E[R]=0.204
+  ✓ MATH volmom+hf0.45        15m RR=2.4 n=159 E[R]=0.112
+  ✓ MATH volmom+hf0.45        15m RR=3.0 n=157 E[R]=0.146
+  ✓ MATH volmom+hf0.45        15m RR=4.0 n=151 E[R]=0.192
+  ✓ MATH volmom+hf0.50_e0.25  15m RR=2.4 n=226 E[R]=0.053
+  ✓ MATH volmom+hf0.50_e0.25  15m RR=4.0 n=208 E[R]=0.13
+  ✓ MATH volmom+e0.35         15m RR=4.0 n=443 E[R]=0.185
+  ✓ MATH st_3+hf0.55          3m RR=3.0 n=238 E[R]=0.143
+  ✓ MATH st_3+hf0.55          3m RR=4.0 n=233 E[R]=0.159
+  ✓ MATH st_3+hf0.50          3m RR=4.0 n=145 E[R]=0.103
+  ✓ MATH st_3+hf0.50_e0.25    3m RR=4.0 n=138 E[R]=0.087
+  ✓ MATH st_3+e0.35           3m RR=2.4 n=387 E[R]=0.054
+  ✓ MATH st_3+e0.35           3m RR=3.0 n=382 E[R]=0.11
+  ✓ MATH st_3+e0.35           3m RR=4.0 n=373 E[R]=0.126
+  ✓ MATH cta_20_50+hf0.55     3m RR=4.0 n=954 E[R]=0.111
+  ✓ MATH cta_20_50+hf0.45     3m RR=4.0 n=351 E[R]=0.268
+  ✓ MATH cta_20_50+hf0.45_e0. 3m RR=4.0 n=263 E[R]=0.331
+  ✓ MATH st_3+e0.35           1m RR=4.0 n=656 E[R]=0.12
+  ✓ MATH don_20+hf0.55        5m RR=3.0 n=1698 E[R]=0.053
+  ✓ MATH don_20+hf0.50        5m RR=2.0 n=1348 E[R]=0.075
+  ✓ MATH don_20+hf0.50        5m RR=2.4 n=1258 E[R]=0.07
+  ✓ MATH don_20+hf0.50        5m RR=3.0 n=1187 E[R]=0.088
+  ✓ MATH don_20+hf0.50_e0.25  5m RR=2.0 n=1323 E[R]=0.073
+  ✓ MATH don_20+hf0.50_e0.25  5m RR=2.4 n=1242 E[R]=0.062
+  ✓ MATH don_20+hf0.50_e0.25  5m RR=3.0 n=1170 E[R]=0.087
+  ✓ MATH don_20+hf0.50_e0.25  5m RR=4.0 n=1077 E[R]=0.1
+  ✓ MATH don_20+e0.35         5m RR=3.0 n=2572 E[R]=0.082
+  ✓ MATH don_20+e0.35         5m RR=4.0 n=2186 E[R]=0.102
+  ✓ MATH engulf+hf0.55        15m RR=4.0 n=368 E[R]=0.114
+  ✓ MATH engulf+hf0.45        15m RR=2.0 n=190 E[R]=0.137
+  ✓ MATH engulf+hf0.45        15m RR=2.4 n=176 E[R]=0.198
+  ✓ MATH engulf+hf0.45        15m RR=3.0 n=171 E[R]=0.263
+  ✓ MATH engulf+hf0.45        15m RR=4.0 n=162 E[R]=0.111
+  ✓ MATH engulf+hf0.45_e0.30  15m RR=2.4 n=163 E[R]=0.272
+  ✓ MATH engulf+e0.35         15m RR=1.5 n=860 E[R]=0.064
+  ✓ MATH engulf+e0.35         15m RR=2.0 n=808 E[R]=0.069
+  ✓ MATH engulf+e0.35         15m RR=2.4 n=754 E[R]=0.078
+  ✓ MATH engulf+e0.35         15m RR=3.0 n=707 E[R]=0.115
+  ✓ MATH engulf+e0.35         15m RR=4.0 n=649 E[R]=0.148
+  ✓ MATH volmom+hf0.50        3m RR=4.0 n=1078 E[R]=0.099
+  ✓ MATH volmom+hf0.45        3m RR=4.0 n=656 E[R]=0.113
+  ✓ MATH volmom+hf0.50_e0.25  3m RR=4.0 n=967 E[R]=0.07
+  ✓ MATH volmom+hf0.45_e0.30  3m RR=3.0 n=595 E[R]=0.055
+  ✓ MATH volmom+hf0.45_e0.30  3m RR=4.0 n=562 E[R]=0.085
+  ✓ MATH volmom+e0.35         3m RR=2.0 n=2809 E[R]=0.046
+  ✓ MATH volmom+e0.35         3m RR=2.4 n=2612 E[R]=0.054
+  ✓ MATH volmom+e0.35         3m RR=4.0 n=1911 E[R]=0.075
+  ✓ MATH don_30+e0.35         15m RR=2.4 n=861 E[R]=0.106
+  ✓ MATH don_30+e0.35         15m RR=3.0 n=794 E[R]=0.128
+
+######## USDJPY · live=pa_opp_gold RR=4.0 ########
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+  … fib_liq@15m (33,312 bars)
+[USDJPY] fib_liq@15m scored=0
+[USDJPY] fib_liq@15m scored=1
+  … ema_pull@15m (33,312 bars)
+[USDJPY] ema_pull@15m scored=1
+[USDJPY] ema_pull@15m scored=2
+  … ema_tight@15m (33,312 bars)
+[USDJPY] ema_tight@15m scored=2
+[USDJPY] ema_tight@15m scored=3
+  … sma_cross@1m (499,680 bars)
+[USDJPY] sma_cross@1m scored=3
+[USDJPY] sma_cross@1m scored=4
+  … sma_cross@3m (166,560 bars)
+[USDJPY] sma_cross@3m scored=4
+[USDJPY] sma_cross@3m scored=5
+  … sma_cross@5m (99,936 bars)
+[USDJPY] sma_cross@5m scored=5
+[USDJPY] sma_cross@5m scored=6
+  … sma_cross@15m (33,312 bars)
+[USDJPY] sma_cross@15m scored=6
+[USDJPY] sma_cross@15m scored=7
+  … pa@15m (33,312 bars)
+[USDJPY] pa@15m scored=7
+[USDJPY] pa@15m scored=8
+  … liq@15m (33,312 bars)
+[USDJPY] liq@15m scored=8
+[USDJPY] liq@15m scored=9
+  … tl@15m (33,312 bars)
+[USDJPY] tl@15m scored=9
+[USDJPY] tl@15m scored=10
+  … obfvg@15m (33,312 bars)
+[USDJPY] obfvg@15m scored=10
+[USDJPY] obfvg@15m scored=11
+  … macd@15m (33,312 bars)
+[USDJPY] macd@15m scored=11
+[USDJPY] macd@15m scored=12
+  … engulf@15m (33,312 bars)
+[USDJPY] engulf@15m scored=12
+[USDJPY] engulf@15m scored=13
+  … inside@15m (33,312 bars)
+[USDJPY] inside@15m scored=13
+[USDJPY] inside@15m scored=14
+  … ichi@15m (33,312 bars)
+[USDJPY] ichi@15m scored=14
+  ✓ GATE ichi         15m RR=4.0 n=502 E[R]=0.135 90dOOS=0.875
+[USDJPY] ichi@15m scored=15
+  … psar@15m (33,312 bars)
+[USDJPY] psar@15m scored=15
+[USDJPY] psar@15m scored=16
+  … adx@15m (33,312 bars)
+[USDJPY] adx@15m scored=16
+[USDJPY] adx@15m scored=17
+  … st_2@1m (499,680 bars)
+[USDJPY] st_2@1m scored=17
+[USDJPY] st_2@1m scored=18
+  … st_2@3m (166,560 bars)
+[USDJPY] st_2@3m scored=18
+[USDJPY] st_2@3m scored=19
+  … st_2@5m (99,936 bars)
+[USDJPY] st_2@5m scored=19
+[USDJPY] st_2@5m scored=20
+  … st_2@15m (33,312 bars)
+[USDJPY] st_2@15m scored=20
+[USDJPY] st_2@15m scored=21
+  … st_3@1m (499,680 bars)
+[USDJPY] st_3@1m scored=21
+[USDJPY] st_3@1m scored=22
+  … st_3@3m (166,560 bars)
+[USDJPY] st_3@3m scored=22
+[USDJPY] st_3@3m scored=23
+  … st_3@5m (99,936 bars)
+[USDJPY] st_3@5m scored=23
+[USDJPY] st_3@5m scored=24
+  … st_3@15m (33,312 bars)
+[USDJPY] st_3@15m scored=24
+[USDJPY] st_3@15m scored=25
+  … kelt_1@1m (499,680 bars)
+[USDJPY] kelt_1@1m scored=25
+[USDJPY] kelt_1@1m scored=26
+  … kelt_1@3m (166,560 bars)
+[USDJPY] kelt_1@3m scored=26
+[USDJPY] kelt_1@3m scored=27
+  … kelt_1@5m (99,936 bars)
+[USDJPY] kelt_1@5m scored=27
+[USDJPY] kelt_1@5m scored=28
+  … kelt_1@15m (33,312 bars)
+[USDJPY] kelt_1@15m scored=28
+[USDJPY] kelt_1@15m scored=29
+  … kelt_1.5@1m (499,680 bars)
+[USDJPY] kelt_1.5@1m scored=29
+[USDJPY] kelt_1.5@1m scored=30
+  … kelt_1.5@3m (166,560 bars)
+[USDJPY] kelt_1.5@3m scored=30
+[USDJPY] kelt_1.5@3m scored=31
+  … kelt_1.5@5m (99,936 bars)
+[USDJPY] kelt_1.5@5m scored=31
+[USDJPY] kelt_1.5@5m scored=32
+  … kelt_1.5@15m (33,312 bars)
+[USDJPY] kelt_1.5@15m scored=32
+[USDJPY] kelt_1.5@15m scored=33
+  … kelt_2@1m (499,680 bars)
+[USDJPY] kelt_2@1m scored=33
+[USDJPY] kelt_2@1m scored=34
+  … kelt_2@3m (166,560 bars)
+[USDJPY] kelt_2@3m scored=34
+[USDJPY] kelt_2@3m scored=35
+  … kelt_2@5m (99,936 bars)
+[USDJPY] kelt_2@5m scored=35
+[USDJPY] kelt_2@5m scored=36
+  … kelt_2@15m (33,312 bars)
+[USDJPY] kelt_2@15m scored=36
+[USDJPY] kelt_2@15m scored=37
+  … stoch_20@1m (499,680 bars)
+[USDJPY] stoch_20@1m scored=37
+  skip stoch_20@1m: No numeric types to aggregate
+[USDJPY] stoch_20@1m scored=37
+  … stoch_20@3m (166,560 bars)
+[USDJPY] stoch_20@3m scored=37
+  skip stoch_20@3m: No numeric types to aggregate
+[USDJPY] stoch_20@3m scored=37
+  … stoch_20@5m (99,936 bars)
+[USDJPY] stoch_20@5m scored=37
+  skip stoch_20@5m: No numeric types to aggregate
+[USDJPY] stoch_20@5m scored=37
+  … stoch_20@15m (33,312 bars)
+[USDJPY] stoch_20@15m scored=37
+  skip stoch_20@15m: No numeric types to aggregate
+[USDJPY] stoch_20@15m scored=37
+  … stoch_30@1m (499,680 bars)
+[USDJPY] stoch_30@1m scored=37
+  skip stoch_30@1m: No numeric types to aggregate
+[USDJPY] stoch_30@1m scored=37
+  … stoch_30@3m (166,560 bars)
+[USDJPY] stoch_30@3m scored=37
+  skip stoch_30@3m: No numeric types to aggregate
+[USDJPY] stoch_30@3m scored=37
+  … stoch_30@5m (99,936 bars)
+[USDJPY] stoch_30@5m scored=37
+  skip stoch_30@5m: No numeric types to aggregate
+[USDJPY] stoch_30@5m scored=37
+  … stoch_30@15m (33,312 bars)
+[USDJPY] stoch_30@15m scored=37
+  skip stoch_30@15m: No numeric types to aggregate
+[USDJPY] stoch_30@15m scored=37
+  … don_10@1m (499,680 bars)
+[USDJPY] don_10@1m scored=37
+[USDJPY] don_10@1m scored=38
+  … don_10@3m (166,560 bars)
+[USDJPY] don_10@3m scored=38
+[USDJPY] don_10@3m scored=39
+  … don_10@5m (99,936 bars)
+[USDJPY] don_10@5m scored=39
+[USDJPY] don_10@5m scored=40
+  … don_10@15m (33,312 bars)
+[USDJPY] don_10@15m scored=40
+[USDJPY] don_10@15m scored=41
+  … don_20@1m (499,680 bars)
+[USDJPY] don_20@1m scored=41
+[USDJPY] don_20@1m scored=42
+  … don_20@3m (166,560 bars)
+[USDJPY] don_20@3m scored=42
+[USDJPY] don_20@3m scored=43
+  … don_20@5m (99,936 bars)
+[USDJPY] don_20@5m scored=43
+[USDJPY] don_20@5m scored=44
+  … don_20@15m (33,312 bars)
+[USDJPY] don_20@15m scored=44
+[USDJPY] don_20@15m scored=45
+  … don_30@1m (499,680 bars)
+[USDJPY] don_30@1m scored=45
+[USDJPY] don_30@1m scored=46
+  … don_30@3m (166,560 bars)
+[USDJPY] don_30@3m scored=46
+[USDJPY] don_30@3m scored=47
+  … don_30@5m (99,936 bars)
+[USDJPY] don_30@5m scored=47
+[USDJPY] don_30@5m scored=48
+  … don_30@15m (33,312 bars)
+[USDJPY] don_30@15m scored=48
+[USDJPY] don_30@15m scored=49
+  … don_55@1m (499,680 bars)
+[USDJPY] don_55@1m scored=49
+[USDJPY] don_55@1m scored=50
+  … don_55@3m (166,560 bars)
+[USDJPY] don_55@3m scored=50
+[USDJPY] don_55@3m scored=51
+  … don_55@5m (99,936 bars)
+[USDJPY] don_55@5m scored=51
+[USDJPY] don_55@5m scored=52
+  … don_55@15m (33,312 bars)
+[USDJPY] don_55@15m scored=52
+[USDJPY] don_55@15m scored=53
+  … don_100@1m (499,680 bars)
+[USDJPY] don_100@1m scored=53
+[USDJPY] don_100@1m scored=54
+  … don_100@3m (166,560 bars)
+[USDJPY] don_100@3m scored=54
+[USDJPY] don_100@3m scored=55
+  … don_100@5m (99,936 bars)
+[USDJPY] don_100@5m scored=55
+[USDJPY] don_100@5m scored=56
+  … don_100@15m (33,312 bars)
+[USDJPY] don_100@15m scored=56
+[USDJPY] don_100@15m scored=57
+  … cta_5_20@1m (499,680 bars)
+[USDJPY] cta_5_20@1m scored=57
+  ✓ GATE cta_5_20     1m  RR=4.0 n=7725 E[R]=0.053 90dOOS=0.103
+[USDJPY] cta_5_20@1m scored=58
+  … cta_5_20@3m (166,560 bars)
+[USDJPY] cta_5_20@3m scored=58
+[USDJPY] cta_5_20@3m scored=59
+  … cta_5_20@5m (99,936 bars)
+[USDJPY] cta_5_20@5m scored=59
+[USDJPY] cta_5_20@5m scored=60
+  … cta_5_20@15m (33,312 bars)
+[USDJPY] cta_5_20@15m scored=60
+[USDJPY] cta_5_20@15m scored=61
+  … cta_10_40@1m (499,680 bars)
+[USDJPY] cta_10_40@1m scored=61
+[USDJPY] cta_10_40@1m scored=62
+  … cta_10_40@3m (166,560 bars)
+[USDJPY] cta_10_40@3m scored=62
+[USDJPY] cta_10_40@3m scored=63
+  … cta_10_40@5m (99,936 bars)
+[USDJPY] cta_10_40@5m scored=63
+[USDJPY] cta_10_40@5m scored=64
+  … cta_10_40@15m (33,312 bars)
+[USDJPY] cta_10_40@15m scored=64
+[USDJPY] cta_10_40@15m scored=65
+  … cta_12_26@1m (499,680 bars)
+[USDJPY] cta_12_26@1m scored=65
+[USDJPY] cta_12_26@1m scored=66
+  … cta_12_26@3m (166,560 bars)
+[USDJPY] cta_12_26@3m scored=66
+[USDJPY] cta_12_26@3m scored=67
+  … cta_12_26@5m (99,936 bars)
+[USDJPY] cta_12_26@5m scored=67
+[USDJPY] cta_12_26@5m scored=68
+  … cta_12_26@15m (33,312 bars)
+[USDJPY] cta_12_26@15m scored=68
+[USDJPY] cta_12_26@15m scored=69
+  … cta_20_50@1m (499,680 bars)
+[USDJPY] cta_20_50@1m scored=69
+[USDJPY] cta_20_50@1m scored=70
+  … cta_20_50@3m (166,560 bars)
+[USDJPY] cta_20_50@3m scored=70
+[USDJPY] cta_20_50@3m scored=71
+  … cta_20_50@5m (99,936 bars)
+[USDJPY] cta_20_50@5m scored=71
+[USDJPY] cta_20_50@5m scored=72
+  … cta_20_50@15m (33,312 bars)
+[USDJPY] cta_20_50@15m scored=72
+[USDJPY] cta_20_50@15m scored=73
+  … cta_50_200@1m (499,680 bars)
+[USDJPY] cta_50_200@1m scored=73
+[USDJPY] cta_50_200@1m scored=74
+  … cta_50_200@3m (166,560 bars)
+[USDJPY] cta_50_200@3m scored=74
+[USDJPY] cta_50_200@3m scored=75
+  … cta_50_200@5m (99,936 bars)
+[USDJPY] cta_50_200@5m scored=75
+[USDJPY] cta_50_200@5m scored=76
+  … cta_50_200@15m (33,312 bars)
+[USDJPY] cta_50_200@15m scored=76
+  ✓ GATE cta_50_200   15m RR=2.0 n=144 E[R]=0.125 90dOOS=0.8
+[USDJPY] cta_50_200@15m scored=77
+  … tsmom@1m (499,680 bars)
+[USDJPY] tsmom@1m scored=77
+[USDJPY] tsmom@1m scored=78
+  … tsmom@3m (166,560 bars)
+[USDJPY] tsmom@3m scored=78
+  ✓ GATE tsmom        3m  RR=2.4 n=1006 E[R]=0.061 90dOOS=0.077
+[USDJPY] tsmom@3m scored=79
+  … tsmom@5m (99,936 bars)
+[USDJPY] tsmom@5m scored=79
+[USDJPY] tsmom@5m scored=80
+  … tsmom@15m (33,312 bars)
+[USDJPY] tsmom@15m scored=80
+[USDJPY] tsmom@15m scored=81
+  … roc_20@1m (499,680 bars)
+[USDJPY] roc_20@1m scored=81
+  … roc_20@3m (166,560 bars)
+[USDJPY] roc_20@3m scored=81
+  … roc_20@5m (99,936 bars)
+[USDJPY] roc_20@5m scored=81
+  … roc_20@15m (33,312 bars)
+[USDJPY] roc_20@15m scored=81
+  … roc_60@1m (499,680 bars)
+[USDJPY] roc_60@1m scored=81
+  … roc_60@3m (166,560 bars)
+[USDJPY] roc_60@3m scored=81
+  … roc_60@5m (99,936 bars)
+[USDJPY] roc_60@5m scored=81
+  … roc_60@15m (33,312 bars)
+[USDJPY] roc_60@15m scored=81
+  … roc_120@1m (499,680 bars)
+[USDJPY] roc_120@1m scored=81
+  … roc_120@3m (166,560 bars)
+[USDJPY] roc_120@3m scored=81
+  … roc_120@5m (99,936 bars)
+[USDJPY] roc_120@5m scored=81
+  … roc_120@15m (33,312 bars)
+[USDJPY] roc_120@15m scored=81
+  … bb_1.5@1m (499,680 bars)
+[USDJPY] bb_1.5@1m scored=81
+  ✓ GATE bb_1.5       1m  RR=3.0 n=10846 E[R]=0.095 90dOOS=0.251
+[USDJPY] bb_1.5@1m scored=82
+  … bb_1.5@3m (166,560 bars)
+[USDJPY] bb_1.5@3m scored=82
+  ✓ GATE bb_1.5       3m  RR=4.0 n=3006 E[R]=0.086 90dOOS=0.139
+[USDJPY] bb_1.5@3m scored=83
+  … bb_1.5@5m (99,936 bars)
+[USDJPY] bb_1.5@5m scored=83
+  ✓ GATE bb_1.5       5m  RR=3.0 n=2088 E[R]=0.079 90dOOS=0.078
+[USDJPY] bb_1.5@5m scored=84
+  … bb_1.5@15m (33,312 bars)
+[USDJPY] bb_1.5@15m scored=84
+[USDJPY] bb_1.5@15m scored=85
+  … bb_2@1m (499,680 bars)
+[USDJPY] bb_2@1m scored=85
+  ✓ GATE bb_2         1m  RR=4.0 n=2349 E[R]=0.164 90dOOS=0.373
+[USDJPY] bb_2@1m scored=86
+  … bb_2@3m (166,560 bars)
+[USDJPY] bb_2@3m scored=86
+  ✓ GATE bb_2         3m  RR=2.0 n=868 E[R]=0.054 90dOOS=0.132
+[USDJPY] bb_2@3m scored=87
+  … bb_2@5m (99,936 bars)
+[USDJPY] bb_2@5m scored=87
+  ✓ GATE bb_2         5m  RR=2.4 n=552 E[R]=0.152 90dOOS=0.417
+[USDJPY] bb_2@5m scored=88
+  … bb_2@15m (33,312 bars)
+[USDJPY] bb_2@15m scored=88
+  ✓ GATE bb_2         15m RR=3.0 n=200 E[R]=0.16 90dOOS=0.846
+[USDJPY] bb_2@15m scored=89
+  … bb_2.5@1m (499,680 bars)
+[USDJPY] bb_2.5@1m scored=89
+  ✓ GATE bb_2.5       1m  RR=4.0 n=230 E[R]=0.609 90dOOS=2.0
+[USDJPY] bb_2.5@1m scored=90
+  … bb_2.5@3m (166,560 bars)
+[USDJPY] bb_2.5@3m scored=90
+  ✓ GATE bb_2.5       3m  RR=2.0 n=99 E[R]=0.364 90dOOS=0.636
+[USDJPY] bb_2.5@3m scored=91
+  … bb_2.5@5m (99,936 bars)
+[USDJPY] bb_2.5@5m scored=91
+[USDJPY] bb_2.5@5m scored=92
+  … bb_2.5@15m (33,312 bars)
+[USDJPY] bb_2.5@15m scored=92
+[USDJPY] bb_2.5@15m scored=93
+  … z_20_2@1m (499,680 bars)
+[USDJPY] z_20_2@1m scored=93
+  ✓ GATE z_20_2       1m  RR=4.0 n=10633 E[R]=0.117 90dOOS=0.256
+[USDJPY] z_20_2@1m scored=94
+  … z_20_2@3m (166,560 bars)
+[USDJPY] z_20_2@3m scored=94
+  ✓ GATE z_20_2       3m  RR=3.0 n=3921 E[R]=0.047 90dOOS=0.091
+[USDJPY] z_20_2@3m scored=95
+  … z_20_2@5m (99,936 bars)
+[USDJPY] z_20_2@5m scored=95
+  ✓ GATE z_20_2       5m  RR=4.0 n=1843 E[R]=0.088 90dOOS=0.274
+[USDJPY] z_20_2@5m scored=96
+  … z_20_2@15m (33,312 bars)
+[USDJPY] z_20_2@15m scored=96
+  ✓ GATE z_20_2       15m RR=4.0 n=628 E[R]=0.075 90dOOS=0.842
+[USDJPY] z_20_2@15m scored=97
+  … z_40_2@1m (499,680 bars)
+[USDJPY] z_40_2@1m scored=97
+  ✓ GATE z_40_2       1m  RR=4.0 n=9096 E[R]=0.077 90dOOS=0.202
+[USDJPY] z_40_2@1m scored=98
+  … z_40_2@3m (166,560 bars)
+[USDJPY] z_40_2@3m scored=98
+  ✓ GATE z_40_2       3m  RR=2.0 n=3882 E[R]=0.044 90dOOS=0.142
+[USDJPY] z_40_2@3m scored=99
+  … z_40_2@5m (99,936 bars)
+[USDJPY] z_40_2@5m scored=99
+  ✓ GATE z_40_2       5m  RR=4.0 n=1565 E[R]=0.131 90dOOS=0.205
+[USDJPY] z_40_2@5m scored=100
+  … z_40_2@15m (33,312 bars)
+[USDJPY] z_40_2@15m scored=100
+[USDJPY] z_40_2@15m scored=101
+  … rsi@1m (499,680 bars)
+[USDJPY] rsi@1m scored=101
+  ✓ GATE rsi          1m  RR=3.0 n=12760 E[R]=0.048 90dOOS=0.079
+[USDJPY] rsi@1m scored=102
+  … rsi@3m (166,560 bars)
+[USDJPY] rsi@3m scored=102
+  ✓ GATE rsi          3m  RR=4.0 n=3180 E[R]=0.08 90dOOS=0.098
+[USDJPY] rsi@3m scored=103
+  … rsi@5m (99,936 bars)
+[USDJPY] rsi@5m scored=103
+  ✓ GATE rsi          5m  RR=1.5 n=3208 E[R]=0.047 90dOOS=0.07
+[USDJPY] rsi@5m scored=104
+  … rsi@15m (33,312 bars)
+[USDJPY] rsi@15m scored=104
+  ✓ GATE rsi          15m RR=2.4 n=843 E[R]=0.053 90dOOS=0.074
+[USDJPY] rsi@15m scored=105
+  … atrbrk@1m (499,680 bars)
+[USDJPY] atrbrk@1m scored=105
+[USDJPY] atrbrk@1m scored=106
+  … atrbrk@3m (166,560 bars)
+[USDJPY] atrbrk@3m scored=106
+[USDJPY] atrbrk@3m scored=107
+  … atrbrk@5m (99,936 bars)
+[USDJPY] atrbrk@5m scored=107
+[USDJPY] atrbrk@5m scored=108
+  … atrbrk@15m (33,312 bars)
+[USDJPY] atrbrk@15m scored=108
+[USDJPY] atrbrk@15m scored=109
+  … volmom@1m (499,680 bars)
+[USDJPY] volmom@1m scored=109
+[USDJPY] volmom@1m scored=110
+  … volmom@3m (166,560 bars)
+[USDJPY] volmom@3m scored=110
+[USDJPY] volmom@3m scored=111
+  … volmom@5m (99,936 bars)
+[USDJPY] volmom@5m scored=111
+[USDJPY] volmom@5m scored=112
+  … volmom@15m (33,312 bars)
+[USDJPY] volmom@15m scored=112
+  ✓ GATE volmom       15m RR=2.4 n=676 E[R]=0.117 90dOOS=0.166
+[USDJPY] volmom@15m scored=113
+  ✓ MATH bb_2.5+hf0.55        1m RR=1.5 n=99 E[R]=0.465
+  ✓ MATH bb_2.5+hf0.55        1m RR=2.0 n=99 E[R]=0.606
+  ✓ MATH bb_2.5+hf0.55        1m RR=2.4 n=99 E[R]=0.683
+  ✓ MATH bb_2.5+hf0.55        1m RR=3.0 n=99 E[R]=0.939
+  ✓ MATH bb_2.5+hf0.55        1m RR=4.0 n=98 E[R]=0.99
+  ✓ MATH bb_2.5+e0.35         1m RR=1.5 n=120 E[R]=0.271
+  ✓ MATH bb_2.5+e0.35         1m RR=2.0 n=120 E[R]=0.475
+  ✓ MATH bb_2.5+e0.35         1m RR=2.4 n=120 E[R]=0.558
+  ✓ MATH bb_2.5+e0.35         1m RR=3.0 n=120 E[R]=0.767
+  ✓ MATH bb_2.5+e0.35         1m RR=4.0 n=118 E[R]=0.949
+  ✓ MATH bb_2+hf0.55          5m RR=2.4 n=272 E[R]=0.062
+  ✓ MATH bb_2+e0.35           5m RR=3.0 n=180 E[R]=0.067
+  ✓ MATH bb_2+hf0.55          1m RR=1.5 n=1142 E[R]=0.051
+  ✓ MATH bb_2+hf0.55          1m RR=2.0 n=1139 E[R]=0.083
+  ✓ MATH bb_2+hf0.55          1m RR=2.4 n=1130 E[R]=0.122
+  ✓ MATH bb_2+hf0.55          1m RR=3.0 n=1120 E[R]=0.139
+  ✓ MATH bb_2+hf0.55          1m RR=4.0 n=1098 E[R]=0.157
+  ✓ MATH bb_2+hf0.50          1m RR=1.5 n=665 E[R]=0.09
+  ✓ MATH bb_2+hf0.50          1m RR=2.0 n=664 E[R]=0.125
+  ✓ MATH bb_2+hf0.50          1m RR=2.4 n=660 E[R]=0.169
+  ✓ MATH bb_2+hf0.50          1m RR=3.0 n=657 E[R]=0.169
+  ✓ MATH bb_2+hf0.50          1m RR=4.0 n=651 E[R]=0.221
+  ✓ MATH bb_2+hf0.45          1m RR=1.5 n=344 E[R]=0.076
+  ✓ MATH bb_2+hf0.45          1m RR=2.0 n=343 E[R]=0.12
+  ✓ MATH bb_2+hf0.45          1m RR=2.4 n=340 E[R]=0.15
+  ✓ MATH bb_2+hf0.45          1m RR=3.0 n=340 E[R]=0.118
+  ✓ MATH bb_2+hf0.45          1m RR=4.0 n=338 E[R]=0.124
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=1.5 n=385 E[R]=0.117
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=2.0 n=385 E[R]=0.145
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=2.4 n=382 E[R]=0.184
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=3.0 n=381 E[R]=0.27
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=4.0 n=378 E[R]=0.336
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=3.0 n=167 E[R]=0.126
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=4.0 n=167 E[R]=0.138
+  ✓ MATH bb_2+e0.35           1m RR=2.0 n=1072 E[R]=0.091
+  ✓ MATH bb_2+e0.35           1m RR=2.4 n=1066 E[R]=0.113
+  ✓ MATH bb_2+e0.35           1m RR=3.0 n=1059 E[R]=0.186
+  ✓ MATH bb_2+e0.35           1m RR=4.0 n=1042 E[R]=0.2
+  ✓ MATH bb_2+hf0.55          15m RR=3.0 n=105 E[R]=0.219
+  ✓ MATH bb_1.5+hf0.45        5m RR=4.0 n=347 E[R]=0.081
+  ✓ MATH bb_1.5+hf0.50_e0.25  5m RR=4.0 n=471 E[R]=0.062
+  ✓ MATH bb_1.5+hf0.45_e0.30  5m RR=2.4 n=206 E[R]=0.106
+  ✓ MATH bb_1.5+hf0.45_e0.30  5m RR=3.0 n=203 E[R]=0.123
+  ✓ MATH bb_1.5+hf0.45_e0.30  5m RR=4.0 n=196 E[R]=0.224
+  ✓ MATH bb_1.5+e0.35         5m RR=1.5 n=1293 E[R]=0.063
+  ✓ MATH z_40_2+hf0.55        5m RR=1.5 n=1261 E[R]=0.073
+  ✓ MATH z_40_2+hf0.55        5m RR=2.0 n=1216 E[R]=0.076
+  ✓ MATH z_40_2+hf0.55        5m RR=2.4 n=1149 E[R]=0.074
+  ✓ MATH z_40_2+hf0.55        5m RR=4.0 n=947 E[R]=0.13
+  ✓ MATH z_40_2+hf0.50        5m RR=2.0 n=766 E[R]=0.144
+  ✓ MATH z_40_2+hf0.50        5m RR=2.4 n=735 E[R]=0.152
+  ✓ MATH z_40_2+hf0.50        5m RR=3.0 n=699 E[R]=0.185
+  ✓ MATH z_40_2+hf0.45        5m RR=1.5 n=408 E[R]=0.152
+  ✓ MATH z_40_2+hf0.45        5m RR=2.0 n=399 E[R]=0.195
+  ✓ MATH z_40_2+hf0.45        5m RR=2.4 n=393 E[R]=0.263
+  ✓ MATH z_40_2+hf0.45        5m RR=3.0 n=380 E[R]=0.337
+  ✓ MATH z_40_2+hf0.45        5m RR=4.0 n=358 E[R]=0.453
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=1.5 n=678 E[R]=0.095
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=2.0 n=662 E[R]=0.115
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=2.4 n=637 E[R]=0.121
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=3.0 n=610 E[R]=0.141
+  ✓ MATH z_40_2+hf0.45_e0.30  5m RR=1.5 n=336 E[R]=0.124
+  ✓ MATH z_40_2+hf0.45_e0.30  5m RR=2.0 n=331 E[R]=0.178
+  ✓ MATH z_40_2+hf0.45_e0.30  5m RR=2.4 n=327 E[R]=0.237
+  ✓ MATH z_40_2+hf0.45_e0.30  5m RR=3.0 n=319 E[R]=0.304
+  ✓ MATH z_40_2+hf0.45_e0.30  5m RR=4.0 n=303 E[R]=0.403
+  ✓ MATH z_40_2+e0.35         5m RR=1.5 n=1987 E[R]=0.067
+  ✓ MATH z_40_2+e0.35         5m RR=2.0 n=1870 E[R]=0.056
+  ✓ MATH z_40_2+e0.35         5m RR=2.4 n=1758 E[R]=0.085
+  ✓ MATH z_40_2+e0.35         5m RR=3.0 n=1590 E[R]=0.084
+  ✓ MATH z_40_2+e0.35         5m RR=4.0 n=1331 E[R]=0.112
+  ✓ MATH z_20_2+hf0.50        5m RR=1.5 n=959 E[R]=0.064
+  ✓ MATH z_20_2+hf0.50        5m RR=2.0 n=915 E[R]=0.059
+  ✓ MATH z_20_2+hf0.50        5m RR=4.0 n=755 E[R]=0.113
+  ✓ MATH z_20_2+hf0.45        5m RR=4.0 n=392 E[R]=0.11
+  ✓ MATH z_20_2+hf0.50_e0.25  5m RR=1.5 n=761 E[R]=0.074
+  ✓ MATH z_20_2+hf0.50_e0.25  5m RR=2.0 n=734 E[R]=0.054
+  ✓ MATH z_20_2+hf0.50_e0.25  5m RR=4.0 n=633 E[R]=0.122
+  ✓ MATH z_20_2+hf0.45_e0.30  5m RR=1.5 n=345 E[R]=0.058
+  ✓ MATH z_20_2+hf0.45_e0.30  5m RR=4.0 n=301 E[R]=0.096
+  ✓ MATH z_20_2+e0.35         5m RR=1.5 n=2155 E[R]=0.057
+  ✓ MATH z_20_2+e0.35         5m RR=3.0 n=1682 E[R]=0.063
+  ✓ MATH z_20_2+e0.35         5m RR=4.0 n=1462 E[R]=0.067
+
+######## AUDUSD · live=bb_2.5 RR=4.0 ########
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+  … fib_liq@15m (33,312 bars)
+[AUDUSD] fib_liq@15m scored=0
+[AUDUSD] fib_liq@15m scored=1
+  … ema_pull@15m (33,312 bars)
+[AUDUSD] ema_pull@15m scored=1
+[AUDUSD] ema_pull@15m scored=2
+  … ema_tight@15m (33,312 bars)
+[AUDUSD] ema_tight@15m scored=2
+[AUDUSD] ema_tight@15m scored=3
+  … sma_cross@1m (499,680 bars)
+[AUDUSD] sma_cross@1m scored=3
+[AUDUSD] sma_cross@1m scored=4
+  … sma_cross@3m (166,560 bars)
+[AUDUSD] sma_cross@3m scored=4
+[AUDUSD] sma_cross@3m scored=5
+  … sma_cross@5m (99,936 bars)
+[AUDUSD] sma_cross@5m scored=5
+[AUDUSD] sma_cross@5m scored=6
+  … sma_cross@15m (33,312 bars)
+[AUDUSD] sma_cross@15m scored=6
+[AUDUSD] sma_cross@15m scored=7
+  … pa@15m (33,312 bars)
+[AUDUSD] pa@15m scored=7
+  ✓ GATE pa           15m RR=3.0 n=359 E[R]=0.058 90dOOS=0.125
+[AUDUSD] pa@15m scored=8
+  … liq@15m (33,312 bars)
+[AUDUSD] liq@15m scored=8
+[AUDUSD] liq@15m scored=9
+  … tl@15m (33,312 bars)
+[AUDUSD] tl@15m scored=9
+[AUDUSD] tl@15m scored=10
+  … obfvg@15m (33,312 bars)
+[AUDUSD] obfvg@15m scored=10
+[AUDUSD] obfvg@15m scored=11
+  … macd@15m (33,312 bars)
+[AUDUSD] macd@15m scored=11
+[AUDUSD] macd@15m scored=12
+  … engulf@15m (33,312 bars)
+[AUDUSD] engulf@15m scored=12
+[AUDUSD] engulf@15m scored=13
+  … inside@15m (33,312 bars)
+[AUDUSD] inside@15m scored=13
+[AUDUSD] inside@15m scored=14
+  … ichi@15m (33,312 bars)
+[AUDUSD] ichi@15m scored=14
+[AUDUSD] ichi@15m scored=15
+  … psar@15m (33,312 bars)
+[AUDUSD] psar@15m scored=15
+[AUDUSD] psar@15m scored=16
+  … adx@15m (33,312 bars)
+[AUDUSD] adx@15m scored=16
+[AUDUSD] adx@15m scored=17
+  … st_2@1m (499,680 bars)
+[AUDUSD] st_2@1m scored=17
+[AUDUSD] st_2@1m scored=18
+  … st_2@3m (166,560 bars)
+[AUDUSD] st_2@3m scored=18
+[AUDUSD] st_2@3m scored=19
+  … st_2@5m (99,936 bars)
+[AUDUSD] st_2@5m scored=19
+[AUDUSD] st_2@5m scored=20
+  … st_2@15m (33,312 bars)
+[AUDUSD] st_2@15m scored=20
+[AUDUSD] st_2@15m scored=21
+  … st_3@1m (499,680 bars)
+[AUDUSD] st_3@1m scored=21
+[AUDUSD] st_3@1m scored=22
+  … st_3@3m (166,560 bars)
+[AUDUSD] st_3@3m scored=22
+[AUDUSD] st_3@3m scored=23
+  … st_3@5m (99,936 bars)
+[AUDUSD] st_3@5m scored=23
+[AUDUSD] st_3@5m scored=24
+  … st_3@15m (33,312 bars)
+[AUDUSD] st_3@15m scored=24
+[AUDUSD] st_3@15m scored=25
+  … kelt_1@1m (499,680 bars)
+[AUDUSD] kelt_1@1m scored=25
+[AUDUSD] kelt_1@1m scored=26
+  … kelt_1@3m (166,560 bars)
+[AUDUSD] kelt_1@3m scored=26
+[AUDUSD] kelt_1@3m scored=27
+  … kelt_1@5m (99,936 bars)
+[AUDUSD] kelt_1@5m scored=27
+[AUDUSD] kelt_1@5m scored=28
+  … kelt_1@15m (33,312 bars)
+[AUDUSD] kelt_1@15m scored=28
+[AUDUSD] kelt_1@15m scored=29
+  … kelt_1.5@1m (499,680 bars)
+[AUDUSD] kelt_1.5@1m scored=29
+[AUDUSD] kelt_1.5@1m scored=30
+  … kelt_1.5@3m (166,560 bars)
+[AUDUSD] kelt_1.5@3m scored=30
+[AUDUSD] kelt_1.5@3m scored=31
+  … kelt_1.5@5m (99,936 bars)
+[AUDUSD] kelt_1.5@5m scored=31
+[AUDUSD] kelt_1.5@5m scored=32
+  … kelt_1.5@15m (33,312 bars)
+[AUDUSD] kelt_1.5@15m scored=32
+[AUDUSD] kelt_1.5@15m scored=33
+  … kelt_2@1m (499,680 bars)
+[AUDUSD] kelt_2@1m scored=33
+[AUDUSD] kelt_2@1m scored=34
+  … kelt_2@3m (166,560 bars)
+[AUDUSD] kelt_2@3m scored=34
+[AUDUSD] kelt_2@3m scored=35
+  … kelt_2@5m (99,936 bars)
+[AUDUSD] kelt_2@5m scored=35
+[AUDUSD] kelt_2@5m scored=36
+  … kelt_2@15m (33,312 bars)
+[AUDUSD] kelt_2@15m scored=36
+[AUDUSD] kelt_2@15m scored=37
+  … stoch_20@1m (499,680 bars)
+[AUDUSD] stoch_20@1m scored=37
+  skip stoch_20@1m: No numeric types to aggregate
+[AUDUSD] stoch_20@1m scored=37
+  … stoch_20@3m (166,560 bars)
+[AUDUSD] stoch_20@3m scored=37
+  skip stoch_20@3m: No numeric types to aggregate
+[AUDUSD] stoch_20@3m scored=37
+  … stoch_20@5m (99,936 bars)
+[AUDUSD] stoch_20@5m scored=37
+  skip stoch_20@5m: No numeric types to aggregate
+[AUDUSD] stoch_20@5m scored=37
+  … stoch_20@15m (33,312 bars)
+[AUDUSD] stoch_20@15m scored=37
+  skip stoch_20@15m: No numeric types to aggregate
+[AUDUSD] stoch_20@15m scored=37
+  … stoch_30@1m (499,680 bars)
+[AUDUSD] stoch_30@1m scored=37
+  skip stoch_30@1m: No numeric types to aggregate
+[AUDUSD] stoch_30@1m scored=37
+  … stoch_30@3m (166,560 bars)
+[AUDUSD] stoch_30@3m scored=37
+  skip stoch_30@3m: No numeric types to aggregate
+[AUDUSD] stoch_30@3m scored=37
+  … stoch_30@5m (99,936 bars)
+[AUDUSD] stoch_30@5m scored=37
+  skip stoch_30@5m: No numeric types to aggregate
+[AUDUSD] stoch_30@5m scored=37
+  … stoch_30@15m (33,312 bars)
+[AUDUSD] stoch_30@15m scored=37
+  skip stoch_30@15m: No numeric types to aggregate
+[AUDUSD] stoch_30@15m scored=37
+  … don_10@1m (499,680 bars)
+[AUDUSD] don_10@1m scored=37
+[AUDUSD] don_10@1m scored=38
+  … don_10@3m (166,560 bars)
+[AUDUSD] don_10@3m scored=38
+[AUDUSD] don_10@3m scored=39
+  … don_10@5m (99,936 bars)
+[AUDUSD] don_10@5m scored=39
+[AUDUSD] don_10@5m scored=40
+  … don_10@15m (33,312 bars)
+[AUDUSD] don_10@15m scored=40
+[AUDUSD] don_10@15m scored=41
+  … don_20@1m (499,680 bars)
+[AUDUSD] don_20@1m scored=41
+[AUDUSD] don_20@1m scored=42
+  … don_20@3m (166,560 bars)
+[AUDUSD] don_20@3m scored=42
+[AUDUSD] don_20@3m scored=43
+  … don_20@5m (99,936 bars)
+[AUDUSD] don_20@5m scored=43
+[AUDUSD] don_20@5m scored=44
+  … don_20@15m (33,312 bars)
+[AUDUSD] don_20@15m scored=44
+[AUDUSD] don_20@15m scored=45
+  … don_30@1m (499,680 bars)
+[AUDUSD] don_30@1m scored=45
+[AUDUSD] don_30@1m scored=46
+  … don_30@3m (166,560 bars)
+[AUDUSD] don_30@3m scored=46
+[AUDUSD] don_30@3m scored=47
+  … don_30@5m (99,936 bars)
+[AUDUSD] don_30@5m scored=47
+[AUDUSD] don_30@5m scored=48
+  … don_30@15m (33,312 bars)
+[AUDUSD] don_30@15m scored=48
+[AUDUSD] don_30@15m scored=49
+  … don_55@1m (499,680 bars)
+[AUDUSD] don_55@1m scored=49
+[AUDUSD] don_55@1m scored=50
+  … don_55@3m (166,560 bars)
+[AUDUSD] don_55@3m scored=50
+[AUDUSD] don_55@3m scored=51
+  … don_55@5m (99,936 bars)
+[AUDUSD] don_55@5m scored=51
+[AUDUSD] don_55@5m scored=52
+  … don_55@15m (33,312 bars)
+[AUDUSD] don_55@15m scored=52
+[AUDUSD] don_55@15m scored=53
+  … don_100@1m (499,680 bars)
+[AUDUSD] don_100@1m scored=53
+[AUDUSD] don_100@1m scored=54
+  … don_100@3m (166,560 bars)
+[AUDUSD] don_100@3m scored=54
+[AUDUSD] don_100@3m scored=55
+  … don_100@5m (99,936 bars)
+[AUDUSD] don_100@5m scored=55
+[AUDUSD] don_100@5m scored=56
+  … don_100@15m (33,312 bars)
+[AUDUSD] don_100@15m scored=56
+[AUDUSD] don_100@15m scored=57
+  … cta_5_20@1m (499,680 bars)
+[AUDUSD] cta_5_20@1m scored=57
+[AUDUSD] cta_5_20@1m scored=58
+  … cta_5_20@3m (166,560 bars)
+[AUDUSD] cta_5_20@3m scored=58
+[AUDUSD] cta_5_20@3m scored=59
+  … cta_5_20@5m (99,936 bars)
+[AUDUSD] cta_5_20@5m scored=59
+[AUDUSD] cta_5_20@5m scored=60
+  … cta_5_20@15m (33,312 bars)
+[AUDUSD] cta_5_20@15m scored=60
+[AUDUSD] cta_5_20@15m scored=61
+  … cta_10_40@1m (499,680 bars)
+[AUDUSD] cta_10_40@1m scored=61
+[AUDUSD] cta_10_40@1m scored=62
+  … cta_10_40@3m (166,560 bars)
+[AUDUSD] cta_10_40@3m scored=62
+[AUDUSD] cta_10_40@3m scored=63
+  … cta_10_40@5m (99,936 bars)
+[AUDUSD] cta_10_40@5m scored=63
+[AUDUSD] cta_10_40@5m scored=64
+  … cta_10_40@15m (33,312 bars)
+[AUDUSD] cta_10_40@15m scored=64
+[AUDUSD] cta_10_40@15m scored=65
+  … cta_12_26@1m (499,680 bars)
+[AUDUSD] cta_12_26@1m scored=65
+[AUDUSD] cta_12_26@1m scored=66
+  … cta_12_26@3m (166,560 bars)
+[AUDUSD] cta_12_26@3m scored=66
+[AUDUSD] cta_12_26@3m scored=67
+  … cta_12_26@5m (99,936 bars)
+[AUDUSD] cta_12_26@5m scored=67
+[AUDUSD] cta_12_26@5m scored=68
+  … cta_12_26@15m (33,312 bars)
+[AUDUSD] cta_12_26@15m scored=68
+[AUDUSD] cta_12_26@15m scored=69
+  … cta_20_50@1m (499,680 bars)
+[AUDUSD] cta_20_50@1m scored=69
+[AUDUSD] cta_20_50@1m scored=70
+  … cta_20_50@3m (166,560 bars)
+[AUDUSD] cta_20_50@3m scored=70
+[AUDUSD] cta_20_50@3m scored=71
+  … cta_20_50@5m (99,936 bars)
+[AUDUSD] cta_20_50@5m scored=71
+[AUDUSD] cta_20_50@5m scored=72
+  … cta_20_50@15m (33,312 bars)
+[AUDUSD] cta_20_50@15m scored=72
+[AUDUSD] cta_20_50@15m scored=73
+  … cta_50_200@1m (499,680 bars)
+[AUDUSD] cta_50_200@1m scored=73
+[AUDUSD] cta_50_200@1m scored=74
+  … cta_50_200@3m (166,560 bars)
+[AUDUSD] cta_50_200@3m scored=74
+[AUDUSD] cta_50_200@3m scored=75
+  … cta_50_200@5m (99,936 bars)
+[AUDUSD] cta_50_200@5m scored=75
+[AUDUSD] cta_50_200@5m scored=76
+  … cta_50_200@15m (33,312 bars)
+[AUDUSD] cta_50_200@15m scored=76
+[AUDUSD] cta_50_200@15m scored=77
+  … tsmom@1m (499,680 bars)
+[AUDUSD] tsmom@1m scored=77
+[AUDUSD] tsmom@1m scored=78
+  … tsmom@3m (166,560 bars)
+[AUDUSD] tsmom@3m scored=78
+[AUDUSD] tsmom@3m scored=79
+  … tsmom@5m (99,936 bars)
+[AUDUSD] tsmom@5m scored=79
+  ✓ GATE tsmom        5m  RR=4.0 n=503 E[R]=0.054 90dOOS=0.129
+[AUDUSD] tsmom@5m scored=80
+  … tsmom@15m (33,312 bars)
+[AUDUSD] tsmom@15m scored=80
+[AUDUSD] tsmom@15m scored=81
+  … roc_20@1m (499,680 bars)
+[AUDUSD] roc_20@1m scored=81
+  … roc_20@3m (166,560 bars)
+[AUDUSD] roc_20@3m scored=81
+  … roc_20@5m (99,936 bars)
+[AUDUSD] roc_20@5m scored=81
+  … roc_20@15m (33,312 bars)
+[AUDUSD] roc_20@15m scored=81
+  … roc_60@1m (499,680 bars)
+[AUDUSD] roc_60@1m scored=81
+  … roc_60@3m (166,560 bars)
+[AUDUSD] roc_60@3m scored=81
+  … roc_60@5m (99,936 bars)
+[AUDUSD] roc_60@5m scored=81
+  … roc_60@15m (33,312 bars)
+[AUDUSD] roc_60@15m scored=81
+  … roc_120@1m (499,680 bars)
+[AUDUSD] roc_120@1m scored=81
+  … roc_120@3m (166,560 bars)
+[AUDUSD] roc_120@3m scored=81
+  … roc_120@5m (99,936 bars)
+[AUDUSD] roc_120@5m scored=81
+  … roc_120@15m (33,312 bars)
+[AUDUSD] roc_120@15m scored=81
+  … bb_1.5@1m (499,680 bars)
+[AUDUSD] bb_1.5@1m scored=81
+  ✓ GATE bb_1.5       1m  RR=3.0 n=10403 E[R]=0.085 90dOOS=0.037
+[AUDUSD] bb_1.5@1m scored=82
+  … bb_1.5@3m (166,560 bars)
+[AUDUSD] bb_1.5@3m scored=82
+  ✓ GATE bb_1.5       3m  RR=3.0 n=3445 E[R]=0.113 90dOOS=0.111
+[AUDUSD] bb_1.5@3m scored=83
+  … bb_1.5@5m (99,936 bars)
+[AUDUSD] bb_1.5@5m scored=83
+  ✓ GATE bb_1.5       5m  RR=4.0 n=1812 E[R]=0.203 90dOOS=0.058
+[AUDUSD] bb_1.5@5m scored=84
+  … bb_1.5@15m (33,312 bars)
+[AUDUSD] bb_1.5@15m scored=84
+  ✓ GATE bb_1.5       15m RR=2.4 n=729 E[R]=0.059 90dOOS=0.085
+[AUDUSD] bb_1.5@15m scored=85
+  … bb_2@1m (499,680 bars)
+[AUDUSD] bb_2@1m scored=85
+  ✓ GATE bb_2         1m  RR=4.0 n=2021 E[R]=0.277 90dOOS=0.496
+[AUDUSD] bb_2@1m scored=86
+  … bb_2@3m (166,560 bars)
+[AUDUSD] bb_2@3m scored=86
+[AUDUSD] bb_2@3m scored=87
+  … bb_2@5m (99,936 bars)
+[AUDUSD] bb_2@5m scored=87
+  ✓ GATE bb_2         5m  RR=3.0 n=471 E[R]=0.223 90dOOS=0.379
+[AUDUSD] bb_2@5m scored=88
+  … bb_2@15m (33,312 bars)
+[AUDUSD] bb_2@15m scored=88
+[AUDUSD] bb_2@15m scored=89
+  … bb_2.5@1m (499,680 bars)
+[AUDUSD] bb_2.5@1m scored=89
+  ✓ GATE bb_2.5       1m  RR=4.0 n=161 E[R]=0.522 90dOOS=0.842
+[AUDUSD] bb_2.5@1m scored=90
+  … bb_2.5@3m (166,560 bars)
+[AUDUSD] bb_2.5@3m scored=90
+[AUDUSD] bb_2.5@3m scored=91
+  … bb_2.5@5m (99,936 bars)
+[AUDUSD] bb_2.5@5m scored=91
+[AUDUSD] bb_2.5@5m scored=92
+  … bb_2.5@15m (33,312 bars)
+[AUDUSD] bb_2.5@15m scored=92
+[AUDUSD] bb_2.5@15m scored=93
+  … z_20_2@1m (499,680 bars)
+[AUDUSD] z_20_2@1m scored=93
+  ✓ GATE z_20_2       1m  RR=4.0 n=10745 E[R]=0.119 90dOOS=0.094
+[AUDUSD] z_20_2@1m scored=94
+  … z_20_2@3m (166,560 bars)
+[AUDUSD] z_20_2@3m scored=94
+  ✓ GATE z_20_2       3m  RR=4.0 n=3306 E[R]=0.118 90dOOS=0.146
+[AUDUSD] z_20_2@3m scored=95
+  … z_20_2@5m (99,936 bars)
+[AUDUSD] z_20_2@5m scored=95
+  ✓ GATE z_20_2       5m  RR=3.0 n=2385 E[R]=0.132 90dOOS=0.045
+[AUDUSD] z_20_2@5m scored=96
+  … z_20_2@15m (33,312 bars)
+[AUDUSD] z_20_2@15m scored=96
+  ✓ GATE z_20_2       15m RR=3.0 n=768 E[R]=0.125 90dOOS=0.098
+[AUDUSD] z_20_2@15m scored=97
+  … z_40_2@1m (499,680 bars)
+[AUDUSD] z_40_2@1m scored=97
+  ✓ GATE z_40_2       1m  RR=4.0 n=9551 E[R]=0.113 90dOOS=0.096
+[AUDUSD] z_40_2@1m scored=98
+  … z_40_2@3m (166,560 bars)
+[AUDUSD] z_40_2@3m scored=98
+  ✓ GATE z_40_2       3m  RR=3.0 n=3538 E[R]=0.098 90dOOS=0.013
+[AUDUSD] z_40_2@3m scored=99
+  … z_40_2@5m (99,936 bars)
+[AUDUSD] z_40_2@5m scored=99
+  ✓ GATE z_40_2       5m  RR=2.0 n=2399 E[R]=0.112 90dOOS=0.062
+[AUDUSD] z_40_2@5m scored=100
+  … z_40_2@15m (33,312 bars)
+[AUDUSD] z_40_2@15m scored=100
+[AUDUSD] z_40_2@15m scored=101
+  … rsi@1m (499,680 bars)
+[AUDUSD] rsi@1m scored=101
+  ✓ GATE rsi          1m  RR=4.0 n=11005 E[R]=0.076 90dOOS=0.052
+[AUDUSD] rsi@1m scored=102
+  … rsi@3m (166,560 bars)
+[AUDUSD] rsi@3m scored=102
+  ✓ GATE rsi          3m  RR=4.0 n=3269 E[R]=0.106 90dOOS=0.219
+[AUDUSD] rsi@3m scored=103
+  … rsi@5m (99,936 bars)
+[AUDUSD] rsi@5m scored=103
+  ✓ GATE rsi          5m  RR=2.4 n=2623 E[R]=0.077 90dOOS=0.07
+[AUDUSD] rsi@5m scored=104
+  … rsi@15m (33,312 bars)
+[AUDUSD] rsi@15m scored=104
+  ✓ GATE rsi          15m RR=1.5 n=1037 E[R]=0.092 90dOOS=0.119
+[AUDUSD] rsi@15m scored=105
+  … atrbrk@1m (499,680 bars)
+[AUDUSD] atrbrk@1m scored=105
+[AUDUSD] atrbrk@1m scored=106
+  … atrbrk@3m (166,560 bars)
+[AUDUSD] atrbrk@3m scored=106
+[AUDUSD] atrbrk@3m scored=107
+  … atrbrk@5m (99,936 bars)
+[AUDUSD] atrbrk@5m scored=107
+[AUDUSD] atrbrk@5m scored=108
+  … atrbrk@15m (33,312 bars)
+[AUDUSD] atrbrk@15m scored=108
+[AUDUSD] atrbrk@15m scored=109
+  … volmom@1m (499,680 bars)
+[AUDUSD] volmom@1m scored=109
+[AUDUSD] volmom@1m scored=110
+  … volmom@3m (166,560 bars)
+[AUDUSD] volmom@3m scored=110
+[AUDUSD] volmom@3m scored=111
+  … volmom@5m (99,936 bars)
+[AUDUSD] volmom@5m scored=111
+[AUDUSD] volmom@5m scored=112
+  … volmom@15m (33,312 bars)
+[AUDUSD] volmom@15m scored=112
+[AUDUSD] volmom@15m scored=113
+  ✓ MATH bb_2+hf0.55          1m RR=1.5 n=1026 E[R]=0.092
+  ✓ MATH bb_2+hf0.55          1m RR=2.0 n=1020 E[R]=0.144
+  ✓ MATH bb_2+hf0.55          1m RR=2.4 n=1015 E[R]=0.166
+  ✓ MATH bb_2+hf0.55          1m RR=3.0 n=1011 E[R]=0.211
+  ✓ MATH bb_2+hf0.55          1m RR=4.0 n=996 E[R]=0.235
+  ✓ MATH bb_2+hf0.50          1m RR=1.5 n=638 E[R]=0.125
+  ✓ MATH bb_2+hf0.50          1m RR=2.0 n=635 E[R]=0.167
+  ✓ MATH bb_2+hf0.50          1m RR=2.4 n=634 E[R]=0.164
+  ✓ MATH bb_2+hf0.50          1m RR=3.0 n=633 E[R]=0.194
+  ✓ MATH bb_2+hf0.50          1m RR=4.0 n=629 E[R]=0.24
+  ✓ MATH bb_2+hf0.45          1m RR=1.5 n=337 E[R]=0.142
+  ✓ MATH bb_2+hf0.45          1m RR=2.0 n=337 E[R]=0.193
+  ✓ MATH bb_2+hf0.45          1m RR=2.4 n=336 E[R]=0.184
+  ✓ MATH bb_2+hf0.45          1m RR=3.0 n=336 E[R]=0.19
+  ✓ MATH bb_2+hf0.45          1m RR=4.0 n=335 E[R]=0.209
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=1.5 n=392 E[R]=0.193
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=2.0 n=392 E[R]=0.232
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=2.4 n=392 E[R]=0.223
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=3.0 n=390 E[R]=0.272
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=4.0 n=389 E[R]=0.337
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=1.5 n=179 E[R]=0.243
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=2.0 n=179 E[R]=0.291
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=2.4 n=179 E[R]=0.273
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=3.0 n=179 E[R]=0.296
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=4.0 n=179 E[R]=0.313
+  ✓ MATH bb_2+e0.35           1m RR=1.5 n=956 E[R]=0.166
+  ✓ MATH bb_2+e0.35           1m RR=2.0 n=954 E[R]=0.252
+  ✓ MATH bb_2+e0.35           1m RR=2.4 n=950 E[R]=0.271
+  ✓ MATH bb_2+e0.35           1m RR=3.0 n=944 E[R]=0.297
+  ✓ MATH bb_2+e0.35           1m RR=4.0 n=931 E[R]=0.31
+  ✓ MATH bb_2+hf0.55          5m RR=1.5 n=226 E[R]=0.117
+  ✓ MATH bb_2+hf0.55          5m RR=2.0 n=225 E[R]=0.16
+  ✓ MATH bb_2+hf0.55          5m RR=2.4 n=225 E[R]=0.209
+  ✓ MATH bb_2+hf0.55          5m RR=3.0 n=223 E[R]=0.291
+  ✓ MATH bb_2+hf0.50          5m RR=1.5 n=138 E[R]=0.105
+  ✓ MATH bb_2+hf0.50          5m RR=2.0 n=138 E[R]=0.174
+  ✓ MATH bb_2+hf0.50          5m RR=2.4 n=138 E[R]=0.207
+  ✓ MATH bb_2+hf0.50          5m RR=3.0 n=136 E[R]=0.382
+  ✓ MATH bb_2+hf0.45          5m RR=2.0 n=74 E[R]=0.095
+  ✓ MATH bb_2+hf0.45          5m RR=2.4 n=74 E[R]=0.149
+  ✓ MATH bb_2+hf0.45          5m RR=3.0 n=74 E[R]=0.351
+  ✓ MATH bb_1.5+hf0.55        5m RR=1.5 n=1255 E[R]=0.086
+  ✓ MATH bb_1.5+hf0.55        5m RR=2.0 n=1222 E[R]=0.08
+  ✓ MATH bb_1.5+hf0.55        5m RR=2.4 n=1167 E[R]=0.069
+  ✓ MATH bb_1.5+hf0.55        5m RR=3.0 n=1107 E[R]=0.167
+  ✓ MATH bb_1.5+hf0.55        5m RR=4.0 n=1023 E[R]=0.158
+  ✓ MATH bb_1.5+hf0.50        5m RR=1.5 n=763 E[R]=0.075
+  ✓ MATH bb_1.5+hf0.50        5m RR=3.0 n=692 E[R]=0.22
+  ✓ MATH bb_1.5+hf0.50_e0.25  5m RR=3.0 n=474 E[R]=0.165
+  ✓ MATH bb_1.5+hf0.45_e0.30  5m RR=1.5 n=222 E[R]=0.104
+  ✓ MATH bb_2.5+e0.35         1m RR=1.5 n=92 E[R]=0.44
+  ✓ MATH bb_2.5+e0.35         1m RR=2.0 n=92 E[R]=0.5
+  ✓ MATH bb_2.5+e0.35         1m RR=2.4 n=92 E[R]=0.589
+  ✓ MATH bb_2.5+e0.35         1m RR=3.0 n=92 E[R]=0.696
+  ✓ MATH bb_2.5+e0.35         1m RR=4.0 n=92 E[R]=0.793
+  ✓ MATH z_20_2+hf0.55        15m RR=2.4 n=487 E[R]=0.089
+  ✓ MATH z_20_2+hf0.50        15m RR=2.4 n=327 E[R]=0.123
+  ✓ MATH z_20_2+hf0.45        15m RR=1.5 n=176 E[R]=0.151
+  ✓ MATH z_20_2+hf0.45        15m RR=2.0 n=173 E[R]=0.162
+  ✓ MATH z_20_2+hf0.45        15m RR=2.4 n=169 E[R]=0.147
+  ✓ MATH z_20_2+hf0.45        15m RR=3.0 n=159 E[R]=0.157
+  ✓ MATH z_20_2+hf0.45        15m RR=4.0 n=151 E[R]=0.159
+  ✓ MATH z_20_2+hf0.50_e0.25  15m RR=1.5 n=284 E[R]=0.136
+  ✓ MATH z_20_2+hf0.50_e0.25  15m RR=2.0 n=273 E[R]=0.154
+  ✓ MATH z_20_2+hf0.50_e0.25  15m RR=2.4 n=270 E[R]=0.184
+  ✓ MATH z_20_2+hf0.50_e0.25  15m RR=3.0 n=250 E[R]=0.2
+  ✓ MATH z_20_2+hf0.45_e0.30  15m RR=1.5 n=136 E[R]=0.232
+  ✓ MATH z_20_2+hf0.45_e0.30  15m RR=2.0 n=132 E[R]=0.205
+  ✓ MATH z_20_2+hf0.45_e0.30  15m RR=2.4 n=130 E[R]=0.203
+  ✓ MATH z_20_2+hf0.45_e0.30  15m RR=3.0 n=122 E[R]=0.246
+  ✓ MATH z_20_2+hf0.45_e0.30  15m RR=4.0 n=116 E[R]=0.25
+  ✓ MATH z_20_2+e0.35         15m RR=2.0 n=699 E[R]=0.077
+  ✓ MATH z_20_2+e0.35         15m RR=3.0 n=602 E[R]=0.09
+  ✓ MATH z_20_2+e0.35         15m RR=4.0 n=505 E[R]=0.158
+  ✓ MATH rsi+hf0.55           15m RR=3.0 n=462 E[R]=0.065
+  ✓ MATH rsi+e0.35            15m RR=1.5 n=862 E[R]=0.079
+  ✓ MATH z_20_2+hf0.55        1m RR=2.0 n=7604 E[R]=0.065
+  ✓ MATH z_20_2+hf0.55        1m RR=2.4 n=7309 E[R]=0.092
+  ✓ MATH z_20_2+hf0.55        1m RR=3.0 n=6854 E[R]=0.101
+  ✓ MATH z_20_2+hf0.55        1m RR=4.0 n=6128 E[R]=0.085
+  ✓ MATH z_20_2+hf0.50        1m RR=1.5 n=4886 E[R]=0.044
+  ✓ MATH z_20_2+hf0.50        1m RR=2.0 n=4701 E[R]=0.074
+  ✓ MATH z_20_2+hf0.50        1m RR=2.4 n=4550 E[R]=0.087
+  ✓ MATH z_20_2+hf0.50        1m RR=3.0 n=4307 E[R]=0.104
+  ✓ MATH z_20_2+hf0.50        1m RR=4.0 n=3967 E[R]=0.065
+  ✓ MATH z_20_2+hf0.45        1m RR=1.5 n=2492 E[R]=0.054
+  ✓ MATH z_20_2+hf0.45        1m RR=2.0 n=2409 E[R]=0.076
+  ✓ MATH z_20_2+hf0.45        1m RR=2.4 n=2352 E[R]=0.081
+  ✓ MATH z_20_2+hf0.45        1m RR=3.0 n=2260 E[R]=0.096
+  ✓ MATH z_20_2+hf0.50_e0.25  1m RR=2.0 n=3743 E[R]=0.048
+  ✓ MATH z_20_2+hf0.50_e0.25  1m RR=2.4 n=3642 E[R]=0.061
+  ✓ MATH z_20_2+hf0.50_e0.25  1m RR=3.0 n=3484 E[R]=0.069
+  ✓ MATH z_20_2+e0.35         1m RR=2.4 n=10303 E[R]=0.057
+  ✓ MATH z_20_2+e0.35         1m RR=3.0 n=9521 E[R]=0.064
+  ✓ MATH z_20_2+e0.35         1m RR=4.0 n=8510 E[R]=0.079
+  ✓ MATH z_40_2+hf0.55        5m RR=1.5 n=1281 E[R]=0.079
+  ✓ MATH z_40_2+hf0.55        5m RR=2.0 n=1230 E[R]=0.105
+  ✓ MATH z_40_2+hf0.55        5m RR=2.4 n=1193 E[R]=0.089
+  ✓ MATH z_40_2+hf0.50        5m RR=1.5 n=781 E[R]=0.108
+  ✓ MATH z_40_2+hf0.50        5m RR=2.0 n=751 E[R]=0.134
+  ✓ MATH z_40_2+hf0.50        5m RR=2.4 n=733 E[R]=0.127
+  ✓ MATH z_40_2+hf0.50        5m RR=3.0 n=706 E[R]=0.133
+  ✓ MATH z_40_2+hf0.50        5m RR=4.0 n=652 E[R]=0.081
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=1.5 n=675 E[R]=0.104
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=2.0 n=649 E[R]=0.123
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=2.4 n=634 E[R]=0.121
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=3.0 n=617 E[R]=0.102
+
+######## USDCHF · live=bb_2.5 RR=4.0 ########
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+  … fib_liq@15m (33,312 bars)
+[USDCHF] fib_liq@15m scored=0
+[USDCHF] fib_liq@15m scored=1
+  … ema_pull@15m (33,312 bars)
+[USDCHF] ema_pull@15m scored=1
+  ✓ GATE ema_pull     15m RR=4.0 n=235 E[R]=0.128 90dOOS=1.143
+[USDCHF] ema_pull@15m scored=2
+  … ema_tight@15m (33,312 bars)
+[USDCHF] ema_tight@15m scored=2
+  ✓ GATE ema_tight    15m RR=2.0 n=146 E[R]=0.212 90dOOS=0.636
+[USDCHF] ema_tight@15m scored=3
+  … sma_cross@1m (499,680 bars)
+[USDCHF] sma_cross@1m scored=3
+  ✓ GATE sma_cross    1m  RR=4.0 n=7172 E[R]=0.095 90dOOS=0.018
+[USDCHF] sma_cross@1m scored=4
+  … sma_cross@3m (166,560 bars)
+[USDCHF] sma_cross@3m scored=4
+[USDCHF] sma_cross@3m scored=5
+  … sma_cross@5m (99,936 bars)
+[USDCHF] sma_cross@5m scored=5
+  ✓ GATE sma_cross    5m  RR=4.0 n=1445 E[R]=0.055 90dOOS=0.067
+[USDCHF] sma_cross@5m scored=6
+  … sma_cross@15m (33,312 bars)
+[USDCHF] sma_cross@15m scored=6
+[USDCHF] sma_cross@15m scored=7
+  … pa@15m (33,312 bars)
+[USDCHF] pa@15m scored=7
+[USDCHF] pa@15m scored=8
+  … liq@15m (33,312 bars)
+[USDCHF] liq@15m scored=8
+  ✓ GATE liq          15m RR=2.4 n=575 E[R]=0.135 90dOOS=0.3
+[USDCHF] liq@15m scored=9
+  … tl@15m (33,312 bars)
+[USDCHF] tl@15m scored=9
+[USDCHF] tl@15m scored=10
+  … obfvg@15m (33,312 bars)
+[USDCHF] obfvg@15m scored=10
+[USDCHF] obfvg@15m scored=11
+  … macd@15m (33,312 bars)
+[USDCHF] macd@15m scored=11
+[USDCHF] macd@15m scored=12
+  … engulf@15m (33,312 bars)
+[USDCHF] engulf@15m scored=12
+[USDCHF] engulf@15m scored=13
+  … inside@15m (33,312 bars)
+[USDCHF] inside@15m scored=13
+[USDCHF] inside@15m scored=14
+  … ichi@15m (33,312 bars)
+[USDCHF] ichi@15m scored=14
+  ✓ GATE ichi         15m RR=4.0 n=545 E[R]=0.11 90dOOS=0.286
+[USDCHF] ichi@15m scored=15
+  … psar@15m (33,312 bars)
+[USDCHF] psar@15m scored=15
+[USDCHF] psar@15m scored=16
+  … adx@15m (33,312 bars)
+[USDCHF] adx@15m scored=16
+  ✓ GATE adx          15m RR=1.5 n=241 E[R]=0.203 90dOOS=0.111
+[USDCHF] adx@15m scored=17
+  … st_2@1m (499,680 bars)
+[USDCHF] st_2@1m scored=17
+[USDCHF] st_2@1m scored=18
+  … st_2@3m (166,560 bars)
+[USDCHF] st_2@3m scored=18
+[USDCHF] st_2@3m scored=19
+  … st_2@5m (99,936 bars)
+[USDCHF] st_2@5m scored=19
+[USDCHF] st_2@5m scored=20
+  … st_2@15m (33,312 bars)
+[USDCHF] st_2@15m scored=20
+[USDCHF] st_2@15m scored=21
+  … st_3@1m (499,680 bars)
+[USDCHF] st_3@1m scored=21
+[USDCHF] st_3@1m scored=22
+  … st_3@3m (166,560 bars)
+[USDCHF] st_3@3m scored=22
+  ✓ GATE st_3         3m  RR=3.0 n=395 E[R]=0.104 90dOOS=0.481
+[USDCHF] st_3@3m scored=23
+  … st_3@5m (99,936 bars)
+[USDCHF] st_3@5m scored=23
+[USDCHF] st_3@5m scored=24
+  … st_3@15m (33,312 bars)
+[USDCHF] st_3@15m scored=24
+[USDCHF] st_3@15m scored=25
+  … kelt_1@1m (499,680 bars)
+[USDCHF] kelt_1@1m scored=25
+[USDCHF] kelt_1@1m scored=26
+  … kelt_1@3m (166,560 bars)
+[USDCHF] kelt_1@3m scored=26
+[USDCHF] kelt_1@3m scored=27
+  … kelt_1@5m (99,936 bars)
+[USDCHF] kelt_1@5m scored=27
+[USDCHF] kelt_1@5m scored=28
+  … kelt_1@15m (33,312 bars)
+[USDCHF] kelt_1@15m scored=28
+[USDCHF] kelt_1@15m scored=29
+  … kelt_1.5@1m (499,680 bars)
+[USDCHF] kelt_1.5@1m scored=29
+[USDCHF] kelt_1.5@1m scored=30
+  … kelt_1.5@3m (166,560 bars)
+[USDCHF] kelt_1.5@3m scored=30
+[USDCHF] kelt_1.5@3m scored=31
+  … kelt_1.5@5m (99,936 bars)
+[USDCHF] kelt_1.5@5m scored=31
+[USDCHF] kelt_1.5@5m scored=32
+  … kelt_1.5@15m (33,312 bars)
+[USDCHF] kelt_1.5@15m scored=32
+[USDCHF] kelt_1.5@15m scored=33
+  … kelt_2@1m (499,680 bars)
+[USDCHF] kelt_2@1m scored=33
+[USDCHF] kelt_2@1m scored=34
+  … kelt_2@3m (166,560 bars)
+[USDCHF] kelt_2@3m scored=34
+[USDCHF] kelt_2@3m scored=35
+  … kelt_2@5m (99,936 bars)
+[USDCHF] kelt_2@5m scored=35
+[USDCHF] kelt_2@5m scored=36
+  … kelt_2@15m (33,312 bars)
+[USDCHF] kelt_2@15m scored=36
+[USDCHF] kelt_2@15m scored=37
+  … stoch_20@1m (499,680 bars)
+[USDCHF] stoch_20@1m scored=37
+  skip stoch_20@1m: No numeric types to aggregate
+[USDCHF] stoch_20@1m scored=37
+  … stoch_20@3m (166,560 bars)
+[USDCHF] stoch_20@3m scored=37
+  skip stoch_20@3m: No numeric types to aggregate
+[USDCHF] stoch_20@3m scored=37
+  … stoch_20@5m (99,936 bars)
+[USDCHF] stoch_20@5m scored=37
+  skip stoch_20@5m: No numeric types to aggregate
+[USDCHF] stoch_20@5m scored=37
+  … stoch_20@15m (33,312 bars)
+[USDCHF] stoch_20@15m scored=37
+  skip stoch_20@15m: No numeric types to aggregate
+[USDCHF] stoch_20@15m scored=37
+  … stoch_30@1m (499,680 bars)
+[USDCHF] stoch_30@1m scored=37
+  skip stoch_30@1m: No numeric types to aggregate
+[USDCHF] stoch_30@1m scored=37
+  … stoch_30@3m (166,560 bars)
+[USDCHF] stoch_30@3m scored=37
+  skip stoch_30@3m: No numeric types to aggregate
+[USDCHF] stoch_30@3m scored=37
+  … stoch_30@5m (99,936 bars)
+[USDCHF] stoch_30@5m scored=37
+  skip stoch_30@5m: No numeric types to aggregate
+[USDCHF] stoch_30@5m scored=37
+  … stoch_30@15m (33,312 bars)
+[USDCHF] stoch_30@15m scored=37
+  skip stoch_30@15m: No numeric types to aggregate
+[USDCHF] stoch_30@15m scored=37
+  … don_10@1m (499,680 bars)
+[USDCHF] don_10@1m scored=37
+  ✓ GATE don_10       1m  RR=2.4 n=21688 E[R]=0.02 90dOOS=0.058
+[USDCHF] don_10@1m scored=38
+  … don_10@3m (166,560 bars)
+[USDCHF] don_10@3m scored=38
+[USDCHF] don_10@3m scored=39
+  … don_10@5m (99,936 bars)
+[USDCHF] don_10@5m scored=39
+[USDCHF] don_10@5m scored=40
+  … don_10@15m (33,312 bars)
+[USDCHF] don_10@15m scored=40
+[USDCHF] don_10@15m scored=41
+  … don_20@1m (499,680 bars)
+[USDCHF] don_20@1m scored=41
+  ✓ GATE don_20       1m  RR=4.0 n=14030 E[R]=0.034 90dOOS=0.07
+[USDCHF] don_20@1m scored=42
+  … don_20@3m (166,560 bars)
+[USDCHF] don_20@3m scored=42
+  ✓ GATE don_20       3m  RR=2.4 n=5432 E[R]=0.035 90dOOS=0.11
+[USDCHF] don_20@3m scored=43
+  … don_20@5m (99,936 bars)
+[USDCHF] don_20@5m scored=43
+[USDCHF] don_20@5m scored=44
+  … don_20@15m (33,312 bars)
+[USDCHF] don_20@15m scored=44
+[USDCHF] don_20@15m scored=45
+  … don_30@1m (499,680 bars)
+[USDCHF] don_30@1m scored=45
+  ✓ GATE don_30       1m  RR=4.0 n=12044 E[R]=0.055 90dOOS=0.11
+[USDCHF] don_30@1m scored=46
+  … don_30@3m (166,560 bars)
+[USDCHF] don_30@3m scored=46
+[USDCHF] don_30@3m scored=47
+  … don_30@5m (99,936 bars)
+[USDCHF] don_30@5m scored=47
+[USDCHF] don_30@5m scored=48
+  … don_30@15m (33,312 bars)
+[USDCHF] don_30@15m scored=48
+[USDCHF] don_30@15m scored=49
+  … don_55@1m (499,680 bars)
+[USDCHF] don_55@1m scored=49
+  ✓ GATE don_55       1m  RR=4.0 n=9099 E[R]=0.051 90dOOS=0.106
+[USDCHF] don_55@1m scored=50
+  … don_55@3m (166,560 bars)
+[USDCHF] don_55@3m scored=50
+[USDCHF] don_55@3m scored=51
+  … don_55@5m (99,936 bars)
+[USDCHF] don_55@5m scored=51
+[USDCHF] don_55@5m scored=52
+  … don_55@15m (33,312 bars)
+[USDCHF] don_55@15m scored=52
+[USDCHF] don_55@15m scored=53
+  … don_100@1m (499,680 bars)
+[USDCHF] don_100@1m scored=53
+  ✓ GATE don_100      1m  RR=4.0 n=6786 E[R]=0.057 90dOOS=0.202
+[USDCHF] don_100@1m scored=54
+  … don_100@3m (166,560 bars)
+[USDCHF] don_100@3m scored=54
+[USDCHF] don_100@3m scored=55
+  … don_100@5m (99,936 bars)
+[USDCHF] don_100@5m scored=55
+[USDCHF] don_100@5m scored=56
+  … don_100@15m (33,312 bars)
+[USDCHF] don_100@15m scored=56
+[USDCHF] don_100@15m scored=57
+  … cta_5_20@1m (499,680 bars)
+[USDCHF] cta_5_20@1m scored=57
+[USDCHF] cta_5_20@1m scored=58
+  … cta_5_20@3m (166,560 bars)
+[USDCHF] cta_5_20@3m scored=58
+[USDCHF] cta_5_20@3m scored=59
+  … cta_5_20@5m (99,936 bars)
+[USDCHF] cta_5_20@5m scored=59
+[USDCHF] cta_5_20@5m scored=60
+  … cta_5_20@15m (33,312 bars)
+[USDCHF] cta_5_20@15m scored=60
+[USDCHF] cta_5_20@15m scored=61
+  … cta_10_40@1m (499,680 bars)
+[USDCHF] cta_10_40@1m scored=61
+[USDCHF] cta_10_40@1m scored=62
+  … cta_10_40@3m (166,560 bars)
+[USDCHF] cta_10_40@3m scored=62
+[USDCHF] cta_10_40@3m scored=63
+  … cta_10_40@5m (99,936 bars)
+[USDCHF] cta_10_40@5m scored=63
+[USDCHF] cta_10_40@5m scored=64
+  … cta_10_40@15m (33,312 bars)
+[USDCHF] cta_10_40@15m scored=64
+  ✓ GATE cta_10_40    15m RR=3.0 n=455 E[R]=0.116 90dOOS=0.548
+[USDCHF] cta_10_40@15m scored=65
+  … cta_12_26@1m (499,680 bars)
+[USDCHF] cta_12_26@1m scored=65
+[USDCHF] cta_12_26@1m scored=66
+  … cta_12_26@3m (166,560 bars)
+[USDCHF] cta_12_26@3m scored=66
+  ✓ GATE cta_12_26    3m  RR=2.4 n=2627 E[R]=0.065 90dOOS=0.101
+[USDCHF] cta_12_26@3m scored=67
+  … cta_12_26@5m (99,936 bars)
+[USDCHF] cta_12_26@5m scored=67
+  ✓ GATE cta_12_26    5m  RR=2.4 n=1527 E[R]=0.075 90dOOS=0.098
+[USDCHF] cta_12_26@5m scored=68
+  … cta_12_26@15m (33,312 bars)
+[USDCHF] cta_12_26@15m scored=68
+[USDCHF] cta_12_26@15m scored=69
+  … cta_20_50@1m (499,680 bars)
+[USDCHF] cta_20_50@1m scored=69
+[USDCHF] cta_20_50@1m scored=70
+  … cta_20_50@3m (166,560 bars)
+[USDCHF] cta_20_50@3m scored=70
+[USDCHF] cta_20_50@3m scored=71
+  … cta_20_50@5m (99,936 bars)
+[USDCHF] cta_20_50@5m scored=71
+[USDCHF] cta_20_50@5m scored=72
+  … cta_20_50@15m (33,312 bars)
+[USDCHF] cta_20_50@15m scored=72
+  ✓ GATE cta_20_50    15m RR=1.5 n=402 E[R]=0.063 90dOOS=0.379
+[USDCHF] cta_20_50@15m scored=73
+  … cta_50_200@1m (499,680 bars)
+[USDCHF] cta_50_200@1m scored=73
+  ✓ GATE cta_50_200   1m  RR=4.0 n=2072 E[R]=0.098 90dOOS=0.174
+[USDCHF] cta_50_200@1m scored=74
+  … cta_50_200@3m (166,560 bars)
+[USDCHF] cta_50_200@3m scored=74
+  ✓ GATE cta_50_200   3m  RR=4.0 n=715 E[R]=0.126 90dOOS=0.795
+[USDCHF] cta_50_200@3m scored=75
+  … cta_50_200@5m (99,936 bars)
+[USDCHF] cta_50_200@5m scored=75
+  ✓ GATE cta_50_200   5m  RR=2.4 n=441 E[R]=0.149 90dOOS=0.133
+[USDCHF] cta_50_200@5m scored=76
+  … cta_50_200@15m (33,312 bars)
+[USDCHF] cta_50_200@15m scored=76
+[USDCHF] cta_50_200@15m scored=77
+  … tsmom@1m (499,680 bars)
+[USDCHF] tsmom@1m scored=77
+  ✓ GATE tsmom        1m  RR=3.0 n=2997 E[R]=0.069 90dOOS=0.164
+[USDCHF] tsmom@1m scored=78
+  … tsmom@3m (166,560 bars)
+[USDCHF] tsmom@3m scored=78
+  ✓ GATE tsmom        3m  RR=1.5 n=1237 E[R]=0.053 90dOOS=0.514
+[USDCHF] tsmom@3m scored=79
+  … tsmom@5m (99,936 bars)
+[USDCHF] tsmom@5m scored=79
+  ✓ GATE tsmom        5m  RR=4.0 n=552 E[R]=0.159 90dOOS=0.282
+[USDCHF] tsmom@5m scored=80
+  … tsmom@15m (33,312 bars)
+[USDCHF] tsmom@15m scored=80
+[USDCHF] tsmom@15m scored=81
+  … roc_20@1m (499,680 bars)
+[USDCHF] roc_20@1m scored=81
+  … roc_20@3m (166,560 bars)
+[USDCHF] roc_20@3m scored=81
+  … roc_20@5m (99,936 bars)
+[USDCHF] roc_20@5m scored=81
+  … roc_20@15m (33,312 bars)
+[USDCHF] roc_20@15m scored=81
+  … roc_60@1m (499,680 bars)
+[USDCHF] roc_60@1m scored=81
+  … roc_60@3m (166,560 bars)
+[USDCHF] roc_60@3m scored=81
+  … roc_60@5m (99,936 bars)
+[USDCHF] roc_60@5m scored=81
+  … roc_60@15m (33,312 bars)
+[USDCHF] roc_60@15m scored=81
+  … roc_120@1m (499,680 bars)
+[USDCHF] roc_120@1m scored=81
+  … roc_120@3m (166,560 bars)
+[USDCHF] roc_120@3m scored=81
+  … roc_120@5m (99,936 bars)
+[USDCHF] roc_120@5m scored=81
+  … roc_120@15m (33,312 bars)
+[USDCHF] roc_120@15m scored=81
+  … bb_1.5@1m (499,680 bars)
+[USDCHF] bb_1.5@1m scored=81
+  ✓ GATE bb_1.5       1m  RR=4.0 n=9152 E[R]=0.09 90dOOS=0.025
+[USDCHF] bb_1.5@1m scored=82
+  … bb_1.5@3m (166,560 bars)
+[USDCHF] bb_1.5@3m scored=82
+  ✓ GATE bb_1.5       3m  RR=2.0 n=3927 E[R]=0.057 90dOOS=0.15
+[USDCHF] bb_1.5@3m scored=83
+  … bb_1.5@5m (99,936 bars)
+[USDCHF] bb_1.5@5m scored=83
+  ✓ GATE bb_1.5       5m  RR=2.4 n=2297 E[R]=0.067 90dOOS=0.027
+[USDCHF] bb_1.5@5m scored=84
+  … bb_1.5@15m (33,312 bars)
+[USDCHF] bb_1.5@15m scored=84
+  ✓ GATE bb_1.5       15m RR=4.0 n=656 E[R]=0.128 90dOOS=0.277
+[USDCHF] bb_1.5@15m scored=85
+  … bb_2@1m (499,680 bars)
+[USDCHF] bb_2@1m scored=85
+  ✓ GATE bb_2         1m  RR=2.4 n=2111 E[R]=0.119 90dOOS=0.01
+[USDCHF] bb_2@1m scored=86
+  … bb_2@3m (166,560 bars)
+[USDCHF] bb_2@3m scored=86
+  ✓ GATE bb_2         3m  RR=4.0 n=710 E[R]=0.155 90dOOS=0.346
+[USDCHF] bb_2@3m scored=87
+  … bb_2@5m (99,936 bars)
+[USDCHF] bb_2@5m scored=87
+[USDCHF] bb_2@5m scored=88
+  … bb_2@15m (33,312 bars)
+[USDCHF] bb_2@15m scored=88
+  ✓ GATE bb_2         15m RR=4.0 n=194 E[R]=0.16 90dOOS=0.875
+[USDCHF] bb_2@15m scored=89
+  … bb_2.5@1m (499,680 bars)
+[USDCHF] bb_2.5@1m scored=89
+  ✓ GATE bb_2.5       1m  RR=4.0 n=171 E[R]=0.754 90dOOS=0.5
+[USDCHF] bb_2.5@1m scored=90
+  … bb_2.5@3m (166,560 bars)
+[USDCHF] bb_2.5@3m scored=90
+[USDCHF] bb_2.5@3m scored=91
+  … bb_2.5@5m (99,936 bars)
+[USDCHF] bb_2.5@5m scored=91
+[USDCHF] bb_2.5@5m scored=92
+  … bb_2.5@15m (33,312 bars)
+[USDCHF] bb_2.5@15m scored=92
+[USDCHF] bb_2.5@15m scored=93
+  … z_20_2@1m (499,680 bars)
+[USDCHF] z_20_2@1m scored=93
+  ✓ GATE z_20_2       1m  RR=2.4 n=13958 E[R]=0.042 90dOOS=0.057
+[USDCHF] z_20_2@1m scored=94
+  … z_20_2@3m (166,560 bars)
+[USDCHF] z_20_2@3m scored=94
+[USDCHF] z_20_2@3m scored=95
+  … z_20_2@5m (99,936 bars)
+[USDCHF] z_20_2@5m scored=95
+  ✓ GATE z_20_2       5m  RR=3.0 n=2444 E[R]=0.051 90dOOS=0.035
+[USDCHF] z_20_2@5m scored=96
+  … z_20_2@15m (33,312 bars)
+[USDCHF] z_20_2@15m scored=96
+  ✓ GATE z_20_2       15m RR=4.0 n=692 E[R]=0.055 90dOOS=0.154
+[USDCHF] z_20_2@15m scored=97
+  … z_40_2@1m (499,680 bars)
+[USDCHF] z_40_2@1m scored=97
+  ✓ GATE z_40_2       1m  RR=2.4 n=11593 E[R]=0.035 90dOOS=0.008
+[USDCHF] z_40_2@1m scored=98
+  … z_40_2@3m (166,560 bars)
+[USDCHF] z_40_2@3m scored=98
+  ✓ GATE z_40_2       3m  RR=4.0 n=3041 E[R]=0.069 90dOOS=0.028
+[USDCHF] z_40_2@3m scored=99
+  … z_40_2@5m (99,936 bars)
+[USDCHF] z_40_2@5m scored=99
+  ✓ GATE z_40_2       5m  RR=4.0 n=1804 E[R]=0.073 90dOOS=0.211
+[USDCHF] z_40_2@5m scored=100
+  … z_40_2@15m (33,312 bars)
+[USDCHF] z_40_2@15m scored=100
+[USDCHF] z_40_2@15m scored=101
+  … rsi@1m (499,680 bars)
+[USDCHF] rsi@1m scored=101
+  ✓ GATE rsi          1m  RR=3.0 n=12989 E[R]=0.041 90dOOS=0.082
+[USDCHF] rsi@1m scored=102
+  … rsi@3m (166,560 bars)
+[USDCHF] rsi@3m scored=102
+[USDCHF] rsi@3m scored=103
+  … rsi@5m (99,936 bars)
+[USDCHF] rsi@5m scored=103
+[USDCHF] rsi@5m scored=104
+  … rsi@15m (33,312 bars)
+[USDCHF] rsi@15m scored=104
+[USDCHF] rsi@15m scored=105
+  … atrbrk@1m (499,680 bars)
+[USDCHF] atrbrk@1m scored=105
+[USDCHF] atrbrk@1m scored=106
+  … atrbrk@3m (166,560 bars)
+[USDCHF] atrbrk@3m scored=106
+[USDCHF] atrbrk@3m scored=107
+  … atrbrk@5m (99,936 bars)
+[USDCHF] atrbrk@5m scored=107
+[USDCHF] atrbrk@5m scored=108
+  … atrbrk@15m (33,312 bars)
+[USDCHF] atrbrk@15m scored=108
+[USDCHF] atrbrk@15m scored=109
+  … volmom@1m (499,680 bars)
+[USDCHF] volmom@1m scored=109
+[USDCHF] volmom@1m scored=110
+  … volmom@3m (166,560 bars)
+[USDCHF] volmom@3m scored=110
+[USDCHF] volmom@3m scored=111
+  … volmom@5m (99,936 bars)
+[USDCHF] volmom@5m scored=111
+[USDCHF] volmom@5m scored=112
+  … volmom@15m (33,312 bars)
+[USDCHF] volmom@15m scored=112
+[USDCHF] volmom@15m scored=113
+  ✓ MATH bb_2+hf0.55          3m RR=1.5 n=355 E[R]=0.239
+  ✓ MATH bb_2+hf0.55          3m RR=2.0 n=354 E[R]=0.22
+  ✓ MATH bb_2+hf0.55          3m RR=2.4 n=353 E[R]=0.233
+  ✓ MATH bb_2+hf0.55          3m RR=3.0 n=351 E[R]=0.151
+  ✓ MATH bb_2+hf0.55          3m RR=4.0 n=341 E[R]=0.188
+  ✓ MATH bb_2+hf0.50          3m RR=1.5 n=227 E[R]=0.233
+  ✓ MATH bb_2+hf0.50          3m RR=2.0 n=227 E[R]=0.256
+  ✓ MATH bb_2+hf0.50          3m RR=2.4 n=226 E[R]=0.279
+  ✓ MATH bb_2+hf0.50          3m RR=3.0 n=225 E[R]=0.227
+  ✓ MATH bb_2+hf0.50          3m RR=4.0 n=218 E[R]=0.33
+  ✓ MATH bb_2+hf0.45          3m RR=1.5 n=127 E[R]=0.201
+  ✓ MATH bb_2+hf0.45          3m RR=2.0 n=127 E[R]=0.157
+  ✓ MATH bb_2+hf0.45          3m RR=2.4 n=127 E[R]=0.151
+  ✓ MATH bb_2+hf0.45          3m RR=3.0 n=127 E[R]=0.134
+  ✓ MATH bb_2+hf0.45          3m RR=4.0 n=125 E[R]=0.24
+  ✓ MATH bb_2+hf0.50_e0.25    3m RR=1.5 n=123 E[R]=0.28
+  ✓ MATH bb_2+hf0.50_e0.25    3m RR=2.0 n=123 E[R]=0.22
+  ✓ MATH bb_2+hf0.50_e0.25    3m RR=2.4 n=123 E[R]=0.244
+  ✓ MATH bb_2+hf0.50_e0.25    3m RR=3.0 n=123 E[R]=0.138
+  ✓ MATH bb_2+hf0.50_e0.25    3m RR=4.0 n=121 E[R]=0.281
+  ✓ MATH bb_2+e0.35           3m RR=1.5 n=270 E[R]=0.213
+  ✓ MATH bb_2+e0.35           3m RR=2.0 n=269 E[R]=0.238
+  ✓ MATH bb_2+e0.35           3m RR=2.4 n=269 E[R]=0.226
+  ✓ MATH bb_2+e0.35           3m RR=3.0 n=269 E[R]=0.279
+  ✓ MATH bb_2+e0.35           3m RR=4.0 n=263 E[R]=0.35
+  ✓ MATH bb_2.5+e0.35         1m RR=1.5 n=104 E[R]=0.37
+  ✓ MATH bb_2.5+e0.35         1m RR=2.4 n=104 E[R]=0.7
+  ✓ MATH bb_2.5+e0.35         1m RR=3.0 n=104 E[R]=0.808
+  ✓ MATH tsmom+hf0.55         5m RR=4.0 n=338 E[R]=0.169
+  ✓ MATH cta_50_200+hf0.55    3m RR=4.0 n=361 E[R]=0.136
+  ✓ MATH cta_50_200+hf0.50    3m RR=3.0 n=244 E[R]=0.082
+  ✓ MATH cta_50_200+hf0.50    3m RR=4.0 n=240 E[R]=0.083
+  ✓ MATH z_40_2+hf0.55        5m RR=1.5 n=1276 E[R]=0.056
+  ✓ MATH z_40_2+hf0.50        5m RR=1.5 n=830 E[R]=0.081
+  ✓ MATH z_40_2+hf0.50        5m RR=2.0 n=813 E[R]=0.077
+  ✓ MATH z_40_2+hf0.50        5m RR=2.4 n=794 E[R]=0.113
+  ✓ MATH z_40_2+hf0.50        5m RR=4.0 n=725 E[R]=0.166
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=2.4 n=685 E[R]=0.057
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=4.0 n=635 E[R]=0.079
+  ✓ MATH bb_2+hf0.55          15m RR=3.0 n=95 E[R]=0.137
+  ✓ MATH bb_2+hf0.55          15m RR=4.0 n=95 E[R]=0.316
+  ✓ MATH bb_1.5+hf0.50        1m RR=1.5 n=3712 E[R]=0.048
+  ✓ MATH bb_1.5+hf0.50        1m RR=2.0 n=3647 E[R]=0.06
+  ✓ MATH bb_1.5+hf0.45        1m RR=4.0 n=1742 E[R]=0.053
+  ✓ MATH bb_1.5+hf0.45_e0.30  1m RR=4.0 n=1280 E[R]=0.062
+  ✓ MATH bb_1.5+e0.35         1m RR=1.5 n=7313 E[R]=0.035
+  ✓ MATH bb_1.5+hf0.55        5m RR=2.4 n=1182 E[R]=0.061
+  ✓ MATH bb_1.5+hf0.55        5m RR=3.0 n=1088 E[R]=0.051
+  ✓ MATH bb_1.5+hf0.55        5m RR=4.0 n=1001 E[R]=0.099
+  ✓ MATH bb_1.5+hf0.50        5m RR=3.0 n=745 E[R]=0.095
+  ✓ MATH bb_1.5+hf0.50        5m RR=4.0 n=700 E[R]=0.179
+  ✓ MATH bb_1.5+hf0.45        5m RR=4.0 n=408 E[R]=0.091
+  ✓ MATH bb_1.5+hf0.50_e0.25  5m RR=4.0 n=482 E[R]=0.12
+  ✓ MATH bb_1.5+e0.35         5m RR=2.0 n=1249 E[R]=0.066
+  ✓ MATH bb_1.5+e0.35         5m RR=3.0 n=1153 E[R]=0.107
+  ✓ MATH bb_1.5+e0.35         5m RR=4.0 n=1084 E[R]=0.181
+
+######## UKOIL · live=cta_10_40 RR=4.0 ########
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+  … fib_liq@15m (33,312 bars)
+[UKOIL] fib_liq@15m scored=0
+[UKOIL] fib_liq@15m scored=1
+  … ema_pull@15m (33,312 bars)
+[UKOIL] ema_pull@15m scored=1
+[UKOIL] ema_pull@15m scored=2
+  … ema_tight@15m (33,312 bars)
+[UKOIL] ema_tight@15m scored=2
+[UKOIL] ema_tight@15m scored=3
+  … sma_cross@1m (499,680 bars)
+[UKOIL] sma_cross@1m scored=3
+  ✓ GATE sma_cross    1m  RR=4.0 n=6405 E[R]=0.041 90dOOS=0.135
+[UKOIL] sma_cross@1m scored=4
+  … sma_cross@3m (166,560 bars)
+[UKOIL] sma_cross@3m scored=4
+[UKOIL] sma_cross@3m scored=5
+  … sma_cross@5m (99,936 bars)
+[UKOIL] sma_cross@5m scored=5
+  ✓ GATE sma_cross    5m  RR=3.0 n=1319 E[R]=0.074 90dOOS=0.266
+[UKOIL] sma_cross@5m scored=6
+  … sma_cross@15m (33,312 bars)
+[UKOIL] sma_cross@15m scored=6
+[UKOIL] sma_cross@15m scored=7
+  … pa@15m (33,312 bars)
+[UKOIL] pa@15m scored=7
+[UKOIL] pa@15m scored=8
+  … liq@15m (33,312 bars)
+[UKOIL] liq@15m scored=8
+[UKOIL] liq@15m scored=9
+  … tl@15m (33,312 bars)
+[UKOIL] tl@15m scored=9
+  ✓ GATE tl           15m RR=3.0 n=320 E[R]=0.2 90dOOS=0.067
+[UKOIL] tl@15m scored=10
+  … obfvg@15m (33,312 bars)
+[UKOIL] obfvg@15m scored=10
+[UKOIL] obfvg@15m scored=11
+  … macd@15m (33,312 bars)
+[UKOIL] macd@15m scored=11
+[UKOIL] macd@15m scored=12
+  … engulf@15m (33,312 bars)
+[UKOIL] engulf@15m scored=12
+  ✓ GATE engulf       15m RR=2.4 n=825 E[R]=0.051 90dOOS=0.109
+[UKOIL] engulf@15m scored=13
+  … inside@15m (33,312 bars)
+[UKOIL] inside@15m scored=13
+[UKOIL] inside@15m scored=14
+  … ichi@15m (33,312 bars)
+[UKOIL] ichi@15m scored=14
+[UKOIL] ichi@15m scored=15
+  … psar@15m (33,312 bars)
+[UKOIL] psar@15m scored=15
+  ✓ GATE psar         15m RR=2.0 n=948 E[R]=0.054 90dOOS=0.4
+[UKOIL] psar@15m scored=16
+  … adx@15m (33,312 bars)
+[UKOIL] adx@15m scored=16
+[UKOIL] adx@15m scored=17
+  … st_2@1m (499,680 bars)
+[UKOIL] st_2@1m scored=17
+[UKOIL] st_2@1m scored=18
+  … st_2@3m (166,560 bars)
+[UKOIL] st_2@3m scored=18
+[UKOIL] st_2@3m scored=19
+  … st_2@5m (99,936 bars)
+[UKOIL] st_2@5m scored=19
+[UKOIL] st_2@5m scored=20
+  … st_2@15m (33,312 bars)
+[UKOIL] st_2@15m scored=20
+[UKOIL] st_2@15m scored=21
+  … st_3@1m (499,680 bars)
+[UKOIL] st_3@1m scored=21
+[UKOIL] st_3@1m scored=22
+  … st_3@3m (166,560 bars)
+[UKOIL] st_3@3m scored=22
+[UKOIL] st_3@3m scored=23
+  … st_3@5m (99,936 bars)
+[UKOIL] st_3@5m scored=23
+  ✓ GATE st_3         5m  RR=4.0 n=313 E[R]=0.118 90dOOS=0.176
+[UKOIL] st_3@5m scored=24
+  … st_3@15m (33,312 bars)
+[UKOIL] st_3@15m scored=24
+[UKOIL] st_3@15m scored=25
+  … kelt_1@1m (499,680 bars)
+[UKOIL] kelt_1@1m scored=25
+[UKOIL] kelt_1@1m scored=26
+  … kelt_1@3m (166,560 bars)
+[UKOIL] kelt_1@3m scored=26
+[UKOIL] kelt_1@3m scored=27
+  … kelt_1@5m (99,936 bars)
+[UKOIL] kelt_1@5m scored=27
+[UKOIL] kelt_1@5m scored=28
+  … kelt_1@15m (33,312 bars)
+[UKOIL] kelt_1@15m scored=28
+[UKOIL] kelt_1@15m scored=29
+  … kelt_1.5@1m (499,680 bars)
+[UKOIL] kelt_1.5@1m scored=29
+[UKOIL] kelt_1.5@1m scored=30
+  … kelt_1.5@3m (166,560 bars)
+[UKOIL] kelt_1.5@3m scored=30
+[UKOIL] kelt_1.5@3m scored=31
+  … kelt_1.5@5m (99,936 bars)
+[UKOIL] kelt_1.5@5m scored=31
+[UKOIL] kelt_1.5@5m scored=32
+  … kelt_1.5@15m (33,312 bars)
+[UKOIL] kelt_1.5@15m scored=32
+[UKOIL] kelt_1.5@15m scored=33
+  … kelt_2@1m (499,680 bars)
+[UKOIL] kelt_2@1m scored=33
+[UKOIL] kelt_2@1m scored=34
+  … kelt_2@3m (166,560 bars)
+[UKOIL] kelt_2@3m scored=34
+[UKOIL] kelt_2@3m scored=35
+  … kelt_2@5m (99,936 bars)
+[UKOIL] kelt_2@5m scored=35
+[UKOIL] kelt_2@5m scored=36
+  … kelt_2@15m (33,312 bars)
+[UKOIL] kelt_2@15m scored=36
+[UKOIL] kelt_2@15m scored=37
+  … stoch_20@1m (499,680 bars)
+[UKOIL] stoch_20@1m scored=37
+  skip stoch_20@1m: No numeric types to aggregate
+[UKOIL] stoch_20@1m scored=37
+  … stoch_20@3m (166,560 bars)
+[UKOIL] stoch_20@3m scored=37
+  skip stoch_20@3m: No numeric types to aggregate
+[UKOIL] stoch_20@3m scored=37
+  … stoch_20@5m (99,936 bars)
+[UKOIL] stoch_20@5m scored=37
+  skip stoch_20@5m: No numeric types to aggregate
+[UKOIL] stoch_20@5m scored=37
+  … stoch_20@15m (33,312 bars)
+[UKOIL] stoch_20@15m scored=37
+  skip stoch_20@15m: No numeric types to aggregate
+[UKOIL] stoch_20@15m scored=37
+  … stoch_30@1m (499,680 bars)
+[UKOIL] stoch_30@1m scored=37
+  skip stoch_30@1m: No numeric types to aggregate
+[UKOIL] stoch_30@1m scored=37
+  … stoch_30@3m (166,560 bars)
+[UKOIL] stoch_30@3m scored=37
+  skip stoch_30@3m: No numeric types to aggregate
+[UKOIL] stoch_30@3m scored=37
+  … stoch_30@5m (99,936 bars)
+[UKOIL] stoch_30@5m scored=37
+  skip stoch_30@5m: No numeric types to aggregate
+[UKOIL] stoch_30@5m scored=37
+  … stoch_30@15m (33,312 bars)
+[UKOIL] stoch_30@15m scored=37
+  skip stoch_30@15m: No numeric types to aggregate
+[UKOIL] stoch_30@15m scored=37
+  … don_10@1m (499,680 bars)
+[UKOIL] don_10@1m scored=37
+[UKOIL] don_10@1m scored=38
+  … don_10@3m (166,560 bars)
+[UKOIL] don_10@3m scored=38
+[UKOIL] don_10@3m scored=39
+  … don_10@5m (99,936 bars)
+[UKOIL] don_10@5m scored=39
+[UKOIL] don_10@5m scored=40
+  … don_10@15m (33,312 bars)
+[UKOIL] don_10@15m scored=40
+[UKOIL] don_10@15m scored=41
+  … don_20@1m (499,680 bars)
+[UKOIL] don_20@1m scored=41
+[UKOIL] don_20@1m scored=42
+  … don_20@3m (166,560 bars)
+[UKOIL] don_20@3m scored=42
+[UKOIL] don_20@3m scored=43
+  … don_20@5m (99,936 bars)
+[UKOIL] don_20@5m scored=43
+  ✓ GATE don_20       5m  RR=4.0 n=2176 E[R]=0.057 90dOOS=0.185
+[UKOIL] don_20@5m scored=44
+  … don_20@15m (33,312 bars)
+[UKOIL] don_20@15m scored=44
+[UKOIL] don_20@15m scored=45
+  … don_30@1m (499,680 bars)
+[UKOIL] don_30@1m scored=45
+[UKOIL] don_30@1m scored=46
+  … don_30@3m (166,560 bars)
+[UKOIL] don_30@3m scored=46
+[UKOIL] don_30@3m scored=47
+  … don_30@5m (99,936 bars)
+[UKOIL] don_30@5m scored=47
+[UKOIL] don_30@5m scored=48
+  … don_30@15m (33,312 bars)
+[UKOIL] don_30@15m scored=48
+[UKOIL] don_30@15m scored=49
+  … don_55@1m (499,680 bars)
+[UKOIL] don_55@1m scored=49
+[UKOIL] don_55@1m scored=50
+  … don_55@3m (166,560 bars)
+[UKOIL] don_55@3m scored=50
+[UKOIL] don_55@3m scored=51
+  … don_55@5m (99,936 bars)
+[UKOIL] don_55@5m scored=51
+[UKOIL] don_55@5m scored=52
+  … don_55@15m (33,312 bars)
+[UKOIL] don_55@15m scored=52
+[UKOIL] don_55@15m scored=53
+  … don_100@1m (499,680 bars)
+[UKOIL] don_100@1m scored=53
+[UKOIL] don_100@1m scored=54
+  … don_100@3m (166,560 bars)
+[UKOIL] don_100@3m scored=54
+[UKOIL] don_100@3m scored=55
+  … don_100@5m (99,936 bars)
+[UKOIL] don_100@5m scored=55
+[UKOIL] don_100@5m scored=56
+  … don_100@15m (33,312 bars)
+[UKOIL] don_100@15m scored=56
+[UKOIL] don_100@15m scored=57
+  … cta_5_20@1m (499,680 bars)
+[UKOIL] cta_5_20@1m scored=57
+[UKOIL] cta_5_20@1m scored=58
+  … cta_5_20@3m (166,560 bars)
+[UKOIL] cta_5_20@3m scored=58
+[UKOIL] cta_5_20@3m scored=59
+  … cta_5_20@5m (99,936 bars)
+[UKOIL] cta_5_20@5m scored=59
+[UKOIL] cta_5_20@5m scored=60
+  … cta_5_20@15m (33,312 bars)
+[UKOIL] cta_5_20@15m scored=60
+  ✓ GATE cta_5_20     15m RR=4.0 n=504 E[R]=0.091 90dOOS=0.379
+[UKOIL] cta_5_20@15m scored=61
+  … cta_10_40@1m (499,680 bars)
+[UKOIL] cta_10_40@1m scored=61
+  ✓ GATE cta_10_40    1m  RR=4.0 n=5629 E[R]=0.044 90dOOS=0.359
+[UKOIL] cta_10_40@1m scored=62
+  … cta_10_40@3m (166,560 bars)
+[UKOIL] cta_10_40@3m scored=62
+[UKOIL] cta_10_40@3m scored=63
+  … cta_10_40@5m (99,936 bars)
+[UKOIL] cta_10_40@5m scored=63
+  ✓ GATE cta_10_40    5m  RR=4.0 n=1052 E[R]=0.183 90dOOS=0.689
+[UKOIL] cta_10_40@5m scored=64
+  … cta_10_40@15m (33,312 bars)
+[UKOIL] cta_10_40@15m scored=64
+[UKOIL] cta_10_40@15m scored=65
+  … cta_12_26@1m (499,680 bars)
+[UKOIL] cta_12_26@1m scored=65
+[UKOIL] cta_12_26@1m scored=66
+  … cta_12_26@3m (166,560 bars)
+[UKOIL] cta_12_26@3m scored=66
+[UKOIL] cta_12_26@3m scored=67
+  … cta_12_26@5m (99,936 bars)
+[UKOIL] cta_12_26@5m scored=67
+  ✓ GATE cta_12_26    5m  RR=4.0 n=1142 E[R]=0.095 90dOOS=0.712
+[UKOIL] cta_12_26@5m scored=68
+  … cta_12_26@15m (33,312 bars)
+[UKOIL] cta_12_26@15m scored=68
+  ✓ GATE cta_12_26    15m RR=1.5 n=530 E[R]=0.071 90dOOS=0.181
+[UKOIL] cta_12_26@15m scored=69
+  … cta_20_50@1m (499,680 bars)
+[UKOIL] cta_20_50@1m scored=69
+[UKOIL] cta_20_50@1m scored=70
+  … cta_20_50@3m (166,560 bars)
+[UKOIL] cta_20_50@3m scored=70
+[UKOIL] cta_20_50@3m scored=71
+  … cta_20_50@5m (99,936 bars)
+[UKOIL] cta_20_50@5m scored=71
+  ✓ GATE cta_20_50    5m  RR=4.0 n=843 E[R]=0.127 90dOOS=0.518
+[UKOIL] cta_20_50@5m scored=72
+  … cta_20_50@15m (33,312 bars)
+[UKOIL] cta_20_50@15m scored=72
+[UKOIL] cta_20_50@15m scored=73
+  … cta_50_200@1m (499,680 bars)
+[UKOIL] cta_50_200@1m scored=73
+[UKOIL] cta_50_200@1m scored=74
+  … cta_50_200@3m (166,560 bars)
+[UKOIL] cta_50_200@3m scored=74
+[UKOIL] cta_50_200@3m scored=75
+  … cta_50_200@5m (99,936 bars)
+[UKOIL] cta_50_200@5m scored=75
+[UKOIL] cta_50_200@5m scored=76
+  … cta_50_200@15m (33,312 bars)
+[UKOIL] cta_50_200@15m scored=76
+[UKOIL] cta_50_200@15m scored=77
+  … tsmom@1m (499,680 bars)
+[UKOIL] tsmom@1m scored=77
+[UKOIL] tsmom@1m scored=78
+  … tsmom@3m (166,560 bars)
+[UKOIL] tsmom@3m scored=78
+[UKOIL] tsmom@3m scored=79
+  … tsmom@5m (99,936 bars)
+[UKOIL] tsmom@5m scored=79
+  ✓ GATE tsmom        5m  RR=2.4 n=579 E[R]=0.116 90dOOS=0.228
+[UKOIL] tsmom@5m scored=80
+  … tsmom@15m (33,312 bars)
+[UKOIL] tsmom@15m scored=80
+[UKOIL] tsmom@15m scored=81
+  … roc_20@1m (499,680 bars)
+[UKOIL] roc_20@1m scored=81
+  … roc_20@3m (166,560 bars)
+[UKOIL] roc_20@3m scored=81
+  … roc_20@5m (99,936 bars)
+[UKOIL] roc_20@5m scored=81
+  … roc_20@15m (33,312 bars)
+[UKOIL] roc_20@15m scored=81
+  … roc_60@1m (499,680 bars)
+[UKOIL] roc_60@1m scored=81
+  … roc_60@3m (166,560 bars)
+[UKOIL] roc_60@3m scored=81
+  … roc_60@5m (99,936 bars)
+[UKOIL] roc_60@5m scored=81
+  … roc_60@15m (33,312 bars)
+[UKOIL] roc_60@15m scored=81
+  … roc_120@1m (499,680 bars)
+[UKOIL] roc_120@1m scored=81
+  … roc_120@3m (166,560 bars)
+[UKOIL] roc_120@3m scored=81
+  … roc_120@5m (99,936 bars)
+[UKOIL] roc_120@5m scored=81
+  … roc_120@15m (33,312 bars)
+[UKOIL] roc_120@15m scored=81
+  … bb_1.5@1m (499,680 bars)
+[UKOIL] bb_1.5@1m scored=81
+  ✓ GATE bb_1.5       1m  RR=4.0 n=8320 E[R]=0.072 90dOOS=0.143
+[UKOIL] bb_1.5@1m scored=82
+  … bb_1.5@3m (166,560 bars)
+[UKOIL] bb_1.5@3m scored=82
+[UKOIL] bb_1.5@3m scored=83
+  … bb_1.5@5m (99,936 bars)
+[UKOIL] bb_1.5@5m scored=83
+[UKOIL] bb_1.5@5m scored=84
+  … bb_1.5@15m (33,312 bars)
+[UKOIL] bb_1.5@15m scored=84
+[UKOIL] bb_1.5@15m scored=85
+  … bb_2@1m (499,680 bars)
+[UKOIL] bb_2@1m scored=85
+[UKOIL] bb_2@1m scored=86
+  … bb_2@3m (166,560 bars)
+[UKOIL] bb_2@3m scored=86
+[UKOIL] bb_2@3m scored=87
+  … bb_2@5m (99,936 bars)
+[UKOIL] bb_2@5m scored=87
+[UKOIL] bb_2@5m scored=88
+  … bb_2@15m (33,312 bars)
+[UKOIL] bb_2@15m scored=88
+[UKOIL] bb_2@15m scored=89
+  … bb_2.5@1m (499,680 bars)
+[UKOIL] bb_2.5@1m scored=89
+[UKOIL] bb_2.5@1m scored=90
+  … bb_2.5@3m (166,560 bars)
+[UKOIL] bb_2.5@3m scored=90
+[UKOIL] bb_2.5@3m scored=91
+  … bb_2.5@5m (99,936 bars)
+[UKOIL] bb_2.5@5m scored=91
+[UKOIL] bb_2.5@5m scored=92
+  … bb_2.5@15m (33,312 bars)
+[UKOIL] bb_2.5@15m scored=92
+[UKOIL] bb_2.5@15m scored=93
+  … z_20_2@1m (499,680 bars)
+[UKOIL] z_20_2@1m scored=93
+  ✓ GATE z_20_2       1m  RR=2.4 n=12100 E[R]=0.055 90dOOS=0.051
+[UKOIL] z_20_2@1m scored=94
+  … z_20_2@3m (166,560 bars)
+[UKOIL] z_20_2@3m scored=94
+[UKOIL] z_20_2@3m scored=95
+  … z_20_2@5m (99,936 bars)
+[UKOIL] z_20_2@5m scored=95
+[UKOIL] z_20_2@5m scored=96
+  … z_20_2@15m (33,312 bars)
+[UKOIL] z_20_2@15m scored=96
+[UKOIL] z_20_2@15m scored=97
+  … z_40_2@1m (499,680 bars)
+[UKOIL] z_40_2@1m scored=97
+[UKOIL] z_40_2@1m scored=98
+  … z_40_2@3m (166,560 bars)
+[UKOIL] z_40_2@3m scored=98
+[UKOIL] z_40_2@3m scored=99
+  … z_40_2@5m (99,936 bars)
+[UKOIL] z_40_2@5m scored=99
+  ✓ GATE z_40_2       5m  RR=4.0 n=1609 E[R]=0.091 90dOOS=0.134
+[UKOIL] z_40_2@5m scored=100
+  … z_40_2@15m (33,312 bars)
+[UKOIL] z_40_2@15m scored=100
+[UKOIL] z_40_2@15m scored=101
+  … rsi@1m (499,680 bars)
+[UKOIL] rsi@1m scored=101
+  ✓ GATE rsi          1m  RR=2.0 n=13235 E[R]=0.042 90dOOS=0.035
+[UKOIL] rsi@1m scored=102
+  … rsi@3m (166,560 bars)
+[UKOIL] rsi@3m scored=102
+[UKOIL] rsi@3m scored=103
+  … rsi@5m (99,936 bars)
+[UKOIL] rsi@5m scored=103
+  ✓ GATE rsi          5m  RR=4.0 n=1812 E[R]=0.079 90dOOS=0.49
+[UKOIL] rsi@5m scored=104
+  … rsi@15m (33,312 bars)
+[UKOIL] rsi@15m scored=104
+[UKOIL] rsi@15m scored=105
+  … atrbrk@1m (499,680 bars)
+[UKOIL] atrbrk@1m scored=105
+[UKOIL] atrbrk@1m scored=106
+  … atrbrk@3m (166,560 bars)
+[UKOIL] atrbrk@3m scored=106
+[UKOIL] atrbrk@3m scored=107
+  … atrbrk@5m (99,936 bars)
+[UKOIL] atrbrk@5m scored=107
+[UKOIL] atrbrk@5m scored=108
+  … atrbrk@15m (33,312 bars)
+[UKOIL] atrbrk@15m scored=108
+[UKOIL] atrbrk@15m scored=109
+  … volmom@1m (499,680 bars)
+[UKOIL] volmom@1m scored=109
+  ✓ GATE volmom       1m  RR=4.0 n=7542 E[R]=0.045 90dOOS=0.139
+[UKOIL] volmom@1m scored=110
+  … volmom@3m (166,560 bars)
+[UKOIL] volmom@3m scored=110
+[UKOIL] volmom@3m scored=111
+  … volmom@5m (99,936 bars)
+[UKOIL] volmom@5m scored=111
+[UKOIL] volmom@5m scored=112
+  … volmom@15m (33,312 bars)
+[UKOIL] volmom@15m scored=112
+[UKOIL] volmom@15m scored=113
+  ✓ MATH cta_10_40+hf0.55     5m RR=2.0 n=739 E[R]=0.064
+  ✓ MATH cta_10_40+hf0.55     5m RR=2.4 n=708 E[R]=0.143
+  ✓ MATH cta_10_40+hf0.55     5m RR=3.0 n=690 E[R]=0.119
+  ✓ MATH cta_10_40+hf0.55     5m RR=4.0 n=637 E[R]=0.224
+  ✓ MATH cta_10_40+hf0.50     5m RR=2.0 n=469 E[R]=0.075
+  ✓ MATH cta_10_40+hf0.50     5m RR=2.4 n=459 E[R]=0.119
+  ✓ MATH cta_10_40+hf0.50     5m RR=3.0 n=451 E[R]=0.135
+  ✓ MATH cta_10_40+hf0.50     5m RR=4.0 n=427 E[R]=0.136
+  ✓ MATH cta_10_40+hf0.45     5m RR=2.0 n=292 E[R]=0.068
+  ✓ MATH cta_10_40+hf0.45     5m RR=2.4 n=286 E[R]=0.129
+  ✓ MATH cta_10_40+hf0.45     5m RR=3.0 n=286 E[R]=0.175
+  ✓ MATH cta_10_40+hf0.45     5m RR=4.0 n=281 E[R]=0.192
+  ✓ MATH cta_10_40+hf0.45_e0. 5m RR=2.4 n=227 E[R]=0.078
+  ✓ MATH cta_10_40+hf0.45_e0. 5m RR=3.0 n=227 E[R]=0.11
+  ✓ MATH cta_10_40+e0.35      5m RR=4.0 n=894 E[R]=0.051
+  ✓ MATH tl+e0.35             15m RR=1.5 n=327 E[R]=0.154
+  ✓ MATH tl+e0.35             15m RR=3.0 n=297 E[R]=0.253
+  ✓ MATH tl+e0.35             15m RR=4.0 n=285 E[R]=0.211
+  ✓ MATH cta_12_26+hf0.55     5m RR=4.0 n=723 E[R]=0.113
+  ✓ MATH cta_12_26+hf0.45     5m RR=3.0 n=319 E[R]=0.053
+  ✓ MATH cta_12_26+hf0.50_e0. 5m RR=2.0 n=463 E[R]=0.069
+  ✓ MATH cta_12_26+hf0.50_e0. 5m RR=3.0 n=448 E[R]=0.054
+  ✓ MATH cta_12_26+hf0.50_e0. 5m RR=4.0 n=431 E[R]=0.102
+  ✓ MATH cta_12_26+hf0.45_e0. 5m RR=2.0 n=257 E[R]=0.062
+  ✓ MATH cta_12_26+hf0.45_e0. 5m RR=3.0 n=252 E[R]=0.143
+  ✓ MATH cta_12_26+hf0.45_e0. 5m RR=4.0 n=247 E[R]=0.255
+  ✓ MATH cta_20_50+hf0.55     5m RR=2.0 n=543 E[R]=0.077
+  ✓ MATH cta_20_50+hf0.55     5m RR=2.4 n=533 E[R]=0.078
+  ✓ MATH cta_20_50+hf0.55     5m RR=3.0 n=520 E[R]=0.069
+  ✓ MATH cta_20_50+hf0.55     5m RR=4.0 n=491 E[R]=0.11
+  ✓ MATH cta_20_50+hf0.50     5m RR=4.0 n=325 E[R]=0.077
+  ✓ MATH cta_20_50+hf0.45     5m RR=3.0 n=209 E[R]=0.091
+  ✓ MATH cta_20_50+hf0.45     5m RR=4.0 n=205 E[R]=0.098
+  ✓ MATH cta_20_50+e0.35      5m RR=4.0 n=606 E[R]=0.122
+  ✓ MATH cta_10_40+hf0.50     1m RR=4.0 n=2125 E[R]=0.08
+  ✓ MATH cta_10_40+hf0.45     1m RR=4.0 n=1146 E[R]=0.095
+  ✓ MATH cta_10_40+hf0.50_e0. 1m RR=2.4 n=1907 E[R]=0.055
+  ✓ MATH cta_10_40+hf0.50_e0. 1m RR=4.0 n=1812 E[R]=0.079
+  ✓ MATH cta_10_40+hf0.45_e0. 1m RR=2.4 n=968 E[R]=0.064
+  ✓ MATH tsmom+hf0.50         5m RR=2.4 n=257 E[R]=0.111
+  ✓ MATH tsmom+hf0.45         5m RR=1.5 n=154 E[R]=0.169
+  ✓ MATH tsmom+hf0.45         5m RR=2.4 n=146 E[R]=0.327
+  ✓ MATH tsmom+e0.35          5m RR=2.4 n=434 E[R]=0.159
+  ✓ MATH cta_5_20+hf0.55      15m RR=2.0 n=370 E[R]=0.054
+  ✓ MATH cta_5_20+hf0.55      15m RR=2.4 n=361 E[R]=0.064
+  ✓ MATH cta_5_20+hf0.50      15m RR=1.5 n=273 E[R]=0.053
+  ✓ MATH cta_5_20+hf0.50      15m RR=2.4 n=249 E[R]=0.106
+  ✓ MATH z_20_2+hf0.55        1m RR=4.0 n=5491 E[R]=0.058
+  ✓ MATH z_20_2+hf0.50        1m RR=3.0 n=3914 E[R]=0.053
+  ✓ MATH z_20_2+hf0.50        1m RR=4.0 n=3627 E[R]=0.097
+  ✓ MATH z_20_2+hf0.45        1m RR=2.4 n=2147 E[R]=0.067
+  ✓ MATH z_20_2+hf0.45        1m RR=3.0 n=2071 E[R]=0.097
+  ✓ MATH z_20_2+hf0.45        1m RR=4.0 n=1960 E[R]=0.14
+  ✓ MATH z_20_2+hf0.50_e0.25  1m RR=4.0 n=2959 E[R]=0.08
+  ✓ MATH z_20_2+hf0.45_e0.30  1m RR=4.0 n=1518 E[R]=0.094
+  ✓ MATH z_20_2+e0.35         1m RR=4.0 n=7323 E[R]=0.054
+
+##### DENSIFY round 1 (elapsed=7991s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r1 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r1 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r1 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r1 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r1 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r1 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+  ↑ USDCHF improved → bb_2+D1_hf0.58 RR=4.0 n=434 score=14.558
+densify r1 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r1 [UKOIL]
+
+##### DENSIFY round 2 (elapsed=8404s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r2 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r2 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r2 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r2 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r2 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r2 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r2 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r2 [UKOIL]
+
+##### DENSIFY round 3 (elapsed=8814s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r3 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r3 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r3 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r3 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r3 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r3 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r3 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r3 [UKOIL]
+
+##### DENSIFY round 4 (elapsed=9224s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r4 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r4 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r4 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r4 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r4 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r4 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r4 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r4 [UKOIL]
+
+##### DENSIFY round 5 (elapsed=9637s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r5 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r5 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r5 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r5 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r5 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r5 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r5 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r5 [UKOIL]
+
+##### DENSIFY round 6 (elapsed=10047s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r6 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r6 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r6 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r6 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r6 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r6 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r6 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r6 [UKOIL]
+
+##### DENSIFY round 7 (elapsed=10458s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r7 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r7 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r7 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r7 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r7 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r7 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r7 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r7 [UKOIL]
+
+##### DENSIFY round 8 (elapsed=10870s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r8 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r8 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r8 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r8 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r8 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r8 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r8 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r8 [UKOIL]
+
+##### DENSIFY round 9 (elapsed=11279s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r9 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r9 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r9 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r9 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r9 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r9 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r9 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r9 [UKOIL]
+
+##### DENSIFY round 10 (elapsed=11690s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r10 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r10 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r10 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r10 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r10 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r10 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r10 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r10 [UKOIL]
+
+##### DENSIFY round 11 (elapsed=12103s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r11 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r11 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r11 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r11 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r11 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r11 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r11 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r11 [UKOIL]
+
+##### DENSIFY round 12 (elapsed=12512s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r12 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r12 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r12 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r12 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r12 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r12 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r12 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r12 [UKOIL]
+
+##### DENSIFY round 13 (elapsed=12923s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r13 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r13 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r13 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r13 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r13 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r13 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r13 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r13 [UKOIL]
+
+##### DENSIFY round 14 (elapsed=13335s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r14 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r14 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r14 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r14 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r14 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r14 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r14 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r14 [UKOIL]
+
+##### DENSIFY round 15 (elapsed=13750s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r15 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r15 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r15 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r15 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r15 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r15 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r15 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r15 [UKOIL]
+
+##### DENSIFY round 16 (elapsed=14168s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r16 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r16 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r16 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r16 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r16 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r16 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r16 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r16 [UKOIL]
+
+##### DENSIFY round 17 (elapsed=15788s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r17 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r17 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r17 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r17 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r17 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r17 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r17 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r17 [UKOIL]
+
+##### DENSIFY round 18 (elapsed=16354s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r18 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r18 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r18 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r18 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r18 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r18 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r18 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r18 [UKOIL]
+
+##### DENSIFY round 19 (elapsed=16819s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r19 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r19 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r19 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r19 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r19 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r19 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r19 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r19 [UKOIL]
+
+##### DENSIFY round 20 (elapsed=17253s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r20 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r20 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r20 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r20 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r20 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r20 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r20 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r20 [UKOIL]
+
+##### DENSIFY round 21 (elapsed=17663s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r21 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r21 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r21 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r21 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r21 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r21 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r21 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r21 [UKOIL]
+
+##### DENSIFY round 22 (elapsed=18071s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r22 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r22 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r22 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r22 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r22 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r22 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r22 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r22 [UKOIL]
+
+##### DENSIFY round 23 (elapsed=18475s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r23 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r23 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r23 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r23 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r23 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r23 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r23 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r23 [UKOIL]
+
+##### DENSIFY round 24 (elapsed=18877s / 28800s) #####
+  load ETHUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load ETHUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load ETHUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load ETHUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r24 [ETHUSD]
+  load BTCUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load BTCUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load BTCUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load BTCUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r24 [BTCUSD]
+  load GOLD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load GOLD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load GOLD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load GOLD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r24 [GOLD]
+  load NAS100 1m: 499,680 bars 2025-08-11→2026-07-23
+  load NAS100 3m: 166,560 bars 2025-08-11→2026-07-23
+  load NAS100 5m: 99,936 bars 2025-08-11→2026-07-23
+  load NAS100 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r24 [NAS100]
+  load USDJPY 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDJPY 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDJPY 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDJPY 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r24 [USDJPY]
+  load AUDUSD 1m: 499,680 bars 2025-08-11→2026-07-23
+  load AUDUSD 3m: 166,560 bars 2025-08-11→2026-07-23
+  load AUDUSD 5m: 99,936 bars 2025-08-11→2026-07-23
+  load AUDUSD 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r24 [AUDUSD]
+  load USDCHF 1m: 499,680 bars 2025-08-11→2026-07-23
+  load USDCHF 3m: 166,560 bars 2025-08-11→2026-07-23
+  load USDCHF 5m: 99,936 bars 2025-08-11→2026-07-23
+  load USDCHF 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r24 [USDCHF]
+  load UKOIL 1m: 499,680 bars 2025-08-11→2026-07-23
+  load UKOIL 3m: 166,560 bars 2025-08-11→2026-07-23
+  load UKOIL 5m: 99,936 bars 2025-08-11→2026-07-23
+  load UKOIL 15m: 33,312 bars 2025-08-11→2026-07-23
+densify r24 [UKOIL]
+densify round cap
+done 5.36h · firm=8
+
+Wrote /app/data/lab_desk_recovery_scalp_hunt.json
+Obsidian /app/data/ZenithRecovery/00_Recovery_Board.md
+Firm candidates: ['ETHUSD', 'BTCUSD', 'GOLD', 'NAS100', 'USDJPY', 'AUDUSD', 'USDCHF', 'UKOIL']
+Elapsed 19280.5s (5.36h)

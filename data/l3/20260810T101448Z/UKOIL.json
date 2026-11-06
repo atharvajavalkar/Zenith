@@ -1,0 +1,43 @@
+{
+  "zenith": "UKOIL",
+  "map": {
+    "true_l3": false,
+    "primary": "xm_dom",
+    "product": "UKOIL",
+    "databento": {
+      "dataset": "GLBX.MDP3",
+      "symbol": "CL.c.0",
+      "schema": "mbo"
+    },
+    "tardis": null,
+    "note": "XM DOM now; NYMEX CL (or ICE Brent) MBO via Databento for true L3"
+  },
+  "sources": {
+    "xm_dom": {
+      "ok": false,
+      "zenith": "UKOIL",
+      "schema": "L2_AGG_BROKER_DOM",
+      "broker_tried": [
+        "BRENT",
+        "UKOIL",
+        "XBRUSD",
+        "BRENTCash"
+      ],
+      "error": "empty book / symbol unsupported on this XM account",
+      "fetched_at": "2026-08-10T10:17:27Z"
+    },
+    "databento": {
+      "ok": false,
+      "skipped": true,
+      "reason": "DATABENTO_API_KEY not set",
+      "would_fetch": {
+        "dataset": "GLBX.MDP3",
+        "symbol": "CL.c.0",
+        "schema": "mbo"
+      }
+    }
+  },
+  "fetched_at": "2026-08-10T10:16:06Z",
+  "best_schema": null,
+  "best_source": null
+}

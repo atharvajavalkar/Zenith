@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "venue": "coinbase",
+  "schema": "TRADE_TAPE",
+  "channel": "matches",
+  "products": [
+    "BTC-USD",
+    "ETH-USD"
+  ],
+  "seconds": 25.0,
+  "n_events": 102,
+  "by_type": {
+    "last_match": 2,
+    "match": 100
+  },
+  "note": "Public matches tape. Full L3 order-chain WS needs Coinbase API key auth.",
+  "fetched_at": "2026-08-10T10:33:06Z"
+}

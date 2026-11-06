@@ -1,0 +1,27 @@
+{
+  "status": "running",
+  "pair": "USDCHF",
+  "tf": "5m",
+  "mode_i": 250,
+  "modes": 423,
+  "mode_id": "cir_z2.4_s0.7",
+  "mode_family": "cir",
+  "cells_done": 148431,
+  "cells_est": 281700,
+  "elapsed_sec": 1190807.3,
+  "pct": 92.5,
+  "updated_at": "2026-09-25T01:55:19.702686+00:00",
+  "hunt": "mega_desk_invent",
+  "book": [
+    "GOLD",
+    "BTCUSD",
+    "UKOIL",
+    "NAS100",
+    "AUDUSD",
+    "ETHUSD",
+    "USDJPY",
+    "USDCHF"
+  ],
+  "min_pnl_1y": 1500.0,
+  "min_return": 0.15
+}

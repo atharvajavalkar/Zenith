@@ -1,0 +1,41 @@
+{
+  "zenith": "USDCHF",
+  "map": {
+    "true_l3": false,
+    "primary": "xm_dom",
+    "product": "USDCHF",
+    "databento": {
+      "dataset": "DBFX.PLUS",
+      "symbol": "USD/CHF",
+      "schema": "mbp-10"
+    },
+    "tardis": null,
+    "note": "Spot FX has no single exchange L3; XM DOM + Databento FX L2 when keyed"
+  },
+  "sources": {
+    "xm_dom": {
+      "ok": false,
+      "zenith": "USDCHF",
+      "schema": "L2_AGG_BROKER_DOM",
+      "broker_tried": [
+        "USDCHF"
+      ],
+      "error": "empty book / symbol unsupported on this XM account",
+      "fetched_at": "2026-08-10T10:29:25Z"
+    },
+    "databento": {
+      "ok": false,
+      "skipped": true,
+      "reason": "DATABENTO_API_KEY not set",
+      "would_fetch": {
+        "dataset": "DBFX.PLUS",
+        "symbol": "USD/CHF",
+        "schema": "mbp-10"
+      }
+    }
+  },
+  "fetched_at": "2026-08-10T10:29:10Z",
+  "best_schema": null,
+  "best_source": null,
+  "blocked_reason": "XM account has no Market Depth for this CFD; set DATABENTO_API_KEY for CME/FX proxy L3/L2"
+}

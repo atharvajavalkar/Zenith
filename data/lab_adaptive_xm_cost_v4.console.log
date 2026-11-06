@@ -1,0 +1,47 @@
+=== ADAPTIVE XM-COST v4 · Dukascopy + XM session spreads ===
+TF=5m cap=3.0y · risk=$100.0/R · formulas=17
+spread mults={'ETHUSD': 8.0, 'BTCUSD': 8.0, 'GOLD': 10.0, 'NAS100': 8.0, 'USDJPY': 10.0, 'AUDUSD': 10.0, 'USDCHF': 10.0, 'UKOIL': 1.0}
+PA/OB on hold · LIVE not auto-wired
+
+
+######## ETHUSD ########
+  ABS=vol_clock SOFT $3,557 E[R]=+0.222 wf=2/4 spR=0.121 wireable=True
+  top: vol_clock=SOFT$3,557, hybrid_v2_tod=SOFT$2,233, gated=FAIL$1,647, static=FAIL$1,603, v2_preferred=FAIL$1,603
+
+######## BTCUSD ########
+  ABS=entropy_tod FAIL $84 E[R]=+0.084 wf=0/4 spR=0.116 wireable=False
+  top: entropy_tod=FAIL$84, intraday_cusum_clock=FAIL$81, entropy_strict=FAIL$0, harmonic_gate=FAIL$-638, gated=FAIL$-1,321
+
+######## GOLD ########
+  ABS=circadian_thr PASS $3,315 E[R]=+0.150 wf=3/4 spR=0.049 wireable=True
+  top: circadian_thr=PASS$3,315, entropy_tod=SOFT$4,952, hybrid_v2_tod=SOFT$4,145, harmonic_gate=SOFT$3,743, gated=SOFT$3,563
+
+######## NAS100 ########
+  ABS=entropy_strict PASS $4,654 E[R]=+0.342 wf=3/4 spR=0.092 wireable=True
+  top: entropy_strict=PASS$4,654, volmom=SOFT$4,983, circadian_thr=SOFT$4,110, entropy_tod=SOFT$2,612, vol_clock=SOFT$162
+
+######## USDJPY ########
+  ABS=weekday_regime_prior SOFT $1,102 E[R]=+0.027 wf=2/4 spR=0.097 wireable=True
+  top: weekday_regime_prior=SOFT$1,102, circadian_kalman_z=FAIL$-451, entropy_strict=FAIL$-460, circadian_strict=FAIL$-618, minute_softmax=FAIL$-632
+
+######## AUDUSD ########
+  ABS=session_mix_no_off SOFT $1,610 E[R]=+0.058 wf=2/4 spR=0.100 wireable=True
+  top: session_mix_no_off=SOFT$1,610, gated=SOFT$1,130, entropy_strict=FAIL$640, harmonic_gate=FAIL$-280, switch=FAIL$-700
+
+######## USDCHF ########
+  ABS=session_mix SOFT $925 E[R]=+0.059 wf=2/4 spR=0.100 wireable=True
+  top: session_mix=SOFT$925, entropy_strict=FAIL$370, volmom=FAIL$-248, entropy_tod=FAIL$-460, vol_clock=FAIL$-530
+
+######## UKOIL ########
+  ABS=weekday_regime_prior PASS $1,598 E[R]=+0.045 wf=3/4 spR=0.152 wireable=True
+  top: weekday_regime_prior=PASS$1,598, hybrid_v2_tod=PASS$1,333, intraday_cusum_clock=PASS$167, liq_sessions_only=FAIL$-176, switch=FAIL$-424
+
+DESK abs 1y $16,847 · wireable-only $16,763 · wireable 7/8 · wrote /app/data/lab_adaptive_xm_cost_v4.json
+  REC ETHUSD   vol_clock              SOFT  wf=2/4 1y $3,557 E[R]=+0.222 spR=0.121 wire=True
+  REC BTCUSD   entropy_tod            FAIL  wf=0/4 1y $84 E[R]=+0.084 spR=0.116 wire=False
+  REC GOLD     circadian_thr          PASS  wf=3/4 1y $3,315 E[R]=+0.150 spR=0.049 wire=True
+  REC NAS100   entropy_strict         PASS  wf=3/4 1y $4,654 E[R]=+0.342 spR=0.092 wire=True
+  REC USDJPY   weekday_regime_prior   SOFT  wf=2/4 1y $1,102 E[R]=+0.027 spR=0.097 wire=True
+  REC AUDUSD   session_mix_no_off     SOFT  wf=2/4 1y $1,610 E[R]=+0.058 spR=0.100 wire=True
+  REC USDCHF   session_mix            SOFT  wf=2/4 1y $925 E[R]=+0.059 spR=0.100 wire=True
+  REC UKOIL    weekday_regime_prior   PASS  wf=3/4 1y $1,598 E[R]=+0.045 spR=0.152 wire=True

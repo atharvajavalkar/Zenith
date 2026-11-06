@@ -1,0 +1,106 @@
+{
+  "ran_at": "2026-08-13T19:24:44.743492+00:00",
+  "window": {
+    "start": "2026-02-11",
+    "end": "2026-08-12"
+  },
+  "symbols": [
+    "AUDUSD",
+    "BTCUSD",
+    "UKOIL",
+    "USDCHF",
+    "USDJPY"
+  ],
+  "results": [
+    {
+      "symbol": "AUDUSD",
+      "brain": "bb_1.5",
+      "rr_label": "1:2",
+      "full_er": 0.263,
+      "oos_er": 0.385,
+      "n": 38,
+      "wf_green": "2/4",
+      "mc_profit": 87.9,
+      "levy_profit": 85.1,
+      "brownian_profit": 85.8,
+      "ito": "SOFT",
+      "martingale": "EDGE_PREDICTABLE",
+      "hjm": "PASS",
+      "malliavin": "ROBUST",
+      "verdict": "FRAGILE"
+    },
+    {
+      "symbol": "BTCUSD",
+      "brain": "fib_liq",
+      "rr_label": "1:3",
+      "full_er": -0.368,
+      "oos_er": -0.556,
+      "n": 19,
+      "wf_green": "0/4",
+      "mc_profit": 19.6,
+      "levy_profit": 16.5,
+      "brownian_profit": 15.1,
+      "ito": "SOFT",
+      "martingale": "MARTINGALE_LIKE",
+      "hjm": "FAIL",
+      "malliavin": "ROBUST",
+      "verdict": "DEAD"
+    },
+    {
+      "symbol": "UKOIL",
+      "brain": "st_3",
+      "rr_label": "1:4",
+      "full_er": 0.19,
+      "oos_er": 1.0,
+      "n": 21,
+      "wf_green": "2/4",
+      "mc_profit": 56.9,
+      "levy_profit": 63.3,
+      "brownian_profit": 65.6,
+      "ito": "SOFT",
+      "martingale": "WEAK_EDGE",
+      "hjm": "PASS",
+      "malliavin": "ROBUST",
+      "verdict": "FRAGILE"
+    },
+    {
+      "symbol": "USDCHF",
+      "brain": "rsi",
+      "rr_label": "1:2",
+      "full_er": -0.057,
+      "oos_er": 0.071,
+      "n": 35,
+      "wf_green": "2/4",
+      "mc_profit": 42.1,
+      "levy_profit": 41.0,
+      "brownian_profit": 41.7,
+      "ito": "SOFT",
+      "martingale": "MARTINGALE_LIKE",
+      "hjm": "FAIL",
+      "malliavin": "ROBUST",
+      "verdict": "DEAD"
+    },
+    {
+      "symbol": "USDJPY",
+      "brain": "bb_1.5",
+      "rr_label": "1:2",
+      "full_er": -0.1,
+      "oos_er": 0.125,
+      "n": 40,
+      "wf_green": "2/4",
+      "mc_profit": 31.4,
+      "levy_profit": 32.5,
+      "brownian_profit": 32.4,
+      "ito": "SOFT",
+      "martingale": "MARTINGALE_LIKE",
+      "hjm": "FAIL",
+      "malliavin": "ROBUST",
+      "verdict": "DEAD"
+    }
+  ],
+  "summary": {
+    "survives": 0,
+    "fragile": 2,
+    "dead": 3
+  }
+}

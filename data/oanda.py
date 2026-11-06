@@ -105,16 +105,22 @@ class OandaClient:
         return df[["open", "high", "low", "close", "volume"]]
 
     def has_open_position(self, direction: str) -> bool:
+        return self.count_positions(direction) > 0
+
+    def count_positions(self, direction: Optional[str] = None) -> int:
+        count = 0
         for pos in self.get_open_positions():
             if pos.get("instrument") != self.instrument:
                 continue
             long_units = float(pos.get("long", {}).get("units", 0))
             short_units = float(pos.get("short", {}).get("units", 0))
             if direction == "BUY" and long_units > 0:
-                return True
-            if direction == "SELL" and short_units < 0:
-                return True
-        return False
+                count += 1
+            elif direction == "SELL" and short_units < 0:
+                count += 1
+            elif direction is None and (long_units > 0 or short_units < 0):
+                count += 1
+        return count
 
     def place_market_order(
         self,

@@ -26,15 +26,15 @@ export default function Login() {
   }
 
   return (
-    <AuthLayout title="Sign in" subtitle="Monte Carlo trading signals">
+    <AuthLayout title="Sign in" subtitle="Private access to the gold desk">
       <AuthForm
         onSubmit={handleSubmit}
-        submitLabel={submitting ? 'Signing in...' : 'Sign in'}
+        submitLabel={submitting ? 'Signing in…' : 'Enter Zenith'}
         error={error}
         footer={
-          <p className="text-center text-sm text-gray-400 mt-4">
+          <p className="text-center text-sm font-light text-surface-muted mt-5">
             No account?{' '}
-            <Link to="/register" className="text-accent-gold hover:underline">
+            <Link to="/register" className="text-accent-gold hover:text-accent-gold-soft transition">
               Register
             </Link>
           </p>

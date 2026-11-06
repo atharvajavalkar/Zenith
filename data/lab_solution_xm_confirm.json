@@ -1,0 +1,709 @@
+{
+  "holdout_start": "2026-07-24 00:00:00+00:00",
+  "locked": {
+    "BTCUSD": {
+      "tf": "5m",
+      "pick": {
+        "id": "dyn_hurst_sm_ou|sl3.0|rr3.0|g3",
+        "pre": [
+          1,
+          4,
+          3,
+          0.0964,
+          5671.07
+        ],
+        "pnl_1y": 5671.07,
+        "exp_r_1y": 0.0964,
+        "oos_1y": 0.1397,
+        "wf_1y": 3,
+        "verdict_1y": "PASS",
+        "holdout_n": 93,
+        "holdout_pnl": -2686.93,
+        "holdout_exp_r": -0.2889,
+        "solution": false
+      },
+      "top": [
+        {
+          "id": "dyn_hurst_sm_ou|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            3,
+            0.0964,
+            5671.07
+          ],
+          "pnl_1y": 5671.07,
+          "exp_r_1y": 0.0964,
+          "oos_1y": 0.1397,
+          "wf_1y": 3,
+          "verdict_1y": "PASS",
+          "holdout_n": 93,
+          "holdout_pnl": -2686.93,
+          "holdout_exp_r": -0.2889,
+          "solution": false
+        },
+        {
+          "id": "math_higuchi_trend_1.40|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            3,
+            0.0466,
+            1296.08
+          ],
+          "pnl_1y": 1296.08,
+          "exp_r_1y": 0.0466,
+          "oos_1y": 0.0593,
+          "wf_1y": 3,
+          "verdict_1y": "PASS",
+          "holdout_n": 42,
+          "holdout_pnl": -216.54,
+          "holdout_exp_r": -0.0516,
+          "solution": false
+        },
+        {
+          "id": "sm_t0.38_o0.55|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            3,
+            0.0291,
+            1768.18
+          ],
+          "pnl_1y": 1768.18,
+          "exp_r_1y": 0.0291,
+          "oos_1y": 0.0462,
+          "wf_1y": 3,
+          "verdict_1y": "PASS",
+          "holdout_n": 89,
+          "holdout_pnl": 895.36,
+          "holdout_exp_r": 0.1006,
+          "solution": false
+        },
+        {
+          "id": "sm_t0.40_o0.55|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            3,
+            0.0208,
+            1232.82
+          ],
+          "pnl_1y": 1232.82,
+          "exp_r_1y": 0.0208,
+          "oos_1y": 0.0409,
+          "wf_1y": 3,
+          "verdict_1y": "PASS",
+          "holdout_n": 79,
+          "holdout_pnl": 816.79,
+          "holdout_exp_r": 0.1034,
+          "solution": false
+        },
+        {
+          "id": "sm_t0.38_o0.45|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            3,
+            0.0149,
+            967.39
+          ],
+          "pnl_1y": 967.39,
+          "exp_r_1y": 0.0149,
+          "oos_1y": 0.0041,
+          "wf_1y": 3,
+          "verdict_1y": "PASS",
+          "holdout_n": 84,
+          "holdout_pnl": 1094.94,
+          "holdout_exp_r": 0.1304,
+          "solution": false
+        },
+        {
+          "id": "vm_t0.45_l10|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            3,
+            0.0084,
+            490.04
+          ],
+          "pnl_1y": 490.04,
+          "exp_r_1y": 0.0084,
+          "oos_1y": 0.2565,
+          "wf_1y": 3,
+          "verdict_1y": "PASS",
+          "holdout_n": 103,
+          "holdout_pnl": -933.05,
+          "holdout_exp_r": -0.0906,
+          "solution": false
+        },
+        {
+          "id": "st_3.5|sl2.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            2,
+            0.1838,
+            2260.89
+          ],
+          "pnl_1y": 2260.89,
+          "exp_r_1y": 0.1838,
+          "oos_1y": 0.283,
+          "wf_1y": 2,
+          "verdict_1y": "SOFT",
+          "holdout_n": 36,
+          "holdout_pnl": 768.08,
+          "holdout_exp_r": 0.2134,
+          "solution": false
+        },
+        {
+          "id": "st_3.0|sl2.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            2,
+            0.1396,
+            2847.73
+          ],
+          "pnl_1y": 2847.73,
+          "exp_r_1y": 0.1396,
+          "oos_1y": 0.0413,
+          "wf_1y": 2,
+          "verdict_1y": "SOFT",
+          "holdout_n": 52,
+          "holdout_pnl": 974.43,
+          "holdout_exp_r": 0.1874,
+          "solution": false
+        }
+      ]
+    },
+    "UKOIL": {
+      "tf": "5m",
+      "pick": {
+        "id": "ou_1.6|sl3.0|rr3.0|g3",
+        "pre": [
+          1,
+          4,
+          3,
+          0.1975,
+          9596.57
+        ],
+        "pnl_1y": 9596.57,
+        "exp_r_1y": 0.1975,
+        "oos_1y": 0.2482,
+        "wf_1y": 3,
+        "verdict_1y": "PASS",
+        "holdout_n": 131,
+        "holdout_pnl": 1152.12,
+        "holdout_exp_r": 0.0879,
+        "solution": true
+      },
+      "top": [
+        {
+          "id": "ou_1.6|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            3,
+            0.1975,
+            9596.57
+          ],
+          "pnl_1y": 9596.57,
+          "exp_r_1y": 0.1975,
+          "oos_1y": 0.2482,
+          "wf_1y": 3,
+          "verdict_1y": "PASS",
+          "holdout_n": 131,
+          "holdout_pnl": 1152.12,
+          "holdout_exp_r": 0.0879,
+          "solution": true
+        },
+        {
+          "id": "math_hf_spike_fade_0.70|sl2.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            3,
+            0.1449,
+            1608.2
+          ],
+          "pnl_1y": 1608.2,
+          "exp_r_1y": 0.1449,
+          "oos_1y": 0.0077,
+          "wf_1y": 3,
+          "verdict_1y": "PASS",
+          "holdout_n": 38,
+          "holdout_pnl": 797.58,
+          "holdout_exp_r": 0.2099,
+          "solution": true
+        },
+        {
+          "id": "cir_z3.0_s0.7|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            3,
+            0.1086,
+            2182.62
+          ],
+          "pnl_1y": 2182.62,
+          "exp_r_1y": 0.1086,
+          "oos_1y": 0.3038,
+          "wf_1y": 3,
+          "verdict_1y": "PASS",
+          "holdout_n": 57,
+          "holdout_pnl": -292.3,
+          "holdout_exp_r": -0.0513,
+          "solution": false
+        },
+        {
+          "id": "cir_z3.0_s0.3|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            3,
+            0.0989,
+            1612.43
+          ],
+          "pnl_1y": 1612.43,
+          "exp_r_1y": 0.0989,
+          "oos_1y": 0.2443,
+          "wf_1y": 3,
+          "verdict_1y": "PASS",
+          "holdout_n": 51,
+          "holdout_pnl": -1247.5,
+          "holdout_exp_r": -0.2446,
+          "solution": false
+        },
+        {
+          "id": "math_bimod_0.70|sl2.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            3,
+            0.0893,
+            1321.41
+          ],
+          "pnl_1y": 1321.41,
+          "exp_r_1y": 0.0893,
+          "oos_1y": 0.1335,
+          "wf_1y": 3,
+          "verdict_1y": "PASS",
+          "holdout_n": 37,
+          "holdout_pnl": -1696.89,
+          "holdout_exp_r": -0.4586,
+          "solution": false
+        },
+        {
+          "id": "math_hf_spike_fade_0.60|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            3,
+            0.0852,
+            3126.69
+          ],
+          "pnl_1y": 3126.69,
+          "exp_r_1y": 0.0852,
+          "oos_1y": 0.1995,
+          "wf_1y": 3,
+          "verdict_1y": "PASS",
+          "holdout_n": 110,
+          "holdout_pnl": -1326.41,
+          "holdout_exp_r": -0.1206,
+          "solution": false
+        },
+        {
+          "id": "ou_1.4|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            3,
+            0.0811,
+            4142.95
+          ],
+          "pnl_1y": 4142.95,
+          "exp_r_1y": 0.0811,
+          "oos_1y": 0.0948,
+          "wf_1y": 3,
+          "verdict_1y": "PASS",
+          "holdout_n": 137,
+          "holdout_pnl": 1345.8,
+          "holdout_exp_r": 0.0982,
+          "solution": true
+        },
+        {
+          "id": "sm_t0.30_o0.50|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            3,
+            0.0674,
+            3041.24
+          ],
+          "pnl_1y": 3041.24,
+          "exp_r_1y": 0.0674,
+          "oos_1y": 0.2119,
+          "wf_1y": 3,
+          "verdict_1y": "PASS",
+          "holdout_n": 140,
+          "holdout_pnl": -3317.43,
+          "holdout_exp_r": -0.237,
+          "solution": false
+        }
+      ]
+    },
+    "GOLD": {
+      "tf": "5m",
+      "pick": {
+        "id": "math_bimod_0.70|sl2.0|rr3.0|g3",
+        "pre": [
+          1,
+          4,
+          4,
+          0.5813,
+          5348.31
+        ],
+        "pnl_1y": 5348.31,
+        "exp_r_1y": 0.5813,
+        "oos_1y": 0.2302,
+        "wf_1y": 4,
+        "verdict_1y": "PASS",
+        "holdout_n": 12,
+        "holdout_pnl": -63.28,
+        "holdout_exp_r": -0.0527,
+        "solution": false
+      },
+      "top": [
+        {
+          "id": "math_bimod_0.70|sl2.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            4,
+            0.5813,
+            5348.31
+          ],
+          "pnl_1y": 5348.31,
+          "exp_r_1y": 0.5813,
+          "oos_1y": 0.2302,
+          "wf_1y": 4,
+          "verdict_1y": "PASS",
+          "holdout_n": 12,
+          "holdout_pnl": -63.28,
+          "holdout_exp_r": -0.0527,
+          "solution": false
+        },
+        {
+          "id": "ent_p0.6_s0.0|sl2.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            4,
+            0.4206,
+            6687.03
+          ],
+          "pnl_1y": 6687.03,
+          "exp_r_1y": 0.4206,
+          "oos_1y": 0.0651,
+          "wf_1y": 4,
+          "verdict_1y": "PASS",
+          "holdout_n": 0,
+          "holdout_pnl": 0.0,
+          "holdout_exp_r": 0.0,
+          "solution": false
+        },
+        {
+          "id": "math_perm_order_0.80|sl2.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            4,
+            0.3894,
+            6541.52
+          ],
+          "pnl_1y": 6541.52,
+          "exp_r_1y": 0.3894,
+          "oos_1y": 0.102,
+          "wf_1y": 4,
+          "verdict_1y": "PASS",
+          "holdout_n": 0,
+          "holdout_pnl": 0.0,
+          "holdout_exp_r": 0.0,
+          "solution": false
+        },
+        {
+          "id": "ent_p0.68_s0.0|sl2.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            4,
+            0.3826,
+            6351.13
+          ],
+          "pnl_1y": 6351.13,
+          "exp_r_1y": 0.3826,
+          "oos_1y": 0.0651,
+          "wf_1y": 4,
+          "verdict_1y": "PASS",
+          "holdout_n": 0,
+          "holdout_pnl": 0.0,
+          "holdout_exp_r": 0.0,
+          "solution": false
+        },
+        {
+          "id": "ent_p0.72_s0.0|sl2.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            4,
+            0.3653,
+            6648.32
+          ],
+          "pnl_1y": 6648.32,
+          "exp_r_1y": 0.3653,
+          "oos_1y": 0.1202,
+          "wf_1y": 4,
+          "verdict_1y": "PASS",
+          "holdout_n": 0,
+          "holdout_pnl": 0.0,
+          "holdout_exp_r": 0.0,
+          "solution": false
+        },
+        {
+          "id": "math_lf_thrust_eff|sl2.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            4,
+            0.2471,
+            8499.99
+          ],
+          "pnl_1y": 8499.99,
+          "exp_r_1y": 0.2471,
+          "oos_1y": 0.475,
+          "wf_1y": 4,
+          "verdict_1y": "PASS",
+          "holdout_n": 60,
+          "holdout_pnl": 1284.7,
+          "holdout_exp_r": 0.2141,
+          "solution": true
+        },
+        {
+          "id": "off_vm_t0.45_l40|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            4,
+            0.1835,
+            9963.73
+          ],
+          "pnl_1y": 9963.73,
+          "exp_r_1y": 0.1835,
+          "oos_1y": 0.2412,
+          "wf_1y": 4,
+          "verdict_1y": "PASS",
+          "holdout_n": 94,
+          "holdout_pnl": 255.53,
+          "holdout_exp_r": 0.0272,
+          "solution": true
+        },
+        {
+          "id": "ema_9_30_z0.6|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            4,
+            0.1676,
+            7809.7
+          ],
+          "pnl_1y": 7809.7,
+          "exp_r_1y": 0.1676,
+          "oos_1y": 0.1497,
+          "wf_1y": 4,
+          "verdict_1y": "PASS",
+          "holdout_n": 110,
+          "holdout_pnl": -2584.68,
+          "holdout_exp_r": -0.235,
+          "solution": false
+        }
+      ]
+    },
+    "NAS100": {
+      "tf": "5m",
+      "pick": {
+        "id": "snr_0.35|sl3.0|rr3.0|g3",
+        "pre": [
+          1,
+          4,
+          4,
+          0.3202,
+          7525.3
+        ],
+        "pnl_1y": 7525.3,
+        "exp_r_1y": 0.3202,
+        "oos_1y": 0.3985,
+        "wf_1y": 4,
+        "verdict_1y": "PASS",
+        "holdout_n": 36,
+        "holdout_pnl": 2243.56,
+        "holdout_exp_r": 0.6232,
+        "solution": true
+      },
+      "top": [
+        {
+          "id": "snr_0.35|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            4,
+            0.3202,
+            7525.3
+          ],
+          "pnl_1y": 7525.3,
+          "exp_r_1y": 0.3202,
+          "oos_1y": 0.3985,
+          "wf_1y": 4,
+          "verdict_1y": "PASS",
+          "holdout_n": 36,
+          "holdout_pnl": 2243.56,
+          "holdout_exp_r": 0.6232,
+          "solution": true
+        },
+        {
+          "id": "ft_lf0.55_s0.35|sl2.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            4,
+            0.2971,
+            2525.66
+          ],
+          "pnl_1y": 2525.66,
+          "exp_r_1y": 0.2971,
+          "oos_1y": 0.4127,
+          "wf_1y": 4,
+          "verdict_1y": "PASS",
+          "holdout_n": 7,
+          "holdout_pnl": 453.62,
+          "holdout_exp_r": 0.648,
+          "solution": false
+        },
+        {
+          "id": "ent_p0.85_s0.15|sl2.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            4,
+            0.2381,
+            10668.21
+          ],
+          "pnl_1y": 10668.21,
+          "exp_r_1y": 0.2381,
+          "oos_1y": 0.4168,
+          "wf_1y": 4,
+          "verdict_1y": "PASS",
+          "holdout_n": 31,
+          "holdout_pnl": -532.26,
+          "holdout_exp_r": -0.1717,
+          "solution": false
+        },
+        {
+          "id": "ema_8_21_z0.5|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            4,
+            0.2097,
+            10799.44
+          ],
+          "pnl_1y": 10799.44,
+          "exp_r_1y": 0.2097,
+          "oos_1y": 0.1888,
+          "wf_1y": 4,
+          "verdict_1y": "PASS",
+          "holdout_n": 61,
+          "holdout_pnl": 503.82,
+          "holdout_exp_r": 0.0826,
+          "solution": true
+        },
+        {
+          "id": "ema_9_30_z0.6|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            4,
+            0.1881,
+            9837.94
+          ],
+          "pnl_1y": 9837.94,
+          "exp_r_1y": 0.1881,
+          "oos_1y": 0.2214,
+          "wf_1y": 4,
+          "verdict_1y": "PASS",
+          "holdout_n": 57,
+          "holdout_pnl": 915.38,
+          "holdout_exp_r": 0.1606,
+          "solution": true
+        },
+        {
+          "id": "vm_t0.35_l30|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            4,
+            0.1796,
+            10039.49
+          ],
+          "pnl_1y": 10039.49,
+          "exp_r_1y": 0.1796,
+          "oos_1y": 0.1477,
+          "wf_1y": 4,
+          "verdict_1y": "PASS",
+          "holdout_n": 122,
+          "holdout_pnl": -2679.45,
+          "holdout_exp_r": -0.2196,
+          "solution": false
+        },
+        {
+          "id": "ema_12_36_z0.6|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            4,
+            0.1764,
+            9192.73
+          ],
+          "pnl_1y": 9192.73,
+          "exp_r_1y": 0.1764,
+          "oos_1y": 0.2228,
+          "wf_1y": 4,
+          "verdict_1y": "PASS",
+          "holdout_n": 53,
+          "holdout_pnl": 527.25,
+          "holdout_exp_r": 0.0995,
+          "solution": true
+        },
+        {
+          "id": "ema_20_50_z0.7|sl3.0|rr3.0|g3",
+          "pre": [
+            1,
+            4,
+            4,
+            0.1723,
+            8495.45
+          ],
+          "pnl_1y": 8495.45,
+          "exp_r_1y": 0.1723,
+          "oos_1y": 0.0883,
+          "wf_1y": 4,
+          "verdict_1y": "PASS",
+          "holdout_n": 59,
+          "holdout_pnl": 1912.15,
+          "holdout_exp_r": 0.3241,
+          "solution": true
+        }
+      ]
+    }
+  }
+}

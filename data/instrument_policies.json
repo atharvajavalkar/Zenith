@@ -1,0 +1,174 @@
+{
+  "updated_at": "2026-11-06T05:58:49Z",
+  "total_updates": 536,
+  "instruments": {
+    "GOLD": {
+      "symbol": "GOLD",
+      "n_trades": 175,
+      "wins": 82,
+      "losses": 93,
+      "be": 0,
+      "sum_r": 32.73907283236784,
+      "sum_pnl": -555.5299999999995,
+      "expectancy_r": 0.1871,
+      "win_rate": 0.4686,
+      "loss_streak": 0,
+      "active_arm": "balanced",
+      "arms": {
+        "tight": {
+          "n": 76,
+          "sum_r": 6.24052686272849,
+          "sum_pnl": -1025.9200000000003
+        },
+        "balanced": {
+          "n": 99,
+          "sum_r": 26.498545969639345,
+          "sum_pnl": 470.3900000000004
+        },
+        "aggressive": {
+          "n": 0,
+          "sum_r": 0.0,
+          "sum_pnl": 0.0
+        }
+      },
+      "policy": {
+        "mc_floor_delta": 0.0,
+        "min_ml_delta": 0.0,
+        "aggression": 0.55,
+        "risk_scale": 1.0,
+        "rr_prefer": 3.0,
+        "partial_boost": 1.0,
+        "trail_delta": 0.0
+      },
+      "last_reward_r": 1.817,
+      "last_update": null,
+      "message": "balanced \u00b7 WR 47% \u00b7 E[R]=+0.19 \u00b7 prefer 1:3"
+    },
+    "BTCUSD": {
+      "symbol": "BTCUSD",
+      "n_trades": 237,
+      "wins": 64,
+      "losses": 173,
+      "be": 0,
+      "sum_r": -68.07512915933394,
+      "sum_pnl": -5935.339999999999,
+      "expectancy_r": -0.2872,
+      "win_rate": 0.27,
+      "loss_streak": 2,
+      "active_arm": "tight",
+      "arms": {
+        "tight": {
+          "n": 212,
+          "sum_r": -68.07512915933394,
+          "sum_pnl": -5694.249999999997
+        },
+        "balanced": {
+          "n": 25,
+          "sum_r": 0.0,
+          "sum_pnl": -241.09000000000003
+        },
+        "aggressive": {
+          "n": 0,
+          "sum_r": 0.0,
+          "sum_pnl": 0.0
+        }
+      },
+      "policy": {
+        "mc_floor_delta": 1.0,
+        "min_ml_delta": 0.02,
+        "aggression": 0.18,
+        "risk_scale": 0.63,
+        "rr_prefer": 4.0,
+        "partial_boost": 1.4,
+        "trail_delta": 0.18
+      },
+      "last_reward_r": -0.092,
+      "last_update": null,
+      "message": "tight learn \u00b7 WR 27% \u00b7 E[R]=-0.29 \u00b7 streak 2 \u00b7 size\u00d70.63 \u00b7 prefer 1:4"
+    },
+    "UKOIL": {
+      "symbol": "UKOIL",
+      "n_trades": 55,
+      "wins": 24,
+      "losses": 31,
+      "be": 0,
+      "sum_r": 10.026395262699383,
+      "sum_pnl": -67.85999999999999,
+      "expectancy_r": 0.1823,
+      "win_rate": 0.4364,
+      "loss_streak": 1,
+      "active_arm": "balanced",
+      "arms": {
+        "tight": {
+          "n": 41,
+          "sum_r": 6.810598768911793,
+          "sum_pnl": -82.88999999999999
+        },
+        "balanced": {
+          "n": 14,
+          "sum_r": 3.215796493787591,
+          "sum_pnl": 15.03
+        },
+        "aggressive": {
+          "n": 0,
+          "sum_r": 0.0,
+          "sum_pnl": 0.0
+        }
+      },
+      "policy": {
+        "mc_floor_delta": 0.75,
+        "min_ml_delta": 0.005,
+        "aggression": 0.43000000000000005,
+        "risk_scale": 0.88,
+        "rr_prefer": 3.0,
+        "partial_boost": 1.15,
+        "trail_delta": 0.08
+      },
+      "last_reward_r": -0.78,
+      "last_update": null,
+      "message": "tight learn \u00b7 WR 44% \u00b7 E[R]=+0.18 \u00b7 streak 1 \u00b7 size\u00d70.88 \u00b7 prefer 1:3"
+    },
+    "NAS100": {
+      "symbol": "NAS100",
+      "n_trades": 69,
+      "wins": 20,
+      "losses": 49,
+      "be": 0,
+      "sum_r": 1.3720855045662759,
+      "sum_pnl": -2353.7399999999984,
+      "expectancy_r": 0.0199,
+      "win_rate": 0.2899,
+      "loss_streak": 5,
+      "active_arm": "tight",
+      "arms": {
+        "tight": {
+          "n": 68,
+          "sum_r": 2.116943924834532,
+          "sum_pnl": -2303.7599999999984
+        },
+        "balanced": {
+          "n": 1,
+          "sum_r": -0.7448584202682563,
+          "sum_pnl": -49.98
+        },
+        "aggressive": {
+          "n": 0,
+          "sum_r": 0.0,
+          "sum_pnl": 0.0
+        }
+      },
+      "policy": {
+        "mc_floor_delta": 1.0,
+        "min_ml_delta": 0.02,
+        "aggression": 0.18,
+        "risk_scale": 0.63,
+        "rr_prefer": 4.0,
+        "partial_boost": 1.4,
+        "trail_delta": 0.18
+      },
+      "last_reward_r": -0.08,
+      "last_update": null,
+      "message": "tight learn \u00b7 WR 29% \u00b7 E[R]=+0.02 \u00b7 streak 5 \u00b7 size\u00d70.63 \u00b7 prefer 1:4"
+    }
+  }
+}

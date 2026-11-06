@@ -1,0 +1,23 @@
+RESUME · 13 pair×tf done
+=== MEGA DESK INVENT (Nebula) ===
+book=('GOLD', 'BTCUSD', 'UKOIL', 'NAS100', 'AUDUSD', 'ETHUSD', 'USDJPY', 'USDCHF')
+modes≈427 full / 280 lean1m
+criteria: ≥15% ($1500/y) + 30d/15d PASS|SOFT + 1y≠FAIL
+XM spreads ON · research_only · live .env UNTOUCHED
+est_cells≈281,700
+
+skip GOLD:15m (resume)
+skip GOLD:5m (resume)
+skip GOLD:3m (resume)
+skip GOLD:1m (resume)
+skip BTCUSD:15m (resume)
+skip BTCUSD:5m (resume)
+skip BTCUSD:3m (resume)
+skip BTCUSD:1m (resume)
+skip UKOIL:15m (resume)
+skip UKOIL:5m (resume)
+skip UKOIL:3m (resume)
+skip UKOIL:1m (resume)
+skip NAS100:15m (resume)
+
+######## MEGA NAS100 @ 5m · 10.0y · 426 modes ########

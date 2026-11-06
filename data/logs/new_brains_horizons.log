@@ -1,0 +1,193 @@
+NEW BRAINS multi-horizon · daily 1..10y + 15y · $200.0/R
+Brains: {'GOLD': 'cta_10_40', 'USDCHF': 'rsi', 'USDJPY': 'bb_1.5', 'NAS100': 'ema_20_50_tight', 'UKOIL': 'st_3', 'AUDUSD': 'ema_20_50_pull', 'BTCUSD': 'fib_liq_sweep', 'ETHUSD': 'bb_2'}
+Note: daily = only honest multi-year TF on free feeds (not 1m/5m).
+
+  GOLD daily: 3770 bars 2011-07-25→2026-07-23
+  USDCHF daily: 3903 bars 2011-07-24→2026-07-23
+  USDJPY daily: 3906 bars 2011-07-24→2026-07-23
+  NAS100 daily: 3772 bars 2011-07-25→2026-07-23
+  UKOIL daily: 3748 bars 2011-07-25→2026-07-23
+  AUDUSD daily: 3905 bars 2011-07-24→2026-07-23
+  BTCUSD daily: 4328 bars 2014-09-17→2026-07-23
+  ETHUSD daily: 3179 bars 2017-11-09→2026-07-23
+
+===== 1y daily (2025-07-23→2026-07-23) =====
+  GOLD     cta_10_40          n=   1 PnL=$      -200 OOS=$        0 E[R]=+0.000 DEAD
+  USDCHF   rsi                n=   6 PnL=$       840 OOS=$      280 E[R]=+0.700 FRAGILE
+  USDJPY   bb_1.5             n=   5 PnL=$     1,000 OOS=$     -400 E[R]=-1.000 FRAGILE
+  NAS100   ema_20_50_tight    n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  UKOIL    st_3               n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  AUDUSD   ema_20_50_pull     n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  BTCUSD   fib_liq_sweep      n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  ETHUSD   bb_2               n=   4 PnL=$       200 OOS=$     -200 E[R]=-1.000 DEAD
+  → Desk 0S/2F/6D · Full $1,840 · OOS $-320 · fit 1.0/10 · DOES NOT FIT
+
+===== 2y daily (2024-07-23→2026-07-23) =====
+  GOLD     cta_10_40          n=   6 PnL=$      -200 OOS=$     -200 E[R]=-1.000 DEAD
+  USDCHF   rsi                n=  16 PnL=$       200 OOS=$      560 E[R]=+0.700 FRAGILE
+  USDJPY   bb_1.5             n=   6 PnL=$       800 OOS=$      200 E[R]=+0.250 FRAGILE
+  NAS100   ema_20_50_tight    n=   4 PnL=$     1,200 OOS=$        0 E[R]=+0.000 FRAGILE
+  UKOIL    st_3               n=   1 PnL=$       600 OOS=$        0 E[R]=+0.000 FRAGILE
+  AUDUSD   ema_20_50_pull     n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  BTCUSD   fib_liq_sweep      n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  ETHUSD   bb_2               n=   7 PnL=$      -400 OOS=$     -400 E[R]=-1.000 DEAD
+  → Desk 0S/4F/4D · Full $2,200 · OOS $160 · fit 1.9/10 · DOES NOT FIT
+
+===== 3y daily (2023-07-24→2026-07-23) =====
+  GOLD     cta_10_40          n=  10 PnL=$     1,000 OOS=$     -200 E[R]=-1.000 FRAGILE
+  USDCHF   rsi                n=  24 PnL=$       640 OOS=$      840 E[R]=+0.700 SURVIVES
+  USDJPY   bb_1.5             n=   6 PnL=$       800 OOS=$    1,000 E[R]=+1.000 FRAGILE
+  NAS100   ema_20_50_tight    n=   4 PnL=$     1,200 OOS=$        0 E[R]=+0.000 FRAGILE
+  UKOIL    st_3               n=   1 PnL=$       600 OOS=$        0 E[R]=+0.000 FRAGILE
+  AUDUSD   ema_20_50_pull     n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  BTCUSD   fib_liq_sweep      n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  ETHUSD   bb_2               n=  11 PnL=$    -1,200 OOS=$      200 E[R]=+0.250 DEAD
+  → Desk 1S/4F/3D · Full $3,040 · OOS $1,840 · fit 3.4/10 · DOES NOT FIT
+
+===== 4y daily (2022-07-23→2026-07-23) =====
+  GOLD     cta_10_40          n=  13 PnL=$     2,400 OOS=$     -200 E[R]=-1.000 FRAGILE
+  USDCHF   rsi                n=  33 PnL=$     1,560 OOS=$    2,200 E[R]=+1.833 SURVIVES
+  USDJPY   bb_1.5             n=   6 PnL=$       800 OOS=$    1,000 E[R]=+1.000 FRAGILE
+  NAS100   ema_20_50_tight    n=   5 PnL=$     2,000 OOS=$        0 E[R]=+0.000 FRAGILE
+  UKOIL    st_3               n=   1 PnL=$       600 OOS=$        0 E[R]=+0.000 FRAGILE
+  AUDUSD   ema_20_50_pull     n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  BTCUSD   fib_liq_sweep      n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  ETHUSD   bb_2               n=  15 PnL=$         0 OOS=$     -200 E[R]=-0.167 DEAD
+  → Desk 1S/4F/3D · Full $7,360 · OOS $2,800 · fit 3.4/10 · DOES NOT FIT
+
+===== 5y daily (2021-07-23→2026-07-23) =====
+  GOLD     cta_10_40          n=  19 PnL=$     2,200 OOS=$     -200 E[R]=-1.000 FRAGILE
+  USDCHF   rsi                n=  41 PnL=$     3,360 OOS=$      920 E[R]=+0.511 SURVIVES
+  USDJPY   bb_1.5             n=  13 PnL=$       400 OOS=$    1,000 E[R]=+1.000 SURVIVES
+  NAS100   ema_20_50_tight    n=   7 PnL=$     1,600 OOS=$      800 E[R]=+4.000 FRAGILE
+  UKOIL    st_3               n=   1 PnL=$      -200 OOS=$        0 E[R]=+0.000 DEAD
+  AUDUSD   ema_20_50_pull     n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  BTCUSD   fib_liq_sweep      n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  ETHUSD   bb_2               n=  19 PnL=$      -800 OOS=$     -400 E[R]=-0.286 DEAD
+  → Desk 2S/2F/4D · Full $6,560 · OOS $2,120 · fit 3.2/10 · DOES NOT FIT
+
+===== 6y daily (2020-07-23→2026-07-23) =====
+  GOLD     cta_10_40          n=  26 PnL=$     2,800 OOS=$     -200 E[R]=-0.167 FRAGILE
+  USDCHF   rsi                n=  48 PnL=$     3,320 OOS=$      400 E[R]=+0.133 FRAGILE
+  USDJPY   bb_1.5             n=  22 PnL=$      -400 OOS=$      800 E[R]=+0.667 FRAGILE
+  NAS100   ema_20_50_tight    n=   9 PnL=$     2,200 OOS=$    1,200 E[R]=+1.500 SURVIVES
+  UKOIL    st_3               n=   1 PnL=$      -200 OOS=$        0 E[R]=+0.000 DEAD
+  AUDUSD   ema_20_50_pull     n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  BTCUSD   fib_liq_sweep      n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  ETHUSD   bb_2               n=  20 PnL=$    -1,000 OOS=$     -400 E[R]=-0.286 DEAD
+  → Desk 1S/3F/4D · Full $6,720 · OOS $1,800 · fit 2.5/10 · DOES NOT FIT
+
+===== 7y daily (2019-07-24→2026-07-23) =====
+  GOLD     cta_10_40          n=  30 PnL=$     3,000 OOS=$     -400 E[R]=-0.286 FRAGILE
+  USDCHF   rsi                n=  54 PnL=$     4,160 OOS=$      680 E[R]=+0.200 SURVIVES
+  USDJPY   bb_1.5             n=  15 PnL=$     2,000 OOS=$      800 E[R]=+0.667 SURVIVES
+  NAS100   ema_20_50_tight    n=   8 PnL=$     2,400 OOS=$    1,200 E[R]=+1.500 SURVIVES
+  UKOIL    st_3               n=   1 PnL=$      -200 OOS=$        0 E[R]=+0.000 DEAD
+  AUDUSD   ema_20_50_pull     n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  BTCUSD   fib_liq_sweep      n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  ETHUSD   bb_2               n=  24 PnL=$    -1,800 OOS=$     -600 E[R]=-0.375 DEAD
+  → Desk 3S/1F/4D · Full $9,560 · OOS $1,680 · fit 3.9/10 · DOES NOT FIT
+
+===== 8y daily (2018-07-23→2026-07-23) =====
+  GOLD     cta_10_40          n=  39 PnL=$     3,200 OOS=$     -400 E[R]=-0.286 FRAGILE
+  USDCHF   rsi                n=  67 PnL=$     4,280 OOS=$      280 E[R]=+0.074 SURVIVES
+  USDJPY   bb_1.5             n=  25 PnL=$     1,000 OOS=$      800 E[R]=+0.667 SURVIVES
+  NAS100   ema_20_50_tight    n=   9 PnL=$     2,200 OOS=$    1,200 E[R]=+1.500 SURVIVES
+  UKOIL    st_3               n=   1 PnL=$      -200 OOS=$        0 E[R]=+0.000 DEAD
+  AUDUSD   ema_20_50_pull     n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  BTCUSD   fib_liq_sweep      n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  ETHUSD   bb_2               n=  32 PnL=$    -3,400 OOS=$     -800 E[R]=-0.444 DEAD
+  → Desk 3S/1F/4D · Full $7,080 · OOS $1,080 · fit 3.9/10 · DOES NOT FIT
+
+===== 9y daily (2017-07-23→2026-07-23) =====
+  GOLD     cta_10_40          n=  45 PnL=$     4,000 OOS=$      200 E[R]=+0.111 SURVIVES
+  USDCHF   rsi                n=  78 PnL=$     4,120 OOS=$      360 E[R]=+0.082 SURVIVES
+  USDJPY   bb_1.5             n=  33 PnL=$       400 OOS=$      800 E[R]=+0.667 FRAGILE
+  NAS100   ema_20_50_tight    n=  11 PnL=$     1,800 OOS=$    1,200 E[R]=+1.500 SURVIVES
+  UKOIL    st_3               n=   3 PnL=$      -600 OOS=$        0 E[R]=+0.000 DEAD
+  AUDUSD   ema_20_50_pull     n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  BTCUSD   fib_liq_sweep      n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  ETHUSD   bb_2               n=  34 PnL=$    -3,800 OOS=$   -1,000 E[R]=-0.500 DEAD
+  → Desk 3S/1F/4D · Full $5,920 · OOS $1,560 · fit 3.9/10 · DOES NOT FIT
+
+===== 10y daily (2016-07-23→2026-07-23) =====
+  GOLD     cta_10_40          n=  51 PnL=$     3,800 OOS=$    1,800 E[R]=+0.818 SURVIVES
+  USDCHF   rsi                n=  90 PnL=$     4,440 OOS=$    1,320 E[R]=+0.275 SURVIVES
+  USDJPY   bb_1.5             n=  44 PnL=$     1,200 OOS=$      800 E[R]=+0.667 SURVIVES
+  NAS100   ema_20_50_tight    n=  14 PnL=$     3,200 OOS=$    1,200 E[R]=+1.500 SURVIVES
+  UKOIL    st_3               n=   3 PnL=$      -600 OOS=$        0 E[R]=+0.000 DEAD
+  AUDUSD   ema_20_50_pull     n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  BTCUSD   fib_liq_sweep      n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  ETHUSD   bb_2               n=  34 PnL=$    -3,800 OOS=$   -1,000 E[R]=-0.500 DEAD
+  → Desk 4S/0F/4D · Full $8,240 · OOS $4,120 · fit 4.5/10 · DOES NOT FIT
+
+===== 15y daily (2011-07-24→2026-07-23) =====
+  GOLD     cta_10_40          n=  79 PnL=$     2,200 OOS=$    2,800 E[R]=+0.875 SURVIVES
+  USDCHF   rsi                n=  61 PnL=$     2,080 OOS=$    2,600 E[R]=+0.342 SURVIVES
+  USDJPY   bb_1.5             n=  85 PnL=$         0 OOS=$    1,200 E[R]=+0.667 FRAGILE
+  NAS100   ema_20_50_tight    n=  23 PnL=$     3,400 OOS=$    1,800 E[R]=+1.500 SURVIVES
+  UKOIL    st_3               n=   5 PnL=$      -200 OOS=$        0 E[R]=+0.000 DEAD
+  AUDUSD   ema_20_50_pull     n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  BTCUSD   fib_liq_sweep      n=   0 PnL=$         0 OOS=$        0 E[R]=+0.000 DEAD
+  ETHUSD   bb_2               n=  34 PnL=$    -3,800 OOS=$   -1,000 E[R]=-0.500 DEAD
+  → Desk 3S/1F/4D · Full $3,680 · OOS $7,400 · fit 3.9/10 · DOES NOT FIT
+
+===== 1y 1h (2025-07-23→2026-07-23) =====
+  GOLD     n=  80 PnL=$     1,000 OOS=$   -2,000 FRAGILE
+  USDCHF   n= 226 PnL=$    -3,720 OOS=$   -3,800 DEAD
+  USDJPY   n= 169 PnL=$    -1,800 OOS=$   -2,400 DEAD
+  NAS100   n=  25 PnL=$         0 OOS=$    1,000 DEAD
+  UKOIL    n=  32 PnL=$    -3,200 OOS=$   -2,600 DEAD
+  AUDUSD   n=  73 PnL=$     2,400 OOS=$    1,300 SURVIVES
+  BTCUSD   n=  35 PnL=$    -2,200 OOS=$   -1,200 DEAD
+  ETHUSD   n=  98 PnL=$       400 OOS=$      800 FRAGILE
+  → 1h desk 1S/2F/5D · OOS $-8,900 · fit 1.0/10
+
+===== 2y 1h (2024-07-23→2026-07-23) =====
+$GC=F: possibly delisted; no price data found  (1h 2024-07-03 -> 2026-07-24) (Yahoo error = "1h data not available for startTime=1719979200 and endTime=1784865600. The requested range must be within the last 730 days.")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: GOLD=X"}}}
+$GOLD=X: possibly delisted; no timezone found
+$GOLD: possibly delisted; no price data found  (1h 2024-07-03 -> 2026-07-24) (Yahoo error = "1h data not available for startTime=1719979200 and endTime=1784865600. The requested range must be within the last 730 days.")
+$USDCHF=X: possibly delisted; no price data found  (1h 2024-07-03 -> 2026-07-24) (Yahoo error = "1h data not available for startTime=1719961200 and endTime=1784847600. The requested range must be within the last 730 days.")
+$USDCHF=X: possibly delisted; no price data found  (1h 2024-07-03 -> 2026-07-24) (Yahoo error = "1h data not available for startTime=1719961200 and endTime=1784847600. The requested range must be within the last 730 days.")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: USDCHF"}}}
+$USDCHF: possibly delisted; no timezone found
+$USDJPY=X: possibly delisted; no price data found  (1h 2024-07-03 -> 2026-07-24) (Yahoo error = "1h data not available for startTime=1719961200 and endTime=1784847600. The requested range must be within the last 730 days.")
+$USDJPY=X: possibly delisted; no price data found  (1h 2024-07-03 -> 2026-07-24) (Yahoo error = "1h data not available for startTime=1719961200 and endTime=1784847600. The requested range must be within the last 730 days.")
+$USDJPY: possibly delisted; no timezone found
+$NQ=F: possibly delisted; no price data found  (1h 2024-07-03 -> 2026-07-24) (Yahoo error = "1h data not available for startTime=1719979200 and endTime=1784865600. The requested range must be within the last 730 days.")
+$NAS100=X: possibly delisted; no timezone found
+$NAS100: possibly delisted; no timezone found
+$BZ=F: possibly delisted; no price data found  (1h 2024-07-03 -> 2026-07-24) (Yahoo error = "1h data not available for startTime=1719979200 and endTime=1784865600. The requested range must be within the last 730 days.")
+$UKOIL=X: possibly delisted; no timezone found
+$UKOIL: possibly delisted; no timezone found
+$AUDUSD=X: possibly delisted; no price data found  (1h 2024-07-03 -> 2026-07-24) (Yahoo error = "1h data not available for startTime=1719961200 and endTime=1784847600. The requested range must be within the last 730 days.")
+$AUDUSD=X: possibly delisted; no price data found  (1h 2024-07-03 -> 2026-07-24) (Yahoo error = "1h data not available for startTime=1719961200 and endTime=1784847600. The requested range must be within the last 730 days.")
+$AUDUSD: possibly delisted; no timezone found
+$BTC-USD: possibly delisted; no price data found  (1h 2024-07-03 -> 2026-07-24) (Yahoo error = "1h data not available for startTime=1719964800 and endTime=1784851200. The requested range must be within the last 730 days.")
+$BTCUSD=X: possibly delisted; no timezone found
+$BTCUSD: possibly delisted; no timezone found
+$ETH-USD: possibly delisted; no price data found  (1h 2024-07-03 -> 2026-07-24) (Yahoo error = "1h data not available for startTime=1719964800 and endTime=1784851200. The requested range must be within the last 730 days.")
+$ETHUSD=X: possibly delisted; no timezone found
+$ETHUSD: possibly delisted; no timezone found
+  → 1h desk 0S/0F/8D · OOS $0 · fit 1.0/10
+
+===============================================================================================
+### NEW BRAINS FIT BY HORIZON (daily)
+
+ Years    S/F/D     Full PnL      OOS PnL   Fit    Fits?
+------------------------------------------------------------
+     1 0/2/ 6 $      1,840 $       -320   1.0       NO
+     2 0/4/ 4 $      2,200 $        160   1.9       NO
+     3 1/4/ 3 $      3,040 $      1,840   3.4       NO
+     4 1/4/ 3 $      7,360 $      2,800   3.4       NO
+     5 2/2/ 4 $      6,560 $      2,120   3.2       NO
+     6 1/3/ 4 $      6,720 $      1,800   2.5       NO
+     7 3/1/ 4 $      9,560 $      1,680   3.9       NO
+     8 3/1/ 4 $      7,080 $      1,080   3.9       NO
+     9 3/1/ 4 $      5,920 $      1,560   3.9       NO
+    10 4/0/ 4 $      8,240 $      4,120   4.5       NO
+    15 3/1/ 4 $      3,680 $      7,400   3.9       NO
+
+→ Overall: does_not_fit_multi_year (0/11 horizons fit)
+Wrote /app/data/new_brains_horizons.json in 195.8s

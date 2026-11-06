@@ -1,0 +1,122 @@
+AGENTIC 1y BATTERY · 2025-07-29→2026-07-29 · $200.0/R
+stage=a · LIVE BRAINS NOT MODIFIED
+
+
+===== STAGE A · wired brains ± agents · 8 pairs =====
+
+## GOLD don_100@15m RR=4.0
+Stage A [GOLD] don_100@15m
+  load GOLD 1m: 518,400 bars 2025-07-29→2026-07-23
+  load GOLD 3m: 172,800 bars 2025-07-29→2026-07-23
+  load GOLD 5m: 103,680 bars 2025-07-29→2026-07-23
+  load GOLD 15m: 34,560 bars 2025-07-29→2026-07-23
+  A0_baseline: n=464 pnl=$18,200 OOS_E[R]=+0.119 SURVIVES gate=False
+  A1_risk: n=464 pnl=$18,200 OOS_E[R]=+0.119 SURVIVES gate=False
+  A2_research: n=353 pnl=$16,400 OOS_E[R]=+0.150 SURVIVES gate=False
+  A3_scout: n=352 pnl=$15,600 OOS_E[R]=+0.078 SURVIVES gate=False
+  A4_debate: n=464 pnl=$18,200 OOS_E[R]=+0.119 SURVIVES gate=False
+  A5_news: n=253 pnl=$9,400 OOS_E[R]=+0.159 SURVIVES gate=False
+  A6_combo: n=353 pnl=$16,400 OOS_E[R]=+0.150 SURVIVES gate=False
+
+## USDCHF bb_2.5@1m RR=4.0
+Stage A [USDCHF] bb_2.5@1m
+  load USDCHF 1m: 518,400 bars 2025-07-29→2026-07-23
+  load USDCHF 3m: 172,800 bars 2025-07-29→2026-07-23
+  load USDCHF 5m: 103,680 bars 2025-07-29→2026-07-23
+  load USDCHF 15m: 34,560 bars 2025-07-29→2026-07-23
+  A0_baseline: n=175 pnl=$25,000 OOS_E[R]=+0.489 SURVIVES gate=False
+  A1_risk: n=160 pnl=$24,000 OOS_E[R]=+0.489 SURVIVES gate=False
+  A2_research: n=139 pnl=$19,200 OOS_E[R]=+0.351 SURVIVES gate=False
+  A3_scout: n=155 pnl=$21,000 OOS_E[R]=+0.489 SURVIVES gate=False
+  A4_debate: n=175 pnl=$25,000 OOS_E[R]=+0.489 SURVIVES gate=False
+  A5_news: n=94 pnl=$7,200 OOS_E[R]=+0.600 SURVIVES gate=False
+  A6_combo: n=128 pnl=$19,400 OOS_E[R]=+0.351 SURVIVES gate=False
+
+## USDJPY bb_2.5@1m RR=4.0
+Stage A [USDJPY] bb_2.5@1m
+  load USDJPY 1m: 518,400 bars 2025-07-29→2026-07-23
+  load USDJPY 3m: 172,800 bars 2025-07-29→2026-07-23
+  load USDJPY 5m: 103,680 bars 2025-07-29→2026-07-23
+  load USDJPY 15m: 34,560 bars 2025-07-29→2026-07-23
+  A0_baseline: n=236 pnl=$27,800 OOS_E[R]=+0.808 SURVIVES gate=False
+  A1_risk: n=236 pnl=$27,800 OOS_E[R]=+0.808 SURVIVES gate=False
+  A2_research: n=187 pnl=$24,600 OOS_E[R]=+0.908 SURVIVES gate=False
+  A3_scout: n=206 pnl=$18,800 OOS_E[R]=+0.603 SURVIVES gate=False
+  A4_debate: n=236 pnl=$27,800 OOS_E[R]=+0.808 SURVIVES gate=False
+  A5_news: n=135 pnl=$12,000 OOS_E[R]=+0.695 SURVIVES gate=False
+  A6_combo: n=187 pnl=$24,600 OOS_E[R]=+0.908 SURVIVES gate=False
+
+## NAS100 volmom@15m RR=4.0
+Stage A [NAS100] volmom@15m
+  load NAS100 1m: 518,400 bars 2025-07-29→2026-07-23
+  load NAS100 3m: 172,800 bars 2025-07-29→2026-07-23
+  load NAS100 5m: 103,680 bars 2025-07-29→2026-07-23
+  load NAS100 15m: 34,560 bars 2025-07-29→2026-07-23
+  A0_baseline: n=522 pnl=$25,600 OOS_E[R]=+0.416 SURVIVES gate=False
+  A1_risk: n=507 pnl=$25,600 OOS_E[R]=+0.416 SURVIVES gate=False
+  A2_research: n=399 pnl=$19,200 OOS_E[R]=+0.500 SURVIVES gate=False
+  A3_scout: n=430 pnl=$23,000 OOS_E[R]=+0.319 SURVIVES gate=False
+  A4_debate: n=522 pnl=$25,600 OOS_E[R]=+0.416 SURVIVES gate=False
+  A5_news: n=387 pnl=$18,600 OOS_E[R]=+0.309 SURVIVES gate=False
+  A6_combo: n=388 pnl=$19,400 OOS_E[R]=+0.500 SURVIVES gate=False
+
+## UKOIL cta_10_40@5m RR=4.0
+Stage A [UKOIL] cta_10_40@5m
+  load UKOIL 1m: 518,400 bars 2025-07-29→2026-07-23
+  load UKOIL 3m: 172,800 bars 2025-07-29→2026-07-23
+  load UKOIL 5m: 103,680 bars 2025-07-29→2026-07-23
+  load UKOIL 15m: 34,560 bars 2025-07-29→2026-07-23
+  A0_baseline: n=1092 pnl=$38,600 OOS_E[R]=+0.378 SURVIVES gate=False
+  A1_risk: n=1032 pnl=$39,600 OOS_E[R]=+0.378 SURVIVES gate=False
+  A2_research: n=820 pnl=$28,000 OOS_E[R]=+0.336 SURVIVES gate=False
+  A3_scout: n=822 pnl=$27,600 OOS_E[R]=+0.403 SURVIVES gate=False
+  A4_debate: n=1092 pnl=$38,600 OOS_E[R]=+0.378 SURVIVES gate=False
+  A5_news: n=795 pnl=$17,000 OOS_E[R]=+0.352 SURVIVES gate=False
+  A6_combo: n=775 pnl=$28,000 OOS_E[R]=+0.336 SURVIVES gate=False
+
+## AUDUSD bb_2@1m RR=4.0
+Stage A [AUDUSD] bb_2@1m
+  load AUDUSD 1m: 518,400 bars 2025-07-29→2026-07-23
+  load AUDUSD 3m: 172,800 bars 2025-07-29→2026-07-23
+  load AUDUSD 5m: 103,680 bars 2025-07-29→2026-07-23
+  load AUDUSD 15m: 34,560 bars 2025-07-29→2026-07-23
+  A0_baseline: n=2104 pnl=$110,200 OOS_E[R]=+0.337 SURVIVES gate=False
+  A1_risk: n=2074 pnl=$109,200 OOS_E[R]=+0.337 SURVIVES gate=False
+  A2_research: n=1586 pnl=$78,800 OOS_E[R]=+0.327 SURVIVES gate=False
+  A3_scout: n=1554 pnl=$83,200 OOS_E[R]=+0.367 SURVIVES gate=False
+  A4_debate: n=2104 pnl=$110,200 OOS_E[R]=+0.337 SURVIVES gate=False
+  A5_news: n=1609 pnl=$90,200 OOS_E[R]=+0.347 SURVIVES gate=False
+  A6_combo: n=1564 pnl=$79,200 OOS_E[R]=+0.327 SURVIVES gate=False
+
+## BTCUSD bb_2.5@1m RR=2.4
+Stage A [BTCUSD] bb_2.5@1m
+  load BTCUSD 1m: 518,400 bars 2025-07-29→2026-07-23
+  load BTCUSD 3m: 172,800 bars 2025-07-29→2026-07-23
+  load BTCUSD 5m: 103,680 bars 2025-07-29→2026-07-23
+  load BTCUSD 15m: 34,560 bars 2025-07-29→2026-07-23
+  A0_baseline: n=281 pnl=$24,040 OOS_E[R]=+0.631 SURVIVES gate=False
+  A1_risk: n=281 pnl=$24,040 OOS_E[R]=+0.631 SURVIVES gate=False
+  A2_research: n=236 pnl=$21,480 OOS_E[R]=+0.636 SURVIVES gate=False
+  A3_scout: n=251 pnl=$23,240 OOS_E[R]=+0.631 SURVIVES gate=False
+  A4_debate: n=281 pnl=$24,040 OOS_E[R]=+0.631 SURVIVES gate=False
+  A5_news: n=230 pnl=$22,000 OOS_E[R]=+0.755 SURVIVES gate=False
+  A6_combo: n=236 pnl=$21,480 OOS_E[R]=+0.636 SURVIVES gate=False
+
+## ETHUSD bb_2@1m RR=4.0
+Stage A [ETHUSD] bb_2@1m
+  load ETHUSD 1m: 518,400 bars 2025-07-29→2026-07-23
+  load ETHUSD 3m: 172,800 bars 2025-07-29→2026-07-23
+  load ETHUSD 5m: 103,680 bars 2025-07-29→2026-07-23
+  load ETHUSD 15m: 34,560 bars 2025-07-29→2026-07-23
+  A0_baseline: n=3997 pnl=$131,600 OOS_E[R]=+0.186 SURVIVES gate=False
+  A1_risk: n=3997 pnl=$131,600 OOS_E[R]=+0.186 SURVIVES gate=False
+  A2_research: n=3001 pnl=$94,800 OOS_E[R]=+0.219 SURVIVES gate=False
+  A3_scout: n=2907 pnl=$106,600 OOS_E[R]=+0.208 SURVIVES gate=False
+  A4_debate: n=3997 pnl=$131,600 OOS_E[R]=+0.186 SURVIVES gate=False
+  A5_news: n=3143 pnl=$105,400 OOS_E[R]=+0.181 SURVIVES gate=False
+  A6_combo: n=3001 pnl=$94,800 OOS_E[R]=+0.219 SURVIVES gate=False
+
+Stage A best desk policy: A0_baseline @ $401,040
+Agentic 1y battery complete
+
+Wrote /app/data/lab_agentic_1y_results.json in 146.5s

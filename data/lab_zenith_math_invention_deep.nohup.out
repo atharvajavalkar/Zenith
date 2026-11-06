@@ -1,0 +1,736 @@
+=== ZENITH MATH INVENTION DEEP HUNT ===
+Book=('ETHUSD', 'BTCUSD', 'GOLD', 'NAS100', 'USDJPY', 'AUDUSD', 'USDCHF', 'UKOIL')
+TFs=('5m', '15m') densify+=3m
+Formulas=37 · RR=[1.5, 2.0, 2.4, 3.0, 4.0]
+Periods=['1y', '3y', '5y', 'full']
+cap_years=8.0 min=18000s max=36000s
+LIVE BRAINS NOT TOUCHED
+Goal: invent math edges — cannot promise win-all-trades
+
+Hist depth: {"ETHUSD": {"1m": {"start": "2017-12-11 00:00:00", "end": "2026-07-23 23:59:00", "years": 8.61}, "5m": {"start": "2017-12-11 00:00:00", "end": "2026-07-23 23:55:00", "years": 8.61}, "15m": {"start": "2017-12-11 00:00:00", "end": "2026-07-23 23:45:00", "years": 8.61}}, "BTCUSD": {"1m": {"start": "2017-05-07 00:00:00", "end": "2026-07-23 23:59:00", "years": 9.21}, "5m": {"start": "2017-05-07 00:00:00", "end": "2026-07-23 23:55:00", "years": 9.21}, "15m": {"start": "2017-05-07 00:00:00", "end": "2026-07-23 23:45:00", "years": 9.21}}, "GOLD": {"1m": {"start": "2016-07-23 00:00:00", "end": "2026-07-23 23:59:00", "years": 10.0}, "5m": {"start": "2016-07-23 00:00:00", "end": "2026-07-23 23:55:00", "years": 10.0}, "15m": {"start": "2016-07-23 00:00:00", "end": "2026-07-23 23:45:00", "years": 10.0}}, "NAS100": {"1m": {"start": "2016-07-23 00:00:00", "end": "2026-07-23 23:59:00", "years": 10.0}, "5m": {"start": "2016-07-23 00:00:00", "end": "2026-07-23 23:55:00", "years": 10.0}, "15m": {"start": "2016-07-23 00:00:00", "end": "2026-07-23 23:45:00", "years": 10.0}}, "USDJPY": {"1m": {"start": "2016-07-23 00:00:00", "end": "2026-07-23 23:59:00", "years": 10.0}, "5m": {"start": "2016-07-23 00:00:00", "end": "2026-07-23 23:55:00", "years": 10.0}, "15m": {"start": "2016-07-23 00:00:00", "end": "2026-07-23 23:45:00", "years": 10.0}}, "AUDUSD": {"1m": {"start": "2016-07-23 00:00:00", "end": "2026-07-23 23:59:00", "years": 10.0}, "5m": {"start": "2016-07-23 00:00:00", "end": "2026-07-23 23:55:00", "years": 10.0}, "15m": {"start": "2016-07-23 00:00:00", "end": "2026-07-23 23:45:00", "years": 10.0}}, "USDCHF": {"1m": {"start": "2016-07-23 00:00:00", "end": "2026-07-23 23:59:00", "years": 10.0}, "5m": {"start": "2016-07-23 00:00:00", "end": "2026-07-23 23:55:00", "years": 10.0}, "15m": {"start": "2016-07-23 00:00:00", "end": "2026-07-23 23:45:00", "years": 10.0}}, "UKOIL": {"1m": {"start": "2016-07-23 00:00:00", "end": "2026-07-23 23:59:00", "years": 10.0}, "5m": {"start": "2016-07-23 00:00:00", "end": "2026-07-23 23:55:00", "years": 10.0}, "15m": {"start": "2016-07-23 00:00:00", "end": "2026-07-23 23:45:00", "years": 10.0}}}
+
+######## ETHUSD ########
+  load ETHUSD 5m (8.0y) …
+  enriched 854,497 bars 2018-06-08→2026-07-23
+  ✓ GATE snr_drift_0.30         5m RR=3.0 n=4995 WR=26.0 E[R]=0.041 1y=0.042 3y=0.022 score=14.288
+  ✓ GATE snr_drift_0.30         5m RR=4.0 n=4636 WR=21.4 E[R]=0.0677 1y=0.008 3y=0.004 score=14.728
+  ✓ GATE snr_drift_0.40         5m RR=3.0 n=868 WR=28.2 E[R]=0.129 1y=0.057 3y=0.06 score=15.342
+  ✓ GATE hurst_trend_0.52       5m RR=3.0 n=27788 WR=25.9 E[R]=0.0358 1y=0.007 3y=0.052 score=14.9
+  ✓ GATE hurst_trend_0.52       5m RR=4.0 n=22848 WR=21.0 E[R]=0.0495 1y=0.006 3y=0.063 score=14.807
+  ✓ GATE hurst_trend_0.58       5m RR=3.0 n=5602 WR=26.5 E[R]=0.0582 1y=0.019 3y=0.057 score=14.695
+  ✓ GATE hurst_trend_0.58       5m RR=4.0 n=4888 WR=21.2 E[R]=0.0618 1y=0.05 3y=0.073 score=14.928
+  ✓ GATE ou_snap_5_40           5m RR=1.5 n=35092 WR=41.0 E[R]=0.025 1y=0.033 3y=0.029 score=15.429
+  ✓ GATE ou_snap_5_40           5m RR=2.0 n=31591 WR=34.4 E[R]=0.0319 1y=0.034 3y=0.028 score=15.181
+  ✓ GATE ou_snap_5_40           5m RR=2.4 n=29265 WR=30.2 E[R]=0.0264 1y=0.035 3y=0.021 score=14.954
+  ✓ GATE ou_snap_5_40           5m RR=3.0 n=26394 WR=26.0 E[R]=0.0418 1y=0.051 3y=0.044 score=14.921
+  ✓ GATE ou_snap_5_40           5m RR=4.0 n=22775 WR=21.1 E[R]=0.0529 1y=0.022 3y=0.044 score=14.761
+  ✓ GATE ou_snap_8_25           5m RR=1.5 n=20143 WR=41.1 E[R]=0.0279 1y=0.039 3y=0.028 score=15.428
+  ✓ GATE ou_snap_8_25           5m RR=2.0 n=18463 WR=34.5 E[R]=0.0349 1y=0.049 3y=0.029 score=15.187
+  ✓ GATE ou_snap_8_25           5m RR=2.4 n=17417 WR=30.3 E[R]=0.0301 1y=0.031 3y=0.015 score=14.523
+  ✓ GATE ou_snap_8_25           5m RR=3.0 n=16205 WR=26.0 E[R]=0.0397 1y=0.029 3y=0.02 score=14.403
+  ✓ GATE ou_snap_8_25           5m RR=4.0 n=14806 WR=20.8 E[R]=0.0425 1y=0.006 3y=0.025 score=14.62
+  ✓ GATE higuchi_trend_1.40     5m RR=2.0 n=9677 WR=34.8 E[R]=0.0447 1y=0.033 3y=0.066 score=13.731
+  ✓ GATE higuchi_trend_1.40     5m RR=2.4 n=8872 WR=30.9 E[R]=0.0516 1y=0.012 3y=0.072 score=13.187
+  ✓ GATE higuchi_trend_1.40     5m RR=3.0 n=7934 WR=26.6 E[R]=0.0643 1y=0.052 3y=0.08 score=14.731
+  ✓ GATE higuchi_trend_1.40     5m RR=4.0 n=7068 WR=22.4 E[R]=0.1213 1y=0.098 3y=0.14 score=15.357
+  ✓ GATE allan_persist_0.80     5m RR=3.0 n=42565 WR=25.5 E[R]=0.0214 1y=0.031 3y=0.038 score=14.415
+  ✓ GATE allan_persist_0.80     5m RR=4.0 n=33894 WR=20.7 E[R]=0.0369 1y=0.027 3y=0.055 score=14.349
+  ✓ GATE allan_persist_0.95     5m RR=3.0 n=43774 WR=25.4 E[R]=0.0169 1y=0.019 3y=0.032 score=13.114
+  ✓ GATE allan_persist_0.95     5m RR=4.0 n=34618 WR=20.7 E[R]=0.0347 1y=0.012 3y=0.051 score=14.315
+  ✓ GATE perm_order_0.90        5m RR=4.0 n=1268 WR=22.6 E[R]=0.1278 1y=0.091 3y=0.176 score=15.511
+/app/analysis/lab_zenith_math_invention_deep_bt.py:437: RuntimeWarning: invalid value encountered in cast
+  sides = np.where((x >= thr) & (ds != 0), ds.astype(int), 0)
+  ✓ GATE eff_lf_0.32            5m RR=2.4 n=43429 WR=29.8 E[R]=0.0143 1y=0.001 3y=0.029 score=13.229
+  ✓ GATE eff_lf_0.32            5m RR=3.0 n=37237 WR=25.7 E[R]=0.0292 1y=0.01 3y=0.05 score=14.498
+  ✓ GATE eff_lf_0.32            5m RR=4.0 n=29897 WR=21.1 E[R]=0.0533 1y=0.009 3y=0.052 score=14.825
+  ✓ GATE kalman_fade_1.6        5m RR=1.5 n=37840 WR=40.6 E[R]=0.0139 1y=0.024 3y=0.012 score=14.869
+  ✓ GATE kalman_fade_1.6        5m RR=2.0 n=34348 WR=33.8 E[R]=0.0154 1y=0.035 3y=0.014 score=14.56
+  ✓ GATE kalman_fade_1.6        5m RR=2.4 n=31866 WR=30.0 E[R]=0.0216 1y=0.034 3y=0.018 score=14.488
+  ✓ GATE kalman_fade_1.6        5m RR=3.0 n=28494 WR=25.6 E[R]=0.0256 1y=0.032 3y=0.021 score=14.328
+  ✓ GATE kalman_fade_1.6        5m RR=4.0 n=24155 WR=21.1 E[R]=0.0528 1y=0.041 3y=0.035 score=14.322
+  ✓ GATE kalman_fade_2.0        5m RR=1.5 n=23688 WR=40.8 E[R]=0.0197 1y=0.007 3y=0.012 score=14.93
+  ✓ GATE kalman_fade_2.0        5m RR=2.0 n=22325 WR=34.2 E[R]=0.0245 1y=0.015 3y=0.016 score=14.686
+  ✓ GATE kalman_fade_2.0        5m RR=2.4 n=21288 WR=30.2 E[R]=0.0262 1y=0.013 3y=0.019 score=14.52
+  ✓ GATE kalman_fade_2.0        5m RR=3.0 n=19709 WR=25.7 E[R]=0.0278 1y=0.002 3y=0.017 score=14.325
+  ✓ GATE kalman_fade_2.4        5m RR=1.5 n=13197 WR=41.1 E[R]=0.0281 1y=0.015 3y=0.023 score=15.025
+  ✓ GATE kalman_fade_2.4        5m RR=2.0 n=12772 WR=34.6 E[R]=0.0387 1y=0.012 3y=0.03 score=14.829
+  ✓ GATE kalman_fade_2.4        5m RR=2.4 n=12396 WR=30.6 E[R]=0.0412 1y=0.016 3y=0.028 score=14.666
+  ✓ GATE kalman_fade_2.4        5m RR=3.0 n=11847 WR=26.1 E[R]=0.0457 1y=0.037 3y=0.031 score=14.906
+  ✓ GATE kalman_fade_2.4        5m RR=4.0 n=11028 WR=21.3 E[R]=0.0641 1y=0.034 3y=0.046 score=14.845
+  ✓ GATE zcr_0.30               5m RR=2.4 n=57033 WR=29.9 E[R]=0.0157 1y=0.006 3y=0.02 score=14.91
+  ✓ GATE zcr_0.30               5m RR=3.0 n=47729 WR=25.6 E[R]=0.0245 1y=0.008 3y=0.03 score=14.801
+  ✓ GATE bimod_0.55             5m RR=2.0 n=2944 WR=37.0 E[R]=0.1107 1y=0.061 3y=0.052 score=15.79
+  ✓ GATE bimod_0.55             5m RR=2.4 n=2740 WR=33.4 E[R]=0.1342 1y=0.083 3y=0.065 score=15.807
+  ✓ GATE bimod_0.55             5m RR=3.0 n=2560 WR=29.3 E[R]=0.1703 1y=0.115 3y=0.082 score=15.903
+  ✓ GATE bimod_0.55             5m RR=4.0 n=2357 WR=25.1 E[R]=0.2537 1y=0.127 3y=0.124 score=16.191
+  ✓ GATE bimod_0.70             5m RR=2.0 n=1062 WR=37.9 E[R]=0.1356 1y=0.163 3y=0.104 score=15.428
+  ✓ GATE bimod_0.70             5m RR=2.4 n=984 WR=34.0 E[R]=0.1575 1y=0.228 3y=0.146 score=15.908
+  ✓ GATE bimod_0.70             5m RR=3.0 n=930 WR=29.6 E[R]=0.1828 1y=0.371 3y=0.207 score=15.833
+  ✓ GATE bimod_0.70             5m RR=4.0 n=864 WR=25.3 E[R]=0.2674 1y=0.418 3y=0.189 score=15.343
+  ✓ GATE cusum_0.015            5m RR=2.4 n=55640 WR=30.0 E[R]=0.0186 1y=0.001 3y=0.022 score=14.932
+  ✓ GATE cusum_0.015            5m RR=3.0 n=46723 WR=25.7 E[R]=0.0279 1y=0.026 3y=0.034 score=14.841
+  ✓ GATE cusum_0.025            5m RR=2.4 n=54307 WR=29.9 E[R]=0.0152 1y=0.002 3y=0.023 score=14.89
+  ✓ GATE cusum_0.025            5m RR=3.0 n=46059 WR=25.5 E[R]=0.0207 1y=0.012 3y=0.027 score=14.376
+  ✓ GATE tail_mid_snr           5m RR=3.0 n=4975 WR=26.0 E[R]=0.0404 1y=0.042 3y=0.022 score=14.283
+  ✓ GATE tail_mid_snr           5m RR=4.0 n=4618 WR=21.4 E[R]=0.0697 1y=0.008 3y=0.004 score=14.742
+  ✓ GATE hf_spike_fade_0.60     5m RR=2.0 n=17815 WR=34.1 E[R]=0.0217 1y=0.015 3y=0.037 score=13.523
+  ✓ GATE hf_spike_fade_0.60     5m RR=4.0 n=12644 WR=21.1 E[R]=0.0531 1y=0.013 3y=0.067 score=14.886
+  ✓ GATE hf_spike_fade_0.70     5m RR=1.5 n=4685 WR=42.8 E[R]=0.0688 1y=0.057 3y=0.05 score=15.746
+  ✓ GATE hf_spike_fade_0.70     5m RR=2.0 n=4035 WR=35.2 E[R]=0.0558 1y=0.065 3y=0.069 score=15.013
+  ✓ GATE hf_spike_fade_0.70     5m RR=2.4 n=3717 WR=31.2 E[R]=0.0611 1y=0.047 3y=0.051 score=15.181
+  ✓ GATE hf_spike_fade_0.70     5m RR=3.0 n=3371 WR=27.0 E[R]=0.0786 1y=0.011 3y=0.051 score=14.614
+  ✓ GATE hf_spike_fade_0.70     5m RR=4.0 n=3065 WR=22.4 E[R]=0.1191 1y=0.018 3y=0.096 score=15.239
+  ✓ GATE lf_thrust_eff          5m RR=4.0 n=5082 WR=21.3 E[R]=0.0645 1y=0.011 3y=0.074 score=13.36
+  ✓ GATE vol_compress_release   5m RR=3.0 n=2763 WR=27.2 E[R]=0.0887 1y=0.018 3y=0.064 score=15.246
+  ✓ GATE vol_compress_release   5m RR=4.0 n=2740 WR=22.9 E[R]=0.146 1y=0.078 3y=0.097 score=15.42
+  ✓ GATE skew_align_snr         5m RR=1.5 n=7364 WR=42.5 E[R]=0.0633 1y=0.015 3y=0.032 score=15.653
+  ✓ GATE skew_align_snr         5m RR=2.0 n=6799 WR=36.3 E[R]=0.0894 1y=0.044 3y=0.064 score=15.584
+  ✓ GATE skew_align_snr         5m RR=2.4 n=6505 WR=32.7 E[R]=0.1128 1y=0.053 3y=0.065 score=15.56
+  ✓ GATE skew_align_snr         5m RR=3.0 n=6150 WR=28.5 E[R]=0.1402 1y=0.102 3y=0.095 score=15.576
+  ✓ GATE skew_align_snr         5m RR=4.0 n=5776 WR=23.3 E[R]=0.166 1y=0.103 3y=0.088 score=15.431
+  load ETHUSD 15m (8.0y) …
+  enriched 284,833 bars 2018-06-08→2026-07-23
+  ✓ GATE hurst_trend_0.52       15m RR=4.0 n=7278 WR=21.9 E[R]=0.0937 1y=0.053 3y=0.089 score=15.118
+  ✓ GATE ou_snap_8_25           15m RR=2.0 n=5975 WR=34.4 E[R]=0.0313 1y=0.05 3y=0.014 score=14.979
+  ✓ GATE ou_snap_8_25           15m RR=2.4 n=5645 WR=30.6 E[R]=0.0414 1y=0.105 3y=0.03 score=14.579
+  ✓ GATE ou_snap_8_25           15m RR=3.0 n=5277 WR=26.4 E[R]=0.0574 1y=0.08 3y=0.038 score=14.552
+  ✓ GATE ou_snap_8_25           15m RR=4.0 n=4851 WR=21.1 E[R]=0.0555 1y=0.107 3y=0.022 score=14.201
+  ✓ GATE higuchi_trend_1.50     15m RR=2.0 n=10050 WR=34.2 E[R]=0.0266 1y=0.002 3y=0.026 score=14.667
+  ✓ GATE higuchi_trend_1.50     15m RR=2.4 n=9129 WR=30.8 E[R]=0.048 1y=0.01 3y=0.053 score=15.163
+  ✓ GATE higuchi_trend_1.50     15m RR=3.0 n=8122 WR=26.7 E[R]=0.0687 1y=0.034 3y=0.072 score=15.125
+  ✓ GATE higuchi_trend_1.50     15m RR=4.0 n=6810 WR=21.8 E[R]=0.0888 1y=0.005 3y=0.087 score=13.873
+/app/analysis/lab_zenith_math_invention_deep_bt.py:437: RuntimeWarning: invalid value encountered in cast
+  sides = np.where((x >= thr) & (ds != 0), ds.astype(int), 0)
+  ✓ GATE eff_lf_0.25            15m RR=2.0 n=17497 WR=34.0 E[R]=0.0188 1y=0.058 3y=0.032 score=14.578
+  ✓ GATE eff_lf_0.25            15m RR=2.4 n=15608 WR=30.3 E[R]=0.0286 1y=0.023 3y=0.025 score=14.94
+  ✓ GATE eff_lf_0.25            15m RR=3.0 n=13239 WR=26.3 E[R]=0.0508 1y=0.05 3y=0.05 score=14.934
+  ✓ GATE eff_lf_0.25            15m RR=4.0 n=10464 WR=21.1 E[R]=0.0574 1y=0.04 3y=0.031 score=14.738
+  ✓ GATE torsion_0.30           15m RR=2.0 n=15133 WR=34.0 E[R]=0.0207 1y=0.006 3y=0.036 score=15.058
+  ✓ GATE torsion_0.30           15m RR=4.0 n=9795 WR=21.7 E[R]=0.0842 1y=0.026 3y=0.102 score=15.09
+  ✓ GATE torsion_0.40           15m RR=4.0 n=10345 WR=21.7 E[R]=0.087 1y=0.02 3y=0.092 score=15.089
+  ✓ GATE bimod_0.55             15m RR=1.5 n=1781 WR=42.7 E[R]=0.0682 1y=0.124 3y=0.092 score=15.898
+  ✓ GATE bimod_0.55             15m RR=2.0 n=1590 WR=37.8 E[R]=0.134 1y=0.232 3y=0.186 score=16.358
+  ✓ GATE bimod_0.55             15m RR=2.4 n=1502 WR=34.2 E[R]=0.1635 1y=0.173 3y=0.198 score=16.298
+  ✓ GATE bimod_0.55             15m RR=3.0 n=1401 WR=30.2 E[R]=0.2077 1y=0.2 3y=0.232 score=16.395
+  ✓ GATE bimod_0.55             15m RR=4.0 n=1289 WR=26.1 E[R]=0.3072 1y=0.384 3y=0.397 score=17.026
+  ✓ GATE cusum_0.015            15m RR=3.0 n=14404 WR=26.2 E[R]=0.048 1y=0.023 3y=0.033 score=14.95
+  ✓ GATE cusum_0.025            15m RR=3.0 n=14026 WR=26.4 E[R]=0.0569 1y=0.007 3y=0.023 score=14.95
+  ✓ GATE cusum_0.025            15m RR=4.0 n=11108 WR=21.6 E[R]=0.0799 1y=0.072 3y=0.065 score=14.984
+  ✓ GATE hf_spike_fade_0.60     15m RR=2.0 n=5418 WR=34.6 E[R]=0.0382 1y=0.041 3y=0.04 score=13.505
+  ✓ GATE hf_spike_fade_0.60     15m RR=3.0 n=4481 WR=26.1 E[R]=0.0444 1y=0.021 3y=0.018 score=14.28
+  ✓ GATE hf_spike_fade_0.70     15m RR=1.5 n=1392 WR=42.2 E[R]=0.056 1y=0.114 3y=0.124 score=14.362
+  ✓ GATE hf_spike_fade_0.70     15m RR=2.0 n=1232 WR=35.8 E[R]=0.0739 1y=0.091 3y=0.186 score=14.318
+  ✓ GATE hf_spike_fade_0.70     15m RR=2.4 n=1163 WR=32.1 E[R]=0.0905 1y=0.094 3y=0.192 score=14.264
+  ✓ GATE hf_spike_fade_0.70     15m RR=3.0 n=1063 WR=26.7 E[R]=0.0687 1y=0.013 3y=0.117 score=14.468
+  ✓ GATE vol_compress_release   15m RR=1.5 n=1175 WR=44.6 E[R]=0.1149 1y=0.119 3y=0.083 score=16.082
+  ✓ GATE vol_compress_release   15m RR=2.0 n=1172 WR=40.1 E[R]=0.2031 1y=0.2 3y=0.149 score=16.064
+  ✓ GATE vol_compress_release   15m RR=2.4 n=1165 WR=35.3 E[R]=0.1995 1y=0.261 3y=0.156 score=16.245
+  ✓ GATE vol_compress_release   15m RR=3.0 n=1153 WR=30.4 E[R]=0.2177 1y=0.211 3y=0.123 score=15.545
+  ✓ GATE vol_compress_release   15m RR=4.0 n=1134 WR=25.3 E[R]=0.2654 1y=0.279 3y=0.18 score=15.805
+
+######## BTCUSD ########
+  load BTCUSD 5m (8.0y) …
+  enriched 854,497 bars 2018-06-08→2026-07-23
+  ✓ GATE snr_drift_0.40         5m RR=2.4 n=871 WR=31.1 E[R]=0.0579 1y=0.038 3y=0.058 score=14.402
+  ✓ GATE snr_drift_0.40         5m RR=4.0 n=797 WR=22.7 E[R]=0.1355 1y=0.058 3y=0.105 score=14.9
+  ✓ GATE hurst_trend_0.58       5m RR=1.5 n=7515 WR=41.1 E[R]=0.0279 1y=0.011 3y=0.04 score=14.976
+  ✓ GATE hurst_mr_0.45          5m RR=4.0 n=3075 WR=22.2 E[R]=0.1106 1y=0.137 3y=0.084 score=15.172
+  ✓ GATE hurst_mr_0.40          5m RR=1.5 n=311 WR=45.0 E[R]=0.1254 1y=0.19 3y=0.087 score=14.707
+  ✓ GATE hurst_mr_0.40          5m RR=2.4 n=251 WR=32.7 E[R]=0.1108 1y=0.1 3y=0.001 score=13.039
+  ✓ GATE ou_snap_5_40           5m RR=1.5 n=36682 WR=40.8 E[R]=0.0195 1y=0.035 3y=0.02 score=15.378
+  ✓ GATE ou_snap_5_40           5m RR=2.0 n=33099 WR=34.2 E[R]=0.0265 1y=0.021 3y=0.026 score=15.151
+  ✓ GATE ou_snap_5_40           5m RR=2.4 n=30667 WR=30.4 E[R]=0.0333 1y=0.011 3y=0.03 score=15.047
+  ✓ GATE ou_snap_8_25           5m RR=1.5 n=21009 WR=41.3 E[R]=0.0323 1y=0.009 3y=0.03 score=15.478
+  ✓ GATE ou_snap_8_25           5m RR=4.0 n=15400 WR=21.2 E[R]=0.0591 1y=0.004 3y=0.035 score=14.786
+/app/analysis/lab_zenith_math_invention_deep_bt.py:437: RuntimeWarning: invalid value encountered in cast
+  sides = np.where((x >= thr) & (ds != 0), ds.astype(int), 0)
+  ✓ GATE kalman_fade_1.6        5m RR=1.5 n=38440 WR=40.8 E[R]=0.0189 1y=0.041 3y=0.014 score=14.942
+  ✓ GATE kalman_fade_1.6        5m RR=2.0 n=35207 WR=34.2 E[R]=0.0275 1y=0.045 3y=0.021 score=14.733
+  ✓ GATE kalman_fade_1.6        5m RR=2.4 n=32764 WR=30.6 E[R]=0.041 1y=0.063 3y=0.032 score=15.079
+  ✓ GATE kalman_fade_1.6        5m RR=3.0 n=29378 WR=26.1 E[R]=0.0425 1y=0.042 3y=0.028 score=14.9
+  ✓ GATE kalman_fade_1.6        5m RR=4.0 n=24666 WR=21.4 E[R]=0.0717 1y=0.078 3y=0.048 score=14.876
+  ✓ GATE kalman_fade_2.0        5m RR=1.5 n=23849 WR=41.1 E[R]=0.0287 1y=0.031 3y=0.031 score=15.457
+  ✓ GATE kalman_fade_2.0        5m RR=2.0 n=22593 WR=34.5 E[R]=0.0351 1y=0.038 3y=0.041 score=15.247
+  ✓ GATE kalman_fade_2.0        5m RR=2.4 n=21672 WR=30.9 E[R]=0.0491 1y=0.063 3y=0.052 score=15.208
+  ✓ GATE kalman_fade_2.0        5m RR=3.0 n=20057 WR=26.4 E[R]=0.0566 1y=0.028 3y=0.044 score=15.014
+  ✓ GATE kalman_fade_2.0        5m RR=4.0 n=17791 WR=21.7 E[R]=0.0865 1y=0.047 3y=0.075 score=15.025
+  ✓ GATE kalman_fade_2.4        5m RR=1.5 n=13176 WR=41.1 E[R]=0.0286 1y=0.044 3y=0.037 score=15.463
+  ✓ GATE kalman_fade_2.4        5m RR=2.0 n=12811 WR=34.8 E[R]=0.0425 1y=0.061 3y=0.04 score=15.273
+  ✓ GATE kalman_fade_2.4        5m RR=2.4 n=12527 WR=31.0 E[R]=0.0525 1y=0.072 3y=0.04 score=14.751
+  ✓ GATE kalman_fade_2.4        5m RR=3.0 n=12012 WR=26.7 E[R]=0.0663 1y=0.056 3y=0.037 score=14.604
+  ✓ GATE kalman_fade_2.4        5m RR=4.0 n=11224 WR=22.2 E[R]=0.1101 1y=0.129 3y=0.078 score=14.712
+  ✓ GATE hf_spike_fade_0.60     5m RR=2.0 n=17908 WR=34.1 E[R]=0.0231 1y=0.041 3y=0.042 score=13.906
+  ✓ GATE hf_spike_fade_0.60     5m RR=2.4 n=16433 WR=30.3 E[R]=0.0302 1y=0.057 3y=0.039 score=15.034
+  ✓ GATE hf_spike_fade_0.60     5m RR=3.0 n=14799 WR=25.9 E[R]=0.0363 1y=0.014 3y=0.017 score=14.813
+  ✓ GATE hf_spike_fade_0.70     5m RR=2.4 n=3254 WR=30.9 E[R]=0.0501 1y=0.015 3y=0.112 score=15.278
+  ✓ GATE hf_spike_fade_0.70     5m RR=3.0 n=3054 WR=26.3 E[R]=0.053 1y=0.063 3y=0.109 score=14.974
+  ✓ GATE hf_spike_fade_0.70     5m RR=4.0 n=2823 WR=22.0 E[R]=0.1017 1y=0.08 3y=0.132 score=15.261
+  ✓ GATE lf_thrust_eff          5m RR=2.0 n=6877 WR=34.9 E[R]=0.0457 1y=0.077 3y=0.067 score=13.753
+  ✓ GATE lf_thrust_eff          5m RR=2.4 n=6408 WR=30.6 E[R]=0.0421 1y=0.093 3y=0.056 score=13.485
+  ✓ GATE lf_thrust_eff          5m RR=3.0 n=5834 WR=26.2 E[R]=0.0477 1y=0.136 3y=0.072 score=13.386
+  ✓ GATE lf_thrust_eff          5m RR=4.0 n=5258 WR=21.0 E[R]=0.0498 1y=0.069 3y=0.092 score=13.2
+  ✓ GATE vol_compress_release   5m RR=4.0 n=2894 WR=22.1 E[R]=0.1075 1y=0.009 3y=0.002 score=14.601
+  ✓ GATE fractal_mr             5m RR=1.5 n=5109 WR=41.7 E[R]=0.0433 1y=0.109 3y=0.056 score=13.984
+  ✓ GATE fractal_mr             5m RR=2.0 n=4646 WR=35.0 E[R]=0.0499 1y=0.067 3y=0.046 score=15.272
+  ✓ GATE fractal_mr             5m RR=2.4 n=4356 WR=31.4 E[R]=0.0678 1y=0.043 3y=0.043 score=14.013
+  ✓ GATE fractal_mr             5m RR=3.0 n=4046 WR=26.9 E[R]=0.0776 1y=0.068 3y=0.031 score=14.688
+  ✓ GATE fractal_mr             5m RR=4.0 n=3693 WR=21.5 E[R]=0.0764 1y=0.005 3y=0.027 score=13.997
+  load BTCUSD 15m (8.0y) …
+  enriched 284,833 bars 2018-06-08→2026-07-23
+  ✓ GATE hurst_trend_0.52       15m RR=4.0 n=7149 WR=20.9 E[R]=0.0435 1y=0.028 3y=0.007 score=14.58
+  ✓ GATE ou_snap_8_25           15m RR=1.5 n=6183 WR=42.2 E[R]=0.0561 1y=0.046 3y=0.058 score=15.62
+  ✓ GATE ou_snap_8_25           15m RR=2.0 n=5648 WR=35.5 E[R]=0.0644 1y=0.03 3y=0.06 score=13.779
+  ✓ GATE ou_snap_8_25           15m RR=2.4 n=5344 WR=31.8 E[R]=0.0829 1y=0.084 3y=0.088 score=13.797
+  ✓ GATE ou_snap_8_25           15m RR=3.0 n=4986 WR=27.3 E[R]=0.0911 1y=0.091 3y=0.097 score=13.683
+  ✓ GATE ou_snap_8_25           15m RR=4.0 n=4565 WR=22.6 E[R]=0.1292 1y=0.074 3y=0.097 score=14.805
+  ✓ GATE higuchi_trend_1.40     15m RR=2.0 n=3205 WR=35.7 E[R]=0.0718 1y=0.019 3y=0.023 score=14.667
+  ✓ GATE higuchi_trend_1.50     15m RR=2.4 n=8874 WR=31.0 E[R]=0.0548 1y=0.023 3y=0.032 score=15.193
+/app/analysis/lab_zenith_math_invention_deep_bt.py:437: RuntimeWarning: invalid value encountered in cast
+  sides = np.where((x >= thr) & (ds != 0), ds.astype(int), 0)
+  ✓ GATE kalman_fade_2.0        15m RR=2.4 n=7132 WR=30.3 E[R]=0.0302 1y=0.055 3y=0.052 score=14.882
+  ✓ GATE kalman_fade_2.0        15m RR=3.0 n=6564 WR=26.2 E[R]=0.0469 1y=0.067 3y=0.073 score=14.916
+  ✓ GATE kalman_fade_2.0        15m RR=4.0 n=5930 WR=21.8 E[R]=0.0902 1y=0.143 3y=0.12 score=15.11
+  ✓ GATE torsion_0.30           15m RR=4.0 n=9777 WR=21.3 E[R]=0.0663 1y=0.044 3y=0.063 score=14.569
+  ✓ GATE torsion_0.40           15m RR=4.0 n=10152 WR=21.4 E[R]=0.0683 1y=0.024 3y=0.048 score=14.928
+  ✓ GATE bimod_0.55             15m RR=1.5 n=1953 WR=43.0 E[R]=0.0753 1y=0.101 3y=0.1 score=15.647
+  ✓ GATE bimod_0.55             15m RR=2.0 n=1744 WR=37.3 E[R]=0.1198 1y=0.212 3y=0.194 score=16.241
+  ✓ GATE bimod_0.55             15m RR=2.4 n=1641 WR=33.8 E[R]=0.1478 1y=0.224 3y=0.199 score=16.186
+  ✓ GATE bimod_0.55             15m RR=3.0 n=1516 WR=30.5 E[R]=0.219 1y=0.238 3y=0.253 score=16.514
+  ✓ GATE bimod_0.55             15m RR=4.0 n=1377 WR=25.6 E[R]=0.2818 1y=0.333 3y=0.326 score=16.733
+  ✓ GATE hf_spike_fade_0.60     15m RR=4.0 n=4185 WR=21.1 E[R]=0.055 1y=0.047 3y=0.061 score=14.132
+  ✓ GATE vol_compress_release   15m RR=1.5 n=1280 WR=42.7 E[R]=0.0684 1y=0.128 3y=0.057 score=14.174
+  ✓ GATE vol_compress_release   15m RR=2.0 n=1277 WR=36.5 E[R]=0.0948 1y=0.079 3y=0.067 score=14.005
+  ✓ GATE vol_compress_release   15m RR=2.4 n=1269 WR=32.8 E[R]=0.1146 1y=0.098 3y=0.107 score=14.148
+  ✓ GATE vol_compress_release   15m RR=3.0 n=1258 WR=27.8 E[R]=0.1129 1y=0.057 3y=0.115 score=13.979
+  ✓ GATE vol_compress_release   15m RR=4.0 n=1251 WR=22.1 E[R]=0.1031 1y=0.013 3y=0.094 score=13.132
+
+######## GOLD ########
+  load GOLD 5m (8.0y) …
+  enriched 851,617 bars 2018-06-08→2026-07-23
+  ✓ GATE ou_snap_5_40           5m RR=2.0 n=22508 WR=34.3 E[R]=0.0286 1y=0.017 3y=0.009 score=14.692
+  ✓ GATE ou_snap_5_40           5m RR=2.4 n=20726 WR=30.4 E[R]=0.0322 1y=0.026 3y=0.015 score=14.57
+  ✓ GATE ou_snap_5_40           5m RR=3.0 n=18562 WR=26.2 E[R]=0.0469 1y=0.058 3y=0.056 score=14.981
+  ✓ GATE ou_snap_5_40           5m RR=4.0 n=15718 WR=21.1 E[R]=0.0536 1y=0.015 3y=0.038 score=14.75
+  ✓ GATE ou_snap_8_25           5m RR=2.0 n=13683 WR=34.4 E[R]=0.0322 1y=0.018 3y=0.01 score=14.726
+  ✓ GATE ou_snap_8_25           5m RR=2.4 n=12958 WR=30.8 E[R]=0.0472 1y=0.035 3y=0.025 score=14.701
+  ✓ GATE ou_snap_8_25           5m RR=3.0 n=12011 WR=26.5 E[R]=0.06 1y=0.038 3y=0.047 score=15.031
+  ✓ GATE ou_snap_8_25           5m RR=4.0 n=10748 WR=21.7 E[R]=0.0862 1y=0.02 3y=0.066 score=14.989
+  ✓ GATE perm_order_0.80        5m RR=3.0 n=2630 WR=26.3 E[R]=0.051 1y=0.356 3y=0.15 score=15.146
+  ✓ GATE perm_order_0.80        5m RR=4.0 n=2427 WR=22.5 E[R]=0.1228 1y=0.545 3y=0.27 score=15.839
+/app/analysis/lab_zenith_math_invention_deep_bt.py:437: RuntimeWarning: invalid value encountered in cast
+  sides = np.where((x >= thr) & (ds != 0), ds.astype(int), 0)
+  ✓ GATE kalman_fade_1.6        5m RR=1.5 n=25992 WR=40.9 E[R]=0.0217 1y=0.013 3y=0.005 score=14.935
+  ✓ GATE kalman_fade_1.6        5m RR=2.0 n=23380 WR=34.3 E[R]=0.0277 1y=0.051 3y=0.023 score=14.764
+  ✓ GATE kalman_fade_1.6        5m RR=2.4 n=21500 WR=30.3 E[R]=0.029 1y=0.054 3y=0.042 score=15.049
+  ✓ GATE kalman_fade_1.6        5m RR=3.0 n=19171 WR=25.9 E[R]=0.0341 1y=0.079 3y=0.052 score=14.549
+  ✓ GATE kalman_fade_1.6        5m RR=4.0 n=16360 WR=21.1 E[R]=0.0553 1y=0.097 3y=0.097 score=14.96
+  ✓ GATE kalman_fade_2.4        5m RR=2.0 n=9180 WR=34.3 E[R]=0.0288 1y=0.007 3y=0.022 score=14.634
+  ✓ GATE kalman_fade_2.4        5m RR=3.0 n=8593 WR=26.7 E[R]=0.0664 1y=0.041 3y=0.072 score=14.693
+  ✓ GATE kalman_fade_2.4        5m RR=4.0 n=8040 WR=21.5 E[R]=0.0746 1y=0.036 3y=0.084 score=14.577
+  ✓ GATE bimod_0.55             5m RR=4.0 n=1964 WR=21.2 E[R]=0.0591 1y=0.339 3y=0.122 score=14.318
+  ✓ GATE bimod_0.70             5m RR=2.4 n=1065 WR=31.3 E[R]=0.0631 1y=0.486 3y=0.139 score=14.826
+  ✓ GATE bimod_0.70             5m RR=3.0 n=1032 WR=27.2 E[R]=0.0891 1y=0.538 3y=0.16 score=14.899
+  ✓ GATE bimod_0.70             5m RR=4.0 n=995 WR=22.8 E[R]=0.1407 1y=0.726 3y=0.271 score=15.315
+  ✓ GATE hf_spike_fade_0.60     5m RR=4.0 n=9566 WR=21.2 E[R]=0.0595 1y=0.03 3y=0.068 score=14.825
+  load GOLD 15m (8.0y) …
+  enriched 283,873 bars 2018-06-08→2026-07-23
+  ✓ GATE hurst_mr_0.45          15m RR=2.0 n=745 WR=36.1 E[R]=0.0832 1y=0.056 3y=0.109 score=13.394
+  ✓ GATE hurst_mr_0.45          15m RR=3.0 n=633 WR=27.5 E[R]=0.0995 1y=0.106 3y=0.11 score=13.789
+  ✓ GATE hurst_mr_0.45          15m RR=4.0 n=581 WR=21.7 E[R]=0.0843 1y=0.084 3y=0.111 score=12.868
+  ✓ GATE higuchi_trend_1.50     15m RR=3.0 n=7220 WR=25.9 E[R]=0.0377 1y=0.093 3y=0.08 score=13.37
+  ✓ GATE allan_persist_0.80     15m RR=4.0 n=7346 WR=20.8 E[R]=0.0387 1y=0.159 3y=0.1 score=14.381
+/app/analysis/lab_zenith_math_invention_deep_bt.py:437: RuntimeWarning: invalid value encountered in cast
+  sides = np.where((x >= thr) & (ds != 0), ds.astype(int), 0)
+  ✓ GATE cusum_0.025            15m RR=4.0 n=7620 WR=20.8 E[R]=0.0387 1y=0.073 3y=0.062 score=14.295
+  ✓ GATE hf_spike_fade_0.70     15m RR=2.4 n=899 WR=32.1 E[R]=0.093 1y=0.109 3y=0.165 score=13.655
+  ✓ GATE hf_spike_fade_0.70     15m RR=3.0 n=842 WR=27.6 E[R]=0.1021 1y=0.156 3y=0.172 score=13.582
+  ✓ GATE hf_spike_fade_0.70     15m RR=4.0 n=783 WR=21.8 E[R]=0.092 1y=0.221 3y=0.255 score=13.253
+  ✓ GATE skew_align_snr         15m RR=4.0 n=1869 WR=21.5 E[R]=0.0728 1y=0.197 3y=0.131 score=14.578
+
+######## NAS100 ########
+  load NAS100 5m (8.0y) …
+  enriched 854,497 bars 2018-06-08→2026-07-23
+  ✓ GATE snr_drift_0.30         5m RR=1.5 n=6252 WR=41.3 E[R]=0.0313 1y=0.01 3y=0.041 score=15.034
+  ✓ GATE snr_drift_0.30         5m RR=2.0 n=5681 WR=35.0 E[R]=0.0514 1y=0.032 3y=0.066 score=14.996
+  ✓ GATE snr_drift_0.30         5m RR=2.4 n=5373 WR=31.0 E[R]=0.0542 1y=0.022 3y=0.066 score=14.84
+  ✓ GATE snr_drift_0.30         5m RR=3.0 n=5018 WR=27.1 E[R]=0.0833 1y=0.047 3y=0.079 score=14.84
+  ✓ GATE snr_drift_0.30         5m RR=4.0 n=4576 WR=22.2 E[R]=0.1123 1y=0.056 3y=0.123 score=15.234
+  ✓ GATE hurst_trend_0.52       5m RR=3.0 n=20726 WR=25.6 E[R]=0.0233 1y=0.03 3y=0.024 score=14.719
+  ✓ GATE hurst_trend_0.52       5m RR=4.0 n=16595 WR=20.7 E[R]=0.0334 1y=0.044 3y=0.034 score=14.634
+  ✓ GATE higuchi_trend_1.40     5m RR=2.0 n=11020 WR=34.3 E[R]=0.0277 1y=0.084 3y=0.061 score=13.992
+  ✓ GATE higuchi_trend_1.40     5m RR=2.4 n=10116 WR=30.4 E[R]=0.0345 1y=0.076 3y=0.063 score=13.896
+  ✓ GATE higuchi_trend_1.40     5m RR=3.0 n=9070 WR=26.3 E[R]=0.0523 1y=0.105 3y=0.08 score=15.043
+  ✓ GATE higuchi_trend_1.40     5m RR=4.0 n=7996 WR=21.8 E[R]=0.0905 1y=0.157 3y=0.115 score=15.151
+  ✓ GATE higuchi_trend_1.50     5m RR=3.0 n=21026 WR=26.0 E[R]=0.0406 1y=0.061 3y=0.054 score=14.916
+  ✓ GATE higuchi_trend_1.50     5m RR=4.0 n=16965 WR=21.2 E[R]=0.0587 1y=0.053 3y=0.063 score=14.829
+  ✓ GATE allan_persist_0.80     5m RR=3.0 n=28323 WR=25.6 E[R]=0.0246 1y=0.077 3y=0.038 score=14.828
+  ✓ GATE allan_persist_0.80     5m RR=4.0 n=21420 WR=20.9 E[R]=0.0455 1y=0.123 3y=0.068 score=14.854
+  ✓ GATE allan_persist_0.95     5m RR=3.0 n=28963 WR=25.8 E[R]=0.0303 1y=0.086 3y=0.048 score=14.898
+  ✓ GATE allan_persist_0.95     5m RR=4.0 n=21780 WR=21.1 E[R]=0.0528 1y=0.124 3y=0.071 score=14.886
+  ✓ GATE perm_order_0.80        5m RR=3.0 n=5489 WR=26.2 E[R]=0.0472 1y=0.181 3y=0.059 score=14.631
+  ✓ GATE perm_order_0.80        5m RR=4.0 n=5090 WR=21.8 E[R]=0.0914 1y=0.162 3y=0.088 score=14.398
+  ✓ GATE perm_order_0.90        5m RR=4.0 n=9869 WR=21.5 E[R]=0.0766 1y=0.08 3y=0.092 score=13.5
+/app/analysis/lab_zenith_math_invention_deep_bt.py:437: RuntimeWarning: invalid value encountered in cast
+  sides = np.where((x >= thr) & (ds != 0), ds.astype(int), 0)
+  ✓ GATE eff_lf_0.25            5m RR=3.0 n=28723 WR=25.7 E[R]=0.03 1y=0.057 3y=0.036 score=14.876
+  ✓ GATE eff_lf_0.25            5m RR=4.0 n=22153 WR=20.9 E[R]=0.0455 1y=0.063 3y=0.052 score=14.801
+  ✓ GATE eff_lf_0.32            5m RR=2.4 n=29418 WR=29.9 E[R]=0.0165 1y=0.008 3y=0.032 score=14.483
+  ✓ GATE eff_lf_0.32            5m RR=3.0 n=25080 WR=25.5 E[R]=0.0183 1y=0.031 3y=0.041 score=13.066
+  ✓ GATE eff_lf_0.32            5m RR=4.0 n=20058 WR=20.9 E[R]=0.045 1y=0.049 3y=0.06 score=13.234
+  ✓ GATE kalman_fade_1.6        5m RR=4.0 n=15746 WR=21.1 E[R]=0.0574 1y=0.023 3y=0.063 score=14.829
+  ✓ GATE kalman_fade_2.0        5m RR=3.0 n=12689 WR=25.7 E[R]=0.0289 1y=0.022 3y=0.04 score=13.559
+  ✓ GATE kalman_fade_2.0        5m RR=4.0 n=11622 WR=21.6 E[R]=0.0781 1y=0.065 3y=0.087 score=15.061
+  ✓ GATE kalman_fade_2.4        5m RR=2.4 n=8129 WR=30.4 E[R]=0.0323 1y=0.076 3y=0.083 score=15.112
+  ✓ GATE kalman_fade_2.4        5m RR=3.0 n=7888 WR=26.6 E[R]=0.0629 1y=0.086 3y=0.106 score=15.229
+  ✓ GATE kalman_fade_2.4        5m RR=4.0 n=7533 WR=22.6 E[R]=0.1297 1y=0.164 3y=0.195 score=15.613
+  ✓ GATE torsion_0.30           5m RR=1.5 n=38932 WR=40.4 E[R]=0.0104 1y=0.053 3y=0.024 score=14.821
+  ✓ GATE torsion_0.30           5m RR=2.0 n=33038 WR=33.8 E[R]=0.0154 1y=0.074 3y=0.034 score=15.061
+  ✓ GATE torsion_0.30           5m RR=2.4 n=29066 WR=30.0 E[R]=0.0193 1y=0.078 3y=0.039 score=14.952
+  ✓ GATE torsion_0.30           5m RR=3.0 n=24585 WR=25.5 E[R]=0.019 1y=0.083 3y=0.039 score=14.701
+  ✓ GATE torsion_0.30           5m RR=4.0 n=19135 WR=20.8 E[R]=0.0402 1y=0.074 3y=0.06 score=14.764
+  ✓ GATE torsion_0.40           5m RR=1.5 n=42677 WR=40.4 E[R]=0.0108 1y=0.058 3y=0.027 score=14.859
+  ✓ GATE torsion_0.40           5m RR=2.0 n=35659 WR=34.0 E[R]=0.021 1y=0.08 3y=0.038 score=15.158
+  ✓ GATE torsion_0.40           5m RR=2.4 n=30947 WR=30.2 E[R]=0.0259 1y=0.079 3y=0.038 score=15.022
+  ✓ GATE torsion_0.40           5m RR=3.0 n=26107 WR=25.7 E[R]=0.0273 1y=0.088 3y=0.049 score=14.494
+  ✓ GATE torsion_0.40           5m RR=4.0 n=20108 WR=20.8 E[R]=0.0424 1y=0.08 3y=0.056 score=14.794
+  ✓ GATE zcr_0.22               5m RR=3.0 n=30882 WR=25.5 E[R]=0.0209 1y=0.089 3y=0.05 score=14.794
+  ✓ GATE zcr_0.22               5m RR=4.0 n=23182 WR=20.5 E[R]=0.0236 1y=0.051 3y=0.048 score=13.338
+  ✓ GATE zcr_0.30               5m RR=3.0 n=31499 WR=25.6 E[R]=0.0257 1y=0.087 3y=0.043 score=14.864
+  ✓ GATE zcr_0.30               5m RR=4.0 n=23672 WR=20.7 E[R]=0.0335 1y=0.087 3y=0.051 score=14.347
+  ✓ GATE bimod_0.55             5m RR=2.0 n=4424 WR=34.9 E[R]=0.0457 1y=0.082 3y=0.084 score=13.723
+  ✓ GATE bimod_0.55             5m RR=2.4 n=4154 WR=31.1 E[R]=0.0583 1y=0.092 3y=0.097 score=14.099
+  ✓ GATE bimod_0.55             5m RR=3.0 n=3879 WR=27.2 E[R]=0.0869 1y=0.134 3y=0.13 score=14.956
+  ✓ GATE bimod_0.55             5m RR=4.0 n=3614 WR=22.8 E[R]=0.1414 1y=0.168 3y=0.185 score=15.561
+  ✓ GATE bimod_0.70             5m RR=2.4 n=1966 WR=31.0 E[R]=0.0549 1y=0.026 3y=0.045 score=14.636
+  ✓ GATE bimod_0.70             5m RR=3.0 n=1857 WR=27.1 E[R]=0.0856 1y=0.03 3y=0.061 score=14.729
+  ✓ GATE cusum_0.025            5m RR=4.0 n=22767 WR=20.6 E[R]=0.0309 1y=0.122 3y=0.068 score=14.749
+  ✓ GATE tail_mid_snr           5m RR=1.5 n=6074 WR=41.2 E[R]=0.031 1y=0.025 3y=0.045 score=15.03
+  ✓ GATE tail_mid_snr           5m RR=2.0 n=5515 WR=35.0 E[R]=0.0515 1y=0.054 3y=0.07 score=15.006
+  ✓ GATE tail_mid_snr           5m RR=2.4 n=5227 WR=31.0 E[R]=0.0531 1y=0.039 3y=0.066 score=14.837
+  ✓ GATE tail_mid_snr           5m RR=3.0 n=4880 WR=26.9 E[R]=0.077 1y=0.063 3y=0.075 score=14.801
+  ✓ GATE tail_mid_snr           5m RR=4.0 n=4456 WR=22.2 E[R]=0.1109 1y=0.076 3y=0.124 score=15.253
+  ✓ GATE hf_spike_fade_0.60     5m RR=3.0 n=8817 WR=25.8 E[R]=0.0326 1y=0.109 3y=0.07 score=14.841
+  ✓ GATE hf_spike_fade_0.60     5m RR=4.0 n=7884 WR=20.9 E[R]=0.0433 1y=0.081 3y=0.106 score=14.812
+  ✓ GATE hf_spike_fade_0.70     5m RR=4.0 n=1599 WR=21.1 E[R]=0.0538 1y=0.313 3y=0.184 score=14.321
+  load NAS100 15m (8.0y) …
+  enriched 284,833 bars 2018-06-08→2026-07-23
+  ✓ GATE snr_drift_0.30         15m RR=1.5 n=2370 WR=43.5 E[R]=0.0886 1y=0.048 3y=0.06 score=15.868
+  ✓ GATE snr_drift_0.30         15m RR=2.0 n=2140 WR=37.6 E[R]=0.1271 1y=0.063 3y=0.095 score=15.877
+  ✓ GATE snr_drift_0.30         15m RR=3.0 n=1855 WR=29.4 E[R]=0.1774 1y=0.024 3y=0.133 score=15.867
+  ✓ GATE snr_drift_0.30         15m RR=4.0 n=1700 WR=23.8 E[R]=0.1912 1y=0.109 3y=0.181 score=15.813
+  ✓ GATE snr_drift_0.40         15m RR=1.5 n=564 WR=44.9 E[R]=0.1215 1y=0.151 3y=0.222 score=16.267
+  ✓ GATE snr_drift_0.40         15m RR=2.0 n=522 WR=39.3 E[R]=0.1782 1y=0.2 3y=0.3 score=16.51
+  ✓ GATE snr_drift_0.40         15m RR=2.4 n=498 WR=35.1 E[R]=0.1948 1y=0.025 3y=0.248 score=16.549
+  ✓ GATE snr_drift_0.40         15m RR=3.0 n=477 WR=30.0 E[R]=0.1992 1y=0.067 3y=0.267 score=16.326
+  ✓ GATE snr_drift_0.40         15m RR=4.0 n=457 WR=23.9 E[R]=0.1926 1y=0.102 3y=0.287 score=15.529
+  ✓ GATE hurst_trend_0.52       15m RR=4.0 n=6125 WR=21.0 E[R]=0.0498 1y=0.173 3y=0.079 score=14.792
+  ✓ GATE higuchi_trend_1.40     15m RR=2.4 n=5745 WR=30.6 E[R]=0.0404 1y=0.201 3y=0.128 score=14.127
+  ✓ GATE higuchi_trend_1.40     15m RR=3.0 n=5113 WR=26.7 E[R]=0.0663 1y=0.216 3y=0.138 score=15.38
+  ✓ GATE higuchi_trend_1.40     15m RR=4.0 n=4513 WR=21.5 E[R]=0.0747 1y=0.208 3y=0.176 score=15.304
+  ✓ GATE higuchi_trend_1.50     15m RR=2.4 n=9828 WR=30.3 E[R]=0.0313 1y=0.09 3y=0.064 score=15.026
+  ✓ GATE higuchi_trend_1.50     15m RR=3.0 n=8471 WR=26.4 E[R]=0.0563 1y=0.078 3y=0.082 score=15.108
+  ✓ GATE higuchi_trend_1.50     15m RR=4.0 n=6989 WR=21.4 E[R]=0.0703 1y=0.117 3y=0.092 score=15.016
+  ✓ GATE allan_persist_0.80     15m RR=2.0 n=13084 WR=34.3 E[R]=0.0293 1y=0.085 3y=0.043 score=15.192
+  ✓ GATE allan_persist_0.80     15m RR=2.4 n=11421 WR=30.7 E[R]=0.0446 1y=0.118 3y=0.049 score=15.146
+  ✓ GATE allan_persist_0.80     15m RR=3.0 n=9520 WR=26.5 E[R]=0.0618 1y=0.168 3y=0.095 score=15.215
+  ✓ GATE allan_persist_0.80     15m RR=4.0 n=7402 WR=21.7 E[R]=0.0848 1y=0.143 3y=0.133 score=15.206
+  ✓ GATE allan_persist_0.95     15m RR=2.0 n=13319 WR=34.2 E[R]=0.0267 1y=0.081 3y=0.039 score=13.923
+  ✓ GATE allan_persist_0.95     15m RR=2.4 n=11621 WR=30.7 E[R]=0.0427 1y=0.116 3y=0.047 score=14.698
+  ✓ GATE allan_persist_0.95     15m RR=3.0 n=9742 WR=26.2 E[R]=0.0499 1y=0.162 3y=0.075 score=15.064
+  ✓ GATE allan_persist_0.95     15m RR=4.0 n=7489 WR=21.4 E[R]=0.0682 1y=0.102 3y=0.089 score=14.973
+  ✓ GATE perm_order_0.80        15m RR=2.0 n=2107 WR=35.0 E[R]=0.0508 1y=0.219 3y=0.099 score=13.792
+  ✓ GATE perm_order_0.80        15m RR=2.4 n=1990 WR=32.1 E[R]=0.0918 1y=0.289 3y=0.165 score=15.425
+  ✓ GATE perm_order_0.80        15m RR=3.0 n=1895 WR=27.9 E[R]=0.1166 1y=0.232 3y=0.157 score=15.319
+  ✓ GATE perm_order_0.80        15m RR=4.0 n=1769 WR=23.2 E[R]=0.1617 1y=0.348 3y=0.262 score=15.671
+  ✓ GATE perm_order_0.90        15m RR=2.0 n=3375 WR=34.9 E[R]=0.0462 1y=0.178 3y=0.085 score=15.048
+  ✓ GATE perm_order_0.90        15m RR=2.4 n=3145 WR=31.8 E[R]=0.0811 1y=0.234 3y=0.137 score=14.483
+  ✓ GATE perm_order_0.90        15m RR=3.0 n=2930 WR=27.2 E[R]=0.0867 1y=0.144 3y=0.095 score=15.411
+  ✓ GATE perm_order_0.90        15m RR=4.0 n=2685 WR=22.4 E[R]=0.1192 1y=0.246 3y=0.193 score=15.262
+/app/analysis/lab_zenith_math_invention_deep_bt.py:437: RuntimeWarning: invalid value encountered in cast
+  sides = np.where((x >= thr) & (ds != 0), ds.astype(int), 0)
+  ✓ GATE eff_lf_0.25            15m RR=2.4 n=11253 WR=30.7 E[R]=0.0439 1y=0.049 3y=0.054 score=14.8
+  ✓ GATE eff_lf_0.25            15m RR=3.0 n=9647 WR=26.1 E[R]=0.0432 1y=0.052 3y=0.034 score=14.487
+  ✓ GATE eff_lf_0.25            15m RR=4.0 n=7665 WR=21.3 E[R]=0.0646 1y=0.087 3y=0.072 score=14.477
+  ✓ GATE eff_lf_0.32            15m RR=3.0 n=8181 WR=26.5 E[R]=0.0586 1y=0.169 3y=0.066 score=14.695
+  ✓ GATE torsion_0.30           15m RR=2.0 n=10544 WR=34.1 E[R]=0.0234 1y=0.08 3y=0.045 score=15.019
+  ✓ GATE torsion_0.30           15m RR=2.4 n=9402 WR=30.8 E[R]=0.0462 1y=0.075 3y=0.065 score=15.141
+  ✓ GATE torsion_0.30           15m RR=3.0 n=8060 WR=26.5 E[R]=0.06 1y=0.086 3y=0.086 score=15.097
+  ✓ GATE torsion_0.30           15m RR=4.0 n=6563 WR=21.3 E[R]=0.0658 1y=0.101 3y=0.074 score=13.684
+  ✓ GATE torsion_0.40           15m RR=2.4 n=10104 WR=30.6 E[R]=0.0401 1y=0.058 3y=0.035 score=15.046
+  ✓ GATE torsion_0.40           15m RR=3.0 n=8543 WR=26.1 E[R]=0.0455 1y=0.064 3y=0.065 score=13.748
+  ✓ GATE torsion_0.40           15m RR=4.0 n=6867 WR=20.8 E[R]=0.0398 1y=0.039 3y=0.031 score=13.356
+  ✓ GATE zcr_0.22               15m RR=2.0 n=14047 WR=34.1 E[R]=0.0232 1y=0.037 3y=0.028 score=15.066
+  ✓ GATE zcr_0.22               15m RR=2.4 n=12182 WR=30.9 E[R]=0.0516 1y=0.086 3y=0.063 score=15.21
+  ✓ GATE zcr_0.22               15m RR=3.0 n=10159 WR=25.9 E[R]=0.0363 1y=0.066 3y=0.049 score=14.869
+  ✓ GATE zcr_0.22               15m RR=4.0 n=7925 WR=21.1 E[R]=0.0555 1y=0.027 3y=0.074 score=14.794
+  ✓ GATE zcr_0.30               15m RR=2.4 n=12249 WR=30.9 E[R]=0.0492 1y=0.064 3y=0.056 score=15.178
+  ✓ GATE zcr_0.30               15m RR=3.0 n=10247 WR=26.0 E[R]=0.0384 1y=0.078 3y=0.063 score=14.929
+  ✓ GATE zcr_0.30               15m RR=4.0 n=7916 WR=21.1 E[R]=0.0574 1y=0.061 3y=0.076 score=13.606
+  ✓ GATE bimod_0.55             15m RR=4.0 n=2194 WR=22.4 E[R]=0.119 1y=0.141 3y=0.138 score=15.354
+  ✓ GATE cusum_0.015            15m RR=2.4 n=12463 WR=30.3 E[R]=0.0304 1y=0.078 3y=0.065 score=13.873
+  ✓ GATE cusum_0.015            15m RR=3.0 n=10282 WR=26.2 E[R]=0.0473 1y=0.077 3y=0.093 score=13.893
+  ✓ GATE cusum_0.025            15m RR=2.4 n=12210 WR=30.2 E[R]=0.0272 1y=0.053 3y=0.02 score=13.655
+  ✓ GATE cusum_0.025            15m RR=3.0 n=10095 WR=26.0 E[R]=0.0385 1y=0.087 3y=0.065 score=14.906
+  ✓ GATE tail_mid_snr           15m RR=1.5 n=2288 WR=43.3 E[R]=0.0817 1y=0.032 3y=0.048 score=15.794
+  ✓ GATE tail_mid_snr           15m RR=2.0 n=2075 WR=37.3 E[R]=0.1176 1y=0.05 3y=0.085 score=15.801
+  ✓ GATE tail_mid_snr           15m RR=3.0 n=1786 WR=29.3 E[R]=0.1736 1y=0.021 3y=0.124 score=15.83
+  ✓ GATE tail_mid_snr           15m RR=4.0 n=1647 WR=23.7 E[R]=0.187 1y=0.09 3y=0.172 score=15.767
+  ✓ GATE hf_spike_fade_0.70     15m RR=4.0 n=773 WR=21.1 E[R]=0.0543 1y=0.238 3y=0.171 score=13.953
+  ✓ GATE lf_thrust_eff          15m RR=1.5 n=2752 WR=41.8 E[R]=0.0456 1y=0.168 3y=0.054 score=15.576
+  ✓ GATE lf_thrust_eff          15m RR=2.0 n=2413 WR=36.3 E[R]=0.0891 1y=0.226 3y=0.109 score=15.723
+  ✓ GATE lf_thrust_eff          15m RR=2.4 n=2276 WR=32.3 E[R]=0.0995 1y=0.289 3y=0.136 score=15.727
+  ✓ GATE lf_thrust_eff          15m RR=3.0 n=2104 WR=28.2 E[R]=0.1293 1y=0.374 3y=0.178 score=15.78
+  ✓ GATE lf_thrust_eff          15m RR=4.0 n=1924 WR=23.1 E[R]=0.1538 1y=0.27 3y=0.21 score=15.761
+
+######## USDJPY ########
+  load USDJPY 5m (8.0y) …
+  enriched 854,497 bars 2018-06-08→2026-07-23
+  ✓ GATE ou_snap_5_40           5m RR=1.5 n=27309 WR=41.2 E[R]=0.0302 1y=0.068 3y=0.028 score=15.474
+  ✓ GATE ou_snap_5_40           5m RR=2.0 n=24385 WR=34.5 E[R]=0.0356 1y=0.077 3y=0.04 score=14.86
+  ✓ GATE ou_snap_5_40           5m RR=2.4 n=22443 WR=30.4 E[R]=0.0329 1y=0.078 3y=0.046 score=14.716
+  ✓ GATE ou_snap_5_40           5m RR=3.0 n=20178 WR=26.0 E[R]=0.0411 1y=0.109 3y=0.054 score=14.618
+  ✓ GATE ou_snap_5_40           5m RR=4.0 n=17351 WR=20.8 E[R]=0.038 1y=0.132 3y=0.073 score=14.828
+  ✓ GATE ou_snap_8_25           5m RR=1.5 n=16166 WR=41.0 E[R]=0.0259 1y=0.052 3y=0.015 score=15.029
+  ✓ GATE ou_snap_8_25           5m RR=2.0 n=14801 WR=34.6 E[R]=0.0382 1y=0.067 3y=0.038 score=14.88
+  ✓ GATE ou_snap_8_25           5m RR=2.4 n=13947 WR=30.4 E[R]=0.0351 1y=0.09 3y=0.048 score=13.526
+  ✓ GATE ou_snap_8_25           5m RR=3.0 n=12949 WR=26.0 E[R]=0.0419 1y=0.102 3y=0.048 score=13.389
+/app/analysis/lab_zenith_math_invention_deep_bt.py:437: RuntimeWarning: invalid value encountered in cast
+  sides = np.where((x >= thr) & (ds != 0), ds.astype(int), 0)
+  ✓ GATE kalman_fade_1.6        5m RR=1.5 n=28387 WR=41.0 E[R]=0.0262 1y=0.059 3y=0.042 score=15.491
+  ✓ GATE kalman_fade_2.0        5m RR=1.5 n=17697 WR=41.8 E[R]=0.0448 1y=0.095 3y=0.052 score=15.628
+  ✓ GATE kalman_fade_2.0        5m RR=2.0 n=16738 WR=35.2 E[R]=0.055 1y=0.123 3y=0.074 score=15.481
+  ✓ GATE kalman_fade_2.0        5m RR=2.4 n=15918 WR=31.0 E[R]=0.0528 1y=0.13 3y=0.079 score=15.306
+  ✓ GATE kalman_fade_2.0        5m RR=3.0 n=14808 WR=26.2 E[R]=0.05 1y=0.101 3y=0.062 score=15.029
+  ✓ GATE kalman_fade_2.0        5m RR=4.0 n=13293 WR=21.0 E[R]=0.0506 1y=0.094 3y=0.061 score=14.829
+  ✓ GATE kalman_fade_2.4        5m RR=1.5 n=9740 WR=42.2 E[R]=0.0544 1y=0.091 3y=0.046 score=14.47
+  ✓ GATE kalman_fade_2.4        5m RR=2.0 n=9455 WR=35.6 E[R]=0.069 1y=0.144 3y=0.074 score=15.184
+  ✓ GATE kalman_fade_2.4        5m RR=2.4 n=9171 WR=31.5 E[R]=0.0718 1y=0.179 3y=0.086 score=15.107
+  ✓ GATE kalman_fade_2.4        5m RR=3.0 n=8802 WR=27.1 E[R]=0.0838 1y=0.18 3y=0.092 score=13.772
+  ✓ GATE kalman_fade_2.4        5m RR=4.0 n=8264 WR=22.0 E[R]=0.1012 1y=0.155 3y=0.108 score=14.079
+  ✓ GATE hf_spike_fade_0.60     5m RR=1.5 n=15925 WR=41.1 E[R]=0.0281 1y=0.057 3y=0.039 score=15.473
+  ✓ GATE hf_spike_fade_0.60     5m RR=2.0 n=13976 WR=34.7 E[R]=0.0413 1y=0.089 3y=0.061 score=15.342
+  ✓ GATE hf_spike_fade_0.60     5m RR=2.4 n=12837 WR=31.1 E[R]=0.056 1y=0.093 3y=0.076 score=15.285
+  ✓ GATE hf_spike_fade_0.60     5m RR=3.0 n=11536 WR=26.5 E[R]=0.0617 1y=0.105 3y=0.072 score=15.119
+  ✓ GATE hf_spike_fade_0.60     5m RR=4.0 n=10030 WR=22.0 E[R]=0.0997 1y=0.187 3y=0.099 score=14.774
+  ✓ GATE hf_spike_fade_0.70     5m RR=3.0 n=2520 WR=26.6 E[R]=0.0651 1y=0.019 3y=0.091 score=15.004
+  ✓ GATE hf_spike_fade_0.70     5m RR=4.0 n=2336 WR=22.6 E[R]=0.128 1y=0.092 3y=0.133 score=15.293
+  load USDJPY 15m (8.0y) …
+  enriched 284,833 bars 2018-06-08→2026-07-23
+  ✓ GATE snr_drift_0.30         15m RR=4.0 n=1524 WR=21.1 E[R]=0.0531 1y=0.095 3y=0.066 score=13.965
+  ✓ GATE ou_snap_5_40           15m RR=1.5 n=8162 WR=41.3 E[R]=0.0319 1y=0.133 3y=0.058 score=13.912
+/app/analysis/lab_zenith_math_invention_deep_bt.py:437: RuntimeWarning: invalid value encountered in cast
+  sides = np.where((x >= thr) & (ds != 0), ds.astype(int), 0)
+  ✓ GATE kalman_fade_1.6        15m RR=4.0 n=5890 WR=21.2 E[R]=0.0603 1y=0.235 3y=0.088 score=14.51
+  ✓ GATE kalman_fade_2.0        15m RR=2.4 n=5029 WR=31.2 E[R]=0.0621 1y=0.093 3y=0.028 score=14.811
+  ✓ GATE kalman_fade_2.0        15m RR=3.0 n=4741 WR=26.5 E[R]=0.0605 1y=0.033 3y=0.026 score=14.579
+  ✓ GATE kalman_fade_2.0        15m RR=4.0 n=4311 WR=21.5 E[R]=0.0763 1y=0.123 3y=0.073 score=14.555
+  ✓ GATE kalman_fade_2.4        15m RR=4.0 n=2713 WR=22.1 E[R]=0.1039 1y=0.096 3y=0.044 score=13.793
+  ✓ GATE zcr_0.22               15m RR=4.0 n=8683 WR=20.8 E[R]=0.0394 1y=0.002 3y=0.025 score=13.373
+  ✓ GATE tail_mid_snr           15m RR=4.0 n=1482 WR=21.1 E[R]=0.0526 1y=0.125 3y=0.046 score=13.908
+  ✓ GATE hf_spike_fade_0.70     15m RR=2.0 n=883 WR=35.8 E[R]=0.0736 1y=0.255 3y=0.079 score=14.574
+
+######## AUDUSD ########
+  load AUDUSD 5m (8.0y) …
+  enriched 854,497 bars 2018-06-08→2026-07-23
+  ✓ GATE hurst_mr_0.45          5m RR=1.5 n=4064 WR=41.4 E[R]=0.0359 1y=0.031 3y=0.029 score=15.042
+  ✓ GATE hurst_mr_0.45          5m RR=2.0 n=3630 WR=34.7 E[R]=0.0397 1y=0.062 3y=0.022 score=14.695
+  ✓ GATE ou_snap_5_40           5m RR=1.5 n=27291 WR=41.7 E[R]=0.0432 1y=0.067 3y=0.044 score=15.543
+  ✓ GATE ou_snap_5_40           5m RR=2.0 n=24548 WR=34.9 E[R]=0.0457 1y=0.08 3y=0.056 score=15.325
+  ✓ GATE ou_snap_5_40           5m RR=2.4 n=22739 WR=30.8 E[R]=0.0477 1y=0.063 3y=0.054 score=15.155
+  ✓ GATE ou_snap_5_40           5m RR=3.0 n=20516 WR=26.2 E[R]=0.048 1y=0.053 3y=0.052 score=14.95
+  ✓ GATE ou_snap_5_40           5m RR=4.0 n=17763 WR=21.3 E[R]=0.0634 1y=0.021 3y=0.059 score=14.853
+  ✓ GATE ou_snap_8_25           5m RR=1.5 n=16274 WR=41.5 E[R]=0.0371 1y=0.065 3y=0.031 score=15.509
+  ✓ GATE ou_snap_8_25           5m RR=2.0 n=14968 WR=34.8 E[R]=0.0428 1y=0.094 3y=0.057 score=15.346
+  ✓ GATE ou_snap_8_25           5m RR=2.4 n=14144 WR=30.3 E[R]=0.0298 1y=0.071 3y=0.042 score=15.044
+  ✓ GATE ou_snap_8_25           5m RR=3.0 n=13171 WR=25.9 E[R]=0.0371 1y=0.102 3y=0.068 score=14.581
+  ✓ GATE ou_snap_8_25           5m RR=4.0 n=11997 WR=20.7 E[R]=0.0361 1y=0.08 3y=0.072 score=14.727
+/app/analysis/lab_zenith_math_invention_deep_bt.py:437: RuntimeWarning: invalid value encountered in cast
+  sides = np.where((x >= thr) & (ds != 0), ds.astype(int), 0)
+  ✓ GATE kalman_fade_1.6        5m RR=1.5 n=28464 WR=42.0 E[R]=0.0501 1y=0.057 3y=0.053 score=15.627
+  ✓ GATE kalman_fade_1.6        5m RR=2.0 n=25762 WR=35.1 E[R]=0.0519 1y=0.054 3y=0.056 score=15.359
+  ✓ GATE kalman_fade_1.6        5m RR=2.4 n=23969 WR=31.0 E[R]=0.0534 1y=0.057 3y=0.057 score=15.189
+  ✓ GATE kalman_fade_1.6        5m RR=3.0 n=21637 WR=26.3 E[R]=0.0502 1y=0.076 3y=0.06 score=15.017
+  ✓ GATE kalman_fade_1.6        5m RR=4.0 n=18562 WR=20.9 E[R]=0.0473 1y=0.052 3y=0.054 score=14.753
+  ✓ GATE kalman_fade_2.0        5m RR=1.5 n=17405 WR=42.3 E[R]=0.057 1y=0.074 3y=0.062 score=14.491
+  ✓ GATE kalman_fade_2.0        5m RR=2.0 n=16450 WR=35.3 E[R]=0.0581 1y=0.064 3y=0.059 score=14.216
+  ✓ GATE kalman_fade_2.0        5m RR=2.4 n=15732 WR=31.4 E[R]=0.0681 1y=0.071 3y=0.072 score=15.318
+  ✓ GATE kalman_fade_2.0        5m RR=3.0 n=14716 WR=27.1 E[R]=0.0845 1y=0.085 3y=0.103 score=15.297
+  ✓ GATE kalman_fade_2.0        5m RR=4.0 n=13265 WR=22.1 E[R]=0.1044 1y=0.101 3y=0.129 score=15.246
+  ✓ GATE kalman_fade_2.4        5m RR=1.5 n=9105 WR=42.2 E[R]=0.0541 1y=0.105 3y=0.081 score=15.757
+  ✓ GATE kalman_fade_2.4        5m RR=2.0 n=8864 WR=35.6 E[R]=0.0678 1y=0.136 3y=0.118 score=15.263
+  ✓ GATE kalman_fade_2.4        5m RR=2.4 n=8681 WR=31.7 E[R]=0.0782 1y=0.113 3y=0.125 score=15.551
+  ✓ GATE kalman_fade_2.4        5m RR=3.0 n=8375 WR=27.1 E[R]=0.0842 1y=0.147 3y=0.154 score=15.041
+  ✓ GATE kalman_fade_2.4        5m RR=4.0 n=7923 WR=22.0 E[R]=0.0993 1y=0.176 3y=0.188 score=13.794
+  ✓ GATE hf_spike_fade_0.60     5m RR=1.5 n=16968 WR=42.0 E[R]=0.0504 1y=0.038 3y=0.049 score=15.61
+  ✓ GATE hf_spike_fade_0.60     5m RR=2.0 n=14961 WR=35.0 E[R]=0.0503 1y=0.073 3y=0.052 score=15.342
+  ✓ GATE hf_spike_fade_0.60     5m RR=2.4 n=13695 WR=30.8 E[R]=0.0482 1y=0.096 3y=0.051 score=15.184
+  ✓ GATE hf_spike_fade_0.60     5m RR=3.0 n=12344 WR=26.4 E[R]=0.0561 1y=0.097 3y=0.051 score=13.428
+  ✓ GATE hf_spike_fade_0.60     5m RR=4.0 n=10860 WR=21.4 E[R]=0.0709 1y=0.099 3y=0.048 score=14.87
+  ✓ GATE hf_spike_fade_0.70     5m RR=2.4 n=3201 WR=31.6 E[R]=0.0739 1y=0.041 3y=0.088 score=13.936
+  ✓ GATE fractal_mr             5m RR=1.5 n=4931 WR=41.6 E[R]=0.0393 1y=0.042 3y=0.039 score=15.47
+  ✓ GATE fractal_mr             5m RR=2.0 n=4480 WR=35.0 E[R]=0.0487 1y=0.051 3y=0.076 score=15.408
+  ✓ GATE fractal_mr             5m RR=2.4 n=4204 WR=31.1 E[R]=0.0578 1y=0.053 3y=0.093 score=14.944
+  ✓ GATE fractal_mr             5m RR=3.0 n=3924 WR=26.7 E[R]=0.0663 1y=0.035 3y=0.115 score=15.297
+  ✓ GATE fractal_mr             5m RR=4.0 n=3627 WR=21.6 E[R]=0.0794 1y=0.067 3y=0.132 score=15.157
+  load AUDUSD 15m (8.0y) …
+  enriched 284,833 bars 2018-06-08→2026-07-23
+  ✓ GATE hurst_mr_0.45          15m RR=2.4 n=864 WR=31.6 E[R]=0.0743 1y=0.393 3y=0.088 score=14.93
+  ✓ GATE hurst_mr_0.45          15m RR=3.0 n=810 WR=27.7 E[R]=0.1062 1y=0.552 3y=0.189 score=15.409
+  ✓ GATE hurst_mr_0.45          15m RR=4.0 n=729 WR=22.6 E[R]=0.1317 1y=0.569 3y=0.25 score=15.508
+  ✓ GATE ou_snap_5_40           15m RR=2.4 n=7098 WR=30.3 E[R]=0.0308 1y=0.08 3y=0.042 score=14.545
+  ✓ GATE ou_snap_5_40           15m RR=4.0 n=5729 WR=21.0 E[R]=0.0508 1y=0.024 3y=0.038 score=14.252
+/app/analysis/lab_zenith_math_invention_deep_bt.py:437: RuntimeWarning: invalid value encountered in cast
+  sides = np.where((x >= thr) & (ds != 0), ds.astype(int), 0)
+  ✓ GATE kalman_fade_1.6        15m RR=2.0 n=7983 WR=34.9 E[R]=0.0462 1y=0.081 3y=0.069 score=13.817
+  ✓ GATE kalman_fade_1.6        15m RR=3.0 n=6856 WR=26.6 E[R]=0.0636 1y=0.063 3y=0.057 score=14.776
+  ✓ GATE kalman_fade_2.0        15m RR=1.5 n=5472 WR=41.9 E[R]=0.0471 1y=0.125 3y=0.084 score=14.118
+  ✓ GATE kalman_fade_2.0        15m RR=2.0 n=5207 WR=35.3 E[R]=0.0595 1y=0.123 3y=0.105 score=13.991
+  ✓ GATE kalman_fade_2.0        15m RR=2.4 n=5003 WR=31.6 E[R]=0.0731 1y=0.11 3y=0.095 score=15.053
+  ✓ GATE kalman_fade_2.0        15m RR=3.0 n=4738 WR=27.0 E[R]=0.0815 1y=0.088 3y=0.067 score=15.264
+  ✓ GATE kalman_fade_2.0        15m RR=4.0 n=4345 WR=21.9 E[R]=0.0944 1y=0.01 3y=0.082 score=15.069
+  ✓ GATE kalman_fade_2.4        15m RR=1.5 n=3069 WR=42.4 E[R]=0.0598 1y=0.042 3y=0.061 score=15.284
+  ✓ GATE kalman_fade_2.4        15m RR=2.0 n=2990 WR=35.6 E[R]=0.0666 1y=0.022 3y=0.078 score=15.081
+  ✓ GATE kalman_fade_2.4        15m RR=2.4 n=2932 WR=32.3 E[R]=0.0982 1y=0.074 3y=0.092 score=15.13
+  ✓ GATE kalman_fade_2.4        15m RR=3.0 n=2844 WR=27.3 E[R]=0.0914 1y=0.053 3y=0.082 score=15.335
+  ✓ GATE hf_spike_fade_0.60     15m RR=2.0 n=4375 WR=34.7 E[R]=0.0416 1y=0.182 3y=0.072 score=14.966
+  ✓ GATE hf_spike_fade_0.60     15m RR=3.0 n=3742 WR=26.5 E[R]=0.0583 1y=0.173 3y=0.073 score=13.519
+  ✓ GATE hf_spike_fade_0.60     15m RR=4.0 n=3357 WR=21.9 E[R]=0.0932 1y=0.222 3y=0.093 score=15.204
+  ✓ GATE hf_spike_fade_0.70     15m RR=4.0 n=847 WR=21.6 E[R]=0.0803 1y=0.461 3y=0.324 score=14.218
+
+######## USDCHF ########
+  load USDCHF 5m (8.0y) …
+  enriched 854,497 bars 2018-06-08→2026-07-23
+  ✓ GATE hurst_mr_0.45          5m RR=1.5 n=5189 WR=42.7 E[R]=0.0676 1y=0.012 3y=0.059 score=15.788
+  ✓ GATE hurst_mr_0.45          5m RR=2.0 n=4604 WR=35.7 E[R]=0.0706 1y=0.045 3y=0.053 score=15.471
+  ✓ GATE hurst_mr_0.45          5m RR=2.4 n=4293 WR=32.4 E[R]=0.1001 1y=0.046 3y=0.062 score=15.477
+  ✓ GATE hurst_mr_0.45          5m RR=3.0 n=3912 WR=27.3 E[R]=0.092 1y=0.01 3y=0.053 score=13.536
+  ✓ GATE hurst_mr_0.45          5m RR=4.0 n=3421 WR=22.0 E[R]=0.0976 1y=0.176 3y=0.125 score=13.6
+  ✓ GATE ou_snap_5_40           5m RR=1.5 n=26915 WR=42.2 E[R]=0.0561 1y=0.037 3y=0.049 score=15.625
+  ✓ GATE ou_snap_5_40           5m RR=2.0 n=24225 WR=35.5 E[R]=0.064 1y=0.056 3y=0.056 score=15.391
+  ✓ GATE ou_snap_5_40           5m RR=2.4 n=22476 WR=31.6 E[R]=0.0742 1y=0.083 3y=0.065 score=15.307
+  ✓ GATE ou_snap_5_40           5m RR=3.0 n=20157 WR=26.9 E[R]=0.0744 1y=0.092 3y=0.065 score=15.112
+  ✓ GATE ou_snap_5_40           5m RR=4.0 n=17055 WR=21.8 E[R]=0.0909 1y=0.147 3y=0.11 score=15.092
+  ✓ GATE ou_snap_8_25           5m RR=1.5 n=15755 WR=42.2 E[R]=0.0559 1y=0.02 3y=0.038 score=15.581
+  ✓ GATE ou_snap_8_25           5m RR=2.0 n=14524 WR=35.3 E[R]=0.0605 1y=0.031 3y=0.034 score=15.294
+  ✓ GATE ou_snap_8_25           5m RR=2.4 n=13753 WR=31.6 E[R]=0.0734 1y=0.07 3y=0.054 score=15.259
+  ✓ GATE ou_snap_8_25           5m RR=3.0 n=12714 WR=26.9 E[R]=0.0763 1y=0.077 3y=0.061 score=15.095
+  ✓ GATE ou_snap_8_25           5m RR=4.0 n=11397 WR=22.2 E[R]=0.1113 1y=0.147 3y=0.107 score=15.169
+/app/analysis/lab_zenith_math_invention_deep_bt.py:437: RuntimeWarning: invalid value encountered in cast
+  sides = np.where((x >= thr) & (ds != 0), ds.astype(int), 0)
+  ✓ GATE kalman_fade_1.6        5m RR=1.5 n=28518 WR=42.7 E[R]=0.0682 1y=0.06 3y=0.048 score=15.727
+  ✓ GATE kalman_fade_1.6        5m RR=2.0 n=25930 WR=36.0 E[R]=0.0813 1y=0.059 3y=0.053 score=15.512
+  ✓ GATE kalman_fade_1.6        5m RR=2.4 n=24116 WR=32.1 E[R]=0.0904 1y=0.046 3y=0.057 score=15.39
+  ✓ GATE kalman_fade_1.6        5m RR=3.0 n=21549 WR=27.2 E[R]=0.0872 1y=0.071 3y=0.062 score=15.221
+  ✓ GATE kalman_fade_1.6        5m RR=4.0 n=17993 WR=22.0 E[R]=0.0982 1y=0.077 3y=0.096 score=15.145
+  ✓ GATE kalman_fade_2.0        5m RR=1.5 n=17574 WR=43.6 E[R]=0.0898 1y=0.05 3y=0.056 score=15.871
+  ✓ GATE kalman_fade_2.0        5m RR=2.0 n=16630 WR=36.9 E[R]=0.1066 1y=0.058 3y=0.07 score=15.693
+  ✓ GATE kalman_fade_2.0        5m RR=2.4 n=15854 WR=33.0 E[R]=0.1205 1y=0.067 3y=0.074 score=15.596
+  ✓ GATE kalman_fade_2.0        5m RR=3.0 n=14720 WR=28.1 E[R]=0.1239 1y=0.083 3y=0.07 score=15.387
+  ✓ GATE kalman_fade_2.0        5m RR=4.0 n=12995 WR=22.4 E[R]=0.1181 1y=0.084 3y=0.088 score=15.17
+  ✓ GATE kalman_fade_2.4        5m RR=1.5 n=9375 WR=44.6 E[R]=0.1149 1y=0.073 3y=0.087 score=16.093
+  ✓ GATE kalman_fade_2.4        5m RR=2.0 n=9097 WR=38.0 E[R]=0.1387 1y=0.13 3y=0.123 score=16.046
+  ✓ GATE kalman_fade_2.4        5m RR=2.4 n=8868 WR=33.9 E[R]=0.1537 1y=0.157 3y=0.141 score=16.01
+  ✓ GATE kalman_fade_2.4        5m RR=3.0 n=8502 WR=29.2 E[R]=0.1696 1y=0.196 3y=0.161 score=15.969
+  ✓ GATE kalman_fade_2.4        5m RR=4.0 n=7909 WR=23.4 E[R]=0.1721 1y=0.197 3y=0.192 score=15.831
+  ✓ GATE hf_spike_fade_0.60     5m RR=2.0 n=15560 WR=35.0 E[R]=0.049 1y=0.003 3y=0.03 score=15.228
+  ✓ GATE hf_spike_fade_0.60     5m RR=2.4 n=14304 WR=30.9 E[R]=0.0497 1y=0.031 3y=0.04 score=14.677
+  ✓ GATE hf_spike_fade_0.60     5m RR=3.0 n=12821 WR=26.4 E[R]=0.0551 1y=0.079 3y=0.055 score=14.56
+  ✓ GATE hf_spike_fade_0.60     5m RR=4.0 n=11040 WR=21.4 E[R]=0.072 1y=0.157 3y=0.1 score=14.549
+  ✓ GATE hf_spike_fade_0.70     5m RR=4.0 n=3300 WR=21.2 E[R]=0.0621 1y=0.008 3y=0.061 score=14.708
+  ✓ GATE fractal_mr             5m RR=1.5 n=5329 WR=41.5 E[R]=0.0382 1y=0.001 3y=0.03 score=13.844
+  ✓ GATE fractal_mr             5m RR=2.0 n=4875 WR=35.5 E[R]=0.0665 1y=0.01 3y=0.039 score=15.343
+  ✓ GATE fractal_mr             5m RR=2.4 n=4590 WR=31.5 E[R]=0.0726 1y=0.023 3y=0.045 score=14.841
+  ✓ GATE fractal_mr             5m RR=3.0 n=4290 WR=27.7 E[R]=0.1077 1y=0.004 3y=0.065 score=15.238
+  ✓ GATE fractal_mr             5m RR=4.0 n=3906 WR=22.8 E[R]=0.1418 1y=0.014 3y=0.116 score=15.262
+  load USDCHF 15m (8.0y) …
+  enriched 284,833 bars 2018-06-08→2026-07-23
+  ✓ GATE ou_snap_5_40           15m RR=1.5 n=7498 WR=42.7 E[R]=0.0666 1y=0.029 3y=0.058 score=15.706
+  ✓ GATE ou_snap_5_40           15m RR=2.0 n=6759 WR=36.1 E[R]=0.0843 1y=0.011 3y=0.061 score=15.508
+  ✓ GATE ou_snap_5_40           15m RR=2.4 n=6284 WR=32.2 E[R]=0.0951 1y=0.054 3y=0.094 score=15.524
+  ✓ GATE ou_snap_5_40           15m RR=3.0 n=5695 WR=27.9 E[R]=0.1161 1y=0.138 3y=0.144 score=15.627
+  ✓ GATE ou_snap_5_40           15m RR=4.0 n=4966 WR=22.3 E[R]=0.1126 1y=0.068 3y=0.101 score=14.892
+  ✓ GATE ou_snap_8_25           15m RR=1.5 n=4387 WR=43.5 E[R]=0.0879 1y=0.024 3y=0.055 score=15.849
+  ✓ GATE ou_snap_8_25           15m RR=2.0 n=4026 WR=36.6 E[R]=0.0969 1y=0.034 3y=0.06 score=15.587
+  ✓ GATE ou_snap_8_25           15m RR=2.4 n=3812 WR=32.3 E[R]=0.0997 1y=0.054 3y=0.079 score=15.129
+  ✓ GATE ou_snap_8_25           15m RR=3.0 n=3565 WR=27.5 E[R]=0.0985 1y=0.157 3y=0.14 score=15.148
+  ✓ GATE ou_snap_8_25           15m RR=4.0 n=3254 WR=21.8 E[R]=0.091 1y=0.144 3y=0.112 score=13.617
+/app/analysis/lab_zenith_math_invention_deep_bt.py:437: RuntimeWarning: invalid value encountered in cast
+  sides = np.where((x >= thr) & (ds != 0), ds.astype(int), 0)
+  ✓ GATE kalman_fade_1.6        15m RR=1.5 n=8695 WR=42.5 E[R]=0.0635 1y=0.048 3y=0.067 score=15.759
+  ✓ GATE kalman_fade_1.6        15m RR=2.0 n=7859 WR=36.0 E[R]=0.0799 1y=0.04 3y=0.088 score=15.635
+  ✓ GATE kalman_fade_1.6        15m RR=2.4 n=7311 WR=32.1 E[R]=0.0915 1y=0.052 3y=0.1 score=15.582
+  ✓ GATE kalman_fade_1.6        15m RR=3.0 n=6591 WR=27.5 E[R]=0.1003 1y=0.047 3y=0.107 score=15.463
+  ✓ GATE kalman_fade_1.6        15m RR=4.0 n=5645 WR=21.9 E[R]=0.093 1y=0.077 3y=0.13 score=15.267
+  ✓ GATE kalman_fade_2.0        15m RR=1.5 n=5543 WR=42.8 E[R]=0.0694 1y=0.085 3y=0.079 score=15.825
+  ✓ GATE kalman_fade_2.0        15m RR=2.0 n=5233 WR=35.9 E[R]=0.0783 1y=0.093 3y=0.11 score=15.679
+  ✓ GATE kalman_fade_2.0        15m RR=2.4 n=5003 WR=32.5 E[R]=0.1057 1y=0.155 3y=0.162 score=15.814
+  ✓ GATE kalman_fade_2.0        15m RR=3.0 n=4649 WR=27.8 E[R]=0.1116 1y=0.177 3y=0.173 score=15.69
+  ✓ GATE kalman_fade_2.0        15m RR=4.0 n=4213 WR=21.8 E[R]=0.0907 1y=0.191 3y=0.16 score=15.34
+  ✓ GATE kalman_fade_2.4        15m RR=1.5 n=3133 WR=43.2 E[R]=0.0812 1y=0.079 3y=0.072 score=15.82
+  ✓ GATE kalman_fade_2.4        15m RR=2.0 n=3040 WR=37.0 E[R]=0.1112 1y=0.091 3y=0.085 score=15.768
+  ✓ GATE kalman_fade_2.4        15m RR=2.4 n=2967 WR=33.1 E[R]=0.1253 1y=0.127 3y=0.098 score=15.71
+  ✓ GATE kalman_fade_2.4        15m RR=3.0 n=2868 WR=29.0 E[R]=0.159 1y=0.227 3y=0.138 score=15.829
+  ✓ GATE kalman_fade_2.4        15m RR=4.0 n=2691 WR=23.3 E[R]=0.1669 1y=0.238 3y=0.115 score=15.554
+  ✓ GATE hf_spike_fade_0.60     15m RR=1.5 n=5079 WR=41.4 E[R]=0.0356 1y=0.055 3y=0.046 score=15.442
+  ✓ GATE hf_spike_fade_0.60     15m RR=2.0 n=4508 WR=35.2 E[R]=0.0555 1y=0.066 3y=0.063 score=15.012
+  ✓ GATE hf_spike_fade_0.60     15m RR=2.4 n=4146 WR=30.9 E[R]=0.0521 1y=0.097 3y=0.082 score=14.848
+  ✓ GATE hf_spike_fade_0.60     15m RR=3.0 n=3740 WR=26.6 E[R]=0.0631 1y=0.196 3y=0.146 score=14.946
+  ✓ GATE fractal_mr             15m RR=2.0 n=1388 WR=36.0 E[R]=0.0785 1y=0.023 3y=0.042 score=14.961
+  ✓ GATE fractal_mr             15m RR=2.4 n=1300 WR=30.9 E[R]=0.0514 1y=0.052 3y=0.075 score=14.373
+
+######## UKOIL ########
+  load UKOIL 5m (8.0y) …
+  enriched 854,497 bars 2018-06-08→2026-07-23
+  ✓ GATE snr_drift_0.40         5m RR=4.0 n=855 WR=21.8 E[R]=0.0877 1y=0.036 3y=0.163 score=14.777
+  ✓ GATE hurst_mr_0.45          5m RR=4.0 n=1699 WR=21.8 E[R]=0.0889 1y=0.044 3y=0.051 score=14.466
+  ✓ GATE ou_snap_5_40           5m RR=1.5 n=20549 WR=40.6 E[R]=0.0154 1y=0.014 3y=0.012 score=14.821
+  ✓ GATE ou_snap_5_40           5m RR=2.0 n=18859 WR=34.6 E[R]=0.0373 1y=0.04 3y=0.039 score=15.299
+  ✓ GATE ou_snap_5_40           5m RR=2.4 n=17742 WR=30.9 E[R]=0.049 1y=0.048 3y=0.05 score=15.244
+  ✓ GATE ou_snap_5_40           5m RR=3.0 n=16216 WR=26.5 E[R]=0.0594 1y=0.054 3y=0.063 score=15.138
+  ✓ GATE ou_snap_5_40           5m RR=4.0 n=14212 WR=21.5 E[R]=0.0755 1y=0.037 3y=0.071 score=15.01
+  ✓ GATE ou_snap_8_25           5m RR=1.5 n=12529 WR=41.3 E[R]=0.0316 1y=0.057 3y=0.046 score=15.534
+  ✓ GATE ou_snap_8_25           5m RR=2.0 n=11708 WR=35.2 E[R]=0.0559 1y=0.072 3y=0.068 score=15.477
+  ✓ GATE ou_snap_8_25           5m RR=2.4 n=11150 WR=31.3 E[R]=0.0645 1y=0.057 3y=0.073 score=15.375
+  ✓ GATE ou_snap_8_25           5m RR=3.0 n=10442 WR=27.1 E[R]=0.0829 1y=0.098 3y=0.103 score=15.366
+  ✓ GATE ou_snap_8_25           5m RR=4.0 n=9551 WR=22.0 E[R]=0.0988 1y=0.124 3y=0.127 score=15.298
+/app/analysis/lab_zenith_math_invention_deep_bt.py:437: RuntimeWarning: invalid value encountered in cast
+  sides = np.where((x >= thr) & (ds != 0), ds.astype(int), 0)
+  ✓ GATE kalman_fade_1.6        5m RR=1.5 n=20298 WR=41.0 E[R]=0.0255 1y=0.003 3y=0.021 score=15.388
+  ✓ GATE kalman_fade_1.6        5m RR=2.0 n=18853 WR=34.9 E[R]=0.0472 1y=0.039 3y=0.053 score=15.337
+  ✓ GATE kalman_fade_1.6        5m RR=2.4 n=17776 WR=30.9 E[R]=0.0491 1y=0.052 3y=0.044 score=15.175
+  ✓ GATE kalman_fade_1.6        5m RR=3.0 n=16271 WR=26.5 E[R]=0.0605 1y=0.086 3y=0.055 score=15.101
+  ✓ GATE kalman_fade_1.6        5m RR=4.0 n=14248 WR=21.8 E[R]=0.0879 1y=0.036 3y=0.066 score=15.04
+  ✓ GATE kalman_fade_2.0        5m RR=2.0 n=11971 WR=34.4 E[R]=0.0335 1y=0.021 3y=0.045 score=15.264
+  ✓ GATE kalman_fade_2.0        5m RR=2.4 n=11545 WR=30.4 E[R]=0.0334 1y=0.005 3y=0.04 score=15.073
+  ✓ GATE kalman_fade_2.0        5m RR=3.0 n=10954 WR=26.4 E[R]=0.0542 1y=0.017 3y=0.058 score=15.077
+  ✓ GATE kalman_fade_2.0        5m RR=4.0 n=10094 WR=22.0 E[R]=0.0982 1y=0.033 3y=0.096 score=15.206
+  ✓ GATE kalman_fade_2.4        5m RR=1.5 n=6998 WR=41.1 E[R]=0.0267 1y=0.068 3y=0.033 score=15.374
+  ✓ GATE kalman_fade_2.4        5m RR=2.0 n=6797 WR=35.4 E[R]=0.0628 1y=0.104 3y=0.069 score=15.497
+  ✓ GATE kalman_fade_2.4        5m RR=2.4 n=6681 WR=31.7 E[R]=0.0794 1y=0.142 3y=0.091 score=15.496
+  ✓ GATE kalman_fade_2.4        5m RR=3.0 n=6465 WR=28.0 E[R]=0.1193 1y=0.184 3y=0.156 score=15.681
+  ✓ GATE kalman_fade_2.4        5m RR=4.0 n=6193 WR=23.8 E[R]=0.1917 1y=0.305 3y=0.252 score=16.112
+  ✓ GATE bimod_0.70             5m RR=4.0 n=2087 WR=21.1 E[R]=0.0565 1y=0.353 3y=0.108 score=14.389
+  ✓ GATE hf_spike_fade_0.60     5m RR=2.0 n=9915 WR=34.4 E[R]=0.0306 1y=0.006 3y=0.027 score=14.739
+  ✓ GATE hf_spike_fade_0.60     5m RR=4.0 n=7634 WR=21.0 E[R]=0.0506 1y=0.041 3y=0.045 score=14.699
+  ✓ GATE hf_spike_fade_0.70     5m RR=3.0 n=1714 WR=26.8 E[R]=0.0735 1y=0.078 3y=0.071 score=14.778
+  ✓ GATE hf_spike_fade_0.70     5m RR=4.0 n=1618 WR=22.6 E[R]=0.131 1y=0.124 3y=0.11 score=15.422
+  ✓ GATE fractal_mr             5m RR=4.0 n=2236 WR=21.1 E[R]=0.0532 1y=0.003 3y=0.094 score=14.555
+  load UKOIL 15m (8.0y) …
+  enriched 284,833 bars 2018-06-08→2026-07-23
+  ✓ GATE ou_snap_5_40           15m RR=2.0 n=5425 WR=35.2 E[R]=0.0562 1y=0.032 3y=0.047 score=15.385
+  ✓ GATE ou_snap_5_40           15m RR=2.4 n=5166 WR=32.4 E[R]=0.1017 1y=0.078 3y=0.082 score=15.559
+  ✓ GATE ou_snap_5_40           15m RR=3.0 n=4841 WR=27.7 E[R]=0.108 1y=0.102 3y=0.11 score=15.479
+  ✓ GATE ou_snap_5_40           15m RR=4.0 n=4453 WR=23.4 E[R]=0.1711 1y=0.078 3y=0.12 score=15.57
+  ✓ GATE ou_snap_8_25           15m RR=1.5 n=3530 WR=41.4 E[R]=0.0361 1y=0.004 3y=0.05 score=13.862
+  ✓ GATE ou_snap_8_25           15m RR=2.0 n=3344 WR=36.0 E[R]=0.081 1y=0.03 3y=0.068 score=15.592
+  ✓ GATE ou_snap_8_25           15m RR=2.4 n=3235 WR=33.1 E[R]=0.1246 1y=0.067 3y=0.099 score=15.704
+  ✓ GATE ou_snap_8_25           15m RR=3.0 n=3093 WR=28.5 E[R]=0.1419 1y=0.081 3y=0.137 score=15.664
+  ✓ GATE ou_snap_8_25           15m RR=4.0 n=2926 WR=23.8 E[R]=0.1893 1y=0.034 3y=0.148 score=15.695
+  ✓ GATE allan_persist_0.80     15m RR=4.0 n=7725 WR=20.8 E[R]=0.0401 1y=0.004 3y=0.03 score=14.142
+/app/analysis/lab_zenith_math_invention_deep_bt.py:437: RuntimeWarning: invalid value encountered in cast
+  sides = np.where((x >= thr) & (ds != 0), ds.astype(int), 0)
+  ✓ GATE kalman_fade_1.6        15m RR=1.5 n=5826 WR=41.2 E[R]=0.029 1y=0.029 3y=0.007 score=14.869
+  ✓ GATE kalman_fade_1.6        15m RR=2.0 n=5439 WR=36.0 E[R]=0.0805 1y=0.082 3y=0.059 score=15.49
+  ✓ GATE kalman_fade_1.6        15m RR=2.4 n=5202 WR=33.0 E[R]=0.1222 1y=0.1 3y=0.093 score=15.623
+  ✓ GATE kalman_fade_1.6        15m RR=3.0 n=4915 WR=29.6 E[R]=0.1841 1y=0.125 3y=0.138 score=15.883
+  ✓ GATE kalman_fade_1.6        15m RR=4.0 n=4567 WR=25.2 E[R]=0.2612 1y=0.197 3y=0.198 score=16.114
+  ✓ GATE kalman_fade_2.0        15m RR=2.0 n=3963 WR=36.4 E[R]=0.0931 1y=0.046 3y=0.062 score=15.582
+  ✓ GATE kalman_fade_2.0        15m RR=2.4 n=3875 WR=33.5 E[R]=0.138 1y=0.107 3y=0.123 score=15.799
+  ✓ GATE kalman_fade_2.0        15m RR=3.0 n=3779 WR=30.6 E[R]=0.2225 1y=0.135 3y=0.198 score=16.236
+  ✓ GATE kalman_fade_2.0        15m RR=4.0 n=3652 WR=26.8 E[R]=0.3376 1y=0.235 3y=0.308 score=16.762
+  ✓ GATE kalman_fade_2.4        15m RR=2.0 n=2887 WR=37.3 E[R]=0.1192 1y=0.016 3y=0.073 score=15.77
+  ✓ GATE kalman_fade_2.4        15m RR=2.4 n=2852 WR=35.0 E[R]=0.1886 1y=0.074 3y=0.147 score=16.166
+  ✓ GATE kalman_fade_2.4        15m RR=3.0 n=2813 WR=32.1 E[R]=0.2855 1y=0.125 3y=0.227 score=16.67
+  ✓ GATE kalman_fade_2.4        15m RR=4.0 n=2762 WR=28.9 E[R]=0.4446 1y=0.211 3y=0.365 score=17.539
+  ✓ GATE hf_spike_fade_0.60     15m RR=2.4 n=2984 WR=30.8 E[R]=0.0471 1y=0.073 3y=0.081 score=15.103
+  ✓ GATE hf_spike_fade_0.60     15m RR=3.0 n=2788 WR=26.5 E[R]=0.0617 1y=0.075 3y=0.063 score=14.908
+  ✓ GATE skew_align_snr         15m RR=3.0 n=2054 WR=26.4 E[R]=0.0555 1y=0.252 3y=0.117 score=15.062
+  ✓ GATE skew_align_snr         15m RR=4.0 n=1934 WR=21.8 E[R]=0.091 1y=0.286 3y=0.175 score=15.321
+
+##### DENSIFY 1 elapsed=2490s #####
+  ↑ ETHUSD → bimod_0.55_sl1_D1 @3m RR=4.0 sl=1.0 n=2444 WR=23.1 E[R]=0.1559 score=18.859
+  ↑ ETHUSD → bimod_0.55_sl1_D1_sl1.8_D1 @3m RR=4.0 sl=1.8 n=1613 WR=23.7 E[R]=0.1872 score=19.045
+  ↑ BTCUSD → bimod_0.55_sl1.5_D1 @3m RR=3.0 sl=1.5 n=1822 WR=27.9 E[R]=0.1153 score=18.208
+  ↑ NAS100 → snr_drift_0.40_sl1.2_D1 @3m RR=4.0 sl=1.2 n=1166 WR=22.0 E[R]=0.1021 score=16.903
+  ↑ NAS100 → snr_drift_0.40_sl1.2_D1_sl1.5_D1 @3m RR=2.0 sl=1.5 n=1230 WR=37.3 E[R]=0.1195 score=17.457
+  ↑ NAS100 → snr_drift_0.40_sl1.2_D1_sl1.5_D1_sl1.8_D1 @3m RR=2.0 sl=1.8 n=1157 WR=37.0 E[R]=0.1098 score=18.331
+  ↑ USDJPY → kalman_fade_2.0_sl1_D1 @3m RR=2.0 sl=1.0 n=19091 WR=34.7 E[R]=0.0401 score=18.431
+  ↑ USDJPY → kalman_fade_2.0_sl1_D1_sl1.5_D1 @3m RR=2.0 sl=1.5 n=15528 WR=34.4 E[R]=0.0319 score=18.478
+  ↑ AUDUSD → kalman_fade_2.4_sl1_D1 @3m RR=2.0 sl=1.0 n=9666 WR=36.0 E[R]=0.0791 score=18.759
+  ↑ USDCHF → kalman_fade_2.4_sl1_D1 @3m RR=2.0 sl=1.0 n=10061 WR=36.7 E[R]=0.1024 score=18.894
+  ↑ UKOIL → kalman_fade_2.4_sl1_D1 @3m RR=2.0 sl=1.0 n=8027 WR=36.1 E[R]=0.0842 score=18.9
+  ↑ UKOIL → kalman_fade_2.4_sl1_D1_sl1_D1 @3m RR=3.0 sl=1.0 n=7744 WR=28.5 E[R]=0.141 score=18.909
+  ↑ UKOIL → kalman_fade_2.4_sl1_D1_sl1_D1_sl1_D1 @3m RR=4.0 sl=1.0 n=7441 WR=23.4 E[R]=0.1719 score=18.964
+
+##### DENSIFY 2 elapsed=2890s #####
+  ↑ USDJPY → kalman_fade_2.0_sl1_D1_sl1.5_D1_sl1_D2 @3m RR=2.0 sl=1.0 n=31538 WR=34.7 E[R]=0.0415 score=18.546
+
+##### DENSIFY 3 elapsed=3353s #####
+
+##### DENSIFY 4 elapsed=3807s #####
+
+##### DENSIFY 5 elapsed=4264s #####
+
+##### DENSIFY 6 elapsed=4715s #####
+
+##### DENSIFY 7 elapsed=5162s #####
+
+##### DENSIFY 8 elapsed=5606s #####
+
+##### DENSIFY 9 elapsed=6059s #####
+
+##### DENSIFY 10 elapsed=6515s #####
+
+##### DENSIFY 11 elapsed=6974s #####
+
+##### DENSIFY 12 elapsed=7431s #####
+
+##### DENSIFY 13 elapsed=7887s #####
+
+##### DENSIFY 14 elapsed=8346s #####
+
+##### DENSIFY 15 elapsed=8801s #####
+
+##### DENSIFY 16 elapsed=9257s #####
+
+##### DENSIFY 17 elapsed=9715s #####
+
+##### DENSIFY 18 elapsed=10173s #####
+
+##### DENSIFY 19 elapsed=10631s #####
+
+##### DENSIFY 20 elapsed=11089s #####
+
+##### DENSIFY 21 elapsed=11545s #####
+
+##### DENSIFY 22 elapsed=12001s #####
+
+##### DENSIFY 23 elapsed=12456s #####
+
+##### DENSIFY 24 elapsed=12914s #####
+
+##### DENSIFY 25 elapsed=13370s #####
+
+##### DENSIFY 26 elapsed=13837s #####
+
+##### DENSIFY 27 elapsed=14292s #####
+
+##### DENSIFY 28 elapsed=14746s #####
+
+##### DENSIFY 29 elapsed=15200s #####
+
+##### DENSIFY 30 elapsed=15655s #####
+
+##### DENSIFY 31 elapsed=16108s #####
+
+##### DENSIFY 32 elapsed=16564s #####
+
+##### DENSIFY 33 elapsed=17018s #####
+
+##### DENSIFY 34 elapsed=17473s #####
+
+##### DENSIFY 35 elapsed=17929s #####
+
+Wrote /app/data/lab_zenith_math_invention_deep.json
+Equations /app/data/lab_zenith_math_invention_equations.md
+Firm: ['ETHUSD', 'BTCUSD', 'GOLD', 'NAS100', 'USDJPY', 'AUDUSD', 'USDCHF', 'UKOIL']

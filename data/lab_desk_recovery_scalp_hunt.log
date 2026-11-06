@@ -1,0 +1,2123 @@
+=== DESK RECOVERY SCALP HUNT ===
+Scalper/intraday TFs=('1m', '3m', '5m', '15m') · RR=[1.5, 2.0, 2.4, 3.0, 4.0]
+Window 2025-08-10→2026-08-10 · recent gate 90d
+Order=('ETHUSD', 'BTCUSD', 'GOLD', 'NAS100', 'USDJPY', 'AUDUSD', 'USDCHF', 'UKOIL')
+min_runtime=28800s max=36000s
+catalog=43 · Obsidian=/app/ZenithRecovery
+LIVE .env NOT auto-wired
+
+
+######## ETHUSD · live=breakout_20 RR=4.0 ########
+  … fib_liq@5m (100,224 bars)
+  ✓ GATE fib_liq      5m  RR=3.0 n=285 E[R]=0.151 90dOOS=0.143
+  … fib_liq@15m (33,408 bars)
+  … ema_pull@5m (100,224 bars)
+  … ema_pull@15m (33,408 bars)
+  ✓ GATE ema_pull     15m RR=4.0 n=316 E[R]=0.092 90dOOS=0.458
+  … ema_tight@5m (100,224 bars)
+  … ema_tight@15m (33,408 bars)
+  ✓ GATE ema_tight    15m RR=3.0 n=187 E[R]=0.176 90dOOS=0.143
+  … sma_cross@1m (501,120 bars)
+  ✓ GATE sma_cross    1m  RR=4.0 n=10709 E[R]=0.059 90dOOS=0.159
+  … sma_cross@3m (167,040 bars)
+  … sma_cross@5m (100,224 bars)
+  … sma_cross@15m (33,408 bars)
+  … pa@5m (100,224 bars)
+  … pa@15m (33,408 bars)
+  … liq@5m (100,224 bars)
+  … liq@15m (33,408 bars)
+  … tl@5m (100,224 bars)
+  … tl@15m (33,408 bars)
+  … obfvg@5m (100,224 bars)
+  … obfvg@15m (33,408 bars)
+  … macd@5m (100,224 bars)
+  … macd@15m (33,408 bars)
+  … engulf@5m (100,224 bars)
+  … engulf@15m (33,408 bars)
+  … inside@5m (100,224 bars)
+  … inside@15m (33,408 bars)
+  … ichi@5m (100,224 bars)
+  … ichi@15m (33,408 bars)
+  … psar@5m (100,224 bars)
+  ✓ GATE psar         5m  RR=4.0 n=2226 E[R]=0.114 90dOOS=0.151
+  … psar@15m (33,408 bars)
+  … adx@5m (100,224 bars)
+  … adx@15m (33,408 bars)
+  … st_2@1m (501,120 bars)
+  … st_2@3m (167,040 bars)
+  … st_2@5m (100,224 bars)
+  … st_2@15m (33,408 bars)
+  … st_3@1m (501,120 bars)
+  … st_3@3m (167,040 bars)
+  ✓ GATE st_3         3m  RR=2.4 n=604 E[R]=0.098 90dOOS=0.074
+  … st_3@5m (100,224 bars)
+  … st_3@15m (33,408 bars)
+  … kelt_1@1m (501,120 bars)
+  … kelt_1@3m (167,040 bars)
+  … kelt_1@5m (100,224 bars)
+  … kelt_1@15m (33,408 bars)
+  … kelt_1.5@1m (501,120 bars)
+  ✓ GATE kelt_1.5     1m  RR=3.0 n=26024 E[R]=0.056 90dOOS=0.032
+  … kelt_1.5@3m (167,040 bars)
+  … kelt_1.5@5m (100,224 bars)
+  … kelt_1.5@15m (33,408 bars)
+  … kelt_2@1m (501,120 bars)
+  ✓ GATE kelt_2       1m  RR=3.0 n=20121 E[R]=0.052 90dOOS=0.022
+  … kelt_2@3m (167,040 bars)
+  … kelt_2@5m (100,224 bars)
+  ✓ GATE kelt_2       5m  RR=4.0 n=2581 E[R]=0.058 90dOOS=0.25
+  … kelt_2@15m (33,408 bars)
+  … stoch_20@1m (501,120 bars)
+  skip stoch_20@1m: No numeric types to aggregate
+  … stoch_20@3m (167,040 bars)
+  skip stoch_20@3m: No numeric types to aggregate
+  … stoch_20@5m (100,224 bars)
+  skip stoch_20@5m: No numeric types to aggregate
+  … stoch_20@15m (33,408 bars)
+  skip stoch_20@15m: No numeric types to aggregate
+  … stoch_30@1m (501,120 bars)
+  skip stoch_30@1m: No numeric types to aggregate
+  … stoch_30@3m (167,040 bars)
+  skip stoch_30@3m: No numeric types to aggregate
+  … stoch_30@5m (100,224 bars)
+  skip stoch_30@5m: No numeric types to aggregate
+  … stoch_30@15m (33,408 bars)
+  skip stoch_30@15m: No numeric types to aggregate
+  … don_10@1m (501,120 bars)
+  ✓ GATE don_10       1m  RR=4.0 n=23277 E[R]=0.07 90dOOS=0.051
+  … don_10@3m (167,040 bars)
+  … don_10@5m (100,224 bars)
+  … don_10@15m (33,408 bars)
+  … don_20@1m (501,120 bars)
+  ✓ GATE don_20       1m  RR=4.0 n=19903 E[R]=0.052 90dOOS=0.031
+  … don_20@3m (167,040 bars)
+  … don_20@5m (100,224 bars)
+  … don_20@15m (33,408 bars)
+  … don_30@1m (501,120 bars)
+  … don_30@3m (167,040 bars)
+  … don_30@5m (100,224 bars)
+  … don_30@15m (33,408 bars)
+  … don_55@1m (501,120 bars)
+  ✓ GATE don_55       1m  RR=4.0 n=12079 E[R]=0.057 90dOOS=0.014
+  … don_55@3m (167,040 bars)
+  … don_55@5m (100,224 bars)
+  … don_55@15m (33,408 bars)
+  … don_100@1m (501,120 bars)
+  … don_100@3m (167,040 bars)
+  … don_100@5m (100,224 bars)
+  … don_100@15m (33,408 bars)
+  ✓ GATE don_100      15m RR=2.4 n=522 E[R]=0.062 90dOOS=0.169
+  … cta_5_20@1m (501,120 bars)
+  ✓ GATE cta_5_20     1m  RR=2.4 n=14846 E[R]=0.048 90dOOS=0.064
+  … cta_5_20@3m (167,040 bars)
+  … cta_5_20@5m (100,224 bars)
+  … cta_5_20@15m (33,408 bars)
+  … cta_10_40@1m (501,120 bars)
+  … cta_10_40@3m (167,040 bars)
+  … cta_10_40@5m (100,224 bars)
+  … cta_10_40@15m (33,408 bars)
+  … cta_12_26@1m (501,120 bars)
+  ✓ GATE cta_12_26    1m  RR=2.4 n=12306 E[R]=0.041 90dOOS=0.023
+  … cta_12_26@3m (167,040 bars)
+  … cta_12_26@5m (100,224 bars)
+  … cta_12_26@15m (33,408 bars)
+  … cta_20_50@1m (501,120 bars)
+  … cta_20_50@3m (167,040 bars)
+  … cta_20_50@5m (100,224 bars)
+  … cta_20_50@15m (33,408 bars)
+  … cta_50_200@1m (501,120 bars)
+  … cta_50_200@3m (167,040 bars)
+  … cta_50_200@5m (100,224 bars)
+  … cta_50_200@15m (33,408 bars)
+  … tsmom@1m (501,120 bars)
+  ✓ GATE tsmom        1m  RR=2.4 n=5269 E[R]=0.041 90dOOS=0.098
+  … tsmom@3m (167,040 bars)
+  ✓ GATE tsmom        3m  RR=2.0 n=1647 E[R]=0.056 90dOOS=0.18
+  … tsmom@5m (100,224 bars)
+  … tsmom@15m (33,408 bars)
+  … roc_20@1m (501,120 bars)
+  … roc_20@3m (167,040 bars)
+  … roc_20@5m (100,224 bars)
+  … roc_20@15m (33,408 bars)
+  … roc_60@1m (501,120 bars)
+  … roc_60@3m (167,040 bars)
+  … roc_60@5m (100,224 bars)
+  … roc_60@15m (33,408 bars)
+  … roc_120@1m (501,120 bars)
+  … roc_120@3m (167,040 bars)
+  … roc_120@5m (100,224 bars)
+  … roc_120@15m (33,408 bars)
+  … bb_1.5@1m (501,120 bars)
+  ✓ GATE bb_1.5       1m  RR=4.0 n=13436 E[R]=0.163 90dOOS=0.153
+  … bb_1.5@3m (167,040 bars)
+  … bb_1.5@5m (100,224 bars)
+  … bb_1.5@15m (33,408 bars)
+  … bb_2@1m (501,120 bars)
+  ✓ GATE bb_2         1m  RR=3.0 n=4028 E[R]=0.138 90dOOS=0.059
+  … bb_2@3m (167,040 bars)
+  ✓ GATE bb_2         3m  RR=4.0 n=1231 E[R]=0.056 90dOOS=0.173
+  … bb_2@5m (100,224 bars)
+  ✓ GATE bb_2         5m  RR=1.5 n=874 E[R]=0.084 90dOOS=0.184
+  … bb_2@15m (33,408 bars)
+  … bb_2.5@1m (501,120 bars)
+  … bb_2.5@3m (167,040 bars)
+  … bb_2.5@5m (100,224 bars)
+  … bb_2.5@15m (33,408 bars)
+  … z_20_2@1m (501,120 bars)
+  ✓ GATE z_20_2       1m  RR=4.0 n=14278 E[R]=0.141 90dOOS=0.056
+  … z_20_2@3m (167,040 bars)
+  … z_20_2@5m (100,224 bars)
+  ✓ GATE z_20_2       5m  RR=2.4 n=3509 E[R]=0.06 90dOOS=0.143
+  … z_20_2@15m (33,408 bars)
+  … z_40_2@1m (501,120 bars)
+  ✓ GATE z_40_2       1m  RR=4.0 n=12067 E[R]=0.139 90dOOS=0.004
+  … z_40_2@3m (167,040 bars)
+  … z_40_2@5m (100,224 bars)
+  ✓ GATE z_40_2       5m  RR=2.4 n=2843 E[R]=0.076 90dOOS=0.193
+  … z_40_2@15m (33,408 bars)
+  … rsi@1m (501,120 bars)
+  ✓ GATE rsi          1m  RR=3.0 n=17332 E[R]=0.081 90dOOS=0.05
+  … rsi@3m (167,040 bars)
+  … rsi@5m (100,224 bars)
+  … rsi@15m (33,408 bars)
+  … atrbrk@1m (501,120 bars)
+  … atrbrk@3m (167,040 bars)
+  … atrbrk@5m (100,224 bars)
+  … atrbrk@15m (33,408 bars)
+  … volmom@1m (501,120 bars)
+  … volmom@3m (167,040 bars)
+  … volmom@5m (100,224 bars)
+  … volmom@15m (33,408 bars)
+  ✓ MATH bb_1.5+hf0.55        1m RR=1.5 n=10203 E[R]=0.066
+  ✓ MATH bb_1.5+hf0.55        1m RR=2.0 n=9930 E[R]=0.1
+  ✓ MATH bb_1.5+hf0.55        1m RR=2.4 n=9653 E[R]=0.123
+  ✓ MATH bb_1.5+hf0.55        1m RR=3.0 n=9082 E[R]=0.157
+  ✓ MATH bb_1.5+hf0.55        1m RR=4.0 n=8167 E[R]=0.183
+  ✓ MATH bb_1.5+hf0.50        1m RR=1.5 n=6839 E[R]=0.072
+  ✓ MATH bb_1.5+hf0.50        1m RR=2.0 n=6671 E[R]=0.104
+  ✓ MATH bb_1.5+hf0.50        1m RR=2.4 n=6515 E[R]=0.12
+  ✓ MATH bb_1.5+hf0.50        1m RR=3.0 n=6272 E[R]=0.158
+  ✓ MATH bb_1.5+hf0.50        1m RR=4.0 n=5761 E[R]=0.192
+  ✓ MATH bb_1.5+hf0.45        1m RR=1.5 n=3877 E[R]=0.088
+  ✓ MATH bb_1.5+hf0.45        1m RR=2.0 n=3797 E[R]=0.125
+  ✓ MATH bb_1.5+hf0.45        1m RR=2.4 n=3709 E[R]=0.141
+  ✓ MATH bb_1.5+hf0.45        1m RR=3.0 n=3601 E[R]=0.169
+  ✓ MATH bb_1.5+hf0.45        1m RR=4.0 n=3377 E[R]=0.214
+  ✓ MATH bb_1.5+hf0.50_e0.25  1m RR=1.5 n=5229 E[R]=0.082
+  ✓ MATH bb_1.5+hf0.50_e0.25  1m RR=2.0 n=5135 E[R]=0.122
+  ✓ MATH bb_1.5+hf0.50_e0.25  1m RR=2.4 n=5039 E[R]=0.138
+  ✓ MATH bb_1.5+hf0.50_e0.25  1m RR=3.0 n=4897 E[R]=0.165
+  ✓ MATH bb_1.5+hf0.50_e0.25  1m RR=4.0 n=4588 E[R]=0.214
+  ✓ MATH bb_1.5+hf0.45_e0.30  1m RR=1.5 n=2719 E[R]=0.113
+  ✓ MATH bb_1.5+hf0.45_e0.30  1m RR=2.0 n=2679 E[R]=0.158
+  ✓ MATH bb_1.5+hf0.45_e0.30  1m RR=2.4 n=2635 E[R]=0.175
+  ✓ MATH bb_1.5+hf0.45_e0.30  1m RR=3.0 n=2588 E[R]=0.19
+  ✓ MATH bb_1.5+hf0.45_e0.30  1m RR=4.0 n=2457 E[R]=0.243
+  ✓ MATH bb_1.5+e0.35         1m RR=1.5 n=11544 E[R]=0.09
+  ✓ MATH bb_1.5+e0.35         1m RR=2.0 n=11267 E[R]=0.122
+  ✓ MATH bb_1.5+e0.35         1m RR=2.4 n=10983 E[R]=0.146
+  ✓ MATH bb_1.5+e0.35         1m RR=3.0 n=10411 E[R]=0.167
+  ✓ MATH bb_1.5+e0.35         1m RR=4.0 n=9458 E[R]=0.205
+  ✓ MATH ema_tight+e0.35      15m RR=2.4 n=192 E[R]=0.169
+  ✓ MATH ema_tight+e0.35      15m RR=3.0 n=185 E[R]=0.168
+  ✓ MATH ema_tight+e0.35      15m RR=4.0 n=172 E[R]=0.25
+  ✓ MATH bb_2+hf0.55          1m RR=1.5 n=2207 E[R]=0.072
+  ✓ MATH bb_2+hf0.55          1m RR=2.0 n=2190 E[R]=0.1
+  ✓ MATH bb_2+hf0.55          1m RR=2.4 n=2172 E[R]=0.151
+  ✓ MATH bb_2+hf0.55          1m RR=3.0 n=2142 E[R]=0.184
+  ✓ MATH bb_2+hf0.50          1m RR=2.0 n=1440 E[R]=0.104
+  ✓ MATH bb_2+hf0.50          1m RR=2.4 n=1431 E[R]=0.145
+  ✓ MATH bb_2+hf0.50          1m RR=3.0 n=1414 E[R]=0.177
+  ✓ MATH bb_2+hf0.50          1m RR=4.0 n=1388 E[R]=0.203
+  ✓ MATH bb_2+hf0.45          1m RR=1.5 n=861 E[R]=0.098
+  ✓ MATH bb_2+hf0.45          1m RR=2.0 n=856 E[R]=0.104
+  ✓ MATH bb_2+hf0.45          1m RR=2.4 n=850 E[R]=0.14
+  ✓ MATH bb_2+hf0.45          1m RR=3.0 n=845 E[R]=0.164
+  ✓ MATH bb_2+hf0.45          1m RR=4.0 n=834 E[R]=0.193
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=2.0 n=908 E[R]=0.13
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=2.4 n=905 E[R]=0.176
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=3.0 n=899 E[R]=0.206
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=4.0 n=885 E[R]=0.243
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=1.5 n=458 E[R]=0.097
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=2.0 n=457 E[R]=0.149
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=2.4 n=455 E[R]=0.196
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=3.0 n=454 E[R]=0.207
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=4.0 n=448 E[R]=0.272
+  ✓ MATH bb_2+e0.35           1m RR=1.5 n=1918 E[R]=0.088
+  ✓ MATH bb_2+e0.35           1m RR=2.0 n=1908 E[R]=0.101
+  ✓ MATH bb_2+e0.35           1m RR=2.4 n=1897 E[R]=0.156
+  ✓ MATH bb_2+e0.35           1m RR=3.0 n=1878 E[R]=0.157
+  ✓ MATH z_20_2+hf0.55        1m RR=1.5 n=12087 E[R]=0.072
+  ✓ MATH z_20_2+hf0.55        1m RR=2.0 n=11519 E[R]=0.095
+  ✓ MATH z_20_2+hf0.55        1m RR=2.4 n=10996 E[R]=0.114
+  ✓ MATH z_20_2+hf0.55        1m RR=3.0 n=10181 E[R]=0.141
+  ✓ MATH z_20_2+hf0.55        1m RR=4.0 n=9031 E[R]=0.175
+  ✓ MATH z_20_2+hf0.50        1m RR=1.5 n=8055 E[R]=0.065
+  ✓ MATH z_20_2+hf0.50        1m RR=2.0 n=7761 E[R]=0.092
+  ✓ MATH z_20_2+hf0.50        1m RR=2.4 n=7472 E[R]=0.104
+  ✓ MATH z_20_2+hf0.50        1m RR=3.0 n=7054 E[R]=0.132
+  ✓ MATH z_20_2+hf0.45        1m RR=1.5 n=4542 E[R]=0.072
+  ✓ MATH z_20_2+hf0.45        1m RR=2.0 n=4414 E[R]=0.106
+  ✓ MATH z_20_2+hf0.45        1m RR=2.4 n=4282 E[R]=0.131
+  ✓ MATH z_20_2+hf0.45        1m RR=3.0 n=4081 E[R]=0.15
+  ✓ MATH z_20_2+hf0.45        1m RR=4.0 n=3791 E[R]=0.212
+  ✓ MATH z_20_2+hf0.50_e0.25  1m RR=1.5 n=6629 E[R]=0.059
+  ✓ MATH z_20_2+hf0.50_e0.25  1m RR=2.0 n=6430 E[R]=0.085
+  ✓ MATH z_20_2+hf0.50_e0.25  1m RR=2.4 n=6239 E[R]=0.106
+  ✓ MATH z_20_2+hf0.50_e0.25  1m RR=3.0 n=5954 E[R]=0.133
+  ✓ MATH z_20_2+hf0.50_e0.25  1m RR=4.0 n=5496 E[R]=0.185
+  ✓ MATH z_20_2+hf0.45_e0.30  1m RR=1.5 n=3578 E[R]=0.069
+  ✓ MATH z_20_2+hf0.45_e0.30  1m RR=2.0 n=3500 E[R]=0.1
+  ✓ MATH z_20_2+hf0.45_e0.30  1m RR=2.4 n=3415 E[R]=0.129
+  ✓ MATH z_20_2+hf0.45_e0.30  1m RR=3.0 n=3291 E[R]=0.139
+  ✓ MATH z_20_2+hf0.45_e0.30  1m RR=4.0 n=3108 E[R]=0.187
+  ✓ MATH z_20_2+e0.35         1m RR=1.5 n=16427 E[R]=0.066
+  ✓ MATH z_20_2+e0.35         1m RR=2.0 n=15568 E[R]=0.087
+  ✓ MATH z_20_2+e0.35         1m RR=2.4 n=14805 E[R]=0.112
+  ✓ MATH z_20_2+e0.35         1m RR=3.0 n=13569 E[R]=0.128
+  ✓ MATH z_20_2+e0.35         1m RR=4.0 n=11746 E[R]=0.161
+  ✓ MATH z_40_2+hf0.55        1m RR=2.0 n=9121 E[R]=0.076
+  ✓ MATH z_40_2+hf0.55        1m RR=2.4 n=8905 E[R]=0.103
+  ✓ MATH z_40_2+hf0.50        1m RR=1.5 n=6204 E[R]=0.061
+  ✓ MATH z_40_2+hf0.50        1m RR=2.0 n=6077 E[R]=0.082
+  ✓ MATH z_40_2+hf0.50        1m RR=2.4 n=5970 E[R]=0.102
+  ✓ MATH z_40_2+hf0.50        1m RR=3.0 n=5802 E[R]=0.107
+  ✓ MATH z_40_2+hf0.50        1m RR=4.0 n=5401 E[R]=0.144
+  ✓ MATH z_40_2+hf0.45        1m RR=2.0 n=3400 E[R]=0.081
+  ✓ MATH z_40_2+hf0.45        1m RR=2.4 n=3357 E[R]=0.103
+  ✓ MATH z_40_2+hf0.45        1m RR=3.0 n=3284 E[R]=0.122
+  ✓ MATH z_40_2+hf0.45        1m RR=4.0 n=3131 E[R]=0.15
+  ✓ MATH z_40_2+hf0.50_e0.25  1m RR=1.5 n=5466 E[R]=0.07
+  ✓ MATH z_40_2+hf0.50_e0.25  1m RR=2.0 n=5369 E[R]=0.095
+  ✓ MATH z_40_2+hf0.50_e0.25  1m RR=2.4 n=5288 E[R]=0.118
+  ✓ MATH z_40_2+hf0.50_e0.25  1m RR=3.0 n=5165 E[R]=0.123
+  ✓ MATH z_40_2+hf0.45_e0.30  1m RR=2.0 n=2892 E[R]=0.091
+  ✓ MATH z_40_2+hf0.45_e0.30  1m RR=2.4 n=2862 E[R]=0.118
+  ✓ MATH z_40_2+hf0.45_e0.30  1m RR=3.0 n=2810 E[R]=0.13
+  ✓ MATH z_40_2+hf0.45_e0.30  1m RR=4.0 n=2700 E[R]=0.17
+  ✓ MATH z_40_2+e0.35         1m RR=1.5 n=14146 E[R]=0.049
+  ✓ MATH z_40_2+e0.35         1m RR=2.0 n=13606 E[R]=0.069
+  ✓ MATH z_40_2+e0.35         1m RR=2.4 n=13117 E[R]=0.094
+  ✓ MATH z_40_2+e0.35         1m RR=4.0 n=10654 E[R]=0.146
+  ✓ MATH rsi+hf0.55           1m RR=1.5 n=13493 E[R]=0.059
+  ✓ MATH rsi+hf0.55           1m RR=2.0 n=12578 E[R]=0.065
+  ✓ MATH rsi+hf0.55           1m RR=2.4 n=11878 E[R]=0.07
+  ✓ MATH rsi+hf0.55           1m RR=4.0 n=9475 E[R]=0.118
+  ✓ MATH rsi+hf0.50           1m RR=1.5 n=9101 E[R]=0.065
+  ✓ MATH rsi+hf0.50           1m RR=2.0 n=8519 E[R]=0.066
+  ✓ MATH rsi+hf0.50           1m RR=2.4 n=8090 E[R]=0.07
+  ✓ MATH rsi+hf0.50           1m RR=3.0 n=7554 E[R]=0.079
+  ✓ MATH rsi+hf0.50           1m RR=4.0 n=6735 E[R]=0.12
+  ✓ MATH rsi+hf0.45           1m RR=1.5 n=5286 E[R]=0.051
+  ✓ MATH rsi+hf0.45           1m RR=2.4 n=4806 E[R]=0.08
+  ✓ MATH rsi+hf0.45           1m RR=3.0 n=4540 E[R]=0.106
+  ✓ MATH rsi+hf0.45           1m RR=4.0 n=4176 E[R]=0.148
+  ✓ MATH rsi+hf0.50_e0.25     1m RR=2.4 n=7438 E[R]=0.09
+  ✓ MATH rsi+hf0.50_e0.25     1m RR=3.0 n=6981 E[R]=0.1
+  ✓ MATH rsi+hf0.50_e0.25     1m RR=4.0 n=6292 E[R]=0.128
+  ✓ MATH rsi+hf0.45_e0.30     1m RR=1.5 n=4654 E[R]=0.056
+  ✓ MATH rsi+hf0.45_e0.30     1m RR=3.0 n=4058 E[R]=0.122
+  ✓ MATH rsi+hf0.45_e0.30     1m RR=4.0 n=3768 E[R]=0.136
+  ✓ MATH rsi+e0.35            1m RR=1.5 n=19432 E[R]=0.045
+  ✓ MATH rsi+e0.35            1m RR=2.0 n=18165 E[R]=0.068
+  ✓ MATH rsi+e0.35            1m RR=2.4 n=17017 E[R]=0.077
+  ✓ MATH rsi+e0.35            1m RR=3.0 n=15455 E[R]=0.084
+  ✓ MATH rsi+e0.35            1m RR=4.0 n=12960 E[R]=0.12
+  ✓ MATH z_20_2+hf0.55        5m RR=1.5 n=2278 E[R]=0.061
+  ✓ MATH z_20_2+hf0.55        5m RR=2.0 n=2130 E[R]=0.077
+  ✓ MATH z_20_2+hf0.55        5m RR=2.4 n=1982 E[R]=0.089
+  ✓ MATH z_20_2+hf0.55        5m RR=3.0 n=1795 E[R]=0.139
+  ✓ MATH z_20_2+hf0.55        5m RR=4.0 n=1548 E[R]=0.114
+  ✓ MATH z_20_2+hf0.50        5m RR=1.5 n=1447 E[R]=0.08
+  ✓ MATH z_20_2+hf0.50        5m RR=2.4 n=1274 E[R]=0.118
+  ✓ MATH z_20_2+hf0.45        5m RR=1.5 n=812 E[R]=0.09
+  ✓ MATH z_20_2+hf0.45        5m RR=2.0 n=776 E[R]=0.113
+  ✓ MATH z_20_2+hf0.45        5m RR=2.4 n=735 E[R]=0.143
+  ✓ MATH z_20_2+hf0.45        5m RR=3.0 n=698 E[R]=0.198
+  ✓ MATH z_20_2+hf0.45        5m RR=4.0 n=641 E[R]=0.178
+  ✓ MATH z_20_2+hf0.50_e0.25  5m RR=1.5 n=1173 E[R]=0.089
+  ✓ MATH z_20_2+hf0.50_e0.25  5m RR=2.0 n=1114 E[R]=0.115
+  ✓ MATH z_20_2+hf0.50_e0.25  5m RR=2.4 n=1056 E[R]=0.137
+  ✓ MATH z_20_2+hf0.45_e0.30  5m RR=2.0 n=600 E[R]=0.145
+  ✓ MATH z_20_2+hf0.45_e0.30  5m RR=2.4 n=575 E[R]=0.177
+  ✓ MATH z_20_2+hf0.45_e0.30  5m RR=3.0 n=558 E[R]=0.219
+  ✓ MATH z_20_2+hf0.45_e0.30  5m RR=4.0 n=515 E[R]=0.146
+  ✓ MATH z_20_2+e0.35         5m RR=1.5 n=3050 E[R]=0.042
+  ✓ MATH z_20_2+e0.35         5m RR=2.0 n=2844 E[R]=0.06
+  ✓ MATH z_20_2+e0.35         5m RR=2.4 n=2629 E[R]=0.066
+  ✓ MATH psar+hf0.55          5m RR=4.0 n=1598 E[R]=0.089
+  ✓ MATH psar+hf0.50          5m RR=2.0 n=1549 E[R]=0.061
+  ✓ MATH psar+e0.35           5m RR=3.0 n=2703 E[R]=0.086
+  ✓ MATH psar+e0.35           5m RR=4.0 n=2190 E[R]=0.144
+
+######## BTCUSD · live=bb_2.5 RR=2.0 ########
+  … fib_liq@5m (100,224 bars)
+  … fib_liq@15m (33,408 bars)
+  … ema_pull@5m (100,224 bars)
+  … ema_pull@15m (33,408 bars)
+  ✓ GATE ema_pull     15m RR=2.4 n=393 E[R]=0.073 90dOOS=0.247
+  … ema_tight@5m (100,224 bars)
+  … ema_tight@15m (33,408 bars)
+  ✓ GATE ema_tight    15m RR=2.4 n=212 E[R]=0.091 90dOOS=0.322
+  … sma_cross@1m (501,120 bars)
+  … sma_cross@3m (167,040 bars)
+  … sma_cross@5m (100,224 bars)
+  … sma_cross@15m (33,408 bars)
+  … pa@5m (100,224 bars)
+  … pa@15m (33,408 bars)
+  … liq@5m (100,224 bars)
+  ✓ GATE liq          5m  RR=2.0 n=2014 E[R]=0.081 90dOOS=0.117
+  … liq@15m (33,408 bars)
+  … tl@5m (100,224 bars)
+  … tl@15m (33,408 bars)
+  … obfvg@5m (100,224 bars)
+  … obfvg@15m (33,408 bars)
+  … macd@5m (100,224 bars)
+  … macd@15m (33,408 bars)
+  … engulf@5m (100,224 bars)
+  … engulf@15m (33,408 bars)
+  … inside@5m (100,224 bars)
+  … inside@15m (33,408 bars)
+  … ichi@5m (100,224 bars)
+  … ichi@15m (33,408 bars)
+  … psar@5m (100,224 bars)
+  … psar@15m (33,408 bars)
+  … adx@5m (100,224 bars)
+  … adx@15m (33,408 bars)
+  … st_2@1m (501,120 bars)
+  … st_2@3m (167,040 bars)
+  … st_2@5m (100,224 bars)
+  … st_2@15m (33,408 bars)
+  ✓ GATE st_2         15m RR=4.0 n=263 E[R]=0.217 90dOOS=0.667
+  … st_3@1m (501,120 bars)
+  … st_3@3m (167,040 bars)
+  … st_3@5m (100,224 bars)
+  ✓ GATE st_3         5m  RR=4.0 n=217 E[R]=0.267 90dOOS=1.143
+  … st_3@15m (33,408 bars)
+  … kelt_1@1m (501,120 bars)
+  … kelt_1@3m (167,040 bars)
+  … kelt_1@5m (100,224 bars)
+  … kelt_1@15m (33,408 bars)
+  … kelt_1.5@1m (501,120 bars)
+  … kelt_1.5@3m (167,040 bars)
+  … kelt_1.5@5m (100,224 bars)
+  … kelt_1.5@15m (33,408 bars)
+  … kelt_2@1m (501,120 bars)
+  … kelt_2@3m (167,040 bars)
+  … kelt_2@5m (100,224 bars)
+  … kelt_2@15m (33,408 bars)
+  … stoch_20@1m (501,120 bars)
+  skip stoch_20@1m: No numeric types to aggregate
+  … stoch_20@3m (167,040 bars)
+  skip stoch_20@3m: No numeric types to aggregate
+  … stoch_20@5m (100,224 bars)
+  skip stoch_20@5m: No numeric types to aggregate
+  … stoch_20@15m (33,408 bars)
+  skip stoch_20@15m: No numeric types to aggregate
+  … stoch_30@1m (501,120 bars)
+  skip stoch_30@1m: No numeric types to aggregate
+  … stoch_30@3m (167,040 bars)
+  skip stoch_30@3m: No numeric types to aggregate
+  … stoch_30@5m (100,224 bars)
+  skip stoch_30@5m: No numeric types to aggregate
+  … stoch_30@15m (33,408 bars)
+  skip stoch_30@15m: No numeric types to aggregate
+  … don_10@1m (501,120 bars)
+  … don_10@3m (167,040 bars)
+  … don_10@5m (100,224 bars)
+  … don_10@15m (33,408 bars)
+  … don_20@1m (501,120 bars)
+  … don_20@3m (167,040 bars)
+  … don_20@5m (100,224 bars)
+  … don_20@15m (33,408 bars)
+  … don_30@1m (501,120 bars)
+  … don_30@3m (167,040 bars)
+  … don_30@5m (100,224 bars)
+  … don_30@15m (33,408 bars)
+  … don_55@1m (501,120 bars)
+  … don_55@3m (167,040 bars)
+  … don_55@5m (100,224 bars)
+  … don_55@15m (33,408 bars)
+  … don_100@1m (501,120 bars)
+  … don_100@3m (167,040 bars)
+  … don_100@5m (100,224 bars)
+  … don_100@15m (33,408 bars)
+  … cta_5_20@1m (501,120 bars)
+  … cta_5_20@3m (167,040 bars)
+  … cta_5_20@5m (100,224 bars)
+  … cta_5_20@15m (33,408 bars)
+  … cta_10_40@1m (501,120 bars)
+  … cta_10_40@3m (167,040 bars)
+  … cta_10_40@5m (100,224 bars)
+  … cta_10_40@15m (33,408 bars)
+  … cta_12_26@1m (501,120 bars)
+  … cta_12_26@3m (167,040 bars)
+  … cta_12_26@5m (100,224 bars)
+  … cta_12_26@15m (33,408 bars)
+  … cta_20_50@1m (501,120 bars)
+  … cta_20_50@3m (167,040 bars)
+  … cta_20_50@5m (100,224 bars)
+  … cta_20_50@15m (33,408 bars)
+  … cta_50_200@1m (501,120 bars)
+  … cta_50_200@3m (167,040 bars)
+  … cta_50_200@5m (100,224 bars)
+  … cta_50_200@15m (33,408 bars)
+  … tsmom@1m (501,120 bars)
+  … tsmom@3m (167,040 bars)
+  … tsmom@5m (100,224 bars)
+  … tsmom@15m (33,408 bars)
+  ✓ GATE tsmom        15m RR=2.0 n=260 E[R]=0.096 90dOOS=0.167
+  … roc_20@1m (501,120 bars)
+  … roc_20@3m (167,040 bars)
+  … roc_20@5m (100,224 bars)
+  … roc_20@15m (33,408 bars)
+  … roc_60@1m (501,120 bars)
+  … roc_60@3m (167,040 bars)
+  … roc_60@5m (100,224 bars)
+  … roc_60@15m (33,408 bars)
+  … roc_120@1m (501,120 bars)
+  … roc_120@3m (167,040 bars)
+  … roc_120@5m (100,224 bars)
+  … roc_120@15m (33,408 bars)
+  … bb_1.5@1m (501,120 bars)
+  ✓ GATE bb_1.5       1m  RR=4.0 n=12727 E[R]=0.093 90dOOS=0.13
+  … bb_1.5@3m (167,040 bars)
+  … bb_1.5@5m (100,224 bars)
+  … bb_1.5@15m (33,408 bars)
+  … bb_2@1m (501,120 bars)
+  ✓ GATE bb_2         1m  RR=4.0 n=3441 E[R]=0.155 90dOOS=0.385
+  … bb_2@3m (167,040 bars)
+  … bb_2@5m (100,224 bars)
+  ✓ GATE bb_2         5m  RR=4.0 n=651 E[R]=0.106 90dOOS=0.125
+  … bb_2@15m (33,408 bars)
+  ✓ GATE bb_2         15m RR=4.0 n=291 E[R]=0.168 90dOOS=0.042
+  … bb_2.5@1m (501,120 bars)
+  ✓ GATE bb_2.5       1m  RR=3.0 n=274 E[R]=0.431 90dOOS=0.846
+  … bb_2.5@3m (167,040 bars)
+  … bb_2.5@5m (100,224 bars)
+  … bb_2.5@15m (33,408 bars)
+  … z_20_2@1m (501,120 bars)
+  … z_20_2@3m (167,040 bars)
+  … z_20_2@5m (100,224 bars)
+  … z_20_2@15m (33,408 bars)
+  … z_40_2@1m (501,120 bars)
+  … z_40_2@3m (167,040 bars)
+  … z_40_2@5m (100,224 bars)
+  … z_40_2@15m (33,408 bars)
+  … rsi@1m (501,120 bars)
+  … rsi@3m (167,040 bars)
+  … rsi@5m (100,224 bars)
+  … rsi@15m (33,408 bars)
+  … atrbrk@1m (501,120 bars)
+  … atrbrk@3m (167,040 bars)
+  … atrbrk@5m (100,224 bars)
+  … atrbrk@15m (33,408 bars)
+  … volmom@1m (501,120 bars)
+  … volmom@3m (167,040 bars)
+  … volmom@5m (100,224 bars)
+  … volmom@15m (33,408 bars)
+  ✓ MATH bb_2.5+e0.35         1m RR=1.5 n=91 E[R]=0.593
+  ✓ MATH bb_2.5+e0.35         1m RR=2.0 n=91 E[R]=0.747
+  ✓ MATH bb_2.5+e0.35         1m RR=2.4 n=89 E[R]=0.872
+  ✓ MATH bb_2.5+e0.35         1m RR=3.0 n=88 E[R]=1.045
+  ✓ MATH bb_2.5+e0.35         1m RR=4.0 n=88 E[R]=1.045
+  ✓ MATH bb_2+hf0.55          1m RR=1.5 n=1663 E[R]=0.082
+  ✓ MATH bb_2+hf0.55          1m RR=2.0 n=1652 E[R]=0.082
+  ✓ MATH bb_2+hf0.55          1m RR=2.4 n=1648 E[R]=0.089
+  ✓ MATH bb_2+hf0.55          1m RR=3.0 n=1631 E[R]=0.123
+  ✓ MATH bb_2+hf0.55          1m RR=4.0 n=1602 E[R]=0.145
+  ✓ MATH bb_2+hf0.50          1m RR=1.5 n=1069 E[R]=0.055
+  ✓ MATH bb_2+hf0.50          1m RR=2.0 n=1064 E[R]=0.066
+  ✓ MATH bb_2+hf0.50          1m RR=2.4 n=1062 E[R]=0.089
+  ✓ MATH bb_2+hf0.50          1m RR=3.0 n=1051 E[R]=0.127
+  ✓ MATH bb_2+hf0.50          1m RR=4.0 n=1030 E[R]=0.136
+  ✓ MATH bb_2+hf0.45          1m RR=1.5 n=565 E[R]=0.053
+  ✓ MATH bb_2+hf0.45          1m RR=2.0 n=563 E[R]=0.06
+  ✓ MATH bb_2+hf0.45          1m RR=2.4 n=561 E[R]=0.091
+  ✓ MATH bb_2+hf0.45          1m RR=3.0 n=554 E[R]=0.141
+  ✓ MATH bb_2+hf0.45          1m RR=4.0 n=547 E[R]=0.124
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=3.0 n=555 E[R]=0.095
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=4.0 n=550 E[R]=0.127
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=1.5 n=248 E[R]=0.129
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=2.4 n=247 E[R]=0.129
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=3.0 n=245 E[R]=0.143
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=4.0 n=244 E[R]=0.127
+  ✓ MATH bb_2+e0.35           1m RR=1.5 n=1346 E[R]=0.12
+  ✓ MATH bb_2+e0.35           1m RR=2.0 n=1338 E[R]=0.096
+  ✓ MATH bb_2+e0.35           1m RR=2.4 n=1328 E[R]=0.134
+  ✓ MATH bb_2+e0.35           1m RR=3.0 n=1313 E[R]=0.145
+  ✓ MATH bb_2+e0.35           1m RR=4.0 n=1298 E[R]=0.163
+  ✓ MATH st_2+hf0.55          15m RR=1.5 n=126 E[R]=0.31
+  ✓ MATH st_2+hf0.55          15m RR=2.0 n=124 E[R]=0.403
+  ✓ MATH st_2+hf0.55          15m RR=2.4 n=122 E[R]=0.393
+  ✓ MATH st_2+hf0.55          15m RR=3.0 n=118 E[R]=0.254
+  ✓ MATH st_2+hf0.55          15m RR=4.0 n=114 E[R]=0.447
+  ✓ MATH st_2+e0.35           15m RR=1.5 n=301 E[R]=0.071
+  ✓ MATH st_2+e0.35           15m RR=3.0 n=277 E[R]=0.069
+  ✓ MATH st_2+e0.35           15m RR=4.0 n=263 E[R]=0.217
+  ✓ MATH st_3+e0.35           5m RR=2.0 n=225 E[R]=0.133
+  ✓ MATH st_3+e0.35           5m RR=2.4 n=223 E[R]=0.189
+  ✓ MATH st_3+e0.35           5m RR=3.0 n=221 E[R]=0.176
+  ✓ MATH st_3+e0.35           5m RR=4.0 n=217 E[R]=0.267
+  ✓ MATH bb_1.5+hf0.55        1m RR=1.5 n=8504 E[R]=0.058
+  ✓ MATH bb_1.5+hf0.55        1m RR=2.0 n=8233 E[R]=0.063
+  ✓ MATH bb_1.5+hf0.55        1m RR=2.4 n=8001 E[R]=0.077
+  ✓ MATH bb_1.5+hf0.55        1m RR=3.0 n=7585 E[R]=0.09
+  ✓ MATH bb_1.5+hf0.55        1m RR=4.0 n=6990 E[R]=0.108
+  ✓ MATH bb_1.5+hf0.50        1m RR=1.5 n=5473 E[R]=0.063
+  ✓ MATH bb_1.5+hf0.50        1m RR=2.0 n=5334 E[R]=0.07
+  ✓ MATH bb_1.5+hf0.50        1m RR=2.4 n=5183 E[R]=0.082
+  ✓ MATH bb_1.5+hf0.50        1m RR=3.0 n=4961 E[R]=0.118
+  ✓ MATH bb_1.5+hf0.45        1m RR=1.5 n=2976 E[R]=0.04
+  ✓ MATH bb_1.5+hf0.50_e0.25  1m RR=1.5 n=3671 E[R]=0.071
+  ✓ MATH bb_1.5+hf0.50_e0.25  1m RR=2.0 n=3623 E[R]=0.079
+  ✓ MATH bb_1.5+hf0.45_e0.30  1m RR=1.5 n=1797 E[R]=0.064
+  ✓ MATH bb_1.5+hf0.45_e0.30  1m RR=2.0 n=1782 E[R]=0.079
+  ✓ MATH bb_1.5+hf0.45_e0.30  1m RR=2.4 n=1760 E[R]=0.078
+  ✓ MATH bb_1.5+hf0.45_e0.30  1m RR=3.0 n=1725 E[R]=0.094
+  ✓ MATH bb_1.5+e0.35         1m RR=1.5 n=9354 E[R]=0.044
+  ✓ MATH bb_1.5+e0.35         1m RR=2.0 n=9142 E[R]=0.066
+  ✓ MATH bb_1.5+e0.35         1m RR=2.4 n=8918 E[R]=0.08
+  ✓ MATH bb_1.5+e0.35         1m RR=3.0 n=8467 E[R]=0.077
+  ✓ MATH ema_pull+hf0.55      15m RR=2.0 n=199 E[R]=0.055
+  ✓ MATH ema_pull+hf0.55      15m RR=2.4 n=197 E[R]=0.07
+  ✓ MATH ema_pull+hf0.55      15m RR=4.0 n=186 E[R]=0.156
+  ✓ MATH ema_pull+hf0.50      15m RR=1.5 n=104 E[R]=0.082
+  ✓ MATH ema_pull+hf0.50      15m RR=2.0 n=103 E[R]=0.165
+  ✓ MATH ema_pull+hf0.50      15m RR=2.4 n=101 E[R]=0.212
+  ✓ MATH ema_pull+hf0.50      15m RR=3.0 n=98 E[R]=0.184
+  ✓ MATH ema_pull+hf0.50_e0.2 15m RR=1.5 n=104 E[R]=0.082
+  ✓ MATH ema_pull+hf0.50_e0.2 15m RR=2.0 n=103 E[R]=0.165
+  ✓ MATH ema_pull+hf0.50_e0.2 15m RR=2.4 n=101 E[R]=0.212
+  ✓ MATH ema_pull+hf0.50_e0.2 15m RR=3.0 n=98 E[R]=0.184
+  ✓ MATH ema_pull+e0.35       15m RR=1.5 n=451 E[R]=0.059
+  ✓ MATH ema_pull+e0.35       15m RR=2.4 n=392 E[R]=0.076
+  ✓ MATH ema_pull+e0.35       15m RR=4.0 n=336 E[R]=0.086
+  ✓ MATH liq+hf0.55           5m RR=1.5 n=1005 E[R]=0.092
+  ✓ MATH liq+hf0.55           5m RR=2.0 n=986 E[R]=0.092
+  ✓ MATH liq+hf0.55           5m RR=2.4 n=970 E[R]=0.111
+  ✓ MATH liq+hf0.55           5m RR=3.0 n=918 E[R]=0.115
+  ✓ MATH liq+hf0.55           5m RR=4.0 n=859 E[R]=0.083
+  ✓ MATH liq+hf0.50           5m RR=1.5 n=647 E[R]=0.07
+  ✓ MATH liq+hf0.50           5m RR=2.0 n=638 E[R]=0.072
+  ✓ MATH liq+hf0.50           5m RR=2.4 n=633 E[R]=0.09
+  ✓ MATH liq+hf0.50           5m RR=3.0 n=606 E[R]=0.155
+  ✓ MATH liq+hf0.50           5m RR=4.0 n=578 E[R]=0.168
+  ✓ MATH liq+hf0.45           5m RR=1.5 n=335 E[R]=0.104
+  ✓ MATH liq+hf0.45           5m RR=2.0 n=332 E[R]=0.12
+  ✓ MATH liq+hf0.45           5m RR=2.4 n=332 E[R]=0.127
+  ✓ MATH liq+hf0.45           5m RR=3.0 n=328 E[R]=0.122
+  ✓ MATH liq+hf0.45           5m RR=4.0 n=316 E[R]=0.171
+  ✓ MATH liq+hf0.50_e0.25     5m RR=2.0 n=556 E[R]=0.058
+  ✓ MATH liq+hf0.50_e0.25     5m RR=3.0 n=532 E[R]=0.105
+  ✓ MATH liq+hf0.50_e0.25     5m RR=4.0 n=511 E[R]=0.076
+  ✓ MATH liq+e0.35            5m RR=1.5 n=1656 E[R]=0.067
+  ✓ MATH liq+e0.35            5m RR=2.0 n=1624 E[R]=0.077
+
+######## GOLD · live=pa_liq_engulf RR=2.0 ########
+  … fib_liq@5m (100,224 bars)
+  ✓ GATE fib_liq      5m  RR=4.0 n=267 E[R]=0.124 90dOOS=0.364
+  … fib_liq@15m (33,408 bars)
+  … ema_pull@5m (100,224 bars)
+  … ema_pull@15m (33,408 bars)
+  … ema_tight@5m (100,224 bars)
+  … ema_tight@15m (33,408 bars)
+  … sma_cross@1m (501,120 bars)
+  … sma_cross@3m (167,040 bars)
+  … sma_cross@5m (100,224 bars)
+  … sma_cross@15m (33,408 bars)
+  … pa@5m (100,224 bars)
+  … pa@15m (33,408 bars)
+  … liq@5m (100,224 bars)
+  ✓ GATE liq          5m  RR=4.0 n=1266 E[R]=0.141 90dOOS=0.348
+  … liq@15m (33,408 bars)
+  … tl@5m (100,224 bars)
+  ✓ GATE tl           5m  RR=3.0 n=1224 E[R]=0.069 90dOOS=0.124
+  … tl@15m (33,408 bars)
+  ✓ GATE tl           15m RR=3.0 n=426 E[R]=0.183 90dOOS=0.429
+  … obfvg@5m (100,224 bars)
+  … obfvg@15m (33,408 bars)
+another recovery hunt running (pid 724) — exit
+
+
+===== RESTART pid=773 2026-08-12T07:20:40.479422+00:00 =====
+=== DESK RECOVERY SCALP HUNT ===
+Scalper/intraday TFs=('1m', '3m', '5m', '15m') · RR=[1.5, 2.0, 2.4, 3.0, 4.0]
+Window 2025-08-11→2026-08-11 · recent gate 90d
+Order=('ETHUSD', 'BTCUSD', 'GOLD', 'NAS100', 'USDJPY', 'AUDUSD', 'USDCHF', 'UKOIL')
+min_runtime=28800s max=36000s
+catalog=43 · heavy_ok_tf=['15m'] · Obsidian=/app/data/ZenithRecovery
+LIVE .env NOT auto-wired · resume via checkpoint/Obsidian
+
+
+######## ETHUSD · RESUME checkpoint winner=bb_2+hf0.45_e0.30 ########
+
+######## BTCUSD · RESUME checkpoint winner=bb_2.5+e0.35 ########
+
+######## GOLD · live=pa_liq_engulf RR=2.0 ########
+  … fib_liq@15m (33,312 bars)
+  … ema_pull@15m (33,312 bars)
+  … ema_tight@15m (33,312 bars)
+  … sma_cross@1m (499,680 bars)
+  … sma_cross@3m (166,560 bars)
+  … sma_cross@5m (99,936 bars)
+  … sma_cross@15m (33,312 bars)
+  … pa@15m (33,312 bars)
+  … liq@15m (33,312 bars)
+  … tl@15m (33,312 bars)
+  ✓ GATE tl           15m RR=3.0 n=424 E[R]=0.17 90dOOS=0.333
+  … obfvg@15m (33,312 bars)
+  … macd@15m (33,312 bars)
+  … engulf@15m (33,312 bars)
+  … inside@15m (33,312 bars)
+  … ichi@15m (33,312 bars)
+  ✓ GATE ichi         15m RR=4.0 n=537 E[R]=0.164 90dOOS=0.667
+  … psar@15m (33,312 bars)
+  … adx@15m (33,312 bars)
+  … st_2@1m (499,680 bars)
+  … st_2@3m (166,560 bars)
+  … st_2@5m (99,936 bars)
+  … st_2@15m (33,312 bars)
+  ✓ GATE st_2         15m RR=3.0 n=293 E[R]=0.078 90dOOS=0.556
+  … st_3@1m (499,680 bars)
+  … st_3@3m (166,560 bars)
+  … st_3@5m (99,936 bars)
+  … st_3@15m (33,312 bars)
+  … kelt_1@1m (499,680 bars)
+  … kelt_1@3m (166,560 bars)
+  … kelt_1@5m (99,936 bars)
+  … kelt_1@15m (33,312 bars)
+  … kelt_1.5@1m (499,680 bars)
+  … kelt_1.5@3m (166,560 bars)
+  … kelt_1.5@5m (99,936 bars)
+  … kelt_1.5@15m (33,312 bars)
+  … kelt_2@1m (499,680 bars)
+  … kelt_2@3m (166,560 bars)
+  … kelt_2@5m (99,936 bars)
+  … kelt_2@15m (33,312 bars)
+  ✓ GATE kelt_2       15m RR=4.0 n=705 E[R]=0.092 90dOOS=0.146
+  … stoch_20@1m (499,680 bars)
+  skip stoch_20@1m: No numeric types to aggregate
+  … stoch_20@3m (166,560 bars)
+  skip stoch_20@3m: No numeric types to aggregate
+  … stoch_20@5m (99,936 bars)
+  skip stoch_20@5m: No numeric types to aggregate
+  … stoch_20@15m (33,312 bars)
+  skip stoch_20@15m: No numeric types to aggregate
+  … stoch_30@1m (499,680 bars)
+  skip stoch_30@1m: No numeric types to aggregate
+  … stoch_30@3m (166,560 bars)
+  skip stoch_30@3m: No numeric types to aggregate
+  … stoch_30@5m (99,936 bars)
+  skip stoch_30@5m: No numeric types to aggregate
+  … stoch_30@15m (33,312 bars)
+  skip stoch_30@15m: No numeric types to aggregate
+  … don_10@1m (499,680 bars)
+  … don_10@3m (166,560 bars)
+  … don_10@5m (99,936 bars)
+  … don_10@15m (33,312 bars)
+  … don_20@1m (499,680 bars)
+  … don_20@3m (166,560 bars)
+  … don_20@5m (99,936 bars)
+  … don_20@15m (33,312 bars)
+  … don_30@1m (499,680 bars)
+  … don_30@3m (166,560 bars)
+  … don_30@5m (99,936 bars)
+  … don_30@15m (33,312 bars)
+  ✓ GATE don_30       15m RR=4.0 n=753 E[R]=0.069 90dOOS=0.026
+  … don_55@1m (499,680 bars)
+  … don_55@3m (166,560 bars)
+  … don_55@5m (99,936 bars)
+  … don_55@15m (33,312 bars)
+  ✓ GATE don_55       15m RR=4.0 n=568 E[R]=0.083 90dOOS=0.094
+  … don_100@1m (499,680 bars)
+  … don_100@3m (166,560 bars)
+  … don_100@5m (99,936 bars)
+  … don_100@15m (33,312 bars)
+  ✓ GATE don_100      15m RR=4.0 n=449 E[R]=0.192 90dOOS=0.111
+  … cta_5_20@1m (499,680 bars)
+  … cta_5_20@3m (166,560 bars)
+  … cta_5_20@5m (99,936 bars)
+  … cta_5_20@15m (33,312 bars)
+  … cta_10_40@1m (499,680 bars)
+  … cta_10_40@3m (166,560 bars)
+  … cta_10_40@5m (99,936 bars)
+  … cta_10_40@15m (33,312 bars)
+  … cta_12_26@1m (499,680 bars)
+  … cta_12_26@3m (166,560 bars)
+  … cta_12_26@5m (99,936 bars)
+  … cta_12_26@15m (33,312 bars)
+  ✓ GATE cta_12_26    15m RR=2.0 n=510 E[R]=0.053 90dOOS=0.333
+  … cta_20_50@1m (499,680 bars)
+  … cta_20_50@3m (166,560 bars)
+  … cta_20_50@5m (99,936 bars)
+  … cta_20_50@15m (33,312 bars)
+  … cta_50_200@1m (499,680 bars)
+  … cta_50_200@3m (166,560 bars)
+  ✓ GATE cta_50_200   3m  RR=3.0 n=648 E[R]=0.056 90dOOS=0.684
+  … cta_50_200@5m (99,936 bars)
+  … cta_50_200@15m (33,312 bars)
+  … tsmom@1m (499,680 bars)
+  … tsmom@3m (166,560 bars)
+  … tsmom@5m (99,936 bars)
+  … tsmom@15m (33,312 bars)
+  … roc_20@1m (499,680 bars)
+  … roc_20@3m (166,560 bars)
+  … roc_20@5m (99,936 bars)
+  … roc_20@15m (33,312 bars)
+  … roc_60@1m (499,680 bars)
+  … roc_60@3m (166,560 bars)
+  … roc_60@5m (99,936 bars)
+  … roc_60@15m (33,312 bars)
+  … roc_120@1m (499,680 bars)
+  … roc_120@3m (166,560 bars)
+  … roc_120@5m (99,936 bars)
+  … roc_120@15m (33,312 bars)
+  … bb_1.5@1m (499,680 bars)
+  … bb_1.5@3m (166,560 bars)
+  … bb_1.5@5m (99,936 bars)
+  ✓ GATE bb_1.5       5m  RR=2.0 n=2346 E[R]=0.063 90dOOS=0.187
+  … bb_1.5@15m (33,312 bars)
+  … bb_2@1m (499,680 bars)
+  … bb_2@3m (166,560 bars)
+  … bb_2@5m (99,936 bars)
+  ✓ GATE bb_2         5m  RR=2.0 n=556 E[R]=0.138 90dOOS=0.059
+  … bb_2@15m (33,312 bars)
+  … bb_2.5@1m (499,680 bars)
+  … bb_2.5@3m (166,560 bars)
+  … bb_2.5@5m (99,936 bars)
+  … bb_2.5@15m (33,312 bars)
+  … z_20_2@1m (499,680 bars)
+  … z_20_2@3m (166,560 bars)
+  ✓ GATE z_20_2       3m  RR=2.4 n=4233 E[R]=0.04 90dOOS=0.115
+  … z_20_2@5m (99,936 bars)
+  … z_20_2@15m (33,312 bars)
+  … z_40_2@1m (499,680 bars)
+  … z_40_2@3m (166,560 bars)
+  … z_40_2@5m (99,936 bars)
+  … z_40_2@15m (33,312 bars)
+  … rsi@1m (499,680 bars)
+  … rsi@3m (166,560 bars)
+  … rsi@5m (99,936 bars)
+  … rsi@15m (33,312 bars)
+  … atrbrk@1m (499,680 bars)
+  … atrbrk@3m (166,560 bars)
+  … atrbrk@5m (99,936 bars)
+  ✓ GATE atrbrk       5m  RR=2.4 n=1074 E[R]=0.102 90dOOS=0.103
+  … atrbrk@15m (33,312 bars)
+  … volmom@1m (499,680 bars)
+  … volmom@3m (166,560 bars)
+  … volmom@5m (99,936 bars)
+  … volmom@15m (33,312 bars)
+  ✓ MATH don_100+hf0.55       15m RR=3.0 n=239 E[R]=0.406
+  ✓ MATH don_100+hf0.55       15m RR=4.0 n=227 E[R]=0.542
+  ✓ MATH don_100+hf0.50       15m RR=2.4 n=195 E[R]=0.273
+  ✓ MATH don_100+hf0.50       15m RR=3.0 n=182 E[R]=0.429
+  ✓ MATH don_100+hf0.50       15m RR=4.0 n=173 E[R]=0.647
+  ✓ MATH don_100+hf0.50_e0.25 15m RR=4.0 n=173 E[R]=0.59
+  ✓ MATH don_100+e0.35        15m RR=3.0 n=457 E[R]=0.155
+  ✓ MATH don_100+e0.35        15m RR=4.0 n=434 E[R]=0.187
+  ✓ MATH ichi+hf0.55          15m RR=4.0 n=351 E[R]=0.14
+  ✓ MATH ichi+hf0.50          15m RR=3.0 n=266 E[R]=0.113
+  ✓ MATH ichi+hf0.45          15m RR=4.0 n=145 E[R]=0.207
+  ✓ MATH ichi+hf0.45_e0.30    15m RR=1.5 n=124 E[R]=0.089
+  ✓ MATH tl+hf0.55            15m RR=1.5 n=250 E[R]=0.13
+  ✓ MATH tl+hf0.55            15m RR=2.0 n=244 E[R]=0.18
+  ✓ MATH tl+hf0.55            15m RR=2.4 n=242 E[R]=0.18
+  ✓ MATH tl+hf0.55            15m RR=4.0 n=227 E[R]=0.278
+  ✓ MATH tl+hf0.50            15m RR=2.4 n=161 E[R]=0.204
+  ✓ MATH tl+hf0.50            15m RR=3.0 n=158 E[R]=0.266
+  ✓ MATH tl+hf0.50            15m RR=4.0 n=153 E[R]=0.438
+  ✓ MATH tl+hf0.50_e0.25      15m RR=2.4 n=159 E[R]=0.219
+  ✓ MATH tl+hf0.50_e0.25      15m RR=3.0 n=156 E[R]=0.282
+  ✓ MATH tl+hf0.50_e0.25      15m RR=4.0 n=151 E[R]=0.457
+  ✓ MATH tl+e0.35             15m RR=2.0 n=434 E[R]=0.141
+  ✓ MATH tl+e0.35             15m RR=2.4 n=423 E[R]=0.141
+  ✓ MATH tl+e0.35             15m RR=3.0 n=408 E[R]=0.206
+  ✓ MATH tl+e0.35             15m RR=4.0 n=376 E[R]=0.184
+  ✓ MATH atrbrk+hf0.55        5m RR=2.4 n=609 E[R]=0.111
+  ✓ MATH atrbrk+hf0.55        5m RR=3.0 n=581 E[R]=0.177
+  ✓ MATH atrbrk+hf0.55        5m RR=4.0 n=538 E[R]=0.171
+  ✓ MATH atrbrk+hf0.50        5m RR=2.4 n=433 E[R]=0.099
+  ✓ MATH atrbrk+hf0.50        5m RR=3.0 n=419 E[R]=0.174
+  ✓ MATH atrbrk+hf0.50        5m RR=4.0 n=403 E[R]=0.241
+  ✓ MATH atrbrk+hf0.45        5m RR=2.4 n=278 E[R]=0.199
+  ✓ MATH atrbrk+hf0.45        5m RR=3.0 n=271 E[R]=0.255
+  ✓ MATH atrbrk+hf0.50_e0.25  5m RR=3.0 n=411 E[R]=0.168
+  ✓ MATH atrbrk+hf0.50_e0.25  5m RR=4.0 n=396 E[R]=0.225
+  ✓ MATH atrbrk+hf0.45_e0.30  5m RR=3.0 n=263 E[R]=0.232
+  ✓ MATH bb_2+hf0.55          5m RR=1.5 n=311 E[R]=0.141
+  ✓ MATH bb_2+hf0.55          5m RR=2.0 n=305 E[R]=0.17
+  ✓ MATH bb_2+hf0.55          5m RR=2.4 n=302 E[R]=0.137
+  ✓ MATH bb_2+hf0.50          5m RR=1.5 n=212 E[R]=0.179
+  ✓ MATH bb_2+hf0.50          5m RR=2.0 n=208 E[R]=0.168
+  ✓ MATH bb_2+hf0.50          5m RR=2.4 n=208 E[R]=0.112
+  ✓ MATH bb_2+hf0.50_e0.25    5m RR=1.5 n=93 E[R]=0.21
+  ✓ MATH bb_2+hf0.50_e0.25    5m RR=2.0 n=93 E[R]=0.226
+  ✓ MATH bb_2+hf0.50_e0.25    5m RR=2.4 n=93 E[R]=0.243
+  ✓ MATH bb_2+e0.35           5m RR=1.5 n=163 E[R]=0.089
+  ✓ MATH bb_2+e0.35           5m RR=2.0 n=163 E[R]=0.104
+  ✓ MATH bb_1.5+hf0.50        5m RR=1.5 n=910 E[R]=0.066
+  ✓ MATH bb_1.5+hf0.50_e0.25  5m RR=1.5 n=583 E[R]=0.068
+  ✓ MATH bb_1.5+hf0.45_e0.30  5m RR=1.5 n=299 E[R]=0.079
+  ✓ MATH don_30+hf0.55        15m RR=4.0 n=399 E[R]=0.291
+  ✓ MATH don_30+hf0.50        15m RR=4.0 n=284 E[R]=0.356
+  ✓ MATH don_30+hf0.45        15m RR=3.0 n=166 E[R]=0.349
+  ✓ MATH don_30+hf0.45        15m RR=4.0 n=156 E[R]=0.571
+  ✓ MATH don_30+hf0.45_e0.30  15m RR=3.0 n=165 E[R]=0.333
+  ✓ MATH don_30+hf0.45_e0.30  15m RR=4.0 n=155 E[R]=0.581
+
+######## NAS100 · live=volmom RR=4.0 ########
+  … fib_liq@15m (33,312 bars)
+  … ema_pull@15m (33,312 bars)
+  ✓ GATE ema_pull     15m RR=2.4 n=216 E[R]=0.07 90dOOS=0.035
+  … ema_tight@15m (33,312 bars)
+  … sma_cross@1m (499,680 bars)
+  … sma_cross@3m (166,560 bars)
+  … sma_cross@5m (99,936 bars)
+  … sma_cross@15m (33,312 bars)
+  … pa@15m (33,312 bars)
+  ✓ GATE pa           15m RR=4.0 n=247 E[R]=0.235 90dOOS=0.333
+  … liq@15m (33,312 bars)
+  … tl@15m (33,312 bars)
+  ✓ GATE tl           15m RR=1.5 n=385 E[R]=0.11 90dOOS=0.1
+  … obfvg@15m (33,312 bars)
+  … macd@15m (33,312 bars)
+  ✓ GATE macd         15m RR=4.0 n=563 E[R]=0.092 90dOOS=0.053
+  … engulf@15m (33,312 bars)
+  ✓ GATE engulf       15m RR=4.0 n=720 E[R]=0.111 90dOOS=0.429
+  … inside@15m (33,312 bars)
+  … ichi@15m (33,312 bars)
+  … psar@15m (33,312 bars)
+  … adx@15m (33,312 bars)
+  … st_2@1m (499,680 bars)
+  … st_2@3m (166,560 bars)
+  … st_2@5m (99,936 bars)
+  ✓ GATE st_2         5m  RR=4.0 n=736 E[R]=0.128 90dOOS=0.081
+  … st_2@15m (33,312 bars)
+  ✓ GATE st_2         15m RR=2.4 n=337 E[R]=0.16 90dOOS=0.02
+  … st_3@1m (499,680 bars)
+  ✓ GATE st_3         1m  RR=4.0 n=692 E[R]=0.134 90dOOS=0.25
+  … st_3@3m (166,560 bars)
+  ✓ GATE st_3         3m  RR=4.0 n=404 E[R]=0.151 90dOOS=0.538
+  … st_3@5m (99,936 bars)
+  ✓ GATE st_3         5m  RR=3.0 n=335 E[R]=0.087 90dOOS=0.333
+  … st_3@15m (33,312 bars)
+  … kelt_1@1m (499,680 bars)
+  … kelt_1@3m (166,560 bars)
+  … kelt_1@5m (99,936 bars)
+  ✓ GATE kelt_1       5m  RR=3.0 n=3066 E[R]=0.072 90dOOS=0.005
+  … kelt_1@15m (33,312 bars)
+  … kelt_1.5@1m (499,680 bars)
+  … kelt_1.5@3m (166,560 bars)
+  … kelt_1.5@5m (99,936 bars)
+  … kelt_1.5@15m (33,312 bars)
+  ✓ GATE kelt_1.5     15m RR=4.0 n=823 E[R]=0.051 90dOOS=0.122
+  … kelt_2@1m (499,680 bars)
+  … kelt_2@3m (166,560 bars)
+  … kelt_2@5m (99,936 bars)
+  … kelt_2@15m (33,312 bars)
+  ✓ GATE kelt_2       15m RR=1.5 n=1066 E[R]=0.081 90dOOS=0.008
+  … stoch_20@1m (499,680 bars)
+  skip stoch_20@1m: No numeric types to aggregate
+  … stoch_20@3m (166,560 bars)
+  skip stoch_20@3m: No numeric types to aggregate
+  … stoch_20@5m (99,936 bars)
+  skip stoch_20@5m: No numeric types to aggregate
+  … stoch_20@15m (33,312 bars)
+  skip stoch_20@15m: No numeric types to aggregate
+  … stoch_30@1m (499,680 bars)
+  skip stoch_30@1m: No numeric types to aggregate
+  … stoch_30@3m (166,560 bars)
+  skip stoch_30@3m: No numeric types to aggregate
+  … stoch_30@5m (99,936 bars)
+  skip stoch_30@5m: No numeric types to aggregate
+  … stoch_30@15m (33,312 bars)
+  skip stoch_30@15m: No numeric types to aggregate
+  … don_10@1m (499,680 bars)
+  … don_10@3m (166,560 bars)
+  … don_10@5m (99,936 bars)
+  … don_10@15m (33,312 bars)
+  … don_20@1m (499,680 bars)
+  … don_20@3m (166,560 bars)
+  … don_20@5m (99,936 bars)
+  ✓ GATE don_20       5m  RR=3.0 n=2631 E[R]=0.082 90dOOS=0.038
+  … don_20@15m (33,312 bars)
+  … don_30@1m (499,680 bars)
+  … don_30@3m (166,560 bars)
+  … don_30@5m (99,936 bars)
+  … don_30@15m (33,312 bars)
+  ✓ GATE don_30       15m RR=4.0 n=670 E[R]=0.134 90dOOS=0.087
+  … don_55@1m (499,680 bars)
+  … don_55@3m (166,560 bars)
+  … don_55@5m (99,936 bars)
+  … don_55@15m (33,312 bars)
+  … don_100@1m (499,680 bars)
+  … don_100@3m (166,560 bars)
+  … don_100@5m (99,936 bars)
+  … don_100@15m (33,312 bars)
+  … cta_5_20@1m (499,680 bars)
+  … cta_5_20@3m (166,560 bars)
+  … cta_5_20@5m (99,936 bars)
+  … cta_5_20@15m (33,312 bars)
+  … cta_10_40@1m (499,680 bars)
+  ✓ GATE cta_10_40    1m  RR=4.0 n=5558 E[R]=0.057 90dOOS=0.12
+  … cta_10_40@3m (166,560 bars)
+  ✓ GATE cta_10_40    3m  RR=2.4 n=2091 E[R]=0.072 90dOOS=0.038
+  … cta_10_40@5m (99,936 bars)
+  … cta_10_40@15m (33,312 bars)
+  … cta_12_26@1m (499,680 bars)
+  … cta_12_26@3m (166,560 bars)
+  … cta_12_26@5m (99,936 bars)
+  … cta_12_26@15m (33,312 bars)
+  … cta_20_50@1m (499,680 bars)
+  … cta_20_50@3m (166,560 bars)
+  ✓ GATE cta_20_50    3m  RR=4.0 n=1482 E[R]=0.11 90dOOS=0.071
+  … cta_20_50@5m (99,936 bars)
+  … cta_20_50@15m (33,312 bars)
+  … cta_50_200@1m (499,680 bars)
+  ✓ GATE cta_50_200   1m  RR=4.0 n=1904 E[R]=0.082 90dOOS=0.059
+  … cta_50_200@3m (166,560 bars)
+  … cta_50_200@5m (99,936 bars)
+  … cta_50_200@15m (33,312 bars)
+  ✓ GATE cta_50_200   15m RR=4.0 n=152 E[R]=0.217 90dOOS=0.364
+  … tsmom@1m (499,680 bars)
+  … tsmom@3m (166,560 bars)
+  … tsmom@5m (99,936 bars)
+  … tsmom@15m (33,312 bars)
+  … roc_20@1m (499,680 bars)
+  … roc_20@3m (166,560 bars)
+  … roc_20@5m (99,936 bars)
+  … roc_20@15m (33,312 bars)
+  … roc_60@1m (499,680 bars)
+  … roc_60@3m (166,560 bars)
+  … roc_60@5m (99,936 bars)
+  … roc_60@15m (33,312 bars)
+  … roc_120@1m (499,680 bars)
+  … roc_120@3m (166,560 bars)
+  … roc_120@5m (99,936 bars)
+  … roc_120@15m (33,312 bars)
+  … bb_1.5@1m (499,680 bars)
+  … bb_1.5@3m (166,560 bars)
+  … bb_1.5@5m (99,936 bars)
+  … bb_1.5@15m (33,312 bars)
+  … bb_2@1m (499,680 bars)
+  … bb_2@3m (166,560 bars)
+  … bb_2@5m (99,936 bars)
+  … bb_2@15m (33,312 bars)
+  … bb_2.5@1m (499,680 bars)
+  … bb_2.5@3m (166,560 bars)
+  … bb_2.5@5m (99,936 bars)
+  … bb_2.5@15m (33,312 bars)
+  … z_20_2@1m (499,680 bars)
+  … z_20_2@3m (166,560 bars)
+  … z_20_2@5m (99,936 bars)
+  … z_20_2@15m (33,312 bars)
+  … z_40_2@1m (499,680 bars)
+  … z_40_2@3m (166,560 bars)
+  … z_40_2@5m (99,936 bars)
+  … z_40_2@15m (33,312 bars)
+  … rsi@1m (499,680 bars)
+  … rsi@3m (166,560 bars)
+  … rsi@5m (99,936 bars)
+  … rsi@15m (33,312 bars)
+  ✓ GATE rsi          15m RR=4.0 n=742 E[R]=0.071 90dOOS=0.2
+  … atrbrk@1m (499,680 bars)
+  … atrbrk@3m (166,560 bars)
+  … atrbrk@5m (99,936 bars)
+  … atrbrk@15m (33,312 bars)
+  … volmom@1m (499,680 bars)
+  … volmom@3m (166,560 bars)
+  ✓ GATE volmom       3m  RR=4.0 n=2160 E[R]=0.083 90dOOS=0.076
+  … volmom@5m (99,936 bars)
+  … volmom@15m (33,312 bars)
+  ✓ GATE volmom       15m RR=4.0 n=499 E[R]=0.263 90dOOS=0.429
+  ✓ MATH volmom+hf0.55        15m RR=2.4 n=382 E[R]=0.059
+  ✓ MATH volmom+hf0.55        15m RR=3.0 n=369 E[R]=0.073
+  ✓ MATH volmom+hf0.55        15m RR=4.0 n=336 E[R]=0.146
+  ✓ MATH volmom+hf0.50        15m RR=1.5 n=287 E[R]=0.089
+  ✓ MATH volmom+hf0.50        15m RR=2.0 n=271 E[R]=0.107
+  ✓ MATH volmom+hf0.50        15m RR=2.4 n=269 E[R]=0.125
+  ✓ MATH volmom+hf0.50        15m RR=3.0 n=263 E[R]=0.156
+  ✓ MATH volmom+hf0.50        15m RR=4.0 n=245 E[R]=0.204
+  ✓ MATH volmom+hf0.45        15m RR=2.4 n=159 E[R]=0.112
+  ✓ MATH volmom+hf0.45        15m RR=3.0 n=157 E[R]=0.146
+  ✓ MATH volmom+hf0.45        15m RR=4.0 n=151 E[R]=0.192
+  ✓ MATH volmom+hf0.50_e0.25  15m RR=2.4 n=226 E[R]=0.053
+  ✓ MATH volmom+hf0.50_e0.25  15m RR=4.0 n=208 E[R]=0.13
+  ✓ MATH volmom+e0.35         15m RR=4.0 n=443 E[R]=0.185
+  ✓ MATH st_3+hf0.55          3m RR=3.0 n=238 E[R]=0.143
+  ✓ MATH st_3+hf0.55          3m RR=4.0 n=233 E[R]=0.159
+  ✓ MATH st_3+hf0.50          3m RR=4.0 n=145 E[R]=0.103
+  ✓ MATH st_3+hf0.50_e0.25    3m RR=4.0 n=138 E[R]=0.087
+  ✓ MATH st_3+e0.35           3m RR=2.4 n=387 E[R]=0.054
+  ✓ MATH st_3+e0.35           3m RR=3.0 n=382 E[R]=0.11
+  ✓ MATH st_3+e0.35           3m RR=4.0 n=373 E[R]=0.126
+  ✓ MATH cta_20_50+hf0.55     3m RR=4.0 n=954 E[R]=0.111
+  ✓ MATH cta_20_50+hf0.45     3m RR=4.0 n=351 E[R]=0.268
+  ✓ MATH cta_20_50+hf0.45_e0. 3m RR=4.0 n=263 E[R]=0.331
+  ✓ MATH st_3+e0.35           1m RR=4.0 n=656 E[R]=0.12
+  ✓ MATH don_20+hf0.55        5m RR=3.0 n=1698 E[R]=0.053
+  ✓ MATH don_20+hf0.50        5m RR=2.0 n=1348 E[R]=0.075
+  ✓ MATH don_20+hf0.50        5m RR=2.4 n=1258 E[R]=0.07
+  ✓ MATH don_20+hf0.50        5m RR=3.0 n=1187 E[R]=0.088
+  ✓ MATH don_20+hf0.50_e0.25  5m RR=2.0 n=1323 E[R]=0.073
+  ✓ MATH don_20+hf0.50_e0.25  5m RR=2.4 n=1242 E[R]=0.062
+  ✓ MATH don_20+hf0.50_e0.25  5m RR=3.0 n=1170 E[R]=0.087
+  ✓ MATH don_20+hf0.50_e0.25  5m RR=4.0 n=1077 E[R]=0.1
+  ✓ MATH don_20+e0.35         5m RR=3.0 n=2572 E[R]=0.082
+  ✓ MATH don_20+e0.35         5m RR=4.0 n=2186 E[R]=0.102
+  ✓ MATH engulf+hf0.55        15m RR=4.0 n=368 E[R]=0.114
+  ✓ MATH engulf+hf0.45        15m RR=2.0 n=190 E[R]=0.137
+  ✓ MATH engulf+hf0.45        15m RR=2.4 n=176 E[R]=0.198
+  ✓ MATH engulf+hf0.45        15m RR=3.0 n=171 E[R]=0.263
+  ✓ MATH engulf+hf0.45        15m RR=4.0 n=162 E[R]=0.111
+  ✓ MATH engulf+hf0.45_e0.30  15m RR=2.4 n=163 E[R]=0.272
+  ✓ MATH engulf+e0.35         15m RR=1.5 n=860 E[R]=0.064
+  ✓ MATH engulf+e0.35         15m RR=2.0 n=808 E[R]=0.069
+  ✓ MATH engulf+e0.35         15m RR=2.4 n=754 E[R]=0.078
+  ✓ MATH engulf+e0.35         15m RR=3.0 n=707 E[R]=0.115
+  ✓ MATH engulf+e0.35         15m RR=4.0 n=649 E[R]=0.148
+  ✓ MATH volmom+hf0.50        3m RR=4.0 n=1078 E[R]=0.099
+  ✓ MATH volmom+hf0.45        3m RR=4.0 n=656 E[R]=0.113
+  ✓ MATH volmom+hf0.50_e0.25  3m RR=4.0 n=967 E[R]=0.07
+  ✓ MATH volmom+hf0.45_e0.30  3m RR=3.0 n=595 E[R]=0.055
+  ✓ MATH volmom+hf0.45_e0.30  3m RR=4.0 n=562 E[R]=0.085
+  ✓ MATH volmom+e0.35         3m RR=2.0 n=2809 E[R]=0.046
+  ✓ MATH volmom+e0.35         3m RR=2.4 n=2612 E[R]=0.054
+  ✓ MATH volmom+e0.35         3m RR=4.0 n=1911 E[R]=0.075
+  ✓ MATH don_30+e0.35         15m RR=2.4 n=861 E[R]=0.106
+  ✓ MATH don_30+e0.35         15m RR=3.0 n=794 E[R]=0.128
+
+######## USDJPY · live=pa_opp_gold RR=4.0 ########
+  … fib_liq@15m (33,312 bars)
+  … ema_pull@15m (33,312 bars)
+  … ema_tight@15m (33,312 bars)
+  … sma_cross@1m (499,680 bars)
+  … sma_cross@3m (166,560 bars)
+  … sma_cross@5m (99,936 bars)
+  … sma_cross@15m (33,312 bars)
+  … pa@15m (33,312 bars)
+  … liq@15m (33,312 bars)
+  … tl@15m (33,312 bars)
+  … obfvg@15m (33,312 bars)
+  … macd@15m (33,312 bars)
+  … engulf@15m (33,312 bars)
+  … inside@15m (33,312 bars)
+  … ichi@15m (33,312 bars)
+  ✓ GATE ichi         15m RR=4.0 n=502 E[R]=0.135 90dOOS=0.875
+  … psar@15m (33,312 bars)
+  … adx@15m (33,312 bars)
+  … st_2@1m (499,680 bars)
+  … st_2@3m (166,560 bars)
+  … st_2@5m (99,936 bars)
+  … st_2@15m (33,312 bars)
+  … st_3@1m (499,680 bars)
+  … st_3@3m (166,560 bars)
+  … st_3@5m (99,936 bars)
+  … st_3@15m (33,312 bars)
+  … kelt_1@1m (499,680 bars)
+  … kelt_1@3m (166,560 bars)
+  … kelt_1@5m (99,936 bars)
+  … kelt_1@15m (33,312 bars)
+  … kelt_1.5@1m (499,680 bars)
+  … kelt_1.5@3m (166,560 bars)
+  … kelt_1.5@5m (99,936 bars)
+  … kelt_1.5@15m (33,312 bars)
+  … kelt_2@1m (499,680 bars)
+  … kelt_2@3m (166,560 bars)
+  … kelt_2@5m (99,936 bars)
+  … kelt_2@15m (33,312 bars)
+  … stoch_20@1m (499,680 bars)
+  skip stoch_20@1m: No numeric types to aggregate
+  … stoch_20@3m (166,560 bars)
+  skip stoch_20@3m: No numeric types to aggregate
+  … stoch_20@5m (99,936 bars)
+  skip stoch_20@5m: No numeric types to aggregate
+  … stoch_20@15m (33,312 bars)
+  skip stoch_20@15m: No numeric types to aggregate
+  … stoch_30@1m (499,680 bars)
+  skip stoch_30@1m: No numeric types to aggregate
+  … stoch_30@3m (166,560 bars)
+  skip stoch_30@3m: No numeric types to aggregate
+  … stoch_30@5m (99,936 bars)
+  skip stoch_30@5m: No numeric types to aggregate
+  … stoch_30@15m (33,312 bars)
+  skip stoch_30@15m: No numeric types to aggregate
+  … don_10@1m (499,680 bars)
+  … don_10@3m (166,560 bars)
+  … don_10@5m (99,936 bars)
+  … don_10@15m (33,312 bars)
+  … don_20@1m (499,680 bars)
+  … don_20@3m (166,560 bars)
+  … don_20@5m (99,936 bars)
+  … don_20@15m (33,312 bars)
+  … don_30@1m (499,680 bars)
+  … don_30@3m (166,560 bars)
+  … don_30@5m (99,936 bars)
+  … don_30@15m (33,312 bars)
+  … don_55@1m (499,680 bars)
+  … don_55@3m (166,560 bars)
+  … don_55@5m (99,936 bars)
+  … don_55@15m (33,312 bars)
+  … don_100@1m (499,680 bars)
+  … don_100@3m (166,560 bars)
+  … don_100@5m (99,936 bars)
+  … don_100@15m (33,312 bars)
+  … cta_5_20@1m (499,680 bars)
+  ✓ GATE cta_5_20     1m  RR=4.0 n=7725 E[R]=0.053 90dOOS=0.103
+  … cta_5_20@3m (166,560 bars)
+  … cta_5_20@5m (99,936 bars)
+  … cta_5_20@15m (33,312 bars)
+  … cta_10_40@1m (499,680 bars)
+  … cta_10_40@3m (166,560 bars)
+  … cta_10_40@5m (99,936 bars)
+  … cta_10_40@15m (33,312 bars)
+  … cta_12_26@1m (499,680 bars)
+  … cta_12_26@3m (166,560 bars)
+  … cta_12_26@5m (99,936 bars)
+  … cta_12_26@15m (33,312 bars)
+  … cta_20_50@1m (499,680 bars)
+  … cta_20_50@3m (166,560 bars)
+  … cta_20_50@5m (99,936 bars)
+  … cta_20_50@15m (33,312 bars)
+  … cta_50_200@1m (499,680 bars)
+  … cta_50_200@3m (166,560 bars)
+  … cta_50_200@5m (99,936 bars)
+  … cta_50_200@15m (33,312 bars)
+  ✓ GATE cta_50_200   15m RR=2.0 n=144 E[R]=0.125 90dOOS=0.8
+  … tsmom@1m (499,680 bars)
+  … tsmom@3m (166,560 bars)
+  ✓ GATE tsmom        3m  RR=2.4 n=1006 E[R]=0.061 90dOOS=0.077
+  … tsmom@5m (99,936 bars)
+  … tsmom@15m (33,312 bars)
+  … roc_20@1m (499,680 bars)
+  … roc_20@3m (166,560 bars)
+  … roc_20@5m (99,936 bars)
+  … roc_20@15m (33,312 bars)
+  … roc_60@1m (499,680 bars)
+  … roc_60@3m (166,560 bars)
+  … roc_60@5m (99,936 bars)
+  … roc_60@15m (33,312 bars)
+  … roc_120@1m (499,680 bars)
+  … roc_120@3m (166,560 bars)
+  … roc_120@5m (99,936 bars)
+  … roc_120@15m (33,312 bars)
+  … bb_1.5@1m (499,680 bars)
+  ✓ GATE bb_1.5       1m  RR=3.0 n=10846 E[R]=0.095 90dOOS=0.251
+  … bb_1.5@3m (166,560 bars)
+  ✓ GATE bb_1.5       3m  RR=4.0 n=3006 E[R]=0.086 90dOOS=0.139
+  … bb_1.5@5m (99,936 bars)
+  ✓ GATE bb_1.5       5m  RR=3.0 n=2088 E[R]=0.079 90dOOS=0.078
+  … bb_1.5@15m (33,312 bars)
+  … bb_2@1m (499,680 bars)
+  ✓ GATE bb_2         1m  RR=4.0 n=2349 E[R]=0.164 90dOOS=0.373
+  … bb_2@3m (166,560 bars)
+  ✓ GATE bb_2         3m  RR=2.0 n=868 E[R]=0.054 90dOOS=0.132
+  … bb_2@5m (99,936 bars)
+  ✓ GATE bb_2         5m  RR=2.4 n=552 E[R]=0.152 90dOOS=0.417
+  … bb_2@15m (33,312 bars)
+  ✓ GATE bb_2         15m RR=3.0 n=200 E[R]=0.16 90dOOS=0.846
+  … bb_2.5@1m (499,680 bars)
+  ✓ GATE bb_2.5       1m  RR=4.0 n=230 E[R]=0.609 90dOOS=2.0
+  … bb_2.5@3m (166,560 bars)
+  ✓ GATE bb_2.5       3m  RR=2.0 n=99 E[R]=0.364 90dOOS=0.636
+  … bb_2.5@5m (99,936 bars)
+  … bb_2.5@15m (33,312 bars)
+  … z_20_2@1m (499,680 bars)
+  ✓ GATE z_20_2       1m  RR=4.0 n=10633 E[R]=0.117 90dOOS=0.256
+  … z_20_2@3m (166,560 bars)
+  ✓ GATE z_20_2       3m  RR=3.0 n=3921 E[R]=0.047 90dOOS=0.091
+  … z_20_2@5m (99,936 bars)
+  ✓ GATE z_20_2       5m  RR=4.0 n=1843 E[R]=0.088 90dOOS=0.274
+  … z_20_2@15m (33,312 bars)
+  ✓ GATE z_20_2       15m RR=4.0 n=628 E[R]=0.075 90dOOS=0.842
+  … z_40_2@1m (499,680 bars)
+  ✓ GATE z_40_2       1m  RR=4.0 n=9096 E[R]=0.077 90dOOS=0.202
+  … z_40_2@3m (166,560 bars)
+  ✓ GATE z_40_2       3m  RR=2.0 n=3882 E[R]=0.044 90dOOS=0.142
+  … z_40_2@5m (99,936 bars)
+  ✓ GATE z_40_2       5m  RR=4.0 n=1565 E[R]=0.131 90dOOS=0.205
+  … z_40_2@15m (33,312 bars)
+  … rsi@1m (499,680 bars)
+  ✓ GATE rsi          1m  RR=3.0 n=12760 E[R]=0.048 90dOOS=0.079
+  … rsi@3m (166,560 bars)
+  ✓ GATE rsi          3m  RR=4.0 n=3180 E[R]=0.08 90dOOS=0.098
+  … rsi@5m (99,936 bars)
+  ✓ GATE rsi          5m  RR=1.5 n=3208 E[R]=0.047 90dOOS=0.07
+  … rsi@15m (33,312 bars)
+  ✓ GATE rsi          15m RR=2.4 n=843 E[R]=0.053 90dOOS=0.074
+  … atrbrk@1m (499,680 bars)
+  … atrbrk@3m (166,560 bars)
+  … atrbrk@5m (99,936 bars)
+  … atrbrk@15m (33,312 bars)
+  … volmom@1m (499,680 bars)
+  … volmom@3m (166,560 bars)
+  … volmom@5m (99,936 bars)
+  … volmom@15m (33,312 bars)
+  ✓ GATE volmom       15m RR=2.4 n=676 E[R]=0.117 90dOOS=0.166
+  ✓ MATH bb_2.5+hf0.55        1m RR=1.5 n=99 E[R]=0.465
+  ✓ MATH bb_2.5+hf0.55        1m RR=2.0 n=99 E[R]=0.606
+  ✓ MATH bb_2.5+hf0.55        1m RR=2.4 n=99 E[R]=0.683
+  ✓ MATH bb_2.5+hf0.55        1m RR=3.0 n=99 E[R]=0.939
+  ✓ MATH bb_2.5+hf0.55        1m RR=4.0 n=98 E[R]=0.99
+  ✓ MATH bb_2.5+e0.35         1m RR=1.5 n=120 E[R]=0.271
+  ✓ MATH bb_2.5+e0.35         1m RR=2.0 n=120 E[R]=0.475
+  ✓ MATH bb_2.5+e0.35         1m RR=2.4 n=120 E[R]=0.558
+  ✓ MATH bb_2.5+e0.35         1m RR=3.0 n=120 E[R]=0.767
+  ✓ MATH bb_2.5+e0.35         1m RR=4.0 n=118 E[R]=0.949
+  ✓ MATH bb_2+hf0.55          5m RR=2.4 n=272 E[R]=0.062
+  ✓ MATH bb_2+e0.35           5m RR=3.0 n=180 E[R]=0.067
+  ✓ MATH bb_2+hf0.55          1m RR=1.5 n=1142 E[R]=0.051
+  ✓ MATH bb_2+hf0.55          1m RR=2.0 n=1139 E[R]=0.083
+  ✓ MATH bb_2+hf0.55          1m RR=2.4 n=1130 E[R]=0.122
+  ✓ MATH bb_2+hf0.55          1m RR=3.0 n=1120 E[R]=0.139
+  ✓ MATH bb_2+hf0.55          1m RR=4.0 n=1098 E[R]=0.157
+  ✓ MATH bb_2+hf0.50          1m RR=1.5 n=665 E[R]=0.09
+  ✓ MATH bb_2+hf0.50          1m RR=2.0 n=664 E[R]=0.125
+  ✓ MATH bb_2+hf0.50          1m RR=2.4 n=660 E[R]=0.169
+  ✓ MATH bb_2+hf0.50          1m RR=3.0 n=657 E[R]=0.169
+  ✓ MATH bb_2+hf0.50          1m RR=4.0 n=651 E[R]=0.221
+  ✓ MATH bb_2+hf0.45          1m RR=1.5 n=344 E[R]=0.076
+  ✓ MATH bb_2+hf0.45          1m RR=2.0 n=343 E[R]=0.12
+  ✓ MATH bb_2+hf0.45          1m RR=2.4 n=340 E[R]=0.15
+  ✓ MATH bb_2+hf0.45          1m RR=3.0 n=340 E[R]=0.118
+  ✓ MATH bb_2+hf0.45          1m RR=4.0 n=338 E[R]=0.124
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=1.5 n=385 E[R]=0.117
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=2.0 n=385 E[R]=0.145
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=2.4 n=382 E[R]=0.184
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=3.0 n=381 E[R]=0.27
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=4.0 n=378 E[R]=0.336
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=3.0 n=167 E[R]=0.126
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=4.0 n=167 E[R]=0.138
+  ✓ MATH bb_2+e0.35           1m RR=2.0 n=1072 E[R]=0.091
+  ✓ MATH bb_2+e0.35           1m RR=2.4 n=1066 E[R]=0.113
+  ✓ MATH bb_2+e0.35           1m RR=3.0 n=1059 E[R]=0.186
+  ✓ MATH bb_2+e0.35           1m RR=4.0 n=1042 E[R]=0.2
+  ✓ MATH bb_2+hf0.55          15m RR=3.0 n=105 E[R]=0.219
+  ✓ MATH bb_1.5+hf0.45        5m RR=4.0 n=347 E[R]=0.081
+  ✓ MATH bb_1.5+hf0.50_e0.25  5m RR=4.0 n=471 E[R]=0.062
+  ✓ MATH bb_1.5+hf0.45_e0.30  5m RR=2.4 n=206 E[R]=0.106
+  ✓ MATH bb_1.5+hf0.45_e0.30  5m RR=3.0 n=203 E[R]=0.123
+  ✓ MATH bb_1.5+hf0.45_e0.30  5m RR=4.0 n=196 E[R]=0.224
+  ✓ MATH bb_1.5+e0.35         5m RR=1.5 n=1293 E[R]=0.063
+  ✓ MATH z_40_2+hf0.55        5m RR=1.5 n=1261 E[R]=0.073
+  ✓ MATH z_40_2+hf0.55        5m RR=2.0 n=1216 E[R]=0.076
+  ✓ MATH z_40_2+hf0.55        5m RR=2.4 n=1149 E[R]=0.074
+  ✓ MATH z_40_2+hf0.55        5m RR=4.0 n=947 E[R]=0.13
+  ✓ MATH z_40_2+hf0.50        5m RR=2.0 n=766 E[R]=0.144
+  ✓ MATH z_40_2+hf0.50        5m RR=2.4 n=735 E[R]=0.152
+  ✓ MATH z_40_2+hf0.50        5m RR=3.0 n=699 E[R]=0.185
+  ✓ MATH z_40_2+hf0.45        5m RR=1.5 n=408 E[R]=0.152
+  ✓ MATH z_40_2+hf0.45        5m RR=2.0 n=399 E[R]=0.195
+  ✓ MATH z_40_2+hf0.45        5m RR=2.4 n=393 E[R]=0.263
+  ✓ MATH z_40_2+hf0.45        5m RR=3.0 n=380 E[R]=0.337
+  ✓ MATH z_40_2+hf0.45        5m RR=4.0 n=358 E[R]=0.453
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=1.5 n=678 E[R]=0.095
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=2.0 n=662 E[R]=0.115
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=2.4 n=637 E[R]=0.121
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=3.0 n=610 E[R]=0.141
+  ✓ MATH z_40_2+hf0.45_e0.30  5m RR=1.5 n=336 E[R]=0.124
+  ✓ MATH z_40_2+hf0.45_e0.30  5m RR=2.0 n=331 E[R]=0.178
+  ✓ MATH z_40_2+hf0.45_e0.30  5m RR=2.4 n=327 E[R]=0.237
+  ✓ MATH z_40_2+hf0.45_e0.30  5m RR=3.0 n=319 E[R]=0.304
+  ✓ MATH z_40_2+hf0.45_e0.30  5m RR=4.0 n=303 E[R]=0.403
+  ✓ MATH z_40_2+e0.35         5m RR=1.5 n=1987 E[R]=0.067
+  ✓ MATH z_40_2+e0.35         5m RR=2.0 n=1870 E[R]=0.056
+  ✓ MATH z_40_2+e0.35         5m RR=2.4 n=1758 E[R]=0.085
+  ✓ MATH z_40_2+e0.35         5m RR=3.0 n=1590 E[R]=0.084
+  ✓ MATH z_40_2+e0.35         5m RR=4.0 n=1331 E[R]=0.112
+  ✓ MATH z_20_2+hf0.50        5m RR=1.5 n=959 E[R]=0.064
+  ✓ MATH z_20_2+hf0.50        5m RR=2.0 n=915 E[R]=0.059
+  ✓ MATH z_20_2+hf0.50        5m RR=4.0 n=755 E[R]=0.113
+  ✓ MATH z_20_2+hf0.45        5m RR=4.0 n=392 E[R]=0.11
+  ✓ MATH z_20_2+hf0.50_e0.25  5m RR=1.5 n=761 E[R]=0.074
+  ✓ MATH z_20_2+hf0.50_e0.25  5m RR=2.0 n=734 E[R]=0.054
+  ✓ MATH z_20_2+hf0.50_e0.25  5m RR=4.0 n=633 E[R]=0.122
+  ✓ MATH z_20_2+hf0.45_e0.30  5m RR=1.5 n=345 E[R]=0.058
+  ✓ MATH z_20_2+hf0.45_e0.30  5m RR=4.0 n=301 E[R]=0.096
+  ✓ MATH z_20_2+e0.35         5m RR=1.5 n=2155 E[R]=0.057
+  ✓ MATH z_20_2+e0.35         5m RR=3.0 n=1682 E[R]=0.063
+  ✓ MATH z_20_2+e0.35         5m RR=4.0 n=1462 E[R]=0.067
+
+######## AUDUSD · live=bb_2.5 RR=4.0 ########
+  … fib_liq@15m (33,312 bars)
+  … ema_pull@15m (33,312 bars)
+  … ema_tight@15m (33,312 bars)
+  … sma_cross@1m (499,680 bars)
+  … sma_cross@3m (166,560 bars)
+  … sma_cross@5m (99,936 bars)
+  … sma_cross@15m (33,312 bars)
+  … pa@15m (33,312 bars)
+  ✓ GATE pa           15m RR=3.0 n=359 E[R]=0.058 90dOOS=0.125
+  … liq@15m (33,312 bars)
+  … tl@15m (33,312 bars)
+  … obfvg@15m (33,312 bars)
+  … macd@15m (33,312 bars)
+  … engulf@15m (33,312 bars)
+  … inside@15m (33,312 bars)
+  … ichi@15m (33,312 bars)
+  … psar@15m (33,312 bars)
+  … adx@15m (33,312 bars)
+  … st_2@1m (499,680 bars)
+  … st_2@3m (166,560 bars)
+  … st_2@5m (99,936 bars)
+  … st_2@15m (33,312 bars)
+  … st_3@1m (499,680 bars)
+  … st_3@3m (166,560 bars)
+  … st_3@5m (99,936 bars)
+  … st_3@15m (33,312 bars)
+  … kelt_1@1m (499,680 bars)
+  … kelt_1@3m (166,560 bars)
+  … kelt_1@5m (99,936 bars)
+  … kelt_1@15m (33,312 bars)
+  … kelt_1.5@1m (499,680 bars)
+  … kelt_1.5@3m (166,560 bars)
+  … kelt_1.5@5m (99,936 bars)
+  … kelt_1.5@15m (33,312 bars)
+  … kelt_2@1m (499,680 bars)
+  … kelt_2@3m (166,560 bars)
+  … kelt_2@5m (99,936 bars)
+  … kelt_2@15m (33,312 bars)
+  … stoch_20@1m (499,680 bars)
+  skip stoch_20@1m: No numeric types to aggregate
+  … stoch_20@3m (166,560 bars)
+  skip stoch_20@3m: No numeric types to aggregate
+  … stoch_20@5m (99,936 bars)
+  skip stoch_20@5m: No numeric types to aggregate
+  … stoch_20@15m (33,312 bars)
+  skip stoch_20@15m: No numeric types to aggregate
+  … stoch_30@1m (499,680 bars)
+  skip stoch_30@1m: No numeric types to aggregate
+  … stoch_30@3m (166,560 bars)
+  skip stoch_30@3m: No numeric types to aggregate
+  … stoch_30@5m (99,936 bars)
+  skip stoch_30@5m: No numeric types to aggregate
+  … stoch_30@15m (33,312 bars)
+  skip stoch_30@15m: No numeric types to aggregate
+  … don_10@1m (499,680 bars)
+  … don_10@3m (166,560 bars)
+  … don_10@5m (99,936 bars)
+  … don_10@15m (33,312 bars)
+  … don_20@1m (499,680 bars)
+  … don_20@3m (166,560 bars)
+  … don_20@5m (99,936 bars)
+  … don_20@15m (33,312 bars)
+  … don_30@1m (499,680 bars)
+  … don_30@3m (166,560 bars)
+  … don_30@5m (99,936 bars)
+  … don_30@15m (33,312 bars)
+  … don_55@1m (499,680 bars)
+  … don_55@3m (166,560 bars)
+  … don_55@5m (99,936 bars)
+  … don_55@15m (33,312 bars)
+  … don_100@1m (499,680 bars)
+  … don_100@3m (166,560 bars)
+  … don_100@5m (99,936 bars)
+  … don_100@15m (33,312 bars)
+  … cta_5_20@1m (499,680 bars)
+  … cta_5_20@3m (166,560 bars)
+  … cta_5_20@5m (99,936 bars)
+  … cta_5_20@15m (33,312 bars)
+  … cta_10_40@1m (499,680 bars)
+  … cta_10_40@3m (166,560 bars)
+  … cta_10_40@5m (99,936 bars)
+  … cta_10_40@15m (33,312 bars)
+  … cta_12_26@1m (499,680 bars)
+  … cta_12_26@3m (166,560 bars)
+  … cta_12_26@5m (99,936 bars)
+  … cta_12_26@15m (33,312 bars)
+  … cta_20_50@1m (499,680 bars)
+  … cta_20_50@3m (166,560 bars)
+  … cta_20_50@5m (99,936 bars)
+  … cta_20_50@15m (33,312 bars)
+  … cta_50_200@1m (499,680 bars)
+  … cta_50_200@3m (166,560 bars)
+  … cta_50_200@5m (99,936 bars)
+  … cta_50_200@15m (33,312 bars)
+  … tsmom@1m (499,680 bars)
+  … tsmom@3m (166,560 bars)
+  … tsmom@5m (99,936 bars)
+  ✓ GATE tsmom        5m  RR=4.0 n=503 E[R]=0.054 90dOOS=0.129
+  … tsmom@15m (33,312 bars)
+  … roc_20@1m (499,680 bars)
+  … roc_20@3m (166,560 bars)
+  … roc_20@5m (99,936 bars)
+  … roc_20@15m (33,312 bars)
+  … roc_60@1m (499,680 bars)
+  … roc_60@3m (166,560 bars)
+  … roc_60@5m (99,936 bars)
+  … roc_60@15m (33,312 bars)
+  … roc_120@1m (499,680 bars)
+  … roc_120@3m (166,560 bars)
+  … roc_120@5m (99,936 bars)
+  … roc_120@15m (33,312 bars)
+  … bb_1.5@1m (499,680 bars)
+  ✓ GATE bb_1.5       1m  RR=3.0 n=10403 E[R]=0.085 90dOOS=0.037
+  … bb_1.5@3m (166,560 bars)
+  ✓ GATE bb_1.5       3m  RR=3.0 n=3445 E[R]=0.113 90dOOS=0.111
+  … bb_1.5@5m (99,936 bars)
+  ✓ GATE bb_1.5       5m  RR=4.0 n=1812 E[R]=0.203 90dOOS=0.058
+  … bb_1.5@15m (33,312 bars)
+  ✓ GATE bb_1.5       15m RR=2.4 n=729 E[R]=0.059 90dOOS=0.085
+  … bb_2@1m (499,680 bars)
+  ✓ GATE bb_2         1m  RR=4.0 n=2021 E[R]=0.277 90dOOS=0.496
+  … bb_2@3m (166,560 bars)
+  … bb_2@5m (99,936 bars)
+  ✓ GATE bb_2         5m  RR=3.0 n=471 E[R]=0.223 90dOOS=0.379
+  … bb_2@15m (33,312 bars)
+  … bb_2.5@1m (499,680 bars)
+  ✓ GATE bb_2.5       1m  RR=4.0 n=161 E[R]=0.522 90dOOS=0.842
+  … bb_2.5@3m (166,560 bars)
+  … bb_2.5@5m (99,936 bars)
+  … bb_2.5@15m (33,312 bars)
+  … z_20_2@1m (499,680 bars)
+  ✓ GATE z_20_2       1m  RR=4.0 n=10745 E[R]=0.119 90dOOS=0.094
+  … z_20_2@3m (166,560 bars)
+  ✓ GATE z_20_2       3m  RR=4.0 n=3306 E[R]=0.118 90dOOS=0.146
+  … z_20_2@5m (99,936 bars)
+  ✓ GATE z_20_2       5m  RR=3.0 n=2385 E[R]=0.132 90dOOS=0.045
+  … z_20_2@15m (33,312 bars)
+  ✓ GATE z_20_2       15m RR=3.0 n=768 E[R]=0.125 90dOOS=0.098
+  … z_40_2@1m (499,680 bars)
+  ✓ GATE z_40_2       1m  RR=4.0 n=9551 E[R]=0.113 90dOOS=0.096
+  … z_40_2@3m (166,560 bars)
+  ✓ GATE z_40_2       3m  RR=3.0 n=3538 E[R]=0.098 90dOOS=0.013
+  … z_40_2@5m (99,936 bars)
+  ✓ GATE z_40_2       5m  RR=2.0 n=2399 E[R]=0.112 90dOOS=0.062
+  … z_40_2@15m (33,312 bars)
+  … rsi@1m (499,680 bars)
+  ✓ GATE rsi          1m  RR=4.0 n=11005 E[R]=0.076 90dOOS=0.052
+  … rsi@3m (166,560 bars)
+  ✓ GATE rsi          3m  RR=4.0 n=3269 E[R]=0.106 90dOOS=0.219
+  … rsi@5m (99,936 bars)
+  ✓ GATE rsi          5m  RR=2.4 n=2623 E[R]=0.077 90dOOS=0.07
+  … rsi@15m (33,312 bars)
+  ✓ GATE rsi          15m RR=1.5 n=1037 E[R]=0.092 90dOOS=0.119
+  … atrbrk@1m (499,680 bars)
+  … atrbrk@3m (166,560 bars)
+  … atrbrk@5m (99,936 bars)
+  … atrbrk@15m (33,312 bars)
+  … volmom@1m (499,680 bars)
+  … volmom@3m (166,560 bars)
+  … volmom@5m (99,936 bars)
+  … volmom@15m (33,312 bars)
+  ✓ MATH bb_2+hf0.55          1m RR=1.5 n=1026 E[R]=0.092
+  ✓ MATH bb_2+hf0.55          1m RR=2.0 n=1020 E[R]=0.144
+  ✓ MATH bb_2+hf0.55          1m RR=2.4 n=1015 E[R]=0.166
+  ✓ MATH bb_2+hf0.55          1m RR=3.0 n=1011 E[R]=0.211
+  ✓ MATH bb_2+hf0.55          1m RR=4.0 n=996 E[R]=0.235
+  ✓ MATH bb_2+hf0.50          1m RR=1.5 n=638 E[R]=0.125
+  ✓ MATH bb_2+hf0.50          1m RR=2.0 n=635 E[R]=0.167
+  ✓ MATH bb_2+hf0.50          1m RR=2.4 n=634 E[R]=0.164
+  ✓ MATH bb_2+hf0.50          1m RR=3.0 n=633 E[R]=0.194
+  ✓ MATH bb_2+hf0.50          1m RR=4.0 n=629 E[R]=0.24
+  ✓ MATH bb_2+hf0.45          1m RR=1.5 n=337 E[R]=0.142
+  ✓ MATH bb_2+hf0.45          1m RR=2.0 n=337 E[R]=0.193
+  ✓ MATH bb_2+hf0.45          1m RR=2.4 n=336 E[R]=0.184
+  ✓ MATH bb_2+hf0.45          1m RR=3.0 n=336 E[R]=0.19
+  ✓ MATH bb_2+hf0.45          1m RR=4.0 n=335 E[R]=0.209
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=1.5 n=392 E[R]=0.193
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=2.0 n=392 E[R]=0.232
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=2.4 n=392 E[R]=0.223
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=3.0 n=390 E[R]=0.272
+  ✓ MATH bb_2+hf0.50_e0.25    1m RR=4.0 n=389 E[R]=0.337
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=1.5 n=179 E[R]=0.243
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=2.0 n=179 E[R]=0.291
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=2.4 n=179 E[R]=0.273
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=3.0 n=179 E[R]=0.296
+  ✓ MATH bb_2+hf0.45_e0.30    1m RR=4.0 n=179 E[R]=0.313
+  ✓ MATH bb_2+e0.35           1m RR=1.5 n=956 E[R]=0.166
+  ✓ MATH bb_2+e0.35           1m RR=2.0 n=954 E[R]=0.252
+  ✓ MATH bb_2+e0.35           1m RR=2.4 n=950 E[R]=0.271
+  ✓ MATH bb_2+e0.35           1m RR=3.0 n=944 E[R]=0.297
+  ✓ MATH bb_2+e0.35           1m RR=4.0 n=931 E[R]=0.31
+  ✓ MATH bb_2+hf0.55          5m RR=1.5 n=226 E[R]=0.117
+  ✓ MATH bb_2+hf0.55          5m RR=2.0 n=225 E[R]=0.16
+  ✓ MATH bb_2+hf0.55          5m RR=2.4 n=225 E[R]=0.209
+  ✓ MATH bb_2+hf0.55          5m RR=3.0 n=223 E[R]=0.291
+  ✓ MATH bb_2+hf0.50          5m RR=1.5 n=138 E[R]=0.105
+  ✓ MATH bb_2+hf0.50          5m RR=2.0 n=138 E[R]=0.174
+  ✓ MATH bb_2+hf0.50          5m RR=2.4 n=138 E[R]=0.207
+  ✓ MATH bb_2+hf0.50          5m RR=3.0 n=136 E[R]=0.382
+  ✓ MATH bb_2+hf0.45          5m RR=2.0 n=74 E[R]=0.095
+  ✓ MATH bb_2+hf0.45          5m RR=2.4 n=74 E[R]=0.149
+  ✓ MATH bb_2+hf0.45          5m RR=3.0 n=74 E[R]=0.351
+  ✓ MATH bb_1.5+hf0.55        5m RR=1.5 n=1255 E[R]=0.086
+  ✓ MATH bb_1.5+hf0.55        5m RR=2.0 n=1222 E[R]=0.08
+  ✓ MATH bb_1.5+hf0.55        5m RR=2.4 n=1167 E[R]=0.069
+  ✓ MATH bb_1.5+hf0.55        5m RR=3.0 n=1107 E[R]=0.167
+  ✓ MATH bb_1.5+hf0.55        5m RR=4.0 n=1023 E[R]=0.158
+  ✓ MATH bb_1.5+hf0.50        5m RR=1.5 n=763 E[R]=0.075
+  ✓ MATH bb_1.5+hf0.50        5m RR=3.0 n=692 E[R]=0.22
+  ✓ MATH bb_1.5+hf0.50_e0.25  5m RR=3.0 n=474 E[R]=0.165
+  ✓ MATH bb_1.5+hf0.45_e0.30  5m RR=1.5 n=222 E[R]=0.104
+  ✓ MATH bb_2.5+e0.35         1m RR=1.5 n=92 E[R]=0.44
+  ✓ MATH bb_2.5+e0.35         1m RR=2.0 n=92 E[R]=0.5
+  ✓ MATH bb_2.5+e0.35         1m RR=2.4 n=92 E[R]=0.589
+  ✓ MATH bb_2.5+e0.35         1m RR=3.0 n=92 E[R]=0.696
+  ✓ MATH bb_2.5+e0.35         1m RR=4.0 n=92 E[R]=0.793
+  ✓ MATH z_20_2+hf0.55        15m RR=2.4 n=487 E[R]=0.089
+  ✓ MATH z_20_2+hf0.50        15m RR=2.4 n=327 E[R]=0.123
+  ✓ MATH z_20_2+hf0.45        15m RR=1.5 n=176 E[R]=0.151
+  ✓ MATH z_20_2+hf0.45        15m RR=2.0 n=173 E[R]=0.162
+  ✓ MATH z_20_2+hf0.45        15m RR=2.4 n=169 E[R]=0.147
+  ✓ MATH z_20_2+hf0.45        15m RR=3.0 n=159 E[R]=0.157
+  ✓ MATH z_20_2+hf0.45        15m RR=4.0 n=151 E[R]=0.159
+  ✓ MATH z_20_2+hf0.50_e0.25  15m RR=1.5 n=284 E[R]=0.136
+  ✓ MATH z_20_2+hf0.50_e0.25  15m RR=2.0 n=273 E[R]=0.154
+  ✓ MATH z_20_2+hf0.50_e0.25  15m RR=2.4 n=270 E[R]=0.184
+  ✓ MATH z_20_2+hf0.50_e0.25  15m RR=3.0 n=250 E[R]=0.2
+  ✓ MATH z_20_2+hf0.45_e0.30  15m RR=1.5 n=136 E[R]=0.232
+  ✓ MATH z_20_2+hf0.45_e0.30  15m RR=2.0 n=132 E[R]=0.205
+  ✓ MATH z_20_2+hf0.45_e0.30  15m RR=2.4 n=130 E[R]=0.203
+  ✓ MATH z_20_2+hf0.45_e0.30  15m RR=3.0 n=122 E[R]=0.246
+  ✓ MATH z_20_2+hf0.45_e0.30  15m RR=4.0 n=116 E[R]=0.25
+  ✓ MATH z_20_2+e0.35         15m RR=2.0 n=699 E[R]=0.077
+  ✓ MATH z_20_2+e0.35         15m RR=3.0 n=602 E[R]=0.09
+  ✓ MATH z_20_2+e0.35         15m RR=4.0 n=505 E[R]=0.158
+  ✓ MATH rsi+hf0.55           15m RR=3.0 n=462 E[R]=0.065
+  ✓ MATH rsi+e0.35            15m RR=1.5 n=862 E[R]=0.079
+  ✓ MATH z_20_2+hf0.55        1m RR=2.0 n=7604 E[R]=0.065
+  ✓ MATH z_20_2+hf0.55        1m RR=2.4 n=7309 E[R]=0.092
+  ✓ MATH z_20_2+hf0.55        1m RR=3.0 n=6854 E[R]=0.101
+  ✓ MATH z_20_2+hf0.55        1m RR=4.0 n=6128 E[R]=0.085
+  ✓ MATH z_20_2+hf0.50        1m RR=1.5 n=4886 E[R]=0.044
+  ✓ MATH z_20_2+hf0.50        1m RR=2.0 n=4701 E[R]=0.074
+  ✓ MATH z_20_2+hf0.50        1m RR=2.4 n=4550 E[R]=0.087
+  ✓ MATH z_20_2+hf0.50        1m RR=3.0 n=4307 E[R]=0.104
+  ✓ MATH z_20_2+hf0.50        1m RR=4.0 n=3967 E[R]=0.065
+  ✓ MATH z_20_2+hf0.45        1m RR=1.5 n=2492 E[R]=0.054
+  ✓ MATH z_20_2+hf0.45        1m RR=2.0 n=2409 E[R]=0.076
+  ✓ MATH z_20_2+hf0.45        1m RR=2.4 n=2352 E[R]=0.081
+  ✓ MATH z_20_2+hf0.45        1m RR=3.0 n=2260 E[R]=0.096
+  ✓ MATH z_20_2+hf0.50_e0.25  1m RR=2.0 n=3743 E[R]=0.048
+  ✓ MATH z_20_2+hf0.50_e0.25  1m RR=2.4 n=3642 E[R]=0.061
+  ✓ MATH z_20_2+hf0.50_e0.25  1m RR=3.0 n=3484 E[R]=0.069
+  ✓ MATH z_20_2+e0.35         1m RR=2.4 n=10303 E[R]=0.057
+  ✓ MATH z_20_2+e0.35         1m RR=3.0 n=9521 E[R]=0.064
+  ✓ MATH z_20_2+e0.35         1m RR=4.0 n=8510 E[R]=0.079
+  ✓ MATH z_40_2+hf0.55        5m RR=1.5 n=1281 E[R]=0.079
+  ✓ MATH z_40_2+hf0.55        5m RR=2.0 n=1230 E[R]=0.105
+  ✓ MATH z_40_2+hf0.55        5m RR=2.4 n=1193 E[R]=0.089
+  ✓ MATH z_40_2+hf0.50        5m RR=1.5 n=781 E[R]=0.108
+  ✓ MATH z_40_2+hf0.50        5m RR=2.0 n=751 E[R]=0.134
+  ✓ MATH z_40_2+hf0.50        5m RR=2.4 n=733 E[R]=0.127
+  ✓ MATH z_40_2+hf0.50        5m RR=3.0 n=706 E[R]=0.133
+  ✓ MATH z_40_2+hf0.50        5m RR=4.0 n=652 E[R]=0.081
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=1.5 n=675 E[R]=0.104
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=2.0 n=649 E[R]=0.123
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=2.4 n=634 E[R]=0.121
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=3.0 n=617 E[R]=0.102
+
+######## USDCHF · live=bb_2.5 RR=4.0 ########
+  … fib_liq@15m (33,312 bars)
+  … ema_pull@15m (33,312 bars)
+  ✓ GATE ema_pull     15m RR=4.0 n=235 E[R]=0.128 90dOOS=1.143
+  … ema_tight@15m (33,312 bars)
+  ✓ GATE ema_tight    15m RR=2.0 n=146 E[R]=0.212 90dOOS=0.636
+  … sma_cross@1m (499,680 bars)
+  ✓ GATE sma_cross    1m  RR=4.0 n=7172 E[R]=0.095 90dOOS=0.018
+  … sma_cross@3m (166,560 bars)
+  … sma_cross@5m (99,936 bars)
+  ✓ GATE sma_cross    5m  RR=4.0 n=1445 E[R]=0.055 90dOOS=0.067
+  … sma_cross@15m (33,312 bars)
+  … pa@15m (33,312 bars)
+  … liq@15m (33,312 bars)
+  ✓ GATE liq          15m RR=2.4 n=575 E[R]=0.135 90dOOS=0.3
+  … tl@15m (33,312 bars)
+  … obfvg@15m (33,312 bars)
+  … macd@15m (33,312 bars)
+  … engulf@15m (33,312 bars)
+  … inside@15m (33,312 bars)
+  … ichi@15m (33,312 bars)
+  ✓ GATE ichi         15m RR=4.0 n=545 E[R]=0.11 90dOOS=0.286
+  … psar@15m (33,312 bars)
+  … adx@15m (33,312 bars)
+  ✓ GATE adx          15m RR=1.5 n=241 E[R]=0.203 90dOOS=0.111
+  … st_2@1m (499,680 bars)
+  … st_2@3m (166,560 bars)
+  … st_2@5m (99,936 bars)
+  … st_2@15m (33,312 bars)
+  … st_3@1m (499,680 bars)
+  … st_3@3m (166,560 bars)
+  ✓ GATE st_3         3m  RR=3.0 n=395 E[R]=0.104 90dOOS=0.481
+  … st_3@5m (99,936 bars)
+  … st_3@15m (33,312 bars)
+  … kelt_1@1m (499,680 bars)
+  … kelt_1@3m (166,560 bars)
+  … kelt_1@5m (99,936 bars)
+  … kelt_1@15m (33,312 bars)
+  … kelt_1.5@1m (499,680 bars)
+  … kelt_1.5@3m (166,560 bars)
+  … kelt_1.5@5m (99,936 bars)
+  … kelt_1.5@15m (33,312 bars)
+  … kelt_2@1m (499,680 bars)
+  … kelt_2@3m (166,560 bars)
+  … kelt_2@5m (99,936 bars)
+  … kelt_2@15m (33,312 bars)
+  … stoch_20@1m (499,680 bars)
+  skip stoch_20@1m: No numeric types to aggregate
+  … stoch_20@3m (166,560 bars)
+  skip stoch_20@3m: No numeric types to aggregate
+  … stoch_20@5m (99,936 bars)
+  skip stoch_20@5m: No numeric types to aggregate
+  … stoch_20@15m (33,312 bars)
+  skip stoch_20@15m: No numeric types to aggregate
+  … stoch_30@1m (499,680 bars)
+  skip stoch_30@1m: No numeric types to aggregate
+  … stoch_30@3m (166,560 bars)
+  skip stoch_30@3m: No numeric types to aggregate
+  … stoch_30@5m (99,936 bars)
+  skip stoch_30@5m: No numeric types to aggregate
+  … stoch_30@15m (33,312 bars)
+  skip stoch_30@15m: No numeric types to aggregate
+  … don_10@1m (499,680 bars)
+  ✓ GATE don_10       1m  RR=2.4 n=21688 E[R]=0.02 90dOOS=0.058
+  … don_10@3m (166,560 bars)
+  … don_10@5m (99,936 bars)
+  … don_10@15m (33,312 bars)
+  … don_20@1m (499,680 bars)
+  ✓ GATE don_20       1m  RR=4.0 n=14030 E[R]=0.034 90dOOS=0.07
+  … don_20@3m (166,560 bars)
+  ✓ GATE don_20       3m  RR=2.4 n=5432 E[R]=0.035 90dOOS=0.11
+  … don_20@5m (99,936 bars)
+  … don_20@15m (33,312 bars)
+  … don_30@1m (499,680 bars)
+  ✓ GATE don_30       1m  RR=4.0 n=12044 E[R]=0.055 90dOOS=0.11
+  … don_30@3m (166,560 bars)
+  … don_30@5m (99,936 bars)
+  … don_30@15m (33,312 bars)
+  … don_55@1m (499,680 bars)
+  ✓ GATE don_55       1m  RR=4.0 n=9099 E[R]=0.051 90dOOS=0.106
+  … don_55@3m (166,560 bars)
+  … don_55@5m (99,936 bars)
+  … don_55@15m (33,312 bars)
+  … don_100@1m (499,680 bars)
+  ✓ GATE don_100      1m  RR=4.0 n=6786 E[R]=0.057 90dOOS=0.202
+  … don_100@3m (166,560 bars)
+  … don_100@5m (99,936 bars)
+  … don_100@15m (33,312 bars)
+  … cta_5_20@1m (499,680 bars)
+  … cta_5_20@3m (166,560 bars)
+  … cta_5_20@5m (99,936 bars)
+  … cta_5_20@15m (33,312 bars)
+  … cta_10_40@1m (499,680 bars)
+  … cta_10_40@3m (166,560 bars)
+  … cta_10_40@5m (99,936 bars)
+  … cta_10_40@15m (33,312 bars)
+  ✓ GATE cta_10_40    15m RR=3.0 n=455 E[R]=0.116 90dOOS=0.548
+  … cta_12_26@1m (499,680 bars)
+  … cta_12_26@3m (166,560 bars)
+  ✓ GATE cta_12_26    3m  RR=2.4 n=2627 E[R]=0.065 90dOOS=0.101
+  … cta_12_26@5m (99,936 bars)
+  ✓ GATE cta_12_26    5m  RR=2.4 n=1527 E[R]=0.075 90dOOS=0.098
+  … cta_12_26@15m (33,312 bars)
+  … cta_20_50@1m (499,680 bars)
+  … cta_20_50@3m (166,560 bars)
+  … cta_20_50@5m (99,936 bars)
+  … cta_20_50@15m (33,312 bars)
+  ✓ GATE cta_20_50    15m RR=1.5 n=402 E[R]=0.063 90dOOS=0.379
+  … cta_50_200@1m (499,680 bars)
+  ✓ GATE cta_50_200   1m  RR=4.0 n=2072 E[R]=0.098 90dOOS=0.174
+  … cta_50_200@3m (166,560 bars)
+  ✓ GATE cta_50_200   3m  RR=4.0 n=715 E[R]=0.126 90dOOS=0.795
+  … cta_50_200@5m (99,936 bars)
+  ✓ GATE cta_50_200   5m  RR=2.4 n=441 E[R]=0.149 90dOOS=0.133
+  … cta_50_200@15m (33,312 bars)
+  … tsmom@1m (499,680 bars)
+  ✓ GATE tsmom        1m  RR=3.0 n=2997 E[R]=0.069 90dOOS=0.164
+  … tsmom@3m (166,560 bars)
+  ✓ GATE tsmom        3m  RR=1.5 n=1237 E[R]=0.053 90dOOS=0.514
+  … tsmom@5m (99,936 bars)
+  ✓ GATE tsmom        5m  RR=4.0 n=552 E[R]=0.159 90dOOS=0.282
+  … tsmom@15m (33,312 bars)
+  … roc_20@1m (499,680 bars)
+  … roc_20@3m (166,560 bars)
+  … roc_20@5m (99,936 bars)
+  … roc_20@15m (33,312 bars)
+  … roc_60@1m (499,680 bars)
+  … roc_60@3m (166,560 bars)
+  … roc_60@5m (99,936 bars)
+  … roc_60@15m (33,312 bars)
+  … roc_120@1m (499,680 bars)
+  … roc_120@3m (166,560 bars)
+  … roc_120@5m (99,936 bars)
+  … roc_120@15m (33,312 bars)
+  … bb_1.5@1m (499,680 bars)
+  ✓ GATE bb_1.5       1m  RR=4.0 n=9152 E[R]=0.09 90dOOS=0.025
+  … bb_1.5@3m (166,560 bars)
+  ✓ GATE bb_1.5       3m  RR=2.0 n=3927 E[R]=0.057 90dOOS=0.15
+  … bb_1.5@5m (99,936 bars)
+  ✓ GATE bb_1.5       5m  RR=2.4 n=2297 E[R]=0.067 90dOOS=0.027
+  … bb_1.5@15m (33,312 bars)
+  ✓ GATE bb_1.5       15m RR=4.0 n=656 E[R]=0.128 90dOOS=0.277
+  … bb_2@1m (499,680 bars)
+  ✓ GATE bb_2         1m  RR=2.4 n=2111 E[R]=0.119 90dOOS=0.01
+  … bb_2@3m (166,560 bars)
+  ✓ GATE bb_2         3m  RR=4.0 n=710 E[R]=0.155 90dOOS=0.346
+  … bb_2@5m (99,936 bars)
+  … bb_2@15m (33,312 bars)
+  ✓ GATE bb_2         15m RR=4.0 n=194 E[R]=0.16 90dOOS=0.875
+  … bb_2.5@1m (499,680 bars)
+  ✓ GATE bb_2.5       1m  RR=4.0 n=171 E[R]=0.754 90dOOS=0.5
+  … bb_2.5@3m (166,560 bars)
+  … bb_2.5@5m (99,936 bars)
+  … bb_2.5@15m (33,312 bars)
+  … z_20_2@1m (499,680 bars)
+  ✓ GATE z_20_2       1m  RR=2.4 n=13958 E[R]=0.042 90dOOS=0.057
+  … z_20_2@3m (166,560 bars)
+  … z_20_2@5m (99,936 bars)
+  ✓ GATE z_20_2       5m  RR=3.0 n=2444 E[R]=0.051 90dOOS=0.035
+  … z_20_2@15m (33,312 bars)
+  ✓ GATE z_20_2       15m RR=4.0 n=692 E[R]=0.055 90dOOS=0.154
+  … z_40_2@1m (499,680 bars)
+  ✓ GATE z_40_2       1m  RR=2.4 n=11593 E[R]=0.035 90dOOS=0.008
+  … z_40_2@3m (166,560 bars)
+  ✓ GATE z_40_2       3m  RR=4.0 n=3041 E[R]=0.069 90dOOS=0.028
+  … z_40_2@5m (99,936 bars)
+  ✓ GATE z_40_2       5m  RR=4.0 n=1804 E[R]=0.073 90dOOS=0.211
+  … z_40_2@15m (33,312 bars)
+  … rsi@1m (499,680 bars)
+  ✓ GATE rsi          1m  RR=3.0 n=12989 E[R]=0.041 90dOOS=0.082
+  … rsi@3m (166,560 bars)
+  … rsi@5m (99,936 bars)
+  … rsi@15m (33,312 bars)
+  … atrbrk@1m (499,680 bars)
+  … atrbrk@3m (166,560 bars)
+  … atrbrk@5m (99,936 bars)
+  … atrbrk@15m (33,312 bars)
+  … volmom@1m (499,680 bars)
+  … volmom@3m (166,560 bars)
+  … volmom@5m (99,936 bars)
+  … volmom@15m (33,312 bars)
+  ✓ MATH bb_2+hf0.55          3m RR=1.5 n=355 E[R]=0.239
+  ✓ MATH bb_2+hf0.55          3m RR=2.0 n=354 E[R]=0.22
+  ✓ MATH bb_2+hf0.55          3m RR=2.4 n=353 E[R]=0.233
+  ✓ MATH bb_2+hf0.55          3m RR=3.0 n=351 E[R]=0.151
+  ✓ MATH bb_2+hf0.55          3m RR=4.0 n=341 E[R]=0.188
+  ✓ MATH bb_2+hf0.50          3m RR=1.5 n=227 E[R]=0.233
+  ✓ MATH bb_2+hf0.50          3m RR=2.0 n=227 E[R]=0.256
+  ✓ MATH bb_2+hf0.50          3m RR=2.4 n=226 E[R]=0.279
+  ✓ MATH bb_2+hf0.50          3m RR=3.0 n=225 E[R]=0.227
+  ✓ MATH bb_2+hf0.50          3m RR=4.0 n=218 E[R]=0.33
+  ✓ MATH bb_2+hf0.45          3m RR=1.5 n=127 E[R]=0.201
+  ✓ MATH bb_2+hf0.45          3m RR=2.0 n=127 E[R]=0.157
+  ✓ MATH bb_2+hf0.45          3m RR=2.4 n=127 E[R]=0.151
+  ✓ MATH bb_2+hf0.45          3m RR=3.0 n=127 E[R]=0.134
+  ✓ MATH bb_2+hf0.45          3m RR=4.0 n=125 E[R]=0.24
+  ✓ MATH bb_2+hf0.50_e0.25    3m RR=1.5 n=123 E[R]=0.28
+  ✓ MATH bb_2+hf0.50_e0.25    3m RR=2.0 n=123 E[R]=0.22
+  ✓ MATH bb_2+hf0.50_e0.25    3m RR=2.4 n=123 E[R]=0.244
+  ✓ MATH bb_2+hf0.50_e0.25    3m RR=3.0 n=123 E[R]=0.138
+  ✓ MATH bb_2+hf0.50_e0.25    3m RR=4.0 n=121 E[R]=0.281
+  ✓ MATH bb_2+e0.35           3m RR=1.5 n=270 E[R]=0.213
+  ✓ MATH bb_2+e0.35           3m RR=2.0 n=269 E[R]=0.238
+  ✓ MATH bb_2+e0.35           3m RR=2.4 n=269 E[R]=0.226
+  ✓ MATH bb_2+e0.35           3m RR=3.0 n=269 E[R]=0.279
+  ✓ MATH bb_2+e0.35           3m RR=4.0 n=263 E[R]=0.35
+  ✓ MATH bb_2.5+e0.35         1m RR=1.5 n=104 E[R]=0.37
+  ✓ MATH bb_2.5+e0.35         1m RR=2.4 n=104 E[R]=0.7
+  ✓ MATH bb_2.5+e0.35         1m RR=3.0 n=104 E[R]=0.808
+  ✓ MATH tsmom+hf0.55         5m RR=4.0 n=338 E[R]=0.169
+  ✓ MATH cta_50_200+hf0.55    3m RR=4.0 n=361 E[R]=0.136
+  ✓ MATH cta_50_200+hf0.50    3m RR=3.0 n=244 E[R]=0.082
+  ✓ MATH cta_50_200+hf0.50    3m RR=4.0 n=240 E[R]=0.083
+  ✓ MATH z_40_2+hf0.55        5m RR=1.5 n=1276 E[R]=0.056
+  ✓ MATH z_40_2+hf0.50        5m RR=1.5 n=830 E[R]=0.081
+  ✓ MATH z_40_2+hf0.50        5m RR=2.0 n=813 E[R]=0.077
+  ✓ MATH z_40_2+hf0.50        5m RR=2.4 n=794 E[R]=0.113
+  ✓ MATH z_40_2+hf0.50        5m RR=4.0 n=725 E[R]=0.166
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=2.4 n=685 E[R]=0.057
+  ✓ MATH z_40_2+hf0.50_e0.25  5m RR=4.0 n=635 E[R]=0.079
+  ✓ MATH bb_2+hf0.55          15m RR=3.0 n=95 E[R]=0.137
+  ✓ MATH bb_2+hf0.55          15m RR=4.0 n=95 E[R]=0.316
+  ✓ MATH bb_1.5+hf0.50        1m RR=1.5 n=3712 E[R]=0.048
+  ✓ MATH bb_1.5+hf0.50        1m RR=2.0 n=3647 E[R]=0.06
+  ✓ MATH bb_1.5+hf0.45        1m RR=4.0 n=1742 E[R]=0.053
+  ✓ MATH bb_1.5+hf0.45_e0.30  1m RR=4.0 n=1280 E[R]=0.062
+  ✓ MATH bb_1.5+e0.35         1m RR=1.5 n=7313 E[R]=0.035
+  ✓ MATH bb_1.5+hf0.55        5m RR=2.4 n=1182 E[R]=0.061
+  ✓ MATH bb_1.5+hf0.55        5m RR=3.0 n=1088 E[R]=0.051
+  ✓ MATH bb_1.5+hf0.55        5m RR=4.0 n=1001 E[R]=0.099
+  ✓ MATH bb_1.5+hf0.50        5m RR=3.0 n=745 E[R]=0.095
+  ✓ MATH bb_1.5+hf0.50        5m RR=4.0 n=700 E[R]=0.179
+  ✓ MATH bb_1.5+hf0.45        5m RR=4.0 n=408 E[R]=0.091
+  ✓ MATH bb_1.5+hf0.50_e0.25  5m RR=4.0 n=482 E[R]=0.12
+  ✓ MATH bb_1.5+e0.35         5m RR=2.0 n=1249 E[R]=0.066
+  ✓ MATH bb_1.5+e0.35         5m RR=3.0 n=1153 E[R]=0.107
+  ✓ MATH bb_1.5+e0.35         5m RR=4.0 n=1084 E[R]=0.181
+
+######## UKOIL · live=cta_10_40 RR=4.0 ########
+  … fib_liq@15m (33,312 bars)
+  … ema_pull@15m (33,312 bars)
+  … ema_tight@15m (33,312 bars)
+  … sma_cross@1m (499,680 bars)
+  ✓ GATE sma_cross    1m  RR=4.0 n=6405 E[R]=0.041 90dOOS=0.135
+  … sma_cross@3m (166,560 bars)
+  … sma_cross@5m (99,936 bars)
+  ✓ GATE sma_cross    5m  RR=3.0 n=1319 E[R]=0.074 90dOOS=0.266
+  … sma_cross@15m (33,312 bars)
+  … pa@15m (33,312 bars)
+  … liq@15m (33,312 bars)
+  … tl@15m (33,312 bars)
+  ✓ GATE tl           15m RR=3.0 n=320 E[R]=0.2 90dOOS=0.067
+  … obfvg@15m (33,312 bars)
+  … macd@15m (33,312 bars)
+  … engulf@15m (33,312 bars)
+  ✓ GATE engulf       15m RR=2.4 n=825 E[R]=0.051 90dOOS=0.109
+  … inside@15m (33,312 bars)
+  … ichi@15m (33,312 bars)
+  … psar@15m (33,312 bars)
+  ✓ GATE psar         15m RR=2.0 n=948 E[R]=0.054 90dOOS=0.4
+  … adx@15m (33,312 bars)
+  … st_2@1m (499,680 bars)
+  … st_2@3m (166,560 bars)
+  … st_2@5m (99,936 bars)
+  … st_2@15m (33,312 bars)
+  … st_3@1m (499,680 bars)
+  … st_3@3m (166,560 bars)
+  … st_3@5m (99,936 bars)
+  ✓ GATE st_3         5m  RR=4.0 n=313 E[R]=0.118 90dOOS=0.176
+  … st_3@15m (33,312 bars)
+  … kelt_1@1m (499,680 bars)
+  … kelt_1@3m (166,560 bars)
+  … kelt_1@5m (99,936 bars)
+  … kelt_1@15m (33,312 bars)
+  … kelt_1.5@1m (499,680 bars)
+  … kelt_1.5@3m (166,560 bars)
+  … kelt_1.5@5m (99,936 bars)
+  … kelt_1.5@15m (33,312 bars)
+  … kelt_2@1m (499,680 bars)
+  … kelt_2@3m (166,560 bars)
+  … kelt_2@5m (99,936 bars)
+  … kelt_2@15m (33,312 bars)
+  … stoch_20@1m (499,680 bars)
+  skip stoch_20@1m: No numeric types to aggregate
+  … stoch_20@3m (166,560 bars)
+  skip stoch_20@3m: No numeric types to aggregate
+  … stoch_20@5m (99,936 bars)
+  skip stoch_20@5m: No numeric types to aggregate
+  … stoch_20@15m (33,312 bars)
+  skip stoch_20@15m: No numeric types to aggregate
+  … stoch_30@1m (499,680 bars)
+  skip stoch_30@1m: No numeric types to aggregate
+  … stoch_30@3m (166,560 bars)
+  skip stoch_30@3m: No numeric types to aggregate
+  … stoch_30@5m (99,936 bars)
+  skip stoch_30@5m: No numeric types to aggregate
+  … stoch_30@15m (33,312 bars)
+  skip stoch_30@15m: No numeric types to aggregate
+  … don_10@1m (499,680 bars)
+  … don_10@3m (166,560 bars)
+  … don_10@5m (99,936 bars)
+  … don_10@15m (33,312 bars)
+  … don_20@1m (499,680 bars)
+  … don_20@3m (166,560 bars)
+  … don_20@5m (99,936 bars)
+  ✓ GATE don_20       5m  RR=4.0 n=2176 E[R]=0.057 90dOOS=0.185
+  … don_20@15m (33,312 bars)
+  … don_30@1m (499,680 bars)
+  … don_30@3m (166,560 bars)
+  … don_30@5m (99,936 bars)
+  … don_30@15m (33,312 bars)
+  … don_55@1m (499,680 bars)
+  … don_55@3m (166,560 bars)
+  … don_55@5m (99,936 bars)
+  … don_55@15m (33,312 bars)
+  … don_100@1m (499,680 bars)
+  … don_100@3m (166,560 bars)
+  … don_100@5m (99,936 bars)
+  … don_100@15m (33,312 bars)
+  … cta_5_20@1m (499,680 bars)
+  … cta_5_20@3m (166,560 bars)
+  … cta_5_20@5m (99,936 bars)
+  … cta_5_20@15m (33,312 bars)
+  ✓ GATE cta_5_20     15m RR=4.0 n=504 E[R]=0.091 90dOOS=0.379
+  … cta_10_40@1m (499,680 bars)
+  ✓ GATE cta_10_40    1m  RR=4.0 n=5629 E[R]=0.044 90dOOS=0.359
+  … cta_10_40@3m (166,560 bars)
+  … cta_10_40@5m (99,936 bars)
+  ✓ GATE cta_10_40    5m  RR=4.0 n=1052 E[R]=0.183 90dOOS=0.689
+  … cta_10_40@15m (33,312 bars)
+  … cta_12_26@1m (499,680 bars)
+  … cta_12_26@3m (166,560 bars)
+  … cta_12_26@5m (99,936 bars)
+  ✓ GATE cta_12_26    5m  RR=4.0 n=1142 E[R]=0.095 90dOOS=0.712
+  … cta_12_26@15m (33,312 bars)
+  ✓ GATE cta_12_26    15m RR=1.5 n=530 E[R]=0.071 90dOOS=0.181
+  … cta_20_50@1m (499,680 bars)
+  … cta_20_50@3m (166,560 bars)
+  … cta_20_50@5m (99,936 bars)
+  ✓ GATE cta_20_50    5m  RR=4.0 n=843 E[R]=0.127 90dOOS=0.518
+  … cta_20_50@15m (33,312 bars)
+  … cta_50_200@1m (499,680 bars)
+  … cta_50_200@3m (166,560 bars)
+  … cta_50_200@5m (99,936 bars)
+  … cta_50_200@15m (33,312 bars)
+  … tsmom@1m (499,680 bars)
+  … tsmom@3m (166,560 bars)
+  … tsmom@5m (99,936 bars)
+  ✓ GATE tsmom        5m  RR=2.4 n=579 E[R]=0.116 90dOOS=0.228
+  … tsmom@15m (33,312 bars)
+  … roc_20@1m (499,680 bars)
+  … roc_20@3m (166,560 bars)
+  … roc_20@5m (99,936 bars)
+  … roc_20@15m (33,312 bars)
+  … roc_60@1m (499,680 bars)
+  … roc_60@3m (166,560 bars)
+  … roc_60@5m (99,936 bars)
+  … roc_60@15m (33,312 bars)
+  … roc_120@1m (499,680 bars)
+  … roc_120@3m (166,560 bars)
+  … roc_120@5m (99,936 bars)
+  … roc_120@15m (33,312 bars)
+  … bb_1.5@1m (499,680 bars)
+  ✓ GATE bb_1.5       1m  RR=4.0 n=8320 E[R]=0.072 90dOOS=0.143
+  … bb_1.5@3m (166,560 bars)
+  … bb_1.5@5m (99,936 bars)
+  … bb_1.5@15m (33,312 bars)
+  … bb_2@1m (499,680 bars)
+  … bb_2@3m (166,560 bars)
+  … bb_2@5m (99,936 bars)
+  … bb_2@15m (33,312 bars)
+  … bb_2.5@1m (499,680 bars)
+  … bb_2.5@3m (166,560 bars)
+  … bb_2.5@5m (99,936 bars)
+  … bb_2.5@15m (33,312 bars)
+  … z_20_2@1m (499,680 bars)
+  ✓ GATE z_20_2       1m  RR=2.4 n=12100 E[R]=0.055 90dOOS=0.051
+  … z_20_2@3m (166,560 bars)
+  … z_20_2@5m (99,936 bars)
+  … z_20_2@15m (33,312 bars)
+  … z_40_2@1m (499,680 bars)
+  … z_40_2@3m (166,560 bars)
+  … z_40_2@5m (99,936 bars)
+  ✓ GATE z_40_2       5m  RR=4.0 n=1609 E[R]=0.091 90dOOS=0.134
+  … z_40_2@15m (33,312 bars)
+  … rsi@1m (499,680 bars)
+  ✓ GATE rsi          1m  RR=2.0 n=13235 E[R]=0.042 90dOOS=0.035
+  … rsi@3m (166,560 bars)
+  … rsi@5m (99,936 bars)
+  ✓ GATE rsi          5m  RR=4.0 n=1812 E[R]=0.079 90dOOS=0.49
+  … rsi@15m (33,312 bars)
+  … atrbrk@1m (499,680 bars)
+  … atrbrk@3m (166,560 bars)
+  … atrbrk@5m (99,936 bars)
+  … atrbrk@15m (33,312 bars)
+  … volmom@1m (499,680 bars)
+  ✓ GATE volmom       1m  RR=4.0 n=7542 E[R]=0.045 90dOOS=0.139
+  … volmom@3m (166,560 bars)
+  … volmom@5m (99,936 bars)
+  … volmom@15m (33,312 bars)
+  ✓ MATH cta_10_40+hf0.55     5m RR=2.0 n=739 E[R]=0.064
+  ✓ MATH cta_10_40+hf0.55     5m RR=2.4 n=708 E[R]=0.143
+  ✓ MATH cta_10_40+hf0.55     5m RR=3.0 n=690 E[R]=0.119
+  ✓ MATH cta_10_40+hf0.55     5m RR=4.0 n=637 E[R]=0.224
+  ✓ MATH cta_10_40+hf0.50     5m RR=2.0 n=469 E[R]=0.075
+  ✓ MATH cta_10_40+hf0.50     5m RR=2.4 n=459 E[R]=0.119
+  ✓ MATH cta_10_40+hf0.50     5m RR=3.0 n=451 E[R]=0.135
+  ✓ MATH cta_10_40+hf0.50     5m RR=4.0 n=427 E[R]=0.136
+  ✓ MATH cta_10_40+hf0.45     5m RR=2.0 n=292 E[R]=0.068
+  ✓ MATH cta_10_40+hf0.45     5m RR=2.4 n=286 E[R]=0.129
+  ✓ MATH cta_10_40+hf0.45     5m RR=3.0 n=286 E[R]=0.175
+  ✓ MATH cta_10_40+hf0.45     5m RR=4.0 n=281 E[R]=0.192
+  ✓ MATH cta_10_40+hf0.45_e0. 5m RR=2.4 n=227 E[R]=0.078
+  ✓ MATH cta_10_40+hf0.45_e0. 5m RR=3.0 n=227 E[R]=0.11
+  ✓ MATH cta_10_40+e0.35      5m RR=4.0 n=894 E[R]=0.051
+  ✓ MATH tl+e0.35             15m RR=1.5 n=327 E[R]=0.154
+  ✓ MATH tl+e0.35             15m RR=3.0 n=297 E[R]=0.253
+  ✓ MATH tl+e0.35             15m RR=4.0 n=285 E[R]=0.211
+  ✓ MATH cta_12_26+hf0.55     5m RR=4.0 n=723 E[R]=0.113
+  ✓ MATH cta_12_26+hf0.45     5m RR=3.0 n=319 E[R]=0.053
+  ✓ MATH cta_12_26+hf0.50_e0. 5m RR=2.0 n=463 E[R]=0.069
+  ✓ MATH cta_12_26+hf0.50_e0. 5m RR=3.0 n=448 E[R]=0.054
+  ✓ MATH cta_12_26+hf0.50_e0. 5m RR=4.0 n=431 E[R]=0.102
+  ✓ MATH cta_12_26+hf0.45_e0. 5m RR=2.0 n=257 E[R]=0.062
+  ✓ MATH cta_12_26+hf0.45_e0. 5m RR=3.0 n=252 E[R]=0.143
+  ✓ MATH cta_12_26+hf0.45_e0. 5m RR=4.0 n=247 E[R]=0.255
+  ✓ MATH cta_20_50+hf0.55     5m RR=2.0 n=543 E[R]=0.077
+  ✓ MATH cta_20_50+hf0.55     5m RR=2.4 n=533 E[R]=0.078
+  ✓ MATH cta_20_50+hf0.55     5m RR=3.0 n=520 E[R]=0.069
+  ✓ MATH cta_20_50+hf0.55     5m RR=4.0 n=491 E[R]=0.11
+  ✓ MATH cta_20_50+hf0.50     5m RR=4.0 n=325 E[R]=0.077
+  ✓ MATH cta_20_50+hf0.45     5m RR=3.0 n=209 E[R]=0.091
+  ✓ MATH cta_20_50+hf0.45     5m RR=4.0 n=205 E[R]=0.098
+  ✓ MATH cta_20_50+e0.35      5m RR=4.0 n=606 E[R]=0.122
+  ✓ MATH cta_10_40+hf0.50     1m RR=4.0 n=2125 E[R]=0.08
+  ✓ MATH cta_10_40+hf0.45     1m RR=4.0 n=1146 E[R]=0.095
+  ✓ MATH cta_10_40+hf0.50_e0. 1m RR=2.4 n=1907 E[R]=0.055
+  ✓ MATH cta_10_40+hf0.50_e0. 1m RR=4.0 n=1812 E[R]=0.079
+  ✓ MATH cta_10_40+hf0.45_e0. 1m RR=2.4 n=968 E[R]=0.064
+  ✓ MATH tsmom+hf0.50         5m RR=2.4 n=257 E[R]=0.111
+  ✓ MATH tsmom+hf0.45         5m RR=1.5 n=154 E[R]=0.169
+  ✓ MATH tsmom+hf0.45         5m RR=2.4 n=146 E[R]=0.327
+  ✓ MATH tsmom+e0.35          5m RR=2.4 n=434 E[R]=0.159
+  ✓ MATH cta_5_20+hf0.55      15m RR=2.0 n=370 E[R]=0.054
+  ✓ MATH cta_5_20+hf0.55      15m RR=2.4 n=361 E[R]=0.064
+  ✓ MATH cta_5_20+hf0.50      15m RR=1.5 n=273 E[R]=0.053
+  ✓ MATH cta_5_20+hf0.50      15m RR=2.4 n=249 E[R]=0.106
+  ✓ MATH z_20_2+hf0.55        1m RR=4.0 n=5491 E[R]=0.058
+  ✓ MATH z_20_2+hf0.50        1m RR=3.0 n=3914 E[R]=0.053
+  ✓ MATH z_20_2+hf0.50        1m RR=4.0 n=3627 E[R]=0.097
+  ✓ MATH z_20_2+hf0.45        1m RR=2.4 n=2147 E[R]=0.067
+  ✓ MATH z_20_2+hf0.45        1m RR=3.0 n=2071 E[R]=0.097
+  ✓ MATH z_20_2+hf0.45        1m RR=4.0 n=1960 E[R]=0.14
+  ✓ MATH z_20_2+hf0.50_e0.25  1m RR=4.0 n=2959 E[R]=0.08
+  ✓ MATH z_20_2+hf0.45_e0.30  1m RR=4.0 n=1518 E[R]=0.094
+  ✓ MATH z_20_2+e0.35         1m RR=4.0 n=7323 E[R]=0.054
+
+##### DENSIFY round 1 (elapsed=7991s / 28800s) #####
+  ↑ USDCHF improved → bb_2+D1_hf0.58 RR=4.0 n=434 score=14.558
+
+##### DENSIFY round 2 (elapsed=8404s / 28800s) #####
+
+##### DENSIFY round 3 (elapsed=8814s / 28800s) #####
+
+##### DENSIFY round 4 (elapsed=9224s / 28800s) #####
+
+##### DENSIFY round 5 (elapsed=9637s / 28800s) #####
+
+##### DENSIFY round 6 (elapsed=10047s / 28800s) #####
+
+##### DENSIFY round 7 (elapsed=10458s / 28800s) #####
+
+##### DENSIFY round 8 (elapsed=10870s / 28800s) #####
+
+##### DENSIFY round 9 (elapsed=11279s / 28800s) #####
+
+##### DENSIFY round 10 (elapsed=11690s / 28800s) #####
+
+##### DENSIFY round 11 (elapsed=12103s / 28800s) #####
+
+##### DENSIFY round 12 (elapsed=12512s / 28800s) #####
+
+##### DENSIFY round 13 (elapsed=12923s / 28800s) #####
+
+##### DENSIFY round 14 (elapsed=13335s / 28800s) #####
+
+##### DENSIFY round 15 (elapsed=13750s / 28800s) #####
+
+##### DENSIFY round 16 (elapsed=14168s / 28800s) #####
+
+##### DENSIFY round 17 (elapsed=15788s / 28800s) #####
+
+##### DENSIFY round 18 (elapsed=16354s / 28800s) #####
+
+##### DENSIFY round 19 (elapsed=16819s / 28800s) #####
+
+##### DENSIFY round 20 (elapsed=17253s / 28800s) #####
+
+##### DENSIFY round 21 (elapsed=17663s / 28800s) #####
+
+##### DENSIFY round 22 (elapsed=18071s / 28800s) #####
+
+##### DENSIFY round 23 (elapsed=18475s / 28800s) #####
+
+##### DENSIFY round 24 (elapsed=18877s / 28800s) #####
+densify round cap
+
+Wrote /app/data/lab_desk_recovery_scalp_hunt.json
+Obsidian /app/data/ZenithRecovery/00_Recovery_Board.md
+Firm candidates: ['ETHUSD', 'BTCUSD', 'GOLD', 'NAS100', 'USDJPY', 'AUDUSD', 'USDCHF', 'UKOIL']
+Elapsed 19280.5s (5.36h)

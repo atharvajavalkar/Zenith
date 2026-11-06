@@ -1,0 +1,15 @@
+=== MATH INVENTION · LAST WEEK PAPER ===
+Risk $200.0/R · window=last 7d of local Dukascopy
+LIVE BRAINS NOT TOUCHED
+
+ETHUSD   Bimodality breakout    @3m RR=4.0 sl=1.8 n=1 W/L=0/1 WR=None E[R]=-1.0 pnl=$-200 [2026-07-16→2026-07-23]
+BTCUSD   Bimodality breakout    @3m RR=3.0 sl=1.5 n=2 W/L=0/2 WR=None E[R]=-1.0 pnl=$-400 [2026-07-16→2026-07-23]
+GOLD     Permutation-entropy order @5m RR=4.0 sl=1.2 n=5 W/L=1/4 WR=None E[R]=0.0 pnl=$0 [2026-07-16→2026-07-23]
+NAS100   Drift-diffusion SNR trend @3m RR=2.0 sl=1.8 n=9 W/L=2/7 WR=None E[R]=-0.333 pnl=$-600 [2026-07-16→2026-07-23]
+USDJPY   Kalman innov fade      @3m RR=2.0 sl=1.0 n=75 W/L=31/44 WR=None E[R]=0.24 pnl=$3,600 [2026-07-16→2026-07-23]
+AUDUSD   Kalman innov fade      @3m RR=2.0 sl=1.0 n=37 W/L=9/28 WR=None E[R]=-0.27 pnl=$-2,000 [2026-07-16→2026-07-23]
+USDCHF   Kalman innov fade      @3m RR=2.0 sl=1.0 n=38 W/L=15/23 WR=None E[R]=0.184 pnl=$1,400 [2026-07-16→2026-07-23]
+UKOIL    Kalman innov fade      @3m RR=4.0 sl=1.0 n=31 W/L=5/26 WR=None E[R]=-0.194 pnl=$-1,200 [2026-07-16→2026-07-23]
+
+DESK n=198 WR=31.8% E[R]=0.0152 pnl=$600
+Wrote /app/data/lab_math_invention_last_week.json

@@ -1,0 +1,203 @@
+{
+  "generated_at": "2026-08-05T06:34:04.825433+00:00",
+  "window": {
+    "start": "2025-08-04T00:00:00+00:00",
+    "end": "2026-08-04T00:00:00+00:00",
+    "days": 365
+  },
+  "risk_usd": 200.0,
+  "start_capital": 10000.0,
+  "peak_dd_protect_pct": 0.15,
+  "peak_dd_limit_usd": 1500.0,
+  "bank_target_pct": 1.0,
+  "harvest_pct": 0.5,
+  "wired": {
+    "GOLD": {
+      "strategy": "don_100",
+      "tf": "15m",
+      "rr": 4.0
+    },
+    "USDCHF": {
+      "strategy": "bb_2.5",
+      "tf": "1m",
+      "rr": 4.0
+    },
+    "USDJPY": {
+      "strategy": "bb_2.5",
+      "tf": "1m",
+      "rr": 4.0
+    },
+    "NAS100": {
+      "strategy": "volmom",
+      "tf": "15m",
+      "rr": 4.0
+    },
+    "UKOIL": {
+      "strategy": "cta_10_40",
+      "tf": "5m",
+      "rr": 4.0
+    },
+    "AUDUSD": {
+      "strategy": "bb_2",
+      "tf": "1m",
+      "rr": 4.0
+    },
+    "BTCUSD": {
+      "strategy": "bb_2.5",
+      "tf": "1m",
+      "rr": 2.4
+    },
+    "ETHUSD": {
+      "strategy": "bb_1.5",
+      "tf": "1m",
+      "rr": 4.0
+    }
+  },
+  "per_pair_raw": {
+    "GOLD": {
+      "strategy": "don_100",
+      "label": "Donchian 100",
+      "tf": "15m",
+      "rr": 4.0,
+      "raw": {
+        "n": 456,
+        "pnl": 17800.0,
+        "exp_r": 0.1952,
+        "win_rate": 23.9
+      }
+    },
+    "USDCHF": {
+      "strategy": "bb_2.5",
+      "label": "BB 2.5\u03c3",
+      "tf": "1m",
+      "rr": 4.0,
+      "raw": {
+        "n": 175,
+        "pnl": 25000.0,
+        "exp_r": 0.7143,
+        "win_rate": 34.3
+      }
+    },
+    "USDJPY": {
+      "strategy": "bb_2.5",
+      "label": "BB 2.5\u03c3",
+      "tf": "1m",
+      "rr": 4.0,
+      "raw": {
+        "n": 234,
+        "pnl": 28200.0,
+        "exp_r": 0.6026,
+        "win_rate": 32.1
+      }
+    },
+    "NAS100": {
+      "strategy": "volmom",
+      "label": "Vol-scaled mom",
+      "tf": "15m",
+      "rr": 4.0,
+      "raw": {
+        "n": 508,
+        "pnl": 26400.0,
+        "exp_r": 0.2598,
+        "win_rate": 25.2
+      }
+    },
+    "UKOIL": {
+      "strategy": "cta_10_40",
+      "label": "CTA 10/40",
+      "tf": "5m",
+      "rr": 4.0,
+      "raw": {
+        "n": 1069,
+        "pnl": 39200.0,
+        "exp_r": 0.1833,
+        "win_rate": 23.7
+      }
+    },
+    "AUDUSD": {
+      "strategy": "bb_2",
+      "label": "BB 2\u03c3",
+      "tf": "1m",
+      "rr": 4.0,
+      "raw": {
+        "n": 2076,
+        "pnl": 109800.0,
+        "exp_r": 0.2645,
+        "win_rate": 25.3
+      }
+    },
+    "BTCUSD": {
+      "strategy": "bb_2.5",
+      "label": "BB 2.5\u03c3",
+      "tf": "1m",
+      "rr": 2.4,
+      "raw": {
+        "n": 278,
+        "pnl": 23960.0,
+        "exp_r": 0.4309,
+        "win_rate": 42.1
+      }
+    },
+    "ETHUSD": {
+      "strategy": "bb_1.5",
+      "label": "BB 1.5\u03c3",
+      "tf": "1m",
+      "rr": 4.0,
+      "raw": {
+        "n": 13712,
+        "pnl": 452600.0,
+        "exp_r": 0.165,
+        "win_rate": 23.3
+      }
+    }
+  },
+  "current_brains_no_protect": {
+    "n": 18508,
+    "pnl": 722960.0,
+    "exp_r": 0.1953,
+    "win_rate": 24.1,
+    "note": "Same as Stage A A0 wired map (no equity protect)"
+  },
+  "with_peak_dd_protect": {
+    "n": 53,
+    "pnl": 3400.0,
+    "exp_r": 0.3208,
+    "win_rate": 26.4,
+    "taken": 53,
+    "blocked": 18455,
+    "raw": 18508,
+    "final_realized": 3400.0,
+    "final_peak": 5000.0,
+    "first_block": {
+      "at_trade_exit": "2025-08-04 23:09:00",
+      "symbol": "AUDUSD",
+      "reason": "Peak drawdown $1600 \u2265 15% of capital \u2014 pause entries to stop giveback",
+      "realized_pnl": 3400.0,
+      "peak_pnl": 5000.0,
+      "drawdown": 1600.0
+    },
+    "gate_mode_counts_on_candidates": {
+      "ok": 52,
+      "harvest": 1,
+      "protect": 18455
+    },
+    "fills_per_symbol": {
+      "ETHUSD": 44,
+      "AUDUSD": 8,
+      "UKOIL": 1
+    },
+    "raw_per_symbol": {
+      "GOLD": 456,
+      "USDCHF": 175,
+      "USDJPY": 234,
+      "NAS100": 508,
+      "UKOIL": 1069,
+      "AUDUSD": 2076,
+      "BTCUSD": 278,
+      "ETHUSD": 13712
+    }
+  },
+  "delta_pnl_protect_minus_baseline": -719560.0,
+  "verdict": "current_brains_no_protect",
+  "recommendation": "Keep peak-DD OFF for demo validation \u2014 protect cuts desk PnL vs current brains."
+}

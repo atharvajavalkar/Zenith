@@ -1,0 +1,50 @@
+=== ETHUSD noise-aware SL method · Dukascopy 1y · RESEARCH ===
+Live SYMBOL_ENTRY_BRAIN NOT changed.
+spread_px=$1.5 min_risk=3.0×spread ($4.5) · $200.0/R
+load ETHUSD 1m: 507,903 bars 2025-08-05→2026-07-23
+LIVE bb1.5/sl1.2 RR4: n=13653 pnl=$448,400 E[R]=0.1642 WR=23.3% risk$=3.616 fairP=11.7% edge=11.6pp SURVIVES
+M_bb1.5_sl1.2_rr4: n=3811 pnl=$31,800 E[R]=0.0417 WR=20.8% risk$=7.074 skip_thin=18360 FRAGILE WF=2/4 MC=89.4%
+M_bb1.5_sl2_rr4: n=4181 pnl=$82,800 E[R]=0.099 WR=22.0% risk$=9.254 skip_thin=11897 SURVIVES WF=4/4 MC=99.9%
+M_bb1.5_sl2.5_rr4: n=3383 pnl=$51,400 E[R]=0.076 WR=21.5% risk$=11.301 skip_thin=9079 SURVIVES WF=3/4 MC=98.7%
+M_bb1.5_sl3_rr4: n=2613 pnl=$11,400 E[R]=0.0218 WR=20.4% risk$=13.474 skip_thin=6910 FRAGILE WF=2/4 MC=70.2%
+M_bb2_sl1.2_rr4: n=993 pnl=$15,400 E[R]=0.0775 WR=21.6% risk$=7.01 skip_thin=3362 FRAGILE WF=2/4 MC=88.7%
+M_bb2_sl2_rr4: n=1694 pnl=$21,200 E[R]=0.0626 WR=21.3% risk$=8.827 skip_thin=2195 SURVIVES WF=4/4 MC=90.9%
+M_bb2_sl2.5_rr4: n=1783 pnl=$21,400 E[R]=0.06 WR=21.2% risk$=10.11 skip_thin=1668 SURVIVES WF=4/4 MC=88.7%
+M_bb2_sl3_rr4: n=1723 pnl=$6,400 E[R]=0.0186 WR=20.4% risk$=11.52 skip_thin=1262 FRAGILE WF=3/4 MC=66.0%
+M_bb2.5_sl1.2_rr4: n=57 pnl=$-1,400 E[R]=-0.1228 WR=17.5% risk$=6.342 skip_thin=220 FRAGILE WF=3/4 MC=29.3%
+M_bb2.5_sl2_rr4: n=117 pnl=$-2,400 E[R]=-0.1026 WR=17.9% risk$=8.165 skip_thin=159 FRAGILE WF=3/4 MC=28.0%
+M_bb2.5_sl2.5_rr4: n=146 pnl=$-3,200 E[R]=-0.1096 WR=17.8% risk$=9.136 skip_thin=129 DEAD WF=2/4 MC=22.0%
+M_bb2.5_sl3_rr4: n=172 pnl=$-3,400 E[R]=-0.0988 WR=18.0% risk$=9.942 skip_thin=97 DEAD WF=2/4 MC=23.1%
+M_bb3_sl1.2_rr4: n=1 pnl=$-200 E[R]=-1.0 WR=0.0% risk$=4.817 skip_thin=15 DEAD WF=0/4 MC=None%
+M_bb3_sl2_rr4: n=1 pnl=$-200 E[R]=-1.0 WR=0.0% risk$=8.029 skip_thin=15 DEAD WF=0/4 MC=None%
+M_bb3_sl2.5_rr4: n=2 pnl=$600 E[R]=1.5 WR=50.0% risk$=7.384 skip_thin=14 FRAGILE WF=0/4 MC=None%
+M_bb3_sl3_rr4: n=2 pnl=$600 E[R]=1.5 WR=50.0% risk$=8.861 skip_thin=14 FRAGILE WF=0/4 MC=None%
+M_bb3_sl2.5_rr2: n=2 pnl=$200 E[R]=0.5 WR=50.0% FRAGILE
+M_bb3_sl2.5_rr2.4: n=2 pnl=$280 E[R]=0.7 WR=50.0% FRAGILE
+M_bb3_sl2.5_rr3: n=2 pnl=$400 E[R]=1.0 WR=50.0% FRAGILE
+M_bb3_sl3_rr2: n=2 pnl=$200 E[R]=0.5 WR=50.0% FRAGILE
+M_bb3_sl3_rr2.4: n=2 pnl=$280 E[R]=0.7 WR=50.0% FRAGILE
+M_bb3_sl3_rr3: n=2 pnl=$400 E[R]=1.0 WR=50.0% FRAGILE
+M_bb1.5_sl2_rr2: n=6646 pnl=$78,400 E[R]=0.059 WR=35.3% SURVIVES
+M_bb1.5_sl2_rr2.4: n=5936 pnl=$74,880 E[R]=0.0631 WR=31.3% SURVIVES
+M_bb1.5_sl2_rr3: n=5167 pnl=$78,600 E[R]=0.0761 WR=26.9% SURVIVES
+
+### SUMMARY
+LIVE: n=13653 pnl=$448,400 E[R]=0.1642 SURVIVES
+BEST: LIVE_bb_1.5_sl1.2 n=13653 pnl=$448,400 E[R]=0.1642 SURVIVES
+BEST SURVIVES: LIVE_bb_1.5_sl1.2 pnl=$448,400 E[R]=0.1642
+PREFERRED bb2.5/sl2.5/RR4: n=146 pnl=$-3,200 E[R]=-0.1096 WR=17.8% DEAD Δ vs live $-451,600
+verdicts: SURVIVES=8 FRAGILE=14 DEAD=4
+TOP10:
+  LIVE_bb_1.5_sl1.2: pnl=$448,400 E[R]=0.1642 WR=23.3% n=13653 risk$=3.616 edge=11.6pp SURVIVES
+  M_bb1.5_sl2_rr4: pnl=$82,800 E[R]=0.099 WR=22.0% n=4181 risk$=9.254 edge=5.2pp SURVIVES
+  M_bb1.5_sl2_rr3: pnl=$78,600 E[R]=0.0761 WR=26.9% n=5167 risk$=9.06 edge=6.0pp SURVIVES
+  M_bb1.5_sl2.5_rr4: pnl=$51,400 E[R]=0.076 WR=21.5% n=3383 risk$=11.301 edge=4.2pp SURVIVES
+  M_bb1.5_sl2_rr2.4: pnl=$74,880 E[R]=0.0631 WR=31.3% n=5936 risk$=8.89 edge=6.8pp SURVIVES
+  M_bb2_sl2_rr4: pnl=$21,200 E[R]=0.0626 WR=21.3% n=1694 risk$=8.827 edge=4.7pp SURVIVES
+  M_bb2_sl2.5_rr4: pnl=$21,400 E[R]=0.06 WR=21.2% n=1783 risk$=10.11 edge=4.2pp SURVIVES
+  M_bb1.5_sl2_rr2: pnl=$78,400 E[R]=0.059 WR=35.3% n=6646 risk$=8.811 edge=7.6pp SURVIVES
+  M_bb3_sl2.5_rr4: pnl=$600 E[R]=1.5 WR=50.0% n=2 risk$=7.384 edge=34.1pp FRAGILE
+  M_bb3_sl3_rr4: pnl=$600 E[R]=1.5 WR=50.0% n=2 risk$=8.861 edge=33.4pp FRAGILE
+
+Wrote /app/data/lab_eth_noise_sl_method_bt.json in 149.8s

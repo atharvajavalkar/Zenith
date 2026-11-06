@@ -1,0 +1,1114 @@
+{
+  "generated_at": "2026-07-26T10:37:16.606324+00:00",
+  "mode": "live_wired_1m_capital_variations",
+  "source": "dukascopy_local_hist",
+  "days": 30,
+  "brains": {
+    "GOLD": "don_100",
+    "USDCHF": "bb_2.5",
+    "USDJPY": "bb_2.5",
+    "NAS100": "don_100",
+    "UKOIL": "roc_120",
+    "AUDUSD": "bb_2.5",
+    "BTCUSD": "cta_50_200",
+    "ETHUSD": "ema_tight"
+  },
+  "scan_tfs": {
+    "GOLD": "1h",
+    "USDCHF": "5m",
+    "USDJPY": "5m",
+    "NAS100": "1h",
+    "UKOIL": "15m",
+    "AUDUSD": "5m",
+    "BTCUSD": "1h",
+    "ETHUSD": "1h"
+  },
+  "variants": [
+    {
+      "label": "10k_x1",
+      "capital": 10000.0,
+      "risk_usd": 200.0,
+      "days": 30,
+      "start": "2026-06-25",
+      "end": "2026-07-25",
+      "results": [
+        {
+          "symbol": "GOLD",
+          "brain": "don_100",
+          "rr": 4.0,
+          "tf": "1h",
+          "capital": 10000.0,
+          "risk_usd": 200.0,
+          "bars": 696,
+          "start": "2026-06-25",
+          "end": "2026-07-23",
+          "entries": 20,
+          "full": {
+            "n": 8,
+            "wins": 1,
+            "losses": 7,
+            "wr": 12.5,
+            "pnl": -600.0,
+            "avg_r": -0.375,
+            "exp_r": -0.375,
+            "max_dd": -1200.0,
+            "pf": 0.57
+          },
+          "oos": {
+            "n": 3,
+            "wins": 1,
+            "losses": 2,
+            "wr": 33.3,
+            "pnl": 400.0,
+            "avg_r": 0.667,
+            "exp_r": 0.667,
+            "max_dd": -200.0,
+            "pf": 2.0
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": -3.0,
+            "p5_R": -8.0,
+            "p95_R": 7.0,
+            "mean_R": -3.12,
+            "prob_profit": 26.1,
+            "prob_ruin_10R": 0.0,
+            "median_maxDD_R": -6.0,
+            "p5_maxDD_R": -7.0
+          },
+          "verdict": "DEAD",
+          "wf_green": 2,
+          "wf_n": 4,
+          "torture": {
+            "spread_0.15R": {
+              "n": 8,
+              "pnl": -840.0,
+              "exp_r": -0.525
+            },
+            "skip_30pct": {
+              "n": 5,
+              "pnl": -1000.0,
+              "exp_r": -1.0
+            }
+          }
+        },
+        {
+          "symbol": "USDCHF",
+          "brain": "bb_2.5",
+          "rr": 4.0,
+          "tf": "5m",
+          "capital": 10000.0,
+          "risk_usd": 200.0,
+          "bars": 8352,
+          "start": "2026-06-25",
+          "end": "2026-07-23",
+          "entries": 3,
+          "full": {
+            "n": 3,
+            "wins": 1,
+            "losses": 2,
+            "wr": 33.3,
+            "pnl": 400.0,
+            "avg_r": 0.667,
+            "exp_r": 0.667,
+            "max_dd": -200.0,
+            "pf": 2.0
+          },
+          "oos": {
+            "n": 0,
+            "wins": 0,
+            "losses": 0,
+            "wr": 0.0,
+            "pnl": 0.0,
+            "avg_r": 0.0,
+            "exp_r": 0.0,
+            "max_dd": 0.0,
+            "pf": 0.0
+          },
+          "monte_carlo": {
+            "paths": 0,
+            "note": "too_few_trades"
+          },
+          "verdict": "FRAGILE",
+          "wf_green": 1,
+          "wf_n": 4,
+          "torture": {
+            "spread_0.15R": {
+              "n": 3,
+              "pnl": 310.0,
+              "exp_r": 0.517
+            },
+            "skip_30pct": {
+              "n": 2,
+              "pnl": -400.0,
+              "exp_r": -1.0
+            }
+          }
+        },
+        {
+          "symbol": "USDJPY",
+          "brain": "bb_2.5",
+          "rr": 4.0,
+          "tf": "5m",
+          "capital": 10000.0,
+          "risk_usd": 200.0,
+          "bars": 8352,
+          "start": "2026-06-25",
+          "end": "2026-07-23",
+          "entries": 8,
+          "full": {
+            "n": 8,
+            "wins": 2,
+            "losses": 6,
+            "wr": 25.0,
+            "pnl": 400.0,
+            "avg_r": 0.25,
+            "exp_r": 0.25,
+            "max_dd": -1200.0,
+            "pf": 1.33
+          },
+          "oos": {
+            "n": 2,
+            "wins": 2,
+            "losses": 0,
+            "wr": 100.0,
+            "pnl": 1600.0,
+            "avg_r": 4.0,
+            "exp_r": 4.0,
+            "max_dd": 0.0,
+            "pf": 1600000000000.0
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": 2.0,
+            "p5_R": -8.0,
+            "p95_R": 12.0,
+            "mean_R": 1.78,
+            "prob_profit": 62.2,
+            "prob_ruin_10R": 0.0,
+            "median_maxDD_R": -4.0,
+            "p5_maxDD_R": -7.0
+          },
+          "verdict": "FRAGILE",
+          "wf_green": 1,
+          "wf_n": 4,
+          "torture": {
+            "spread_0.15R": {
+              "n": 8,
+              "pnl": 160.0,
+              "exp_r": 0.1
+            },
+            "skip_30pct": {
+              "n": 5,
+              "pnl": 0.0,
+              "exp_r": 0.0
+            }
+          }
+        },
+        {
+          "symbol": "NAS100",
+          "brain": "don_100",
+          "rr": 4.0,
+          "tf": "1h",
+          "capital": 10000.0,
+          "risk_usd": 200.0,
+          "bars": 696,
+          "start": "2026-06-25",
+          "end": "2026-07-23",
+          "entries": 21,
+          "full": {
+            "n": 4,
+            "wins": 2,
+            "losses": 2,
+            "wr": 50.0,
+            "pnl": 1200.0,
+            "avg_r": 1.5,
+            "exp_r": 1.5,
+            "max_dd": -200.0,
+            "pf": 4.0
+          },
+          "oos": {
+            "n": 2,
+            "wins": 1,
+            "losses": 1,
+            "wr": 50.0,
+            "pnl": 600.0,
+            "avg_r": 1.5,
+            "exp_r": 1.5,
+            "max_dd": -200.0,
+            "pf": 4.0
+          },
+          "monte_carlo": {
+            "paths": 0,
+            "note": "too_few_trades"
+          },
+          "verdict": "FRAGILE",
+          "wf_green": 2,
+          "wf_n": 4,
+          "torture": {
+            "spread_0.15R": {
+              "n": 4,
+              "pnl": 1080.0,
+              "exp_r": 1.35
+            },
+            "skip_30pct": {
+              "n": 2,
+              "pnl": 600.0,
+              "exp_r": 1.5
+            }
+          }
+        },
+        {
+          "symbol": "UKOIL",
+          "brain": "roc_120",
+          "rr": 4.0,
+          "tf": "15m",
+          "capital": 10000.0,
+          "risk_usd": 200.0,
+          "bars": 2784,
+          "start": "2026-06-25",
+          "end": "2026-07-23",
+          "entries": 3,
+          "full": {
+            "n": 3,
+            "wins": 1,
+            "losses": 2,
+            "wr": 33.3,
+            "pnl": 400.0,
+            "avg_r": 0.667,
+            "exp_r": 0.667,
+            "max_dd": -400.0,
+            "pf": 2.0
+          },
+          "oos": {
+            "n": 2,
+            "wins": 0,
+            "losses": 2,
+            "wr": 0.0,
+            "pnl": -400.0,
+            "avg_r": -1.0,
+            "exp_r": -1.0,
+            "max_dd": -400.0,
+            "pf": 0.0
+          },
+          "monte_carlo": {
+            "paths": 0,
+            "note": "too_few_trades"
+          },
+          "verdict": "FRAGILE",
+          "wf_green": 1,
+          "wf_n": 4,
+          "torture": {
+            "spread_0.15R": {
+              "n": 3,
+              "pnl": 310.0,
+              "exp_r": 0.517
+            },
+            "skip_30pct": {
+              "n": 2,
+              "pnl": 600.0,
+              "exp_r": 1.5
+            }
+          }
+        },
+        {
+          "symbol": "AUDUSD",
+          "brain": "bb_2.5",
+          "rr": 4.0,
+          "tf": "5m",
+          "capital": 10000.0,
+          "risk_usd": 200.0,
+          "bars": 8352,
+          "start": "2026-06-25",
+          "end": "2026-07-23",
+          "entries": 6,
+          "full": {
+            "n": 6,
+            "wins": 1,
+            "losses": 5,
+            "wr": 16.7,
+            "pnl": -200.0,
+            "avg_r": -0.167,
+            "exp_r": -0.167,
+            "max_dd": -1000.0,
+            "pf": 0.8
+          },
+          "oos": {
+            "n": 1,
+            "wins": 0,
+            "losses": 1,
+            "wr": 0.0,
+            "pnl": -200.0,
+            "avg_r": -1.0,
+            "exp_r": -1.0,
+            "max_dd": -200.0,
+            "pf": 0.0
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": -1.0,
+            "p5_R": -6.0,
+            "p95_R": 9.0,
+            "mean_R": -0.978,
+            "prob_profit": 26.9,
+            "prob_ruin_10R": 0.0,
+            "median_maxDD_R": -4.0,
+            "p5_maxDD_R": -5.0
+          },
+          "verdict": "DEAD",
+          "wf_green": 0,
+          "wf_n": 4,
+          "torture": {
+            "spread_0.15R": {
+              "n": 6,
+              "pnl": -380.0,
+              "exp_r": -0.317
+            },
+            "skip_30pct": {
+              "n": 4,
+              "pnl": 200.0,
+              "exp_r": 0.25
+            }
+          }
+        },
+        {
+          "symbol": "BTCUSD",
+          "brain": "cta_50_200",
+          "rr": 4.0,
+          "tf": "1h",
+          "capital": 10000.0,
+          "risk_usd": 200.0,
+          "bars": 696,
+          "start": "2026-06-25",
+          "end": "2026-07-23",
+          "entries": 2,
+          "full": {
+            "n": 2,
+            "wins": 0,
+            "losses": 2,
+            "wr": 0.0,
+            "pnl": -400.0,
+            "avg_r": -1.0,
+            "exp_r": -1.0,
+            "max_dd": -400.0,
+            "pf": 0.0
+          },
+          "oos": {
+            "n": 0,
+            "wins": 0,
+            "losses": 0,
+            "wr": 0.0,
+            "pnl": 0.0,
+            "avg_r": 0.0,
+            "exp_r": 0.0,
+            "max_dd": 0.0,
+            "pf": 0.0
+          },
+          "monte_carlo": {
+            "paths": 0,
+            "note": "too_few_trades"
+          },
+          "verdict": "DEAD",
+          "wf_green": 0,
+          "wf_n": 4,
+          "torture": {
+            "spread_0.15R": {
+              "n": 2,
+              "pnl": -460.0,
+              "exp_r": -1.15
+            },
+            "skip_30pct": {
+              "n": 1,
+              "pnl": -200.0,
+              "exp_r": -1.0
+            }
+          }
+        },
+        {
+          "symbol": "ETHUSD",
+          "brain": "ema_tight",
+          "rr": 4.0,
+          "tf": "1h",
+          "capital": 10000.0,
+          "risk_usd": 200.0,
+          "bars": 696,
+          "start": "2026-06-25",
+          "end": "2026-07-23",
+          "entries": 1,
+          "full": {
+            "n": 1,
+            "wins": 0,
+            "losses": 1,
+            "wr": 0.0,
+            "pnl": -200.0,
+            "avg_r": -1.0,
+            "exp_r": -1.0,
+            "max_dd": -200.0,
+            "pf": 0.0
+          },
+          "oos": {
+            "n": 0,
+            "wins": 0,
+            "losses": 0,
+            "wr": 0.0,
+            "pnl": 0.0,
+            "avg_r": 0.0,
+            "exp_r": 0.0,
+            "max_dd": 0.0,
+            "pf": 0.0
+          },
+          "monte_carlo": {
+            "paths": 0,
+            "note": "too_few_trades"
+          },
+          "verdict": "DEAD",
+          "wf_green": 0,
+          "wf_n": 4,
+          "torture": {
+            "spread_0.15R": {
+              "n": 1,
+              "pnl": -230.0,
+              "exp_r": -1.15
+            },
+            "skip_30pct": {
+              "n": 1,
+              "pnl": -200.0,
+              "exp_r": -1.0
+            }
+          }
+        }
+      ],
+      "desk": {
+        "survives": 0,
+        "fragile": 4,
+        "dead": 4,
+        "full_pnl": 1000.0,
+        "oos_pnl": 2000.0,
+        "mean_oos_exp_r": 0.5209,
+        "fit_score_1_to_10": 1.9,
+        "fits": false
+      }
+    },
+    {
+      "label": "20k_x2",
+      "capital": 20000.0,
+      "risk_usd": 400.0,
+      "days": 30,
+      "start": "2026-06-25",
+      "end": "2026-07-25",
+      "results": [
+        {
+          "symbol": "GOLD",
+          "brain": "don_100",
+          "rr": 4.0,
+          "tf": "1h",
+          "capital": 20000.0,
+          "risk_usd": 400.0,
+          "bars": 696,
+          "start": "2026-06-25",
+          "end": "2026-07-23",
+          "entries": 20,
+          "full": {
+            "n": 8,
+            "wins": 1,
+            "losses": 7,
+            "wr": 12.5,
+            "pnl": -1200.0,
+            "avg_r": -0.375,
+            "exp_r": -0.375,
+            "max_dd": -2400.0,
+            "pf": 0.57
+          },
+          "oos": {
+            "n": 3,
+            "wins": 1,
+            "losses": 2,
+            "wr": 33.3,
+            "pnl": 800.0,
+            "avg_r": 0.667,
+            "exp_r": 0.667,
+            "max_dd": -400.0,
+            "pf": 2.0
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": -3.0,
+            "p5_R": -8.0,
+            "p95_R": 7.0,
+            "mean_R": -3.12,
+            "prob_profit": 26.1,
+            "prob_ruin_10R": 0.0,
+            "median_maxDD_R": -6.0,
+            "p5_maxDD_R": -7.0
+          },
+          "verdict": "DEAD",
+          "wf_green": 2,
+          "wf_n": 4,
+          "torture": {
+            "spread_0.15R": {
+              "n": 8,
+              "pnl": -1680.0,
+              "exp_r": -0.525
+            },
+            "skip_30pct": {
+              "n": 5,
+              "pnl": -2000.0,
+              "exp_r": -1.0
+            }
+          }
+        },
+        {
+          "symbol": "USDCHF",
+          "brain": "bb_2.5",
+          "rr": 4.0,
+          "tf": "5m",
+          "capital": 20000.0,
+          "risk_usd": 400.0,
+          "bars": 8352,
+          "start": "2026-06-25",
+          "end": "2026-07-23",
+          "entries": 3,
+          "full": {
+            "n": 3,
+            "wins": 1,
+            "losses": 2,
+            "wr": 33.3,
+            "pnl": 800.0,
+            "avg_r": 0.667,
+            "exp_r": 0.667,
+            "max_dd": -400.0,
+            "pf": 2.0
+          },
+          "oos": {
+            "n": 0,
+            "wins": 0,
+            "losses": 0,
+            "wr": 0.0,
+            "pnl": 0.0,
+            "avg_r": 0.0,
+            "exp_r": 0.0,
+            "max_dd": 0.0,
+            "pf": 0.0
+          },
+          "monte_carlo": {
+            "paths": 0,
+            "note": "too_few_trades"
+          },
+          "verdict": "FRAGILE",
+          "wf_green": 1,
+          "wf_n": 4,
+          "torture": {
+            "spread_0.15R": {
+              "n": 3,
+              "pnl": 620.0,
+              "exp_r": 0.517
+            },
+            "skip_30pct": {
+              "n": 2,
+              "pnl": -800.0,
+              "exp_r": -1.0
+            }
+          }
+        },
+        {
+          "symbol": "USDJPY",
+          "brain": "bb_2.5",
+          "rr": 4.0,
+          "tf": "5m",
+          "capital": 20000.0,
+          "risk_usd": 400.0,
+          "bars": 8352,
+          "start": "2026-06-25",
+          "end": "2026-07-23",
+          "entries": 8,
+          "full": {
+            "n": 8,
+            "wins": 2,
+            "losses": 6,
+            "wr": 25.0,
+            "pnl": 800.0,
+            "avg_r": 0.25,
+            "exp_r": 0.25,
+            "max_dd": -2400.0,
+            "pf": 1.33
+          },
+          "oos": {
+            "n": 2,
+            "wins": 2,
+            "losses": 0,
+            "wr": 100.0,
+            "pnl": 3200.0,
+            "avg_r": 4.0,
+            "exp_r": 4.0,
+            "max_dd": 0.0,
+            "pf": 3200000000000.0
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": 2.0,
+            "p5_R": -8.0,
+            "p95_R": 12.0,
+            "mean_R": 1.78,
+            "prob_profit": 62.2,
+            "prob_ruin_10R": 0.0,
+            "median_maxDD_R": -4.0,
+            "p5_maxDD_R": -7.0
+          },
+          "verdict": "FRAGILE",
+          "wf_green": 1,
+          "wf_n": 4,
+          "torture": {
+            "spread_0.15R": {
+              "n": 8,
+              "pnl": 320.0,
+              "exp_r": 0.1
+            },
+            "skip_30pct": {
+              "n": 5,
+              "pnl": 0.0,
+              "exp_r": 0.0
+            }
+          }
+        },
+        {
+          "symbol": "NAS100",
+          "brain": "don_100",
+          "rr": 4.0,
+          "tf": "1h",
+          "capital": 20000.0,
+          "risk_usd": 400.0,
+          "bars": 696,
+          "start": "2026-06-25",
+          "end": "2026-07-23",
+          "entries": 21,
+          "full": {
+            "n": 4,
+            "wins": 2,
+            "losses": 2,
+            "wr": 50.0,
+            "pnl": 2400.0,
+            "avg_r": 1.5,
+            "exp_r": 1.5,
+            "max_dd": -400.0,
+            "pf": 4.0
+          },
+          "oos": {
+            "n": 2,
+            "wins": 1,
+            "losses": 1,
+            "wr": 50.0,
+            "pnl": 1200.0,
+            "avg_r": 1.5,
+            "exp_r": 1.5,
+            "max_dd": -400.0,
+            "pf": 4.0
+          },
+          "monte_carlo": {
+            "paths": 0,
+            "note": "too_few_trades"
+          },
+          "verdict": "FRAGILE",
+          "wf_green": 2,
+          "wf_n": 4,
+          "torture": {
+            "spread_0.15R": {
+              "n": 4,
+              "pnl": 2160.0,
+              "exp_r": 1.35
+            },
+            "skip_30pct": {
+              "n": 2,
+              "pnl": 1200.0,
+              "exp_r": 1.5
+            }
+          }
+        },
+        {
+          "symbol": "UKOIL",
+          "brain": "roc_120",
+          "rr": 4.0,
+          "tf": "15m",
+          "capital": 20000.0,
+          "risk_usd": 400.0,
+          "bars": 2784,
+          "start": "2026-06-25",
+          "end": "2026-07-23",
+          "entries": 3,
+          "full": {
+            "n": 3,
+            "wins": 1,
+            "losses": 2,
+            "wr": 33.3,
+            "pnl": 800.0,
+            "avg_r": 0.667,
+            "exp_r": 0.667,
+            "max_dd": -800.0,
+            "pf": 2.0
+          },
+          "oos": {
+            "n": 2,
+            "wins": 0,
+            "losses": 2,
+            "wr": 0.0,
+            "pnl": -800.0,
+            "avg_r": -1.0,
+            "exp_r": -1.0,
+            "max_dd": -800.0,
+            "pf": 0.0
+          },
+          "monte_carlo": {
+            "paths": 0,
+            "note": "too_few_trades"
+          },
+          "verdict": "FRAGILE",
+          "wf_green": 1,
+          "wf_n": 4,
+          "torture": {
+            "spread_0.15R": {
+              "n": 3,
+              "pnl": 620.0,
+              "exp_r": 0.517
+            },
+            "skip_30pct": {
+              "n": 2,
+              "pnl": 1200.0,
+              "exp_r": 1.5
+            }
+          }
+        },
+        {
+          "symbol": "AUDUSD",
+          "brain": "bb_2.5",
+          "rr": 4.0,
+          "tf": "5m",
+          "capital": 20000.0,
+          "risk_usd": 400.0,
+          "bars": 8352,
+          "start": "2026-06-25",
+          "end": "2026-07-23",
+          "entries": 6,
+          "full": {
+            "n": 6,
+            "wins": 1,
+            "losses": 5,
+            "wr": 16.7,
+            "pnl": -400.0,
+            "avg_r": -0.167,
+            "exp_r": -0.167,
+            "max_dd": -2000.0,
+            "pf": 0.8
+          },
+          "oos": {
+            "n": 1,
+            "wins": 0,
+            "losses": 1,
+            "wr": 0.0,
+            "pnl": -400.0,
+            "avg_r": -1.0,
+            "exp_r": -1.0,
+            "max_dd": -400.0,
+            "pf": 0.0
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": -1.0,
+            "p5_R": -6.0,
+            "p95_R": 9.0,
+            "mean_R": -0.978,
+            "prob_profit": 26.9,
+            "prob_ruin_10R": 0.0,
+            "median_maxDD_R": -4.0,
+            "p5_maxDD_R": -5.0
+          },
+          "verdict": "DEAD",
+          "wf_green": 0,
+          "wf_n": 4,
+          "torture": {
+            "spread_0.15R": {
+              "n": 6,
+              "pnl": -760.0,
+              "exp_r": -0.317
+            },
+            "skip_30pct": {
+              "n": 4,
+              "pnl": 400.0,
+              "exp_r": 0.25
+            }
+          }
+        },
+        {
+          "symbol": "BTCUSD",
+          "brain": "cta_50_200",
+          "rr": 4.0,
+          "tf": "1h",
+          "capital": 20000.0,
+          "risk_usd": 400.0,
+          "bars": 696,
+          "start": "2026-06-25",
+          "end": "2026-07-23",
+          "entries": 2,
+          "full": {
+            "n": 2,
+            "wins": 0,
+            "losses": 2,
+            "wr": 0.0,
+            "pnl": -800.0,
+            "avg_r": -1.0,
+            "exp_r": -1.0,
+            "max_dd": -800.0,
+            "pf": 0.0
+          },
+          "oos": {
+            "n": 0,
+            "wins": 0,
+            "losses": 0,
+            "wr": 0.0,
+            "pnl": 0.0,
+            "avg_r": 0.0,
+            "exp_r": 0.0,
+            "max_dd": 0.0,
+            "pf": 0.0
+          },
+          "monte_carlo": {
+            "paths": 0,
+            "note": "too_few_trades"
+          },
+          "verdict": "DEAD",
+          "wf_green": 0,
+          "wf_n": 4,
+          "torture": {
+            "spread_0.15R": {
+              "n": 2,
+              "pnl": -920.0,
+              "exp_r": -1.15
+            },
+            "skip_30pct": {
+              "n": 1,
+              "pnl": -400.0,
+              "exp_r": -1.0
+            }
+          }
+        },
+        {
+          "symbol": "ETHUSD",
+          "brain": "ema_tight",
+          "rr": 4.0,
+          "tf": "1h",
+          "capital": 20000.0,
+          "risk_usd": 400.0,
+          "bars": 696,
+          "start": "2026-06-25",
+          "end": "2026-07-23",
+          "entries": 1,
+          "full": {
+            "n": 1,
+            "wins": 0,
+            "losses": 1,
+            "wr": 0.0,
+            "pnl": -400.0,
+            "avg_r": -1.0,
+            "exp_r": -1.0,
+            "max_dd": -400.0,
+            "pf": 0.0
+          },
+          "oos": {
+            "n": 0,
+            "wins": 0,
+            "losses": 0,
+            "wr": 0.0,
+            "pnl": 0.0,
+            "avg_r": 0.0,
+            "exp_r": 0.0,
+            "max_dd": 0.0,
+            "pf": 0.0
+          },
+          "monte_carlo": {
+            "paths": 0,
+            "note": "too_few_trades"
+          },
+          "verdict": "DEAD",
+          "wf_green": 0,
+          "wf_n": 4,
+          "torture": {
+            "spread_0.15R": {
+              "n": 1,
+              "pnl": -460.0,
+              "exp_r": -1.15
+            },
+            "skip_30pct": {
+              "n": 1,
+              "pnl": -400.0,
+              "exp_r": -1.0
+            }
+          }
+        }
+      ],
+      "desk": {
+        "survives": 0,
+        "fragile": 4,
+        "dead": 4,
+        "full_pnl": 2000.0,
+        "oos_pnl": 4000.0,
+        "mean_oos_exp_r": 0.5209,
+        "fit_score_1_to_10": 1.9,
+        "fits": false
+      }
+    }
+  ],
+  "by_symbol": {
+    "GOLD": {
+      "symbol": "GOLD",
+      "brain": "don_100",
+      "tf": "1h",
+      "10k_x1": {
+        "n": 8,
+        "pnl": -600.0,
+        "wr": 12.5,
+        "exp_r": -0.375,
+        "verdict": "DEAD"
+      },
+      "20k_x2": {
+        "n": 8,
+        "pnl": -1200.0,
+        "wr": 12.5,
+        "exp_r": -0.375,
+        "verdict": "DEAD"
+      }
+    },
+    "USDCHF": {
+      "symbol": "USDCHF",
+      "brain": "bb_2.5",
+      "tf": "5m",
+      "10k_x1": {
+        "n": 3,
+        "pnl": 400.0,
+        "wr": 33.3,
+        "exp_r": 0.667,
+        "verdict": "FRAGILE"
+      },
+      "20k_x2": {
+        "n": 3,
+        "pnl": 800.0,
+        "wr": 33.3,
+        "exp_r": 0.667,
+        "verdict": "FRAGILE"
+      }
+    },
+    "USDJPY": {
+      "symbol": "USDJPY",
+      "brain": "bb_2.5",
+      "tf": "5m",
+      "10k_x1": {
+        "n": 8,
+        "pnl": 400.0,
+        "wr": 25.0,
+        "exp_r": 0.25,
+        "verdict": "FRAGILE"
+      },
+      "20k_x2": {
+        "n": 8,
+        "pnl": 800.0,
+        "wr": 25.0,
+        "exp_r": 0.25,
+        "verdict": "FRAGILE"
+      }
+    },
+    "NAS100": {
+      "symbol": "NAS100",
+      "brain": "don_100",
+      "tf": "1h",
+      "10k_x1": {
+        "n": 4,
+        "pnl": 1200.0,
+        "wr": 50.0,
+        "exp_r": 1.5,
+        "verdict": "FRAGILE"
+      },
+      "20k_x2": {
+        "n": 4,
+        "pnl": 2400.0,
+        "wr": 50.0,
+        "exp_r": 1.5,
+        "verdict": "FRAGILE"
+      }
+    },
+    "UKOIL": {
+      "symbol": "UKOIL",
+      "brain": "roc_120",
+      "tf": "15m",
+      "10k_x1": {
+        "n": 3,
+        "pnl": 400.0,
+        "wr": 33.3,
+        "exp_r": 0.667,
+        "verdict": "FRAGILE"
+      },
+      "20k_x2": {
+        "n": 3,
+        "pnl": 800.0,
+        "wr": 33.3,
+        "exp_r": 0.667,
+        "verdict": "FRAGILE"
+      }
+    },
+    "AUDUSD": {
+      "symbol": "AUDUSD",
+      "brain": "bb_2.5",
+      "tf": "5m",
+      "10k_x1": {
+        "n": 6,
+        "pnl": -200.0,
+        "wr": 16.7,
+        "exp_r": -0.167,
+        "verdict": "DEAD"
+      },
+      "20k_x2": {
+        "n": 6,
+        "pnl": -400.0,
+        "wr": 16.7,
+        "exp_r": -0.167,
+        "verdict": "DEAD"
+      }
+    },
+    "BTCUSD": {
+      "symbol": "BTCUSD",
+      "brain": "cta_50_200",
+      "tf": "1h",
+      "10k_x1": {
+        "n": 2,
+        "pnl": -400.0,
+        "wr": 0.0,
+        "exp_r": -1.0,
+        "verdict": "DEAD"
+      },
+      "20k_x2": {
+        "n": 2,
+        "pnl": -800.0,
+        "wr": 0.0,
+        "exp_r": -1.0,
+        "verdict": "DEAD"
+      }
+    },
+    "ETHUSD": {
+      "symbol": "ETHUSD",
+      "brain": "ema_tight",
+      "tf": "1h",
+      "10k_x1": {
+        "n": 1,
+        "pnl": -200.0,
+        "wr": 0.0,
+        "exp_r": -1.0,
+        "verdict": "DEAD"
+      },
+      "20k_x2": {
+        "n": 1,
+        "pnl": -400.0,
+        "wr": 0.0,
+        "exp_r": -1.0,
+        "verdict": "DEAD"
+      }
+    }
+  },
+  "note": "Flat $/R sizing as lot proxy: $200/R @ $10k vs $400/R @ $20k. Same entries/exits; PnL scales ~2\u00d7. Not live dynamic-lot path.",
+  "elapsed_s": 73.6
+}

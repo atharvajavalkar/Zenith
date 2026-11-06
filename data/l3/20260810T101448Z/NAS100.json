@@ -1,0 +1,43 @@
+{
+  "zenith": "NAS100",
+  "map": {
+    "true_l3": false,
+    "primary": "xm_dom",
+    "product": "NAS100",
+    "databento": {
+      "dataset": "GLBX.MDP3",
+      "symbol": "NQ.c.0",
+      "schema": "mbo"
+    },
+    "tardis": null,
+    "note": "XM DOM now; CME NQ MBO via DATABENTO_API_KEY for true order chain"
+  },
+  "sources": {
+    "xm_dom": {
+      "ok": false,
+      "zenith": "NAS100",
+      "schema": "L2_AGG_BROKER_DOM",
+      "broker_tried": [
+        "US100Cash",
+        "NAS100",
+        "USTEC",
+        "US100"
+      ],
+      "error": "empty book / symbol unsupported on this XM account",
+      "fetched_at": "2026-08-10T10:16:06Z"
+    },
+    "databento": {
+      "ok": false,
+      "skipped": true,
+      "reason": "DATABENTO_API_KEY not set",
+      "would_fetch": {
+        "dataset": "GLBX.MDP3",
+        "symbol": "NQ.c.0",
+        "schema": "mbo"
+      }
+    }
+  },
+  "fetched_at": "2026-08-10T10:15:34Z",
+  "best_schema": null,
+  "best_source": null
+}

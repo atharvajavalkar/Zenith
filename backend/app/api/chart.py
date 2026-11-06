@@ -26,7 +26,10 @@ async def get_candles(
     if not bars:
         raise HTTPException(status_code=503, detail="Candle data not available yet")
 
+    status = await market_cache.get_status()
     return CandlesResponse(
         timeframe=tf_lower,
         candles=[CandleBar(**b) for b in bars],
+        data_source=status.get("data_source"),
+        symbol=status.get("symbol"),
     )

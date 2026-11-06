@@ -1,0 +1,79 @@
+=== Schwab daily tally · Dukascopy · RESEARCH (Nebula untouched) ===
+lookbacks=(7, 14, 21, 42) · size: ±4→100% ±2→50% else sit · $/200.0/R · horizons=['6m', '1y', '2y', '3y', '5y', 'full'] · book=['GOLD', 'BTCUSD', 'UKOIL', 'NAS100', 'AUDUSD', 'ETHUSD', 'USDJPY', 'USDCHF']
+started 2026-09-07T17:47:52.069535+00:00
+
+--- GOLD hist=(Timestamp('2016-07-23 00:00:00+0000', tz='UTC'), Timestamp('2026-07-23 23:45:00+0000', tz='UTC')) ---
+  daily bars=3643 2016-07-23→2026-07-23
+  6m    n= 162 WR= 55.3% E[R]=+0.062 pnl=$+1999 DD=$-1132 OOS_E[R]=+0.026 WF=2/4 MC=86.7% → FRAGILE
+  1y    n= 328 WR= 56.1% E[R]=+0.099 pnl=$+6481 DD=$-1184 OOS_E[R]=+0.045 WF=4/4 MC=99.1% → SURVIVES
+  2y    n= 636 WR= 51.2% E[R]=+0.067 pnl=$+8494 DD=$-2440 OOS_E[R]=+0.081 WF=3/4 MC=99.2% → SURVIVES
+  3y    n= 937 WR= 50.4% E[R]=+0.056 pnl=$+10415 DD=$-2440 OOS_E[R]=+0.111 WF=3/4 MC=99.0% → SURVIVES
+  5y    n=1550 WR= 48.8% E[R]=+0.041 pnl=$+12724 DD=$-2440 OOS_E[R]=+0.082 WF=4/4 MC=99.5% → SURVIVES
+  full  n=3061 WR= 47.9% E[R]=+0.029 pnl=$+17648 DD=$-4413 OOS_E[R]=+0.057 WF=3/4 MC=99.0% → SURVIVES
+
+--- BTCUSD hist=(Timestamp('2017-05-07 00:00:00+0000', tz='UTC'), Timestamp('2026-07-23 23:45:00+0000', tz='UTC')) ---
+  daily bars=3365 2017-05-07→2026-07-23
+  6m    n= 158 WR= 53.8% E[R]=+0.061 pnl=$+1916 DD=$-1073 OOS_E[R]=+0.049 WF=2/4 MC=91.8% → SURVIVES
+  1y    n= 308 WR= 51.0% E[R]=+0.024 pnl=$+1493 DD=$-1073 OOS_E[R]=+0.042 WF=4/4 MC=76.2% → FRAGILE
+  2y    n= 623 WR= 51.4% E[R]=+0.023 pnl=$+2818 DD=$-1236 OOS_E[R]=+0.033 WF=4/4 MC=83.1% → FRAGILE
+  3y    n= 945 WR= 51.1% E[R]=+0.041 pnl=$+7710 DD=$-1995 OOS_E[R]=+0.024 WF=3/4 MC=97.7% → SURVIVES
+  5y    n=1575 WR= 49.0% E[R]=+0.026 pnl=$+8143 DD=$-3072 OOS_E[R]=+0.021 WF=3/4 MC=95.5% → SURVIVES
+  full  n=2851 WR= 49.6% E[R]=+0.048 pnl=$+27198 DD=$-3223 OOS_E[R]=+0.039 WF=4/4 MC=100.0% → SURVIVES
+
+--- UKOIL hist=(Timestamp('2016-07-23 00:00:00+0000', tz='UTC'), Timestamp('2026-07-23 23:45:00+0000', tz='UTC')) ---
+  daily bars=3653 2016-07-23→2026-07-23
+  6m    n= 164 WR= 54.2% E[R]=+0.057 pnl=$+1856 DD=$-2013 OOS_E[R]=+0.017 WF=2/4 MC=83.6% → FRAGILE
+  1y    n= 307 WR= 47.6% E[R]=-0.034 pnl=$-2064 DD=$-4279 OOS_E[R]=-0.005 WF=2/4 MC=20.1% → DEAD
+  2y    n= 589 WR= 45.5% E[R]=-0.017 pnl=$-1997 DD=$-5444 OOS_E[R]=+0.036 WF=2/4 MC=29.1% → FRAGILE
+  3y    n= 885 WR= 47.2% E[R]=-0.008 pnl=$-1353 DD=$-5444 OOS_E[R]=-0.025 WF=2/4 MC=36.9% → DEAD
+  5y    n=1476 WR= 47.2% E[R]=-0.009 pnl=$-2645 DD=$-8347 OOS_E[R]=+0.005 WF=2/4 MC=29.9% → FRAGILE
+  full  n=2973 WR= 48.2% E[R]=+0.005 pnl=$+2974 DD=$-8347 OOS_E[R]=-0.008 WF=1/4 MC=65.5% → FRAGILE
+
+--- NAS100 hist=(Timestamp('2016-07-23 00:00:00+0000', tz='UTC'), Timestamp('2026-07-23 23:45:00+0000', tz='UTC')) ---
+  daily bars=3653 2016-07-23→2026-07-23
+  6m    n= 154 WR= 52.9% E[R]=+0.027 pnl=$+843 DD=$-1392 OOS_E[R]=+0.033 WF=2/4 MC=67.8% → FRAGILE
+  1y    n= 304 WR= 51.3% E[R]=-0.007 pnl=$-395 DD=$-3183 OOS_E[R]=+0.090 WF=1/4 MC=43.4% → FRAGILE
+  2y    n= 620 WR= 52.8% E[R]=+0.002 pnl=$+257 DD=$-3284 OOS_E[R]=+0.003 WF=2/4 MC=52.1% → FRAGILE
+  3y    n= 937 WR= 50.8% E[R]=+0.006 pnl=$+1119 DD=$-3284 OOS_E[R]=-0.002 WF=2/4 MC=60.9% → FRAGILE
+  5y    n=1585 WR= 49.8% E[R]=+0.012 pnl=$+3715 DD=$-3284 OOS_E[R]=+0.012 WF=2/4 MC=75.4% → FRAGILE
+  full  n=3149 WR= 51.1% E[R]=+0.010 pnl=$+6399 DD=$-4360 OOS_E[R]=+0.006 WF=3/4 MC=80.1% → FRAGILE
+
+--- AUDUSD hist=(Timestamp('2016-07-23 00:00:00+0000', tz='UTC'), Timestamp('2026-07-23 23:45:00+0000', tz='UTC')) ---
+  daily bars=3653 2016-07-23→2026-07-23
+  6m    n= 157 WR= 49.6% E[R]=-0.007 pnl=$-215 DD=$-2501 OOS_E[R]=-0.030 WF=1/4 MC=44.0% → DEAD
+  1y    n= 301 WR= 46.2% E[R]=-0.016 pnl=$-993 DD=$-2501 OOS_E[R]=-0.043 WF=3/4 MC=31.2% → FRAGILE
+  2y    n= 613 WR= 45.9% E[R]=-0.035 pnl=$-4295 DD=$-6068 OOS_E[R]=+0.007 WF=1/4 MC=7.2% → FRAGILE
+  3y    n= 906 WR= 44.8% E[R]=-0.041 pnl=$-7411 DD=$-8856 OOS_E[R]=-0.013 WF=1/4 MC=1.9% → DEAD
+  5y    n=1535 WR= 45.6% E[R]=-0.034 pnl=$-10323 DD=$-12300 OOS_E[R]=-0.056 WF=0/4 MC=1.4% → DEAD
+  full  n=3043 WR= 46.9% E[R]=-0.023 pnl=$-13760 DD=$-15889 OOS_E[R]=-0.041 WF=0/4 MC=2.1% → DEAD
+
+--- ETHUSD hist=(Timestamp('2017-12-11 00:00:00+0000', tz='UTC'), Timestamp('2026-07-23 23:45:00+0000', tz='UTC')) ---
+  daily bars=3147 2017-12-11→2026-07-23
+  6m    n= 153 WR= 55.3% E[R]=+0.040 pnl=$+1212 DD=$-1403 OOS_E[R]=+0.075 WF=2/4 MC=81.2% → FRAGILE
+  1y    n= 304 WR= 51.5% E[R]=+0.022 pnl=$+1329 DD=$-1403 OOS_E[R]=+0.041 WF=3/4 MC=73.9% → FRAGILE
+  2y    n= 623 WR= 51.3% E[R]=+0.034 pnl=$+4206 DD=$-1799 OOS_E[R]=+0.012 WF=3/4 MC=91.6% → FRAGILE
+  3y    n= 932 WR= 50.9% E[R]=+0.031 pnl=$+5838 DD=$-3162 OOS_E[R]=+0.023 WF=3/4 MC=95.0% → SURVIVES
+  5y    n=1558 WR= 49.4% E[R]=+0.021 pnl=$+6685 DD=$-3870 OOS_E[R]=+0.042 WF=3/4 MC=92.0% → FRAGILE
+  full  n=2634 WR= 49.1% E[R]=+0.025 pnl=$+13130 DD=$-4064 OOS_E[R]=+0.027 WF=3/4 MC=97.6% → SURVIVES
+
+--- USDJPY hist=(Timestamp('2016-07-23 00:00:00+0000', tz='UTC'), Timestamp('2026-07-23 23:45:00+0000', tz='UTC')) ---
+  daily bars=3653 2016-07-23→2026-07-23
+  6m    n= 153 WR= 51.5% E[R]=-0.007 pnl=$-214 DD=$-2280 OOS_E[R]=+0.112 WF=2/4 MC=47.0% → FRAGILE
+  1y    n= 312 WR= 49.3% E[R]=-0.029 pnl=$-1808 DD=$-4264 OOS_E[R]=+0.020 WF=2/4 MC=23.5% → FRAGILE
+  2y    n= 630 WR= 49.6% E[R]=+0.001 pnl=$+107 DD=$-5496 OOS_E[R]=-0.004 WF=1/4 MC=52.6% → FRAGILE
+  3y    n= 964 WR= 52.1% E[R]=+0.004 pnl=$+792 DD=$-5496 OOS_E[R]=-0.029 WF=1/4 MC=56.7% → FRAGILE
+  5y    n=1609 WR= 52.8% E[R]=+0.023 pnl=$+7292 DD=$-5496 OOS_E[R]=-0.029 WF=3/4 MC=92.7% → FRAGILE
+  full  n=3111 WR= 49.9% E[R]=+0.001 pnl=$+773 DD=$-10160 OOS_E[R]=+0.004 WF=2/4 MC=55.0% → FRAGILE
+
+--- USDCHF hist=(Timestamp('2016-07-23 00:00:00+0000', tz='UTC'), Timestamp('2026-07-23 23:45:00+0000', tz='UTC')) ---
+  daily bars=3653 2016-07-23→2026-07-23
+  6m    n= 146 WR= 49.6% E[R]=+0.018 pnl=$+531 DD=$-1226 OOS_E[R]=-0.020 WF=2/4 MC=64.1% → FRAGILE
+  1y    n= 303 WR= 46.4% E[R]=-0.027 pnl=$-1606 DD=$-2157 OOS_E[R]=+0.009 WF=2/4 MC=20.3% → FRAGILE
+  2y    n= 616 WR= 47.3% E[R]=-0.003 pnl=$-384 DD=$-2812 OOS_E[R]=+0.000 WF=2/4 MC=42.6% → DEAD
+  3y    n= 933 WR= 49.3% E[R]=+0.016 pnl=$+2911 DD=$-2812 OOS_E[R]=-0.023 WF=1/4 MC=77.6% → FRAGILE
+  5y    n=1555 WR= 48.7% E[R]=-0.001 pnl=$-209 DD=$-4740 OOS_E[R]=-0.008 WF=2/4 MC=47.8% → DEAD
+  full  n=3030 WR= 49.2% E[R]=-0.004 pnl=$-2706 DD=$-7587 OOS_E[R]=+0.016 WF=1/4 MC=34.1% → FRAGILE
+
+=== SUMMARY 1y === {'verdict_1y_counts': {'SURVIVES': 1, 'FRAGILE': 6, 'DEAD': 1}, 'pairs_positive_exp_r_1y': 3, 'recommendation': 'SKIP', 'note': 'Mostly DEAD / negative E[R] on 1y — not worth deeper research.'}
+wrote /app/data/lab_schwab_daily_tally.json
+wrote /app/data/lab_schwab_daily_tally.md

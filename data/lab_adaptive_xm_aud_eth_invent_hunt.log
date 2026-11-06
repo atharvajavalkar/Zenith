@@ -1,0 +1,542 @@
+=== AUD/ETH math–econ INVENT hunt (Nebula) ===
+book=('AUDUSD', 'ETHUSD')
+live untouched: GOLD BTCUSD UKOIL NAS100 + all .env brains
+layers: pair econ equations + dynamic Hurst/vol/Bayes routers
+est_cells≈2,118 · score=short-verdict-first · XM spreads ON
+
+
+######## INVENT AUDUSD @ 5m · 10.0y · 12 modes ########
+  … 1/12 modes · cells=36 · 140s · aud_carry_0.00012
+  … 4/12 modes · cells=144 · 472s · aud_riskon_0.40
+  … 8/12 modes · cells=288 · 895s · aud_asia_fade_lon_trend
+  BEST 5m: aud_tot_compress|sl3.5|rr2.0|g2 30d=FAIL 15d=FAIL green=5/6 wireable_in_top=0 1y $-976 spR=0.0992
+
+######## INVENT AUDUSD @ 15m · 10.0y · 12 modes ########
+  … 1/12 modes · cells=420 · 1247s · aud_carry_0.00012
+  … 4/12 modes · cells=492 · 1311s · aud_riskon_0.40
+  … 8/12 modes · cells=588 · 1396s · aud_asia_fade_lon_trend
+  BEST 15m: aud_asia_fade_lon_z2|sl2.5|rr2.0|g3 30d=FAIL 15d=FAIL green=4/6 wireable_in_top=0 1y $26 spR=0.0996
+
+######## INVENT AUDUSD @ 3m · 5.0y · 12 modes ########
+  … 1/12 modes · cells=678 · 1517s · aud_carry_0.00012
+  … 4/12 modes · cells=732 · 1651s · aud_riskon_0.40
+  … 8/12 modes · cells=804 · 1829s · aud_asia_fade_lon_trend
+  BEST 3m: aud_riskon_0.32|sl2.5|rr3.0|g2 30d=FAIL 15d=FAIL green=4/6 wireable_in_top=0 1y $-870 spR=0.1
+
+######## INVENT AUDUSD @ 1m · 1.0y · 7 modes ########
+  … 1/7 modes · cells=870 · 2002s · aud_carry_0.00012
+  … 4/7 modes · cells=906 · 2058s · aud_riskon_0.40
+  BEST 1m: dyn_aud_vol_carry_tot|sl3.0|rr2.0|g3 30d=FAIL 15d=FAIL green=3/6 wireable_in_top=0 1y $-3,527 spR=0.0996
+
+######## INVENT ETHUSD @ 5m · 10.0y · 13 modes ########
+  … 1/13 modes · cells=978 · 2214s · eth_jump_fade
+  … 4/13 modes · cells=1086 · 2480s · eth_vol_cluster_hi
+  … 12/13 modes · cells=1302 · 3025s · dyn_eth_vol_thrust_fund
+  BEST 5m: eth_jump_fade|sl3.0|rr3.0|g3 30d=FAIL 15d=FAIL green=5/6 wireable_in_top=0 1y $-2,946 spR=0.1135
+
+######## INVENT ETHUSD @ 15m · 10.0y · 13 modes ########
+  … 1/13 modes · cells=1326 · 3046s · eth_jump_fade
+  … 4/13 modes · cells=1398 · 3105s · eth_vol_cluster_hi
+  … 12/13 modes · cells=1542 · 3216s · dyn_eth_vol_thrust_fund
+  BEST 15m: eth_vol_cluster|sl3.0|rr2.0|g3 30d=FAIL 15d=FAIL green=4/6 wireable_in_top=0 1y $1,474 spR=0.0907
+
+######## INVENT ETHUSD @ 3m · 5.0y · 13 modes ########
+  … 1/13 modes · cells=1560 · 3271s · eth_jump_fade
+  … 4/13 modes · cells=1614 · 3404s · eth_vol_cluster_hi
+  … 12/13 modes · cells=1722 · 3675s · dyn_eth_vol_thrust_fund
+  BEST 3m: eth_vol_cluster_hi|sl2.0|rr2.0|g3 30d=FAIL 15d=FAIL green=5/6 wireable_in_top=0 1y $1,526 spR=0.122
+
+######## INVENT ETHUSD @ 1m · 1.0y · 7 modes ########
+  … 1/7 modes · cells=1734 · 3707s · eth_jump_fade
+  … 4/7 modes · cells=1770 · 3763s · eth_vol_cluster_hi
+  BEST 1m: dyn_eth_vol_thrust_fund|sl2.5|rr2.0|g5 30d=FAIL 15d=FAIL green=3/6 wireable_in_top=0 1y $-4,147 spR=0.1248
+
+=== DONE · 1806 cells · 3820s · wireable=0 → lab_adaptive_xm_aud_eth_invent_hunt.json ===
+  AUDUSD: aud_tot_compress|sl3.5|rr2.0|g2 tf=5m wireable=False 30d=FAIL 15d=FAIL 1y=FAIL
+  ETHUSD: eth_vol_cluster_hi|sl2.0|rr2.0|g3 tf=3m wireable=False 30d=FAIL 15d=FAIL 1y=SOFT
+
+
+===== V2 ROUND densify=0 @ 2026-08-29T14:33:47.934445+00:00 =====
+=== AUD/ETH INVENT v2 densify=0 ===
+book=('AUDUSD', 'ETHUSD')
+criteria: return≥15% ($1500/y on $10000) + 30d/15d PASS|SOFT + 1y≠FAIL · XM spreads ON
+live untouched · est_cells≈14,811
+
+
+######## V2 AUDUSD @ 15m · 10.0y · 100 modes · d=0 ########
+  … 1/100 modes · cells=24 · 30s · aud_carry_0.00012
+  … 6/100 modes · cells=144 · 149s · aud_session_ou
+  … 18/100 modes · cells=408 · 392s · offflat_sm_t0.35
+  … 24/100 modes · cells=552 · 521s · offflat_volmom_t0.5
+  … 30/100 modes · cells=696 · 652s · circadian_z1.8_s0.6
+  … 36/100 modes · cells=840 · 781s · circadian_z2.8_s0.4
+  … 42/100 modes · cells=984 · 907s · snr_0.4
+  … 48/100 modes · cells=1128 · 1035s · fourier_lf0.6_s0.35
+  … 54/100 modes · cells=1224 · 1119s · ema_pb_12_36_z0.7
+  … 60/100 modes · cells=1368 · 1249s · asia_brk_l64_b0.2
+  … 66/100 modes · cells=1512 · 1379s · cusum_0.01
+  … 72/100 modes · cells=1656 · 1511s · rsi_mr_35_65
+  … 78/100 modes · cells=1800 · 1636s · aud_lon_impulse_b8_z1.1
+  … 84/100 modes · cells=1896 · 1720s · dyn_vol_ema_bb
+  … 90/100 modes · cells=2016 · 1825s · math_ou_snap_5_40
+  … 96/100 modes · cells=2160 · 1956s · math_kalman_fade_2.4
+  BEST 15m: aud_asia_fade_lon_trend|sl3.5|rr2.0|g3 30d=FAIL 15d=FAIL ret=0.2134 pnl1y=$2,134 wireable_in_top=0
+
+######## V2 AUDUSD @ 5m · 10.0y · 100 modes · d=0 ########
+  … 1/100 modes · cells=2292 · 2160s · aud_carry_0.00012
+  … 6/100 modes · cells=2472 · 2677s · aud_session_ou
+  … 18/100 modes · cells=2868 · 3839s · offflat_sm_t0.35
+  … 24/100 modes · cells=3084 · 4476s · offflat_volmom_t0.5
+  … 30/100 modes · cells=3300 · 5118s · circadian_z1.8_s0.6
+  … 36/100 modes · cells=3516 · 5754s · circadian_z2.8_s0.4
+  … 42/100 modes · cells=3732 · 6374s · snr_0.4
+  … 48/100 modes · cells=3948 · 6999s · fourier_lf0.6_s0.35
+  … 54/100 modes · cells=4128 · 7518s · ema_pb_12_36_z0.7
+  … 60/100 modes · cells=4344 · 8151s · asia_brk_l64_b0.2
+  … 66/100 modes · cells=4560 · 8791s · cusum_0.01
+  … 72/100 modes · cells=4776 · 9434s · rsi_mr_35_65
+  … 78/100 modes · cells=4992 · 10055s · aud_lon_impulse_b8_z1.1
+  … 84/100 modes · cells=5136 · 10477s · dyn_vol_ema_bb
+  … 90/100 modes · cells=5316 · 10995s · math_ou_snap_5_40
+  … 96/100 modes · cells=5532 · 21663s · math_kalman_fade_2.4
+  BEST 5m: ou_fade_1.4|sl3.5|rr2.0|g5 30d=FAIL 15d=FAIL ret=0.1601 pnl1y=$1,601 wireable_in_top=0
+
+######## V2 AUDUSD @ 3m · 5.0y · 100 modes · d=0 ########
+  … 1/100 modes · cells=5694 · 24354s · aud_carry_0.00012
+  … 6/100 modes · cells=5784 · 25529s · aud_session_ou
+  … 18/100 modes · cells=5982 · 27060s · offflat_sm_t0.35
+  … 24/100 modes · cells=6090 · 31355s · offflat_volmom_t0.5
+  … 30/100 modes · cells=6198 · 38651s · circadian_z1.8_s0.6
+  … 36/100 modes · cells=6306 · 47185s · circadian_z2.8_s0.4
+  … 42/100 modes · cells=6414 · 52713s · snr_0.4
+  … 48/100 modes · cells=6522 · 57728s · fourier_lf0.6_s0.35
+  … 54/100 modes · cells=6594 · 57907s · ema_pb_12_36_z0.7
+  … 60/100 modes · cells=6702 · 69253s · asia_brk_l64_b0.2
+  … 66/100 modes · cells=6810 · 77156s · cusum_0.01
+  … 72/100 modes · cells=6918 · 144811s · rsi_mr_35_65
+  … 78/100 modes · cells=7026 · 145072s · aud_lon_impulse_b8_z1.1
+  … 84/100 modes · cells=7116 · 145288s · dyn_vol_ema_bb
+  … 90/100 modes · cells=7206 · 145506s · math_ou_snap_5_40
+  … 96/100 modes · cells=7314 · 145778s · math_kalman_fade_2.4
+  BEST 3m: circadian_z2.4_s0.5|sl2.5|rr2.0|g3 30d=FAIL 15d=FAIL ret=0.1653 pnl1y=$1,653 wireable_in_top=0
+
+######## V2 AUDUSD @ 1m · 1.0y · 27 modes · d=0 ########
+  … 1/27 modes · cells=7398 · 145994s · aud_carry_0.00012
+  … 6/27 modes · cells=7458 · 146085s · aud_session_ou
+  … 18/27 modes · cells=7590 · 146290s · offflat_sm_t0.35
+  … 24/27 modes · cells=7662 · 146401s · offflat_volmom_t0.5
+  BEST 1m: offflat_volmom_t0.65|sl3.0|rr2.0|g5 30d=FAIL 15d=FAIL ret=0.5547 pnl1y=$5,547 wireable_in_top=0
+
+######## V2 ETHUSD @ 15m · 10.0y · 101 modes · d=0 ########
+  … 1/101 modes · cells=7716 · 146475s · eth_jump_fade
+  … 6/101 modes · cells=7806 · 146545s · eth_funding_proxy_fast
+  … 12/101 modes · cells=7878 · 146600s · dyn_eth_vol_thrust_fund
+  … 18/101 modes · cells=7968 · 146671s · session_mix_t0.35_o0.45
+  … 24/101 modes · cells=8076 · 146755s · volmom_t0.5_l20
+  … 30/101 modes · cells=8184 · 146838s · offflat_volmom_t0.4
+  … 36/101 modes · cells=8292 · 146922s · offflat_cir_z2.4
+  … 42/101 modes · cells=8400 · 147005s · snr_0.3
+  … 48/101 modes · cells=8508 · 147088s · fourier_lf0.55_s0.3
+  … 54/101 modes · cells=8598 · 147156s · agree_eth_cluster_sm
+  … 60/101 modes · cells=8706 · 147240s · asia_brk_l48_b0.15
+  … 66/101 modes · cells=8814 · 147325s · bb_mr_w40_k2.5
+  … 72/101 modes · cells=8922 · 147412s · rsi_mr_30_70
+  … 78/101 modes · cells=9030 · 147495s · eth_atr_exp_1.25_0.3
+  … 90/101 modes · cells=9192 · 147619s · math_hurst_mr_0.45
+  … 96/101 modes · cells=9300 · 147706s · math_kalman_fade_2.0
+  BEST 15m: edge_volmom|sl3.0|rr3.0|g2 30d=FAIL 15d=FAIL ret=0.3407 pnl1y=$3,407 wireable_in_top=0
+
+######## V2 ETHUSD @ 5m · 10.0y · 101 modes · d=0 ########
+  … 1/101 modes · cells=9417 · 147857s · eth_jump_fade
+  … 6/101 modes · cells=9552 · 148193s · eth_funding_proxy_fast
+  … 12/101 modes · cells=9660 · 148463s · dyn_eth_vol_thrust_fund
+  … 18/101 modes · cells=9795 · 148808s · session_mix_t0.35_o0.45
+  … 24/101 modes · cells=9957 · 149222s · volmom_t0.5_l20
+  … 30/101 modes · cells=10119 · 149636s · offflat_volmom_t0.4
+  … 36/101 modes · cells=10281 · 150046s · offflat_cir_z2.4
+  … 42/101 modes · cells=10443 · 150445s · snr_0.3
+  … 48/101 modes · cells=10605 · 150848s · fourier_lf0.55_s0.3
+  … 54/101 modes · cells=10740 · 151182s · agree_eth_cluster_sm
+  … 60/101 modes · cells=10902 · 151589s · asia_brk_l48_b0.15
+  … 66/101 modes · cells=11064 · 151997s · bb_mr_w40_k2.5
+  … 72/101 modes · cells=11226 · 152413s · rsi_mr_30_70
+  … 78/101 modes · cells=11388 · 152819s · eth_atr_exp_1.25_0.3
+  … 90/101 modes · cells=11631 · 153422s · math_hurst_mr_0.45
+  … 96/101 modes · cells=11793 · 153840s · math_kalman_fade_2.0
+  BEST 5m: agree_sm_volmom|sl3.0|rr3.0|g2 30d=FAIL 15d=FAIL ret=0.1559 pnl1y=$1,559 wireable_in_top=0
+
+######## V2 ETHUSD @ 3m · 5.0y · 101 modes · d=0 ########
+  … 1/101 modes · cells=11946 · 154237s · eth_jump_fade
+  … 6/101 modes · cells=12036 · 154457s · eth_funding_proxy_fast
+  … 12/101 modes · cells=12108 · 154633s · dyn_eth_vol_thrust_fund
+  … 18/101 modes · cells=12198 · 154864s · session_mix_t0.35_o0.45
+  … 24/101 modes · cells=12306 · 155132s · volmom_t0.5_l20
+  … 30/101 modes · cells=12414 · 155401s · offflat_volmom_t0.4
+  … 36/101 modes · cells=12522 · 155670s · offflat_cir_z2.4
+  … 42/101 modes · cells=12630 · 155931s · snr_0.3
+  … 48/101 modes · cells=12738 · 156338s · fourier_lf0.55_s0.3
+  … 54/101 modes · cells=12828 · 157842s · agree_eth_cluster_sm
+  … 60/101 modes · cells=12936 · 159026s · asia_brk_l48_b0.15
+  … 66/101 modes · cells=13044 · 160008s · bb_mr_w40_k2.5
+  … 72/101 modes · cells=13152 · 160447s · rsi_mr_30_70
+  … 78/101 modes · cells=13260 · 160888s · eth_atr_exp_1.25_0.3
+  … 84/101 modes · cells=13350 · 161239s · dyn_bayes_sm_volmom
+  … 90/101 modes · cells=13440 · 161506s · math_hurst_mr_0.45
+  … 96/101 modes · cells=13548 · 161783s · math_kalman_fade_2.0
+  BEST 3m: eth_vol_cluster_hi|sl2.0|rr2.0|g3 30d=FAIL 15d=FAIL ret=0.1526 pnl1y=$1,526 wireable_in_top=0
+
+######## V2 ETHUSD @ 1m · 1.0y · 27 modes · d=0 ########
+  … 1/27 modes · cells=13650 · 162038s · eth_jump_fade
+  … 6/27 modes · cells=13710 · 162130s · eth_funding_proxy_fast
+  … 12/27 modes · cells=13758 · 162205s · dyn_eth_vol_thrust_fund
+  … 18/27 modes · cells=13818 · 162300s · session_mix_t0.35_o0.45
+  … 24/27 modes · cells=13890 · 162413s · volmom_t0.5_l20
+  BEST 1m: eth_vol_cluster|sl2.5|rr4.0|g5 30d=FAIL 15d=FAIL ret=0.2876 pnl1y=$2,876 wireable_in_top=0
+
+=== V2 DONE densify=0 · cells=13926 · 162469s · wireable=0/2 · criteria_met=False ===
+  AUDUSD: offflat_volmom_t0.65|sl3.0|rr2.0|g5 tf=1m wire=False ret=0.5547 30d=FAIL 15d=FAIL 1y=PASS pnl=$5546.86
+  ETHUSD: edge_volmom|sl3.0|rr3.0|g2 tf=15m wire=False ret=0.3407 30d=FAIL 15d=FAIL 1y=PASS pnl=$3407.0
+
+
+===== V2 ROUND densify=1 @ 2026-08-31T11:41:37.700687+00:00 =====
+=== AUD/ETH INVENT v2 densify=1 ===
+book=('AUDUSD', 'ETHUSD')
+criteria: return≥15% ($1500/y on $10000) + 30d/15d PASS|SOFT + 1y≠FAIL · XM spreads ON
+live untouched · est_cells≈35,676
+
+
+######## V2 AUDUSD @ 15m · 10.0y · 127 modes · d=1 ########
+  … 1/127 modes · cells=48 · 48s · aud_carry_0.00012
+  … 6/127 modes · cells=288 · 263s · aud_session_ou
+  … 18/127 modes · cells=816 · 744s · lonny_sm_t0.28
+  … 24/127 modes · cells=1104 · 1515s · lonny_sm_t0.40
+  … 30/127 modes · cells=1392 · 2072s · lonny_sm_t0.30
+  … 36/127 modes · cells=1680 · 2378s · hurst_volmom_t0.35
+  … 42/127 modes · cells=1968 · 2792s · offflat_volmom_t0.65
+  … 48/127 modes · cells=2256 · 3331s · offflat_cir_z1.8
+  … 54/127 modes · cells=2544 · 8597s · offflat_cir_z2.8
+  … 60/127 modes · cells=2832 · 9254s · snr_0.5
+  … 66/127 modes · cells=3120 · 9517s · fourier_lf0.65_s0.4
+  … 72/127 modes · cells=3312 · 9692s · ema_pb_20_50_z0.8
+  … 78/127 modes · cells=3600 · 9958s · asia_brk_l96_b0.12
+  … 84/127 modes · cells=3888 · 10227s · cusum_0.015
+  … 90/127 modes · cells=4176 · 10494s · donchian_40
+  … 96/127 modes · cells=4464 · 10748s · edge_volmom
+  … 108/127 modes · cells=4896 · 11132s · math_ou_snap_5_40
+  … 114/127 modes · cells=5136 · 11353s · math_kalman_fade_1.6
+  … 120/127 modes · cells=5424 · 11612s · math_skew_align_snr
+  … 126/127 modes · cells=5712 · 11874s · aud_riskon_0.36_0.48
+  BEST 15m: aud_asia_fade_lon_trend|sl3.5|rr2.0|g3 30d=FAIL 15d=FAIL ret=0.2134 pnl1y=$2,134 wireable_in_top=0
+
+######## V2 AUDUSD @ 5m · 10.0y · 127 modes · d=1 ########
+  … 1/127 modes · cells=5760 · 12030s · aud_carry_0.00012
+  … 6/127 modes · cells=6000 · 12722s · aud_session_ou
+  … 18/127 modes · cells=6528 · 14284s · lonny_sm_t0.28
+  … 24/127 modes · cells=6816 · 15135s · lonny_sm_t0.40
+  … 30/127 modes · cells=7104 · 15995s · lonny_sm_t0.30
+  … 36/127 modes · cells=7392 · 16846s · hurst_volmom_t0.35
+  … 42/127 modes · cells=7680 · 17697s · offflat_volmom_t0.65
+  … 48/127 modes · cells=7968 · 18553s · offflat_cir_z1.8
+  … 54/127 modes · cells=8256 · 19404s · offflat_cir_z2.8
+  … 60/127 modes · cells=8544 · 20235s · snr_0.5
+  … 66/127 modes · cells=8832 · 21273s · fourier_lf0.65_s0.4
+  … 72/127 modes · cells=9072 · 21983s · ema_pb_20_50_z0.8
+  … 78/127 modes · cells=9360 · 22844s · asia_brk_l96_b0.12
+  … 84/127 modes · cells=9648 · 59228s · cusum_0.015
+  … 90/127 modes · cells=9936 · 68686s · donchian_40
+  … 96/127 modes · cells=10224 · 69558s · edge_volmom
+  … 108/127 modes · cells=10656 · 70859s · math_ou_snap_5_40
+  … 114/127 modes · cells=10896 · 71594s · math_kalman_fade_1.6
+  … 120/127 modes · cells=11184 · 72460s · math_skew_align_snr
+  … 126/127 modes · cells=11472 · 73324s · aud_riskon_0.36_0.48
+  BEST 5m: ou_fade_1.4|sl3.5|rr2.0|g5 30d=FAIL 15d=FAIL ret=0.1601 pnl1y=$1,601 wireable_in_top=0
+
+######## V2 AUDUSD @ 3m · 5.0y · 127 modes · d=1 ########
+  … 1/127 modes · cells=11508 · 73426s · aud_carry_0.00012
+  … 6/127 modes · cells=11688 · 73861s · aud_session_ou
+  … 18/127 modes · cells=12084 · 74843s · lonny_sm_t0.28
+  … 24/127 modes · cells=12300 · 75377s · lonny_sm_t0.40
+  … 30/127 modes · cells=12516 · 75918s · lonny_sm_t0.30
+  … 36/127 modes · cells=12732 · 76458s · hurst_volmom_t0.35
+  … 42/127 modes · cells=12948 · 76997s · offflat_volmom_t0.65
+  … 48/127 modes · cells=13164 · 77535s · offflat_cir_z1.8
+  … 54/127 modes · cells=13380 · 78073s · offflat_cir_z2.8
+  … 60/127 modes · cells=13596 · 78597s · snr_0.5
+  … 66/127 modes · cells=13812 · 79126s · fourier_lf0.65_s0.4
+  … 72/127 modes · cells=13956 · 79479s · ema_pb_20_50_z0.8
+  … 78/127 modes · cells=14172 · 80643s · asia_brk_l96_b0.12
+  … 84/127 modes · cells=14388 · 81191s · cusum_0.015
+  … 90/127 modes · cells=14604 · 81738s · donchian_40
+  … 96/127 modes · cells=14820 · 82281s · edge_volmom
+  … 108/127 modes · cells=15180 · 83174s · math_ou_snap_5_40
+  … 114/127 modes · cells=15360 · 83630s · math_kalman_fade_1.6
+  … 120/127 modes · cells=15576 · 84172s · math_skew_align_snr
+  … 126/127 modes · cells=15792 · 84714s · aud_riskon_0.36_0.48
+  BEST 3m: bb_mr_w40_k2.0|sl3.0|rr2.5|g5 30d=FAIL 15d=FAIL ret=0.1875 pnl1y=$1,875 wireable_in_top=0
+
+######## V2 AUDUSD @ 1m · 1.0y · 28 modes · d=1 ########
+  … 1/28 modes · cells=15828 · 84788s · aud_carry_0.00012
+  … 6/28 modes · cells=16008 · 85077s · aud_session_ou
+  … 18/28 modes · cells=16404 · 85726s · offflat_sm_t0.35
+  … 24/28 modes · cells=16620 · 86078s · offflat_sm_t0.30
+  BEST 1m: offflat_volmom_t0.35|sl3.0|rr2.0|g5 30d=FAIL 15d=FAIL ret=0.2787 pnl1y=$2,787 wireable_in_top=0
+
+######## V2 ETHUSD @ 15m · 10.0y · 128 modes · d=1 ########
+  … 1/128 modes · cells=16812 · 86351s · eth_jump_fade
+  … 6/128 modes · cells=17052 · 86540s · eth_funding_proxy_fast
+  … 12/128 modes · cells=17244 · 86690s · dyn_eth_vol_thrust_fund
+  … 18/128 modes · cells=17484 · 86885s · offflat_sm_t0.28
+  … 24/128 modes · cells=17772 · 87113s · offflat_sm_t0.40
+  … 30/128 modes · cells=18060 · 87343s · offflat_sm_t0.30
+  … 36/128 modes · cells=18348 · 87570s · offflat_volmom_t0.35
+  … 42/128 modes · cells=18636 · 87800s · volmom_t0.65_l20
+  … 48/128 modes · cells=18924 · 88030s · circadian_z1.8_s0.6
+  … 54/128 modes · cells=19212 · 88258s · circadian_z2.8_s0.4
+  … 60/128 modes · cells=19500 · 88482s · snr_0.4
+  … 66/128 modes · cells=19788 · 88709s · fourier_lf0.6_s0.35
+  … 72/128 modes · cells=20028 · 88895s · ema_pb_12_36_z0.7
+  … 78/128 modes · cells=20316 · 89124s · asia_brk_l64_b0.2
+  … 84/128 modes · cells=20604 · 89355s · cusum_0.01
+  … 90/128 modes · cells=20892 · 89588s · rsi_mr_35_65
+  … 96/128 modes · cells=21180 · 89813s · eth_atr_exp_1.4_0.35
+  … 102/128 modes · cells=21372 · 89964s · dyn_vol_ema_bb
+  … 108/128 modes · cells=21612 · 90151s · math_hurst_mr_0.45
+  … 114/128 modes · cells=21852 · 90344s · math_eff_lf_0.25
+  … 120/128 modes · cells=22140 · 90573s · math_vol_compress_release
+  … 126/128 modes · cells=22428 · 90799s · eth_spread_m10.0
+  BEST 15m: edge_volmom|sl3.0|rr3.0|g2 30d=FAIL 15d=FAIL ret=0.3407 pnl1y=$3,407 wireable_in_top=0
+
+######## V2 ETHUSD @ 5m · 10.0y · 128 modes · d=1 ########
+  … 1/128 modes · cells=22476 · 90934s · eth_jump_fade
+  … 6/128 modes · cells=22716 · 91543s · eth_funding_proxy_fast
+  … 12/128 modes · cells=22908 · 92031s · dyn_eth_vol_thrust_fund
+  … 18/128 modes · cells=23148 · 92661s · offflat_sm_t0.28
+  … 24/128 modes · cells=23436 · 93404s · offflat_sm_t0.40
+  … 30/128 modes · cells=23724 · 94153s · offflat_sm_t0.30
+  … 36/128 modes · cells=24012 · 94892s · offflat_volmom_t0.35
+  … 42/128 modes · cells=24300 · 95631s · volmom_t0.65_l20
+  … 48/128 modes · cells=24588 · 96372s · circadian_z1.8_s0.6
+  … 54/128 modes · cells=24876 · 97111s · circadian_z2.8_s0.4
+  … 60/128 modes · cells=25164 · 97835s · snr_0.4
+  … 66/128 modes · cells=25452 · 98563s · fourier_lf0.6_s0.35
+  … 72/128 modes · cells=25692 · 99166s · ema_pb_12_36_z0.7
+  … 78/128 modes · cells=25980 · 99907s · asia_brk_l64_b0.2
+  … 84/128 modes · cells=26268 · 100651s · cusum_0.01
+  … 90/128 modes · cells=26556 · 101406s · rsi_mr_35_65
+  … 96/128 modes · cells=26844 · 102140s · eth_atr_exp_1.4_0.35
+  … 102/128 modes · cells=27036 · 102629s · dyn_vol_ema_bb
+  … 108/128 modes · cells=27276 · 103236s · math_hurst_mr_0.45
+  … 114/128 modes · cells=27516 · 103862s · math_eff_lf_0.25
+  … 120/128 modes · cells=27804 · 104608s · math_vol_compress_release
+  BEST 5m: agree_sm_volmom|sl3.0|rr2.5|g2 30d=FAIL 15d=FAIL ret=0.2509 pnl1y=$2,509 wireable_in_top=0
+
+######## V2 ETHUSD @ 3m · 5.0y · 128 modes · d=1 ########
+  … 1/128 modes · cells=28080 · 105322s · eth_jump_fade
+  … 6/128 modes · cells=28260 · 112949s · eth_funding_proxy_fast
+  … 12/128 modes · cells=28404 · 118297s · dyn_eth_vol_thrust_fund
+  … 18/128 modes · cells=28584 · 126984s · offflat_sm_t0.28
+  … 24/128 modes · cells=28800 · 242515s · offflat_sm_t0.40
+  … 30/128 modes · cells=29016 · 243100s · offflat_sm_t0.30
+  … 36/128 modes · cells=29232 · 243684s · offflat_volmom_t0.35
+  … 42/128 modes · cells=29448 · 244240s · volmom_t0.65_l20
+  … 48/128 modes · cells=29664 · 244806s · circadian_z1.8_s0.6
+  … 54/128 modes · cells=29880 · 245350s · circadian_z2.8_s0.4
+  … 60/128 modes · cells=30096 · 245874s · snr_0.4
+  … 66/128 modes · cells=30312 · 246408s · fourier_lf0.6_s0.35
+  … 72/128 modes · cells=30492 · 246847s · ema_pb_12_36_z0.7
+  … 78/128 modes · cells=30708 · 247385s · asia_brk_l64_b0.2
+  … 84/128 modes · cells=30924 · 247922s · cusum_0.01
+  … 90/128 modes · cells=31140 · 248470s · rsi_mr_35_65
+  … 96/128 modes · cells=31356 · 249000s · eth_atr_exp_1.4_0.35
+  … 102/128 modes · cells=31536 · 249440s · dyn_vol_ema_bb
+  … 108/128 modes · cells=31716 · 249882s · math_hurst_mr_0.45
+  … 114/128 modes · cells=31896 · 250338s · math_eff_lf_0.25
+  … 120/128 modes · cells=32112 · 250878s · math_vol_compress_release
+  BEST 3m: eth_vol_cluster_hi|sl2.0|rr2.0|g3 30d=FAIL 15d=FAIL ret=0.1526 pnl1y=$1,526 wireable_in_top=0
+
+######## V2 ETHUSD @ 1m · 1.0y · 28 modes · d=1 ########
+  … 1/28 modes · cells=32328 · 251399s · eth_jump_fade
+  … 6/28 modes · cells=32508 · 251685s · eth_funding_proxy_fast
+  … 12/28 modes · cells=32652 · 251917s · dyn_eth_vol_thrust_fund
+  … 18/28 modes · cells=32832 · 252209s · session_mix_t0.35_o0.45
+  … 24/28 modes · cells=33048 · 252557s · session_mix_t0.30_o0.42
+  BEST 1m: session_mix_t0.35_o0.45|sl2.0|rr4.0|g8 30d=FAIL 15d=FAIL ret=0.268 pnl1y=$2,680 wireable_in_top=0
+
+=== V2 DONE densify=1 · cells=33192 · 252793s · wireable=0/2 · criteria_met=False ===
+  AUDUSD: offflat_volmom_t0.35|sl3.0|rr2.0|g5 tf=1m wire=False ret=0.2787 30d=FAIL 15d=FAIL 1y=PASS pnl=$2787.15
+  ETHUSD: edge_volmom|sl3.0|rr3.0|g2 tf=15m wire=False ret=0.3407 30d=FAIL 15d=FAIL 1y=PASS pnl=$3407.0
+
+
+===== V2 ROUND densify=2 @ 2026-09-03T09:54:51.664693+00:00 =====
+=== AUD/ETH INVENT v2 densify=2 ===
+book=('AUDUSD', 'ETHUSD')
+criteria: return≥15% ($1500/y on $10000) + 30d/15d PASS|SOFT + 1y≠FAIL · XM spreads ON
+live untouched · est_cells≈37,788
+
+
+######## V2 AUDUSD @ 15m · 10.0y · 135 modes · d=2 ########
+  … 1/135 modes · cells=48 · 49s · aud_carry_0.00012
+  … 6/135 modes · cells=288 · 261s · aud_session_ou
+  … 18/135 modes · cells=816 · 740s · lonny_sm_t0.28
+  … 24/135 modes · cells=1104 · 1002s · lonny_sm_t0.40
+  … 30/135 modes · cells=1392 · 1264s · lonny_sm_t0.30
+  … 36/135 modes · cells=1680 · 1525s · hurst_volmom_t0.35
+  … 42/135 modes · cells=1968 · 1788s · offflat_volmom_t0.65
+  … 48/135 modes · cells=2256 · 2049s · offflat_cir_z1.8
+  … 54/135 modes · cells=2544 · 2309s · offflat_cir_z2.8
+  … 60/135 modes · cells=2832 · 2564s · snr_0.5
+  … 66/135 modes · cells=3120 · 2820s · fourier_lf0.65_s0.4
+  … 72/135 modes · cells=3312 · 2992s · ema_pb_20_50_z0.8
+  … 78/135 modes · cells=3600 · 3252s · asia_brk_l96_b0.12
+  … 84/135 modes · cells=3888 · 3518s · cusum_0.015
+  … 90/135 modes · cells=4176 · 3779s · donchian_40
+  … 96/135 modes · cells=4464 · 4029s · edge_volmom
+  … 108/135 modes · cells=4896 · 4410s · math_ou_snap_5_40
+  … 114/135 modes · cells=5136 · 4630s · math_kalman_fade_1.6
+  … 120/135 modes · cells=5424 · 4898s · math_skew_align_snr
+  … 126/135 modes · cells=5712 · 5164s · aud_riskon_0.36_0.48
+  … 132/135 modes · cells=5952 · 5388s · volmom_d2_t0.55
+  BEST 15m: aud_asia_fade_lon_trend|sl3.5|rr2.0|g3 30d=FAIL 15d=FAIL ret=0.2134 pnl1y=$2,134 wireable_in_top=0
+
+######## V2 AUDUSD @ 5m · 10.0y · 135 modes · d=2 ########
+  … 1/135 modes · cells=6048 · 5590s · aud_carry_0.00012
+  … 6/135 modes · cells=6288 · 6287s · aud_session_ou
+  … 18/135 modes · cells=6816 · 7887s · lonny_sm_t0.28
+  … 24/135 modes · cells=7104 · 8754s · lonny_sm_t0.40
+  … 30/135 modes · cells=7392 · 9637s · lonny_sm_t0.30
+  … 36/135 modes · cells=7680 · 10513s · hurst_volmom_t0.35
+  … 42/135 modes · cells=7968 · 11400s · offflat_volmom_t0.65
+  … 48/135 modes · cells=8256 · 12291s · offflat_cir_z1.8
+  … 54/135 modes · cells=8544 · 13199s · offflat_cir_z2.8
+  … 60/135 modes · cells=8832 · 14070s · snr_0.5
+  … 66/135 modes · cells=9120 · 14980s · fourier_lf0.65_s0.4
+  … 72/135 modes · cells=9360 · 15697s · ema_pb_20_50_z0.8
+  … 78/135 modes · cells=9648 · 16556s · asia_brk_l96_b0.12
+  … 84/135 modes · cells=9936 · 17431s · cusum_0.015
+  … 90/135 modes · cells=10224 · 22034s · donchian_40
+  … 96/135 modes · cells=10512 · 22883s · edge_volmom
+  … 108/135 modes · cells=10944 · 24165s · math_ou_snap_5_40
+  … 114/135 modes · cells=11184 · 24888s · math_kalman_fade_1.6
+  … 120/135 modes · cells=11472 · 25745s · math_skew_align_snr
+  … 126/135 modes · cells=11760 · 26604s · aud_riskon_0.36_0.48
+  … 132/135 modes · cells=12000 · 27332s · volmom_d2_t0.55
+  BEST 5m: ou_fade_1.4|sl3.5|rr2.0|g5 30d=FAIL 15d=FAIL ret=0.1601 pnl1y=$1,601 wireable_in_top=0
+
+######## V2 AUDUSD @ 3m · 5.0y · 135 modes · d=2 ########
+  … 1/135 modes · cells=12084 · 27584s · aud_carry_0.00012
+  … 6/135 modes · cells=12264 · 28018s · aud_session_ou
+  … 18/135 modes · cells=12660 · 29009s · lonny_sm_t0.28
+  … 24/135 modes · cells=12876 · 29550s · lonny_sm_t0.40
+  … 30/135 modes · cells=13092 · 30099s · lonny_sm_t0.30
+  … 36/135 modes · cells=13308 · 30654s · hurst_volmom_t0.35
+  … 42/135 modes · cells=13524 · 31216s · offflat_volmom_t0.65
+  … 48/135 modes · cells=13740 · 31777s · offflat_cir_z1.8
+  … 54/135 modes · cells=13956 · 32332s · offflat_cir_z2.8
+  … 60/135 modes · cells=14172 · 32869s · snr_0.5
+  … 66/135 modes · cells=14388 · 33419s · fourier_lf0.65_s0.4
+  … 72/135 modes · cells=14532 · 33784s · ema_pb_20_50_z0.8
+  … 78/135 modes · cells=14748 · 34338s · asia_brk_l96_b0.12
+  … 84/135 modes · cells=14964 · 34899s · cusum_0.015
+  … 90/135 modes · cells=15180 · 35463s · donchian_40
+  … 96/135 modes · cells=15396 · 36008s · edge_volmom
+  … 108/135 modes · cells=15756 · 36926s · math_ou_snap_5_40
+  … 114/135 modes · cells=15936 · 37398s · math_kalman_fade_1.6
+  … 120/135 modes · cells=16152 · 37963s · math_skew_align_snr
+  … 126/135 modes · cells=16368 · 38536s · aud_riskon_0.36_0.48
+  … 132/135 modes · cells=16548 · 39019s · volmom_d2_t0.55
+  BEST 3m: bb_mr_w40_k2.0|sl3.0|rr2.5|g5 30d=FAIL 15d=FAIL ret=0.1875 pnl1y=$1,875 wireable_in_top=0
+
+######## V2 AUDUSD @ 1m · 1.0y · 28 modes · d=2 ########
+  … 1/28 modes · cells=16620 · 39191s · aud_carry_0.00012
+  … 6/28 modes · cells=16800 · 39482s · aud_session_ou
+  … 18/28 modes · cells=17196 · 40132s · offflat_sm_t0.35
+  … 24/28 modes · cells=17412 · 40488s · offflat_sm_t0.30
+  BEST 1m: offflat_volmom_t0.35|sl3.0|rr2.0|g5 30d=FAIL 15d=FAIL ret=0.2787 pnl1y=$2,787 wireable_in_top=0
+
+######## V2 ETHUSD @ 15m · 10.0y · 136 modes · d=2 ########
+  … 1/136 modes · cells=17604 · 40769s · eth_jump_fade
+  … 6/136 modes · cells=17844 · 40964s · eth_funding_proxy_fast
+  … 12/136 modes · cells=18036 · 41121s · dyn_eth_vol_thrust_fund
+  … 18/136 modes · cells=18276 · 41322s · offflat_sm_t0.28
+  … 24/136 modes · cells=18564 · 41561s · offflat_sm_t0.40
+  … 30/136 modes · cells=18852 · 41803s · offflat_sm_t0.30
+  … 36/136 modes · cells=19140 · 42043s · offflat_volmom_t0.35
+  … 42/136 modes · cells=19428 · 42285s · volmom_t0.65_l20
+  … 48/136 modes · cells=19716 · 42528s · circadian_z1.8_s0.6
+  … 54/136 modes · cells=20004 · 42768s · circadian_z2.8_s0.4
+  … 60/136 modes · cells=20292 · 43003s · snr_0.4
+  … 66/136 modes · cells=20580 · 43241s · fourier_lf0.6_s0.35
+  … 72/136 modes · cells=20820 · 43437s · ema_pb_12_36_z0.7
+  … 78/136 modes · cells=21108 · 43678s · asia_brk_l64_b0.2
+  … 84/136 modes · cells=21396 · 43921s · cusum_0.01
+  … 90/136 modes · cells=21684 · 44165s · rsi_mr_35_65
+  … 96/136 modes · cells=21972 · 44401s · eth_atr_exp_1.4_0.35
+  … 102/136 modes · cells=22164 · 44559s · dyn_vol_ema_bb
+  … 108/136 modes · cells=22404 · 44755s · math_hurst_mr_0.45
+  … 114/136 modes · cells=22644 · 44957s · math_eff_lf_0.25
+  … 120/136 modes · cells=22932 · 45197s · math_vol_compress_release
+  … 126/136 modes · cells=23220 · 45431s · eth_spread_m10.0
+  … 132/136 modes · cells=23412 · 45590s · volmom_d2_t0.25
+  BEST 15m: edge_volmom|sl3.0|rr3.0|g2 30d=FAIL 15d=FAIL ret=0.3407 pnl1y=$3,407 wireable_in_top=0
+
+######## V2 ETHUSD @ 5m · 10.0y · 136 modes · d=2 ########
+  … 1/136 modes · cells=23556 · 45806s · eth_jump_fade
+  … 6/136 modes · cells=23796 · 46420s · eth_funding_proxy_fast
+  … 12/136 modes · cells=23988 · 46912s · dyn_eth_vol_thrust_fund
+  … 18/136 modes · cells=24228 · 47543s · offflat_sm_t0.28
+  … 24/136 modes · cells=24516 · 48288s · offflat_sm_t0.40
+  … 30/136 modes · cells=24804 · 50084s · offflat_sm_t0.30
+  … 36/136 modes · cells=25092 · 52945s · offflat_volmom_t0.35
+  … 42/136 modes · cells=25380 · 53715s · volmom_t0.65_l20
+  … 48/136 modes · cells=25668 · 54459s · circadian_z1.8_s0.6
+  … 54/136 modes · cells=25956 · 55202s · circadian_z2.8_s0.4
+  … 60/136 modes · cells=26244 · 55927s · snr_0.4
+  … 66/136 modes · cells=26532 · 56662s · fourier_lf0.6_s0.35
+  … 72/136 modes · cells=26772 · 57268s · ema_pb_12_36_z0.7
+  … 78/136 modes · cells=27060 · 58010s · asia_brk_l64_b0.2
+  … 84/136 modes · cells=27348 · 58759s · cusum_0.01
+  … 90/136 modes · cells=27636 · 59516s · rsi_mr_35_65
+  … 96/136 modes · cells=27924 · 60246s · eth_atr_exp_1.4_0.35
+  … 102/136 modes · cells=28116 · 60740s · dyn_vol_ema_bb
+  … 108/136 modes · cells=28356 · 61347s · math_hurst_mr_0.45
+  … 114/136 modes · cells=28596 · 61975s · math_eff_lf_0.25
+  … 120/136 modes · cells=28884 · 62721s · math_vol_compress_release
+  … 132/136 modes · cells=29316 · 63834s · volmom_d2_t0.25
+  BEST 5m: agree_sm_volmom|sl3.0|rr2.5|g2 30d=FAIL 15d=FAIL ret=0.2509 pnl1y=$2,509 wireable_in_top=0
+
+######## V2 ETHUSD @ 3m · 5.0y · 136 modes · d=2 ########
+  … 1/136 modes · cells=29448 · 64187s · eth_jump_fade
+  … 6/136 modes · cells=29628 · 64639s · eth_funding_proxy_fast
+  … 12/136 modes · cells=29772 · 65002s · dyn_eth_vol_thrust_fund
+  … 18/136 modes · cells=29952 · 65466s · offflat_sm_t0.28
+  … 24/136 modes · cells=30168 · 66014s · offflat_sm_t0.40
+  … 30/136 modes · cells=30384 · 66566s · offflat_sm_t0.30
+  … 36/136 modes · cells=30600 · 67116s · offflat_volmom_t0.35
+  … 42/136 modes · cells=30816 · 67668s · volmom_t0.65_l20
+  … 48/136 modes · cells=31032 · 68219s · circadian_z1.8_s0.6
+  … 54/136 modes · cells=31248 · 68766s · circadian_z2.8_s0.4
+  … 60/136 modes · cells=31464 · 69300s · snr_0.4
+  … 66/136 modes · cells=31680 · 69843s · fourier_lf0.6_s0.35
+  … 72/136 modes · cells=31860 · 71872s · ema_pb_12_36_z0.7
+  … 78/136 modes · cells=32076 · 73010s · asia_brk_l64_b0.2
+  … 84/136 modes · cells=32292 · 73578s · cusum_0.01
+  … 90/136 modes · cells=32508 · 74150s · rsi_mr_35_65
+  … 96/136 modes · cells=32724 · 74709s · eth_atr_exp_1.4_0.35
+  … 102/136 modes · cells=32904 · 75175s · dyn_vol_ema_bb
+  … 108/136 modes · cells=33084 · 75638s · math_hurst_mr_0.45
+  … 114/136 modes · cells=33264 · 76110s · math_eff_lf_0.25
+  … 120/136 modes · cells=33480 · 76672s · math_vol_compress_release
+  … 132/136 modes · cells=33804 · 77509s · volmom_d2_t0.25
+  BEST 3m: eth_vol_cluster_hi|sl2.0|rr2.0|g3 30d=FAIL 15d=FAIL ret=0.1526 pnl1y=$1,526 wireable_in_top=0
+
+######## V2 ETHUSD @ 1m · 1.0y · 28 modes · d=2 ########
+  … 1/28 modes · cells=33912 · 77769s · eth_jump_fade
+  … 6/28 modes · cells=34092 · 78064s · eth_funding_proxy_fast
+  … 12/28 modes · cells=34236 · 78306s · dyn_eth_vol_thrust_fund
+  … 18/28 modes · cells=34416 · 78610s · session_mix_t0.35_o0.45
+  … 24/28 modes · cells=34632 · 78970s · session_mix_t0.30_o0.42
+  BEST 1m: session_mix_t0.35_o0.45|sl2.0|rr4.0|g8 30d=FAIL 15d=FAIL ret=0.268 pnl1y=$2,680 wireable_in_top=0
+
+=== V2 DONE densify=2 · cells=34776 · 79209s · wireable=0/2 · criteria_met=False ===
+  AUDUSD: offflat_volmom_t0.35|sl3.0|rr2.0|g5 tf=1m wire=False ret=0.2787 30d=FAIL 15d=FAIL 1y=PASS pnl=$2787.15
+  ETHUSD: edge_volmom|sl3.0|rr3.0|g2 tf=15m wire=False ret=0.3407 30d=FAIL 15d=FAIL 1y=PASS pnl=$3407.0

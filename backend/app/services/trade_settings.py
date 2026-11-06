@@ -68,7 +68,7 @@ def set_trading_halted(value: bool) -> bool:
 
 def set_max_trades_per_bucket(value: int) -> int:
     global _max_trades_per_bucket, _trading_halted
-    clamped = max(0, min(10, int(value)))
+    clamped = max(0, min(15, int(value)))
     with _lock:
         _max_trades_per_bucket = clamped
         if clamped > 0:

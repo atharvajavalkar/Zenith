@@ -1,0 +1,23 @@
+{
+  "status": "interrupted",
+  "pair": "USDJPY",
+  "tf": "15m",
+  "mode_i": 42,
+  "modes": 53,
+  "mode_id": "cog_bayes_sm_cir_ent",
+  "mode_family": "cog",
+  "cells_done": 960,
+  "cells_est": 22410,
+  "elapsed_sec": 1002.9,
+  "pct": 89.0,
+  "updated_at": "2026-08-28T11:21:46.105285+00:00",
+  "hunt": "rest5_cog",
+  "book": [
+    "AUDUSD",
+    "USDCHF",
+    "ETHUSD",
+    "NAS100",
+    "USDJPY"
+  ],
+  "note": "superseded by aud_eth_invent"
+}

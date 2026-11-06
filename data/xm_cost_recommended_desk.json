@@ -1,0 +1,2109 @@
+{
+  "generated_at": "2026-08-14T12:13:57.581614+00:00",
+  "risk_usd": 100.0,
+  "halted": [
+    "BTCUSD",
+    "AUDUSD",
+    "USDCHF"
+  ],
+  "elapsed_sec": 22.5,
+  "desk": {
+    "7d": 887.33,
+    "30d": 1307.83,
+    "90d": 5969.18,
+    "180d": 9814.85,
+    "1y": 14713.93,
+    "3y": -16425.4
+  },
+  "pairs": [
+    {
+      "symbol": "ETHUSD",
+      "brain": "session_mix",
+      "risk_mult": 8.0,
+      "off": false,
+      "tf": "5m",
+      "rr": 4.0,
+      "spread_mult_table": 8.0,
+      "windows": {
+        "7d": {
+          "n": 3,
+          "exp_r": -1.125,
+          "win_rate": 0.0,
+          "pnl": -337.5,
+          "avg_spread_r": 0.125,
+          "by_session": {
+            "NY": {
+              "n": 1,
+              "exp_r": -1.125,
+              "pnl": -112.5,
+              "avg_spread_r": 0.125
+            },
+            "Off": {
+              "n": 2,
+              "exp_r": -1.125,
+              "pnl": -225.0,
+              "avg_spread_r": 0.125
+            }
+          }
+        },
+        "30d": {
+          "n": 7,
+          "exp_r": 1.0179,
+          "win_rate": 0.4286,
+          "pnl": 712.5,
+          "avg_spread_r": 0.125,
+          "by_session": {
+            "Asia": {
+              "n": 1,
+              "exp_r": 3.875,
+              "pnl": 387.5,
+              "avg_spread_r": 0.125
+            },
+            "London": {
+              "n": 1,
+              "exp_r": 3.875,
+              "pnl": 387.5,
+              "avg_spread_r": 0.125
+            },
+            "Overlap": {
+              "n": 2,
+              "exp_r": 1.375,
+              "pnl": 275.0,
+              "avg_spread_r": 0.125
+            },
+            "NY": {
+              "n": 1,
+              "exp_r": -1.125,
+              "pnl": -112.5,
+              "avg_spread_r": 0.125
+            },
+            "Off": {
+              "n": 2,
+              "exp_r": -1.125,
+              "pnl": -225.0,
+              "avg_spread_r": 0.125
+            }
+          }
+        },
+        "90d": {
+          "n": 36,
+          "exp_r": 0.125,
+          "win_rate": 0.25,
+          "pnl": 450.0,
+          "avg_spread_r": 0.125,
+          "by_session": {
+            "Asia": {
+              "n": 10,
+              "exp_r": -0.125,
+              "pnl": -125.0,
+              "avg_spread_r": 0.125
+            },
+            "London": {
+              "n": 3,
+              "exp_r": 2.2083,
+              "pnl": 662.5,
+              "avg_spread_r": 0.125
+            },
+            "Overlap": {
+              "n": 5,
+              "exp_r": 0.875,
+              "pnl": 437.5,
+              "avg_spread_r": 0.125
+            },
+            "NY": {
+              "n": 10,
+              "exp_r": -0.125,
+              "pnl": -125.0,
+              "avg_spread_r": 0.125
+            },
+            "Off": {
+              "n": 8,
+              "exp_r": -0.5,
+              "pnl": -400.0,
+              "avg_spread_r": 0.125
+            }
+          }
+        },
+        "180d": {
+          "n": 113,
+          "exp_r": 0.1597,
+          "win_rate": 0.2566,
+          "pnl": 1804.71,
+          "avg_spread_r": 0.1235,
+          "by_session": {
+            "Asia": {
+              "n": 31,
+              "exp_r": 0.0043,
+              "pnl": 13.22,
+              "avg_spread_r": 0.1248
+            },
+            "London": {
+              "n": 8,
+              "exp_r": 1.375,
+              "pnl": 1100.0,
+              "avg_spread_r": 0.125
+            },
+            "Overlap": {
+              "n": 16,
+              "exp_r": 0.4375,
+              "pnl": 700.0,
+              "avg_spread_r": 0.125
+            },
+            "NY": {
+              "n": 41,
+              "exp_r": 0.0972,
+              "pnl": 398.47,
+              "avg_spread_r": 0.1223
+            },
+            "Off": {
+              "n": 17,
+              "exp_r": -0.2394,
+              "pnl": -406.98,
+              "avg_spread_r": 0.1218
+            }
+          }
+        },
+        "1y": {
+          "n": 406,
+          "exp_r": 0.0474,
+          "win_rate": 0.234,
+          "pnl": 1925.32,
+          "avg_spread_r": 0.1225,
+          "by_session": {
+            "Asia": {
+              "n": 119,
+              "exp_r": 0.0525,
+              "pnl": 624.18,
+              "avg_spread_r": 0.124
+            },
+            "London": {
+              "n": 27,
+              "exp_r": 0.7283,
+              "pnl": 1966.37,
+              "avg_spread_r": 0.1236
+            },
+            "Overlap": {
+              "n": 42,
+              "exp_r": 0.1873,
+              "pnl": 786.66,
+              "avg_spread_r": 0.1222
+            },
+            "NY": {
+              "n": 142,
+              "exp_r": -0.2766,
+              "pnl": -3927.68,
+              "avg_spread_r": 0.1217
+            },
+            "Off": {
+              "n": 76,
+              "exp_r": 0.3258,
+              "pnl": 2475.79,
+              "avg_spread_r": 0.1216
+            }
+          }
+        },
+        "3y": {
+          "n": 1093,
+          "exp_r": 0.0349,
+          "win_rate": 0.2315,
+          "pnl": 3812.46,
+          "avg_spread_r": 0.1225,
+          "by_session": {
+            "Asia": {
+              "n": 312,
+              "exp_r": -0.1297,
+              "pnl": -4048.03,
+              "avg_spread_r": 0.1233
+            },
+            "London": {
+              "n": 82,
+              "exp_r": 0.4639,
+              "pnl": 3803.7,
+              "avg_spread_r": 0.1215
+            },
+            "Overlap": {
+              "n": 120,
+              "exp_r": 0.2101,
+              "pnl": 2521.63,
+              "avg_spread_r": 0.1232
+            },
+            "NY": {
+              "n": 376,
+              "exp_r": -0.0984,
+              "pnl": -3699.58,
+              "avg_spread_r": 0.1223
+            },
+            "Off": {
+              "n": 203,
+              "exp_r": 0.2579,
+              "pnl": 5234.74,
+              "avg_spread_r": 0.1214
+            }
+          }
+        }
+      },
+      "battery_1y": {
+        "verdict": "SOFT",
+        "wf_green": 2,
+        "full": {
+          "n": 406,
+          "exp_r": 0.0474,
+          "win_rate": 0.234,
+          "pnl": 1925.32,
+          "avg_spread_r": 0.1225,
+          "by_session": {
+            "Asia": {
+              "n": 119,
+              "exp_r": 0.0525,
+              "pnl": 624.18,
+              "avg_spread_r": 0.124
+            },
+            "London": {
+              "n": 27,
+              "exp_r": 0.7283,
+              "pnl": 1966.37,
+              "avg_spread_r": 0.1236
+            },
+            "Overlap": {
+              "n": 42,
+              "exp_r": 0.1873,
+              "pnl": 786.66,
+              "avg_spread_r": 0.1222
+            },
+            "NY": {
+              "n": 142,
+              "exp_r": -0.2766,
+              "pnl": -3927.68,
+              "avg_spread_r": 0.1217
+            },
+            "Off": {
+              "n": 76,
+              "exp_r": 0.3258,
+              "pnl": 2475.79,
+              "avg_spread_r": 0.1216
+            }
+          }
+        },
+        "oos": {
+          "n": 51,
+          "exp_r": -0.0466,
+          "win_rate": 0.2157,
+          "pnl": -237.5,
+          "avg_spread_r": 0.125,
+          "by_session": {
+            "Asia": {
+              "n": 15,
+              "exp_r": 0.2083,
+              "pnl": 312.5,
+              "avg_spread_r": 0.125
+            },
+            "London": {
+              "n": 3,
+              "exp_r": 2.2083,
+              "pnl": 662.5,
+              "avg_spread_r": 0.125
+            },
+            "Overlap": {
+              "n": 6,
+              "exp_r": 0.5417,
+              "pnl": 325.0,
+              "avg_spread_r": 0.125
+            },
+            "NY": {
+              "n": 17,
+              "exp_r": -0.5368,
+              "pnl": -912.5,
+              "avg_spread_r": 0.125
+            },
+            "Off": {
+              "n": 10,
+              "exp_r": -0.625,
+              "pnl": -625.0,
+              "avg_spread_r": 0.125
+            }
+          }
+        },
+        "wf": [
+          {
+            "fold": 1,
+            "a": 265248,
+            "b": 281015,
+            "n": 61,
+            "exp_r": 0.0265,
+            "win_rate": 0.2295,
+            "pnl": 161.66,
+            "avg_spread_r": 0.121,
+            "by_session": {
+              "Asia": {
+                "n": 18,
+                "exp_r": -0.2899,
+                "pnl": -521.91,
+                "avg_spread_r": 0.1233
+              },
+              "London": {
+                "n": 2,
+                "exp_r": -1.125,
+                "pnl": -225.0,
+                "avg_spread_r": 0.125
+              },
+              "Overlap": {
+                "n": 7,
+                "exp_r": -0.4042,
+                "pnl": -282.92,
+                "avg_spread_r": 0.1185
+              },
+              "NY": {
+                "n": 22,
+                "exp_r": 0.4709,
+                "pnl": 1035.97,
+                "avg_spread_r": 0.12
+              },
+              "Off": {
+                "n": 12,
+                "exp_r": 0.1296,
+                "pnl": 155.52,
+                "avg_spread_r": 0.1204
+              }
+            }
+          },
+          {
+            "fold": 2,
+            "a": 281016,
+            "b": 296783,
+            "n": 37,
+            "exp_r": -0.0439,
+            "win_rate": 0.2162,
+            "pnl": -162.5,
+            "avg_spread_r": 0.125,
+            "by_session": {
+              "Asia": {
+                "n": 11,
+                "exp_r": -0.6705,
+                "pnl": -737.5,
+                "avg_spread_r": 0.125
+              },
+              "London": {
+                "n": 4,
+                "exp_r": 1.375,
+                "pnl": 550.0,
+                "avg_spread_r": 0.125
+              },
+              "Overlap": {
+                "n": 8,
+                "exp_r": 0.75,
+                "pnl": 600.0,
+                "avg_spread_r": 0.125
+              },
+              "NY": {
+                "n": 11,
+                "exp_r": -0.2159,
+                "pnl": -237.5,
+                "avg_spread_r": 0.125
+              },
+              "Off": {
+                "n": 3,
+                "exp_r": -1.125,
+                "pnl": -337.5,
+                "avg_spread_r": 0.125
+              }
+            }
+          },
+          {
+            "fold": 3,
+            "a": 296784,
+            "b": 312551,
+            "n": 31,
+            "exp_r": -0.3185,
+            "win_rate": 0.1613,
+            "pnl": -987.5,
+            "avg_spread_r": 0.125,
+            "by_session": {
+              "Asia": {
+                "n": 11,
+                "exp_r": 0.2386,
+                "pnl": 262.5,
+                "avg_spread_r": 0.125
+              },
+              "Overlap": {
+                "n": 2,
+                "exp_r": 1.375,
+                "pnl": 275.0,
+                "avg_spread_r": 0.125
+              },
+              "NY": {
+                "n": 13,
+                "exp_r": -0.7404,
+                "pnl": -962.5,
+                "avg_spread_r": 0.125
+              },
+              "Off": {
+                "n": 5,
+                "exp_r": -1.125,
+                "pnl": -562.5,
+                "avg_spread_r": 0.125
+              }
+            }
+          },
+          {
+            "fold": 4,
+            "a": 312552,
+            "b": 328320,
+            "n": 20,
+            "exp_r": 0.375,
+            "win_rate": 0.3,
+            "pnl": 750.0,
+            "avg_spread_r": 0.125,
+            "by_session": {
+              "Asia": {
+                "n": 4,
+                "exp_r": 0.125,
+                "pnl": 50.0,
+                "avg_spread_r": 0.125
+              },
+              "London": {
+                "n": 3,
+                "exp_r": 2.2083,
+                "pnl": 662.5,
+                "avg_spread_r": 0.125
+              },
+              "Overlap": {
+                "n": 4,
+                "exp_r": 0.125,
+                "pnl": 50.0,
+                "avg_spread_r": 0.125
+              },
+              "NY": {
+                "n": 4,
+                "exp_r": 0.125,
+                "pnl": 50.0,
+                "avg_spread_r": 0.125
+              },
+              "Off": {
+                "n": 5,
+                "exp_r": -0.125,
+                "pnl": -62.5,
+                "avg_spread_r": 0.125
+              }
+            }
+          }
+        ],
+        "mc": {
+          "prob_profit": 66.5,
+          "p05_pnl": null,
+          "p50_pnl": null
+        }
+      }
+    },
+    {
+      "symbol": "GOLD",
+      "brain": "entropy_tod",
+      "risk_mult": 10.0,
+      "off": true,
+      "tf": "5m",
+      "rr": 4.0,
+      "spread_mult_table": 10.0,
+      "windows": {
+        "7d": {
+          "n": 0,
+          "exp_r": 0.0,
+          "win_rate": 0.0,
+          "pnl": 0.0,
+          "avg_spread_r": 0.0,
+          "by_session": {}
+        },
+        "30d": {
+          "n": 3,
+          "exp_r": 0.6124,
+          "win_rate": 0.3333,
+          "pnl": 183.72,
+          "avg_spread_r": 0.0543,
+          "by_session": {
+            "Asia": {
+              "n": 3,
+              "exp_r": 0.6124,
+              "pnl": 183.72,
+              "avg_spread_r": 0.0543
+            }
+          }
+        },
+        "90d": {
+          "n": 10,
+          "exp_r": 0.4507,
+          "win_rate": 0.3,
+          "pnl": 450.7,
+          "avg_spread_r": 0.0493,
+          "by_session": {
+            "Asia": {
+              "n": 10,
+              "exp_r": 0.4507,
+              "pnl": 450.7,
+              "avg_spread_r": 0.0493
+            }
+          }
+        },
+        "180d": {
+          "n": 20,
+          "exp_r": -0.0353,
+          "win_rate": 0.2,
+          "pnl": -70.51,
+          "avg_spread_r": 0.0353,
+          "by_session": {
+            "Asia": {
+              "n": 20,
+              "exp_r": -0.0353,
+              "pnl": -70.51,
+              "avg_spread_r": 0.0353
+            }
+          }
+        },
+        "1y": {
+          "n": 38,
+          "exp_r": 0.6652,
+          "win_rate": 0.3421,
+          "pnl": 2527.64,
+          "avg_spread_r": 0.0454,
+          "by_session": {
+            "Asia": {
+              "n": 38,
+              "exp_r": 0.6652,
+              "pnl": 2527.64,
+              "avg_spread_r": 0.0454
+            }
+          }
+        },
+        "3y": {
+          "n": 97,
+          "exp_r": 0.4205,
+          "win_rate": 0.299,
+          "pnl": 4078.46,
+          "avg_spread_r": 0.0744,
+          "by_session": {
+            "Asia": {
+              "n": 97,
+              "exp_r": 0.4205,
+              "pnl": 4078.46,
+              "avg_spread_r": 0.0744
+            }
+          }
+        }
+      },
+      "battery_1y": {
+        "verdict": "PASS",
+        "wf_green": 3,
+        "full": {
+          "n": 38,
+          "exp_r": 0.6652,
+          "win_rate": 0.3421,
+          "pnl": 2527.64,
+          "avg_spread_r": 0.0454,
+          "by_session": {
+            "Asia": {
+              "n": 38,
+              "exp_r": 0.6652,
+              "pnl": 2527.64,
+              "avg_spread_r": 0.0454
+            }
+          }
+        },
+        "oos": {
+          "n": 11,
+          "exp_r": 0.7706,
+          "win_rate": 0.3636,
+          "pnl": 847.61,
+          "avg_spread_r": 0.0476,
+          "by_session": {
+            "Asia": {
+              "n": 11,
+              "exp_r": 0.7706,
+              "pnl": 847.61,
+              "avg_spread_r": 0.0476
+            }
+          }
+        },
+        "wf": [
+          {
+            "fold": 1,
+            "a": 265248,
+            "b": 281015,
+            "n": 11,
+            "exp_r": 0.7879,
+            "win_rate": 0.3636,
+            "pnl": 866.68,
+            "avg_spread_r": 0.0303,
+            "by_session": {
+              "Asia": {
+                "n": 11,
+                "exp_r": 0.7879,
+                "pnl": 866.68,
+                "avg_spread_r": 0.0303
+              }
+            }
+          },
+          {
+            "fold": 2,
+            "a": 281016,
+            "b": 296783,
+            "n": 6,
+            "exp_r": -1.023,
+            "win_rate": 0.0,
+            "pnl": -613.8,
+            "avg_spread_r": 0.023,
+            "by_session": {
+              "Asia": {
+                "n": 6,
+                "exp_r": -1.023,
+                "pnl": -613.8,
+                "avg_spread_r": 0.023
+              }
+            }
+          },
+          {
+            "fold": 3,
+            "a": 296784,
+            "b": 312551,
+            "n": 6,
+            "exp_r": 0.6177,
+            "win_rate": 0.3333,
+            "pnl": 370.59,
+            "avg_spread_r": 0.049,
+            "by_session": {
+              "Asia": {
+                "n": 6,
+                "exp_r": 0.6177,
+                "pnl": 370.59,
+                "avg_spread_r": 0.049
+              }
+            }
+          },
+          {
+            "fold": 4,
+            "a": 312552,
+            "b": 328320,
+            "n": 5,
+            "exp_r": 0.954,
+            "win_rate": 0.4,
+            "pnl": 477.02,
+            "avg_spread_r": 0.046,
+            "by_session": {
+              "Asia": {
+                "n": 5,
+                "exp_r": 0.954,
+                "pnl": 477.02,
+                "avg_spread_r": 0.046
+              }
+            }
+          }
+        ],
+        "mc": {
+          "prob_profit": 97.3,
+          "p05_pnl": null,
+          "p50_pnl": null
+        }
+      }
+    },
+    {
+      "symbol": "NAS100",
+      "brain": "volmom",
+      "risk_mult": 8.0,
+      "off": false,
+      "tf": "15m",
+      "rr": 4.0,
+      "spread_mult_table": 8.0,
+      "windows": {
+        "7d": {
+          "n": 7,
+          "exp_r": 0.3975,
+          "win_rate": 0.2857,
+          "pnl": 278.22,
+          "avg_spread_r": 0.0311,
+          "by_session": {
+            "Asia": {
+              "n": 3,
+              "exp_r": 0.6261,
+              "pnl": 187.82,
+              "avg_spread_r": 0.0406
+            },
+            "London": {
+              "n": 2,
+              "exp_r": -1.0274,
+              "pnl": -205.49,
+              "avg_spread_r": 0.0274
+            },
+            "Overlap": {
+              "n": 2,
+              "exp_r": 1.4794,
+              "pnl": 295.89,
+              "avg_spread_r": 0.0205
+            }
+          }
+        },
+        "30d": {
+          "n": 31,
+          "exp_r": -0.2257,
+          "win_rate": 0.1613,
+          "pnl": -699.82,
+          "avg_spread_r": 0.0322,
+          "by_session": {
+            "Asia": {
+              "n": 10,
+              "exp_r": -0.0296,
+              "pnl": -29.64,
+              "avg_spread_r": 0.0296
+            },
+            "London": {
+              "n": 4,
+              "exp_r": -1.0266,
+              "pnl": -410.63,
+              "avg_spread_r": 0.0266
+            },
+            "Overlap": {
+              "n": 8,
+              "exp_r": 0.2282,
+              "pnl": 182.53,
+              "avg_spread_r": 0.0218
+            },
+            "NY": {
+              "n": 3,
+              "exp_r": -1.0149,
+              "pnl": -304.48,
+              "avg_spread_r": 0.0149
+            },
+            "Off": {
+              "n": 6,
+              "exp_r": -0.2293,
+              "pnl": -137.6,
+              "avg_spread_r": 0.0627
+            }
+          }
+        },
+        "90d": {
+          "n": 108,
+          "exp_r": 0.1217,
+          "win_rate": 0.2315,
+          "pnl": 1314.0,
+          "avg_spread_r": 0.0357,
+          "by_session": {
+            "Asia": {
+              "n": 32,
+              "exp_r": -0.0979,
+              "pnl": -313.37,
+              "avg_spread_r": 0.0354
+            },
+            "London": {
+              "n": 17,
+              "exp_r": 0.7298,
+              "pnl": 1240.71,
+              "avg_spread_r": 0.0349
+            },
+            "Overlap": {
+              "n": 22,
+              "exp_r": -0.1151,
+              "pnl": -253.15,
+              "avg_spread_r": 0.0242
+            },
+            "NY": {
+              "n": 19,
+              "exp_r": 0.5574,
+              "pnl": 1059.13,
+              "avg_spread_r": 0.0215
+            },
+            "Off": {
+              "n": 18,
+              "exp_r": -0.233,
+              "pnl": -419.32,
+              "avg_spread_r": 0.0663
+            }
+          }
+        },
+        "180d": {
+          "n": 202,
+          "exp_r": 0.0999,
+          "win_rate": 0.2277,
+          "pnl": 2017.4,
+          "avg_spread_r": 0.0387,
+          "by_session": {
+            "Asia": {
+              "n": 61,
+              "exp_r": 0.0237,
+              "pnl": 144.46,
+              "avg_spread_r": 0.0419
+            },
+            "London": {
+              "n": 34,
+              "exp_r": 0.8734,
+              "pnl": 2969.56,
+              "avg_spread_r": 0.0384
+            },
+            "Overlap": {
+              "n": 34,
+              "exp_r": -0.1428,
+              "pnl": -485.48,
+              "avg_spread_r": 0.0251
+            },
+            "NY": {
+              "n": 39,
+              "exp_r": 0.0039,
+              "pnl": 15.23,
+              "avg_spread_r": 0.0217
+            },
+            "Off": {
+              "n": 34,
+              "exp_r": -0.1842,
+              "pnl": -626.37,
+              "avg_spread_r": 0.0666
+            }
+          }
+        },
+        "1y": {
+          "n": 369,
+          "exp_r": 0.1725,
+          "win_rate": 0.2439,
+          "pnl": 6366.94,
+          "avg_spread_r": 0.047,
+          "by_session": {
+            "Asia": {
+              "n": 106,
+              "exp_r": 0.0269,
+              "pnl": 284.7,
+              "avg_spread_r": 0.058
+            },
+            "London": {
+              "n": 65,
+              "exp_r": 0.642,
+              "pnl": 4172.85,
+              "avg_spread_r": 0.0503
+            },
+            "Overlap": {
+              "n": 67,
+              "exp_r": -0.138,
+              "pnl": -924.9,
+              "avg_spread_r": 0.0336
+            },
+            "NY": {
+              "n": 81,
+              "exp_r": 0.1458,
+              "pnl": 1181.25,
+              "avg_spread_r": 0.027
+            },
+            "Off": {
+              "n": 50,
+              "exp_r": 0.3306,
+              "pnl": 1653.04,
+              "avg_spread_r": 0.0694
+            }
+          }
+        },
+        "3y": {
+          "n": 1117,
+          "exp_r": 0.0367,
+          "win_rate": 0.2193,
+          "pnl": 4104.61,
+          "avg_spread_r": 0.0599,
+          "by_session": {
+            "Asia": {
+              "n": 289,
+              "exp_r": -0.1286,
+              "pnl": -3716.53,
+              "avg_spread_r": 0.0802
+            },
+            "London": {
+              "n": 182,
+              "exp_r": 0.2565,
+              "pnl": 4668.39,
+              "avg_spread_r": 0.0622
+            },
+            "Overlap": {
+              "n": 217,
+              "exp_r": -0.143,
+              "pnl": -3103.12,
+              "avg_spread_r": 0.0416
+            },
+            "NY": {
+              "n": 264,
+              "exp_r": 0.1019,
+              "pnl": 2689.82,
+              "avg_spread_r": 0.0345
+            },
+            "Off": {
+              "n": 165,
+              "exp_r": 0.2161,
+              "pnl": 3566.05,
+              "avg_spread_r": 0.0869
+            }
+          }
+        }
+      },
+      "battery_1y": {
+        "verdict": "PASS",
+        "wf_green": 4,
+        "full": {
+          "n": 369,
+          "exp_r": 0.1725,
+          "win_rate": 0.2439,
+          "pnl": 6366.94,
+          "avg_spread_r": 0.047,
+          "by_session": {
+            "Asia": {
+              "n": 106,
+              "exp_r": 0.0269,
+              "pnl": 284.7,
+              "avg_spread_r": 0.058
+            },
+            "London": {
+              "n": 65,
+              "exp_r": 0.642,
+              "pnl": 4172.85,
+              "avg_spread_r": 0.0503
+            },
+            "Overlap": {
+              "n": 67,
+              "exp_r": -0.138,
+              "pnl": -924.9,
+              "avg_spread_r": 0.0336
+            },
+            "NY": {
+              "n": 81,
+              "exp_r": 0.1458,
+              "pnl": 1181.25,
+              "avg_spread_r": 0.027
+            },
+            "Off": {
+              "n": 50,
+              "exp_r": 0.3306,
+              "pnl": 1653.04,
+              "avg_spread_r": 0.0694
+            }
+          }
+        },
+        "oos": {
+          "n": 133,
+          "exp_r": 0.0509,
+          "win_rate": 0.218,
+          "pnl": 677.37,
+          "avg_spread_r": 0.0393,
+          "by_session": {
+            "Asia": {
+              "n": 40,
+              "exp_r": -0.2924,
+              "pnl": -1169.66,
+              "avg_spread_r": 0.0424
+            },
+            "London": {
+              "n": 22,
+              "exp_r": 0.78,
+              "pnl": 1716.1,
+              "avg_spread_r": 0.0381
+            },
+            "Overlap": {
+              "n": 25,
+              "exp_r": -0.2257,
+              "pnl": -564.25,
+              "avg_spread_r": 0.0257
+            },
+            "NY": {
+              "n": 25,
+              "exp_r": 0.1778,
+              "pnl": 444.49,
+              "avg_spread_r": 0.0222
+            },
+            "Off": {
+              "n": 21,
+              "exp_r": 0.1194,
+              "pnl": 250.69,
+              "avg_spread_r": 0.0711
+            }
+          }
+        },
+        "wf": [
+          {
+            "fold": 1,
+            "a": 88416,
+            "b": 93671,
+            "n": 44,
+            "exp_r": 0.4192,
+            "win_rate": 0.2955,
+            "pnl": 1844.67,
+            "avg_spread_r": 0.058,
+            "by_session": {
+              "Asia": {
+                "n": 12,
+                "exp_r": -0.2344,
+                "pnl": -281.34,
+                "avg_spread_r": 0.0678
+              },
+              "London": {
+                "n": 6,
+                "exp_r": 1.4387,
+                "pnl": 863.2,
+                "avg_spread_r": 0.0613
+              },
+              "Overlap": {
+                "n": 9,
+                "exp_r": -0.4991,
+                "pnl": -449.23,
+                "avg_spread_r": 0.0547
+              },
+              "NY": {
+                "n": 9,
+                "exp_r": 0.6363,
+                "pnl": 572.7,
+                "avg_spread_r": 0.0303
+              },
+              "Off": {
+                "n": 8,
+                "exp_r": 1.4242,
+                "pnl": 1139.34,
+                "avg_spread_r": 0.0758
+              }
+            }
+          },
+          {
+            "fold": 2,
+            "a": 93672,
+            "b": 98927,
+            "n": 55,
+            "exp_r": 0.0531,
+            "win_rate": 0.2182,
+            "pnl": 291.87,
+            "avg_spread_r": 0.0378,
+            "by_session": {
+              "Asia": {
+                "n": 17,
+                "exp_r": 0.7219,
+                "pnl": 1227.22,
+                "avg_spread_r": 0.0428
+              },
+              "London": {
+                "n": 10,
+                "exp_r": 0.4639,
+                "pnl": 463.95,
+                "avg_spread_r": 0.036
+              },
+              "Overlap": {
+                "n": 8,
+                "exp_r": -0.3981,
+                "pnl": -318.47,
+                "avg_spread_r": 0.0231
+              },
+              "NY": {
+                "n": 10,
+                "exp_r": -0.0205,
+                "pnl": -20.47,
+                "avg_spread_r": 0.0205
+              },
+              "Off": {
+                "n": 10,
+                "exp_r": -1.0604,
+                "pnl": -1060.36,
+                "avg_spread_r": 0.0604
+              }
+            }
+          },
+          {
+            "fold": 3,
+            "a": 98928,
+            "b": 104183,
+            "n": 69,
+            "exp_r": 0.0421,
+            "win_rate": 0.2174,
+            "pnl": 290.24,
+            "avg_spread_r": 0.0449,
+            "by_session": {
+              "Asia": {
+                "n": 20,
+                "exp_r": -0.5527,
+                "pnl": -1105.45,
+                "avg_spread_r": 0.0527
+              },
+              "London": {
+                "n": 15,
+                "exp_r": 0.9582,
+                "pnl": 1437.35,
+                "avg_spread_r": 0.0418
+              },
+              "Overlap": {
+                "n": 11,
+                "exp_r": -0.5766,
+                "pnl": -634.25,
+                "avg_spread_r": 0.0311
+              },
+              "NY": {
+                "n": 15,
+                "exp_r": 0.3071,
+                "pnl": 460.71,
+                "avg_spread_r": 0.0262
+              },
+              "Off": {
+                "n": 8,
+                "exp_r": 0.1648,
+                "pnl": 131.88,
+                "avg_spread_r": 0.0852
+              }
+            }
+          },
+          {
+            "fold": 4,
+            "a": 104184,
+            "b": 109440,
+            "n": 64,
+            "exp_r": 0.0605,
+            "win_rate": 0.2188,
+            "pnl": 387.13,
+            "avg_spread_r": 0.0333,
+            "by_session": {
+              "Asia": {
+                "n": 20,
+                "exp_r": -0.0321,
+                "pnl": -64.21,
+                "avg_spread_r": 0.0321
+              },
+              "London": {
+                "n": 7,
+                "exp_r": 0.3982,
+                "pnl": 278.75,
+                "avg_spread_r": 0.0304
+              },
+              "Overlap": {
+                "n": 14,
+                "exp_r": 0.05,
+                "pnl": 70.0,
+                "avg_spread_r": 0.0214
+              },
+              "NY": {
+                "n": 10,
+                "exp_r": -0.0162,
+                "pnl": -16.22,
+                "avg_spread_r": 0.0162
+              },
+              "Off": {
+                "n": 13,
+                "exp_r": 0.0914,
+                "pnl": 118.81,
+                "avg_spread_r": 0.0625
+              }
+            }
+          }
+        ],
+        "mc": {
+          "prob_profit": 93.0,
+          "p05_pnl": null,
+          "p50_pnl": null
+        }
+      }
+    },
+    {
+      "symbol": "USDJPY",
+      "brain": "circadian_kalman_z",
+      "risk_mult": 10.0,
+      "off": false,
+      "tf": "5m",
+      "rr": 2.0,
+      "spread_mult_table": 10.0,
+      "windows": {
+        "7d": {
+          "n": 5,
+          "exp_r": 0.1,
+          "win_rate": 0.4,
+          "pnl": 50.0,
+          "avg_spread_r": 0.1,
+          "by_session": {
+            "London": {
+              "n": 2,
+              "exp_r": 0.4,
+              "pnl": 80.0,
+              "avg_spread_r": 0.1
+            },
+            "Overlap": {
+              "n": 1,
+              "exp_r": -1.1,
+              "pnl": -110.0,
+              "avg_spread_r": 0.1
+            },
+            "NY": {
+              "n": 2,
+              "exp_r": 0.4,
+              "pnl": 80.0,
+              "avg_spread_r": 0.1
+            }
+          }
+        },
+        "30d": {
+          "n": 23,
+          "exp_r": 0.3351,
+          "win_rate": 0.4783,
+          "pnl": 770.62,
+          "avg_spread_r": 0.0997,
+          "by_session": {
+            "Asia": {
+              "n": 4,
+              "exp_r": 0.4015,
+              "pnl": 160.62,
+              "avg_spread_r": 0.0985
+            },
+            "London": {
+              "n": 6,
+              "exp_r": 0.9,
+              "pnl": 540.0,
+              "avg_spread_r": 0.1
+            },
+            "Overlap": {
+              "n": 7,
+              "exp_r": 0.1857,
+              "pnl": 130.0,
+              "avg_spread_r": 0.1
+            },
+            "NY": {
+              "n": 6,
+              "exp_r": -0.1,
+              "pnl": -60.0,
+              "avg_spread_r": 0.1
+            }
+          }
+        },
+        "90d": {
+          "n": 65,
+          "exp_r": 0.1943,
+          "win_rate": 0.4308,
+          "pnl": 1262.84,
+          "avg_spread_r": 0.098,
+          "by_session": {
+            "Asia": {
+              "n": 8,
+              "exp_r": 0.7771,
+              "pnl": 621.69,
+              "avg_spread_r": 0.0979
+            },
+            "London": {
+              "n": 19,
+              "exp_r": 0.4826,
+              "pnl": 916.97,
+              "avg_spread_r": 0.0963
+            },
+            "Overlap": {
+              "n": 13,
+              "exp_r": 0.0538,
+              "pnl": 70.0,
+              "avg_spread_r": 0.1
+            },
+            "NY": {
+              "n": 23,
+              "exp_r": -0.3156,
+              "pnl": -725.82,
+              "avg_spread_r": 0.0982
+            },
+            "Off": {
+              "n": 2,
+              "exp_r": 1.9,
+              "pnl": 380.0,
+              "avg_spread_r": 0.1
+            }
+          }
+        },
+        "180d": {
+          "n": 199,
+          "exp_r": 0.1695,
+          "win_rate": 0.4221,
+          "pnl": 3373.59,
+          "avg_spread_r": 0.0968,
+          "by_session": {
+            "Asia": {
+              "n": 24,
+              "exp_r": 0.7757,
+              "pnl": 1861.69,
+              "avg_spread_r": 0.0993
+            },
+            "London": {
+              "n": 53,
+              "exp_r": 0.2042,
+              "pnl": 1082.34,
+              "avg_spread_r": 0.0977
+            },
+            "Overlap": {
+              "n": 48,
+              "exp_r": 0.096,
+              "pnl": 460.9,
+              "avg_spread_r": 0.0915
+            },
+            "NY": {
+              "n": 69,
+              "exp_r": -0.0118,
+              "pnl": -81.34,
+              "avg_spread_r": 0.0987
+            },
+            "Off": {
+              "n": 5,
+              "exp_r": 0.1,
+              "pnl": 50.0,
+              "avg_spread_r": 0.1
+            }
+          }
+        },
+        "1y": {
+          "n": 434,
+          "exp_r": 0.0504,
+          "win_rate": 0.3825,
+          "pnl": 2186.83,
+          "avg_spread_r": 0.0971,
+          "by_session": {
+            "Asia": {
+              "n": 54,
+              "exp_r": 0.1243,
+              "pnl": 671.43,
+              "avg_spread_r": 0.0979
+            },
+            "London": {
+              "n": 126,
+              "exp_r": 0.0923,
+              "pnl": 1163.18,
+              "avg_spread_r": 0.0982
+            },
+            "Overlap": {
+              "n": 99,
+              "exp_r": 0.119,
+              "pnl": 1178.1,
+              "avg_spread_r": 0.0931
+            },
+            "NY": {
+              "n": 143,
+              "exp_r": -0.0703,
+              "pnl": -1005.88,
+              "avg_spread_r": 0.0983
+            },
+            "Off": {
+              "n": 12,
+              "exp_r": 0.15,
+              "pnl": 180.0,
+              "avg_spread_r": 0.1
+            }
+          }
+        },
+        "3y": {
+          "n": 1477,
+          "exp_r": -0.0313,
+          "win_rate": 0.3541,
+          "pnl": -4619.27,
+          "avg_spread_r": 0.0936,
+          "by_session": {
+            "Asia": {
+              "n": 156,
+              "exp_r": 0.0577,
+              "pnl": 899.89,
+              "avg_spread_r": 0.0962
+            },
+            "London": {
+              "n": 424,
+              "exp_r": 0.0232,
+              "pnl": 983.29,
+              "avg_spread_r": 0.0947
+            },
+            "Overlap": {
+              "n": 354,
+              "exp_r": -0.0275,
+              "pnl": -974.74,
+              "avg_spread_r": 0.0869
+            },
+            "NY": {
+              "n": 511,
+              "exp_r": -0.1097,
+              "pnl": -5607.71,
+              "avg_spread_r": 0.096
+            },
+            "Off": {
+              "n": 32,
+              "exp_r": 0.025,
+              "pnl": 80.0,
+              "avg_spread_r": 0.1
+            }
+          }
+        }
+      },
+      "battery_1y": {
+        "verdict": "PASS",
+        "wf_green": 3,
+        "full": {
+          "n": 434,
+          "exp_r": 0.0504,
+          "win_rate": 0.3825,
+          "pnl": 2186.83,
+          "avg_spread_r": 0.0971,
+          "by_session": {
+            "Asia": {
+              "n": 54,
+              "exp_r": 0.1243,
+              "pnl": 671.43,
+              "avg_spread_r": 0.0979
+            },
+            "London": {
+              "n": 126,
+              "exp_r": 0.0923,
+              "pnl": 1163.18,
+              "avg_spread_r": 0.0982
+            },
+            "Overlap": {
+              "n": 99,
+              "exp_r": 0.119,
+              "pnl": 1178.1,
+              "avg_spread_r": 0.0931
+            },
+            "NY": {
+              "n": 143,
+              "exp_r": -0.0703,
+              "pnl": -1005.88,
+              "avg_spread_r": 0.0983
+            },
+            "Off": {
+              "n": 12,
+              "exp_r": 0.15,
+              "pnl": 180.0,
+              "avg_spread_r": 0.1
+            }
+          }
+        },
+        "oos": {
+          "n": 89,
+          "exp_r": 0.1823,
+          "win_rate": 0.427,
+          "pnl": 1622.84,
+          "avg_spread_r": 0.0986,
+          "by_session": {
+            "Asia": {
+              "n": 14,
+              "exp_r": 0.6155,
+              "pnl": 861.69,
+              "avg_spread_r": 0.0988
+            },
+            "London": {
+              "n": 25,
+              "exp_r": 0.4628,
+              "pnl": 1156.97,
+              "avg_spread_r": 0.0972
+            },
+            "Overlap": {
+              "n": 16,
+              "exp_r": -0.1625,
+              "pnl": -260.0,
+              "avg_spread_r": 0.1
+            },
+            "NY": {
+              "n": 32,
+              "exp_r": -0.1612,
+              "pnl": -515.82,
+              "avg_spread_r": 0.0987
+            },
+            "Off": {
+              "n": 2,
+              "exp_r": 1.9,
+              "pnl": 380.0,
+              "avg_spread_r": 0.1
+            }
+          }
+        },
+        "wf": [
+          {
+            "fold": 1,
+            "a": 265248,
+            "b": 281015,
+            "n": 70,
+            "exp_r": -0.1097,
+            "win_rate": 0.3286,
+            "pnl": -767.67,
+            "avg_spread_r": 0.0954,
+            "by_session": {
+              "Asia": {
+                "n": 9,
+                "exp_r": -0.0932,
+                "pnl": -83.91,
+                "avg_spread_r": 0.0932
+              },
+              "London": {
+                "n": 22,
+                "exp_r": -0.1448,
+                "pnl": -318.53,
+                "avg_spread_r": 0.0993
+              },
+              "Overlap": {
+                "n": 17,
+                "exp_r": -0.0315,
+                "pnl": -53.58,
+                "avg_spread_r": 0.0903
+              },
+              "NY": {
+                "n": 18,
+                "exp_r": -0.4287,
+                "pnl": -771.65,
+                "avg_spread_r": 0.0954
+              },
+              "Off": {
+                "n": 4,
+                "exp_r": 1.15,
+                "pnl": 460.0,
+                "avg_spread_r": 0.1
+              }
+            }
+          },
+          {
+            "fold": 2,
+            "a": 281016,
+            "b": 296783,
+            "n": 83,
+            "exp_r": 0.2771,
+            "win_rate": 0.4578,
+            "pnl": 2300.15,
+            "avg_spread_r": 0.0964,
+            "by_session": {
+              "Asia": {
+                "n": 8,
+                "exp_r": 1.15,
+                "pnl": 920.0,
+                "avg_spread_r": 0.1
+              },
+              "London": {
+                "n": 18,
+                "exp_r": 0.2355,
+                "pnl": 423.9,
+                "avg_spread_r": 0.0978
+              },
+              "Overlap": {
+                "n": 24,
+                "exp_r": 0.1602,
+                "pnl": 384.48,
+                "avg_spread_r": 0.0898
+              },
+              "NY": {
+                "n": 30,
+                "exp_r": 0.3006,
+                "pnl": 901.77,
+                "avg_spread_r": 0.0994
+              },
+              "Off": {
+                "n": 3,
+                "exp_r": -1.1,
+                "pnl": -330.0,
+                "avg_spread_r": 0.1
+              }
+            }
+          },
+          {
+            "fold": 3,
+            "a": 296784,
+            "b": 312551,
+            "n": 53,
+            "exp_r": 0.0902,
+            "win_rate": 0.3962,
+            "pnl": 478.04,
+            "avg_spread_r": 0.0985,
+            "by_session": {
+              "Asia": {
+                "n": 10,
+                "exp_r": 0.7011,
+                "pnl": 701.07,
+                "avg_spread_r": 0.0989
+              },
+              "London": {
+                "n": 15,
+                "exp_r": 0.3046,
+                "pnl": 456.97,
+                "avg_spread_r": 0.0954
+              },
+              "Overlap": {
+                "n": 7,
+                "exp_r": -0.6714,
+                "pnl": -470.0,
+                "avg_spread_r": 0.1
+              },
+              "NY": {
+                "n": 20,
+                "exp_r": -0.2,
+                "pnl": -400.0,
+                "avg_spread_r": 0.1
+              },
+              "Off": {
+                "n": 1,
+                "exp_r": 1.9,
+                "pnl": 190.0,
+                "avg_spread_r": 0.1
+              }
+            }
+          },
+          {
+            "fold": 4,
+            "a": 312552,
+            "b": 328320,
+            "n": 36,
+            "exp_r": 0.318,
+            "win_rate": 0.4722,
+            "pnl": 1144.8,
+            "avg_spread_r": 0.0987,
+            "by_session": {
+              "Asia": {
+                "n": 4,
+                "exp_r": 0.4015,
+                "pnl": 160.62,
+                "avg_spread_r": 0.0985
+              },
+              "London": {
+                "n": 10,
+                "exp_r": 0.7,
+                "pnl": 700.0,
+                "avg_spread_r": 0.1
+              },
+              "Overlap": {
+                "n": 9,
+                "exp_r": 0.2333,
+                "pnl": 210.0,
+                "avg_spread_r": 0.1
+              },
+              "NY": {
+                "n": 12,
+                "exp_r": -0.0965,
+                "pnl": -115.82,
+                "avg_spread_r": 0.0965
+              },
+              "Off": {
+                "n": 1,
+                "exp_r": 1.9,
+                "pnl": 190.0,
+                "avg_spread_r": 0.1
+              }
+            }
+          }
+        ],
+        "mc": {
+          "prob_profit": 76.3,
+          "p05_pnl": null,
+          "p50_pnl": null
+        }
+      }
+    },
+    {
+      "symbol": "UKOIL",
+      "brain": "session_mix",
+      "risk_mult": 1.0,
+      "off": true,
+      "tf": "5m",
+      "rr": 4.0,
+      "spread_mult_table": 1.0,
+      "windows": {
+        "7d": {
+          "n": 14,
+          "exp_r": 0.6404,
+          "win_rate": 0.3571,
+          "pnl": 896.61,
+          "avg_spread_r": 0.1453,
+          "by_session": {
+            "Asia": {
+              "n": 6,
+              "exp_r": -1.1706,
+              "pnl": -702.37,
+              "avg_spread_r": 0.1706
+            },
+            "London": {
+              "n": 1,
+              "exp_r": 3.8394,
+              "pnl": 383.94,
+              "avg_spread_r": 0.1606
+            },
+            "Overlap": {
+              "n": 5,
+              "exp_r": 1.9068,
+              "pnl": 953.42,
+              "avg_spread_r": 0.0932
+            },
+            "NY": {
+              "n": 2,
+              "exp_r": 1.3081,
+              "pnl": 261.62,
+              "avg_spread_r": 0.1919
+            }
+          }
+        },
+        "30d": {
+          "n": 61,
+          "exp_r": 0.0559,
+          "win_rate": 0.2459,
+          "pnl": 340.81,
+          "avg_spread_r": 0.1736,
+          "by_session": {
+            "Asia": {
+              "n": 22,
+              "exp_r": -0.2746,
+              "pnl": -604.13,
+              "avg_spread_r": 0.1837
+            },
+            "London": {
+              "n": 5,
+              "exp_r": 0.8601,
+              "pnl": 430.07,
+              "avg_spread_r": 0.1399
+            },
+            "Overlap": {
+              "n": 11,
+              "exp_r": 0.72,
+              "pnl": 792.04,
+              "avg_spread_r": 0.0981
+            },
+            "NY": {
+              "n": 23,
+              "exp_r": -0.1205,
+              "pnl": -277.17,
+              "avg_spread_r": 0.2075
+            }
+          }
+        },
+        "90d": {
+          "n": 188,
+          "exp_r": 0.1325,
+          "win_rate": 0.2553,
+          "pnl": 2491.64,
+          "avg_spread_r": 0.1441,
+          "by_session": {
+            "Asia": {
+              "n": 75,
+              "exp_r": -0.2316,
+              "pnl": -1736.79,
+              "avg_spread_r": 0.1649
+            },
+            "London": {
+              "n": 26,
+              "exp_r": 0.0561,
+              "pnl": 145.83,
+              "avg_spread_r": 0.0978
+            },
+            "Overlap": {
+              "n": 30,
+              "exp_r": 0.4142,
+              "pnl": 1242.68,
+              "avg_spread_r": 0.0858
+            },
+            "NY": {
+              "n": 57,
+              "exp_r": 0.4982,
+              "pnl": 2839.92,
+              "avg_spread_r": 0.1684
+            }
+          }
+        },
+        "180d": {
+          "n": 352,
+          "exp_r": 0.0764,
+          "win_rate": 0.2415,
+          "pnl": 2689.66,
+          "avg_spread_r": 0.131,
+          "by_session": {
+            "Asia": {
+              "n": 130,
+              "exp_r": -0.1858,
+              "pnl": -2415.14,
+              "avg_spread_r": 0.1473
+            },
+            "London": {
+              "n": 40,
+              "exp_r": 0.2805,
+              "pnl": 1122.08,
+              "avg_spread_r": 0.0945
+            },
+            "Overlap": {
+              "n": 69,
+              "exp_r": 0.2172,
+              "pnl": 1498.59,
+              "avg_spread_r": 0.0872
+            },
+            "NY": {
+              "n": 113,
+              "exp_r": 0.2198,
+              "pnl": 2484.13,
+              "avg_spread_r": 0.1518
+            }
+          }
+        },
+        "1y": {
+          "n": 590,
+          "exp_r": 0.0289,
+          "win_rate": 0.239,
+          "pnl": 1707.2,
+          "avg_spread_r": 0.166,
+          "by_session": {
+            "Asia": {
+              "n": 195,
+              "exp_r": -0.011,
+              "pnl": -215.14,
+              "avg_spread_r": 0.1649
+            },
+            "London": {
+              "n": 67,
+              "exp_r": 0.1354,
+              "pnl": 907.08,
+              "avg_spread_r": 0.1333
+            },
+            "Overlap": {
+              "n": 124,
+              "exp_r": -0.0026,
+              "pnl": -32.14,
+              "avg_spread_r": 0.1316
+            },
+            "NY": {
+              "n": 204,
+              "exp_r": 0.0513,
+              "pnl": 1047.4,
+              "avg_spread_r": 0.1987
+            }
+          }
+        },
+        "3y": {
+          "n": 1702,
+          "exp_r": -0.1398,
+          "win_rate": 0.2098,
+          "pnl": -23801.66,
+          "avg_spread_r": 0.1886,
+          "by_session": {
+            "Asia": {
+              "n": 466,
+              "exp_r": -0.0993,
+              "pnl": -4625.63,
+              "avg_spread_r": 0.183
+            },
+            "London": {
+              "n": 230,
+              "exp_r": -0.1485,
+              "pnl": -3416.6,
+              "avg_spread_r": 0.1703
+            },
+            "Overlap": {
+              "n": 337,
+              "exp_r": 0.0285,
+              "pnl": 961.5,
+              "avg_spread_r": 0.1436
+            },
+            "NY": {
+              "n": 669,
+              "exp_r": -0.2499,
+              "pnl": -16720.93,
+              "avg_spread_r": 0.2215
+            }
+          }
+        }
+      },
+      "battery_1y": {
+        "verdict": "PASS",
+        "wf_green": 3,
+        "full": {
+          "n": 590,
+          "exp_r": 0.0289,
+          "win_rate": 0.239,
+          "pnl": 1707.2,
+          "avg_spread_r": 0.166,
+          "by_session": {
+            "Asia": {
+              "n": 195,
+              "exp_r": -0.011,
+              "pnl": -215.14,
+              "avg_spread_r": 0.1649
+            },
+            "London": {
+              "n": 67,
+              "exp_r": 0.1354,
+              "pnl": 907.08,
+              "avg_spread_r": 0.1333
+            },
+            "Overlap": {
+              "n": 124,
+              "exp_r": -0.0026,
+              "pnl": -32.14,
+              "avg_spread_r": 0.1316
+            },
+            "NY": {
+              "n": 204,
+              "exp_r": 0.0513,
+              "pnl": 1047.4,
+              "avg_spread_r": 0.1987
+            }
+          }
+        },
+        "oos": {
+          "n": 236,
+          "exp_r": 0.1333,
+          "win_rate": 0.2542,
+          "pnl": 3146.42,
+          "avg_spread_r": 0.1379,
+          "by_session": {
+            "Asia": {
+              "n": 95,
+              "exp_r": -0.1076,
+              "pnl": -1022.46,
+              "avg_spread_r": 0.1603
+            },
+            "London": {
+              "n": 29,
+              "exp_r": 0.1095,
+              "pnl": 317.62,
+              "avg_spread_r": 0.0974
+            },
+            "Overlap": {
+              "n": 41,
+              "exp_r": 0.3853,
+              "pnl": 1579.63,
+              "avg_spread_r": 0.0781
+            },
+            "NY": {
+              "n": 71,
+              "exp_r": 0.3199,
+              "pnl": 2271.63,
+              "avg_spread_r": 0.1589
+            }
+          }
+        },
+        "wf": [
+          {
+            "fold": 1,
+            "a": 265248,
+            "b": 281015,
+            "n": 73,
+            "exp_r": -0.4505,
+            "win_rate": 0.1507,
+            "pnl": -3288.52,
+            "avg_spread_r": 0.2039,
+            "by_session": {
+              "Asia": {
+                "n": 21,
+                "exp_r": -0.0055,
+                "pnl": -11.54,
+                "avg_spread_r": 0.196
+              },
+              "London": {
+                "n": 5,
+                "exp_r": -1.1926,
+                "pnl": -596.32,
+                "avg_spread_r": 0.1926
+              },
+              "Overlap": {
+                "n": 18,
+                "exp_r": 0.2117,
+                "pnl": 381.08,
+                "avg_spread_r": 0.1772
+              },
+              "NY": {
+                "n": 29,
+                "exp_r": -1.0558,
+                "pnl": -3061.74,
+                "avg_spread_r": 0.2282
+              }
+            }
+          },
+          {
+            "fold": 2,
+            "a": 281016,
+            "b": 296783,
+            "n": 91,
+            "exp_r": 0.1087,
+            "win_rate": 0.2418,
+            "pnl": 989.15,
+            "avg_spread_r": 0.1001,
+            "by_session": {
+              "Asia": {
+                "n": 28,
+                "exp_r": -0.379,
+                "pnl": -1061.14,
+                "avg_spread_r": 0.0933
+              },
+              "London": {
+                "n": 10,
+                "exp_r": 0.9208,
+                "pnl": 920.78,
+                "avg_spread_r": 0.0792
+              },
+              "Overlap": {
+                "n": 22,
+                "exp_r": -0.1812,
+                "pnl": -398.73,
+                "avg_spread_r": 0.0903
+              },
+              "NY": {
+                "n": 31,
+                "exp_r": 0.493,
+                "pnl": 1528.24,
+                "avg_spread_r": 0.1199
+              }
+            }
+          },
+          {
+            "fold": 3,
+            "a": 296784,
+            "b": 312551,
+            "n": 121,
+            "exp_r": 0.119,
+            "win_rate": 0.2479,
+            "pnl": 1439.4,
+            "avg_spread_r": 0.1207,
+            "by_session": {
+              "Asia": {
+                "n": 51,
+                "exp_r": 0.1237,
+                "pnl": 631.1,
+                "avg_spread_r": 0.1508
+              },
+              "London": {
+                "n": 17,
+                "exp_r": -0.2039,
+                "pnl": -346.59,
+                "avg_spread_r": 0.0862
+              },
+              "Overlap": {
+                "n": 18,
+                "exp_r": -0.2245,
+                "pnl": -404.05,
+                "avg_spread_r": 0.0578
+              },
+              "NY": {
+                "n": 35,
+                "exp_r": 0.4454,
+                "pnl": 1558.94,
+                "avg_spread_r": 0.126
+              }
+            }
+          },
+          {
+            "fold": 4,
+            "a": 312552,
+            "b": 328320,
+            "n": 115,
+            "exp_r": 0.1484,
+            "win_rate": 0.2609,
+            "pnl": 1707.02,
+            "avg_spread_r": 0.1559,
+            "by_session": {
+              "Asia": {
+                "n": 44,
+                "exp_r": -0.3758,
+                "pnl": -1653.56,
+                "avg_spread_r": 0.1713
+              },
+              "London": {
+                "n": 12,
+                "exp_r": 0.5535,
+                "pnl": 664.21,
+                "avg_spread_r": 0.1132
+              },
+              "Overlap": {
+                "n": 23,
+                "exp_r": 0.8625,
+                "pnl": 1983.68,
+                "avg_spread_r": 0.0941
+              },
+              "NY": {
+                "n": 36,
+                "exp_r": 0.198,
+                "pnl": 712.69,
+                "avg_spread_r": 0.1909
+              }
+            }
+          }
+        ],
+        "mc": {
+          "prob_profit": 63.8,
+          "p05_pnl": null,
+          "p50_pnl": null
+        }
+      }
+    }
+  ]
+}

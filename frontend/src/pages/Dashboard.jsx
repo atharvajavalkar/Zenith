@@ -2,8 +2,9 @@ import { useQuery, useQueryClient } from '@tanstack/react-query'
 import { useEffect, useState } from 'react'
 import Layout from '../components/Layout'
 import { Link } from 'react-router-dom'
-import BiasPanel from '../components/BiasPanel'
-import LearningPanel from '../components/LearningPanel'
+import AutopsyBoard from '../components/AutopsyBoard'
+import OpportunityBoard from '../components/OpportunityBoard'
+import LotDesk from '../components/LotDesk'
 import SignalCard from '../components/SignalCard'
 import TimezoneSelector from '../components/TimezoneSelector'
 import TradePanel, { useExecuteTrade } from '../components/TradePanel'
@@ -11,7 +12,6 @@ import TradeStatsBar from '../components/TradeStatsBar'
 import { useAuth } from '../contexts/AuthContext'
 import api from '../services/api'
 import { connectSignalWs } from '../services/ws'
-
 export default function Dashboard() {
   const { accessToken } = useAuth()
   const queryClient = useQueryClient()
@@ -20,6 +20,16 @@ export default function Dashboard() {
   const [executeResult, setExecuteResult] = useState('')
   const [executeError, setExecuteError] = useState('')
   const executeMutation = useExecuteTrade()
+
+  const { data: tradeStatus } = useQuery({
+    queryKey: ['trade-status'],
+    queryFn: async () => (await api.get('/api/trades/status')).data,
+    refetchInterval: 5000,
+  })
+
+  const isLive = tradeStatus?.trade_mode === 'live' || tradeStatus?.trade_mode === 'demo'
+  const symbol = isLive ? (tradeStatus?.symbol || 'GOLD') : 'XAU/USD'
+  const marketClosed = tradeStatus?.market_open === false
 
   const handleExecute = () => {
     setExecuteResult('')
@@ -60,6 +70,7 @@ export default function Dashboard() {
           queryClient.invalidateQueries({ queryKey: ['trade-history'] })
           queryClient.invalidateQueries({ queryKey: ['trade-summary'] })
           queryClient.invalidateQueries({ queryKey: ['live-tick'] })
+          queryClient.invalidateQueries({ queryKey: ['trade-autopsy'] })
         }
         setWsConnected(true)
       },
@@ -71,81 +82,85 @@ export default function Dashboard() {
 
   return (
     <Layout>
-      <div className="flex flex-wrap items-center justify-between gap-3 animate-fade-in-up">
+      <div className="flex flex-wrap items-end justify-between gap-6">
         <div>
-          <h1 className="text-2xl font-bold text-gray-50 tracking-tight">Trading Dashboard</h1>
-          <p className="text-sm text-surface-muted mt-0.5">
-            Live XAU/USD signals, bias and automated execution
+          <p className="section-label mb-2">Desk</p>
+          <h1 className="page-title">Dashboard</h1>
+          <p className="page-subtitle">
+            {marketClosed
+              ? (tradeStatus?.market_message || 'XM market is closed — the desk pauses until the next session.')
+              : isLive
+                ? (tradeStatus?.market_status === 'crypto_session'
+                    ? (tradeStatus?.market_message
+                        || 'Crypto open 24/7 · BTCUSD · ETHUSD · FX/metals closed')
+                    : 'GOLD · CHF · JPY · NAS · UKOIL · AUD · BTC · ETH — live pair brains')
+                : 'Paper mode — multi-instrument via TradingView'}
           </p>
         </div>
-        <div
-          className={`inline-flex items-center gap-2 rounded-full border px-3 py-1.5 text-xs font-medium ${
-            wsConnected
-              ? 'border-accent-buy/30 bg-accent-buy/10 text-accent-buy'
-              : 'border-surface-border bg-surface-card text-surface-muted'
-          }`}
-        >
-          <span
-            className={`inline-block w-2 h-2 rounded-full ${
-              wsConnected ? 'bg-accent-buy animate-pulse-soft' : 'bg-gray-500'
-            }`}
-          />
-          {wsConnected ? 'Live updates connected' : 'Connecting…'}
+        <div className="flex items-center gap-3">
+          {!marketClosed && tradeStatus?.market_status === 'crypto_session' && (
+            <div className="status-chip text-accent-gold border-accent-gold/25">
+              Crypto session
+            </div>
+          )}
+          {marketClosed && (
+            <div className="status-chip text-accent-gold border-accent-gold/25">
+              {tradeStatus?.market_next_open
+                ? `Closed · opens ${tradeStatus.market_next_open}`
+                : 'Market closed'}
+            </div>
+          )}
+          <div className="status-chip">
+            <span
+              className={`inline-block w-1.5 h-1.5 rounded-full ${
+                wsConnected ? 'bg-accent-buy animate-pulse-soft' : 'bg-surface-muted'
+              }`}
+            />
+            {wsConnected ? 'Connected' : 'Connecting'}
+          </div>
         </div>
       </div>
 
-      <div className="animate-fade-in-up" style={{ animationDelay: '40ms' }}>
-        <TradeStatsBar />
-      </div>
+      <TradeStatsBar />
 
-      <div className="animate-fade-in-up" style={{ animationDelay: '80ms' }}>
-        <BiasPanel />
-      </div>
+      <section className="space-y-3">
+        <div className="section-label">Lot desk</div>
+        <LotDesk />
+      </section>
 
-      <div className="animate-fade-in-up" style={{ animationDelay: '120ms' }}>
-        <LearningPanel signal={signal} />
-      </div>
+      <section className="space-y-3">
+        <div className="section-label">Universe setups</div>
+        <OpportunityBoard />
+      </section>
 
-      <section className="animate-fade-in-up" style={{ animationDelay: '160ms' }}>
-        <div className="section-eyebrow mb-2">Live Setup</div>
+      <section className="space-y-3">
+        <div className="section-label">Primary signal (GOLD)</div>
         <SignalCard signal={latestLoading && !signal ? null : signal} />
       </section>
 
-      <div className="animate-fade-in-up" style={{ animationDelay: '200ms' }}>
-        <TradePanel
-          signal={signal}
-          onExecute={handleExecute}
-          executePending={executeMutation.isPending}
-          executeResult={executeResult}
-          executeError={executeError}
-        />
-      </div>
+      <TradePanel
+        signal={signal}
+        onExecute={handleExecute}
+        executePending={executeMutation.isPending}
+        executeResult={executeResult}
+        executeError={executeError}
+      />
 
-      <Link
-        to="/chart"
-        className="group block rounded-2xl overflow-hidden border border-surface-border bg-surface-card shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:border-accent-gold/30 hover:shadow-card-hover animate-fade-in-up"
-        style={{ animationDelay: '240ms' }}
-      >
-        <div className="flex items-center justify-between gap-4 px-5 py-4">
-          <div className="flex items-center gap-4">
-            <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gold-gradient text-surface text-xl">
-              📈
-            </span>
-            <div>
-              <h3 className="font-semibold text-lg text-gray-100">TradingView Chart</h3>
-              <p className="text-sm mt-0.5 text-surface-muted">
-                Full chart with official indicators, drawing tools &amp; timeframes
-              </p>
-            </div>
-          </div>
-          <span className="px-4 py-2 rounded-lg text-sm font-semibold text-surface bg-gold-gradient shrink-0 transition-transform group-hover:translate-x-0.5">
-            Open Chart →
-          </span>
+      <section className="space-y-3">
+        <div className="section-label">Trade autopsy</div>
+        <AutopsyBoard />
+      </section>
+
+      <div className="flex flex-wrap items-center justify-between gap-4 py-1">
+        <Link
+          to="/world"
+          className="text-sm font-light text-surface-muted hover:text-accent-gold transition tracking-wide"
+        >
+          Open world gold desk →
+        </Link>
+        <div className="flex-1 min-w-[280px] max-w-xl">
+          <TimezoneSelector compact />
         </div>
-      </Link>
-
-      <div className="animate-fade-in-up" style={{ animationDelay: '280ms' }}>
-        <TimezoneSelector />
       </div>
     </Layout>
   )

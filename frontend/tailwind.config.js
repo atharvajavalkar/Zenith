@@ -5,35 +5,48 @@ export default {
     extend: {
       colors: {
         surface: {
-          DEFAULT: '#0a0e14',
-          card: '#131b27',
-          cardHover: '#18222f',
-          elevated: '#1b2634',
-          border: '#26344a',
-          muted: '#8b97a8',
+          DEFAULT: '#080807',
+          raised: '#0e0e0c',
+          card: '#121210',
+          cardHover: '#171714',
+          elevated: '#1a1a17',
+          border: '#242420',
+          muted: '#8a857c',
+        },
+        ink: {
+          DEFAULT: '#ece8e1',
+          soft: '#c9c3b8',
+          faint: '#8a857c',
         },
         accent: {
-          buy: '#22c55e',
-          sell: '#ef4444',
-          gold: '#f3b94a',
-          'gold-soft': '#e7c067',
-          'gold-deep': '#c5862f',
+          // Club emerald — clear on black, old-money not neon
+          buy: '#2f9e6f',
+          'buy-deep': '#1f7350',
+          // Oxblood — decisive, not muddy salmon
+          sell: '#d45b5b',
+          'sell-deep': '#a63d3d',
+          gold: '#c9a66b',
+          'gold-soft': '#dcc08a',
+          'gold-deep': '#9a7a4f',
+          'gold-line': 'rgba(201, 166, 107, 0.22)',
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['Outfit', 'ui-sans-serif', 'sans-serif'],
+        display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+      },
+      letterSpacing: {
+        brand: '0.28em',
+        nav: '0.14em',
+        label: '0.18em',
       },
       boxShadow: {
-        card: '0 1px 2px rgba(0,0,0,0.4), 0 12px 28px -16px rgba(0,0,0,0.7)',
-        'card-hover': '0 1px 2px rgba(0,0,0,0.4), 0 18px 40px -18px rgba(0,0,0,0.8)',
-        glow: '0 0 0 1px rgba(243,185,74,0.18), 0 10px 34px -10px rgba(243,185,74,0.28)',
-      },
-      backgroundImage: {
-        'gold-gradient': 'linear-gradient(135deg, #f3b94a 0%, #e7c067 45%, #c5862f 100%)',
+        soft: '0 24px 60px rgba(0,0,0,0.35)',
+        hairline: 'inset 0 0 0 1px rgba(196,165,116,0.08)',
       },
       keyframes: {
-        'fade-in-up': {
-          '0%': { opacity: '0', transform: 'translateY(8px)' },
+        'fade-in': {
+          '0%': { opacity: '0', transform: 'translateY(6px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         'pulse-soft': {
@@ -42,8 +55,8 @@ export default {
         },
       },
       animation: {
-        'fade-in-up': 'fade-in-up 0.45s cubic-bezier(0.16, 1, 0.3, 1) both',
-        'pulse-soft': 'pulse-soft 2s ease-in-out infinite',
+        'fade-in': 'fade-in 0.55s ease-out both',
+        'pulse-soft': 'pulse-soft 2.4s ease-in-out infinite',
       },
     },
   },

@@ -1,0 +1,27 @@
+bash: /app/scripts/keep_aud_eth_invent_pipeline.sh: No such file or directory
+=== pipeline start 2026-08-29T14:33:47Z ===
+--- densify=0 ---
+densify=0 exit=2
+{
+  "densify": 0,
+  "criteria_met": false,
+  "wireable_count": 0,
+  "finished_at": "2026-08-31T11:41:37.334820+00:00"
+}criteria_met=False
+--- densify=1 ---
+densify=1 exit=2
+{
+  "densify": 1,
+  "criteria_met": false,
+  "wireable_count": 0,
+  "finished_at": "2026-09-03T09:54:51.138602+00:00"
+}criteria_met=False
+--- densify=2 ---
+densify=2 exit=2
+{
+  "densify": 2,
+  "criteria_met": false,
+  "wireable_count": 0,
+  "finished_at": "2026-09-04T07:55:00.776369+00:00"
+}criteria_met=False
+Pipeline finished densify 0..2 without full criteria

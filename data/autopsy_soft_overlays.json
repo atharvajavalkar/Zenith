@@ -1,0 +1,503 @@
+{
+  "updated_at": "2026-08-25T11:54:39.713231+00:00",
+  "symbols": {
+    "AUDUSD": {
+      "mc_floor_delta": 4.0,
+      "aggression": -0.1,
+      "active": false,
+      "proposal_id": "1cb20523",
+      "note": "Tighter EMA pull / displacement",
+      "applied_at": "2026-08-13T19:24:18.301448+00:00",
+      "cleared_reason": "desk_reset:omni_horizon_live_begin",
+      "cleared_at": "2026-08-25T11:54:39.713192+00:00"
+    },
+    "BTCUSD": {
+      "mc_floor_delta": 4.0,
+      "aggression": -0.1,
+      "active": false,
+      "proposal_id": "99e12805",
+      "note": "Tighter EMA pull / displacement",
+      "applied_at": "2026-08-13T19:24:18.349194+00:00",
+      "risk_scale": 0.92,
+      "cleared_reason": "desk_reset:omni_horizon_live_begin",
+      "cleared_at": "2026-08-25T11:54:39.713211+00:00"
+    },
+    "GOLD": {
+      "risk_scale": 0.85,
+      "active": false,
+      "proposal_id": "emergency-gold",
+      "note": "self-heal emergency: bleeding_no_ab_win",
+      "applied_at": "2026-08-05T13:04:18.107092+00:00",
+      "cleared_reason": "desk_reset:omni_horizon_live_begin",
+      "cleared_at": "2026-08-25T11:54:39.713215+00:00",
+      "mc_floor_delta": 2.5,
+      "aggression": -0.06
+    },
+    "USDCHF": {
+      "mc_floor_delta": 4.0,
+      "aggression": -0.1,
+      "risk_scale": 0.85,
+      "active": false,
+      "proposal_id": "emergency-usdchf",
+      "note": "self-heal emergency: bleeding_no_ab_win",
+      "applied_at": "2026-08-13T19:24:18.363813+00:00",
+      "cleared_reason": "desk_reset:omni_horizon_live_begin",
+      "cleared_at": "2026-08-25T11:54:39.713218+00:00"
+    },
+    "NAS100": {
+      "mc_floor_delta": 2.5,
+      "aggression": -0.06,
+      "risk_scale": 0.85,
+      "active": false,
+      "proposal_id": "emergency-nas100",
+      "note": "self-heal emergency: bleeding_no_ab_win",
+      "applied_at": "2026-07-28T10:01:37.348351+00:00",
+      "cleared_reason": "desk_reset:omni_horizon_live_begin",
+      "cleared_at": "2026-08-25T11:54:39.713219+00:00"
+    },
+    "ETHUSD": {
+      "mc_floor_delta": 4.0,
+      "aggression": -0.1,
+      "risk_scale": 0.85,
+      "active": false,
+      "proposal_id": "emergency-ethusd",
+      "note": "self-heal emergency: bleeding_no_ab_win",
+      "applied_at": "2026-08-11T11:08:05.158399+00:00",
+      "cleared_reason": "desk_reset:omni_horizon_live_begin",
+      "cleared_at": "2026-08-25T11:54:39.713221+00:00"
+    },
+    "USDJPY": {
+      "mc_floor_delta": 4.0,
+      "aggression": -0.1,
+      "risk_scale": 0.92,
+      "active": false,
+      "proposal_id": "632a636f",
+      "note": "Tighter EMA pull / displacement",
+      "applied_at": "2026-08-13T19:24:18.362032+00:00",
+      "cleared_reason": "desk_reset:omni_horizon_live_begin",
+      "cleared_at": "2026-08-25T11:54:39.713223+00:00"
+    },
+    "UKOIL": {
+      "mc_floor_delta": 4.0,
+      "aggression": -0.1,
+      "active": false,
+      "proposal_id": "ca7135c9",
+      "note": "Tighter EMA pull / displacement",
+      "applied_at": "2026-08-20T17:21:15.539867+00:00",
+      "risk_scale": 0.85,
+      "cleared_reason": "desk_reset:omni_horizon_live_begin",
+      "cleared_at": "2026-08-25T11:54:39.713225+00:00"
+    }
+  },
+  "history": [
+    {
+      "at": "2026-08-20T17:21:15.539867+00:00",
+      "symbol": "UKOIL",
+      "proposal_id": "ca7135c9",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-13T19:24:18.364641+00:00",
+      "symbol": "UKOIL",
+      "proposal_id": "emergency-ukoil",
+      "patch": {
+        "mc_floor_delta": 2.5,
+        "aggression": -0.06,
+        "risk_scale": 0.85
+      },
+      "note": "self-heal emergency: bleeding_no_ab_win"
+    },
+    {
+      "at": "2026-08-13T19:24:18.363813+00:00",
+      "symbol": "USDCHF",
+      "proposal_id": "emergency-usdchf",
+      "patch": {
+        "mc_floor_delta": 2.5,
+        "aggression": -0.06,
+        "risk_scale": 0.85
+      },
+      "note": "self-heal emergency: bleeding_no_ab_win"
+    },
+    {
+      "at": "2026-08-13T19:24:18.362032+00:00",
+      "symbol": "USDJPY",
+      "proposal_id": "632a636f",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-13T19:24:18.349194+00:00",
+      "symbol": "BTCUSD",
+      "proposal_id": "99e12805",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-13T19:24:18.301448+00:00",
+      "symbol": "AUDUSD",
+      "proposal_id": "1cb20523",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-13T18:28:50.151048+00:00",
+      "symbol": "USDCHF",
+      "proposal_id": "emergency-usdchf",
+      "patch": {
+        "mc_floor_delta": 2.5,
+        "aggression": -0.06,
+        "risk_scale": 0.85
+      },
+      "note": "self-heal emergency: bleeding_no_ab_win"
+    },
+    {
+      "at": "2026-08-13T18:28:50.149212+00:00",
+      "symbol": "UKOIL",
+      "proposal_id": "16bd9150",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-13T18:28:50.147205+00:00",
+      "symbol": "USDJPY",
+      "proposal_id": "d8642ea9",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-13T18:28:50.144904+00:00",
+      "symbol": "AUDUSD",
+      "proposal_id": "76f04d55",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-11T11:08:05.158399+00:00",
+      "symbol": "ETHUSD",
+      "proposal_id": "emergency-ethusd",
+      "patch": {
+        "mc_floor_delta": 2.5,
+        "aggression": -0.06,
+        "risk_scale": 0.85
+      },
+      "note": "self-heal emergency: bleeding_no_ab_win"
+    },
+    {
+      "at": "2026-08-11T11:08:05.156962+00:00",
+      "symbol": "UKOIL",
+      "proposal_id": "102e8d0e",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-11T11:08:05.154797+00:00",
+      "symbol": "BTCUSD",
+      "proposal_id": "a39a863f",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-10T15:43:14.544287+00:00",
+      "symbol": "UKOIL",
+      "proposal_id": "b7b24846",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-10T07:34:08.323711+00:00",
+      "symbol": "ETHUSD",
+      "proposal_id": "emergency-ethusd",
+      "patch": {
+        "mc_floor_delta": 2.5,
+        "aggression": -0.06,
+        "risk_scale": 0.85
+      },
+      "note": "self-heal emergency: bleeding_no_ab_win"
+    },
+    {
+      "at": "2026-08-10T07:34:08.322928+00:00",
+      "symbol": "UKOIL",
+      "proposal_id": "emergency-ukoil",
+      "patch": {
+        "mc_floor_delta": 2.5,
+        "aggression": -0.06,
+        "risk_scale": 0.85
+      },
+      "note": "self-heal emergency: bleeding_no_ab_win"
+    },
+    {
+      "at": "2026-08-10T07:34:08.321848+00:00",
+      "symbol": "USDJPY",
+      "proposal_id": "16c03bd0",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-10T07:34:08.320453+00:00",
+      "symbol": "BTCUSD",
+      "proposal_id": "7308a152",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-10T07:34:08.318464+00:00",
+      "symbol": "AUDUSD",
+      "proposal_id": "1affa06b",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-06T01:02:26.230180+00:00",
+      "symbol": "UKOIL",
+      "proposal_id": "c2d4db0b",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-06T01:02:26.228755+00:00",
+      "symbol": "USDJPY",
+      "proposal_id": "0c0ac16f",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-06T01:02:26.226907+00:00",
+      "symbol": "AUDUSD",
+      "proposal_id": "16782052",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-05T23:59:22.024471+00:00",
+      "symbol": "UKOIL",
+      "proposal_id": "205921c5",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-05T23:59:22.023078+00:00",
+      "symbol": "USDJPY",
+      "proposal_id": "328b48af",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-05T23:59:22.021245+00:00",
+      "symbol": "AUDUSD",
+      "proposal_id": "e2196a42",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-05T16:28:01.390606+00:00",
+      "symbol": "USDJPY",
+      "proposal_id": "fe81d42c",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-05T16:28:01.371971+00:00",
+      "symbol": "AUDUSD",
+      "proposal_id": "18ab3248",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-05T13:04:18.107842+00:00",
+      "symbol": "ETHUSD",
+      "proposal_id": "emergency-ethusd",
+      "patch": {
+        "mc_floor_delta": 2.5,
+        "aggression": -0.06,
+        "risk_scale": 0.85
+      },
+      "note": "self-heal emergency: bleeding_no_ab_win"
+    },
+    {
+      "at": "2026-08-05T13:04:18.107092+00:00",
+      "symbol": "GOLD",
+      "proposal_id": "emergency-gold",
+      "patch": {
+        "mc_floor_delta": 2.5,
+        "aggression": -0.06,
+        "risk_scale": 0.85
+      },
+      "note": "self-heal emergency: bleeding_no_ab_win"
+    },
+    {
+      "at": "2026-08-05T13:04:18.105968+00:00",
+      "symbol": "USDJPY",
+      "proposal_id": "913993d6",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-05T13:04:18.104461+00:00",
+      "symbol": "BTCUSD",
+      "proposal_id": "5bebd682",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-08-05T13:04:18.102010+00:00",
+      "symbol": "AUDUSD",
+      "proposal_id": "d0d9e23c",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-07-30T10:06:02.369677+00:00",
+      "symbol": "USDJPY",
+      "proposal_id": "3d5ab4a0",
+      "patch": {
+        "risk_scale": 0.92
+      },
+      "note": "Slightly wider stops (less noise stop-outs)"
+    },
+    {
+      "at": "2026-07-30T10:06:00.814643+00:00",
+      "symbol": "BTCUSD",
+      "proposal_id": "879eee6c",
+      "patch": {
+        "risk_scale": 0.92
+      },
+      "note": "Slightly wider stops (less noise stop-outs)"
+    },
+    {
+      "at": "2026-07-30T10:06:00.050049+00:00",
+      "symbol": "ETHUSD",
+      "proposal_id": "07f4d1bc",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-07-30T10:05:58.779417+00:00",
+      "symbol": "USDJPY",
+      "proposal_id": "1c3f8f1f",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    },
+    {
+      "at": "2026-07-29T18:58:34.877856+00:00",
+      "symbol": "ETHUSD",
+      "proposal_id": "emergency-ethusd",
+      "patch": {
+        "mc_floor_delta": 2.5,
+        "aggression": -0.06,
+        "risk_scale": 0.85
+      },
+      "note": "self-heal emergency: bleeding_no_ab_win"
+    },
+    {
+      "at": "2026-07-29T18:58:34.877217+00:00",
+      "symbol": "USDJPY",
+      "proposal_id": "emergency-usdjpy",
+      "patch": {
+        "mc_floor_delta": 2.5,
+        "aggression": -0.06,
+        "risk_scale": 0.85
+      },
+      "note": "self-heal emergency: bleeding_no_ab_win"
+    },
+    {
+      "at": "2026-07-29T18:58:34.876083+00:00",
+      "symbol": "GOLD",
+      "proposal_id": "49bcbae3",
+      "patch": {
+        "risk_scale": 0.92
+      },
+      "note": "Slightly wider stops (less noise stop-outs)"
+    },
+    {
+      "at": "2026-07-29T18:58:34.873874+00:00",
+      "symbol": "BTCUSD",
+      "proposal_id": "82029cc9",
+      "patch": {
+        "mc_floor_delta": 1.0,
+        "aggression": -0.04
+      },
+      "note": "Tighter EMA pull / displacement"
+    }
+  ],
+  "cleared_at": "2026-07-25T19:43:52.628622+00:00",
+  "cleared_reason": "desk_reset:omni_horizon_live_begin"
+}

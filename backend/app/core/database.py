@@ -79,6 +79,8 @@ async def _ensure_trade_record_columns(conn) -> None:
         "lot_size": "FLOAT",
         "margin_usd": "FLOAT",
         "sl_trail_status": "VARCHAR(64)",
+        "trade_mode": "VARCHAR(8)",
+        "symbol": "VARCHAR(32)",
     }
     for name, column_type in columns.items():
         try:

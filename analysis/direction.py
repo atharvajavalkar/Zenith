@@ -79,13 +79,26 @@ def get_5m_direction(df_5m: pd.DataFrame) -> dict[str, Any]:
     }
 
 
-def bias_allows_trade(direction: str, bias_data: Optional[dict[str, Any]], min_confidence: float = 60.0) -> tuple[bool, str]:
-    """Check XAU/USD AI analyst bias agrees with intended trade direction."""
+def bias_allows_trade(
+    direction: str,
+    bias_data: Optional[dict[str, Any]],
+    min_confidence: float = 60.0,
+    symbol: Optional[str] = None,
+) -> tuple[bool, str]:
+    """Check algo bias agrees with intended trade direction (per-symbol when available)."""
     if not bias_data or direction not in ("BUY", "SELL"):
         return True, "AI bias unavailable — allowing trade"
 
-    overall = bias_data.get("overall") or {}
-    tf5 = (bias_data.get("timeframes") or {}).get("5m") or {}
+    pack = bias_data
+    sym = str(symbol or "").upper().strip()
+    if sym and isinstance(bias_data.get("instruments"), list):
+        for row in bias_data["instruments"]:
+            if str(row.get("symbol") or "").upper() == sym:
+                pack = row
+                break
+
+    overall = pack.get("overall") or {}
+    tf5 = (pack.get("timeframes") or {}).get("5m") or {}
 
     checks = [
         ("Overall", overall.get("direction"), overall.get("confidence")),
@@ -98,10 +111,11 @@ def bias_allows_trade(direction: str, bias_data: Optional[dict[str, Any]], min_c
         if float(conf) < min_confidence:
             continue
         if direction == "BUY" and bias_dir == "BEARISH":
-            return False, f"{label} AI bias BEARISH ({conf:.0f}%) — blocks BUY"
+            return False, f"{sym or 'Desk'} {label} bias BEARISH ({conf:.0f}%) — blocks BUY"
         if direction == "SELL" and bias_dir == "BULLISH":
-            return False, f"{label} AI bias BULLISH ({conf:.0f}%) — blocks SELL"
+            return False, f"{sym or 'Desk'} {label} bias BULLISH ({conf:.0f}%) — blocks SELL"
 
     overall_label = overall.get("label", "Neutral")
     overall_conf = overall.get("confidence", 0)
-    return True, f"AI bias aligned — {overall_label} ({overall_conf:.0f}%)"
+    tag = f"{sym} " if sym else ""
+    return True, f"{tag}AI bias aligned — {overall_label} ({overall_conf:.0f}%)"

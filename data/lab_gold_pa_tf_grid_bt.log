@@ -1,0 +1,184 @@
+=== GOLD PA TF grid (1m–15m) · Dukascopy 1y ===
+  load GOLD 1m: 514,670 bars 2025-07-31→2026-07-23
+  load GOLD 3m: 171,556 bars 2025-07-31→2026-07-23
+  load GOLD 5m: 102,934 bars 2025-07-31→2026-07-23
+  load GOLD 15m: 34,311 bars 2025-07-31→2026-07-23
+  sweeps 3m: 34084 (23.1s)
+  sweeps 5m: 20846 (9.9s)
+  sweeps 15m: 6424 (2.2s)
+Combos: 30 × 4 RR = 120 cells
+[1/30] liq=3m|bias=3m+1m|entry=1m: entries=7825 (7.4s)
+    RR=2.0: n=1449 pnl=$1,200 E[R]=0.0041 FRAGILE WF=1/4
+    RR=2.4: n=1232 pnl=$4,520 E[R]=0.0183 FRAGILE WF=1/4
+    RR=3.0: n=955 pnl=$10,600 E[R]=0.0555 FRAGILE WF=2/4
+    RR=4.0: n=720 pnl=$17,000 E[R]=0.1181 SURVIVES WF=2/4
+[2/30] liq=3m|bias=5m+1m|entry=1m: entries=6650 (6.7s)
+    RR=2.0: n=1377 pnl=$10,200 E[R]=0.037 FRAGILE WF=3/4
+    RR=2.4: n=1113 pnl=$15,400 E[R]=0.0692 FRAGILE WF=2/4
+    RR=3.0: n=801 pnl=$19,000 E[R]=0.1186 SURVIVES WF=2/4
+    RR=4.0: n=690 pnl=$8,000 E[R]=0.058 FRAGILE WF=2/4
+[3/30] liq=3m|bias=15m+1m|entry=1m: entries=5458 (5.9s)
+    RR=2.0: n=1288 pnl=$33,400 E[R]=0.1297 SURVIVES WF=3/4
+    RR=2.4: n=962 pnl=$25,880 E[R]=0.1345 SURVIVES WF=3/4
+    RR=3.0: n=768 pnl=$31,200 E[R]=0.2031 SURVIVES WF=3/4
+    RR=4.0: n=679 pnl=$43,200 E[R]=0.3181 SURVIVES WF=4/4
+[4/30] liq=3m|bias=5m+3m|entry=1m: entries=7548 (10.4s)
+    RR=2.0: n=1500 pnl=$28,800 E[R]=0.096 SURVIVES WF=3/4
+    RR=2.4: n=1336 pnl=$29,280 E[R]=0.1096 SURVIVES WF=4/4
+    RR=3.0: n=1035 pnl=$33,000 E[R]=0.1594 SURVIVES WF=3/4
+    RR=4.0: n=817 pnl=$16,600 E[R]=0.1016 FRAGILE WF=1/4
+[5/30] liq=3m|bias=15m+3m|entry=1m: entries=5619 (6.3s)
+    RR=2.0: n=1380 pnl=$44,400 E[R]=0.1609 SURVIVES WF=3/4
+    RR=2.4: n=1119 pnl=$45,480 E[R]=0.2032 SURVIVES WF=3/4
+    RR=3.0: n=931 pnl=$35,400 E[R]=0.1901 SURVIVES WF=3/4
+    RR=4.0: n=806 pnl=$37,800 E[R]=0.2345 SURVIVES WF=3/4
+[6/30] liq=3m|bias=15m+5m|entry=1m: entries=6091 (6.5s)
+    RR=2.0: n=1527 pnl=$69,000 E[R]=0.2259 SURVIVES WF=3/4
+    RR=2.4: n=1177 pnl=$62,440 E[R]=0.2653 SURVIVES WF=4/4
+    RR=3.0: n=975 pnl=$53,000 E[R]=0.2718 SURVIVES WF=4/4
+    RR=4.0: n=797 pnl=$59,600 E[R]=0.3739 SURVIVES WF=3/4
+[7/30] liq=3m|bias=5m+3m|entry=3m: entries=3778 (3.4s)
+    RR=2.0: n=972 pnl=$7,200 E[R]=0.037 FRAGILE WF=2/4
+    RR=2.4: n=801 pnl=$12,520 E[R]=0.0782 FRAGILE WF=2/4
+    RR=3.0: n=717 pnl=$11,800 E[R]=0.0823 SURVIVES WF=3/4
+    RR=4.0: n=501 pnl=$800 E[R]=0.008 FRAGILE WF=1/4
+[8/30] liq=3m|bias=15m+3m|entry=3m: entries=2857 (2.7s)
+    RR=2.0: n=919 pnl=$6,400 E[R]=0.0348 FRAGILE WF=2/4
+    RR=2.4: n=790 pnl=$9,280 E[R]=0.0587 FRAGILE WF=2/4
+    RR=3.0: n=654 pnl=$14,000 E[R]=0.107 SURVIVES WF=2/4
+    RR=4.0: n=502 pnl=$19,600 E[R]=0.1952 SURVIVES WF=2/4
+[9/30] liq=3m|bias=15m+5m|entry=3m: entries=2987 (2.8s)
+    RR=2.0: n=962 pnl=$16,400 E[R]=0.0852 SURVIVES WF=3/4
+    RR=2.4: n=810 pnl=$16,840 E[R]=0.104 SURVIVES WF=3/4
+    RR=3.0: n=661 pnl=$20,600 E[R]=0.1558 SURVIVES WF=3/4
+    RR=4.0: n=520 pnl=$26,000 E[R]=0.25 SURVIVES WF=2/4
+[10/30] liq=5m|bias=3m+1m|entry=1m: entries=6229 (6.6s)
+    RR=2.0: n=1252 pnl=$9,400 E[R]=0.0375 FRAGILE WF=2/4
+    RR=2.4: n=1085 pnl=$7,400 E[R]=0.0341 FRAGILE WF=2/4
+    RR=3.0: n=697 pnl=$15,800 E[R]=0.1133 SURVIVES WF=2/4
+    RR=4.0: n=689 pnl=$5,200 E[R]=0.0377 FRAGILE WF=2/4
+[11/30] liq=5m|bias=5m+1m|entry=1m: entries=5154 (6.3s)
+    RR=2.0: n=1208 pnl=$21,200 E[R]=0.0877 SURVIVES WF=3/4
+    RR=2.4: n=1053 pnl=$15,840 E[R]=0.0752 FRAGILE WF=3/4
+    RR=3.0: n=628 pnl=$18,400 E[R]=0.1465 SURVIVES WF=3/4
+    RR=4.0: n=539 pnl=$23,200 E[R]=0.2152 SURVIVES WF=3/4
+[12/30] liq=5m|bias=15m+1m|entry=1m: entries=4141 (4.9s)
+    RR=2.0: n=1208 pnl=$41,600 E[R]=0.1722 SURVIVES WF=4/4
+    RR=2.4: n=891 pnl=$32,600 E[R]=0.1829 SURVIVES WF=3/4
+    RR=3.0: n=759 pnl=$29,800 E[R]=0.1963 SURVIVES WF=3/4
+    RR=4.0: n=696 pnl=$40,800 E[R]=0.2931 SURVIVES WF=4/4
+[13/30] liq=5m|bias=5m+3m|entry=1m: entries=5621 (6.3s)
+    RR=2.0: n=1311 pnl=$36,600 E[R]=0.1396 SURVIVES WF=4/4
+    RR=2.4: n=1129 pnl=$30,560 E[R]=0.1353 SURVIVES WF=4/4
+    RR=3.0: n=782 pnl=$30,000 E[R]=0.1918 SURVIVES WF=3/4
+    RR=4.0: n=616 pnl=$27,800 E[R]=0.2256 SURVIVES WF=3/4
+[14/30] liq=5m|bias=15m+3m|entry=1m: entries=3993 (5.1s)
+    RR=2.0: n=1150 pnl=$32,200 E[R]=0.14 SURVIVES WF=3/4
+    RR=2.4: n=886 pnl=$24,080 E[R]=0.1359 SURVIVES WF=3/4
+    RR=3.0: n=745 pnl=$15,800 E[R]=0.106 FRAGILE WF=2/4
+    RR=4.0: n=740 pnl=$27,000 E[R]=0.1824 SURVIVES WF=3/4
+[15/30] liq=5m|bias=15m+5m|entry=1m: entries=4222 (5.1s)
+    RR=2.0: n=1272 pnl=$56,400 E[R]=0.2217 SURVIVES WF=3/4
+    RR=2.4: n=998 pnl=$44,520 E[R]=0.223 SURVIVES WF=4/4
+    RR=3.0: n=863 pnl=$41,000 E[R]=0.2375 SURVIVES WF=4/4
+    RR=4.0: n=737 pnl=$40,600 E[R]=0.2754 SURVIVES WF=3/4
+[16/30] liq=5m|bias=5m+3m|entry=3m: entries=3014 (2.5s)
+    RR=2.0: n=967 pnl=$12,400 E[R]=0.0641 FRAGILE WF=2/4
+    RR=2.4: n=818 pnl=$10,480 E[R]=0.0641 FRAGILE WF=3/4
+    RR=3.0: n=717 pnl=$17,400 E[R]=0.1213 SURVIVES WF=3/4
+    RR=4.0: n=486 pnl=$11,800 E[R]=0.1214 SURVIVES WF=3/4
+[17/30] liq=5m|bias=15m+3m|entry=3m: entries=2187 (2.2s)
+    RR=2.0: n=845 pnl=$11,000 E[R]=0.0651 FRAGILE WF=3/4
+    RR=2.4: n=686 pnl=$17,160 E[R]=0.1251 SURVIVES WF=2/4
+    RR=3.0: n=603 pnl=$17,000 E[R]=0.141 SURVIVES WF=3/4
+    RR=4.0: n=508 pnl=$19,400 E[R]=0.1909 SURVIVES WF=3/4
+[18/30] liq=5m|bias=15m+5m|entry=3m: entries=2272 (2.3s)
+    RR=2.0: n=884 pnl=$14,000 E[R]=0.0792 FRAGILE WF=1/4
+    RR=2.4: n=721 pnl=$16,280 E[R]=0.1129 SURVIVES WF=2/4
+    RR=3.0: n=638 pnl=$18,800 E[R]=0.1473 SURVIVES WF=2/4
+    RR=4.0: n=507 pnl=$18,600 E[R]=0.1834 SURVIVES WF=3/4
+[19/30] liq=5m|bias=15m+5m|entry=5m: entries=1583 (1.4s)
+    RR=2.0: n=700 pnl=$12,400 E[R]=0.0886 SURVIVES WF=3/4
+    RR=2.4: n=654 pnl=$9,960 E[R]=0.0761 FRAGILE WF=2/4
+    RR=3.0: n=575 pnl=$10,600 E[R]=0.0922 FRAGILE WF=3/4
+    RR=4.0: n=417 pnl=$11,600 E[R]=0.1391 FRAGILE WF=2/4
+[20/30] liq=15m|bias=3m+1m|entry=1m: entries=3195 (3.6s)
+    RR=2.0: n=789 pnl=$17,400 E[R]=0.1103 SURVIVES WF=4/4
+    RR=2.4: n=612 pnl=$10,880 E[R]=0.0889 SURVIVES WF=3/4
+    RR=3.0: n=550 pnl=$6,800 E[R]=0.0618 SURVIVES WF=3/4
+    RR=4.0: n=469 pnl=$10,200 E[R]=0.1087 SURVIVES WF=3/4
+[21/30] liq=15m|bias=5m+1m|entry=1m: entries=2539 (3.4s)
+    RR=2.0: n=742 pnl=$19,600 E[R]=0.1321 SURVIVES WF=4/4
+    RR=2.4: n=525 pnl=$9,240 E[R]=0.088 SURVIVES WF=3/4
+    RR=3.0: n=491 pnl=$5,000 E[R]=0.0509 FRAGILE WF=1/4
+    RR=4.0: n=469 pnl=$15,200 E[R]=0.162 SURVIVES WF=3/4
+[22/30] liq=15m|bias=15m+1m|entry=1m: entries=1630 (2.4s)
+    RR=2.0: n=674 pnl=$36,800 E[R]=0.273 SURVIVES WF=4/4
+    RR=2.4: n=623 pnl=$27,720 E[R]=0.2225 SURVIVES WF=4/4
+    RR=3.0: n=487 pnl=$25,000 E[R]=0.2567 SURVIVES WF=4/4
+    RR=4.0: n=439 pnl=$23,200 E[R]=0.2642 SURVIVES WF=3/4
+[23/30] liq=15m|bias=5m+3m|entry=1m: entries=2715 (4.8s)
+    RR=2.0: n=753 pnl=$26,400 E[R]=0.1753 SURVIVES WF=4/4
+    RR=2.4: n=560 pnl=$15,840 E[R]=0.1414 SURVIVES WF=3/4
+    RR=3.0: n=489 pnl=$11,800 E[R]=0.1207 SURVIVES WF=3/4
+    RR=4.0: n=459 pnl=$18,200 E[R]=0.1983 SURVIVES WF=3/4
+[24/30] liq=15m|bias=15m+3m|entry=1m: entries=1529 (2.4s)
+    RR=2.0: n=641 pnl=$22,400 E[R]=0.1747 SURVIVES WF=4/4
+    RR=2.4: n=598 pnl=$16,400 E[R]=0.1371 SURVIVES WF=3/4
+    RR=3.0: n=446 pnl=$11,600 E[R]=0.13 FRAGILE WF=1/4
+    RR=4.0: n=459 pnl=$14,200 E[R]=0.1547 FRAGILE WF=2/4
+[25/30] liq=15m|bias=15m+5m|entry=1m: entries=1541 (2.6s)
+    RR=2.0: n=651 pnl=$28,200 E[R]=0.2166 SURVIVES WF=4/4
+    RR=2.4: n=594 pnl=$23,320 E[R]=0.1963 SURVIVES WF=4/4
+    RR=3.0: n=464 pnl=$15,200 E[R]=0.1638 SURVIVES WF=3/4
+    RR=4.0: n=445 pnl=$20,000 E[R]=0.2247 SURVIVES WF=4/4
+[26/30] liq=15m|bias=5m+3m|entry=3m: entries=1699 (1.6s)
+    RR=2.0: n=616 pnl=$8,800 E[R]=0.0714 SURVIVES WF=4/4
+    RR=2.4: n=557 pnl=$12,360 E[R]=0.111 SURVIVES WF=4/4
+    RR=3.0: n=510 pnl=$1,200 E[R]=0.0118 FRAGILE WF=3/4
+    RR=4.0: n=387 pnl=$4,600 E[R]=0.0594 SURVIVES WF=3/4
+[27/30] liq=15m|bias=15m+3m|entry=3m: entries=983 (1.1s)
+    RR=2.0: n=498 pnl=$6,600 E[R]=0.0663 SURVIVES WF=4/4
+    RR=2.4: n=464 pnl=$10,560 E[R]=0.1138 SURVIVES WF=3/4
+    RR=3.0: n=399 pnl=$5,800 E[R]=0.0727 FRAGILE WF=2/4
+    RR=4.0: n=396 pnl=$10,800 E[R]=0.1364 SURVIVES WF=3/4
+[28/30] liq=15m|bias=15m+5m|entry=3m: entries=997 (1.2s)
+    RR=2.0: n=510 pnl=$6,600 E[R]=0.0647 SURVIVES WF=4/4
+    RR=2.4: n=476 pnl=$13,600 E[R]=0.1429 SURVIVES WF=4/4
+    RR=3.0: n=408 pnl=$5,600 E[R]=0.0686 FRAGILE WF=2/4
+    RR=4.0: n=398 pnl=$10,400 E[R]=0.1307 SURVIVES WF=3/4
+[29/30] liq=15m|bias=15m+5m|entry=5m: entries=714 (0.8s)
+    RR=2.0: n=432 pnl=$3,000 E[R]=0.0347 FRAGILE WF=3/4
+    RR=2.4: n=421 pnl=$4,200 E[R]=0.0499 FRAGILE WF=3/4
+    RR=3.0: n=400 pnl=$8,800 E[R]=0.11 SURVIVES WF=4/4
+    RR=4.0: n=261 pnl=$11,800 E[R]=0.2261 SURVIVES WF=3/4
+[30/30] liq=15m|bias=15m+15m|entry=15m: entries=476 (0.4s)
+    RR=2.0: n=358 pnl=$-3,800 E[R]=-0.0531 DEAD WF=1/4
+    RR=2.4: n=348 pnl=$-2,280 E[R]=-0.0328 DEAD WF=2/4
+    RR=3.0: n=327 pnl=$1,800 E[R]=0.0275 FRAGILE WF=2/4
+    RR=4.0: n=301 pnl=$6,800 E[R]=0.113 FRAGILE WF=2/4
+
+### BEST
+liq=3m|bias=15m+5m|entry=1m RR=2.0 → n=1527 PnL=$69,000 E[R]=0.2259 SURVIVES WF=3/4 MC=100.0%
+  1_full: n=1527 pnl=$69000.0 E[R]=0.2259
+  2_oos70: n=436 pnl=$13000.0 E[R]=0.1491
+  3_wf_fold_1: n=239 pnl=$14600.0 E[R]=0.3054
+  4_wf_fold_2: n=215 pnl=$5600.0 E[R]=0.1302
+  5_wf_fold_3: n=239 pnl=$-400.0 E[R]=-0.0084
+  6_wf_fold_4: n=197 pnl=$13400.0 E[R]=0.3401
+  7_torture_spread: n=1527 pnl=$23190.0 E[R]=0.0759
+  8_torture_skip: n=1032 pnl=$45600.0 E[R]=0.2209
+
+TOP 10:
+  1. liq=3m|bias=15m+5m|entry=1m RR=2.0 pnl=$69,000 E[R]=0.2259 SURVIVES n=1527
+  2. liq=3m|bias=15m+5m|entry=1m RR=2.4 pnl=$62,440 E[R]=0.2653 SURVIVES n=1177
+  3. liq=3m|bias=15m+5m|entry=1m RR=4.0 pnl=$59,600 E[R]=0.3739 SURVIVES n=797
+  4. liq=5m|bias=15m+5m|entry=1m RR=2.0 pnl=$56,400 E[R]=0.2217 SURVIVES n=1272
+  5. liq=3m|bias=15m+5m|entry=1m RR=3.0 pnl=$53,000 E[R]=0.2718 SURVIVES n=975
+  6. liq=3m|bias=15m+3m|entry=1m RR=2.4 pnl=$45,480 E[R]=0.2032 SURVIVES n=1119
+  7. liq=5m|bias=15m+5m|entry=1m RR=2.4 pnl=$44,520 E[R]=0.223 SURVIVES n=998
+  8. liq=3m|bias=15m+3m|entry=1m RR=2.0 pnl=$44,400 E[R]=0.1609 SURVIVES n=1380
+  9. liq=3m|bias=15m+1m|entry=1m RR=4.0 pnl=$43,200 E[R]=0.3181 SURVIVES n=679
+  10. liq=5m|bias=15m+1m|entry=1m RR=2.0 pnl=$41,600 E[R]=0.1722 SURVIVES n=1208
+
+Wrote /app/data/lab_gold_pa_tf_grid_bt.json (191.9s) · SURVIVES=84/120

@@ -12,6 +12,8 @@ class MarketCache:
         self._last_candle_time: Optional[str] = None
         self._worker_running: bool = False
         self._last_error: Optional[str] = None
+        self._data_source: Optional[str] = None
+        self._symbol: Optional[str] = None
 
     async def update(self, cycle: dict) -> bool:
         """Update cache. Returns True if candle_time changed."""
@@ -23,6 +25,8 @@ class MarketCache:
             self._candles = cycle["candles"]
             self._last_candle_time = candle_time
             self._last_error = None
+            self._data_source = cycle.get("data_source") or signal.get("DATA_SOURCE")
+            self._symbol = cycle.get("symbol") or signal.get("SYMBOL")
             return is_new
 
     async def set_error(self, message: str) -> None:
@@ -50,6 +54,8 @@ class MarketCache:
                 "last_candle_time": self._last_candle_time,
                 "last_error": self._last_error,
                 "has_signal": self._latest_signal is not None,
+                "data_source": self._data_source,
+                "symbol": self._symbol,
             }
 
 

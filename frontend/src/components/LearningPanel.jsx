@@ -52,7 +52,7 @@ function McBar({ value, floor }) {
 
 export default function LearningPanel({ signal }) {
   const queryClient = useQueryClient()
-  const [lastBucket, setLastBucket] = useState(3)
+  const [lastBucket, setLastBucket] = useState(10)
   const [executeMsg, setExecuteMsg] = useState('')
 
   const { data, isLoading } = useQuery({
@@ -90,7 +90,7 @@ export default function LearningPanel({ signal }) {
       setLastBucket(status?.max_trades_per_bucket || 3)
       updateSettings.mutate({ max_trades_per_bucket: 0 })
     } else {
-      updateSettings.mutate({ max_trades_per_bucket: lastBucket || 3 })
+      updateSettings.mutate({ max_trades_per_bucket: lastBucket || 10 })
     }
   }
 
@@ -103,33 +103,34 @@ export default function LearningPanel({ signal }) {
   }
 
   // Pull from live gate-check endpoint (real calibrator evaluation)
-  const mc = gate?.mc_prob ?? null
-  const staticMc = gate?.static_mc_prob ?? null
-  const mcDelta = gate?.mc_delta ?? null
-  const mlProb = gate?.ml_prob ?? null
-  const sigDirection = gate?.signal ?? signal?.SIGNAL
-  const isBuyOrSell = sigDirection === 'BUY' || sigDirection === 'SELL'
-  const gateAllowed = gate?.allowed
-  const gateReason = gate?.gate_reason
-  const mcFloorLive = gate?.mc_floor ?? null
-
   const patterns = data?.patterns
   const model = data?.model
   const markov = data?.markov
   const gates = data?.gates
   const adaptive = data?.adaptive
   const gatesOff = gates && !gates.ml_gate_enabled && !gates.adaptive_learning
+
+  const mc = gate?.mc_prob ?? null
+  const staticMc = gate?.static_mc_prob ?? null
+  const mcDelta = gate?.mc_delta ?? null
+  const mlProb = gate?.ml_prob ?? null
+  const sigDirection = gate?.signal ?? signal?.SIGNAL
+  const isBuyOrSell = sigDirection === 'BUY' || sigDirection === 'SELL'
+  const marketClosed = status?.market_open === false || signal?.MARKET_OPEN === false
+  const gateAllowed = gate?.allowed
+  const gateReason = gate?.gate_reason
+  const mcFloorLive = gate?.mc_floor ?? null
+  const deskMcFloor = gate?.desk_mc_floor ?? adaptive?.mc_floor ?? null
+  const gateSymbol = gate?.symbol || signal?.SYMBOL || 'GOLD'
+  const instrumentFloors = gate?.instrument_floors || {}
   const mcFloor = mcFloorLive ?? adaptive?.mc_floor ?? null
 
   return (
     <div className="zcard p-5">
       <div className="flex flex-wrap items-start justify-between gap-3 mb-4">
         <div>
-          <h3 className="font-semibold text-gray-100 text-lg flex items-center gap-2">
-            <span className="inline-block h-4 w-1 rounded-full bg-gold-gradient" />
-            AI Trade Learning
-          </h3>
-          <p className="text-xs text-gray-500 mt-1 max-w-3xl leading-relaxed">
+          <h3 className="panel-title">AI learning</h3>
+          <p className="panel-desc max-w-3xl">
             Learns from <strong className="text-gray-300">every closed trade</strong> — Markov, ML, and adaptive
             guards update immediately to push toward a{' '}
             <span className="text-accent-gold">67% win-rate equilibrium</span>.
@@ -199,8 +200,9 @@ export default function LearningPanel({ signal }) {
               <div className="text-gray-200">{pct(adaptive.rolling_win_rate)}</div>
             </div>
             <div className="bg-surface-card rounded p-2 border border-surface-border">
-              <div className="text-gray-500">MC floor</div>
+              <div className="text-gray-500">Desk MC base</div>
               <div className="text-accent-gold">{adaptive.mc_floor?.toFixed(0)}%</div>
+              <div className="text-[10px] text-surface-muted mt-0.5">shared protect layer</div>
             </div>
             <div className="bg-surface-card rounded p-2 border border-surface-border">
               <div className="text-gray-500">ML min prob</div>
@@ -217,7 +219,7 @@ export default function LearningPanel({ signal }) {
       )}
 
       {/* ── Live MC + Gate + Execute / Auto-Trade controls ────────────────────── */}
-      <div className="mb-5 rounded-lg border border-accent-gold/40 bg-surface p-4">
+      <div className="mb-5 rounded-lg border border-surface-border bg-surface p-4">
 
         {/* Header row: signal + auto-trade toggle */}
         <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
@@ -291,7 +293,19 @@ export default function LearningPanel({ signal }) {
                 <span>ML score <span className="text-accent-gold">{(mlProb * 100).toFixed(1)}%</span></span>
               )}
               {mcFloor != null && (
-                <span>floor <span className="text-accent-gold font-semibold">{mcFloor.toFixed(0)}%</span></span>
+                <span>
+                  {gateSymbol} floor{' '}
+                  <span className="text-accent-gold font-semibold">{Number(mcFloor).toFixed(0)}%</span>
+                  {deskMcFloor != null && Number(mcFloor) !== Number(deskMcFloor) && (
+                    <span className="text-surface-muted">
+                      {' '}(desk {Number(deskMcFloor).toFixed(0)}
+                      {gate?.rl_mc_delta != null
+                        ? ` ${Number(gate.rl_mc_delta) >= 0 ? '+' : ''}${Number(gate.rl_mc_delta).toFixed(0)}`
+                        : ''}
+                      )
+                    </span>
+                  )}
+                </span>
               )}
             </div>
           </div>
@@ -301,60 +315,91 @@ export default function LearningPanel({ signal }) {
             <span>50%</span>
             <span>100%</span>
           </div>
+          {Object.keys(instrumentFloors).length > 0 && (
+            <div className="mt-3 flex flex-wrap gap-1.5">
+              {Object.entries(instrumentFloors).map(([sym, row]) => (
+                <span
+                  key={sym}
+                  className={`text-[10px] tabular-nums px-2 py-0.5 rounded border ${
+                    sym === gateSymbol
+                      ? 'border-accent-gold/50 text-accent-gold'
+                      : 'border-surface-border text-surface-muted'
+                  }`}
+                  title={`${sym}: desk + RL Δ ${row.mc_delta}`}
+                >
+                  {sym} {Number(row.mc_floor).toFixed(0)}%
+                </span>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Gate pass / fail */}
         <div className={`mb-4 rounded-md px-3 py-2 text-xs border ${
-          !isBuyOrSell
-            ? 'bg-surface-card border-surface-border text-gray-500'
-            : gateAllowed === true
-              ? 'bg-accent-buy/10 border-accent-buy/40 text-accent-buy'
-              : gateAllowed === false
-                ? 'bg-red-500/10 border-red-500/40 text-red-300'
-                : 'bg-surface-card border-surface-border text-gray-500'
+          marketClosed
+            ? 'bg-accent-gold/10 border-accent-gold/30 text-accent-gold'
+            : !isBuyOrSell
+              ? 'bg-surface-card border-surface-border text-gray-500'
+              : gateAllowed === true
+                ? 'bg-accent-buy/10 border-accent-buy/40 text-accent-buy'
+                : gateAllowed === false
+                  ? 'bg-red-500/10 border-red-500/40 text-red-300'
+                  : 'bg-surface-card border-surface-border text-gray-500'
         }`}>
-          {!isBuyOrSell
-            ? 'No active BUY/SELL setup — MC updates on next signal'
-            : gateAllowed === true
-              ? '✓ Gate passed — signal meets MC + ML thresholds'
-              : gateAllowed === false
-                ? `✗ Gate blocked — ${gateReason || 'ML/MC threshold not met'}`
-                : 'Evaluating…'}
+          {marketClosed
+            ? (status?.market_message || signal?.REASON || 'XM gold market is closed — trading resumes at the next open.')
+            : !isBuyOrSell
+              ? 'No active BUY/SELL setup — MC updates on next signal'
+              : gateAllowed === true
+                ? '✓ Gate passed — signal meets MC + ML thresholds'
+                : gateAllowed === false
+                  ? `✗ Gate blocked — ${gateReason || 'ML/MC threshold not met'}`
+                  : 'Evaluating…'}
         </div>
 
         {/* Execute (override) button + feedback */}
         <div className="flex flex-wrap items-center gap-3">
           <button
             type="button"
-            disabled={!isBuyOrSell || executeTrade.isPending || status?.trading_halted}
+            disabled={!isBuyOrSell || executeTrade.isPending || status?.trading_halted || marketClosed}
             onClick={handleExecute}
             className={`px-5 py-2.5 rounded-lg font-bold text-sm transition shrink-0 ${
-              isBuyOrSell && !status?.trading_halted
+              isBuyOrSell && !status?.trading_halted && !marketClosed
                 ? sigDirection === 'BUY'
                   ? 'bg-accent-buy text-white hover:opacity-90 active:scale-95'
                   : 'bg-accent-sell text-white hover:opacity-90 active:scale-95'
                 : 'bg-gray-700 text-gray-500 cursor-not-allowed'
             }`}
           >
-            {status?.trading_halted
-              ? 'Trading halted'
-              : executeTrade.isPending
-                ? 'Executing…'
-                : isBuyOrSell
-                  ? `⚡ Override Gate & Execute ${sigDirection}`
-                  : 'No BUY/SELL signal'}
+            {marketClosed
+              ? 'Market closed'
+              : status?.trading_halted
+                ? 'Trading halted'
+                : executeTrade.isPending
+                  ? 'Executing…'
+                  : isBuyOrSell
+                    ? `⚡ Override Gate & Execute ${sigDirection}`
+                    : 'No BUY/SELL signal'}
           </button>
           <span className="text-[10px] text-gray-600 max-w-xs leading-snug">
-            Bypasses MC/ML gate — trades immediately at current signal levels
+            {marketClosed
+              ? status?.market_next_open
+                ? `Desk opens ${status.market_next_open}`
+                : 'No override while XM gold is closed'
+              : 'Bypasses MC/ML gate — trades immediately at current signal levels'}
           </span>
         </div>
         {executeMsg && (
           <div className={`mt-2 text-xs px-3 py-1.5 rounded border ${
-            executeMsg.toLowerCase().includes('fail') || executeMsg.toLowerCase().includes('error')
+            executeMsg.toLowerCase().includes('fail') ||
+            executeMsg.toLowerCase().includes('error') ||
+            executeMsg.includes('429')
               ? 'bg-red-500/10 border-red-500/30 text-red-300'
               : 'bg-accent-buy/10 border-accent-buy/30 text-accent-buy'
           }`}>
-            {executeMsg}
+            {executeMsg.includes('429') || executeMsg.includes('TooManyRequests')
+              ? 'MetaAPI rate limit — wait ~1 min, then retry. Live mode now caches XM calls to prevent this.'
+              : executeMsg}
           </div>
         )}
       </div>

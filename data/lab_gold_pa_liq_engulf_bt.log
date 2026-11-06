@@ -1,0 +1,42 @@
+=== GOLD PA liq-sweep+engulf vs don_100 (Dukascopy 1y) ===
+  load GOLD 5m: 102,950 bars 2025-07-31→2026-07-23
+  load GOLD 15m: 34,316 bars 2025-07-31→2026-07-23
+  resample 1h: 8,580 · 25m: 20,591
+Collecting PA entries (15m sweep → 1h/25m bias → 5m engulf)…
+  PA raw entries: 572
+Collecting don_100 entries on 15m…
+  don_100 raw entries: 1234
+  PA RR=2.0: n=362 pnl=$10,400 E[R]=0.1436 verdict=SURVIVES WF=3/4 MC=97.8%
+  PA RR=2.4: n=350 pnl=$10,920 E[R]=0.156 verdict=SURVIVES WF=3/4 MC=97.3%
+  PA RR=3.0: n=336 pnl=$12,800 E[R]=0.1905 verdict=SURVIVES WF=3/4 MC=96.9%
+  PA RR=4.0: n=290 pnl=$17,000 E[R]=0.2931 verdict=SURVIVES WF=2/4 MC=99.0%
+  don_100 RR=2.0: n=547 pnl=$7,000 E[R]=0.064 verdict=FRAGILE WF=2/4 MC=85.7%
+  don_100 RR=2.4: n=514 pnl=$8,720 E[R]=0.0848 verdict=SURVIVES WF=3/4 MC=88.3%
+  don_100 RR=3.0: n=482 pnl=$14,000 E[R]=0.1452 verdict=SURVIVES WF=3/4 MC=96.1%
+  don_100 RR=4.0: n=460 pnl=$17,000 E[R]=0.1848 verdict=SURVIVES WF=4/4 MC=97.3%
+
+### HEAD-TO-HEAD @ RR=4 ($200/R)
+PA process:  n=290  PnL=$17,000  E[R]=0.2931  SURVIVES  MC=99.0%
+don_100:     n=460  PnL=$17,000  E[R]=0.1848  SURVIVES  MC=97.3%
+Δ PnL (PA − don): $0
+
+PA @ RR=4 — 8 tests:
+  1_full: n=290 pnl=$17000.0 E[R]=0.2931
+  2_oos70: n=76 pnl=$800.0 E[R]=0.0526
+  3_wf_fold_1: n=42 pnl=$9600.0 E[R]=1.1429
+  4_wf_fold_2: n=45 pnl=$0.0 E[R]=0.0
+  5_wf_fold_3: n=30 pnl=$0.0 E[R]=0.0
+  6_wf_fold_4: n=46 pnl=$800.0 E[R]=0.087
+  7_torture_spread: n=290 pnl=$8300.0 E[R]=0.1431
+  8_torture_skip: n=197 pnl=$13600.0 E[R]=0.3452
+don_100 @ RR=4 — 8 tests:
+  1_full: n=460 pnl=$17000.0 E[R]=0.1848
+  2_oos70: n=134 pnl=$3200.0 E[R]=0.1194
+  3_wf_fold_1: n=72 pnl=$7600.0 E[R]=0.5278
+  4_wf_fold_2: n=58 pnl=$4400.0 E[R]=0.3793
+  5_wf_fold_3: n=61 pnl=$800.0 E[R]=0.0656
+  6_wf_fold_4: n=73 pnl=$2400.0 E[R]=0.1644
+  7_torture_spread: n=460 pnl=$3200.0 E[R]=0.0348
+  8_torture_skip: n=305 pnl=$11000.0 E[R]=0.1803
+
+Wrote /app/data/lab_gold_pa_liq_engulf_bt.json (52.3s)

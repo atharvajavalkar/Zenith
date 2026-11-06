@@ -15,10 +15,10 @@ class SignalResponse(BaseModel):
     SETUP_DIRECTION: Optional[str] = None
     BUY_SCORE: Optional[float] = None
     SELL_SCORE: Optional[float] = None
-    BIAS_1H: str
-    BIAS_4H: str
-    CONTEXT_4H: str
-    STATE: str
+    BIAS_1H: Optional[str] = None
+    BIAS_4H: Optional[str] = None
+    CONTEXT_4H: Optional[str] = None
+    STATE: Optional[str] = None
     SUCCESS_PERCENT: Optional[float] = None
     RR: Optional[str] = None
     ENTRY: Optional[float] = None
@@ -27,8 +27,8 @@ class SignalResponse(BaseModel):
     TP1: Optional[float] = None
     TP2: Optional[float] = None
     TP3: Optional[float] = None
-    DEMAND_TF: str
-    SUPPLY_TF: str
+    DEMAND_TF: Optional[str] = None
+    SUPPLY_TF: Optional[str] = None
     SMC_SCORE: Optional[float] = None
     SMC_READ: Optional[str] = None
     SMC_SWEEP: Optional[bool] = None
@@ -36,7 +36,17 @@ class SignalResponse(BaseModel):
     SMC_CHOCH: Optional[bool] = None
     SMC_DISPLACEMENT: Optional[bool] = None
     SMC_FVG: Optional[str] = None
-    EXIT: str
+    EXIT: Optional[str] = None
+    DATA_SOURCE: Optional[str] = None
+    SYMBOL: Optional[str] = None
+    LOG_PRICE_1M: Optional[float] = None
+    LOG_TIME_1M: Optional[str] = None
+    LOG_TIME_5M: Optional[str] = None
+    MOVEMENT_5M: Optional[str] = None
+    # PA / lab brains often omit classic zone fields — keep optional
+    ENTRY_BRAIN: Optional[str] = None
+    ZONE_TAG: Optional[str] = None
+    BRAIN_TAG: Optional[str] = None
 
 
 class CandleBar(BaseModel):
@@ -51,6 +61,8 @@ class CandleBar(BaseModel):
 class CandlesResponse(BaseModel):
     timeframe: str
     candles: list[CandleBar]
+    data_source: Optional[str] = None
+    symbol: Optional[str] = None
 
 
 class SignalHistoryItem(BaseModel):

@@ -1,0 +1,48 @@
+AUDUSD hunt · 41 strategies · target ≥5,000,000 trades
+  AUDUSD 5m: 5700 bars 2026-06-28→2026-07-24
+  AUDUSD 3m: 7115 bars 2026-07-05→2026-07-24
+  AUDUSD 1m: 7030 bars 2026-07-19→2026-07-24
+  AUDUSD 15m: 1902 bars (resampled) 2026-06-28→2026-07-24
+[AUDUSD] hunting 5m…
+[AUDUSD] hunting 3m…
+[AUDUSD] hunting 1m…
+[AUDUSD] hunting 15m…
+
+### AUDUSD TOP 15 CELLS
+
+Strategy     TF    Verdict       n      OOS    MC%   Score
+bb_2.5       3m    SURVIVES      5   +1.500   94.5   74.47
+ema_pull     3m    SURVIVES     95   +0.818   87.6   61.58
+inside       1m    SURVIVES    478   +0.043   91.2   59.53
+macd         1m    SURVIVES    336   +0.173   80.3   55.14
+stoch_30     5m    SURVIVES    311   +0.108   79.0   53.70
+stoch_20     3m    SURVIVES    273   +0.136   91.5   53.62
+z_20_2       3m    SURVIVES    271   +0.059   98.4   51.95
+cta_5_20     15m   SURVIVES     61   +0.447   92.7   49.86
+z_40_2       5m    SURVIVES    195   +0.136   70.2   48.16
+inside       15m   SURVIVES     78   +0.346   85.7   47.84
+bb_2         5m    SURVIVES     35   +0.364   87.1   46.70
+rsi          15m   SURVIVES     76   +0.296   86.1   46.51
+ichi         15m   SURVIVES     68   +0.316   81.3   46.37
+cta_10_40    3m    SURVIVES    145   +0.111   85.4   46.30
+cta_12_26    15m   SURVIVES     47   +0.333   90.0   46.17
+
+★ Winner → ema_pull@3m SURVIVES n=95 OOS=0.818
+[AUDUSD] ema_pull@3m structured=1,629 → dense to 5,000,000
+[AUDUSD] dense#1 · 436,462/5,000,000
+[AUDUSD] dense#2 · 871,295/5,000,000
+[AUDUSD] dense#3 · 1,306,128/5,000,000
+[AUDUSD] dense#4 · 1,740,961/5,000,000
+[AUDUSD] dense#5 · 2,175,794/5,000,000
+[AUDUSD] dense#6 · 2,610,627/5,000,000
+[AUDUSD] dense#7 · 3,045,460/5,000,000
+[AUDUSD] dense#8 · 3,480,293/5,000,000
+[AUDUSD] dense#9 · 3,915,126/5,000,000
+[AUDUSD] dense#10 · 4,349,959/5,000,000
+[AUDUSD] dense#11 · 4,784,792/5,000,000
+[AUDUSD] dense#12 · 5,002,721/5,000,000
+DONE AUDUSD · winner ema_pull@3m · SURVIVES · trades=5,002,721 · wire=ema_20_50_pull
+
+5M stress: trades=5,002,721 volume_verdict=DEAD honest=SURVIVES OOS E[R]=0.818
+Recommend wire: AUDUSD:ema_20_50_pull scan=3m
+Wrote /app/data/audusd_hunt_5m.json

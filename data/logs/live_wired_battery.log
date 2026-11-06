@@ -1,0 +1,69 @@
+LIVE-WIRED battery · current SYMBOL_ENTRY_BRAIN · intraday TFs · no config writes
+
+brains: {'GOLD': 'cta_10_40', 'USDCHF': 'rsi', 'USDJPY': 'bb_1.5', 'NAS100': 'ema_20_50_tight', 'UKOIL': 'st_3', 'AUDUSD': 'bb_1.5', 'BTCUSD': 'fib_liq_sweep', 'ETHUSD': 'bb_2'}
+scan: {'GOLD': ('15m',), 'USDCHF': ('1m',), 'USDJPY': ('15m',), 'NAS100': ('15m',), 'UKOIL': ('15m',), 'AUDUSD': ('15m',), 'BTCUSD': ('3m',), 'ETHUSD': ('1m',)}
+WARNING:data.fetcher:Data OK via fallback OANDA:XAUUSD (XM preferred but unavailable) — will retry XM on next fetch
+  GOLD 5m: 5454 bars 2026-06-28→2026-07-24
+  GOLD 3m: 6855 bars 2026-07-05→2026-07-24
+  GOLD 1m: 6789 bars 2026-07-19→2026-07-24
+  GOLD 15m: 1818 bars (resampled) 2026-06-28→2026-07-24
+  GOLD@15m brain=cta_10_40 rr=4 bars=1818 entries=46
+    full n=23 E[R]=0.304 | OOS E[R]=0.0 | WF 3/4 | MC 75.5% → SURVIVES
+  USDCHF 5m: 5695 bars 2026-06-28→2026-07-24
+  USDCHF 3m: 7110 bars 2026-07-05→2026-07-24
+  USDCHF 1m: 7049 bars 2026-07-19→2026-07-24
+  USDCHF 15m: 1899 bars (resampled) 2026-06-28→2026-07-24
+  USDCHF@1m brain=rsi rr=2.4 bars=7049 entries=408
+    full n=183 E[R]=0.115 | OOS E[R]=0.066 | WF 3/4 | MC 83.1% → SURVIVES
+  USDJPY 5m: 5694 bars 2026-06-28→2026-07-24
+  USDJPY 3m: 7147 bars 2026-07-05→2026-07-24
+  USDJPY 1m: 7050 bars 2026-07-19→2026-07-24
+  USDJPY 15m: 1898 bars (resampled) 2026-06-28→2026-07-24
+  USDJPY@15m brain=bb_1.5 rr=4 bars=1898 entries=77
+    full n=42 E[R]=0.071 | OOS E[R]=0.875 | WF 3/4 | MC 54.8% → FRAGILE
+  NAS100 5m: 5459 bars 2026-06-28→2026-07-24
+  NAS100 3m: 5491 bars 2026-05-26→2026-07-24
+  NAS100 1m: 5834 bars 2026-07-06→2026-07-24
+  NAS100 15m: 1823 bars (resampled) 2026-06-28→2026-07-24
+  NAS100@15m brain=ema_20_50_tight rr=4 bars=1823 entries=15
+    full n=13 E[R]=0.154 | OOS E[R]=0.0 | WF 3/4 | MC 61.7% → SURVIVES
+  UKOIL 5m: 5270 bars 2026-06-28→2026-07-24
+  UKOIL 3m: 6631 bars 2026-07-05→2026-07-24
+  UKOIL 1m: 6565 bars 2026-07-19→2026-07-24
+  UKOIL 15m: 1758 bars (resampled) 2026-06-28→2026-07-24
+  UKOIL@15m brain=st_3 rr=3 bars=1758 entries=7
+    full n=7 E[R]=1.286 | OOS E[R]=1.4 | WF 3/4 | MC 96.7% → SURVIVES
+  AUDUSD 5m: 5698 bars 2026-06-28→2026-07-24
+  AUDUSD 3m: 7111 bars 2026-07-05→2026-07-24
+  AUDUSD 1m: 7046 bars 2026-07-19→2026-07-24
+  AUDUSD 15m: 1902 bars (resampled) 2026-06-28→2026-07-24
+  AUDUSD@15m brain=bb_1.5 rr=1.5 bars=1902 entries=80
+    full n=57 E[R]=-0.123 | OOS E[R]=-0.559 | WF 1/4 | MC 25.9% → DEAD
+  BTCUSD 5m: 6339 bars 2026-06-15→2026-07-24
+  BTCUSD 3m: 6381 bars 2026-06-22→2026-07-24
+  BTCUSD 1m: 7630 bars 2026-06-29→2026-07-24
+  BTCUSD 15m: 3192 bars (resampled) 2026-06-15→2026-07-24
+  BTCUSD@3m brain=fib_liq_sweep rr=3 bars=6381 entries=9
+    full n=8 E[R]=1.0 | OOS E[R]=3.0 | WF 3/4 | MC 84.6% → SURVIVES
+  ETHUSD 5m: 5460 bars 2026-06-08→2026-07-24
+  ETHUSD 3m: 5478 bars 2026-06-22→2026-07-24
+  ETHUSD 1m: 6182 bars 2026-06-29→2026-07-24
+  ETHUSD 15m: 2909 bars (resampled) 2026-06-08→2026-07-24
+  ETHUSD@1m brain=bb_2 rr=4 bars=6182 entries=44
+    full n=42 E[R]=0.905 | OOS E[R]=1.778 | WF 3/4 | MC 99.5% → SURVIVES
+
+### LIVE-WIRED DESK
+
+Pair     Brain              TF    Verdict    Full n OOS E[R]    WF    MC%
+--------------------------------------------------------------------------------
+GOLD     cta_10_40          15m   SURVIVES       23    0.000 3/  4   75.5
+USDCHF   rsi                1m    SURVIVES      183    0.066 3/  4   83.1
+USDJPY   bb_1.5             15m   FRAGILE        42    0.875 3/  4   54.8
+NAS100   ema_20_50_tight    15m   SURVIVES       13    0.000 3/  4   61.7
+UKOIL    st_3               15m   SURVIVES        7    1.400 3/  4   96.7
+AUDUSD   bb_1.5             15m   DEAD           57   -0.559 1/  4   25.9
+BTCUSD   fib_liq_sweep      3m    SURVIVES        8    3.000 3/  4   84.6
+ETHUSD   bb_2               1m    SURVIVES       42    1.778 3/  4   99.5
+
+Desk 6S/1F/1D · 9.0/10 · OOS E[R]=0.82 · MC=72.7%
+Wrote /app/data/live_wired_battery.json

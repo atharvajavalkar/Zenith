@@ -1,41 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <defs>
-    <linearGradient id="gL" x1="8" y1="6" x2="26" y2="28" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#fff6d2"/>
-      <stop offset="45%" stop-color="#e7c067"/>
-      <stop offset="100%" stop-color="#6b3f15"/>
-    </linearGradient>
-    <linearGradient id="gS" x1="4" y1="8" x2="16" y2="28" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#9a6224"/>
-      <stop offset="100%" stop-color="#3a220a"/>
-    </linearGradient>
-    <linearGradient id="sn" x1="16" y1="4" x2="16" y2="12" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#fff"/>
-      <stop offset="100%" stop-color="#e7c067"/>
-    </linearGradient>
-    <radialGradient id="halo" cx="16" cy="6" r="8" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#fff6d2" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#d9a441" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-  <rect width="32" height="32" rx="7" fill="#0a0e14"/>
-  <circle cx="16" cy="6" r="7" fill="url(#halo)"/>
-  <!-- Left aiguille -->
-  <path d="M4 24 L8 10 L10 24Z" fill="url(#gS)"/>
-  <!-- Right peak -->
-  <path d="M22 24 L26 12 L28 24Z" fill="url(#gS)" opacity="0.9"/>
-  <!-- Mont Blanc dome — shadow left -->
-  <path d="M16 5 C13 8 11 12 10 16 L7 24 H16V5Z" fill="url(#gS)"/>
-  <!-- Mont Blanc — lit face -->
-  <path d="M16 5 C19 8 21 12 22 16 L25 24 H16V5Z" fill="url(#gL)"/>
-  <!-- Snow cap -->
-  <path d="M16 5 C14 7 13 9 12.5 11 C13.5 10 15 9.2 16 8.8 C17 9.2 18.5 10 19.5 11 C19 9 18 7 16 5Z" fill="url(#sn)"/>
-  <!-- Gold vein -->
-  <path d="M17 12 L20 18" stroke="#fff6d2" stroke-opacity="0.35" stroke-width="0.4" stroke-linecap="round"/>
-  <!-- Glacier -->
-  <path d="M8 24 C12 22 14 23 16 21 C18 23 20 22 24 24 V26 H8Z" fill="#d9a441" fill-opacity="0.15"/>
-  <path d="M5 26 H27" stroke="#d9a441" stroke-opacity="0.4" stroke-width="0.5" stroke-linecap="round"/>
-  <!-- Zenith sun -->
-  <circle cx="16" cy="5.2" r="1.1" fill="#fff6d2"/>
-  <circle cx="16" cy="5.2" r="0.45" fill="#fff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" fill="#080807"/>
+  <g stroke="#c9a66b" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 48 L32 12 L52 48" stroke-width="1.75"/>
+    <path d="M20 48 L32 24 L44 48" stroke-width="1.1" opacity="0.55"/>
+  </g>
+  <circle cx="32" cy="12" r="2.35" fill="#c9a66b"/>
+  <path d="M16 52 H48" stroke="#c9a66b" stroke-width="1" stroke-linecap="round" opacity="0.35"/>
 </svg>

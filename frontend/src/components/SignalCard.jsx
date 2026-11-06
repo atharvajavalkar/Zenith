@@ -1,12 +1,12 @@
 function Badge({ children, variant }) {
   const colors = {
-    BUY: 'bg-accent-buy/20 text-accent-buy border-accent-buy/40',
-    SELL: 'bg-accent-sell/20 text-accent-sell border-accent-sell/40',
-    'NO TRADE': 'bg-gray-500/20 text-gray-400 border-gray-500/40',
+    BUY: 'text-accent-buy border-accent-buy/35 bg-accent-buy/10',
+    SELL: 'text-accent-sell border-accent-sell/35 bg-accent-sell/10',
+    'NO TRADE': 'text-surface-muted border-surface-border bg-transparent',
   }
   return (
     <span
-      className={`inline-flex px-3 py-1 rounded-full text-sm font-semibold border ${
+      className={`inline-flex px-3 py-1 rounded-sm text-[11px] font-medium uppercase tracking-nav border ${
         colors[variant] || colors['NO TRADE']
       }`}
     >
@@ -18,45 +18,48 @@ function Badge({ children, variant }) {
 export default function SignalCard({ signal }) {
   if (!signal) {
     return (
-      <div className="zcard px-5 py-4 animate-pulse">
-        <div className="h-4 bg-surface-border rounded w-64" />
+      <div className="zcard px-6 py-5 animate-pulse">
+        <div className="h-3 bg-surface-border/80 rounded-sm w-56" />
       </div>
     )
   }
 
   const isActive = signal.SIGNAL === 'BUY' || signal.SIGNAL === 'SELL'
+  const marketClosed = signal.MARKET_OPEN === false
+  const badge = marketClosed ? 'MARKET CLOSED' : signal.SIGNAL || 'NO TRADE'
 
   return (
     <div
-      className={`zcard px-5 py-4 flex flex-wrap items-center justify-between gap-3 border-l-4 ${
-        signal.SIGNAL === 'BUY'
-          ? 'border-l-accent-buy'
-          : signal.SIGNAL === 'SELL'
-            ? 'border-l-accent-sell'
-            : 'border-l-surface-border'
+      className={`zcard px-6 py-5 flex flex-wrap items-center justify-between gap-4 ${
+        marketClosed
+          ? 'border-accent-gold/20'
+          : signal.SIGNAL === 'BUY'
+            ? 'border-accent-buy/25'
+            : signal.SIGNAL === 'SELL'
+              ? 'border-accent-sell/25'
+              : ''
       }`}
     >
       <div className="min-w-0 flex-1">
-        <p className="text-sm text-gray-400">{signal.REASON || signal.ACTION}</p>
-        {isActive && (
-          <p className="text-xs text-gray-500 mt-1.5 tabular-nums">
-            {signal.DEMAND_TF}/{signal.SUPPLY_TF} zones · Entry {signal.ENTRY ?? '—'} · SL {signal.SL ?? '—'}
-            {signal.TP1 != null ? ` · TP1 ${signal.TP1}` : ''}
-            {signal.TP != null ? ` · TP2 ${signal.TP}` : ''}
-            {signal.RR ? ` · RR ${signal.RR}` : ''}
+        <p className="text-sm font-light text-ink-soft leading-relaxed">
+          {signal.REASON || signal.ACTION}
+        </p>
+        {marketClosed && signal.MARKET_NEXT_OPEN && (
+          <p className="text-[11px] text-accent-gold/80 mt-2 tracking-wide">
+            Opens {signal.MARKET_NEXT_OPEN}
+            {signal.MARKET_SERVER_TIME ? ` · now ${signal.MARKET_SERVER_TIME}` : ''}
           </p>
         )}
-        {!isActive && signal.DEMAND_TF && (
-          <p className="text-xs text-gray-500 mt-1.5 tabular-nums">
-            Watching {signal.DEMAND_TF} demand · {signal.SUPPLY_TF} supply
-            {signal.MOVEMENT_5M ? ` · 5M ${signal.MOVEMENT_5M}` : ''}
-            {signal.BUY_SCORE != null && signal.SELL_SCORE != null
-              ? ` · scores ${signal.BUY_SCORE}/${signal.SELL_SCORE}`
-              : ''}
+        {isActive && !marketClosed && (
+          <p className="text-[11px] text-surface-muted mt-2 tracking-wide">
+            {signal.ENTRY != null && `Entry ${signal.ENTRY}`}
+            {signal.SL != null && ` · SL ${signal.SL}`}
+            {signal.TP != null && ` · TP ${signal.TP}`}
+            {signal.SUCCESS_PERCENT != null && ` · MC ${signal.SUCCESS_PERCENT}%`}
           </p>
         )}
       </div>
-      <Badge variant={signal.SIGNAL}>{signal.SIGNAL}</Badge>
+      <Badge variant={marketClosed ? 'NO TRADE' : signal.SIGNAL || 'NO TRADE'}>{badge}</Badge>
     </div>
   )
 }

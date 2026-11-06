@@ -1,0 +1,173 @@
+=== FX Fourier + Dist + Volume hunt · AUDUSD/USDCHF · RESEARCH ===
+Scalp/intraday TFs: 1m 3m 5m 15m · train 6m+1y · val 1w/2w/1m
+Live SYMBOL_ENTRY_BRAIN NOT changed.
+load AUDUSD 1m: 532,801 bars 2025-07-18→2026-07-23 · duka_volume ok rate=70.8%
+
+===== AUDUSD 1m =====
+  LIVE_bb2_rr4: 6m n=1075 E[R]=0.3163 SURVIVES | 1y n=2120 E[R]=0.2594 SURVIVES
+  BB_fourier_hf35_sl1.5: 6m n=708 E[R]=0.1864 SURVIVES | 1y n=1156 E[R]=0.2145 SURVIVES
+  BB_fourier_hf40_vol_sl2: 6m n=469 E[R]=0.1237 FRAGILE | 1y n=845 E[R]=0.1588 SURVIVES
+  BB_dist_z15_kurt_sl2: 6m n=19 E[R]=0.0526 FRAGILE | 1y n=30 E[R]=0.2 FRAGILE
+  BB_COMBO_fourier_dist_vol: 6m n=11 E[R]=-0.0727 DEAD | 1y n=20 E[R]=0.19 FRAGILE
+  BB_COMBO_strict_rr2: 6m n=0 E[R]=0.0 DEAD | 1y n=0 E[R]=0.0 DEAD
+  BB15_fourier_vol_rr2: 6m n=2309 E[R]=-0.0152 DEAD | 1y n=3773 E[R]=0.0289 FRAGILE
+  BB25_fourier_rr4: 6m n=56 E[R]=0.0714 FRAGILE | 1y n=103 E[R]=0.3107 SURVIVES
+  CTA_10_40_liveish: 6m n=2504 E[R]=-0.0431 DEAD | 1y n=4218 E[R]=-0.0365 DEAD
+  CTA_fourier_vol: 6m n=1411 E[R]=-0.0602 DEAD | 1y n=2690 E[R]=-0.0306 DEAD
+  BB_COMBO_rr2: 6m n=11 E[R]=0.0909 FRAGILE | 1y n=20 E[R]=0.2 SURVIVES
+  BB_COMBO_rr3: 6m n=11 E[R]=0.0909 FRAGILE | 1y n=20 E[R]=0.2 FRAGILE
+  BB_COMBO_rr4: 6m n=11 E[R]=0.3636 SURVIVES | 1y n=20 E[R]=0.25 SURVIVES
+  VAL 1w: winner n=0 E[R]=0.0 $0 | live n=38 E[R]=0.8421 $6,400
+  VAL 2w: winner n=1 E[R]=-1.0 $-200 | live n=72 E[R]=0.6667 $9,600
+  VAL 1m: winner n=2 E[R]=1.5 $600 | live n=167 E[R]=0.3473 $11,600
+load AUDUSD 3m: 177,601 bars 2025-07-18→2026-07-23 · duka_volume ok rate=71.1%
+
+===== AUDUSD 3m =====
+  LIVE_bb2_rr4: 6m n=387 E[R]=0.0982 FRAGILE | 1y n=761 E[R]=0.1564 SURVIVES
+  BB_fourier_hf35_sl1.5: 6m n=364 E[R]=0.1044 SURVIVES | 1y n=697 E[R]=0.1234 SURVIVES
+  BB_fourier_hf40_vol_sl2: 6m n=219 E[R]=-0.0374 DEAD | 1y n=408 E[R]=0.0333 FRAGILE
+  BB_dist_z15_kurt_sl2: 6m n=5 E[R]=1.4 FRAGILE | 1y n=9 E[R]=1.2222 SURVIVES
+  BB_COMBO_fourier_dist_vol: 6m n=3 E[R]=0.1333 DEAD | 1y n=5 E[R]=1.04 FRAGILE
+  BB_COMBO_strict_rr2: 6m n=0 E[R]=0.0 DEAD | 1y n=0 E[R]=0.0 DEAD
+  BB15_fourier_vol_rr2: 6m n=1103 E[R]=0.0199 FRAGILE | 1y n=2066 E[R]=0.0208 FRAGILE
+  BB25_fourier_rr4: 6m n=31 E[R]=0.6129 SURVIVES | 1y n=57 E[R]=1.0175 SURVIVES
+  CTA_10_40_liveish: 6m n=1144 E[R]=-0.0105 DEAD | 1y n=2329 E[R]=-0.0623 DEAD
+  CTA_fourier_vol: 6m n=577 E[R]=0.0017 FRAGILE | 1y n=1166 E[R]=0.0177 FRAGILE
+  BB_COMBO_rr2: 6m n=3 E[R]=0.0 DEAD | 1y n=5 E[R]=0.8 FRAGILE
+  BB_COMBO_rr3: 6m n=3 E[R]=0.3333 DEAD | 1y n=5 E[R]=0.6 FRAGILE
+  BB_COMBO_rr4: 6m n=3 E[R]=0.6667 DEAD | 1y n=5 E[R]=1.0 FRAGILE
+  VAL 1w: winner n=1 E[R]=4.0 $800 | live n=11 E[R]=-0.5455 $-1,200
+  VAL 2w: winner n=1 E[R]=4.0 $800 | live n=25 E[R]=-0.4 $-2,000
+  VAL 1m: winner n=2 E[R]=1.5 $600 | live n=53 E[R]=-0.2453 $-2,600
+load AUDUSD 5m: 106,561 bars 2025-07-18→2026-07-23 · duka_volume ok rate=71.2%
+
+===== AUDUSD 5m =====
+  LIVE_bb2_rr4: 6m n=234 E[R]=0.1752 SURVIVES | 1y n=481 E[R]=0.1746 SURVIVES
+  BB_fourier_hf35_sl1.5: 6m n=222 E[R]=0.1216 SURVIVES | 1y n=452 E[R]=0.1084 SURVIVES
+  BB_fourier_hf40_vol_sl2: 6m n=132 E[R]=0.0045 FRAGILE | 1y n=258 E[R]=0.0806 FRAGILE
+  BB_dist_z15_kurt_sl2: 6m n=4 E[R]=0.0 DEAD | 1y n=8 E[R]=0.5 FRAGILE
+  BB_COMBO_fourier_dist_vol: 6m n=2 E[R]=-1.0 DEAD | 1y n=3 E[R]=-1.0 DEAD
+  BB_COMBO_strict_rr2: 6m n=0 E[R]=0.0 DEAD | 1y n=0 E[R]=0.0 DEAD
+  BB15_fourier_vol_rr2: 6m n=684 E[R]=0.0219 FRAGILE | 1y n=1324 E[R]=0.0264 FRAGILE
+  BB25_fourier_rr4: 6m n=23 E[R]=0.3043 SURVIVES | 1y n=43 E[R]=0.6279 SURVIVES
+  CTA_10_40_liveish: 6m n=724 E[R]=-0.0442 DEAD | 1y n=1468 E[R]=-0.0899 DEAD
+  CTA_fourier_vol: 6m n=387 E[R]=0.0103 FRAGILE | 1y n=752 E[R]=-0.0234 FRAGILE
+  BB_COMBO_rr2: 6m n=2 E[R]=-1.0 DEAD | 1y n=3 E[R]=-1.0 DEAD
+  BB_COMBO_rr3: 6m n=2 E[R]=-1.0 DEAD | 1y n=3 E[R]=-1.0 DEAD
+  BB_COMBO_rr4: 6m n=2 E[R]=-1.0 DEAD | 1y n=3 E[R]=-1.0 DEAD
+  VAL 1w: winner n=0 E[R]=0.0 $0 | live n=8 E[R]=0.25 $400
+  VAL 2w: winner n=3 E[R]=-1.0 $-600 | live n=17 E[R]=-0.4118 $-1,400
+  VAL 1m: winner n=4 E[R]=-1.0 $-800 | live n=36 E[R]=-0.1667 $-1,200
+load AUDUSD 15m: 35,521 bars 2025-07-18→2026-07-23 · duka_volume ok rate=71.2%
+
+===== AUDUSD 15m =====
+  LIVE_bb2_rr4: 6m n=105 E[R]=0.0 FRAGILE | 1y n=196 E[R]=-0.0051 FRAGILE
+  BB_fourier_hf35_sl1.5: 6m n=104 E[R]=0.0673 SURVIVES | 1y n=191 E[R]=0.0052 FRAGILE
+  BB_fourier_hf40_vol_sl2: 6m n=66 E[R]=-0.0212 FRAGILE | 1y n=130 E[R]=-0.0323 FRAGILE
+  BB_dist_z15_kurt_sl2: 6m n=0 E[R]=0.0 DEAD | 1y n=1 E[R]=-1.0 DEAD
+  BB_COMBO_fourier_dist_vol: 6m n=0 E[R]=0.0 DEAD | 1y n=1 E[R]=-1.0 DEAD
+  BB_COMBO_strict_rr2: 6m n=0 E[R]=0.0 DEAD | 1y n=0 E[R]=0.0 DEAD
+  BB15_fourier_vol_rr2: 6m n=251 E[R]=0.1116 SURVIVES | 1y n=489 E[R]=0.0675 SURVIVES
+  BB25_fourier_rr4: 6m n=15 E[R]=1.0 SURVIVES | 1y n=25 E[R]=0.4 SURVIVES
+  CTA_10_40_liveish: 6m n=239 E[R]=0.0377 FRAGILE | 1y n=466 E[R]=-0.0129 FRAGILE
+  CTA_fourier_vol: 6m n=139 E[R]=-0.1194 DEAD | 1y n=265 E[R]=-0.0634 DEAD
+  BB_COMBO_rr2: 6m n=0 E[R]=0.0 DEAD | 1y n=1 E[R]=-1.0 DEAD
+  BB_COMBO_rr3: 6m n=0 E[R]=0.0 DEAD | 1y n=1 E[R]=-1.0 DEAD
+  BB_COMBO_rr4: 6m n=0 E[R]=0.0 DEAD | 1y n=1 E[R]=-1.0 DEAD
+  VAL 1w: winner n=0 E[R]=0.0 $0 | live n=4 E[R]=-1.0 $-800
+  VAL 2w: winner n=0 E[R]=0.0 $0 | live n=8 E[R]=-1.0 $-1,600
+  VAL 1m: winner n=0 E[R]=0.0 $0 | live n=15 E[R]=0.6667 $2,000
+load USDCHF 1m: 532,801 bars 2025-07-18→2026-07-23 · duka_volume ok rate=70.7%
+
+===== USDCHF 1m =====
+  LIVE_bb2_rr4: 6m n=1040 E[R]=0.149 SURVIVES | 1y n=2121 E[R]=0.1834 SURVIVES
+  BB_fourier_hf35_sl1.5: 6m n=557 E[R]=0.1257 SURVIVES | 1y n=1040 E[R]=0.1423 SURVIVES
+  BB_fourier_hf40_vol_sl2: 6m n=395 E[R]=-0.0359 FRAGILE | 1y n=761 E[R]=0.0053 FRAGILE
+  BB_dist_z15_kurt_sl2: 6m n=19 E[R]=0.4737 SURVIVES | 1y n=36 E[R]=0.7778 SURVIVES
+  BB_COMBO_fourier_dist_vol: 6m n=10 E[R]=0.7 FRAGILE | 1y n=16 E[R]=0.7 SURVIVES
+  BB_COMBO_strict_rr2: 6m n=1 E[R]=2.0 FRAGILE | 1y n=1 E[R]=2.0 FRAGILE
+  BB15_fourier_vol_rr2: 6m n=1809 E[R]=0.0149 FRAGILE | 1y n=3322 E[R]=0.0385 FRAGILE
+  BB25_fourier_rr4: 6m n=51 E[R]=1.1569 SURVIVES | 1y n=105 E[R]=1.0476 SURVIVES
+  CTA_10_40_liveish: 6m n=2050 E[R]=-0.0556 DEAD | 1y n=3823 E[R]=-0.0196 DEAD
+  CTA_fourier_vol: 6m n=1289 E[R]=-0.0135 FRAGILE | 1y n=2440 E[R]=-0.0051 FRAGILE
+  BB_COMBO_rr2: 6m n=10 E[R]=0.5 FRAGILE | 1y n=16 E[R]=0.6875 SURVIVES
+  BB_COMBO_rr3: 6m n=10 E[R]=1.0 FRAGILE | 1y n=16 E[R]=1.0 SURVIVES
+  BB_COMBO_rr4: 6m n=10 E[R]=1.0 FRAGILE | 1y n=16 E[R]=1.1875 SURVIVES
+  VAL 1w: winner n=1 E[R]=4.0 $800 | live n=52 E[R]=0.0577 $600
+  VAL 2w: winner n=3 E[R]=2.3333 $1,400 | live n=94 E[R]=-0.0426 $-800
+  VAL 1m: winner n=6 E[R]=1.5 $1,800 | live n=186 E[R]=0.1828 $6,800
+load USDCHF 3m: 177,601 bars 2025-07-18→2026-07-23 · duka_volume ok rate=71.1%
+
+===== USDCHF 3m =====
+  LIVE_bb2_rr4: 6m n=379 E[R]=0.2665 SURVIVES | 1y n=755 E[R]=0.1325 SURVIVES
+  BB_fourier_hf35_sl1.5: 6m n=350 E[R]=0.1486 SURVIVES | 1y n=681 E[R]=0.1542 SURVIVES
+  BB_fourier_hf40_vol_sl2: 6m n=200 E[R]=0.19 SURVIVES | 1y n=395 E[R]=0.1362 SURVIVES
+  BB_dist_z15_kurt_sl2: 6m n=18 E[R]=1.0 SURVIVES | 1y n=29 E[R]=0.931 SURVIVES
+  BB_COMBO_fourier_dist_vol: 6m n=6 E[R]=-1.0 DEAD | 1y n=10 E[R]=-0.66 DEAD
+  BB_COMBO_strict_rr2: 6m n=0 E[R]=0.0 DEAD | 1y n=0 E[R]=0.0 DEAD
+  BB15_fourier_vol_rr2: 6m n=1021 E[R]=0.0255 FRAGILE | 1y n=2030 E[R]=0.0448 FRAGILE
+  BB25_fourier_rr4: 6m n=36 E[R]=0.5278 SURVIVES | 1y n=70 E[R]=0.7143 SURVIVES
+  CTA_10_40_liveish: 6m n=1092 E[R]=-0.0256 FRAGILE | 1y n=2112 E[R]=-0.0189 DEAD
+  CTA_fourier_vol: 6m n=555 E[R]=-0.0443 DEAD | 1y n=1089 E[R]=-0.029 DEAD
+  BB_COMBO_rr2: 6m n=6 E[R]=-1.0 DEAD | 1y n=10 E[R]=-0.4 DEAD
+  BB_COMBO_rr3: 6m n=6 E[R]=-1.0 DEAD | 1y n=10 E[R]=-0.6 DEAD
+  BB_COMBO_rr4: 6m n=6 E[R]=-1.0 DEAD | 1y n=10 E[R]=-0.5 DEAD
+  VAL 1w: winner n=0 E[R]=0.0 $0 | live n=17 E[R]=0.1765 $600
+  VAL 2w: winner n=1 E[R]=3.0 $600 | live n=37 E[R]=0.4865 $3,600
+  VAL 1m: winner n=2 E[R]=3.0 $1,200 | live n=63 E[R]=0.4286 $5,400
+load USDCHF 5m: 106,561 bars 2025-07-18→2026-07-23 · duka_volume ok rate=71.2%
+
+===== USDCHF 5m =====
+  LIVE_bb2_rr4: 6m n=210 E[R]=0.3571 SURVIVES | 1y n=460 E[R]=0.2065 SURVIVES
+  BB_fourier_hf35_sl1.5: 6m n=192 E[R]=0.1719 SURVIVES | 1y n=435 E[R]=0.0759 SURVIVES
+  BB_fourier_hf40_vol_sl2: 6m n=118 E[R]=0.1814 FRAGILE | 1y n=254 E[R]=0.1378 SURVIVES
+  BB_dist_z15_kurt_sl2: 6m n=7 E[R]=0.7143 FRAGILE | 1y n=13 E[R]=0.5385 SURVIVES
+  BB_COMBO_fourier_dist_vol: 6m n=1 E[R]=-1.0 DEAD | 1y n=3 E[R]=0.1333 DEAD
+  BB_COMBO_strict_rr2: 6m n=0 E[R]=0.0 DEAD | 1y n=0 E[R]=0.0 DEAD
+  BB15_fourier_vol_rr2: 6m n=690 E[R]=0.0913 SURVIVES | 1y n=1348 E[R]=0.0593 SURVIVES
+  BB25_fourier_rr4: 6m n=22 E[R]=1.2727 SURVIVES | 1y n=38 E[R]=0.8421 SURVIVES
+  CTA_10_40_liveish: 6m n=685 E[R]=-0.0482 DEAD | 1y n=1368 E[R]=0.0088 FRAGILE
+  CTA_fourier_vol: 6m n=363 E[R]=-0.0634 DEAD | 1y n=683 E[R]=-0.0193 DEAD
+  BB_COMBO_rr2: 6m n=1 E[R]=-1.0 DEAD | 1y n=3 E[R]=0.0 DEAD
+  BB_COMBO_rr3: 6m n=1 E[R]=-1.0 DEAD | 1y n=3 E[R]=0.3333 DEAD
+  BB_COMBO_rr4: 6m n=1 E[R]=-1.0 DEAD | 1y n=3 E[R]=0.6667 DEAD
+  VAL 1w: winner n=0 E[R]=0.0 $0 | live n=11 E[R]=-0.0909 $-200
+  VAL 2w: winner n=2 E[R]=1.5 $600 | live n=18 E[R]=-0.1667 $-600
+  VAL 1m: winner n=2 E[R]=1.5 $600 | live n=34 E[R]=0.0294 $200
+load USDCHF 15m: 35,521 bars 2025-07-18→2026-07-23 · duka_volume ok rate=71.2%
+
+===== USDCHF 15m =====
+  LIVE_bb2_rr4: 6m n=106 E[R]=0.2736 SURVIVES | 1y n=201 E[R]=0.1443 SURVIVES
+  BB_fourier_hf35_sl1.5: 6m n=94 E[R]=0.0532 FRAGILE | 1y n=188 E[R]=0.0851 FRAGILE
+  BB_fourier_hf40_vol_sl2: 6m n=64 E[R]=0.1156 FRAGILE | 1y n=128 E[R]=0.0359 FRAGILE
+  BB_dist_z15_kurt_sl2: 6m n=0 E[R]=0.0 DEAD | 1y n=2 E[R]=1.0 FRAGILE
+  BB_COMBO_fourier_dist_vol: 6m n=0 E[R]=0.0 DEAD | 1y n=2 E[R]=2.4 FRAGILE
+  BB_COMBO_strict_rr2: 6m n=0 E[R]=0.0 DEAD | 1y n=0 E[R]=0.0 DEAD
+  BB15_fourier_vol_rr2: 6m n=278 E[R]=0.0036 FRAGILE | 1y n=548 E[R]=0.0566 FRAGILE
+  BB25_fourier_rr4: 6m n=16 E[R]=0.5625 FRAGILE | 1y n=34 E[R]=0.1765 SURVIVES
+  CTA_10_40_liveish: 6m n=222 E[R]=0.1712 SURVIVES | 1y n=466 E[R]=0.1073 SURVIVES
+  CTA_fourier_vol: 6m n=135 E[R]=0.2593 SURVIVES | 1y n=288 E[R]=0.0979 SURVIVES
+  BB_COMBO_rr2: 6m n=0 E[R]=0.0 DEAD | 1y n=2 E[R]=2.0 FRAGILE
+  BB_COMBO_rr3: 6m n=0 E[R]=0.0 DEAD | 1y n=2 E[R]=1.0 FRAGILE
+  BB_COMBO_rr4: 6m n=0 E[R]=0.0 DEAD | 1y n=2 E[R]=-1.0 DEAD
+  VAL 1w: winner n=3 E[R]=2.3333 $1,400 | live n=3 E[R]=2.3333 $1,400
+  VAL 2w: winner n=10 E[R]=1.0 $2,000 | live n=10 E[R]=1.0 $2,000
+  VAL 1m: winner n=17 E[R]=0.7647 $2,600 | live n=17 E[R]=0.7647 $2,600
+
+### PER-SYMBOL BEST TF
+AUDUSD BEST=3m · BB25_fourier_rr4 · 6m E[R]=0.6129 SURVIVES · 1y E[R]=1.0175 SURVIVES
+  1w: winner $800 E[R]=4.0 n=1 | live $-1,200 E[R]=-0.5455 n=11
+  2w: winner $800 E[R]=4.0 n=1 | live $-2,000 E[R]=-0.4 n=25
+  1m: winner $600 E[R]=1.5 n=2 | live $-2,600 E[R]=-0.2453 n=53
+USDCHF BEST=1m · BB25_fourier_rr4 · 6m E[R]=1.1569 SURVIVES · 1y E[R]=1.0476 SURVIVES
+  1w: winner $800 E[R]=4.0 n=1 | live $600 E[R]=0.0577 n=52
+  2w: winner $1,400 E[R]=2.3333 n=3 | live $-800 E[R]=-0.0426 n=94
+  1m: winner $1,800 E[R]=1.5 n=6 | live $6,800 E[R]=0.1828 n=186
+
+### DESK SHORT-HORIZON (best TF picks)
+1w: winner=$1,600 live=$-600 Δ=$2,200
+2w: winner=$2,200 live=$-2,800 Δ=$5,000
+1m: winner=$2,400 live=$4,200 Δ=$-1,800
+FIRM (survive 6m+1y & short E[R]>0): [{'tf': '3m', 'name': 'BB25_fourier_rr4', 'spec': {'name': 'BB25_fourier_rr4', 'family': 'bb', 'bb_mult': 2.5, 'sl_atr': 2.0, 'rr': 4.0, 'min_risk_px': 0.00015, 'fourier_hf_min': 0.4}, 'note': 'wide BB runner RR4'}, {'tf': '1m', 'name': 'BB25_fourier_rr4', 'spec': {'name': 'BB25_fourier_rr4', 'family': 'bb', 'bb_mult': 2.5, 'sl_atr': 2.0, 'rr': 4.0, 'min_risk_px': 0.00015, 'fourier_hf_min': 0.4}, 'note': 'wide BB runner RR4'}]
+
+Wrote /app/data/lab_fx_fourier_vol_hunt_bt.json in 100.4s

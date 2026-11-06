@@ -1,0 +1,42 @@
+Lab winners multi-TF · 8 pairs · target ≥5,000,000 trades · ~15y
+[GOLD] roc_60 · loading multi-TF…
+you are using nologin method, data you access may be limited
+ERROR:tvDatafeed.main:Connection timed out
+ERROR:tvDatafeed.main:no data, please check the exchange and symbol
+WARNING:tvDatafeed.main:you are using nologin method, data you access may be limited
+WARNING:data.historical:tvDatafeed: oldest bar 2026-06-28 22:00 is after start 2026-03-25 — limited history
+[GOLD] roc_60 dense#1 · 443,635/625,000
+[GOLD] roc_60 dense#2 · 627,959/625,000
+★ [GOLD] roc_60 · vol=627,959 struct=108 · SURVIVES · honest1h=DEAD
+[USDCHF] volmom · loading multi-TF…
+[USDCHF] volmom dense#1 · 463,922/625,000
+[USDCHF] volmom dense#2 · 633,168/625,000
+★ [USDCHF] volmom · vol=633,168 struct=3,693 · FRAGILE · honest1h=DEAD
+[USDJPY] sma_cross · loading multi-TF…
+[USDJPY] sma_cross dense#1 · 465,852/625,000
+[USDJPY] sma_cross dense#2 · 625,989/625,000
+★ [USDJPY] sma_cross · vol=625,989 struct=2,718 · DEAD · honest1h=FRAGILE
+[NAS100] roc_120 · loading multi-TF…
+[NAS100] roc_120 dense#1 · 457,022/625,000
+[NAS100] roc_120 dense#2 · 633,634/625,000
+★ [NAS100] roc_120 · vol=633,634 struct=104 · SURVIVES · honest1h=DEAD
+[UKOIL] roc_120 · loading multi-TF…
+[UKOIL] roc_120 dense#1 · 442,693/625,000
+[UKOIL] roc_120 dense#2 · 626,629/625,000
+★ [UKOIL] roc_120 · vol=626,629 struct=286 · SURVIVES · honest1h=DEAD
+[AUDUSD] bb_2 · loading multi-TF…
+[AUDUSD] bb_2 dense#1 · 464,029/625,000
+[AUDUSD] bb_2 dense#2 · 635,247/625,000
+★ [AUDUSD] bb_2 · vol=635,247 struct=1,623 · FRAGILE · honest1h=FRAGILE
+[BTCUSD] cta_50_200 · loading multi-TF…
+[BTCUSD] cta_50_200 dense#1 · 601,356/625,000
+[BTCUSD] cta_50_200 dense#2 · 627,168/625,000
+★ [BTCUSD] cta_50_200 · vol=627,168 struct=1,050 · SURVIVES · honest1h=DEAD
+[ETHUSD] roc_60 · loading multi-TF…
+[ETHUSD] roc_60 dense#1 · 555,174/625,000
+[ETHUSD] roc_60 dense#2 · 638,148/625,000
+★ [ETHUSD] roc_60 · vol=638,148 struct=536 · DEAD · honest1h=FRAGILE
+DONE · lab winners multi-TF · 5,047,942 trades (struct 10,118) · honest 1.0/10 · 0S/3F/5D
+Wrote /app/data/strategy_lab.json + /app/data/lab_winners_multi_tf.json in 100.5s
+
+Honest desk: 0S/3F/5D · 1.0/10 · volume trades=5,047,942 (target 5,000,000)

@@ -1,0 +1,147 @@
+=== ETHUSD with-trend deep · bias=15m+1h · entry=1m/3m/5m · 8-test battery ===
+Windows: 1m / 3m / 6m / 1y · RESEARCH only
+load ETHUSD 15m: 38,401 2025-06-18→2026-07-23
+load ETHUSD 1h: 9,601 2025-06-18→2026-07-23
+load ETHUSD 1m: 576,001 2025-06-18→2026-07-23
+load ETHUSD 3m: 192,001 2025-06-18→2026-07-23
+load ETHUSD 5m: 115,201 2025-06-18→2026-07-23
+
+===== entry=1m window=1m bars=43,201 htf_sync_rate=68.3% =====
+  BB15_withtrend_firm_rr4: n=25 E[R]=0.0 WR=20.0% OOS_E[R]=0.6667 WF=2/4 MC=40.6% DEAD · $0
+  BB15_withtrend_sl1.5_rr2: n=8 E[R]=-0.25 WR=25.0% OOS_E[R]=0.0 WF=0/4 MC=32.6% DEAD · $-400
+  BB25_withtrend_firm_rr4: n=0 E[R]=0.0 WR=0.0% OOS_E[R]=0.0 WF=0/0 MC=None% DEAD · $0
+  EMA814_pull_withtrend_rr2: n=25 E[R]=-0.16 WR=28.0% OOS_E[R]=-1.0 WF=1/4 MC=24.3% DEAD · $-800
+  EMA814_pull_withtrend_sl2_rr2.4: n=62 E[R]=-0.2871 WR=21.0% OOS_E[R]=-0.5143 WF=1/4 MC=5.2% DEAD · $-3,560
+  EMA814_cross_withtrend_rr2: n=5 E[R]=-1.0 WR=0.0% OOS_E[R]=0.0 WF=0/4 MC=0.0% DEAD · $-1,000
+  LIVE_bb15_NO_bias_rr4: n=1200 E[R]=0.2042 WR=24.1% OOS_E[R]=0.1918 WF=4/4 MC=99.9% SURVIVES · $49,000
+  LIVE_bb15_firm_NO_bias_rr4: n=62 E[R]=0.4516 WR=29.0% OOS_E[R]=0.875 WF=2/4 MC=94.5% SURVIVES · $5,600
+
+===== entry=1m window=3m bars=131,041 htf_sync_rate=67.6% =====
+  BB15_withtrend_firm_rr4: n=96 E[R]=0.0417 WR=20.8% OOS_E[R]=-0.3333 WF=3/4 MC=56.0% FRAGILE · $800
+  BB15_withtrend_sl1.5_rr2: n=39 E[R]=-0.1538 WR=28.2% OOS_E[R]=-0.25 WF=2/4 MC=19.1% DEAD · $-1,200
+  BB25_withtrend_firm_rr4: n=2 E[R]=-1.0 WR=0.0% OOS_E[R]=0.0 WF=0/4 MC=None% DEAD · $-400
+  EMA814_pull_withtrend_rr2: n=125 E[R]=-0.064 WR=31.2% OOS_E[R]=-0.1429 WF=0/4 MC=32.4% DEAD · $-1,600
+  EMA814_pull_withtrend_sl2_rr2.4: n=238 E[R]=-0.0571 WR=27.7% OOS_E[R]=-0.2367 WF=1/4 MC=27.6% DEAD · $-2,720
+  EMA814_cross_withtrend_rr2: n=27 E[R]=-0.2222 WR=25.9% OOS_E[R]=-1.0 WF=1/4 MC=14.3% DEAD · $-1,200
+  LIVE_bb15_NO_bias_rr4: n=3578 E[R]=0.1571 WR=23.1% OOS_E[R]=0.219 WF=4/4 MC=100.0% SURVIVES · $112,400
+  LIVE_bb15_firm_NO_bias_rr4: n=251 E[R]=0.1554 WR=23.1% OOS_E[R]=0.3636 WF=4/4 MC=88.0% SURVIVES · $7,800
+
+===== entry=1m window=6m bars=263,521 htf_sync_rate=67.2% =====
+  BB15_withtrend_firm_rr4: n=401 E[R]=0.0224 WR=20.4% OOS_E[R]=0.1644 WF=1/4 MC=57.5% FRAGILE · $1,800
+  BB15_withtrend_sl1.5_rr2: n=258 E[R]=0.1512 WR=38.4% OOS_E[R]=0.0312 WF=2/4 MC=94.9% SURVIVES · $7,800
+  BB25_withtrend_firm_rr4: n=7 E[R]=-0.2857 WR=14.3% OOS_E[R]=-1.0 WF=0/4 MC=25.7% DEAD · $-400
+  EMA814_pull_withtrend_rr2: n=712 E[R]=0.0154 WR=33.8% OOS_E[R]=-0.0645 WF=1/4 MC=59.2% FRAGILE · $2,200
+  EMA814_pull_withtrend_sl2_rr2.4: n=926 E[R]=0.0134 WR=29.8% OOS_E[R]=0.0241 WF=1/4 MC=58.2% FRAGILE · $2,480
+  EMA814_cross_withtrend_rr2: n=283 E[R]=0.1131 WR=37.1% OOS_E[R]=-0.25 WF=0/4 MC=89.6% FRAGILE · $6,400
+  LIVE_bb15_NO_bias_rr4: n=7014 E[R]=0.1769 WR=23.5% OOS_E[R]=0.2072 WF=4/4 MC=100.0% SURVIVES · $248,200
+  LIVE_bb15_firm_NO_bias_rr4: n=927 E[R]=0.1219 WR=22.4% OOS_E[R]=0.2577 WF=4/4 MC=96.5% SURVIVES · $22,600
+
+===== entry=1m window=1y bars=525,601 htf_sync_rate=65.8% =====
+  BB15_withtrend_firm_rr4: n=1620 E[R]=0.0833 WR=21.7% OOS_E[R]=-0.0234 WF=2/4 MC=94.0% FRAGILE · $27,000
+  BB15_withtrend_sl1.5_rr2: n=1259 E[R]=0.0508 WR=35.0% OOS_E[R]=-0.04 WF=3/4 MC=89.3% FRAGILE · $12,800
+  BB25_withtrend_firm_rr4: n=26 E[R]=-0.0385 WR=19.2% OOS_E[R]=-1.0 WF=2/4 MC=38.0% DEAD · $-200
+  EMA814_pull_withtrend_rr2: n=3166 E[R]=0.0262 WR=34.2% OOS_E[R]=0.0291 WF=1/4 MC=84.9% FRAGILE · $16,600
+  EMA814_pull_withtrend_sl2_rr2.4: n=3382 E[R]=0.0395 WR=30.6% OOS_E[R]=-0.0476 WF=1/4 MC=93.2% FRAGILE · $26,720
+  EMA814_cross_withtrend_rr2: n=1634 E[R]=0.0722 WR=35.7% OOS_E[R]=-0.1667 WF=2/4 MC=97.8% FRAGILE · $23,600
+  LIVE_bb15_NO_bias_rr4: n=14221 E[R]=0.1712 WR=23.4% OOS_E[R]=0.1685 WF=4/4 MC=100.0% SURVIVES · $486,800
+  LIVE_bb15_firm_NO_bias_rr4: n=3397 E[R]=0.1069 WR=22.1% OOS_E[R]=0.1268 WF=4/4 MC=99.7% SURVIVES · $72,600
+
+===== entry=3m window=1m bars=14,401 htf_sync_rate=68.3% =====
+  BB15_withtrend_firm_rr4: n=35 E[R]=0.0 WR=20.0% OOS_E[R]=0.0 WF=2/4 MC=41.3% DEAD · $0
+  BB15_withtrend_sl1.5_rr2: n=21 E[R]=-0.2857 WR=23.8% OOS_E[R]=0.0 WF=1/4 MC=10.2% DEAD · $-1,200
+  BB25_withtrend_firm_rr4: n=0 E[R]=0.0 WR=0.0% OOS_E[R]=0.0 WF=0/0 MC=None% DEAD · $0
+  EMA814_pull_withtrend_rr2: n=84 E[R]=-0.2857 WR=23.8% OOS_E[R]=-0.55 WF=2/4 MC=2.2% DEAD · $-4,800
+  EMA814_pull_withtrend_sl2_rr2.4: n=103 E[R]=-0.2078 WR=23.3% OOS_E[R]=0.1724 WF=2/4 MC=7.1% DEAD · $-4,280
+  EMA814_cross_withtrend_rr2: n=30 E[R]=-0.4 WR=20.0% OOS_E[R]=-0.25 WF=0/4 MC=2.4% DEAD · $-2,400
+  LIVE_bb15_NO_bias_rr4: n=391 E[R]=-0.0153 WR=19.7% OOS_E[R]=-0.0789 WF=1/4 MC=40.0% DEAD · $-1,200
+  LIVE_bb15_firm_NO_bias_rr4: n=95 E[R]=0.1053 WR=22.1% OOS_E[R]=0.3043 WF=2/4 MC=62.5% SURVIVES · $2,000
+
+===== entry=3m window=3m bars=43,681 htf_sync_rate=67.6% =====
+  BB15_withtrend_firm_rr4: n=130 E[R]=-0.0385 WR=19.2% OOS_E[R]=0.1111 WF=1/4 MC=36.9% DEAD · $-1,000
+  BB15_withtrend_sl1.5_rr2: n=80 E[R]=-0.0625 WR=31.2% OOS_E[R]=-0.3571 WF=2/4 MC=35.8% DEAD · $-1,000
+  BB25_withtrend_firm_rr4: n=3 E[R]=-1.0 WR=0.0% OOS_E[R]=0.0 WF=0/4 MC=None% DEAD · $-600
+  EMA814_pull_withtrend_rr2: n=301 E[R]=-0.1429 WR=28.6% OOS_E[R]=-0.2286 WF=1/4 MC=3.9% DEAD · $-8,600
+  EMA814_pull_withtrend_sl2_rr2.4: n=334 E[R]=-0.0737 WR=27.2% OOS_E[R]=-0.202 WF=3/4 MC=18.1% DEAD · $-4,920
+  EMA814_cross_withtrend_rr2: n=90 E[R]=-0.2 WR=26.7% OOS_E[R]=-0.4783 WF=1/4 MC=6.6% DEAD · $-3,600
+  LIVE_bb15_NO_bias_rr4: n=1129 E[R]=-0.0523 WR=19.0% OOS_E[R]=-0.0166 WF=1/4 MC=18.3% DEAD · $-11,800
+  LIVE_bb15_firm_NO_bias_rr4: n=326 E[R]=-0.0798 WR=18.4% OOS_E[R]=0.2179 WF=2/4 MC=21.3% FRAGILE · $-5,200
+
+===== entry=3m window=6m bars=87,841 htf_sync_rate=67.2% =====
+  BB15_withtrend_firm_rr4: n=380 E[R]=-0.0526 WR=18.9% OOS_E[R]=-0.023 WF=1/4 MC=27.5% DEAD · $-4,000
+  BB15_withtrend_sl1.5_rr2: n=297 E[R]=-0.0909 WR=30.3% OOS_E[R]=-0.0172 WF=1/4 MC=11.8% DEAD · $-5,400
+  BB25_withtrend_firm_rr4: n=7 E[R]=-1.0 WR=0.0% OOS_E[R]=-1.0 WF=0/4 MC=0.0% DEAD · $-1,400
+  EMA814_pull_withtrend_rr2: n=925 E[R]=-0.0368 WR=32.1% OOS_E[R]=-0.0488 WF=1/4 MC=21.6% DEAD · $-6,800
+  EMA814_pull_withtrend_sl2_rr2.4: n=876 E[R]=0.0053 WR=29.6% OOS_E[R]=-0.0009 WF=2/4 MC=54.6% FRAGILE · $920
+  EMA814_cross_withtrend_rr2: n=353 E[R]=-0.1161 WR=29.5% OOS_E[R]=-0.1176 WF=2/4 MC=6.1% DEAD · $-8,200
+  LIVE_bb15_NO_bias_rr4: n=2291 E[R]=-0.0244 WR=19.5% OOS_E[R]=-0.0262 WF=0/4 MC=27.9% DEAD · $-11,200
+  LIVE_bb15_firm_NO_bias_rr4: n=838 E[R]=-0.1647 WR=16.7% OOS_E[R]=-0.0476 WF=1/4 MC=0.4% DEAD · $-27,600
+
+===== entry=3m window=1y bars=175,201 htf_sync_rate=65.8% =====
+  BB15_withtrend_firm_rr4: n=966 E[R]=-0.0528 WR=18.9% OOS_E[R]=-0.0395 WF=1/4 MC=19.1% DEAD · $-10,200
+  BB15_withtrend_sl1.5_rr2: n=969 E[R]=-0.0588 WR=31.4% OOS_E[R]=-0.1308 WF=1/4 MC=9.2% DEAD · $-11,400
+  BB25_withtrend_firm_rr4: n=12 E[R]=-0.5833 WR=8.3% OOS_E[R]=-1.0 WF=0/4 MC=7.0% DEAD · $-1,400
+  EMA814_pull_withtrend_rr2: n=2762 E[R]=-0.004 WR=33.2% OOS_E[R]=-0.084 WF=0/4 MC=42.1% DEAD · $-2,200
+  EMA814_pull_withtrend_sl2_rr2.4: n=2160 E[R]=-0.0099 WR=29.1% OOS_E[R]=-0.0116 WF=1/4 MC=38.5% DEAD · $-4,280
+  EMA814_cross_withtrend_rr2: n=1293 E[R]=-0.0023 WR=33.3% OOS_E[R]=-0.0948 WF=1/4 MC=46.2% DEAD · $-600
+  LIVE_bb15_NO_bias_rr4: n=4446 E[R]=0.0009 WR=20.0% OOS_E[R]=-0.0836 WF=1/4 MC=52.0% FRAGILE · $800
+  LIVE_bb15_firm_NO_bias_rr4: n=1807 E[R]=-0.0481 WR=19.0% OOS_E[R]=-0.161 WF=0/4 MC=13.6% DEAD · $-17,400
+
+===== entry=5m window=1m bars=8,641 htf_sync_rate=68.3% =====
+  BB15_withtrend_firm_rr4: n=38 E[R]=0.3158 WR=26.3% OOS_E[R]=0.1111 WF=3/4 MC=81.5% SURVIVES · $2,400
+  BB15_withtrend_sl1.5_rr2: n=21 E[R]=0.0 WR=33.3% OOS_E[R]=0.0 WF=0/4 MC=39.6% DEAD · $0
+  BB25_withtrend_firm_rr4: n=0 E[R]=0.0 WR=0.0% OOS_E[R]=0.0 WF=0/0 MC=None% DEAD · $0
+  EMA814_pull_withtrend_rr2: n=87 E[R]=-0.2069 WR=26.4% OOS_E[R]=-0.2174 WF=0/4 MC=5.9% DEAD · $-3,600
+  EMA814_pull_withtrend_sl2_rr2.4: n=92 E[R]=-0.0761 WR=27.2% OOS_E[R]=-0.048 WF=1/4 MC=27.8% DEAD · $-1,400
+  EMA814_cross_withtrend_rr2: n=27 E[R]=-0.6667 WR=11.1% OOS_E[R]=-0.3333 WF=2/4 MC=0.1% DEAD · $-3,600
+  LIVE_bb15_NO_bias_rr4: n=226 E[R]=-0.2035 WR=15.9% OOS_E[R]=-0.1667 WF=1/4 MC=4.7% DEAD · $-9,200
+  LIVE_bb15_firm_NO_bias_rr4: n=98 E[R]=-0.0306 WR=19.4% OOS_E[R]=0.3462 WF=4/4 MC=45.6% FRAGILE · $-600
+
+===== entry=5m window=3m bars=26,209 htf_sync_rate=67.6% =====
+  BB15_withtrend_firm_rr4: n=119 E[R]=-0.0756 WR=18.5% OOS_E[R]=0.2857 WF=3/4 MC=34.9% FRAGILE · $-1,800
+  BB15_withtrend_sl1.5_rr2: n=70 E[R]=-0.1429 WR=28.6% OOS_E[R]=-0.0625 WF=1/4 MC=15.9% DEAD · $-2,000
+  BB25_withtrend_firm_rr4: n=1 E[R]=-1.0 WR=0.0% OOS_E[R]=0.0 WF=0/4 MC=None% DEAD · $-200
+  EMA814_pull_withtrend_rr2: n=306 E[R]=-0.0098 WR=33.0% OOS_E[R]=-0.2125 WF=2/4 MC=43.1% DEAD · $-600
+  EMA814_pull_withtrend_sl2_rr2.4: n=283 E[R]=0.0212 WR=30.0% OOS_E[R]=-0.0512 WF=2/4 MC=57.6% FRAGILE · $1,200
+  EMA814_cross_withtrend_rr2: n=90 E[R]=-0.2667 WR=24.4% OOS_E[R]=-0.625 WF=1/4 MC=2.5% DEAD · $-4,800
+  LIVE_bb15_NO_bias_rr4: n=647 E[R]=-0.0881 WR=18.2% OOS_E[R]=-0.1707 WF=0/4 MC=12.8% DEAD · $-11,400
+  LIVE_bb15_firm_NO_bias_rr4: n=266 E[R]=-0.0226 WR=19.5% OOS_E[R]=0.0 WF=2/4 MC=39.6% DEAD · $-1,200
+
+===== entry=5m window=6m bars=52,705 htf_sync_rate=67.2% =====
+  BB15_withtrend_firm_rr4: n=291 E[R]=-0.1409 WR=17.2% OOS_E[R]=0.0897 WF=1/4 MC=8.9% DEAD · $-8,200
+  BB15_withtrend_sl1.5_rr2: n=226 E[R]=0.0221 WR=34.1% OOS_E[R]=-0.0625 WF=0/4 MC=57.5% DEAD · $1,000
+  BB25_withtrend_firm_rr4: n=1 E[R]=-1.0 WR=0.0% OOS_E[R]=-1.0 WF=0/4 MC=None% DEAD · $-200
+  EMA814_pull_withtrend_rr2: n=874 E[R]=-0.0149 WR=32.8% OOS_E[R]=0.0051 WF=2/4 MC=36.9% FRAGILE · $-2,600
+  EMA814_pull_withtrend_sl2_rr2.4: n=710 E[R]=0.02 WR=30.0% OOS_E[R]=0.1079 WF=1/4 MC=63.4% FRAGILE · $2,840
+  EMA814_cross_withtrend_rr2: n=302 E[R]=-0.096 WR=30.1% OOS_E[R]=-0.2131 WF=2/4 MC=11.2% DEAD · $-5,800
+  LIVE_bb15_NO_bias_rr4: n=1291 E[R]=-0.0085 WR=19.8% OOS_E[R]=-0.1282 WF=1/4 MC=44.8% DEAD · $-2,200
+  LIVE_bb15_firm_NO_bias_rr4: n=598 E[R]=-0.0719 WR=18.6% OOS_E[R]=0.0736 WF=1/4 MC=18.2% DEAD · $-8,600
+
+===== entry=5m window=1y bars=105,121 htf_sync_rate=65.8% =====
+  BB15_withtrend_firm_rr4: n=618 E[R]=-0.0939 WR=18.1% OOS_E[R]=-0.1772 WF=2/4 MC=12.8% DEAD · $-11,600
+  BB15_withtrend_sl1.5_rr2: n=609 E[R]=0.0296 WR=34.3% OOS_E[R]=-0.1875 WF=2/4 MC=68.7% FRAGILE · $3,600
+  BB25_withtrend_firm_rr4: n=3 E[R]=0.6667 WR=33.3% OOS_E[R]=-1.0 WF=1/4 MC=None% DEAD · $400
+  EMA814_pull_withtrend_rr2: n=2219 E[R]=-0.009 WR=33.0% OOS_E[R]=0.0203 WF=2/4 MC=40.3% FRAGILE · $-4,000
+  EMA814_pull_withtrend_sl2_rr2.4: n=1513 E[R]=-0.0135 WR=29.0% OOS_E[R]=0.0257 WF=2/4 MC=35.8% FRAGILE · $-4,080
+  EMA814_cross_withtrend_rr2: n=866 E[R]=-0.0266 WR=32.4% OOS_E[R]=-0.1 WF=2/4 MC=30.3% DEAD · $-4,600
+  LIVE_bb15_NO_bias_rr4: n=2566 E[R]=-0.0004 WR=20.0% OOS_E[R]=-0.0657 WF=2/4 MC=47.4% DEAD · $-200
+  LIVE_bb15_firm_NO_bias_rr4: n=1294 E[R]=-0.0611 WR=18.8% OOS_E[R]=-0.0525 WF=2/4 MC=14.3% DEAD · $-15,800
+
+########## CLEAR WINNERS ##########
+WINDOW 1m: 1m · LIVE_bb15_firm_NO_bias_rr4 · SURVIVES E[R]=0.4516 OOS=0.875 n=62 $5,600 WF=2/4
+WINDOW 3m: 1m · LIVE_bb15_NO_bias_rr4 · SURVIVES E[R]=0.1571 OOS=0.219 n=3578 $112,400 WF=4/4
+WINDOW 6m: 1m · LIVE_bb15_NO_bias_rr4 · SURVIVES E[R]=0.1769 OOS=0.2072 n=7014 $248,200 WF=4/4
+WINDOW 1y: 1m · LIVE_bb15_NO_bias_rr4 · SURVIVES E[R]=0.1712 OOS=0.1685 n=14221 $486,800 WF=4/4
+
+### BEST ENTRY TF (with-trend specs only, across windows)
+  1m: SURVIVES=1/24 ΣE[R]=-2.889 Σpnl=$114,720
+  3m: SURVIVES=0/24 ΣE[R]=-4.699 Σpnl=$-87,360
+  5m: SURVIVES=1/24 ΣE[R]=-2.764 Σpnl=$-47,640
+
+>>> BEST ENTRY TIMEFRAME: 5m
+
+### FIRM OVERALL (must show on 6m + 1y)
+
+>>> NO FIRM WINNER (no with-trend spec SURVIVES both 6m and 1y)
+    FALLBACK 1y best: 5m BB25_withtrend_firm_rr4 DEAD E[R]=0.6667
+
+Wrote /app/data/lab_eth_withtrend_entry_tf_deep_bt.json in 30.7s

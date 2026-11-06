@@ -1,0 +1,105 @@
+=== GOLD: overlap vs lab-winner(cta_10_40) vs prior-live(fib) ===
+
+WARNING:data.fetcher:Data OK via fallback FX:XAUUSD (XM preferred but unavailable) — will retry XM on next fetch
+  GOLD 5m: 5452 bars 2026-06-28→2026-07-24
+WARNING:data.fetcher:Data OK via fallback OANDA:XAUUSD (XM preferred but unavailable) — will retry XM on next fetch
+  GOLD 3m: 6858 bars 2026-07-05→2026-07-24
+  GOLD 1m: 6797 bars 2026-07-19→2026-07-24
+  GOLD 15m: 1818 bars (resampled) 2026-06-28→2026-07-24
+  [overlap_fresh_reentry@5m] n=4 E[R]=-1.0 OOS=-1.0 WF=0/4 MC=None% → DEAD
+  [cta_10_40@15m] n=21 E[R]=0.429 OOS=0.0 WF=3/4 MC=77.2% → SURVIVES
+  [fib_liq@15m] n=6 E[R]=1.5 OOS=1.5 WF=2/4 MC=89.0% → FRAGILE
+  [fib_liq@5m] n=22 E[R]=-0.091 OOS=-0.286 WF=2/4 MC=35.9% → DEAD
+
+=== AUDUSD: screen alternatives vs current bb_1.5 ===
+
+  AUDUSD 5m: 5699 bars 2026-06-28→2026-07-24
+  AUDUSD 3m: 7113 bars 2026-07-05→2026-07-24
+  AUDUSD 1m: 7053 bars 2026-07-19→2026-07-24
+  AUDUSD 15m: 1902 bars (resampled) 2026-06-28→2026-07-24
+  [bb_1.5@15m] n=57 E[R]=-0.123 OOS=-0.559 WF=1/4 MC=25.9% → DEAD
+  [bb_1.5@5m] n=178 E[R]=0.011 OOS=-0.196 WF=3/4 MC=53.1% → FRAGILE
+  [bb_1.5@1m] n=208 E[R]=-0.038 OOS=-0.022 WF=2/4 MC=30.5% → DEAD
+  [bb_1.5@3m] n=220 E[R]=0.068 OOS=-0.032 WF=3/4 MC=76.7% → SURVIVES
+  [bb_2@15m] n=17 E[R]=-0.265 OOS=-0.583 WF=1/4 MC=22.9% → DEAD
+  [bb_2@5m] n=35 E[R]=0.286 OOS=0.364 WF=4/4 MC=87.1% → SURVIVES
+  [bb_2@1m] n=45 E[R]=0.111 OOS=0.25 WF=2/4 MC=67.5% → SURVIVES
+  [bb_2@3m] n=40 E[R]=0.0 OOS=-0.318 WF=2/4 MC=40.4% → DEAD
+  [bb_2.5@1m] n=5 E[R]=0.5 OOS=1.5 WF=3/4 MC=69.0% → FRAGILE
+  [bb_2.5@3m] n=5 E[R]=1.0 OOS=1.5 WF=3/4 MC=94.5% → SURVIVES
+  [rsi@15m] n=76 E[R]=0.151 OOS=0.296 WF=2/4 MC=86.1% → SURVIVES
+  [rsi@5m] n=235 E[R]=0.053 OOS=-0.1 WF=1/4 MC=72.7% → FRAGILE
+  [rsi@1m] n=253 E[R]=-0.002 OOS=-0.128 WF=3/4 MC=48.1% → DEAD
+  [rsi@3m] n=305 E[R]=0.049 OOS=-0.034 WF=2/4 MC=74.0% → FRAGILE
+  [ema_tight@15m] n=20 E[R]=-0.25 OOS=0.25 WF=2/4 MC=11.2% → DEAD
+  [ema_tight@5m] n=39 E[R]=-0.167 OOS=-0.318 WF=0/4 MC=21.1% → DEAD
+  [ema_tight@1m] n=41 E[R]=0.28 OOS=0.591 WF=3/4 MC=91.8% → SURVIVES
+  [ema_tight@3m] n=66 E[R]=-0.053 OOS=0.429 WF=1/4 MC=33.7% → DEAD
+  [ema_pull@15m] n=32 E[R]=-0.141 OOS=0.071 WF=2/4 MC=28.3% → DEAD
+  [ema_pull@5m] n=81 E[R]=-0.167 OOS=-0.091 WF=1/4 MC=9.8% → DEAD
+  [ema_pull@1m] n=85 E[R]=0.059 OOS=-0.091 WF=1/4 MC=61.8% → FRAGILE
+  [ema_pull@3m] n=95 E[R]=0.158 OOS=0.818 WF=2/4 MC=87.6% → SURVIVES
+  [sma_cross@15m] n=44 E[R]=0.136 OOS=0.154 WF=2/4 MC=77.1% → SURVIVES
+  [sma_cross@5m] n=125 E[R]=0.02 OOS=0.149 WF=2/4 MC=55.2% → FRAGILE
+  [sma_cross@1m] n=149 E[R]=-0.01 OOS=-0.202 WF=1/4 MC=46.1% → DEAD
+  [sma_cross@3m] n=149 E[R]=-0.027 OOS=-0.188 WF=1/4 MC=40.6% → DEAD
+  [don_20@15m] n=83 E[R]=-0.157 OOS=-0.038 WF=1/4 MC=10.6% → DEAD
+  [don_20@5m] n=263 E[R]=0.008 OOS=-0.066 WF=2/4 MC=50.9% → FRAGILE
+  [don_20@1m] n=289 E[R]=-0.1 OOS=-0.093 WF=1/4 MC=7.2% → DEAD
+  [don_20@3m] n=318 E[R]=-0.096 OOS=0.017 WF=1/4 MC=8.6% → DEAD
+  [cta_10_40@15m] n=45 E[R]=-0.167 OOS=-0.167 WF=1/4 MC=12.8% → DEAD
+  [cta_10_40@5m] n=121 E[R]=-0.05 OOS=0.25 WF=2/4 MC=31.4% → FRAGILE
+  [cta_10_40@1m] n=119 E[R]=-0.034 OOS=0.071 WF=2/4 MC=40.7% → DEAD
+  [cta_10_40@3m] n=145 E[R]=0.121 OOS=0.111 WF=2/4 MC=85.4% → SURVIVES
+  [cta_12_26@15m] n=47 E[R]=0.223 OOS=0.333 WF=3/4 MC=90.0% → SURVIVES
+  [cta_12_26@5m] n=130 E[R]=-0.038 OOS=0.212 WF=1/4 MC=30.5% → FRAGILE
+  [cta_12_26@1m] n=139 E[R]=-0.101 OOS=-0.103 WF=1/4 MC=16.9% → DEAD
+  [cta_12_26@3m] n=156 E[R]=0.01 OOS=-0.013 WF=2/4 MC=51.2% → FRAGILE
+  [st_2@15m] n=12 E[R]=-0.375 OOS=-0.167 WF=1/4 MC=15.6% → DEAD
+  [st_2@5m] n=26 E[R]=-0.327 OOS=-0.375 WF=1/4 MC=5.7% → DEAD
+  [st_2@1m] n=16 E[R]=-0.062 OOS=0.25 WF=2/4 MC=39.2% → DEAD
+  [st_2@3m] n=30 E[R]=-0.333 OOS=-0.286 WF=1/4 MC=3.8% → DEAD
+  [st_3@15m] n=4 E[R]=-1.0 OOS=-1.0 WF=0/4 MC=None% → DEAD
+  [st_3@5m] n=6 E[R]=-0.167 OOS=-1.0 WF=1/4 MC=33.1% → DEAD
+  [st_3@1m] n=4 E[R]=-0.375 OOS=0.0 WF=1/4 MC=None% → DEAD
+  [st_3@3m] n=10 E[R]=0.25 OOS=-0.167 WF=2/4 MC=62.2% → FRAGILE
+  [volmom@15m] n=60 E[R]=-0.25 OOS=-0.25 WF=1/4 MC=4.0% → DEAD
+  [volmom@5m] n=167 E[R]=0.033 OOS=0.302 WF=3/4 MC=64.5% → FRAGILE
+  [volmom@1m] n=196 E[R]=-0.107 OOS=-0.018 WF=2/4 MC=10.3% → DEAD
+  [volmom@3m] n=213 E[R]=-0.085 OOS=-0.206 WF=1/4 MC=13.4% → DEAD
+  [macd@15m] n=79 E[R]=0.076 OOS=0.111 WF=1/4 MC=71.0% → SURVIVES
+  [macd@5m] n=230 E[R]=-0.054 OOS=-0.301 WF=1/4 MC=21.9% → DEAD
+  [macd@1m] n=236 E[R]=-0.004 OOS=-0.049 WF=2/4 MC=46.8% → DEAD
+  [macd@3m] n=286 E[R]=-0.021 OOS=0.067 WF=2/4 MC=36.4% → DEAD
+  [kelt_1.5@15m] n=86 E[R]=-0.273 OOS=-0.231 WF=1/4 MC=1.6% → DEAD
+  [kelt_1.5@5m] n=265 E[R]=-0.17 OOS=-0.085 WF=1/4 MC=0.5% → DEAD
+  [kelt_1.5@1m] n=243 E[R]=-0.053 OOS=-0.024 WF=1/4 MC=23.4% → DEAD
+  [kelt_1.5@3m] n=298 E[R]=-0.077 OOS=-0.129 WF=1/4 MC=13.6% → DEAD
+  [stoch_20@15m] n=63 E[R]=-0.087 OOS=-0.167 WF=1/4 MC=25.9% → DEAD
+  [stoch_20@5m] n=213 E[R]=-0.002 OOS=-0.127 WF=1/4 MC=45.7% → DEAD
+  [stoch_20@1m] n=254 E[R]=-0.006 OOS=-0.082 WF=1/4 MC=49.6% → DEAD
+  [stoch_20@3m] n=273 E[R]=0.108 OOS=0.136 WF=4/4 MC=91.5% → SURVIVES
+
+### GOLD HEAD-TO-HEAD
+
+Role                         Strategy               TF    Verdict       n OOS E[R]    MC%   Score
+----------------------------------------------------------------------------------------------------
+prior_live_brain             fib_liq                15m   FRAGILE       6    1.500   89.0   52.55
+lab_winner_and_current_live  cta_10_40              15m   SURVIVES     21    0.000   77.2   35.96
+prior_live_on_5m             fib_liq                5m    DEAD         22   -0.286   35.9  -23.16
+overlap_package              overlap_fresh_reentry  5m    DEAD          4   -1.000      —  -42.10
+
+GOLD winner → fib_liq@15m (FRAGILE)
+
+### AUDUSD
+
+Current live bb_1.5@15m → DEAD OOS E[R]=-0.559 MC=25.9%
+Best alternative → bb_2.5@3m SURVIVES OOS E[R]=1.5 MC=94.5% score=72.725
+Top 5:
+  bb_2.5       @3m  SURVIVES  n=   5 OOS=+1.500 score=72.7
+  ema_pull     @3m  SURVIVES  n=  95 OOS=+0.818 score=64.3
+  ema_tight    @1m  SURVIVES  n=  41 OOS=+0.591 score=53.5
+  stoch_20     @3m  SURVIVES  n= 273 OOS=+0.136 score=53.0
+  cta_10_40    @3m  SURVIVES  n= 145 OOS=+0.111 score=51.5
+
+Wrote /app/data/gold_overlap_vs_lab.json in 102.1s

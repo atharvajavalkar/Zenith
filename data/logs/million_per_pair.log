@@ -1,0 +1,8 @@
+Million-per-pair · 8 pairs · 43 retail+hedge strategies · target 1,000,000/pair
+[GOLD] loading multi-TF…
+$GC=F: possibly delisted; no price data found  (1h 2024-07-13 -> 2026-07-24) (Yahoo error = "1h data not available for startTime=1720843200 and endTime=1784865600. The requested range must be within the last 730 days.")
+HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: GOLD=X"}}}
+$GOLD=X: possibly delisted; no timezone found
+$GOLD: possibly delisted; no price data found  (1h 2024-07-13 -> 2026-07-24) (Yahoo error = "1h data not available for startTime=1720843200 and endTime=1784865600. The requested range must be within the last 730 days.")
+  GOLD 1h: no 1h GOLD
+you are using nologin method, data you access may be limited

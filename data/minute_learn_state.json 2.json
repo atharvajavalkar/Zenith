@@ -1,0 +1,254 @@
+{
+  "updated_at": "2026-10-03T03:59:04Z",
+  "last_1m": "2026-10-02 20:57:00+00:00",
+  "instruments": {
+    "GOLD": {
+      "symbol": "GOLD",
+      "tf": {
+        "1m": {
+          "bias": "BULLISH",
+          "score": 1.63,
+          "close": 4140.07,
+          "time": "2026-10-02 20:57:00+00:00"
+        },
+        "3m": {
+          "bias": "BULLISH",
+          "score": 0.936,
+          "close": 4140.07,
+          "time": "2026-10-02 20:57:00+00:00"
+        },
+        "5m": {
+          "bias": "NEUTRAL",
+          "score": -0.093,
+          "close": 4140.07,
+          "time": "2026-10-02 20:55:00+00:00"
+        },
+        "15m": {
+          "bias": "NEUTRAL",
+          "score": -0.034,
+          "close": 4140.07,
+          "time": "2026-10-02 20:45:00+00:00"
+        },
+        "1h": {
+          "bias": "BULLISH",
+          "score": 1.027,
+          "close": 4140.07,
+          "time": "2026-10-02 20:00:00+00:00"
+        },
+        "4h": {
+          "bias": "NEUTRAL",
+          "score": 0.307,
+          "close": 4140.07,
+          "time": "2026-10-02 17:00:00+00:00"
+        }
+      },
+      "poc": 4138.53,
+      "vah": 4163.32,
+      "val": 4124.94,
+      "vp_location": "IN_VALUE_UPPER",
+      "vp_session": "NY",
+      "vp_score": 0.158,
+      "structure_bias": "BULLISH",
+      "structure_score": 0.598,
+      "mc_floor_delta": 0.0,
+      "min_ml_delta": 0.0,
+      "aggression": 0.0,
+      "message": "BULLISH \u00b7 IN_VALUE_UPPER \u00b7 sess NY",
+      "candles_seen": 6,
+      "vp_summary": "In NY value upper (POC 4138.53) \u2014 mild bullish lean \u00b7 rolling conflict"
+    },
+    "BTCUSD": {
+      "symbol": "BTCUSD",
+      "tf": {
+        "1m": {
+          "bias": "BULLISH",
+          "score": 0.564,
+          "close": 84499.65,
+          "time": "2026-10-02 22:00:00+00:00"
+        },
+        "3m": {
+          "bias": "BULLISH",
+          "score": 0.858,
+          "close": 84502.65,
+          "time": "2026-10-02 21:57:00+00:00"
+        },
+        "5m": {
+          "bias": "NEUTRAL",
+          "score": -0.236,
+          "close": 84498.05,
+          "time": "2026-10-02 22:00:00+00:00"
+        },
+        "15m": {
+          "bias": "BULLISH",
+          "score": 0.826,
+          "close": 84495.85,
+          "time": "2026-10-02 21:45:00+00:00"
+        },
+        "1h": {
+          "bias": "NEUTRAL",
+          "score": 0.332,
+          "close": 84495.85,
+          "time": "2026-10-02 21:00:00+00:00"
+        },
+        "4h": {
+          "bias": "BEARISH",
+          "score": -0.43,
+          "close": 84495.75,
+          "time": "2026-10-02 21:00:00+00:00"
+        }
+      },
+      "poc": 85192.54,
+      "vah": 86727.6,
+      "val": 84476.17,
+      "vp_location": "IN_VALUE_LOWER",
+      "vp_session": "NY",
+      "vp_score": -0.35,
+      "structure_bias": "NEUTRAL",
+      "structure_score": 0.232,
+      "mc_floor_delta": 0.0,
+      "min_ml_delta": 0.0,
+      "aggression": 0.0,
+      "message": "NEUTRAL \u00b7 IN_VALUE_LOWER \u00b7 sess NY",
+      "candles_seen": 6,
+      "vp_summary": "In NY value lower (POC 85192.54) \u2014 mild bearish lean"
+    },
+    "UKOIL": {
+      "symbol": "UKOIL",
+      "tf": {
+        "1m": {
+          "bias": "NEUTRAL",
+          "score": -0.192,
+          "close": 106.54,
+          "time": "2026-10-02 20:14:00+00:00"
+        },
+        "3m": {
+          "bias": "NEUTRAL",
+          "score": 0.109,
+          "close": 106.54,
+          "time": "2026-10-02 20:12:00+00:00"
+        },
+        "5m": {
+          "bias": "NEUTRAL",
+          "score": -0.022,
+          "close": 106.54,
+          "time": "2026-10-02 20:10:00+00:00"
+        },
+        "15m": {
+          "bias": "BULLISH",
+          "score": 1.457,
+          "close": 106.54,
+          "time": "2026-10-02 20:00:00+00:00"
+        },
+        "1h": {
+          "bias": "BULLISH",
+          "score": 0.779,
+          "close": 106.54,
+          "time": "2026-10-02 20:00:00+00:00"
+        },
+        "4h": {
+          "bias": "NEUTRAL",
+          "score": -0.196,
+          "close": 106.54,
+          "time": "2026-10-02 17:00:00+00:00"
+        }
+      },
+      "poc": 106.04,
+      "vah": 106.78,
+      "val": 103.61,
+      "vp_location": "IN_VALUE_UPPER",
+      "vp_session": "NY",
+      "vp_score": 0.35,
+      "structure_bias": "BULLISH",
+      "structure_score": 0.451,
+      "mc_floor_delta": -2.0,
+      "min_ml_delta": -0.02,
+      "aggression": 0.05,
+      "message": "BULLISH stack \u00b7 IN_VALUE_UPPER \u00b7 POC 106.04",
+      "candles_seen": 6,
+      "vp_summary": "In NY value upper (POC 106.04) \u2014 mild bullish lean"
+    },
+    "NAS100": {
+      "symbol": "NAS100",
+      "tf": {
+        "1m": {
+          "bias": "NEUTRAL",
+          "score": -0.195,
+          "close": 30791.56,
+          "time": "2026-10-02 20:59:00+00:00"
+        },
+        "3m": {
+          "bias": "BEARISH",
+          "score": -0.767,
+          "close": 30501.68,
+          "time": "2026-10-01 20:57:00+00:00"
+        },
+        "5m": {
+          "bias": "BEARISH",
+          "score": -1.456,
+          "close": 30791.56,
+          "time": "2026-10-02 20:55:00+00:00"
+        },
+        "15m": {
+          "bias": "BEARISH",
+          "score": -1.107,
+          "close": 30791.56,
+          "time": "2026-10-02 20:45:00+00:00"
+        },
+        "1h": {
+          "bias": "BEARISH",
+          "score": -0.544,
+          "close": 30791.56,
+          "time": "2026-10-02 20:00:00+00:00"
+        },
+        "4h": {
+          "bias": "BULLISH",
+          "score": 1.151,
+          "close": 30791.56,
+          "time": "2026-10-02 17:00:00+00:00"
+        }
+      },
+      "poc": 30791.9,
+      "vah": 30866.8,
+      "val": 30759.0,
+      "vp_location": "AT_POC",
+      "vp_session": "NY",
+      "vp_score": 0.0,
+      "structure_bias": "BEARISH",
+      "structure_score": -0.35,
+      "mc_floor_delta": -1.5,
+      "min_ml_delta": 0.0,
+      "aggression": 0.03,
+      "message": "BEARISH \u00b7 AT_POC \u00b7 sess NY",
+      "candles_seen": 6,
+      "vp_summary": "At NY POC 30791.9 \u2014 balance / magnet"
+    }
+  },
+  "correlation": {
+    "pairs": {
+      "GOLD:BTCUSD": 0.401,
+      "GOLD:UKOIL": -0.42,
+      "GOLD:NAS100": 0.435,
+      "BTCUSD:UKOIL": -0.243,
+      "BTCUSD:NAS100": 0.482,
+      "UKOIL:NAS100": -0.339
+    },
+    "leaders": {
+      "BTCUSD": {
+        "vs_gold": 0.401,
+        "gold_direction_hint": "BULLISH",
+        "gold_move": 0.00039
+      },
+      "UKOIL": {
+        "vs_gold": -0.42,
+        "gold_direction_hint": "BEARISH",
+        "gold_move": 0.00039
+      },
+      "NAS100": {
+        "vs_gold": 0.435,
+        "gold_direction_hint": "BULLISH",
+        "gold_move": 0.00039
+      }
+    },
+    "updated_at": "2026-10-02T22:00:53Z"
+  }
+}

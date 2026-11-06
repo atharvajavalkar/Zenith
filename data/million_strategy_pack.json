@@ -1,0 +1,1351 @@
+{
+  "generated_at": "2026-07-24T13:26:06.590461+00:00",
+  "target": 1000000,
+  "achieved_total_trades": 1004779,
+  "hit_target": true,
+  "strategies_tested": 34,
+  "symbols_daily": 50,
+  "rrs": [
+    1.5,
+    2.0,
+    3.0
+  ],
+  "risk_usd": 200.0,
+  "note": "All strategies on million-scale universe (fast collectors + RR stack). Live unchanged.",
+  "elapsed_s": 2478.0,
+  "summary": {
+    "survives": 8,
+    "fragile": 9,
+    "dead": 17
+  },
+  "results": [
+    {
+      "strategy": "bb_2.5",
+      "family": "hedge",
+      "n": 2338,
+      "full": {
+        "n": 2338,
+        "wins": 791,
+        "losses": 1547,
+        "win_rate": 33.83,
+        "exp_r": 0.0331,
+        "pnl": 15500.0
+      },
+      "oos": {
+        "n": 702,
+        "wins": 260,
+        "losses": 442,
+        "win_rate": 37.04,
+        "exp_r": 0.1994,
+        "pnl": 28000.0
+      },
+      "mc": {
+        "prob_profit": 85.83,
+        "paths": 600
+      },
+      "verdict": "SURVIVES",
+      "score": 37.655
+    },
+    {
+      "strategy": "roc_60",
+      "family": "hedge",
+      "n": 4676,
+      "full": {
+        "n": 4676,
+        "wins": 1756,
+        "losses": 2920,
+        "win_rate": 37.55,
+        "exp_r": 0.1418,
+        "pnl": 132600.0
+      },
+      "oos": {
+        "n": 1403,
+        "wins": 429,
+        "losses": 974,
+        "win_rate": 30.58,
+        "exp_r": 0.1575,
+        "pnl": 44200.0
+      },
+      "mc": {
+        "prob_profit": 100.0,
+        "paths": 600
+      },
+      "verdict": "SURVIVES",
+      "score": 37.618
+    },
+    {
+      "strategy": "bb_1.5",
+      "family": "hedge",
+      "n": 41681,
+      "full": {
+        "n": 41681,
+        "wins": 13837,
+        "losses": 27844,
+        "win_rate": 33.2,
+        "exp_r": 0.0003,
+        "pnl": 2100.0
+      },
+      "oos": {
+        "n": 12506,
+        "wins": 4263,
+        "losses": 8243,
+        "win_rate": 34.09,
+        "exp_r": 0.0282,
+        "pnl": 70600.0
+      },
+      "mc": {
+        "prob_profit": 70.17,
+        "paths": 600
+      },
+      "verdict": "SURVIVES",
+      "score": 37.539
+    },
+    {
+      "strategy": "donch_55",
+      "family": "hedge",
+      "n": 29354,
+      "full": {
+        "n": 29354,
+        "wins": 10340,
+        "losses": 19014,
+        "win_rate": 35.23,
+        "exp_r": 0.063,
+        "pnl": 370000.0
+      },
+      "oos": {
+        "n": 8807,
+        "wins": 2985,
+        "losses": 5822,
+        "win_rate": 33.89,
+        "exp_r": 0.0232,
+        "pnl": 40900.0
+      },
+      "mc": {
+        "prob_profit": 100.0,
+        "paths": 600
+      },
+      "verdict": "SURVIVES",
+      "score": 37.399
+    },
+    {
+      "strategy": "donch_100",
+      "family": "hedge",
+      "n": 21486,
+      "full": {
+        "n": 21486,
+        "wins": 7729,
+        "losses": 13757,
+        "win_rate": 35.97,
+        "exp_r": 0.088,
+        "pnl": 378200.0
+      },
+      "oos": {
+        "n": 6446,
+        "wins": 2217,
+        "losses": 4229,
+        "win_rate": 34.39,
+        "exp_r": 0.0407,
+        "pnl": 52500.0
+      },
+      "mc": {
+        "prob_profit": 100.0,
+        "paths": 600
+      },
+      "verdict": "SURVIVES",
+      "score": 36.963
+    },
+    {
+      "strategy": "roc_20",
+      "family": "hedge",
+      "n": 7548,
+      "full": {
+        "n": 7548,
+        "wins": 2629,
+        "losses": 4919,
+        "win_rate": 34.83,
+        "exp_r": 0.0572,
+        "pnl": 86400.0
+      },
+      "oos": {
+        "n": 2265,
+        "wins": 641,
+        "losses": 1624,
+        "win_rate": 28.3,
+        "exp_r": 0.0826,
+        "pnl": 37400.0
+      },
+      "mc": {
+        "prob_profit": 100.0,
+        "paths": 600
+      },
+      "verdict": "SURVIVES",
+      "score": 36.407
+    },
+    {
+      "strategy": "roc_120",
+      "family": "hedge",
+      "n": 3223,
+      "full": {
+        "n": 3223,
+        "wins": 1119,
+        "losses": 2104,
+        "win_rate": 34.72,
+        "exp_r": 0.0557,
+        "pnl": 35900.0
+      },
+      "oos": {
+        "n": 967,
+        "wins": 275,
+        "losses": 692,
+        "win_rate": 28.44,
+        "exp_r": 0.0786,
+        "pnl": 15200.0
+      },
+      "mc": {
+        "prob_profit": 98.67,
+        "paths": 600
+      },
+      "verdict": "SURVIVES",
+      "score": 35.841
+    },
+    {
+      "strategy": "atr_vol_break",
+      "family": "hedge",
+      "n": 11559,
+      "full": {
+        "n": 11559,
+        "wins": 3891,
+        "losses": 7668,
+        "win_rate": 33.66,
+        "exp_r": 0.0194,
+        "pnl": 44900.0
+      },
+      "oos": {
+        "n": 3470,
+        "wins": 1197,
+        "losses": 2273,
+        "win_rate": 34.5,
+        "exp_r": 0.0392,
+        "pnl": 27200.0
+      },
+      "mc": {
+        "prob_profit": 90.83,
+        "paths": 600
+      },
+      "verdict": "SURVIVES",
+      "score": 35.573
+    },
+    {
+      "strategy": "kelt_1.5",
+      "family": "retail",
+      "n": 57007,
+      "full": {
+        "n": 57007,
+        "wins": 19626,
+        "losses": 37381,
+        "win_rate": 34.43,
+        "exp_r": 0.0286,
+        "pnl": 326300.0
+      },
+      "oos": {
+        "n": 17103,
+        "wins": 5739,
+        "losses": 11364,
+        "win_rate": 33.56,
+        "exp_r": 0.0025,
+        "pnl": 8400.0
+      },
+      "mc": {
+        "prob_profit": 96.67,
+        "paths": 600
+      },
+      "verdict": "FRAGILE",
+      "score": 18.917
+    },
+    {
+      "strategy": "kelt_1",
+      "family": "retail",
+      "n": 71828,
+      "full": {
+        "n": 71828,
+        "wins": 24859,
+        "losses": 46969,
+        "win_rate": 34.61,
+        "exp_r": 0.0275,
+        "pnl": 395300.0
+      },
+      "oos": {
+        "n": 21551,
+        "wins": 7284,
+        "losses": 14267,
+        "win_rate": 33.8,
+        "exp_r": 0.0037,
+        "pnl": 16100.0
+      },
+      "mc": {
+        "prob_profit": 96.0,
+        "paths": 600
+      },
+      "verdict": "FRAGILE",
+      "score": 18.914
+    },
+    {
+      "strategy": "kelt_2",
+      "family": "retail",
+      "n": 40725,
+      "full": {
+        "n": 40725,
+        "wins": 14149,
+        "losses": 26576,
+        "win_rate": 34.74,
+        "exp_r": 0.0439,
+        "pnl": 357900.0
+      },
+      "oos": {
+        "n": 12219,
+        "wins": 4142,
+        "losses": 8077,
+        "win_rate": 33.9,
+        "exp_r": 0.0184,
+        "pnl": 44900.0
+      },
+      "mc": {
+        "prob_profit": 98.17,
+        "paths": 600
+      },
+      "verdict": "FRAGILE",
+      "score": 18.367
+    },
+    {
+      "strategy": "donch_30",
+      "family": "hedge",
+      "n": 39387,
+      "full": {
+        "n": 39387,
+        "wins": 13835,
+        "losses": 25552,
+        "win_rate": 35.13,
+        "exp_r": 0.0598,
+        "pnl": 471200.0
+      },
+      "oos": {
+        "n": 11818,
+        "wins": 3977,
+        "losses": 7841,
+        "win_rate": 33.65,
+        "exp_r": 0.0132,
+        "pnl": 31300.0
+      },
+      "mc": {
+        "prob_profit": 100.0,
+        "paths": 600
+      },
+      "verdict": "FRAGILE",
+      "score": 18.203
+    },
+    {
+      "strategy": "cta_20_50",
+      "family": "hedge",
+      "n": 16861,
+      "full": {
+        "n": 16861,
+        "wins": 5788,
+        "losses": 11073,
+        "win_rate": 34.33,
+        "exp_r": 0.0428,
+        "pnl": 144300.0
+      },
+      "oos": {
+        "n": 5061,
+        "wins": 1668,
+        "losses": 3393,
+        "win_rate": 32.96,
+        "exp_r": 0.0014,
+        "pnl": 1400.0
+      },
+      "mc": {
+        "prob_profit": 100.0,
+        "paths": 600
+      },
+      "verdict": "FRAGILE",
+      "score": 15.714
+    },
+    {
+      "strategy": "fib_liq",
+      "family": "retail",
+      "n": 2436,
+      "full": {
+        "n": 2436,
+        "wins": 828,
+        "losses": 1608,
+        "win_rate": 33.99,
+        "exp_r": 0.0302,
+        "pnl": 14700.0
+      },
+      "oos": {
+        "n": 733,
+        "wins": 246,
+        "losses": 487,
+        "win_rate": 33.56,
+        "exp_r": 0.0191,
+        "pnl": 2800.0
+      },
+      "mc": {
+        "prob_profit": 83.33,
+        "paths": 600
+      },
+      "verdict": "FRAGILE",
+      "score": 13.959
+    },
+    {
+      "strategy": "cta_50_200",
+      "family": "hedge",
+      "n": 6285,
+      "full": {
+        "n": 6285,
+        "wins": 2058,
+        "losses": 4227,
+        "win_rate": 32.74,
+        "exp_r": -0.0017,
+        "pnl": -2100.0
+      },
+      "oos": {
+        "n": 1888,
+        "wins": 653,
+        "losses": 1235,
+        "win_rate": 34.59,
+        "exp_r": 0.0572,
+        "pnl": 21600.0
+      },
+      "mc": {
+        "prob_profit": 42.5,
+        "paths": 600
+      },
+      "verdict": "FRAGILE",
+      "score": 13.473
+    },
+    {
+      "strategy": "roc_90",
+      "family": "hedge",
+      "n": 3913,
+      "full": {
+        "n": 3913,
+        "wins": 1288,
+        "losses": 2625,
+        "win_rate": 32.92,
+        "exp_r": -0.0017,
+        "pnl": -1300.0
+      },
+      "oos": {
+        "n": 1174,
+        "wins": 326,
+        "losses": 848,
+        "win_rate": 27.77,
+        "exp_r": 0.0294,
+        "pnl": 6900.0
+      },
+      "mc": {
+        "prob_profit": 47.5,
+        "paths": 600
+      },
+      "verdict": "FRAGILE",
+      "score": 12.879
+    },
+    {
+      "strategy": "bb_2",
+      "family": "hedge",
+      "n": 13637,
+      "full": {
+        "n": 13637,
+        "wins": 4443,
+        "losses": 9194,
+        "win_rate": 32.58,
+        "exp_r": -0.0116,
+        "pnl": -31700.0
+      },
+      "oos": {
+        "n": 4091,
+        "wins": 1371,
+        "losses": 2720,
+        "win_rate": 33.51,
+        "exp_r": 0.0142,
+        "pnl": 11600.0
+      },
+      "mc": {
+        "prob_profit": 19.17,
+        "paths": 600
+      },
+      "verdict": "FRAGILE",
+      "score": 12.415
+    },
+    {
+      "strategy": "donch_10",
+      "family": "hedge",
+      "n": 61797,
+      "full": {
+        "n": 61797,
+        "wins": 21139,
+        "losses": 40658,
+        "win_rate": 34.21,
+        "exp_r": 0.0229,
+        "pnl": 283200.0
+      },
+      "oos": {
+        "n": 18541,
+        "wins": 6165,
+        "losses": 12376,
+        "win_rate": 33.25,
+        "exp_r": -0.0063,
+        "pnl": -23200.0
+      },
+      "mc": {
+        "prob_profit": 97.33,
+        "paths": 600
+      },
+      "verdict": "DEAD",
+      "score": -11.233
+    },
+    {
+      "strategy": "donch_20",
+      "family": "hedge",
+      "n": 48274,
+      "full": {
+        "n": 48274,
+        "wins": 16584,
+        "losses": 31690,
+        "win_rate": 34.35,
+        "exp_r": 0.0333,
+        "pnl": 321200.0
+      },
+      "oos": {
+        "n": 14482,
+        "wins": 4786,
+        "losses": 9696,
+        "win_rate": 33.05,
+        "exp_r": -0.0086,
+        "pnl": -25000.0
+      },
+      "mc": {
+        "prob_profit": 98.83,
+        "paths": 600
+      },
+      "verdict": "DEAD",
+      "score": -11.391
+    },
+    {
+      "strategy": "engulfing",
+      "family": "retail",
+      "n": 34974,
+      "full": {
+        "n": 34974,
+        "wins": 11701,
+        "losses": 23273,
+        "win_rate": 33.46,
+        "exp_r": 0.0107,
+        "pnl": 74700.0
+      },
+      "oos": {
+        "n": 10492,
+        "wins": 3461,
+        "losses": 7031,
+        "win_rate": 32.99,
+        "exp_r": -0.0087,
+        "pnl": -18300.0
+      },
+      "mc": {
+        "prob_profit": 91.83,
+        "paths": 600
+      },
+      "verdict": "DEAD",
+      "score": -13.003
+    },
+    {
+      "strategy": "vol_scaled_mom",
+      "family": "hedge",
+      "n": 31314,
+      "full": {
+        "n": 31314,
+        "wins": 10602,
+        "losses": 20712,
+        "win_rate": 33.86,
+        "exp_r": 0.0158,
+        "pnl": 99000.0
+      },
+      "oos": {
+        "n": 9397,
+        "wins": 3083,
+        "losses": 6314,
+        "win_rate": 32.81,
+        "exp_r": -0.0184,
+        "pnl": -34500.0
+      },
+      "mc": {
+        "prob_profit": 97.5,
+        "paths": 600
+      },
+      "verdict": "DEAD",
+      "score": -13.337
+    },
+    {
+      "strategy": "inside_break",
+      "family": "retail",
+      "n": 48706,
+      "full": {
+        "n": 48706,
+        "wins": 16219,
+        "losses": 32487,
+        "win_rate": 33.3,
+        "exp_r": -0.0024,
+        "pnl": -23200.0
+      },
+      "oos": {
+        "n": 14615,
+        "wins": 4742,
+        "losses": 9873,
+        "win_rate": 32.45,
+        "exp_r": -0.0329,
+        "pnl": -96200.0
+      },
+      "mc": {
+        "prob_profit": 59.67,
+        "paths": 600
+      },
+      "verdict": "DEAD",
+      "score": -13.401
+    },
+    {
+      "strategy": "cta_5_20",
+      "family": "hedge",
+      "n": 31228,
+      "full": {
+        "n": 31228,
+        "wins": 10489,
+        "losses": 20739,
+        "win_rate": 33.59,
+        "exp_r": 0.0056,
+        "pnl": 34900.0
+      },
+      "oos": {
+        "n": 9374,
+        "wins": 3078,
+        "losses": 6296,
+        "win_rate": 32.84,
+        "exp_r": -0.0139,
+        "pnl": -26000.0
+      },
+      "mc": {
+        "prob_profit": 92.17,
+        "paths": 600
+      },
+      "verdict": "DEAD",
+      "score": -13.468
+    },
+    {
+      "strategy": "macd",
+      "family": "retail",
+      "n": 43687,
+      "full": {
+        "n": 43687,
+        "wins": 14855,
+        "losses": 28832,
+        "win_rate": 34.0,
+        "exp_r": 0.0135,
+        "pnl": 118300.0
+      },
+      "oos": {
+        "n": 13106,
+        "wins": 4251,
+        "losses": 8855,
+        "win_rate": 32.44,
+        "exp_r": -0.0325,
+        "pnl": -85300.0
+      },
+      "mc": {
+        "prob_profit": 66.67,
+        "paths": 600
+      },
+      "verdict": "DEAD",
+      "score": -13.614
+    },
+    {
+      "strategy": "cta_12_26",
+      "family": "hedge",
+      "n": 24174,
+      "full": {
+        "n": 24174,
+        "wins": 8181,
+        "losses": 15993,
+        "win_rate": 33.84,
+        "exp_r": 0.0186,
+        "pnl": 89700.0
+      },
+      "oos": {
+        "n": 7254,
+        "wins": 2393,
+        "losses": 4861,
+        "win_rate": 32.99,
+        "exp_r": -0.0052,
+        "pnl": -7500.0
+      },
+      "mc": {
+        "prob_profit": 97.67,
+        "paths": 600
+      },
+      "verdict": "DEAD",
+      "score": -13.78
+    },
+    {
+      "strategy": "z_20_2",
+      "family": "hedge",
+      "n": 44190,
+      "full": {
+        "n": 44190,
+        "wins": 14748,
+        "losses": 29442,
+        "win_rate": 33.37,
+        "exp_r": 0.0006,
+        "pnl": 5400.0
+      },
+      "oos": {
+        "n": 13257,
+        "wins": 4400,
+        "losses": 8857,
+        "win_rate": 33.19,
+        "exp_r": -0.0053,
+        "pnl": -14000.0
+      },
+      "mc": {
+        "prob_profit": 25.67,
+        "paths": 600
+      },
+      "verdict": "DEAD",
+      "score": -14.66
+    },
+    {
+      "strategy": "stoch_30",
+      "family": "retail",
+      "n": 57295,
+      "full": {
+        "n": 57295,
+        "wins": 18763,
+        "losses": 38532,
+        "win_rate": 32.75,
+        "exp_r": -0.0288,
+        "pnl": -330500.0
+      },
+      "oos": {
+        "n": 17192,
+        "wins": 5652,
+        "losses": 11540,
+        "win_rate": 32.88,
+        "exp_r": -0.025,
+        "pnl": -86100.0
+      },
+      "mc": {
+        "prob_profit": 0.17,
+        "paths": 600
+      },
+      "verdict": "DEAD",
+      "score": -15.493
+    },
+    {
+      "strategy": "cta_10_40",
+      "family": "hedge",
+      "n": 21633,
+      "full": {
+        "n": 21633,
+        "wins": 7187,
+        "losses": 14446,
+        "win_rate": 33.22,
+        "exp_r": 0.0026,
+        "pnl": 11200.0
+      },
+      "oos": {
+        "n": 6492,
+        "wins": 2120,
+        "losses": 4372,
+        "win_rate": 32.66,
+        "exp_r": -0.0153,
+        "pnl": -19900.0
+      },
+      "mc": {
+        "prob_profit": 58.33,
+        "paths": 600
+      },
+      "verdict": "DEAD",
+      "score": -15.809
+    },
+    {
+      "strategy": "stoch_20",
+      "family": "retail",
+      "n": 43027,
+      "full": {
+        "n": 43027,
+        "wins": 14148,
+        "losses": 28879,
+        "win_rate": 32.88,
+        "exp_r": -0.0161,
+        "pnl": -138400.0
+      },
+      "oos": {
+        "n": 12908,
+        "wins": 4266,
+        "losses": 8642,
+        "win_rate": 33.05,
+        "exp_r": -0.0102,
+        "pnl": -26400.0
+      },
+      "mc": {
+        "prob_profit": 0.33,
+        "paths": 600
+      },
+      "verdict": "DEAD",
+      "score": -15.888
+    },
+    {
+      "strategy": "z_40_2",
+      "family": "hedge",
+      "n": 34820,
+      "full": {
+        "n": 34820,
+        "wins": 11487,
+        "losses": 23333,
+        "win_rate": 32.99,
+        "exp_r": -0.0034,
+        "pnl": -23700.0
+      },
+      "oos": {
+        "n": 10446,
+        "wins": 3362,
+        "losses": 7084,
+        "win_rate": 32.18,
+        "exp_r": -0.028,
+        "pnl": -58500.0
+      },
+      "mc": {
+        "prob_profit": 29.17,
+        "paths": 600
+      },
+      "verdict": "DEAD",
+      "score": -15.911
+    },
+    {
+      "strategy": "tsmom",
+      "family": "hedge",
+      "n": 9306,
+      "full": {
+        "n": 9306,
+        "wins": 3158,
+        "losses": 6148,
+        "win_rate": 33.94,
+        "exp_r": 0.0218,
+        "pnl": 40600.0
+      },
+      "oos": {
+        "n": 2792,
+        "wins": 902,
+        "losses": 1890,
+        "win_rate": 32.31,
+        "exp_r": -0.0303,
+        "pnl": -16900.0
+      },
+      "mc": {
+        "prob_profit": 91.17,
+        "paths": 600
+      },
+      "verdict": "DEAD",
+      "score": -16.029
+    },
+    {
+      "strategy": "rsi",
+      "family": "hedge",
+      "n": 44763,
+      "full": {
+        "n": 44763,
+        "wins": 14652,
+        "losses": 30111,
+        "win_rate": 32.73,
+        "exp_r": -0.0196,
+        "pnl": -175200.0
+      },
+      "oos": {
+        "n": 13429,
+        "wins": 4206,
+        "losses": 9223,
+        "win_rate": 31.32,
+        "exp_r": -0.0624,
+        "pnl": -167600.0
+      },
+      "mc": {
+        "prob_profit": 17.5,
+        "paths": 600
+      },
+      "verdict": "DEAD",
+      "score": -16.072
+    },
+    {
+      "strategy": "z_60_2",
+      "family": "hedge",
+      "n": 29079,
+      "full": {
+        "n": 29079,
+        "wins": 9518,
+        "losses": 19561,
+        "win_rate": 32.73,
+        "exp_r": -0.0066,
+        "pnl": -38600.0
+      },
+      "oos": {
+        "n": 8724,
+        "wins": 2799,
+        "losses": 5925,
+        "win_rate": 32.08,
+        "exp_r": -0.0284,
+        "pnl": -49600.0
+      },
+      "mc": {
+        "prob_profit": 26.67,
+        "paths": 600
+      },
+      "verdict": "DEAD",
+      "score": -16.593
+    },
+    {
+      "strategy": "sma_cross",
+      "family": "retail",
+      "n": 22568,
+      "full": {
+        "n": 22568,
+        "wins": 7378,
+        "losses": 15190,
+        "win_rate": 32.69,
+        "exp_r": -0.0029,
+        "pnl": -13300.0
+      },
+      "oos": {
+        "n": 6771,
+        "wins": 2064,
+        "losses": 4707,
+        "win_rate": 30.48,
+        "exp_r": -0.0727,
+        "pnl": -98500.0
+      },
+      "mc": {
+        "prob_profit": 53.33,
+        "paths": 600
+      },
+      "verdict": "DEAD",
+      "score": -17.064
+    }
+  ],
+  "leaderboard": [
+    {
+      "rank": 1,
+      "strategy": "bb_2.5",
+      "family": "hedge",
+      "n": 2338,
+      "oos_exp_r": 0.1994,
+      "oos_pnl": 28000.0,
+      "win_rate": 33.83,
+      "mc": 85.83,
+      "verdict": "SURVIVES",
+      "score": 37.655
+    },
+    {
+      "rank": 2,
+      "strategy": "roc_60",
+      "family": "hedge",
+      "n": 4676,
+      "oos_exp_r": 0.1575,
+      "oos_pnl": 44200.0,
+      "win_rate": 37.55,
+      "mc": 100.0,
+      "verdict": "SURVIVES",
+      "score": 37.618
+    },
+    {
+      "rank": 3,
+      "strategy": "bb_1.5",
+      "family": "hedge",
+      "n": 41681,
+      "oos_exp_r": 0.0282,
+      "oos_pnl": 70600.0,
+      "win_rate": 33.2,
+      "mc": 70.17,
+      "verdict": "SURVIVES",
+      "score": 37.539
+    },
+    {
+      "rank": 4,
+      "strategy": "donch_55",
+      "family": "hedge",
+      "n": 29354,
+      "oos_exp_r": 0.0232,
+      "oos_pnl": 40900.0,
+      "win_rate": 35.23,
+      "mc": 100.0,
+      "verdict": "SURVIVES",
+      "score": 37.399
+    },
+    {
+      "rank": 5,
+      "strategy": "donch_100",
+      "family": "hedge",
+      "n": 21486,
+      "oos_exp_r": 0.0407,
+      "oos_pnl": 52500.0,
+      "win_rate": 35.97,
+      "mc": 100.0,
+      "verdict": "SURVIVES",
+      "score": 36.963
+    },
+    {
+      "rank": 6,
+      "strategy": "roc_20",
+      "family": "hedge",
+      "n": 7548,
+      "oos_exp_r": 0.0826,
+      "oos_pnl": 37400.0,
+      "win_rate": 34.83,
+      "mc": 100.0,
+      "verdict": "SURVIVES",
+      "score": 36.407
+    },
+    {
+      "rank": 7,
+      "strategy": "roc_120",
+      "family": "hedge",
+      "n": 3223,
+      "oos_exp_r": 0.0786,
+      "oos_pnl": 15200.0,
+      "win_rate": 34.72,
+      "mc": 98.67,
+      "verdict": "SURVIVES",
+      "score": 35.841
+    },
+    {
+      "rank": 8,
+      "strategy": "atr_vol_break",
+      "family": "hedge",
+      "n": 11559,
+      "oos_exp_r": 0.0392,
+      "oos_pnl": 27200.0,
+      "win_rate": 33.66,
+      "mc": 90.83,
+      "verdict": "SURVIVES",
+      "score": 35.573
+    },
+    {
+      "rank": 9,
+      "strategy": "kelt_1.5",
+      "family": "retail",
+      "n": 57007,
+      "oos_exp_r": 0.0025,
+      "oos_pnl": 8400.0,
+      "win_rate": 34.43,
+      "mc": 96.67,
+      "verdict": "FRAGILE",
+      "score": 18.917
+    },
+    {
+      "rank": 10,
+      "strategy": "kelt_1",
+      "family": "retail",
+      "n": 71828,
+      "oos_exp_r": 0.0037,
+      "oos_pnl": 16100.0,
+      "win_rate": 34.61,
+      "mc": 96.0,
+      "verdict": "FRAGILE",
+      "score": 18.914
+    },
+    {
+      "rank": 11,
+      "strategy": "kelt_2",
+      "family": "retail",
+      "n": 40725,
+      "oos_exp_r": 0.0184,
+      "oos_pnl": 44900.0,
+      "win_rate": 34.74,
+      "mc": 98.17,
+      "verdict": "FRAGILE",
+      "score": 18.367
+    },
+    {
+      "rank": 12,
+      "strategy": "donch_30",
+      "family": "hedge",
+      "n": 39387,
+      "oos_exp_r": 0.0132,
+      "oos_pnl": 31300.0,
+      "win_rate": 35.13,
+      "mc": 100.0,
+      "verdict": "FRAGILE",
+      "score": 18.203
+    },
+    {
+      "rank": 13,
+      "strategy": "cta_20_50",
+      "family": "hedge",
+      "n": 16861,
+      "oos_exp_r": 0.0014,
+      "oos_pnl": 1400.0,
+      "win_rate": 34.33,
+      "mc": 100.0,
+      "verdict": "FRAGILE",
+      "score": 15.714
+    },
+    {
+      "rank": 14,
+      "strategy": "fib_liq",
+      "family": "retail",
+      "n": 2436,
+      "oos_exp_r": 0.0191,
+      "oos_pnl": 2800.0,
+      "win_rate": 33.99,
+      "mc": 83.33,
+      "verdict": "FRAGILE",
+      "score": 13.959
+    },
+    {
+      "rank": 15,
+      "strategy": "cta_50_200",
+      "family": "hedge",
+      "n": 6285,
+      "oos_exp_r": 0.0572,
+      "oos_pnl": 21600.0,
+      "win_rate": 32.74,
+      "mc": 42.5,
+      "verdict": "FRAGILE",
+      "score": 13.473
+    },
+    {
+      "rank": 16,
+      "strategy": "roc_90",
+      "family": "hedge",
+      "n": 3913,
+      "oos_exp_r": 0.0294,
+      "oos_pnl": 6900.0,
+      "win_rate": 32.92,
+      "mc": 47.5,
+      "verdict": "FRAGILE",
+      "score": 12.879
+    },
+    {
+      "rank": 17,
+      "strategy": "bb_2",
+      "family": "hedge",
+      "n": 13637,
+      "oos_exp_r": 0.0142,
+      "oos_pnl": 11600.0,
+      "win_rate": 32.58,
+      "mc": 19.17,
+      "verdict": "FRAGILE",
+      "score": 12.415
+    },
+    {
+      "rank": 18,
+      "strategy": "donch_10",
+      "family": "hedge",
+      "n": 61797,
+      "oos_exp_r": -0.0063,
+      "oos_pnl": -23200.0,
+      "win_rate": 34.21,
+      "mc": 97.33,
+      "verdict": "DEAD",
+      "score": -11.233
+    },
+    {
+      "rank": 19,
+      "strategy": "donch_20",
+      "family": "hedge",
+      "n": 48274,
+      "oos_exp_r": -0.0086,
+      "oos_pnl": -25000.0,
+      "win_rate": 34.35,
+      "mc": 98.83,
+      "verdict": "DEAD",
+      "score": -11.391
+    },
+    {
+      "rank": 20,
+      "strategy": "engulfing",
+      "family": "retail",
+      "n": 34974,
+      "oos_exp_r": -0.0087,
+      "oos_pnl": -18300.0,
+      "win_rate": 33.46,
+      "mc": 91.83,
+      "verdict": "DEAD",
+      "score": -13.003
+    },
+    {
+      "rank": 21,
+      "strategy": "vol_scaled_mom",
+      "family": "hedge",
+      "n": 31314,
+      "oos_exp_r": -0.0184,
+      "oos_pnl": -34500.0,
+      "win_rate": 33.86,
+      "mc": 97.5,
+      "verdict": "DEAD",
+      "score": -13.337
+    },
+    {
+      "rank": 22,
+      "strategy": "inside_break",
+      "family": "retail",
+      "n": 48706,
+      "oos_exp_r": -0.0329,
+      "oos_pnl": -96200.0,
+      "win_rate": 33.3,
+      "mc": 59.67,
+      "verdict": "DEAD",
+      "score": -13.401
+    },
+    {
+      "rank": 23,
+      "strategy": "cta_5_20",
+      "family": "hedge",
+      "n": 31228,
+      "oos_exp_r": -0.0139,
+      "oos_pnl": -26000.0,
+      "win_rate": 33.59,
+      "mc": 92.17,
+      "verdict": "DEAD",
+      "score": -13.468
+    },
+    {
+      "rank": 24,
+      "strategy": "macd",
+      "family": "retail",
+      "n": 43687,
+      "oos_exp_r": -0.0325,
+      "oos_pnl": -85300.0,
+      "win_rate": 34.0,
+      "mc": 66.67,
+      "verdict": "DEAD",
+      "score": -13.614
+    },
+    {
+      "rank": 25,
+      "strategy": "cta_12_26",
+      "family": "hedge",
+      "n": 24174,
+      "oos_exp_r": -0.0052,
+      "oos_pnl": -7500.0,
+      "win_rate": 33.84,
+      "mc": 97.67,
+      "verdict": "DEAD",
+      "score": -13.78
+    },
+    {
+      "rank": 26,
+      "strategy": "z_20_2",
+      "family": "hedge",
+      "n": 44190,
+      "oos_exp_r": -0.0053,
+      "oos_pnl": -14000.0,
+      "win_rate": 33.37,
+      "mc": 25.67,
+      "verdict": "DEAD",
+      "score": -14.66
+    },
+    {
+      "rank": 27,
+      "strategy": "stoch_30",
+      "family": "retail",
+      "n": 57295,
+      "oos_exp_r": -0.025,
+      "oos_pnl": -86100.0,
+      "win_rate": 32.75,
+      "mc": 0.17,
+      "verdict": "DEAD",
+      "score": -15.493
+    },
+    {
+      "rank": 28,
+      "strategy": "cta_10_40",
+      "family": "hedge",
+      "n": 21633,
+      "oos_exp_r": -0.0153,
+      "oos_pnl": -19900.0,
+      "win_rate": 33.22,
+      "mc": 58.33,
+      "verdict": "DEAD",
+      "score": -15.809
+    },
+    {
+      "rank": 29,
+      "strategy": "stoch_20",
+      "family": "retail",
+      "n": 43027,
+      "oos_exp_r": -0.0102,
+      "oos_pnl": -26400.0,
+      "win_rate": 32.88,
+      "mc": 0.33,
+      "verdict": "DEAD",
+      "score": -15.888
+    },
+    {
+      "rank": 30,
+      "strategy": "z_40_2",
+      "family": "hedge",
+      "n": 34820,
+      "oos_exp_r": -0.028,
+      "oos_pnl": -58500.0,
+      "win_rate": 32.99,
+      "mc": 29.17,
+      "verdict": "DEAD",
+      "score": -15.911
+    },
+    {
+      "rank": 31,
+      "strategy": "tsmom",
+      "family": "hedge",
+      "n": 9306,
+      "oos_exp_r": -0.0303,
+      "oos_pnl": -16900.0,
+      "win_rate": 33.94,
+      "mc": 91.17,
+      "verdict": "DEAD",
+      "score": -16.029
+    },
+    {
+      "rank": 32,
+      "strategy": "rsi",
+      "family": "hedge",
+      "n": 44763,
+      "oos_exp_r": -0.0624,
+      "oos_pnl": -167600.0,
+      "win_rate": 32.73,
+      "mc": 17.5,
+      "verdict": "DEAD",
+      "score": -16.072
+    },
+    {
+      "rank": 33,
+      "strategy": "z_60_2",
+      "family": "hedge",
+      "n": 29079,
+      "oos_exp_r": -0.0284,
+      "oos_pnl": -49600.0,
+      "win_rate": 32.73,
+      "mc": 26.67,
+      "verdict": "DEAD",
+      "score": -16.593
+    },
+    {
+      "rank": 34,
+      "strategy": "sma_cross",
+      "family": "retail",
+      "n": 22568,
+      "oos_exp_r": -0.0727,
+      "oos_pnl": -98500.0,
+      "win_rate": 32.69,
+      "mc": 53.33,
+      "verdict": "DEAD",
+      "score": -17.064
+    }
+  ]
+}

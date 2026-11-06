@@ -1,0 +1,35 @@
+=== Schwab v2 crowns vs LIVE brains · Dukascopy · research ===
+live_book=['GOLD', 'BTCUSD', 'UKOIL', 'NAS100']
+started 2026-09-11T07:12:16.195762+00:00
+
+######## GOLD live=omni@['3m', '5m'] rr=3.0 ########
+  SCHWAB 1y   SURVIVES n=49 E[R]=+2.152 pnl=$+21090 OOS=+1.249 WF=4/4 MC=100.0%
+  SCHWAB full SURVIVES n=475 E[R]=+0.515 pnl=$+48879 OOS=+1.227 WF=3/4 MC=99.3%
+  LIVE  3m/1y   DEAD     n=352 E[R]=-0.023 pnl=$-820 OOS=-0.088 WF=1/4 MC=39.1%
+  LIVE  3m/full FRAGILE  n=1967 E[R]=+0.014 pnl=$+2702 OOS=+0.038 WF=4/4 MC=62.7%
+  LIVE  5m/1y   FRAGILE  n=60 E[R]=+0.071 pnl=$+424 OOS=-0.166 WF=2/4 MC=64.5%
+  LIVE  5m/full FRAGILE  n=423 E[R]=+0.032 pnl=$+1369 OOS=+0.276 WF=2/4 MC=63.7%
+
+######## BTCUSD live=omni@['3m', '5m'] rr=3.0 ########
+  SCHWAB 1y   SURVIVES n=56 E[R]=+0.953 pnl=$+10678 OOS=+0.922 WF=4/4 MC=97.7%
+  SCHWAB full SURVIVES n=517 E[R]=+0.293 pnl=$+30269 OOS=+0.322 WF=2/4 MC=89.2%
+  LIVE  3m/1y   SURVIVES n=332 E[R]=+0.086 pnl=$+2860 OOS=+0.110 WF=3/4 MC=81.6%
+  LIVE  3m/full FRAGILE  n=1512 E[R]=-0.012 pnl=$-1834 OOS=+0.054 WF=2/4 MC=40.2%
+  LIVE  5m/1y   DEAD     n=467 E[R]=-0.122 pnl=$-5705 OOS=-0.060 WF=1/4 MC=6.2%
+  LIVE  5m/full FRAGILE  n=2421 E[R]=+0.011 pnl=$+2555 OOS=-0.063 WF=3/4 MC=60.8%
+
+######## UKOIL live=omni@['3m'] rr=3.0 ########
+  SCHWAB 1y   SURVIVES n=59 E[R]=+1.026 pnl=$+12111 OOS=+1.740 WF=4/4 MC=95.7%
+  SCHWAB full SURVIVES n=586 E[R]=+0.213 pnl=$+24931 OOS=+0.548 WF=3/4 MC=86.4%
+  LIVE  3m/1y   DEAD     n=91 E[R]=-0.104 pnl=$-946 OOS=-0.185 WF=1/4 MC=29.4%
+  LIVE  3m/full DEAD     n=411 E[R]=-0.095 pnl=$-3885 OOS=-0.125 WF=1/4 MC=14.3%
+
+######## NAS100 live=session_mix@['5m'] rr=3.0 ########
+  SCHWAB 1y   SURVIVES n=73 E[R]=+0.859 pnl=$+12542 OOS=+1.147 WF=4/4 MC=98.5%
+  SCHWAB full FRAGILE  n=712 E[R]=+0.101 pnl=$+14408 OOS=-0.163 WF=3/4 MC=76.4%
+  LIVE  5m/1y   SURVIVES n=617 E[R]=+0.154 pnl=$+9520 OOS=+0.241 WF=4/4 MC=98.0%
+  LIVE  5m/full FRAGILE  n=4777 E[R]=-0.012 pnl=$-5850 OOS=+0.049 WF=3/4 MC=31.9%
+
+=== SUMMARY === {'1y_schwab_wins': 4, '1y_live_wins': 0, '1y_ties': 0, 'recommendation': 'SCHWAB_SLEEVE', 'note': 'On 1y E[R]: Schwab 4 · Live 0 · tie 0. Research only — not wired.', 'elapsed_s': 19.7, 'finished': '2026-09-11T07:12:35.847571+00:00'}
+wrote /app/data/lab_schwab_vs_live_brains.json
+wrote /app/data/lab_schwab_vs_live_brains.md

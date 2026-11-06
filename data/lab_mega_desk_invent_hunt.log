@@ -1,0 +1,609 @@
+
+===== MEGA DESK INVENT @ 2026-09-04T10:24:20.787895+00:00 =====
+=== MEGA DESK INVENT (Nebula) ===
+book=('GOLD', 'BTCUSD', 'UKOIL', 'NAS100', 'AUDUSD', 'ETHUSD', 'USDJPY', 'USDCHF')
+modes≈427 full / 280 lean1m
+criteria: ≥15% ($1500/y) + 30d/15d PASS|SOFT + 1y≠FAIL
+XM spreads ON · research_only · live .env UNTOUCHED
+est_cells≈281,700
+
+
+######## MEGA GOLD @ 15m · 10.0y · 427 modes ########
+  … 1/427 · cells=24 · 30s · sm_t0.18_o0.32
+  … 25/427 · cells=600 · 587s · sm_t0.22_o0.40
+  … 50/427 · cells=1200 · 1163s · off_sm_t0.25_o0.48
+  … 75/427 · cells=1800 · 1736s · sm_t0.30_o0.35
+  … 100/427 · cells=2400 · 2307s · off_sm_t0.32_o0.45
+  … 125/427 · cells=3000 · 2878s · sm_t0.38_o0.45
+  … 150/427 · cells=3600 · 3447s · off_vm_t0.25_l10
+  … 175/427 · cells=4200 · 4023s · vm_t0.45_l15
+  … 200/427 · cells=4800 · 4603s · off_vm_t0.65_l15
+  … 225/427 · cells=5400 · 5181s · vm_t0.85_l20
+  … 250/427 · cells=6000 · 5812s · cir_z2.4_s0.7
+  … 275/427 · cells=6600 · 12382s · snr_0.25
+  … 300/427 · cells=7176 · 12919s · ft_lf0.6_s0.3
+  … 325/427 · cells=7776 · 13473s · asia_96_0.12
+  … 350/427 · cells=8376 · 14038s · don_70
+  … 375/427 · cells=8976 · 14590s · gold_thrust_0.45
+  … 425/427 · cells=10032 · 15564s · math_vol_compress_release
+  BEST 15m: kelt_20_2.0|sl1.5|rr3.0|g3 ret=0.5597 30d=PASS 15d=SOFT wireable_in_top=2
+
+######## MEGA GOLD @ 5m · 10.0y · 427 modes ########
+  … 1/427 · cells=10116 · 15740s · sm_t0.18_o0.32
+  … 25/427 · cells=10980 · 18302s · sm_t0.22_o0.40
+  … 50/427 · cells=11880 · 20964s · off_sm_t0.25_o0.48
+  … 75/427 · cells=12780 · 23618s · sm_t0.30_o0.35
+  … 100/427 · cells=13680 · 26257s · off_sm_t0.32_o0.45
+  … 125/427 · cells=14580 · 30286s · sm_t0.38_o0.45
+  … 150/427 · cells=15480 · 33482s · off_vm_t0.25_l10
+  … 175/427 · cells=16380 · 36154s · vm_t0.45_l15
+  … 200/427 · cells=17280 · 38828s · off_vm_t0.65_l15
+  … 225/427 · cells=18180 · 41500s · vm_t0.85_l20
+  … 250/427 · cells=19080 · 45668s · cir_z2.4_s0.7
+  … 275/427 · cells=19980 · 49249s · snr_0.25
+  … 300/427 · cells=20880 · 52865s · ft_lf0.6_s0.3
+  … 325/427 · cells=21780 · 56410s · asia_96_0.12
+  … 350/427 · cells=22680 · 59592s · don_70
+  … 375/427 · cells=23580 · 62247s · gold_thrust_0.45
+  … 425/427 · cells=25164 · 66919s · math_vol_compress_release
+  BEST 5m: math_eff_lf_0.32|sl2.0|rr3.0|g3 ret=0.0056 30d=PASS 15d=PASS wireable_in_top=28
+
+######## MEGA GOLD @ 3m · 5.0y · 427 modes ########
+  … 1/427 · cells=25254 · 67186s · sm_t0.18_o0.32
+  … 25/427 · cells=25686 · 68244s · sm_t0.22_o0.40
+  … 50/427 · cells=26136 · 69346s · off_sm_t0.25_o0.48
+  … 75/427 · cells=26586 · 70444s · sm_t0.30_o0.35
+  … 100/427 · cells=27036 · 71544s · off_sm_t0.32_o0.45
+  … 125/427 · cells=27486 · 72628s · sm_t0.38_o0.45
+  … 150/427 · cells=27936 · 73708s · off_vm_t0.25_l10
+  … 175/427 · cells=28386 · 74809s · vm_t0.45_l15
+  … 200/427 · cells=28836 · 75912s · off_vm_t0.65_l15
+  … 225/427 · cells=29286 · 77019s · vm_t0.85_l20
+  … 250/427 · cells=29736 · 78124s · cir_z2.4_s0.7
+  … 275/427 · cells=30186 · 79211s · snr_0.25
+  … 300/427 · cells=30636 · 80295s · ft_lf0.6_s0.3
+  … 325/427 · cells=31086 · 81377s · asia_96_0.12
+  … 350/427 · cells=31536 · 82502s · don_70
+  … 375/427 · cells=31986 · 83607s · gold_thrust_0.45
+  … 425/427 · cells=32778 · 85558s · math_vol_compress_release
+  BEST 3m: sm_t0.35_o0.55|sl3.0|rr2.0|g2 ret=0.2439 30d=PASS 15d=PASS wireable_in_top=7
+
+######## MEGA GOLD @ 1m · 1.0y · 280 modes ########
+  … 1/280 · cells=32826 · 85679s · sm_t0.18_o0.32
+  … 25/280 · cells=33114 · 86136s · sm_t0.22_o0.40
+  … 50/280 · cells=33414 · 86608s · off_sm_t0.25_o0.48
+  … 75/280 · cells=33714 · 87080s · sm_t0.30_o0.35
+  … 100/280 · cells=34014 · 87548s · off_sm_t0.32_o0.45
+  … 125/280 · cells=34314 · 88014s · sm_t0.38_o0.45
+  … 150/280 · cells=34614 · 88475s · off_vm_t0.25_l10
+  … 175/280 · cells=34914 · 88943s · vm_t0.45_l15
+  … 200/280 · cells=35214 · 89409s · off_vm_t0.65_l15
+  … 225/280 · cells=35514 · 89877s · vm_t0.85_l20
+  … 250/280 · cells=35814 · 90348s · cir_z2.4_s0.7
+  … 275/280 · cells=36114 · 90804s · snr_0.25
+  BEST 1m: sm_t0.40_o0.55|sl2.0|rr4.0|g3 ret=0.6321 30d=PASS 15d=PASS wireable_in_top=7
+
+######## MEGA BTCUSD @ 15m · 10.0y · 432 modes ########
+  … 1/432 · cells=36192 · 90915s · sm_t0.18_o0.32
+  … 25/432 · cells=36624 · 91280s · sm_t0.22_o0.40
+  … 50/432 · cells=37074 · 91658s · off_sm_t0.25_o0.48
+  … 75/432 · cells=37524 · 92035s · sm_t0.30_o0.35
+  … 100/432 · cells=37974 · 92411s · off_sm_t0.32_o0.45
+  … 125/432 · cells=38424 · 92784s · sm_t0.38_o0.45
+  … 150/432 · cells=38874 · 93158s · off_vm_t0.25_l10
+  … 175/432 · cells=39324 · 93550s · vm_t0.45_l15
+  … 200/432 · cells=39774 · 93947s · off_vm_t0.65_l15
+  … 225/432 · cells=40224 · 94344s · vm_t0.85_l20
+  … 250/432 · cells=40674 · 94742s · cir_z2.4_s0.7
+  … 275/432 · cells=41124 · 95127s · snr_0.25
+  … 300/432 · cells=41556 · 95500s · ft_lf0.6_s0.3
+  … 325/432 · cells=42006 · 95889s · asia_96_0.12
+  … 350/432 · cells=42456 · 96289s · don_70
+  … 375/432 · cells=42906 · 96687s · btc_fund_80_0.018
+  … 400/432 · cells=43284 · 97015s · math_hurst_trend_0.58
+  … 425/432 · cells=43698 · 97382s · math_cusum_0.025
+  BEST 15m: sm_t0.38_o0.40|sl2.0|rr3.0|g3 ret=0.1525 30d=PASS 15d=FAIL wireable_in_top=0
+
+######## MEGA BTCUSD @ 5m · 10.0y · 432 modes ########
+  … 1/432 · cells=43851 · 97582s · sm_t0.18_o0.32
+  … 25/432 · cells=44499 · 99382s · sm_t0.22_o0.40
+  … 50/432 · cells=45174 · 102485s · off_sm_t0.25_o0.48
+  … 75/432 · cells=45849 · 104652s · sm_t0.30_o0.35
+  … 100/432 · cells=46524 · 107072s · off_sm_t0.32_o0.45
+  … 125/432 · cells=47199 · 109569s · sm_t0.38_o0.45
+  … 150/432 · cells=47874 · 111591s · off_vm_t0.25_l10
+  … 175/432 · cells=48549 · 113445s · vm_t0.45_l15
+  … 200/432 · cells=49224 · 115297s · off_vm_t0.65_l15
+  … 225/432 · cells=49899 · 117152s · vm_t0.85_l20
+  … 250/432 · cells=50574 · 119008s · cir_z2.4_s0.7
+  … 275/432 · cells=51249 · 120820s · snr_0.25
+  … 300/432 · cells=51924 · 122645s · ft_lf0.6_s0.3
+  … 325/432 · cells=52599 · 124475s · asia_96_0.12
+  … 350/432 · cells=53274 · 126358s · don_70
+  … 375/432 · cells=53949 · 128234s · btc_fund_80_0.018
+  … 400/432 · cells=54516 · 129787s · math_hurst_trend_0.58
+  … 425/432 · cells=55137 · 132464s · math_cusum_0.025
+  BEST 5m: zmr_30_1.8|sl2.5|rr2.0|g5 ret=-0.9108 30d=PASS 15d=PASS wireable_in_top=0
+
+######## MEGA BTCUSD @ 3m · 5.0y · 432 modes ########
+  … 1/432 · cells=55344 · 133180s · sm_t0.18_o0.32
+  … 25/432 · cells=55776 · 134660s · sm_t0.22_o0.40
+  … 50/432 · cells=56226 · 136235s · off_sm_t0.25_o0.48
+  … 75/432 · cells=56676 · 137759s · sm_t0.30_o0.35
+  … 100/432 · cells=57126 · 139475s · off_sm_t0.32_o0.45
+  … 125/432 · cells=57576 · 141304s · sm_t0.38_o0.45
+  … 150/432 · cells=58026 · 142818s · off_vm_t0.25_l10
+  … 175/432 · cells=58476 · 144324s · vm_t0.45_l15
+  … 200/432 · cells=58926 · 145834s · off_vm_t0.65_l15
+  … 225/432 · cells=59376 · 147344s · vm_t0.85_l20
+  … 250/432 · cells=59826 · 148849s · cir_z2.4_s0.7
+  … 275/432 · cells=60276 · 150277s · snr_0.25
+  … 300/432 · cells=60726 · 151746s · ft_lf0.6_s0.3
+  … 325/432 · cells=61176 · 153221s · asia_96_0.12
+  … 350/432 · cells=61626 · 154761s · don_70
+  … 375/432 · cells=62076 · 156227s · btc_fund_80_0.018
+  … 400/432 · cells=62454 · 158753s · math_hurst_trend_0.58
+  … 425/432 · cells=62868 · 159811s · math_cusum_0.025
+  BEST 3m: sm_t0.30_o0.48|sl3.0|rr2.0|g3 ret=0.1585 30d=PASS 15d=SOFT wireable_in_top=1
+
+######## MEGA BTCUSD @ 1m · 1.0y · 280 modes ########
+  … 1/280 · cells=63006 · 160158s · sm_t0.18_o0.32
+  … 25/280 · cells=63294 · 160640s · sm_t0.22_o0.40
+  … 50/280 · cells=63594 · 161142s · off_sm_t0.25_o0.48
+  … 75/280 · cells=63894 · 161636s · sm_t0.30_o0.35
+  … 100/280 · cells=64194 · 162127s · off_sm_t0.32_o0.45
+  … 125/280 · cells=64494 · 162616s · sm_t0.38_o0.45
+  … 150/280 · cells=64794 · 163102s · off_vm_t0.25_l10
+  … 175/280 · cells=65094 · 163596s · vm_t0.45_l15
+  … 200/280 · cells=65394 · 164089s · off_vm_t0.65_l15
+  … 225/280 · cells=65694 · 164583s · vm_t0.85_l20
+  … 250/280 · cells=65994 · 165077s · cir_z2.4_s0.7
+  … 275/280 · cells=66258 · 165495s · snr_0.25
+  BEST 1m: off_sm_t0.38_o0.48|sl2.5|rr3.0|g5 ret=-0.2491 30d=PASS 15d=FAIL wireable_in_top=0
+
+######## MEGA UKOIL @ 15m · 10.0y · 426 modes ########
+  … 1/426 · cells=66342 · 165619s · sm_t0.18_o0.32
+  … 25/426 · cells=66918 · 166171s · sm_t0.22_o0.40
+  … 50/426 · cells=67518 · 166743s · off_sm_t0.25_o0.48
+  … 75/426 · cells=68118 · 167313s · sm_t0.30_o0.35
+  … 100/426 · cells=68718 · 167883s · off_sm_t0.32_o0.45
+  … 125/426 · cells=69318 · 168450s · sm_t0.38_o0.45
+  … 150/426 · cells=69918 · 169015s · off_vm_t0.25_l10
+  … 175/426 · cells=70518 · 169590s · vm_t0.45_l15
+  … 200/426 · cells=71118 · 170166s · off_vm_t0.65_l15
+  … 225/426 · cells=71718 · 170740s · vm_t0.85_l20
+  … 250/426 · cells=72318 · 171315s · cir_z2.4_s0.7
+  … 275/426 · cells=72918 · 172134s · snr_0.25
+  … 300/426 · cells=73518 · 203167s · ft_lf0.6_s0.3
+  … 325/426 · cells=74118 · 204537s · asia_96_0.12
+  … 350/426 · cells=74718 · 205541s · don_70
+  … 375/426 · cells=75318 · 207131s · agree_sm_vm
+  … 425/426 · cells=76326 · 208531s · math_skew_align_snr
+  BEST 15m: kelt_40_1.8|sl1.5|rr2.0|g2 ret=-1.3949 30d=PASS 15d=PASS wireable_in_top=11
+
+######## MEGA UKOIL @ 5m · 10.0y · 426 modes ########
+  … 1/426 · cells=76386 · 208722s · sm_t0.18_o0.32
+  … 25/426 · cells=77250 · 212142s · sm_t0.22_o0.40
+  … 50/426 · cells=78150 · 215720s · off_sm_t0.25_o0.48
+  … 75/426 · cells=79050 · 219354s · sm_t0.30_o0.35
+  … 100/426 · cells=79950 · 222985s · off_sm_t0.32_o0.45
+  … 125/426 · cells=80850 · 226920s · sm_t0.38_o0.45
+  … 150/426 · cells=81750 · 230534s · off_vm_t0.25_l10
+  … 175/426 · cells=82650 · 234321s · vm_t0.45_l15
+  … 200/426 · cells=83550 · 238067s · off_vm_t0.65_l15
+  … 225/426 · cells=84450 · 244903s · vm_t0.85_l20
+  … 250/426 · cells=85350 · 247599s · cir_z2.4_s0.7
+  … 275/426 · cells=86250 · 250240s · snr_0.25
+  … 300/426 · cells=87150 · 252876s · ft_lf0.6_s0.3
+  … 325/426 · cells=88050 · 255514s · asia_96_0.12
+  … 350/426 · cells=88950 · 260180s · don_70
+  … 375/426 · cells=89850 · 262877s · agree_sm_vm
+  … 425/426 · cells=91398 · 267538s · math_skew_align_snr
+  BEST 5m: bb_30_1.8|sl1.5|rr4.0|g5 ret=0.2616 30d=PASS 15d=PASS wireable_in_top=5
+
+######## MEGA UKOIL @ 3m · 5.0y · 426 modes ########
+  … 1/426 · cells=91452 · 267702s · sm_t0.18_o0.32
+  … 25/426 · cells=91884 · 268796s · sm_t0.22_o0.40
+  … 50/426 · cells=92334 · 269930s · off_sm_t0.25_o0.48
+  … 75/426 · cells=92784 · 271067s · sm_t0.30_o0.35
+  … 100/426 · cells=93234 · 272215s · off_sm_t0.32_o0.45
+  … 125/426 · cells=93684 · 273346s · sm_t0.38_o0.45
+  … 150/426 · cells=94134 · 274462s · off_vm_t0.25_l10
+  … 175/426 · cells=94584 · 275604s · vm_t0.45_l15
+  … 200/426 · cells=95034 · 276744s · off_vm_t0.65_l15
+  … 225/426 · cells=95484 · 277888s · vm_t0.85_l20
+  … 250/426 · cells=95934 · 279030s · cir_z2.4_s0.7
+  … 275/426 · cells=96384 · 280146s · snr_0.25
+  … 300/426 · cells=96834 · 281263s · ft_lf0.6_s0.3
+  … 325/426 · cells=97284 · 282387s · asia_96_0.12
+  … 350/426 · cells=97734 · 283555s · don_70
+  … 375/426 · cells=98184 · 284708s · agree_sm_vm
+  … 425/426 · cells=98994 · 286815s · math_skew_align_snr
+  BEST 3m: cir_z1.4_s0.7|sl2.0|rr4.0|g2 ret=-0.4715 30d=PASS 15d=PASS wireable_in_top=4
+
+######## MEGA UKOIL @ 1m · 1.0y · 280 modes ########
+  … 1/280 · cells=99024 · 286896s · sm_t0.18_o0.32
+  … 25/280 · cells=99312 · 287379s · sm_t0.22_o0.40
+  … 50/280 · cells=99612 · 287873s · off_sm_t0.25_o0.48
+  … 75/280 · cells=99912 · 288361s · sm_t0.30_o0.35
+  … 100/280 · cells=100212 · 288850s · off_sm_t0.32_o0.45
+  … 125/280 · cells=100512 · 289334s · sm_t0.38_o0.45
+  … 150/280 · cells=100812 · 289816s · off_vm_t0.25_l10
+  … 175/280 · cells=101112 · 290306s · vm_t0.45_l15
+  … 200/280 · cells=101412 · 290797s · off_vm_t0.65_l15
+  … 225/280 · cells=101712 · 291288s · vm_t0.85_l20
+  … 250/280 · cells=102012 · 291781s · cir_z2.4_s0.7
+  … 275/280 · cells=102312 · 292262s · snr_0.25
+  BEST 1m: cir_z2.8_s0.3|sl2.5|rr4.0|g3 ret=-0.5291 30d=PASS 15d=PASS wireable_in_top=0
+
+######## MEGA NAS100 @ 15m · 10.0y · 426 modes ########
+  … 1/426 · cells=102396 · 292387s · sm_t0.18_o0.32
+  … 25/426 · cells=102972 · 292947s · sm_t0.22_o0.40
+  … 50/426 · cells=103572 · 293532s · off_sm_t0.25_o0.48
+  … 75/426 · cells=104172 · 294112s · sm_t0.30_o0.35
+  … 100/426 · cells=104772 · 294692s · off_sm_t0.32_o0.45
+  … 125/426 · cells=105372 · 295268s · sm_t0.38_o0.45
+  … 150/426 · cells=105972 · 295843s · off_vm_t0.25_l10
+  … 175/426 · cells=106572 · 296423s · vm_t0.45_l15
+  … 200/426 · cells=107172 · 297008s · off_vm_t0.65_l15
+  … 225/426 · cells=107772 · 297591s · vm_t0.85_l20
+  … 250/426 · cells=108372 · 298174s · cir_z2.4_s0.7
+  … 275/426 · cells=108972 · 298745s · snr_0.25
+  … 300/426 · cells=109548 · 299291s · ft_lf0.6_s0.3
+  … 325/426 · cells=110148 · 331190s · asia_96_0.12
+  … 350/426 · cells=110748 · 332018s · don_70
+  … 425/426 · cells=112380 · 333587s · math_skew_align_snr
+  BEST 15m: math_cusum_0.015|sl1.5|rr2.0|g2 ret=0.3121 30d=PASS 15d=PASS wireable_in_top=25
+
+######## MEGA NAS100 @ 5m · 10.0y · 426 modes ########
+  … 1/426 · cells=112440 · 333738s · sm_t0.18_o0.32
+  … 25/426 · cells=113304 · 336363s · sm_t0.22_o0.40
+  … 50/426 · cells=114204 · 339099s · off_sm_t0.25_o0.48
+  … 75/426 · cells=115104 · 341814s · sm_t0.30_o0.35
+  … 100/426 · cells=116004 · 344527s · off_sm_t0.32_o0.45
+  … 125/426 · cells=116904 · 350032s · sm_t0.38_o0.45
+  … 150/426 · cells=117804 · 352783s · off_vm_t0.25_l10
+  … 175/426 · cells=118704 · 355526s · vm_t0.45_l15
+  … 200/426 · cells=119604 · 358264s · off_vm_t0.65_l15
+  … 225/426 · cells=120504 · 361011s · vm_t0.85_l20
+  … 250/426 · cells=121404 · 363792s · cir_z2.4_s0.7
+  … 275/426 · cells=122304 · 366497s · snr_0.25
+  … 300/426 · cells=123204 · 369192s · ft_lf0.6_s0.3
+  … 325/426 · cells=124104 · 371997s · asia_96_0.12
+  … 350/426 · cells=125004 · 374810s · don_70
+
+===== MEGA DESK INVENT @ 2026-09-11T07:08:32.450480+00:00 =====
+RESUME · 13 pair×tf done
+=== MEGA DESK INVENT (Nebula) ===
+book=('GOLD', 'BTCUSD', 'UKOIL', 'NAS100', 'AUDUSD', 'ETHUSD', 'USDJPY', 'USDCHF')
+modes≈427 full / 280 lean1m
+criteria: ≥15% ($1500/y) + 30d/15d PASS|SOFT + 1y≠FAIL
+XM spreads ON · research_only · live .env UNTOUCHED
+est_cells≈281,700
+
+skip GOLD:15m (resume)
+skip GOLD:5m (resume)
+skip GOLD:3m (resume)
+skip GOLD:1m (resume)
+skip BTCUSD:15m (resume)
+skip BTCUSD:5m (resume)
+skip BTCUSD:3m (resume)
+skip BTCUSD:1m (resume)
+skip UKOIL:15m (resume)
+skip UKOIL:5m (resume)
+skip UKOIL:3m (resume)
+skip UKOIL:1m (resume)
+skip NAS100:15m (resume)
+
+######## MEGA NAS100 @ 5m · 10.0y · 426 modes ########
+  … 1/426 · cells=36 · 124s · sm_t0.18_o0.32
+  … 25/426 · cells=900 · 2710s · sm_t0.22_o0.40
+  … 50/426 · cells=1800 · 5364s · off_sm_t0.25_o0.48
+  … 75/426 · cells=2700 · 8013s · sm_t0.30_o0.35
+  … 100/426 · cells=3600 · 10655s · off_sm_t0.32_o0.45
+  … 125/426 · cells=4500 · 13293s · sm_t0.38_o0.45
+  … 150/426 · cells=5400 · 18329s · off_vm_t0.25_l10
+  … 175/426 · cells=6300 · 22243s · vm_t0.45_l15
+  … 200/426 · cells=7200 · 24905s · off_vm_t0.65_l15
+  … 225/426 · cells=8100 · 27568s · vm_t0.85_l20
+  … 250/426 · cells=9000 · 30236s · cir_z2.4_s0.7
+  … 275/426 · cells=9900 · 32864s · snr_0.25
+  … 300/426 · cells=10800 · 35496s · ft_lf0.6_s0.3
+  … 325/426 · cells=11700 · 40451s · asia_96_0.12
+  … 350/426 · cells=12600 · 50988s · don_70
+  … 425/426 · cells=15084 · 81381s · math_skew_align_snr
+  BEST 5m: math_eff_lf_0.32|sl2.0|rr3.0|g3 ret=1.1095 30d=PASS 15d=PASS wireable_in_top=55
+
+######## MEGA NAS100 @ 3m · 5.0y · 426 modes ########
+  … 1/426 · cells=15138 · 81802s · sm_t0.18_o0.32
+  … 25/426 · cells=15570 · 84300s · sm_t0.22_o0.40
+  … 50/426 · cells=16020 · 85394s · off_sm_t0.25_o0.48
+  … 75/426 · cells=16470 · 86481s · sm_t0.30_o0.35
+  … 100/426 · cells=16920 · 87600s · off_sm_t0.32_o0.45
+  … 125/426 · cells=17370 · 88707s · sm_t0.38_o0.45
+  … 150/426 · cells=17820 · 89816s · off_vm_t0.25_l10
+  … 175/426 · cells=18270 · 90945s · vm_t0.45_l15
+  … 200/426 · cells=18720 · 92075s · off_vm_t0.65_l15
+  … 225/426 · cells=19170 · 93203s · vm_t0.85_l20
+  … 250/426 · cells=19620 · 94336s · cir_z2.4_s0.7
+  … 275/426 · cells=20070 · 95438s · snr_0.25
+  … 300/426 · cells=20520 · 97267s · ft_lf0.6_s0.3
+  … 325/426 · cells=20970 · 102529s · asia_96_0.12
+  … 350/426 · cells=21420 · 105589s · don_70
+  … 425/426 · cells=22680 · 116914s · math_skew_align_snr
+  BEST 3m: vm_t0.85_l40|sl2.0|rr3.0|g2 ret=0.829 30d=PASS 15d=PASS wireable_in_top=24
+
+######## MEGA NAS100 @ 1m · 1.0y · 280 modes ########
+  … 1/280 · cells=22710 · 117811s · sm_t0.18_o0.32
+  … 25/280 · cells=22998 · 119454s · sm_t0.22_o0.40
+  … 50/280 · cells=23298 · 120842s · off_sm_t0.25_o0.48
+  … 75/280 · cells=23598 · 121884s · sm_t0.30_o0.35
+  … 100/280 · cells=23898 · 125589s · off_sm_t0.32_o0.45
+  … 125/280 · cells=24198 · 127200s · sm_t0.38_o0.45
+  … 150/280 · cells=24498 · 129079s · off_vm_t0.25_l10
+  … 175/280 · cells=24798 · 132058s · vm_t0.45_l15
+  … 200/280 · cells=25098 · 136253s · off_vm_t0.65_l15
+  … 225/280 · cells=25398 · 137687s · vm_t0.85_l20
+  … 250/280 · cells=25698 · 138882s · cir_z2.4_s0.7
+  … 275/280 · cells=25998 · 139635s · snr_0.25
+  BEST 1m: cir_z1.8_s0.7|sl2.5|rr4.0|g5 ret=0.1839 30d=PASS 15d=PASS wireable_in_top=54
+
+######## MEGA AUDUSD @ 15m · 10.0y · 436 modes ########
+  … 1/436 · cells=26082 · 139853s · sm_t0.18_o0.32
+  … 25/436 · cells=26658 · 140499s · sm_t0.22_o0.40
+  … 50/436 · cells=27258 · 143036s · off_sm_t0.25_o0.48
+  … 75/436 · cells=27858 · 146026s · sm_t0.30_o0.35
+  … 100/436 · cells=28458 · 146639s · off_sm_t0.32_o0.45
+  … 125/436 · cells=29058 · 157076s · sm_t0.38_o0.45
+  … 150/436 · cells=29658 · 157643s · off_vm_t0.25_l10
+  … 175/436 · cells=30258 · 158314s · vm_t0.45_l15
+  … 200/436 · cells=30858 · 158989s · off_vm_t0.65_l15
+  … 225/436 · cells=31458 · 159730s · vm_t0.85_l20
+  … 250/436 · cells=32058 · 160509s · cir_z2.4_s0.7
+  … 275/436 · cells=32658 · 162020s · snr_0.25
+  … 300/436 · cells=33258 · 165680s · ft_lf0.6_s0.3
+  … 325/436 · cells=33858 · 168099s · asia_96_0.12
+  … 350/436 · cells=34458 · 169956s · don_70
+  … 375/436 · cells=35058 · 170861s · aud_carry_0.00022
+  … 400/436 · cells=35562 · 173465s · math_snr_drift_0.30
+  … 425/436 · cells=36114 · 176550s · math_zcr_0.30
+  BEST 15m: ft_lf0.5_s0.25|sl2.5|rr4.0|g2 ret=0.2193 30d=FAIL 15d=FAIL wireable_in_top=0
+
+######## MEGA AUDUSD @ 5m · 10.0y · 436 modes ########
+  … 1/436 · cells=36414 · 179610s · sm_t0.18_o0.32
+  … 25/436 · cells=37278 · 190562s · sm_t0.22_o0.40
+  … 50/436 · cells=38178 · 193270s · off_sm_t0.25_o0.48
+  … 75/436 · cells=39078 · 195991s · sm_t0.30_o0.35
+  … 100/436 · cells=39978 · 198706s · off_sm_t0.32_o0.45
+  … 125/436 · cells=40878 · 201420s · sm_t0.38_o0.45
+  … 150/436 · cells=41778 · 211032s · off_vm_t0.25_l10
+  … 175/436 · cells=42678 · 222557s · vm_t0.45_l15
+  … 200/436 · cells=43578 · 230326s · off_vm_t0.65_l15
+  … 225/436 · cells=44478 · 245557s · vm_t0.85_l20
+  … 250/436 · cells=45378 · 257066s · cir_z2.4_s0.7
+  … 275/436 · cells=46278 · 267581s · snr_0.25
+  … 300/436 · cells=47178 · 276000s · ft_lf0.6_s0.3
+  … 325/436 · cells=48078 · 288523s · asia_96_0.12
+  … 350/436 · cells=48978 · 298121s · don_70
+  … 375/436 · cells=49878 · 307290s · aud_carry_0.00022
+  … 400/436 · cells=50634 · 344191s · math_snr_drift_0.30
+  … 425/436 · cells=51462 · 381107s · math_zcr_0.30
+  BEST 5m: ou_1.4|sl3.5|rr2.0|g5 ret=0.1601 30d=FAIL 15d=FAIL wireable_in_top=0
+
+######## MEGA AUDUSD @ 3m · 5.0y · 436 modes ########
+  … 1/436 · cells=51876 · 480361s · sm_t0.18_o0.32
+  … 25/436 · cells=52308 · 492581s · sm_t0.22_o0.40
+  … 50/436 · cells=52758 · 493743s · off_sm_t0.25_o0.48
+  … 75/436 · cells=53208 · 494884s · sm_t0.30_o0.35
+  … 100/436 · cells=53658 · 496023s · off_sm_t0.32_o0.45
+  … 125/436 · cells=54108 · 497159s · sm_t0.38_o0.45
+  … 150/436 · cells=54558 · 498284s · off_vm_t0.25_l10
+  … 175/436 · cells=55008 · 499425s · vm_t0.45_l15
+  … 200/436 · cells=55458 · 500560s · off_vm_t0.65_l15
+  … 225/436 · cells=55908 · 504802s · vm_t0.85_l20
+  … 250/436 · cells=56358 · 505951s · cir_z2.4_s0.7
+  … 275/436 · cells=56808 · 507069s · snr_0.25
+  … 300/436 · cells=57258 · 510558s · ft_lf0.6_s0.3
+  … 325/436 · cells=57708 · 514898s · asia_96_0.12
+  … 350/436 · cells=58158 · 516045s · don_70
+  … 375/436 · cells=58608 · 517269s · aud_carry_0.00022
+  … 400/436 · cells=59004 · 518380s · math_snr_drift_0.30
+  … 425/436 · cells=59418 · 519555s · math_zcr_0.30
+  BEST 3m: macd_12_26_5|sl3.5|rr2.0|g3 ret=0.2638 30d=FAIL 15d=FAIL wireable_in_top=0
+
+######## MEGA AUDUSD @ 1m · 1.0y · 280 modes ########
+  … 1/280 · cells=59628 · 520165s · sm_t0.18_o0.32
+  … 25/280 · cells=59916 · 520698s · sm_t0.22_o0.40
+  … 50/280 · cells=60216 · 521248s · off_sm_t0.25_o0.48
+  … 75/280 · cells=60516 · 521819s · sm_t0.30_o0.35
+  … 100/280 · cells=60816 · 522371s · off_sm_t0.32_o0.45
+  … 125/280 · cells=61116 · 522923s · sm_t0.38_o0.45
+  … 150/280 · cells=61416 · 523463s · off_vm_t0.25_l10
+  … 175/280 · cells=61716 · 523991s · vm_t0.45_l15
+  … 200/280 · cells=62016 · 524519s · off_vm_t0.65_l15
+  … 225/280 · cells=62316 · 526231s · vm_t0.85_l20
+  … 250/280 · cells=62616 · 530163s · cir_z2.4_s0.7
+  … 275/280 · cells=62916 · 532505s · snr_0.25
+  BEST 1m: off_vm_t0.65_l20|sl3.0|rr2.0|g5 ret=0.5547 30d=FAIL 15d=FAIL wireable_in_top=0
+
+######## MEGA ETHUSD @ 15m · 10.0y · 442 modes ########
+  … 1/442 · cells=62994 · 535842s · sm_t0.18_o0.32
+  … 25/442 · cells=63426 · 551499s · sm_t0.22_o0.40
+  … 50/442 · cells=63876 · 553980s · off_sm_t0.25_o0.48
+  … 75/442 · cells=64326 · 554347s · sm_t0.30_o0.35
+  … 100/442 · cells=64776 · 562059s · off_sm_t0.32_o0.45
+  … 125/442 · cells=65226 · 566980s · sm_t0.38_o0.45
+  … 150/442 · cells=65676 · 567346s · off_vm_t0.25_l10
+  … 175/442 · cells=66126 · 567721s · vm_t0.45_l15
+  … 200/442 · cells=66576 · 568091s · off_vm_t0.65_l15
+  … 225/442 · cells=67026 · 568462s · vm_t0.85_l20
+  … 250/442 · cells=67476 · 568834s · cir_z2.4_s0.7
+  … 275/442 · cells=67926 · 569195s · snr_0.25
+  … 300/442 · cells=68358 · 569539s · ft_lf0.6_s0.3
+  … 325/442 · cells=68808 · 569902s · asia_96_0.12
+  … 350/442 · cells=69258 · 570276s · don_70
+  … 375/442 · cells=69708 · 570641s · btc_fund_80_0.018
+  … 400/442 · cells=70068 · 570928s · dyn_hurst_vm_bb
+  … 425/442 · cells=70446 · 571231s · math_kalman_fade_1.6
+  BEST 15m: edge_vm|sl3.0|rr3.0|g2 ret=0.3407 30d=FAIL 15d=FAIL wireable_in_top=0
+
+######## MEGA ETHUSD @ 5m · 10.0y · 442 modes ########
+  … 1/442 · cells=70779 · 571565s · sm_t0.18_o0.32
+  … 25/442 · cells=71427 · 573231s · sm_t0.22_o0.40
+  … 50/442 · cells=72102 · 574966s · off_sm_t0.25_o0.48
+  … 75/442 · cells=72777 · 576695s · sm_t0.30_o0.35
+  … 100/442 · cells=73452 · 578431s · off_sm_t0.32_o0.45
+  … 125/442 · cells=74127 · 580158s · sm_t0.38_o0.45
+  … 150/442 · cells=74802 · 582850s · off_vm_t0.25_l10
+  … 175/442 · cells=75477 · 590538s · vm_t0.45_l15
+  … 200/442 · cells=76152 · 634209s · off_vm_t0.65_l15
+  … 225/442 · cells=76827 · 635940s · vm_t0.85_l20
+  … 250/442 · cells=77502 · 637665s · cir_z2.4_s0.7
+  … 275/442 · cells=78177 · 639352s · snr_0.25
+  … 300/442 · cells=78825 · 640976s · ft_lf0.6_s0.3
+  … 325/442 · cells=79500 · 642668s · asia_96_0.12
+  … 350/442 · cells=80175 · 644408s · don_70
+  … 375/442 · cells=80850 · 649288s · btc_fund_80_0.018
+  … 400/442 · cells=81363 · 659805s · dyn_hurst_vm_bb
+  … 425/442 · cells=81930 · 706806s · math_kalman_fade_1.6
+  BEST 5m: ft_lf0.65_s0.3|sl2.5|rr4.0|g2 ret=0.1864 30d=FAIL 15d=FAIL wireable_in_top=0
+
+######## MEGA ETHUSD @ 3m · 5.0y · 442 modes ########
+  … 1/442 · cells=82407 · 732852s · sm_t0.18_o0.32
+  … 25/442 · cells=82839 · 759808s · sm_t0.22_o0.40
+  … 50/442 · cells=83289 · 815136s · off_sm_t0.25_o0.48
+  … 75/442 · cells=83739 · 817007s · sm_t0.30_o0.35
+  … 100/442 · cells=84189 · 818173s · off_sm_t0.32_o0.45
+  … 125/442 · cells=84639 · 819328s · sm_t0.38_o0.45
+  … 150/442 · cells=85089 · 820478s · off_vm_t0.25_l10
+  … 175/442 · cells=85539 · 821633s · vm_t0.45_l15
+  … 200/442 · cells=85989 · 822799s · off_vm_t0.65_l15
+  … 225/442 · cells=86439 · 825805s · vm_t0.85_l20
+  … 250/442 · cells=86889 · 827085s · cir_z2.4_s0.7
+  … 275/442 · cells=87339 · 828207s · snr_0.25
+  … 300/442 · cells=87789 · 829343s · ft_lf0.6_s0.3
+  … 325/442 · cells=88239 · 830482s · asia_96_0.12
+  … 350/442 · cells=88689 · 831652s · don_70
+  … 375/442 · cells=89139 · 832813s · btc_fund_80_0.018
+  … 400/442 · cells=89481 · 833682s · dyn_hurst_vm_bb
+  … 425/442 · cells=89877 · 834694s · math_kalman_fade_1.6
+  BEST 3m: math_bimod_0.70|sl3.0|rr2.0|g2 ret=0.1919 30d=FAIL 15d=FAIL wireable_in_top=0
+
+######## MEGA ETHUSD @ 1m · 1.0y · 280 modes ########
+  … 1/280 · cells=90195 · 835546s · sm_t0.18_o0.32
+  … 25/280 · cells=90483 · 836028s · sm_t0.22_o0.40
+  … 50/280 · cells=90783 · 836524s · off_sm_t0.25_o0.48
+  … 75/280 · cells=91083 · 837025s · sm_t0.30_o0.35
+  … 100/280 · cells=91383 · 837528s · off_sm_t0.32_o0.45
+  … 125/280 · cells=91683 · 838021s · sm_t0.38_o0.45
+  … 150/280 · cells=91983 · 838514s · off_vm_t0.25_l10
+  … 175/280 · cells=92283 · 839010s · vm_t0.45_l15
+  … 200/280 · cells=92583 · 839508s · off_vm_t0.65_l15
+  … 225/280 · cells=92883 · 840003s · vm_t0.85_l20
+  … 250/280 · cells=93183 · 840501s · cir_z2.4_s0.7
+  … 275/280 · cells=93483 · 840985s · snr_0.25
+  BEST 1m: sm_t0.45_o0.55|sl2.5|rr4.0|g5 ret=0.2437 30d=FAIL 15d=FAIL wireable_in_top=0
+
+######## MEGA USDJPY @ 15m · 10.0y · 423 modes ########
+  … 1/423 · cells=93567 · 841112s · sm_t0.18_o0.32
+  … 25/423 · cells=94143 · 841686s · sm_t0.22_o0.40
+  … 50/423 · cells=94743 · 842274s · off_sm_t0.25_o0.48
+  … 75/423 · cells=95343 · 842863s · sm_t0.30_o0.35
+  … 100/423 · cells=95943 · 843557s · off_sm_t0.32_o0.45
+  … 125/423 · cells=96543 · 844173s · sm_t0.38_o0.45
+  … 150/423 · cells=97143 · 844749s · off_vm_t0.25_l10
+  … 175/423 · cells=97743 · 845318s · vm_t0.45_l15
+  … 200/423 · cells=98343 · 845890s · off_vm_t0.65_l15
+  … 225/423 · cells=98943 · 846476s · vm_t0.85_l20
+  … 250/423 · cells=99543 · 847067s · cir_z2.4_s0.7
+  … 275/423 · cells=100143 · 847637s · snr_0.25
+  … 300/423 · cells=100719 · 848186s · ft_lf0.6_s0.3
+  … 325/423 · cells=101319 · 848753s · asia_96_0.12
+  … 350/423 · cells=101919 · 849329s · don_70
+  … 400/423 · cells=102975 · 850324s · math_allan_persist_0.80
+  BEST 15m: math_hurst_mr_0.45|sl3.5|rr4.0|g2 ret=0.2026 30d=FAIL 15d=FAIL wireable_in_top=0
+
+######## MEGA USDJPY @ 5m · 10.0y · 423 modes ########
+  … 1/423 · cells=103563 · 850975s · sm_t0.18_o0.32
+  … 25/423 · cells=104427 · 861566s · sm_t0.22_o0.40
+  … 50/423 · cells=105327 · 874888s · off_sm_t0.25_o0.48
+  … 75/423 · cells=106227 · 881449s · sm_t0.30_o0.35
+  … 100/423 · cells=107127 · 884306s · off_sm_t0.32_o0.45
+  … 125/423 · cells=108027 · 892204s · sm_t0.38_o0.45
+  … 150/423 · cells=108927 · 896718s · off_vm_t0.25_l10
+  … 175/423 · cells=109827 · 900623s · vm_t0.45_l15
+  … 200/423 · cells=110727 · 924652s · off_vm_t0.65_l15
+  … 225/423 · cells=111627 · 927355s · vm_t0.85_l20
+  … 250/423 · cells=112527 · 931004s · cir_z2.4_s0.7
+  … 275/423 · cells=113427 · 934775s · snr_0.25
+  … 300/423 · cells=114327 · 937427s · ft_lf0.6_s0.3
+  … 325/423 · cells=115227 · 940080s · asia_96_0.12
+  … 350/423 · cells=116127 · 950683s · don_70
+  … 400/423 · cells=117711 · 981619s · math_allan_persist_0.80
+  BEST 5m: cir_z2.4_s0.7|sl2.0|rr2.0|g3 ret=0.2533 30d=SOFT 15d=FAIL wireable_in_top=0
+
+######## MEGA USDJPY @ 3m · 5.0y · 423 modes ########
+  … 1/423 · cells=118557 · 984727s · sm_t0.18_o0.32
+  … 25/423 · cells=118989 · 985826s · sm_t0.22_o0.40
+  … 50/423 · cells=119439 · 986972s · off_sm_t0.25_o0.48
+  … 75/423 · cells=119889 · 990263s · sm_t0.30_o0.35
+  … 100/423 · cells=120339 · 991404s · off_sm_t0.32_o0.45
+  … 125/423 · cells=120789 · 1005104s · sm_t0.38_o0.45
+  … 150/423 · cells=121239 · 1010277s · off_vm_t0.25_l10
+  … 175/423 · cells=121689 · 1012144s · vm_t0.45_l15
+  … 200/423 · cells=122139 · 1016304s · off_vm_t0.65_l15
+  … 225/423 · cells=122589 · 1024189s · vm_t0.85_l20
+  … 250/423 · cells=123039 · 1068082s · cir_z2.4_s0.7
+  … 275/423 · cells=123489 · 1069175s · snr_0.25
+  … 300/423 · cells=123939 · 1070276s · ft_lf0.6_s0.3
+  … 325/423 · cells=124389 · 1071836s · asia_96_0.12
+  … 350/423 · cells=124839 · 1072970s · don_70
+  … 400/423 · cells=125649 · 1075051s · math_allan_persist_0.80
+  BEST 3m: cir_z1.6_s0.7|sl2.5|rr2.0|g2 ret=-0.2511 30d=PASS 15d=FAIL wireable_in_top=0
+
+######## MEGA USDJPY @ 1m · 1.0y · 280 modes ########
+  … 1/280 · cells=126075 · 1077263s · sm_t0.18_o0.32
+  … 25/280 · cells=126363 · 1081675s · sm_t0.22_o0.40
+  … 50/280 · cells=126663 · 1085875s · off_sm_t0.25_o0.48
+  … 75/280 · cells=126963 · 1090760s · sm_t0.30_o0.35
+  … 100/280 · cells=127263 · 1091690s · off_sm_t0.32_o0.45
+  … 125/280 · cells=127563 · 1092225s · sm_t0.38_o0.45
+  … 150/280 · cells=127863 · 1095574s · off_vm_t0.25_l10
+  … 175/280 · cells=128163 · 1096079s · vm_t0.45_l15
+  … 200/280 · cells=128463 · 1096606s · off_vm_t0.65_l15
+  … 225/280 · cells=128763 · 1097090s · vm_t0.85_l20
+  … 250/280 · cells=129063 · 1099612s · cir_z2.4_s0.7
+  … 275/280 · cells=129363 · 1101680s · snr_0.25
+  BEST 1m: vm_t0.65_l10|sl3.0|rr2.0|g3 ret=-0.4728 30d=PASS 15d=FAIL wireable_in_top=0
+
+######## MEGA USDCHF @ 15m · 10.0y · 423 modes ########
+  … 1/423 · cells=129447 · 1102074s · sm_t0.18_o0.32
+  … 25/423 · cells=130023 · 1105549s · sm_t0.22_o0.40
+  … 50/423 · cells=130623 · 1106127s · off_sm_t0.25_o0.48
+  … 75/423 · cells=131223 · 1106704s · sm_t0.30_o0.35
+  … 100/423 · cells=131823 · 1107277s · off_sm_t0.32_o0.45
+  … 125/423 · cells=132423 · 1107848s · sm_t0.38_o0.45
+  … 150/423 · cells=133023 · 1108420s · off_vm_t0.25_l10
+  … 175/423 · cells=133623 · 1108999s · vm_t0.45_l15
+  … 200/423 · cells=134223 · 1109579s · off_vm_t0.65_l15
+  … 225/423 · cells=134823 · 1110152s · vm_t0.85_l20
+  … 250/423 · cells=135423 · 1111544s · cir_z2.4_s0.7
+  … 275/423 · cells=136023 · 1112132s · snr_0.25
+  … 300/423 · cells=136623 · 1112724s · ft_lf0.6_s0.3
+  … 325/423 · cells=137223 · 1113311s · asia_96_0.12
+  … 350/423 · cells=137823 · 1113912s · don_70
+  … 400/423 · cells=138879 · 1115950s · math_allan_persist_0.80
+  BEST 15m: cir_z2.8_s0.5|sl3.5|rr3.0|g2 ret=0.1686 30d=FAIL 15d=FAIL wireable_in_top=0
+
+######## MEGA USDCHF @ 5m · 10.0y · 423 modes ########
+  … 1/423 · cells=139467 · 1116615s · sm_t0.18_o0.32
+  … 25/423 · cells=140331 · 1121019s · sm_t0.22_o0.40
+  … 50/423 · cells=141231 · 1126939s · off_sm_t0.25_o0.48
+  … 75/423 · cells=142131 · 1131389s · sm_t0.30_o0.35
+  … 100/423 · cells=143031 · 1138011s · off_sm_t0.32_o0.45
+  … 125/423 · cells=143931 · 1143400s · sm_t0.38_o0.45
+  … 150/423 · cells=144831 · 1148778s · off_vm_t0.25_l10
+  … 175/423 · cells=145731 · 1156062s · vm_t0.45_l15
+  … 200/423 · cells=146631 · 1161585s · off_vm_t0.65_l15
+  … 225/423 · cells=147531 · 1183198s · vm_t0.85_l20
+  … 250/423 · cells=148431 · 1190807s · cir_z2.4_s0.7

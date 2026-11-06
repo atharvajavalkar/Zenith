@@ -1,0 +1,360 @@
+AGENTIC 1y BATTERY · 2025-08-03→2026-08-03 · $200.0/R
+stage=all · LIVE BRAINS NOT MODIFIED
+
+
+===== STAGE A · wired brains ± agents · 8 pairs =====
+
+## GOLD don_100@15m RR=4.0
+  A0_baseline: n=458 pnl=$17,400 OOS_E[R]=+0.136 SURVIVES gate=False
+  A1_risk: n=443 pnl=$16,400 OOS_E[R]=+0.136 SURVIVES gate=False
+  A2_research: n=349 pnl=$16,200 OOS_E[R]=+0.162 SURVIVES gate=False
+  A3_scout: n=356 pnl=$13,800 OOS_E[R]=+0.100 SURVIVES gate=False
+  A4_debate: n=458 pnl=$17,400 OOS_E[R]=+0.136 SURVIVES gate=False
+  A5_news: n=251 pnl=$9,800 OOS_E[R]=+0.176 SURVIVES gate=False
+  A6_combo: n=337 pnl=$15,600 OOS_E[R]=+0.162 SURVIVES gate=False
+
+## USDCHF bb_2.5@1m RR=4.0
+  A0_baseline: n=175 pnl=$25,000 OOS_E[R]=+0.489 SURVIVES gate=False
+  A1_risk: n=160 pnl=$24,000 OOS_E[R]=+0.489 SURVIVES gate=False
+  A2_research: n=139 pnl=$19,200 OOS_E[R]=+0.351 SURVIVES gate=False
+  A3_scout: n=155 pnl=$21,000 OOS_E[R]=+0.489 SURVIVES gate=False
+  A4_debate: n=175 pnl=$25,000 OOS_E[R]=+0.489 SURVIVES gate=False
+  A5_news: n=94 pnl=$7,200 OOS_E[R]=+0.600 SURVIVES gate=False
+  A6_combo: n=128 pnl=$19,400 OOS_E[R]=+0.351 SURVIVES gate=False
+
+## USDJPY bb_2.5@1m RR=4.0
+  A0_baseline: n=236 pnl=$27,800 OOS_E[R]=+0.778 SURVIVES gate=False
+  A1_risk: n=236 pnl=$27,800 OOS_E[R]=+0.778 SURVIVES gate=False
+  A2_research: n=187 pnl=$24,600 OOS_E[R]=+0.875 SURVIVES gate=False
+  A3_scout: n=206 pnl=$18,800 OOS_E[R]=+0.603 SURVIVES gate=False
+  A4_debate: n=236 pnl=$27,800 OOS_E[R]=+0.778 SURVIVES gate=False
+  A5_news: n=135 pnl=$12,000 OOS_E[R]=+0.636 SURVIVES gate=False
+  A6_combo: n=187 pnl=$24,600 OOS_E[R]=+0.875 SURVIVES gate=False
+
+## NAS100 volmom@15m RR=4.0
+  A0_baseline: n=509 pnl=$26,200 OOS_E[R]=+0.424 SURVIVES gate=False
+  A1_risk: n=494 pnl=$25,200 OOS_E[R]=+0.424 SURVIVES gate=False
+  A2_research: n=389 pnl=$19,200 OOS_E[R]=+0.512 SURVIVES gate=False
+  A3_scout: n=427 pnl=$24,600 OOS_E[R]=+0.329 SURVIVES gate=False
+  A4_debate: n=509 pnl=$26,200 OOS_E[R]=+0.424 SURVIVES gate=False
+  A5_news: n=379 pnl=$19,200 OOS_E[R]=+0.309 SURVIVES gate=False
+  A6_combo: n=378 pnl=$19,400 OOS_E[R]=+0.512 SURVIVES gate=False
+
+## UKOIL cta_10_40@5m RR=4.0
+  A0_baseline: n=1072 pnl=$38,600 OOS_E[R]=+0.370 SURVIVES gate=False
+  A1_risk: n=1012 pnl=$39,600 OOS_E[R]=+0.370 SURVIVES gate=False
+  A2_research: n=806 pnl=$29,800 OOS_E[R]=+0.333 SURVIVES gate=False
+  A3_scout: n=812 pnl=$27,600 OOS_E[R]=+0.391 SURVIVES gate=False
+  A4_debate: n=1072 pnl=$38,600 OOS_E[R]=+0.370 SURVIVES gate=False
+  A5_news: n=780 pnl=$18,000 OOS_E[R]=+0.336 SURVIVES gate=False
+  A6_combo: n=761 pnl=$29,800 OOS_E[R]=+0.333 SURVIVES gate=False
+
+## AUDUSD bb_2@1m RR=4.0
+  A0_baseline: n=2078 pnl=$109,400 OOS_E[R]=+0.325 SURVIVES gate=False
+  A1_risk: n=2048 pnl=$110,400 OOS_E[R]=+0.325 SURVIVES gate=False
+  A2_research: n=1567 pnl=$78,600 OOS_E[R]=+0.323 SURVIVES gate=False
+  A3_scout: n=1528 pnl=$82,400 OOS_E[R]=+0.371 SURVIVES gate=False
+  A4_debate: n=2078 pnl=$109,400 OOS_E[R]=+0.325 SURVIVES gate=False
+  A5_news: n=1588 pnl=$89,400 OOS_E[R]=+0.336 SURVIVES gate=False
+  A6_combo: n=1546 pnl=$80,800 OOS_E[R]=+0.323 SURVIVES gate=False
+
+## BTCUSD bb_2.5@1m RR=2.4
+  A0_baseline: n=279 pnl=$23,760 OOS_E[R]=+0.616 SURVIVES gate=False
+  A1_risk: n=279 pnl=$23,760 OOS_E[R]=+0.616 SURVIVES gate=False
+  A2_research: n=234 pnl=$21,200 OOS_E[R]=+0.619 SURVIVES gate=False
+  A3_scout: n=249 pnl=$22,960 OOS_E[R]=+0.616 SURVIVES gate=False
+  A4_debate: n=279 pnl=$23,760 OOS_E[R]=+0.616 SURVIVES gate=False
+  A5_news: n=229 pnl=$22,200 OOS_E[R]=+0.737 SURVIVES gate=False
+  A6_combo: n=234 pnl=$21,200 OOS_E[R]=+0.619 SURVIVES gate=False
+
+## ETHUSD bb_2@1m RR=4.0
+  A0_baseline: n=3939 pnl=$119,200 OOS_E[R]=+0.195 SURVIVES gate=False
+  A1_risk: n=3924 pnl=$120,200 OOS_E[R]=+0.195 SURVIVES gate=False
+  A2_research: n=2953 pnl=$83,400 OOS_E[R]=+0.225 SURVIVES gate=False
+  A3_scout: n=2849 pnl=$94,200 OOS_E[R]=+0.220 SURVIVES gate=False
+  A4_debate: n=3939 pnl=$119,200 OOS_E[R]=+0.195 SURVIVES gate=False
+  A5_news: n=3099 pnl=$96,200 OOS_E[R]=+0.198 SURVIVES gate=False
+  A6_combo: n=2943 pnl=$85,400 OOS_E[R]=+0.225 SURVIVES gate=False
+
+Stage A best desk policy: A0_baseline @ $387,360
+
+===== STAGE B · full catalog + A0_baseline =====
+
+######## GOLD ########
+  ✓ GATE fib_liq@5m RR=4.0 n=272 pnl=$7,600
+  ✓ GATE liq@5m RR=4.0 n=1293 pnl=$37,400
+  ✓ GATE tl@5m RR=3.0 n=1242 pnl=$14,000
+  ✓ GATE tl@15m RR=3.0 n=436 pnl=$16,000
+  ✓ GATE obfvg@5m RR=3.0 n=2007 pnl=$21,000
+  ✓ GATE engulf@5m RR=3.0 n=2690 pnl=$38,000
+  ✓ GATE ichi@15m RR=4.0 n=551 pnl=$15,800
+  ✓ GATE st_2@15m RR=3.0 n=302 pnl=$3,600
+  ✓ GATE kelt_1@15m RR=3.0 n=1176 pnl=$15,200
+  ✓ GATE kelt_2@15m RR=4.0 n=725 pnl=$10,000
+  skip stoch_20@1m: No numeric types to aggregate
+  skip stoch_20@3m: No numeric types to aggregate
+  skip stoch_20@5m: No numeric types to aggregate
+  skip stoch_20@15m: No numeric types to aggregate
+  skip stoch_30@1m: No numeric types to aggregate
+  skip stoch_30@3m: No numeric types to aggregate
+  skip stoch_30@5m: No numeric types to aggregate
+  skip stoch_30@15m: No numeric types to aggregate
+  ✓ GATE don_10@15m RR=4.0 n=1027 pnl=$12,600
+  ✓ GATE don_30@15m RR=4.0 n=776 pnl=$8,800
+  ✓ GATE don_55@5m RR=3.0 n=1781 pnl=$19,000
+  ✓ GATE don_55@15m RR=4.0 n=585 pnl=$8,000
+  ✓ GATE don_100@15m RR=4.0 n=458 pnl=$17,400
+  ✓ GATE bb_1.5@5m RR=2.0 n=2398 pnl=$29,800
+  ✓ GATE bb_2@5m RR=2.4 n=559 pnl=$14,680
+  ✓ GATE z_20_2@3m RR=2.4 n=4312 pnl=$39,280
+  ✓ GATE z_20_2@5m RR=2.0 n=2819 pnl=$26,600
+  ✓ GATE atrbrk@5m RR=2.4 n=1095 pnl=$21,040
+  ★ GOLD WINNER don_100@15m RR=4.0 pnl=$17,400
+
+######## USDCHF ########
+  ✓ GATE ema_pull@5m RR=3.0 n=771 pnl=$18,600
+  ✓ GATE ema_pull@15m RR=4.0 n=242 pnl=$4,600
+  ✓ GATE ema_tight@15m RR=2.0 n=149 pnl=$6,800
+  ✓ GATE sma_cross@1m RR=4.0 n=7340 pnl=$135,000
+  ✓ GATE liq@5m RR=4.0 n=1385 pnl=$14,000
+  ✓ GATE liq@15m RR=2.4 n=584 pnl=$15,800
+  ✓ GATE inside@5m RR=4.0 n=1970 pnl=$27,000
+  ✓ GATE ichi@15m RR=4.0 n=554 pnl=$12,200
+  ✓ GATE psar@5m RR=3.0 n=2452 pnl=$31,200
+  ✓ GATE adx@15m RR=1.5 n=248 pnl=$10,400
+  ✓ GATE st_3@3m RR=3.0 n=401 pnl=$7,800
+  skip stoch_20@1m: No numeric types to aggregate
+  skip stoch_20@3m: No numeric types to aggregate
+  skip stoch_20@5m: No numeric types to aggregate
+  skip stoch_20@15m: No numeric types to aggregate
+  skip stoch_30@1m: No numeric types to aggregate
+  skip stoch_30@3m: No numeric types to aggregate
+  skip stoch_30@5m: No numeric types to aggregate
+  skip stoch_30@15m: No numeric types to aggregate
+  ✓ GATE don_20@1m RR=3.0 n=16373 pnl=$88,600
+  ✓ GATE don_30@1m RR=4.0 n=12301 pnl=$130,800
+  ✓ GATE don_55@1m RR=4.0 n=9276 pnl=$89,800
+  ✓ GATE don_100@1m RR=4.0 n=6904 pnl=$75,200
+  ✓ GATE cta_10_40@15m RR=3.0 n=468 pnl=$9,600
+  ✓ GATE cta_12_26@3m RR=2.4 n=2689 pnl=$32,040
+  ✓ GATE cta_12_26@5m RR=2.4 n=1565 pnl=$24,280
+  ✓ GATE cta_20_50@15m RR=1.5 n=412 pnl=$5,100
+  ✓ GATE cta_50_200@1m RR=3.0 n=2151 pnl=$24,200
+  ✓ GATE cta_50_200@3m RR=4.0 n=735 pnl=$18,000
+  ✓ GATE cta_50_200@5m RR=2.4 n=452 pnl=$13,640
+  ✓ GATE tsmom@1m RR=3.0 n=3054 pnl=$40,400
+  ✓ GATE tsmom@3m RR=3.0 n=1027 pnl=$19,400
+  ✓ GATE tsmom@5m RR=4.0 n=564 pnl=$15,200
+  ✓ GATE bb_1.5@1m RR=4.0 n=9298 pnl=$179,400
+  ✓ GATE bb_1.5@3m RR=2.0 n=4008 pnl=$48,600
+  ✓ GATE bb_1.5@15m RR=4.0 n=668 pnl=$15,400
+  ✓ GATE bb_2@1m RR=4.0 n=2064 pnl=$75,200
+  ✓ GATE bb_2@3m RR=4.0 n=725 pnl=$21,000
+  ✓ GATE bb_2@5m RR=3.0 n=456 pnl=$13,600
+  ✓ GATE bb_2@15m RR=4.0 n=197 pnl=$6,600
+  ✓ GATE bb_2.5@1m RR=4.0 n=175 pnl=$25,000
+  ✓ GATE z_20_2@1m RR=2.4 n=14215 pnl=$136,760
+  ✓ GATE z_20_2@5m RR=4.0 n=2105 pnl=$29,000
+  ✓ GATE z_40_2@1m RR=2.4 n=11833 pnl=$81,400
+  ✓ GATE z_40_2@3m RR=4.0 n=3086 pnl=$41,800
+  ✓ GATE z_40_2@5m RR=4.0 n=1835 pnl=$23,000
+  ✓ GATE rsi@1m RR=3.0 n=13250 pnl=$103,600
+  ★ USDCHF WINNER bb_2.5@1m RR=4.0 pnl=$25,000
+
+######## USDJPY ########
+  ✓ GATE macd@5m RR=4.0 n=1590 pnl=$41,000
+  ✓ GATE ichi@15m RR=3.0 n=611 pnl=$10,600
+  skip stoch_20@1m: No numeric types to aggregate
+  skip stoch_20@3m: No numeric types to aggregate
+  skip stoch_20@5m: No numeric types to aggregate
+  skip stoch_20@15m: No numeric types to aggregate
+  skip stoch_30@1m: No numeric types to aggregate
+  skip stoch_30@3m: No numeric types to aggregate
+  skip stoch_30@5m: No numeric types to aggregate
+  skip stoch_30@15m: No numeric types to aggregate
+  ✓ GATE cta_5_20@1m RR=4.0 n=7899 pnl=$84,200
+  ✓ GATE cta_50_200@15m RR=1.5 n=149 pnl=$2,700
+  ✓ GATE tsmom@3m RR=4.0 n=867 pnl=$16,600
+  ✓ GATE bb_1.5@1m RR=4.0 n=9874 pnl=$262,200
+  ✓ GATE bb_1.5@3m RR=2.4 n=3879 pnl=$57,880
+  ✓ GATE bb_1.5@5m RR=3.0 n=2116 pnl=$35,200
+  ✓ GATE bb_2@1m RR=4.0 n=2395 pnl=$79,000
+  ✓ GATE bb_2@5m RR=3.0 n=548 pnl=$18,400
+  ✓ GATE bb_2@15m RR=3.0 n=205 pnl=$6,200
+  ✓ GATE bb_2.5@1m RR=4.0 n=236 pnl=$27,800
+  ✓ GATE bb_2.5@3m RR=2.0 n=102 pnl=$7,800
+  ✓ GATE z_20_2@1m RR=4.0 n=10868 pnl=$259,400
+  ✓ GATE z_20_2@3m RR=3.0 n=3984 pnl=$40,000
+  ✓ GATE z_20_2@5m RR=3.0 n=2249 pnl=$47,800
+  ✓ GATE z_20_2@15m RR=4.0 n=645 pnl=$10,000
+  ✓ GATE z_40_2@1m RR=4.0 n=9321 pnl=$142,800
+  ✓ GATE z_40_2@3m RR=2.0 n=3977 pnl=$36,800
+  ✓ GATE z_40_2@5m RR=4.0 n=1604 pnl=$37,200
+  ✓ GATE rsi@1m RR=3.0 n=13084 pnl=$118,400
+  ✓ GATE rsi@3m RR=4.0 n=3256 pnl=$49,800
+  ✓ GATE rsi@5m RR=2.4 n=2705 pnl=$39,720
+  ✓ GATE volmom@15m RR=2.4 n=695 pnl=$14,680
+  ★ USDJPY WINNER bb_2.5@1m RR=4.0 pnl=$27,800
+
+######## NAS100 ########
+  ✓ GATE ema_pull@5m RR=2.4 n=696 pnl=$14,480
+  ✓ GATE ema_pull@15m RR=4.0 n=172 pnl=$5,600
+  ✓ GATE ema_tight@5m RR=3.0 n=386 pnl=$10,800
+  ✓ GATE sma_cross@3m RR=4.0 n=2150 pnl=$36,000
+  ✓ GATE pa@15m RR=4.0 n=254 pnl=$12,200
+  ✓ GATE tl@15m RR=1.5 n=394 pnl=$8,200
+  ✓ GATE obfvg@5m RR=4.0 n=1488 pnl=$45,400
+  ✓ GATE macd@15m RR=4.0 n=578 pnl=$11,400
+  ✓ GATE engulf@5m RR=4.0 n=1962 pnl=$62,600
+  ✓ GATE engulf@15m RR=4.0 n=730 pnl=$18,000
+  ✓ GATE st_2@5m RR=2.4 n=803 pnl=$10,760
+  ✓ GATE st_2@15m RR=4.0 n=313 pnl=$14,400
+  ✓ GATE st_3@1m RR=4.0 n=703 pnl=$18,400
+  ✓ GATE st_3@3m RR=3.0 n=419 pnl=$9,000
+  ✓ GATE kelt_1@5m RR=2.0 n=4308 pnl=$60,000
+  ✓ GATE kelt_1.5@5m RR=2.4 n=3227 pnl=$31,200
+  skip stoch_20@1m: No numeric types to aggregate
+  skip stoch_20@3m: No numeric types to aggregate
+  skip stoch_20@5m: No numeric types to aggregate
+  skip stoch_20@15m: No numeric types to aggregate
+  skip stoch_30@1m: No numeric types to aggregate
+  skip stoch_30@3m: No numeric types to aggregate
+  skip stoch_30@5m: No numeric types to aggregate
+  skip stoch_30@15m: No numeric types to aggregate
+  ✓ GATE don_20@3m RR=4.0 n=3912 pnl=$44,600
+  ✓ GATE don_20@5m RR=1.5 n=3655 pnl=$24,500
+  ✓ GATE don_30@15m RR=3.0 n=831 pnl=$21,000
+  ✓ GATE cta_10_40@1m RR=4.0 n=5674 pnl=$60,200
+  ✓ GATE cta_10_40@3m RR=3.0 n=1981 pnl=$27,800
+  ✓ GATE cta_12_26@3m RR=4.0 n=1867 pnl=$20,600
+  ✓ GATE cta_20_50@3m RR=4.0 n=1509 pnl=$35,200
+  ✓ GATE cta_50_200@1m RR=4.0 n=1926 pnl=$32,800
+  ✓ GATE cta_50_200@15m RR=1.5 n=172 pnl=$2,600
+  ✓ GATE tsmom@1m RR=4.0 n=2259 pnl=$23,200
+  ✓ GATE tsmom@5m RR=4.0 n=476 pnl=$17,800
+  ✓ GATE rsi@15m RR=4.0 n=765 pnl=$10,000
+  ✓ GATE volmom@3m RR=4.0 n=2213 pnl=$37,400
+  ✓ GATE volmom@15m RR=4.0 n=509 pnl=$26,200
+  ★ NAS100 WINNER volmom@15m RR=4.0 pnl=$26,200
+
+######## UKOIL ########
+  ✓ GATE fib_liq@5m RR=1.5 n=215 pnl=$7,500
+  ✓ GATE sma_cross@1m RR=4.0 n=6540 pnl=$52,000
+  ✓ GATE sma_cross@5m RR=3.0 n=1346 pnl=$21,200
+  ✓ GATE tl@15m RR=3.0 n=327 pnl=$13,000
+  skip stoch_20@1m: No numeric types to aggregate
+  skip stoch_20@3m: No numeric types to aggregate
+  skip stoch_20@5m: No numeric types to aggregate
+  skip stoch_20@15m: No numeric types to aggregate
+  skip stoch_30@1m: No numeric types to aggregate
+  skip stoch_30@3m: No numeric types to aggregate
+  skip stoch_30@5m: No numeric types to aggregate
+  skip stoch_30@15m: No numeric types to aggregate
+  ✓ GATE don_10@5m RR=4.0 n=2607 pnl=$26,600
+  ✓ GATE don_20@5m RR=4.0 n=2217 pnl=$26,600
+  ✓ GATE don_55@5m RR=3.0 n=1782 pnl=$18,000
+  ✓ GATE cta_5_20@15m RR=4.0 n=520 pnl=$7,000
+  ✓ GATE cta_10_40@1m RR=4.0 n=5749 pnl=$50,200
+  ✓ GATE cta_10_40@5m RR=4.0 n=1072 pnl=$38,600
+  ✓ GATE cta_12_26@5m RR=4.0 n=1168 pnl=$23,400
+  ✓ GATE cta_12_26@15m RR=1.5 n=548 pnl=$6,400
+  ✓ GATE cta_20_50@5m RR=4.0 n=864 pnl=$23,200
+  ✓ GATE tsmom@5m RR=3.0 n=554 pnl=$18,000
+  ✓ GATE bb_1.5@1m RR=4.0 n=8498 pnl=$124,400
+  ✓ GATE bb_1.5@3m RR=1.5 n=3882 pnl=$52,600
+  ✓ GATE z_20_2@1m RR=4.0 n=9456 pnl=$121,800
+  ✓ GATE z_40_2@5m RR=4.0 n=1654 pnl=$30,200
+  ✓ GATE rsi@1m RR=4.0 n=9549 pnl=$161,200
+  ✓ GATE rsi@5m RR=4.0 n=1851 pnl=$31,800
+  ✓ GATE volmom@1m RR=4.0 n=7717 pnl=$67,600
+  ★ UKOIL WINNER cta_10_40@5m RR=4.0 pnl=$38,600
+
+######## AUDUSD ########
+  ✓ GATE macd@5m RR=2.0 n=2816 pnl=$28,400
+  skip stoch_20@1m: No numeric types to aggregate
+  skip stoch_20@3m: No numeric types to aggregate
+  skip stoch_20@5m: No numeric types to aggregate
+  skip stoch_20@15m: No numeric types to aggregate
+  skip stoch_30@1m: No numeric types to aggregate
+  skip stoch_30@3m: No numeric types to aggregate
+  skip stoch_30@5m: No numeric types to aggregate
+  skip stoch_30@15m: No numeric types to aggregate
+  ✓ GATE bb_1.5@1m RR=3.0 n=10644 pnl=$176,000
+  ✓ GATE bb_1.5@3m RR=3.0 n=3519 pnl=$82,600
+  ✓ GATE bb_1.5@5m RR=4.0 n=1858 pnl=$74,400
+  ✓ GATE bb_1.5@15m RR=3.0 n=701 pnl=$11,000
+  ✓ GATE bb_2@1m RR=4.0 n=2078 pnl=$109,400
+  ✓ GATE bb_2@5m RR=3.0 n=486 pnl=$22,000
+  ✓ GATE bb_2.5@1m RR=4.0 n=168 pnl=$15,400
+  ✓ GATE z_20_2@1m RR=4.0 n=10991 pnl=$255,800
+  ✓ GATE z_20_2@3m RR=4.0 n=3368 pnl=$83,400
+  ✓ GATE z_20_2@5m RR=4.0 n=2030 pnl=$55,000
+  ✓ GATE z_20_2@15m RR=3.0 n=785 pnl=$21,400
+  ✓ GATE z_40_2@1m RR=4.0 n=9779 pnl=$222,200
+  ✓ GATE z_40_2@3m RR=4.0 n=3105 pnl=$64,000
+  ✓ GATE z_40_2@5m RR=3.0 n=2137 pnl=$55,800
+  ✓ GATE rsi@1m RR=4.0 n=11226 pnl=$174,800
+  ✓ GATE rsi@3m RR=3.0 n=4029 pnl=$73,400
+  ✓ GATE rsi@5m RR=2.4 n=2687 pnl=$42,640
+  ✓ GATE rsi@15m RR=1.5 n=1056 pnl=$19,300
+  ★ AUDUSD WINNER bb_2@1m RR=4.0 pnl=$109,400
+
+######## BTCUSD ########
+  ✓ GATE ema_pull@15m RR=2.4 n=402 pnl=$5,960
+  ✓ GATE liq@5m RR=2.0 n=2055 pnl=$34,200
+  ✓ GATE st_2@15m RR=4.0 n=269 pnl=$12,200
+  ✓ GATE st_3@5m RR=4.0 n=225 pnl=$11,000
+  skip stoch_20@1m: No numeric types to aggregate
+  skip stoch_20@3m: No numeric types to aggregate
+  skip stoch_20@5m: No numeric types to aggregate
+  skip stoch_20@15m: No numeric types to aggregate
+  skip stoch_30@1m: No numeric types to aggregate
+  skip stoch_30@3m: No numeric types to aggregate
+  skip stoch_30@5m: No numeric types to aggregate
+  skip stoch_30@15m: No numeric types to aggregate
+  ✓ GATE bb_1.5@1m RR=4.0 n=13022 pnl=$253,600
+  ✓ GATE bb_2@1m RR=4.0 n=3521 pnl=$109,800
+  ✓ GATE bb_2@5m RR=4.0 n=661 pnl=$13,800
+  ✓ GATE bb_2.5@1m RR=2.4 n=279 pnl=$23,760
+  ★ BTCUSD WINNER bb_2.5@1m RR=2.4 pnl=$23,760
+
+######## ETHUSD ########
+  ✓ GATE fib_liq@5m RR=4.0 n=282 pnl=$9,600
+  ✓ GATE ema_pull@15m RR=2.0 n=401 pnl=$4,400
+  ✓ GATE ema_tight@15m RR=3.0 n=191 pnl=$8,200
+  ✓ GATE sma_cross@1m RR=4.0 n=10915 pnl=$130,000
+  ✓ GATE psar@5m RR=4.0 n=2289 pnl=$53,200
+  ✓ GATE kelt_1.5@1m RR=4.0 n=22773 pnl=$279,400
+  ✓ GATE kelt_1.5@15m RR=2.0 n=1488 pnl=$15,600
+  ✓ GATE kelt_2@1m RR=4.0 n=18271 pnl=$238,800
+  ✓ GATE kelt_2@5m RR=4.0 n=2644 pnl=$36,200
+  skip stoch_20@1m: No numeric types to aggregate
+  skip stoch_20@3m: No numeric types to aggregate
+  skip stoch_20@5m: No numeric types to aggregate
+  skip stoch_20@15m: No numeric types to aggregate
+  skip stoch_30@1m: No numeric types to aggregate
+  skip stoch_30@3m: No numeric types to aggregate
+  skip stoch_30@5m: No numeric types to aggregate
+  skip stoch_30@15m: No numeric types to aggregate
+  ✓ GATE don_10@1m RR=4.0 n=23844 pnl=$340,200
+  ✓ GATE don_20@1m RR=3.0 n=23026 pnl=$137,200
+  ✓ GATE don_55@1m RR=4.0 n=12391 pnl=$146,800
+  ✓ GATE don_100@3m RR=4.0 n=2624 pnl=$35,200
+  ✓ GATE don_100@15m RR=2.4 n=535 pnl=$9,280
+  ✓ GATE cta_5_20@1m RR=4.0 n=11610 pnl=$172,000
+  ✓ GATE cta_12_26@1m RR=4.0 n=10442 pnl=$111,600
+  ✓ GATE tsmom@1m RR=2.4 n=5380 pnl=$43,960
+  ✓ GATE tsmom@3m RR=2.0 n=1670 pnl=$17,000
+  ✓ GATE bb_1.5@1m RR=4.0 n=13757 pnl=$451,600
+  ✓ GATE bb_2@1m RR=3.0 n=4107 pnl=$116,200
+  ✓ GATE bb_2@3m RR=4.0 n=1251 pnl=$13,800
+  ✓ GATE bb_2@5m RR=1.5 n=893 pnl=$14,900
+  ✓ GATE bb_2.5@1m RR=4.0 n=276 pnl=$4,800
+  ✓ GATE z_20_2@1m RR=4.0 n=14649 pnl=$427,200
+  ✓ GATE z_20_2@5m RR=2.4 n=3589 pnl=$39,720
+  ✓ GATE z_40_2@1m RR=4.0 n=12362 pnl=$348,600
+  ✓ GATE z_40_2@5m RR=2.4 n=2911 pnl=$44,080
+  ✓ GATE rsi@1m RR=3.0 n=17770 pnl=$291,600
+  ★ ETHUSD WINNER bb_1.5@1m RR=4.0 pnl=$451,600
+
+Wrote /app/data/lab_agentic_1y_results.json in 20746.8s

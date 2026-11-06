@@ -1,0 +1,52 @@
+=== CRYPTO PA liq-engulf vs wired BB (Dukascopy 1y, RESEARCH) ===
+Live SYMBOL_ENTRY_BRAIN NOT changed.
+
+===== ETHUSD =====
+  load ETHUSD 1m: 514,744 bars 2025-07-31→2026-07-23
+  load ETHUSD 5m: 102,948 bars 2025-07-31→2026-07-23
+  load ETHUSD 15m: 34,316 bars 2025-07-31→2026-07-23
+  resample ETHUSD 1h=8,580 25m=20,590
+  Collecting PA entries…
+  PA raw entries: 789
+  Collecting wired bb_1.5 on 1m…
+  BB raw entries: 25321
+  PA RR=2.0: n=515 pnl=$5,000 E[R]=0.0485 DEAD WF=0/4 MC=78.8%
+  PA RR=2.4: n=490 pnl=$10,800 E[R]=0.1102 SURVIVES WF=2/4 MC=94.5%
+  PA RR=3.0: n=459 pnl=$17,000 E[R]=0.1852 SURVIVES WF=4/4 MC=98.9%
+  PA RR=4.0: n=417 pnl=$19,600 E[R]=0.235 SURVIVES WF=3/4 MC=99.0%
+  bb_1.5 RR=2.0 : n=18006 pnl=$352,200 E[R]=0.0978 SURVIVES WF=4/4 MC=100.0%
+  bb_1.5 RR=2.4 : n=17296 pnl=$412,720 E[R]=0.1193 SURVIVES WF=4/4 MC=100.0%
+  bb_1.5 RR=3.0 : n=16013 pnl=$445,400 E[R]=0.1391 SURVIVES WF=4/4 MC=100.0%
+  bb_1.5 RR=4.0 WIRED: n=13865 pnl=$458,000 E[R]=0.1652 SURVIVES WF=4/4 MC=100.0%
+
+### ETHUSD HEAD-TO-HEAD
+PA @4: n=417 PnL=$19,600 E[R]=0.235 SURVIVES
+Wired bb_1.5@1m RR=4.0: n=13865 PnL=$458,000 E[R]=0.1652 SURVIVES
+Δ PA@4 − wired: $-438,400
+Δ PA@wiredRR − wired: $-438,400
+
+===== BTCUSD =====
+  load BTCUSD 1m: 514,743 bars 2025-07-31→2026-07-23
+  load BTCUSD 5m: 102,948 bars 2025-07-31→2026-07-23
+  load BTCUSD 15m: 34,316 bars 2025-07-31→2026-07-23
+  resample BTCUSD 1h=8,580 25m=20,590
+  Collecting PA entries…
+  PA raw entries: 748
+  Collecting wired bb_2.5 on 1m…
+  BB raw entries: 290
+  PA RR=2.0: n=431 pnl=$6,800 E[R]=0.0789 SURVIVES WF=3/4 MC=86.2%
+  PA RR=2.4: n=400 pnl=$13,160 E[R]=0.1645 SURVIVES WF=4/4 MC=97.8%
+  PA RR=3.0: n=369 pnl=$5,400 E[R]=0.0732 FRAGILE WF=2/4 MC=78.0%
+  PA RR=4.0: n=343 pnl=$5,400 E[R]=0.0787 SURVIVES WF=3/4 MC=76.4%
+  bb_2.5 RR=2.0 : n=283 pnl=$19,600 E[R]=0.3463 SURVIVES WF=4/4 MC=100.0%
+  bb_2.5 RR=2.4 WIRED: n=281 pnl=$24,040 E[R]=0.4278 SURVIVES WF=4/4 MC=100.0%
+  bb_2.5 RR=3.0 : n=280 pnl=$24,000 E[R]=0.4286 SURVIVES WF=4/4 MC=100.0%
+  bb_2.5 RR=4.0 : n=279 pnl=$21,200 E[R]=0.3799 SURVIVES WF=4/4 MC=100.0%
+
+### BTCUSD HEAD-TO-HEAD
+PA @4: n=343 PnL=$5,400 E[R]=0.0787 SURVIVES
+Wired bb_2.5@1m RR=2.4: n=281 PnL=$24,040 E[R]=0.4278 SURVIVES
+Δ PA@4 − wired: $-18,640
+Δ PA@wiredRR − wired: $-10,880
+
+Wrote /app/data/lab_crypto_pa_liq_engulf_bt.json (117.3s)

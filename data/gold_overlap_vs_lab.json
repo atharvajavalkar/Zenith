@@ -1,0 +1,2915 @@
+{
+  "generated_at": "2026-07-24T19:37:55.109999+00:00",
+  "mode": "gold_overlap_vs_lab_and_aud_hunt",
+  "risk_usd": 200.0,
+  "gold": {
+    "rr": 4.0,
+    "note": "Current live GOLD brain IS lab winner cta_10_40@15m. fib_liq = prior live. overlap = Zenith session package as tradable re-entry rule.",
+    "results": [
+      {
+        "label": "fib_liq@15m",
+        "entries": 8,
+        "full": {
+          "n": 6,
+          "wins": 3,
+          "losses": 3,
+          "wr": 50.0,
+          "pnl": 1800.0,
+          "avg_r": 1.5,
+          "exp_r": 1.5,
+          "max_dd": -200.0,
+          "pf": 4.0
+        },
+        "oos": {
+          "n": 2,
+          "wins": 1,
+          "losses": 1,
+          "wr": 50.0,
+          "pnl": 600.0,
+          "avg_r": 1.5,
+          "exp_r": 1.5,
+          "max_dd": -200.0,
+          "pf": 4.0
+        },
+        "walk_forward": [
+          {
+            "fold": 1,
+            "train": {
+              "n": 1,
+              "wins": 1,
+              "losses": 0,
+              "wr": 100.0,
+              "pnl": 800.0,
+              "avg_r": 4.0,
+              "exp_r": 4.0,
+              "max_dd": 0.0,
+              "pf": 800000000000.0
+            },
+            "oos": {
+              "n": 1,
+              "wins": 0,
+              "losses": 1,
+              "wr": 0.0,
+              "pnl": -200.0,
+              "avg_r": -1.0,
+              "exp_r": -1.0,
+              "max_dd": -200.0,
+              "pf": 0.0
+            }
+          },
+          {
+            "fold": 2,
+            "train": {
+              "n": 2,
+              "wins": 1,
+              "losses": 1,
+              "wr": 50.0,
+              "pnl": 600.0,
+              "avg_r": 1.5,
+              "exp_r": 1.5,
+              "max_dd": -200.0,
+              "pf": 4.0
+            },
+            "oos": {
+              "n": 2,
+              "wins": 1,
+              "losses": 1,
+              "wr": 50.0,
+              "pnl": 600.0,
+              "avg_r": 1.5,
+              "exp_r": 1.5,
+              "max_dd": -200.0,
+              "pf": 4.0
+            }
+          },
+          {
+            "fold": 3,
+            "train": {
+              "n": 4,
+              "wins": 2,
+              "losses": 2,
+              "wr": 50.0,
+              "pnl": 1200.0,
+              "avg_r": 1.5,
+              "exp_r": 1.5,
+              "max_dd": -200.0,
+              "pf": 4.0
+            },
+            "oos": {
+              "n": 0,
+              "wins": 0,
+              "losses": 0,
+              "wr": 0.0,
+              "pnl": 0.0,
+              "avg_r": 0.0,
+              "exp_r": 0.0,
+              "max_dd": 0.0,
+              "pf": 0.0
+            }
+          },
+          {
+            "fold": 4,
+            "train": {
+              "n": 4,
+              "wins": 2,
+              "losses": 2,
+              "wr": 50.0,
+              "pnl": 1200.0,
+              "avg_r": 1.5,
+              "exp_r": 1.5,
+              "max_dd": -200.0,
+              "pf": 4.0
+            },
+            "oos": {
+              "n": 2,
+              "wins": 1,
+              "losses": 1,
+              "wr": 50.0,
+              "pnl": 600.0,
+              "avg_r": 1.5,
+              "exp_r": 1.5,
+              "max_dd": -200.0,
+              "pf": 4.0
+            }
+          }
+        ],
+        "torture": {
+          "spread_0.15R": {
+            "n": 6,
+            "wins": 3,
+            "losses": 3,
+            "wr": 50.0,
+            "pnl": 1620.0,
+            "avg_r": 1.35,
+            "exp_r": 1.35,
+            "max_dd": -230.0,
+            "pf": 3.35
+          },
+          "skip_30pct": {
+            "n": 4,
+            "wins": 3,
+            "losses": 1,
+            "wr": 75.0,
+            "pnl": 2200.0,
+            "avg_r": 2.75,
+            "exp_r": 2.75,
+            "max_dd": -200.0,
+            "pf": 12.0
+          },
+          "sl_widen_20pct": {
+            "n": 6,
+            "wins": 3,
+            "losses": 3,
+            "wr": 50.0,
+            "pnl": 1680.0,
+            "avg_r": 1.4,
+            "exp_r": 1.4,
+            "max_dd": -240.0,
+            "pf": 3.33
+          }
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 9.0,
+          "p5_R": -1.0,
+          "p95_R": 19.0,
+          "mean_R": 8.895,
+          "prob_profit": 89.0,
+          "prob_ruin_10R": 0.0,
+          "median_maxDD_R": -2.0,
+          "p5_maxDD_R": -4.0
+        },
+        "verdict": "FRAGILE",
+        "wf_green": 2,
+        "wf_n": 4,
+        "score": 52.55,
+        "strategy": "fib_liq",
+        "tf": "15m",
+        "role": "prior_live_brain"
+      },
+      {
+        "label": "cta_10_40@15m",
+        "entries": 48,
+        "full": {
+          "n": 21,
+          "wins": 6,
+          "losses": 15,
+          "wr": 28.6,
+          "pnl": 1800.0,
+          "avg_r": 0.429,
+          "exp_r": 0.429,
+          "max_dd": -800.0,
+          "pf": 1.6
+        },
+        "oos": {
+          "n": 5,
+          "wins": 1,
+          "losses": 4,
+          "wr": 20.0,
+          "pnl": 0.0,
+          "avg_r": 0.0,
+          "exp_r": 0.0,
+          "max_dd": -600.0,
+          "pf": 1.0
+        },
+        "walk_forward": [
+          {
+            "fold": 1,
+            "train": {
+              "n": 7,
+              "wins": 2,
+              "losses": 5,
+              "wr": 28.6,
+              "pnl": 600.0,
+              "avg_r": 0.429,
+              "exp_r": 0.429,
+              "max_dd": -800.0,
+              "pf": 1.6
+            },
+            "oos": {
+              "n": 3,
+              "wins": 1,
+              "losses": 2,
+              "wr": 33.3,
+              "pnl": 400.0,
+              "avg_r": 0.667,
+              "exp_r": 0.667,
+              "max_dd": -400.0,
+              "pf": 2.0
+            }
+          },
+          {
+            "fold": 2,
+            "train": {
+              "n": 11,
+              "wins": 3,
+              "losses": 8,
+              "wr": 27.3,
+              "pnl": 800.0,
+              "avg_r": 0.364,
+              "exp_r": 0.364,
+              "max_dd": -800.0,
+              "pf": 1.5
+            },
+            "oos": {
+              "n": 5,
+              "wins": 2,
+              "losses": 3,
+              "wr": 40.0,
+              "pnl": 1000.0,
+              "avg_r": 1.0,
+              "exp_r": 1.0,
+              "max_dd": -600.0,
+              "pf": 2.67
+            }
+          },
+          {
+            "fold": 3,
+            "train": {
+              "n": 16,
+              "wins": 5,
+              "losses": 11,
+              "wr": 31.2,
+              "pnl": 1800.0,
+              "avg_r": 0.562,
+              "exp_r": 0.562,
+              "max_dd": -800.0,
+              "pf": 1.82
+            },
+            "oos": {
+              "n": 4,
+              "wins": 1,
+              "losses": 3,
+              "wr": 25.0,
+              "pnl": 200.0,
+              "avg_r": 0.25,
+              "exp_r": 0.25,
+              "max_dd": -600.0,
+              "pf": 1.33
+            }
+          },
+          {
+            "fold": 4,
+            "train": {
+              "n": 20,
+              "wins": 6,
+              "losses": 14,
+              "wr": 30.0,
+              "pnl": 2000.0,
+              "avg_r": 0.5,
+              "exp_r": 0.5,
+              "max_dd": -800.0,
+              "pf": 1.71
+            },
+            "oos": {
+              "n": 1,
+              "wins": 0,
+              "losses": 1,
+              "wr": 0.0,
+              "pnl": -200.0,
+              "avg_r": -1.0,
+              "exp_r": -1.0,
+              "max_dd": -200.0,
+              "pf": 0.0
+            }
+          }
+        ],
+        "torture": {
+          "spread_0.15R": {
+            "n": 21,
+            "wins": 6,
+            "losses": 15,
+            "wr": 28.6,
+            "pnl": 1170.0,
+            "avg_r": 0.279,
+            "exp_r": 0.279,
+            "max_dd": -920.0,
+            "pf": 1.34
+          },
+          "skip_30pct": {
+            "n": 13,
+            "wins": 1,
+            "losses": 12,
+            "wr": 7.7,
+            "pnl": -1600.0,
+            "avg_r": -0.615,
+            "exp_r": -0.615,
+            "max_dd": -2200.0,
+            "pf": 0.33
+          },
+          "sl_widen_20pct": {
+            "n": 21,
+            "wins": 6,
+            "losses": 15,
+            "wr": 28.6,
+            "pnl": 1200.0,
+            "avg_r": 0.286,
+            "exp_r": 0.286,
+            "max_dd": -960.0,
+            "pf": 1.33
+          }
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 9.0,
+          "p5_R": -6.0,
+          "p95_R": 24.0,
+          "mean_R": 8.925,
+          "prob_profit": 77.2,
+          "prob_ruin_10R": 6.0,
+          "median_maxDD_R": -6.0,
+          "p5_maxDD_R": -12.05
+        },
+        "verdict": "SURVIVES",
+        "wf_green": 3,
+        "wf_n": 4,
+        "score": 35.96,
+        "strategy": "cta_10_40",
+        "tf": "15m",
+        "role": "lab_winner_and_current_live"
+      },
+      {
+        "label": "fib_liq@5m",
+        "entries": 26,
+        "full": {
+          "n": 22,
+          "wins": 4,
+          "losses": 18,
+          "wr": 18.2,
+          "pnl": -400.0,
+          "avg_r": -0.091,
+          "exp_r": -0.091,
+          "max_dd": -1800.0,
+          "pf": 0.89
+        },
+        "oos": {
+          "n": 7,
+          "wins": 1,
+          "losses": 6,
+          "wr": 14.3,
+          "pnl": -400.0,
+          "avg_r": -0.286,
+          "exp_r": -0.286,
+          "max_dd": -1000.0,
+          "pf": 0.67
+        },
+        "walk_forward": [
+          {
+            "fold": 1,
+            "train": {
+              "n": 8,
+              "wins": 2,
+              "losses": 6,
+              "wr": 25.0,
+              "pnl": 400.0,
+              "avg_r": 0.25,
+              "exp_r": 0.25,
+              "max_dd": -600.0,
+              "pf": 1.33
+            },
+            "oos": {
+              "n": 3,
+              "wins": 0,
+              "losses": 3,
+              "wr": 0.0,
+              "pnl": -600.0,
+              "avg_r": -1.0,
+              "exp_r": -1.0,
+              "max_dd": -600.0,
+              "pf": 0.0
+            }
+          },
+          {
+            "fold": 2,
+            "train": {
+              "n": 11,
+              "wins": 2,
+              "losses": 9,
+              "wr": 18.2,
+              "pnl": -200.0,
+              "avg_r": -0.091,
+              "exp_r": -0.091,
+              "max_dd": -1000.0,
+              "pf": 0.89
+            },
+            "oos": {
+              "n": 4,
+              "wins": 1,
+              "losses": 3,
+              "wr": 25.0,
+              "pnl": 200.0,
+              "avg_r": 0.25,
+              "exp_r": 0.25,
+              "max_dd": -400.0,
+              "pf": 1.33
+            }
+          },
+          {
+            "fold": 3,
+            "train": {
+              "n": 15,
+              "wins": 3,
+              "losses": 12,
+              "wr": 20.0,
+              "pnl": 0.0,
+              "avg_r": 0.0,
+              "exp_r": 0.0,
+              "max_dd": -1200.0,
+              "pf": 1.0
+            },
+            "oos": {
+              "n": 3,
+              "wins": 0,
+              "losses": 3,
+              "wr": 0.0,
+              "pnl": -600.0,
+              "avg_r": -1.0,
+              "exp_r": -1.0,
+              "max_dd": -600.0,
+              "pf": 0.0
+            }
+          },
+          {
+            "fold": 4,
+            "train": {
+              "n": 18,
+              "wins": 3,
+              "losses": 15,
+              "wr": 16.7,
+              "pnl": -600.0,
+              "avg_r": -0.167,
+              "exp_r": -0.167,
+              "max_dd": -1400.0,
+              "pf": 0.8
+            },
+            "oos": {
+              "n": 4,
+              "wins": 1,
+              "losses": 3,
+              "wr": 25.0,
+              "pnl": 200.0,
+              "avg_r": 0.25,
+              "exp_r": 0.25,
+              "max_dd": -400.0,
+              "pf": 1.33
+            }
+          }
+        ],
+        "torture": {
+          "spread_0.15R": {
+            "n": 22,
+            "wins": 4,
+            "losses": 18,
+            "wr": 18.2,
+            "pnl": -1060.0,
+            "avg_r": -0.241,
+            "exp_r": -0.241,
+            "max_dd": -2220.0,
+            "pf": 0.74
+          },
+          "skip_30pct": {
+            "n": 13,
+            "wins": 3,
+            "losses": 10,
+            "wr": 23.1,
+            "pnl": 400.0,
+            "avg_r": 0.154,
+            "exp_r": 0.154,
+            "max_dd": -1000.0,
+            "pf": 1.2
+          },
+          "sl_widen_20pct": {
+            "n": 22,
+            "wins": 4,
+            "losses": 18,
+            "wr": 18.2,
+            "pnl": -1120.0,
+            "avg_r": -0.255,
+            "exp_r": -0.255,
+            "max_dd": -2320.0,
+            "pf": 0.74
+          }
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": -2.0,
+          "p5_R": -17.0,
+          "p95_R": 13.0,
+          "mean_R": -2.27,
+          "prob_profit": 35.9,
+          "prob_ruin_10R": 30.4,
+          "median_maxDD_R": -9.0,
+          "p5_maxDD_R": -17.0
+        },
+        "verdict": "DEAD",
+        "wf_green": 2,
+        "wf_n": 4,
+        "score": -23.155,
+        "strategy": "fib_liq",
+        "tf": "5m",
+        "role": "prior_live_on_5m"
+      },
+      {
+        "label": "overlap_fresh_reentry@5m",
+        "entries": 4,
+        "full": {
+          "n": 4,
+          "wins": 0,
+          "losses": 4,
+          "wr": 0.0,
+          "pnl": -800.0,
+          "avg_r": -1.0,
+          "exp_r": -1.0,
+          "max_dd": -800.0,
+          "pf": 0.0
+        },
+        "oos": {
+          "n": 3,
+          "wins": 0,
+          "losses": 3,
+          "wr": 0.0,
+          "pnl": -600.0,
+          "avg_r": -1.0,
+          "exp_r": -1.0,
+          "max_dd": -600.0,
+          "pf": 0.0
+        },
+        "walk_forward": [
+          {
+            "fold": 1,
+            "train": {
+              "n": 1,
+              "wins": 0,
+              "losses": 1,
+              "wr": 0.0,
+              "pnl": -200.0,
+              "avg_r": -1.0,
+              "exp_r": -1.0,
+              "max_dd": -200.0,
+              "pf": 0.0
+            },
+            "oos": {
+              "n": 0,
+              "wins": 0,
+              "losses": 0,
+              "wr": 0.0,
+              "pnl": 0.0,
+              "avg_r": 0.0,
+              "exp_r": 0.0,
+              "max_dd": 0.0,
+              "pf": 0.0
+            }
+          },
+          {
+            "fold": 2,
+            "train": {
+              "n": 1,
+              "wins": 0,
+              "losses": 1,
+              "wr": 0.0,
+              "pnl": -200.0,
+              "avg_r": -1.0,
+              "exp_r": -1.0,
+              "max_dd": -200.0,
+              "pf": 0.0
+            },
+            "oos": {
+              "n": 0,
+              "wins": 0,
+              "losses": 0,
+              "wr": 0.0,
+              "pnl": 0.0,
+              "avg_r": 0.0,
+              "exp_r": 0.0,
+              "max_dd": 0.0,
+              "pf": 0.0
+            }
+          },
+          {
+            "fold": 3,
+            "train": {
+              "n": 1,
+              "wins": 0,
+              "losses": 1,
+              "wr": 0.0,
+              "pnl": -200.0,
+              "avg_r": -1.0,
+              "exp_r": -1.0,
+              "max_dd": -200.0,
+              "pf": 0.0
+            },
+            "oos": {
+              "n": 3,
+              "wins": 0,
+              "losses": 3,
+              "wr": 0.0,
+              "pnl": -600.0,
+              "avg_r": -1.0,
+              "exp_r": -1.0,
+              "max_dd": -600.0,
+              "pf": 0.0
+            }
+          },
+          {
+            "fold": 4,
+            "train": {
+              "n": 4,
+              "wins": 0,
+              "losses": 4,
+              "wr": 0.0,
+              "pnl": -800.0,
+              "avg_r": -1.0,
+              "exp_r": -1.0,
+              "max_dd": -800.0,
+              "pf": 0.0
+            },
+            "oos": {
+              "n": 0,
+              "wins": 0,
+              "losses": 0,
+              "wr": 0.0,
+              "pnl": 0.0,
+              "avg_r": 0.0,
+              "exp_r": 0.0,
+              "max_dd": 0.0,
+              "pf": 0.0
+            }
+          }
+        ],
+        "torture": {
+          "spread_0.15R": {
+            "n": 4,
+            "wins": 0,
+            "losses": 4,
+            "wr": 0.0,
+            "pnl": -920.0,
+            "avg_r": -1.15,
+            "exp_r": -1.15,
+            "max_dd": -920.0,
+            "pf": 0.0
+          },
+          "skip_30pct": {
+            "n": 2,
+            "wins": 0,
+            "losses": 2,
+            "wr": 0.0,
+            "pnl": -400.0,
+            "avg_r": -1.0,
+            "exp_r": -1.0,
+            "max_dd": -400.0,
+            "pf": 0.0
+          },
+          "sl_widen_20pct": {
+            "n": 4,
+            "wins": 0,
+            "losses": 4,
+            "wr": 0.0,
+            "pnl": -960.0,
+            "avg_r": -1.2,
+            "exp_r": -1.2,
+            "max_dd": -960.0,
+            "pf": 0.0
+          }
+        },
+        "monte_carlo": {
+          "paths": 0,
+          "note": "too_few_trades"
+        },
+        "verdict": "DEAD",
+        "wf_green": 0,
+        "wf_n": 4,
+        "score": -42.1,
+        "strategy": "overlap_fresh_reentry",
+        "tf": "5m",
+        "role": "overlap_package"
+      }
+    ],
+    "winner": {
+      "strategy": "fib_liq",
+      "tf": "15m",
+      "role": "prior_live_brain",
+      "verdict": "FRAGILE",
+      "score": 52.55
+    }
+  },
+  "audusd": {
+    "rr": 1.5,
+    "current_live": {
+      "label": "bb_1.5@15m",
+      "entries": 80,
+      "full": {
+        "n": 57,
+        "wins": 20,
+        "losses": 37,
+        "wr": 35.1,
+        "pnl": -1400.0,
+        "avg_r": -0.123,
+        "exp_r": -0.123,
+        "max_dd": -3500.0,
+        "pf": 0.81
+      },
+      "oos": {
+        "n": 17,
+        "wins": 3,
+        "losses": 14,
+        "wr": 17.6,
+        "pnl": -1900.0,
+        "avg_r": -0.559,
+        "exp_r": -0.559,
+        "max_dd": -2300.0,
+        "pf": 0.32
+      },
+      "walk_forward": [
+        {
+          "fold": 1,
+          "train": {
+            "n": 24,
+            "wins": 12,
+            "losses": 12,
+            "wr": 50.0,
+            "pnl": 1200.0,
+            "avg_r": 0.25,
+            "exp_r": 0.25,
+            "max_dd": -800.0,
+            "pf": 1.5
+          },
+          "oos": {
+            "n": 9,
+            "wins": 4,
+            "losses": 5,
+            "wr": 44.4,
+            "pnl": 200.0,
+            "avg_r": 0.111,
+            "exp_r": 0.111,
+            "max_dd": -400.0,
+            "pf": 1.2
+          }
+        },
+        {
+          "fold": 2,
+          "train": {
+            "n": 33,
+            "wins": 16,
+            "losses": 17,
+            "wr": 48.5,
+            "pnl": 1400.0,
+            "avg_r": 0.212,
+            "exp_r": 0.212,
+            "max_dd": -800.0,
+            "pf": 1.41
+          },
+          "oos": {
+            "n": 7,
+            "wins": 1,
+            "losses": 6,
+            "wr": 14.3,
+            "pnl": -900.0,
+            "avg_r": -0.643,
+            "exp_r": -0.643,
+            "max_dd": -900.0,
+            "pf": 0.25
+          }
+        },
+        {
+          "fold": 3,
+          "train": {
+            "n": 40,
+            "wins": 17,
+            "losses": 23,
+            "wr": 42.5,
+            "pnl": 500.0,
+            "avg_r": 0.062,
+            "exp_r": 0.062,
+            "max_dd": -1300.0,
+            "pf": 1.11
+          },
+          "oos": {
+            "n": 9,
+            "wins": 2,
+            "losses": 7,
+            "wr": 22.2,
+            "pnl": -800.0,
+            "avg_r": -0.444,
+            "exp_r": -0.444,
+            "max_dd": -900.0,
+            "pf": 0.43
+          }
+        },
+        {
+          "fold": 4,
+          "train": {
+            "n": 49,
+            "wins": 19,
+            "losses": 30,
+            "wr": 38.8,
+            "pnl": -300.0,
+            "avg_r": -0.031,
+            "exp_r": -0.031,
+            "max_dd": -2100.0,
+            "pf": 0.95
+          },
+          "oos": {
+            "n": 8,
+            "wins": 1,
+            "losses": 7,
+            "wr": 12.5,
+            "pnl": -1100.0,
+            "avg_r": -0.688,
+            "exp_r": -0.688,
+            "max_dd": -1400.0,
+            "pf": 0.21
+          }
+        }
+      ],
+      "torture": {
+        "spread_0.15R": {
+          "n": 57,
+          "wins": 20,
+          "losses": 37,
+          "wr": 35.1,
+          "pnl": -3110.0,
+          "avg_r": -0.273,
+          "exp_r": -0.273,
+          "max_dd": -4390.0,
+          "pf": 0.63
+        },
+        "skip_30pct": {
+          "n": 35,
+          "wins": 11,
+          "losses": 24,
+          "wr": 31.4,
+          "pnl": -1500.0,
+          "avg_r": -0.214,
+          "exp_r": -0.214,
+          "max_dd": -3000.0,
+          "pf": 0.69
+        },
+        "sl_widen_20pct": {
+          "n": 57,
+          "wins": 20,
+          "losses": 37,
+          "wr": 35.1,
+          "pnl": -2880.0,
+          "avg_r": -0.253,
+          "exp_r": -0.253,
+          "max_dd": -4380.0,
+          "pf": 0.68
+        }
+      },
+      "monte_carlo": {
+        "paths": 2000,
+        "median_R": -7.0,
+        "p5_R": -22.0,
+        "p95_R": 8.0,
+        "mean_R": -6.526,
+        "prob_profit": 25.9,
+        "prob_ruin_10R": 48.4,
+        "median_maxDD_R": -12.5,
+        "p5_maxDD_R": -24.0
+      },
+      "verdict": "DEAD",
+      "wf_green": 1,
+      "wf_n": 4,
+      "score": -26.98,
+      "strategy": "bb_1.5",
+      "tf": "15m",
+      "role": "current_live"
+    },
+    "best_alternative": {
+      "label": "bb_2.5@3m",
+      "entries": 6,
+      "full": {
+        "n": 5,
+        "wins": 4,
+        "losses": 1,
+        "wr": 80.0,
+        "pnl": 1000.0,
+        "avg_r": 1.0,
+        "exp_r": 1.0,
+        "max_dd": -200.0,
+        "pf": 6.0
+      },
+      "oos": {
+        "n": 2,
+        "wins": 2,
+        "losses": 0,
+        "wr": 100.0,
+        "pnl": 600.0,
+        "avg_r": 1.5,
+        "exp_r": 1.5,
+        "max_dd": 0.0,
+        "pf": 600000000000.0
+      },
+      "walk_forward": [
+        {
+          "fold": 1,
+          "train": {
+            "n": 1,
+            "wins": 0,
+            "losses": 1,
+            "wr": 0.0,
+            "pnl": -200.0,
+            "avg_r": -1.0,
+            "exp_r": -1.0,
+            "max_dd": -200.0,
+            "pf": 0.0
+          },
+          "oos": {
+            "n": 1,
+            "wins": 1,
+            "losses": 0,
+            "wr": 100.0,
+            "pnl": 300.0,
+            "avg_r": 1.5,
+            "exp_r": 1.5,
+            "max_dd": 0.0,
+            "pf": 300000000000.0
+          }
+        },
+        {
+          "fold": 2,
+          "train": {
+            "n": 2,
+            "wins": 1,
+            "losses": 1,
+            "wr": 50.0,
+            "pnl": 100.0,
+            "avg_r": 0.25,
+            "exp_r": 0.25,
+            "max_dd": -200.0,
+            "pf": 1.5
+          },
+          "oos": {
+            "n": 1,
+            "wins": 1,
+            "losses": 0,
+            "wr": 100.0,
+            "pnl": 300.0,
+            "avg_r": 1.5,
+            "exp_r": 1.5,
+            "max_dd": 0.0,
+            "pf": 300000000000.0
+          }
+        },
+        {
+          "fold": 3,
+          "train": {
+            "n": 3,
+            "wins": 2,
+            "losses": 1,
+            "wr": 66.7,
+            "pnl": 400.0,
+            "avg_r": 0.667,
+            "exp_r": 0.667,
+            "max_dd": -200.0,
+            "pf": 3.0
+          },
+          "oos": {
+            "n": 2,
+            "wins": 2,
+            "losses": 0,
+            "wr": 100.0,
+            "pnl": 600.0,
+            "avg_r": 1.5,
+            "exp_r": 1.5,
+            "max_dd": 0.0,
+            "pf": 600000000000.0
+          }
+        },
+        {
+          "fold": 4,
+          "train": {
+            "n": 5,
+            "wins": 4,
+            "losses": 1,
+            "wr": 80.0,
+            "pnl": 1000.0,
+            "avg_r": 1.0,
+            "exp_r": 1.0,
+            "max_dd": -200.0,
+            "pf": 6.0
+          },
+          "oos": {
+            "n": 0,
+            "wins": 0,
+            "losses": 0,
+            "wr": 0.0,
+            "pnl": 0.0,
+            "avg_r": 0.0,
+            "exp_r": 0.0,
+            "max_dd": 0.0,
+            "pf": 0.0
+          }
+        }
+      ],
+      "torture": {
+        "spread_0.15R": {
+          "n": 5,
+          "wins": 4,
+          "losses": 1,
+          "wr": 80.0,
+          "pnl": 850.0,
+          "avg_r": 0.85,
+          "exp_r": 0.85,
+          "max_dd": -230.0,
+          "pf": 4.7
+        },
+        "skip_30pct": {
+          "n": 3,
+          "wins": 2,
+          "losses": 1,
+          "wr": 66.7,
+          "pnl": 400.0,
+          "avg_r": 0.667,
+          "exp_r": 0.667,
+          "max_dd": -200.0,
+          "pf": 3.0
+        },
+        "sl_widen_20pct": {
+          "n": 5,
+          "wins": 4,
+          "losses": 1,
+          "wr": 80.0,
+          "pnl": 960.0,
+          "avg_r": 0.96,
+          "exp_r": 0.96,
+          "max_dd": -240.0,
+          "pf": 5.0
+        }
+      },
+      "monte_carlo": {
+        "paths": 2000,
+        "median_R": 5.0,
+        "p5_R": 0.0,
+        "p95_R": 7.5,
+        "mean_R": 4.973,
+        "prob_profit": 94.5,
+        "prob_ruin_10R": 0.0,
+        "median_maxDD_R": -1.0,
+        "p5_maxDD_R": -2.0
+      },
+      "verdict": "SURVIVES",
+      "wf_green": 3,
+      "wf_n": 4,
+      "score": 72.725,
+      "strategy": "bb_2.5",
+      "tf": "3m",
+      "role": "candidate"
+    },
+    "top10": [
+      {
+        "label": "bb_2.5@3m",
+        "entries": 6,
+        "full": {
+          "n": 5,
+          "wins": 4,
+          "losses": 1,
+          "wr": 80.0,
+          "pnl": 1000.0,
+          "avg_r": 1.0,
+          "exp_r": 1.0,
+          "max_dd": -200.0,
+          "pf": 6.0
+        },
+        "oos": {
+          "n": 2,
+          "wins": 2,
+          "losses": 0,
+          "wr": 100.0,
+          "pnl": 600.0,
+          "avg_r": 1.5,
+          "exp_r": 1.5,
+          "max_dd": 0.0,
+          "pf": 600000000000.0
+        },
+        "walk_forward": [
+          {
+            "fold": 1,
+            "train": {
+              "n": 1,
+              "wins": 0,
+              "losses": 1,
+              "wr": 0.0,
+              "pnl": -200.0,
+              "avg_r": -1.0,
+              "exp_r": -1.0,
+              "max_dd": -200.0,
+              "pf": 0.0
+            },
+            "oos": {
+              "n": 1,
+              "wins": 1,
+              "losses": 0,
+              "wr": 100.0,
+              "pnl": 300.0,
+              "avg_r": 1.5,
+              "exp_r": 1.5,
+              "max_dd": 0.0,
+              "pf": 300000000000.0
+            }
+          },
+          {
+            "fold": 2,
+            "train": {
+              "n": 2,
+              "wins": 1,
+              "losses": 1,
+              "wr": 50.0,
+              "pnl": 100.0,
+              "avg_r": 0.25,
+              "exp_r": 0.25,
+              "max_dd": -200.0,
+              "pf": 1.5
+            },
+            "oos": {
+              "n": 1,
+              "wins": 1,
+              "losses": 0,
+              "wr": 100.0,
+              "pnl": 300.0,
+              "avg_r": 1.5,
+              "exp_r": 1.5,
+              "max_dd": 0.0,
+              "pf": 300000000000.0
+            }
+          },
+          {
+            "fold": 3,
+            "train": {
+              "n": 3,
+              "wins": 2,
+              "losses": 1,
+              "wr": 66.7,
+              "pnl": 400.0,
+              "avg_r": 0.667,
+              "exp_r": 0.667,
+              "max_dd": -200.0,
+              "pf": 3.0
+            },
+            "oos": {
+              "n": 2,
+              "wins": 2,
+              "losses": 0,
+              "wr": 100.0,
+              "pnl": 600.0,
+              "avg_r": 1.5,
+              "exp_r": 1.5,
+              "max_dd": 0.0,
+              "pf": 600000000000.0
+            }
+          },
+          {
+            "fold": 4,
+            "train": {
+              "n": 5,
+              "wins": 4,
+              "losses": 1,
+              "wr": 80.0,
+              "pnl": 1000.0,
+              "avg_r": 1.0,
+              "exp_r": 1.0,
+              "max_dd": -200.0,
+              "pf": 6.0
+            },
+            "oos": {
+              "n": 0,
+              "wins": 0,
+              "losses": 0,
+              "wr": 0.0,
+              "pnl": 0.0,
+              "avg_r": 0.0,
+              "exp_r": 0.0,
+              "max_dd": 0.0,
+              "pf": 0.0
+            }
+          }
+        ],
+        "torture": {
+          "spread_0.15R": {
+            "n": 5,
+            "wins": 4,
+            "losses": 1,
+            "wr": 80.0,
+            "pnl": 850.0,
+            "avg_r": 0.85,
+            "exp_r": 0.85,
+            "max_dd": -230.0,
+            "pf": 4.7
+          },
+          "skip_30pct": {
+            "n": 3,
+            "wins": 2,
+            "losses": 1,
+            "wr": 66.7,
+            "pnl": 400.0,
+            "avg_r": 0.667,
+            "exp_r": 0.667,
+            "max_dd": -200.0,
+            "pf": 3.0
+          },
+          "sl_widen_20pct": {
+            "n": 5,
+            "wins": 4,
+            "losses": 1,
+            "wr": 80.0,
+            "pnl": 960.0,
+            "avg_r": 0.96,
+            "exp_r": 0.96,
+            "max_dd": -240.0,
+            "pf": 5.0
+          }
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 5.0,
+          "p5_R": 0.0,
+          "p95_R": 7.5,
+          "mean_R": 4.973,
+          "prob_profit": 94.5,
+          "prob_ruin_10R": 0.0,
+          "median_maxDD_R": -1.0,
+          "p5_maxDD_R": -2.0
+        },
+        "verdict": "SURVIVES",
+        "wf_green": 3,
+        "wf_n": 4,
+        "score": 72.725,
+        "strategy": "bb_2.5",
+        "tf": "3m",
+        "role": "candidate"
+      },
+      {
+        "label": "ema_pull@3m",
+        "entries": 145,
+        "full": {
+          "n": 95,
+          "wins": 44,
+          "losses": 51,
+          "wr": 46.3,
+          "pnl": 3000.0,
+          "avg_r": 0.158,
+          "exp_r": 0.158,
+          "max_dd": -1900.0,
+          "pf": 1.29
+        },
+        "oos": {
+          "n": 22,
+          "wins": 16,
+          "losses": 6,
+          "wr": 72.7,
+          "pnl": 3600.0,
+          "avg_r": 0.818,
+          "exp_r": 0.818,
+          "max_dd": -500.0,
+          "pf": 4.0
+        },
+        "walk_forward": [
+          {
+            "fold": 1,
+            "train": {
+              "n": 41,
+              "wins": 18,
+              "losses": 23,
+              "wr": 43.9,
+              "pnl": 800.0,
+              "avg_r": 0.098,
+              "exp_r": 0.098,
+              "max_dd": -1500.0,
+              "pf": 1.17
+            },
+            "oos": {
+              "n": 18,
+              "wins": 6,
+              "losses": 12,
+              "wr": 33.3,
+              "pnl": -600.0,
+              "avg_r": -0.167,
+              "exp_r": -0.167,
+              "max_dd": -1700.0,
+              "pf": 0.75
+            }
+          },
+          {
+            "fold": 2,
+            "train": {
+              "n": 59,
+              "wins": 24,
+              "losses": 35,
+              "wr": 40.7,
+              "pnl": 200.0,
+              "avg_r": 0.017,
+              "exp_r": 0.017,
+              "max_dd": -1700.0,
+              "pf": 1.03
+            },
+            "oos": {
+              "n": 13,
+              "wins": 4,
+              "losses": 9,
+              "wr": 30.8,
+              "pnl": -600.0,
+              "avg_r": -0.231,
+              "exp_r": -0.231,
+              "max_dd": -700.0,
+              "pf": 0.67
+            }
+          },
+          {
+            "fold": 3,
+            "train": {
+              "n": 72,
+              "wins": 28,
+              "losses": 44,
+              "wr": 38.9,
+              "pnl": -400.0,
+              "avg_r": -0.028,
+              "exp_r": -0.028,
+              "max_dd": -1700.0,
+              "pf": 0.95
+            },
+            "oos": {
+              "n": 12,
+              "wins": 9,
+              "losses": 3,
+              "wr": 75.0,
+              "pnl": 2100.0,
+              "avg_r": 0.875,
+              "exp_r": 0.875,
+              "max_dd": -400.0,
+              "pf": 4.5
+            }
+          },
+          {
+            "fold": 4,
+            "train": {
+              "n": 85,
+              "wins": 37,
+              "losses": 48,
+              "wr": 43.5,
+              "pnl": 1500.0,
+              "avg_r": 0.088,
+              "exp_r": 0.088,
+              "max_dd": -1900.0,
+              "pf": 1.16
+            },
+            "oos": {
+              "n": 14,
+              "wins": 9,
+              "losses": 5,
+              "wr": 64.3,
+              "pnl": 1700.0,
+              "avg_r": 0.607,
+              "exp_r": 0.607,
+              "max_dd": -600.0,
+              "pf": 2.7
+            }
+          }
+        ],
+        "torture": {
+          "spread_0.15R": {
+            "n": 95,
+            "wins": 44,
+            "losses": 51,
+            "wr": 46.3,
+            "pnl": 150.0,
+            "avg_r": 0.008,
+            "exp_r": 0.008,
+            "max_dd": -2990.0,
+            "pf": 1.01
+          },
+          "skip_30pct": {
+            "n": 63,
+            "wins": 30,
+            "losses": 33,
+            "wr": 47.6,
+            "pnl": 2400.0,
+            "avg_r": 0.19,
+            "exp_r": 0.19,
+            "max_dd": -900.0,
+            "pf": 1.36
+          },
+          "sl_widen_20pct": {
+            "n": 95,
+            "wins": 44,
+            "losses": 51,
+            "wr": 46.3,
+            "pnl": 960.0,
+            "avg_r": 0.051,
+            "exp_r": 0.051,
+            "max_dd": -2700.0,
+            "pf": 1.08
+          }
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 15.0,
+          "p5_R": -5.0,
+          "p95_R": 35.0,
+          "mean_R": 15.419,
+          "prob_profit": 87.6,
+          "prob_ruin_10R": 7.8,
+          "median_maxDD_R": -8.5,
+          "p5_maxDD_R": -16.0
+        },
+        "verdict": "SURVIVES",
+        "wf_green": 2,
+        "wf_n": 4,
+        "score": 64.33,
+        "strategy": "ema_pull",
+        "tf": "3m",
+        "role": "candidate"
+      },
+      {
+        "label": "ema_tight@1m",
+        "entries": 47,
+        "full": {
+          "n": 41,
+          "wins": 21,
+          "losses": 20,
+          "wr": 51.2,
+          "pnl": 2300.0,
+          "avg_r": 0.28,
+          "exp_r": 0.28,
+          "max_dd": -800.0,
+          "pf": 1.57
+        },
+        "oos": {
+          "n": 11,
+          "wins": 7,
+          "losses": 4,
+          "wr": 63.6,
+          "pnl": 1300.0,
+          "avg_r": 0.591,
+          "exp_r": 0.591,
+          "max_dd": -400.0,
+          "pf": 2.62
+        },
+        "walk_forward": [
+          {
+            "fold": 1,
+            "train": {
+              "n": 18,
+              "wins": 9,
+              "losses": 9,
+              "wr": 50.0,
+              "pnl": 900.0,
+              "avg_r": 0.25,
+              "exp_r": 0.25,
+              "max_dd": -800.0,
+              "pf": 1.5
+            },
+            "oos": {
+              "n": 7,
+              "wins": 3,
+              "losses": 4,
+              "wr": 42.9,
+              "pnl": 100.0,
+              "avg_r": 0.071,
+              "exp_r": 0.071,
+              "max_dd": -400.0,
+              "pf": 1.12
+            }
+          },
+          {
+            "fold": 2,
+            "train": {
+              "n": 25,
+              "wins": 12,
+              "losses": 13,
+              "wr": 48.0,
+              "pnl": 1000.0,
+              "avg_r": 0.2,
+              "exp_r": 0.2,
+              "max_dd": -800.0,
+              "pf": 1.38
+            },
+            "oos": {
+              "n": 5,
+              "wins": 2,
+              "losses": 3,
+              "wr": 40.0,
+              "pnl": 0.0,
+              "avg_r": 0.0,
+              "exp_r": 0.0,
+              "max_dd": -600.0,
+              "pf": 1.0
+            }
+          },
+          {
+            "fold": 3,
+            "train": {
+              "n": 30,
+              "wins": 14,
+              "losses": 16,
+              "wr": 46.7,
+              "pnl": 1000.0,
+              "avg_r": 0.167,
+              "exp_r": 0.167,
+              "max_dd": -800.0,
+              "pf": 1.31
+            },
+            "oos": {
+              "n": 7,
+              "wins": 4,
+              "losses": 3,
+              "wr": 57.1,
+              "pnl": 600.0,
+              "avg_r": 0.429,
+              "exp_r": 0.429,
+              "max_dd": -200.0,
+              "pf": 2.0
+            }
+          },
+          {
+            "fold": 4,
+            "train": {
+              "n": 37,
+              "wins": 18,
+              "losses": 19,
+              "wr": 48.6,
+              "pnl": 1600.0,
+              "avg_r": 0.216,
+              "exp_r": 0.216,
+              "max_dd": -800.0,
+              "pf": 1.42
+            },
+            "oos": {
+              "n": 4,
+              "wins": 3,
+              "losses": 1,
+              "wr": 75.0,
+              "pnl": 700.0,
+              "avg_r": 0.875,
+              "exp_r": 0.875,
+              "max_dd": -200.0,
+              "pf": 4.5
+            }
+          }
+        ],
+        "torture": {
+          "spread_0.15R": {
+            "n": 41,
+            "wins": 21,
+            "losses": 20,
+            "wr": 51.2,
+            "pnl": 1070.0,
+            "avg_r": 0.13,
+            "exp_r": 0.13,
+            "max_dd": -1250.0,
+            "pf": 1.23
+          },
+          "skip_30pct": {
+            "n": 25,
+            "wins": 15,
+            "losses": 10,
+            "wr": 60.0,
+            "pnl": 2500.0,
+            "avg_r": 0.5,
+            "exp_r": 0.5,
+            "max_dd": -400.0,
+            "pf": 2.25
+          },
+          "sl_widen_20pct": {
+            "n": 41,
+            "wins": 21,
+            "losses": 20,
+            "wr": 51.2,
+            "pnl": 1500.0,
+            "avg_r": 0.183,
+            "exp_r": 0.183,
+            "max_dd": -1140.0,
+            "pf": 1.31
+          }
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 11.5,
+          "p5_R": -1.0,
+          "p95_R": 24.0,
+          "mean_R": 11.59,
+          "prob_profit": 91.8,
+          "prob_ruin_10R": 1.6,
+          "median_maxDD_R": -5.0,
+          "p5_maxDD_R": -10.0
+        },
+        "verdict": "SURVIVES",
+        "wf_green": 3,
+        "wf_n": 4,
+        "score": 53.465,
+        "strategy": "ema_tight",
+        "tf": "1m",
+        "role": "candidate"
+      },
+      {
+        "label": "stoch_20@3m",
+        "entries": 459,
+        "full": {
+          "n": 273,
+          "wins": 121,
+          "losses": 152,
+          "wr": 44.3,
+          "pnl": 5900.0,
+          "avg_r": 0.108,
+          "exp_r": 0.108,
+          "max_dd": -2600.0,
+          "pf": 1.19
+        },
+        "oos": {
+          "n": 77,
+          "wins": 35,
+          "losses": 42,
+          "wr": 45.5,
+          "pnl": 2100.0,
+          "avg_r": 0.136,
+          "exp_r": 0.136,
+          "max_dd": -900.0,
+          "pf": 1.25
+        },
+        "walk_forward": [
+          {
+            "fold": 1,
+            "train": {
+              "n": 114,
+              "wins": 48,
+              "losses": 66,
+              "wr": 42.1,
+              "pnl": 1200.0,
+              "avg_r": 0.053,
+              "exp_r": 0.053,
+              "max_dd": -2600.0,
+              "pf": 1.09
+            },
+            "oos": {
+              "n": 43,
+              "wins": 21,
+              "losses": 22,
+              "wr": 48.8,
+              "pnl": 1900.0,
+              "avg_r": 0.221,
+              "exp_r": 0.221,
+              "max_dd": -1200.0,
+              "pf": 1.43
+            }
+          },
+          {
+            "fold": 2,
+            "train": {
+              "n": 157,
+              "wins": 69,
+              "losses": 88,
+              "wr": 43.9,
+              "pnl": 3100.0,
+              "avg_r": 0.099,
+              "exp_r": 0.099,
+              "max_dd": -2600.0,
+              "pf": 1.18
+            },
+            "oos": {
+              "n": 39,
+              "wins": 17,
+              "losses": 22,
+              "wr": 43.6,
+              "pnl": 700.0,
+              "avg_r": 0.09,
+              "exp_r": 0.09,
+              "max_dd": -1000.0,
+              "pf": 1.16
+            }
+          },
+          {
+            "fold": 3,
+            "train": {
+              "n": 196,
+              "wins": 86,
+              "losses": 110,
+              "wr": 43.9,
+              "pnl": 3800.0,
+              "avg_r": 0.097,
+              "exp_r": 0.097,
+              "max_dd": -2600.0,
+              "pf": 1.17
+            },
+            "oos": {
+              "n": 38,
+              "wins": 16,
+              "losses": 22,
+              "wr": 42.1,
+              "pnl": 400.0,
+              "avg_r": 0.053,
+              "exp_r": 0.053,
+              "max_dd": -700.0,
+              "pf": 1.09
+            }
+          },
+          {
+            "fold": 4,
+            "train": {
+              "n": 234,
+              "wins": 102,
+              "losses": 132,
+              "wr": 43.6,
+              "pnl": 4200.0,
+              "avg_r": 0.09,
+              "exp_r": 0.09,
+              "max_dd": -2600.0,
+              "pf": 1.16
+            },
+            "oos": {
+              "n": 39,
+              "wins": 19,
+              "losses": 20,
+              "wr": 48.7,
+              "pnl": 1700.0,
+              "avg_r": 0.218,
+              "exp_r": 0.218,
+              "max_dd": -900.0,
+              "pf": 1.43
+            }
+          }
+        ],
+        "torture": {
+          "spread_0.15R": {
+            "n": 273,
+            "wins": 121,
+            "losses": 152,
+            "wr": 44.3,
+            "pnl": -2290.0,
+            "avg_r": -0.042,
+            "exp_r": -0.042,
+            "max_dd": -4490.0,
+            "pf": 0.93
+          },
+          "skip_30pct": {
+            "n": 181,
+            "wins": 78,
+            "losses": 103,
+            "wr": 43.1,
+            "pnl": 2800.0,
+            "avg_r": 0.077,
+            "exp_r": 0.077,
+            "max_dd": -2000.0,
+            "pf": 1.14
+          },
+          "sl_widen_20pct": {
+            "n": 273,
+            "wins": 121,
+            "losses": 152,
+            "wr": 44.3,
+            "pnl": -180.0,
+            "avg_r": -0.003,
+            "exp_r": -0.003,
+            "max_dd": -4320.0,
+            "pf": 1.0
+          }
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 29.5,
+          "p5_R": -5.5,
+          "p95_R": 64.5,
+          "mean_R": 28.891,
+          "prob_profit": 91.5,
+          "prob_ruin_10R": 21.2,
+          "median_maxDD_R": -14.5,
+          "p5_maxDD_R": -27.5
+        },
+        "verdict": "SURVIVES",
+        "wf_green": 4,
+        "wf_n": 4,
+        "score": 52.975,
+        "strategy": "stoch_20",
+        "tf": "3m",
+        "role": "candidate"
+      },
+      {
+        "label": "cta_10_40@3m",
+        "entries": 210,
+        "full": {
+          "n": 145,
+          "wins": 65,
+          "losses": 80,
+          "wr": 44.8,
+          "pnl": 3500.0,
+          "avg_r": 0.121,
+          "exp_r": 0.121,
+          "max_dd": -2000.0,
+          "pf": 1.22
+        },
+        "oos": {
+          "n": 36,
+          "wins": 16,
+          "losses": 20,
+          "wr": 44.4,
+          "pnl": 800.0,
+          "avg_r": 0.111,
+          "exp_r": 0.111,
+          "max_dd": -1300.0,
+          "pf": 1.2
+        },
+        "walk_forward": [
+          {
+            "fold": 1,
+            "train": {
+              "n": 61,
+              "wins": 28,
+              "losses": 33,
+              "wr": 45.9,
+              "pnl": 1800.0,
+              "avg_r": 0.148,
+              "exp_r": 0.148,
+              "max_dd": -1000.0,
+              "pf": 1.27
+            },
+            "oos": {
+              "n": 25,
+              "wins": 12,
+              "losses": 13,
+              "wr": 48.0,
+              "pnl": 1000.0,
+              "avg_r": 0.2,
+              "exp_r": 0.2,
+              "max_dd": -1300.0,
+              "pf": 1.38
+            }
+          },
+          {
+            "fold": 2,
+            "train": {
+              "n": 86,
+              "wins": 40,
+              "losses": 46,
+              "wr": 46.5,
+              "pnl": 2800.0,
+              "avg_r": 0.163,
+              "exp_r": 0.163,
+              "max_dd": -1300.0,
+              "pf": 1.3
+            },
+            "oos": {
+              "n": 23,
+              "wins": 9,
+              "losses": 14,
+              "wr": 39.1,
+              "pnl": -100.0,
+              "avg_r": -0.022,
+              "exp_r": -0.022,
+              "max_dd": -1700.0,
+              "pf": 0.96
+            }
+          },
+          {
+            "fold": 3,
+            "train": {
+              "n": 109,
+              "wins": 49,
+              "losses": 60,
+              "wr": 45.0,
+              "pnl": 2700.0,
+              "avg_r": 0.124,
+              "exp_r": 0.124,
+              "max_dd": -2000.0,
+              "pf": 1.23
+            },
+            "oos": {
+              "n": 19,
+              "wins": 9,
+              "losses": 10,
+              "wr": 47.4,
+              "pnl": 700.0,
+              "avg_r": 0.184,
+              "exp_r": 0.184,
+              "max_dd": -800.0,
+              "pf": 1.35
+            }
+          },
+          {
+            "fold": 4,
+            "train": {
+              "n": 128,
+              "wins": 58,
+              "losses": 70,
+              "wr": 45.3,
+              "pnl": 3400.0,
+              "avg_r": 0.133,
+              "exp_r": 0.133,
+              "max_dd": -2000.0,
+              "pf": 1.24
+            },
+            "oos": {
+              "n": 16,
+              "wins": 6,
+              "losses": 10,
+              "wr": 37.5,
+              "pnl": -200.0,
+              "avg_r": -0.062,
+              "exp_r": -0.062,
+              "max_dd": -1300.0,
+              "pf": 0.9
+            }
+          }
+        ],
+        "torture": {
+          "spread_0.15R": {
+            "n": 145,
+            "wins": 65,
+            "losses": 80,
+            "wr": 44.8,
+            "pnl": -850.0,
+            "avg_r": -0.029,
+            "exp_r": -0.029,
+            "max_dd": -2950.0,
+            "pf": 0.95
+          },
+          "skip_30pct": {
+            "n": 93,
+            "wins": 43,
+            "losses": 50,
+            "wr": 46.2,
+            "pnl": 2900.0,
+            "avg_r": 0.156,
+            "exp_r": 0.156,
+            "max_dd": -1300.0,
+            "pf": 1.29
+          },
+          "sl_widen_20pct": {
+            "n": 145,
+            "wins": 65,
+            "losses": 80,
+            "wr": 44.8,
+            "pnl": 300.0,
+            "avg_r": 0.01,
+            "exp_r": 0.01,
+            "max_dd": -2760.0,
+            "pf": 1.02
+          }
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 17.5,
+          "p5_R": -7.5,
+          "p95_R": 42.5,
+          "mean_R": 17.88,
+          "prob_profit": 85.4,
+          "prob_ruin_10R": 14.9,
+          "median_maxDD_R": -11.0,
+          "p5_maxDD_R": -20.5
+        },
+        "verdict": "SURVIVES",
+        "wf_green": 2,
+        "wf_n": 4,
+        "score": 51.545,
+        "strategy": "cta_10_40",
+        "tf": "3m",
+        "role": "candidate"
+      },
+      {
+        "label": "bb_2.5@1m",
+        "entries": 5,
+        "full": {
+          "n": 5,
+          "wins": 3,
+          "losses": 2,
+          "wr": 60.0,
+          "pnl": 500.0,
+          "avg_r": 0.5,
+          "exp_r": 0.5,
+          "max_dd": -200.0,
+          "pf": 2.25
+        },
+        "oos": {
+          "n": 1,
+          "wins": 1,
+          "losses": 0,
+          "wr": 100.0,
+          "pnl": 300.0,
+          "avg_r": 1.5,
+          "exp_r": 1.5,
+          "max_dd": 0.0,
+          "pf": 300000000000.0
+        },
+        "walk_forward": [
+          {
+            "fold": 1,
+            "train": {
+              "n": 1,
+              "wins": 0,
+              "losses": 1,
+              "wr": 0.0,
+              "pnl": -200.0,
+              "avg_r": -1.0,
+              "exp_r": -1.0,
+              "max_dd": -200.0,
+              "pf": 0.0
+            },
+            "oos": {
+              "n": 1,
+              "wins": 1,
+              "losses": 0,
+              "wr": 100.0,
+              "pnl": 300.0,
+              "avg_r": 1.5,
+              "exp_r": 1.5,
+              "max_dd": 0.0,
+              "pf": 300000000000.0
+            }
+          },
+          {
+            "fold": 2,
+            "train": {
+              "n": 2,
+              "wins": 1,
+              "losses": 1,
+              "wr": 50.0,
+              "pnl": 100.0,
+              "avg_r": 0.25,
+              "exp_r": 0.25,
+              "max_dd": -200.0,
+              "pf": 1.5
+            },
+            "oos": {
+              "n": 2,
+              "wins": 1,
+              "losses": 1,
+              "wr": 50.0,
+              "pnl": 100.0,
+              "avg_r": 0.25,
+              "exp_r": 0.25,
+              "max_dd": -200.0,
+              "pf": 1.5
+            }
+          },
+          {
+            "fold": 3,
+            "train": {
+              "n": 4,
+              "wins": 2,
+              "losses": 2,
+              "wr": 50.0,
+              "pnl": 200.0,
+              "avg_r": 0.25,
+              "exp_r": 0.25,
+              "max_dd": -200.0,
+              "pf": 1.5
+            },
+            "oos": {
+              "n": 0,
+              "wins": 0,
+              "losses": 0,
+              "wr": 0.0,
+              "pnl": 0.0,
+              "avg_r": 0.0,
+              "exp_r": 0.0,
+              "max_dd": 0.0,
+              "pf": 0.0
+            }
+          },
+          {
+            "fold": 4,
+            "train": {
+              "n": 4,
+              "wins": 2,
+              "losses": 2,
+              "wr": 50.0,
+              "pnl": 200.0,
+              "avg_r": 0.25,
+              "exp_r": 0.25,
+              "max_dd": -200.0,
+              "pf": 1.5
+            },
+            "oos": {
+              "n": 1,
+              "wins": 1,
+              "losses": 0,
+              "wr": 100.0,
+              "pnl": 300.0,
+              "avg_r": 1.5,
+              "exp_r": 1.5,
+              "max_dd": 0.0,
+              "pf": 300000000000.0
+            }
+          }
+        ],
+        "torture": {
+          "spread_0.15R": {
+            "n": 5,
+            "wins": 3,
+            "losses": 2,
+            "wr": 60.0,
+            "pnl": 350.0,
+            "avg_r": 0.35,
+            "exp_r": 0.35,
+            "max_dd": -230.0,
+            "pf": 1.76
+          },
+          "skip_30pct": {
+            "n": 3,
+            "wins": 2,
+            "losses": 1,
+            "wr": 66.7,
+            "pnl": 400.0,
+            "avg_r": 0.667,
+            "exp_r": 0.667,
+            "max_dd": -200.0,
+            "pf": 3.0
+          },
+          "sl_widen_20pct": {
+            "n": 5,
+            "wins": 3,
+            "losses": 2,
+            "wr": 60.0,
+            "pnl": 420.0,
+            "avg_r": 0.42,
+            "exp_r": 0.42,
+            "max_dd": -240.0,
+            "pf": 1.88
+          }
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 2.5,
+          "p5_R": -2.5,
+          "p95_R": 7.5,
+          "mean_R": 2.514,
+          "prob_profit": 69.0,
+          "prob_ruin_10R": 0.0,
+          "median_maxDD_R": -1.0,
+          "p5_maxDD_R": -3.0
+        },
+        "verdict": "FRAGILE",
+        "wf_green": 3,
+        "wf_n": 4,
+        "score": 51.45,
+        "strategy": "bb_2.5",
+        "tf": "1m",
+        "role": "candidate"
+      },
+      {
+        "label": "rsi@15m",
+        "entries": 125,
+        "full": {
+          "n": 76,
+          "wins": 35,
+          "losses": 41,
+          "wr": 46.1,
+          "pnl": 2300.0,
+          "avg_r": 0.151,
+          "exp_r": 0.151,
+          "max_dd": -2100.0,
+          "pf": 1.28
+        },
+        "oos": {
+          "n": 27,
+          "wins": 14,
+          "losses": 13,
+          "wr": 51.9,
+          "pnl": 1600.0,
+          "avg_r": 0.296,
+          "exp_r": 0.296,
+          "max_dd": -1200.0,
+          "pf": 1.62
+        },
+        "walk_forward": [
+          {
+            "fold": 1,
+            "train": {
+              "n": 25,
+              "wins": 12,
+              "losses": 13,
+              "wr": 48.0,
+              "pnl": 1000.0,
+              "avg_r": 0.2,
+              "exp_r": 0.2,
+              "max_dd": -800.0,
+              "pf": 1.38
+            },
+            "oos": {
+              "n": 13,
+              "wins": 5,
+              "losses": 8,
+              "wr": 38.5,
+              "pnl": -100.0,
+              "avg_r": -0.038,
+              "exp_r": -0.038,
+              "max_dd": -1000.0,
+              "pf": 0.94
+            }
+          },
+          {
+            "fold": 2,
+            "train": {
+              "n": 39,
+              "wins": 18,
+              "losses": 21,
+              "wr": 46.2,
+              "pnl": 1200.0,
+              "avg_r": 0.154,
+              "exp_r": 0.154,
+              "max_dd": -1000.0,
+              "pf": 1.29
+            },
+            "oos": {
+              "n": 10,
+              "wins": 3,
+              "losses": 7,
+              "wr": 30.0,
+              "pnl": -500.0,
+              "avg_r": -0.25,
+              "exp_r": -0.25,
+              "max_dd": -1400.0,
+              "pf": 0.64
+            }
+          },
+          {
+            "fold": 3,
+            "train": {
+              "n": 49,
+              "wins": 21,
+              "losses": 28,
+              "wr": 42.9,
+              "pnl": 700.0,
+              "avg_r": 0.071,
+              "exp_r": 0.071,
+              "max_dd": -2100.0,
+              "pf": 1.12
+            },
+            "oos": {
+              "n": 12,
+              "wins": 5,
+              "losses": 7,
+              "wr": 41.7,
+              "pnl": 100.0,
+              "avg_r": 0.042,
+              "exp_r": 0.042,
+              "max_dd": -400.0,
+              "pf": 1.07
+            }
+          },
+          {
+            "fold": 4,
+            "train": {
+              "n": 61,
+              "wins": 26,
+              "losses": 35,
+              "wr": 42.6,
+              "pnl": 800.0,
+              "avg_r": 0.066,
+              "exp_r": 0.066,
+              "max_dd": -2100.0,
+              "pf": 1.11
+            },
+            "oos": {
+              "n": 15,
+              "wins": 9,
+              "losses": 6,
+              "wr": 60.0,
+              "pnl": 1500.0,
+              "avg_r": 0.5,
+              "exp_r": 0.5,
+              "max_dd": -1200.0,
+              "pf": 2.25
+            }
+          }
+        ],
+        "torture": {
+          "spread_0.15R": {
+            "n": 76,
+            "wins": 35,
+            "losses": 41,
+            "wr": 46.1,
+            "pnl": 20.0,
+            "avg_r": 0.001,
+            "exp_r": 0.001,
+            "max_dd": -2490.0,
+            "pf": 1.0
+          },
+          "skip_30pct": {
+            "n": 52,
+            "wins": 24,
+            "losses": 28,
+            "wr": 46.2,
+            "pnl": 1600.0,
+            "avg_r": 0.154,
+            "exp_r": 0.154,
+            "max_dd": -1300.0,
+            "pf": 1.29
+          },
+          "sl_widen_20pct": {
+            "n": 76,
+            "wins": 35,
+            "losses": 41,
+            "wr": 46.1,
+            "pnl": 660.0,
+            "avg_r": 0.043,
+            "exp_r": 0.043,
+            "max_dd": -2580.0,
+            "pf": 1.07
+          }
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 11.5,
+          "p5_R": -6.0,
+          "p95_R": 29.0,
+          "mean_R": 11.774,
+          "prob_profit": 86.1,
+          "prob_ruin_10R": 8.8,
+          "median_maxDD_R": -7.5,
+          "p5_maxDD_R": -16.0
+        },
+        "verdict": "SURVIVES",
+        "wf_green": 2,
+        "wf_n": 4,
+        "score": 49.305,
+        "strategy": "rsi",
+        "tf": "15m",
+        "role": "candidate"
+      },
+      {
+        "label": "bb_1.5@3m",
+        "entries": 303,
+        "full": {
+          "n": 220,
+          "wins": 94,
+          "losses": 126,
+          "wr": 42.7,
+          "pnl": 3000.0,
+          "avg_r": 0.068,
+          "exp_r": 0.068,
+          "max_dd": -2500.0,
+          "pf": 1.12
+        },
+        "oos": {
+          "n": 62,
+          "wins": 24,
+          "losses": 38,
+          "wr": 38.7,
+          "pnl": -400.0,
+          "avg_r": -0.032,
+          "exp_r": -0.032,
+          "max_dd": -2200.0,
+          "pf": 0.95
+        },
+        "walk_forward": [
+          {
+            "fold": 1,
+            "train": {
+              "n": 92,
+              "wins": 37,
+              "losses": 55,
+              "wr": 40.2,
+              "pnl": 100.0,
+              "avg_r": 0.005,
+              "exp_r": 0.005,
+              "max_dd": -2500.0,
+              "pf": 1.01
+            },
+            "oos": {
+              "n": 34,
+              "wins": 18,
+              "losses": 16,
+              "wr": 52.9,
+              "pnl": 2200.0,
+              "avg_r": 0.324,
+              "exp_r": 0.324,
+              "max_dd": -700.0,
+              "pf": 1.69
+            }
+          },
+          {
+            "fold": 2,
+            "train": {
+              "n": 126,
+              "wins": 55,
+              "losses": 71,
+              "wr": 43.7,
+              "pnl": 2300.0,
+              "avg_r": 0.091,
+              "exp_r": 0.091,
+              "max_dd": -2500.0,
+              "pf": 1.16
+            },
+            "oos": {
+              "n": 32,
+              "wins": 15,
+              "losses": 17,
+              "wr": 46.9,
+              "pnl": 1100.0,
+              "avg_r": 0.172,
+              "exp_r": 0.172,
+              "max_dd": -1400.0,
+              "pf": 1.32
+            }
+          },
+          {
+            "fold": 3,
+            "train": {
+              "n": 158,
+              "wins": 70,
+              "losses": 88,
+              "wr": 44.3,
+              "pnl": 3400.0,
+              "avg_r": 0.108,
+              "exp_r": 0.108,
+              "max_dd": -2500.0,
+              "pf": 1.19
+            },
+            "oos": {
+              "n": 29,
+              "wins": 12,
+              "losses": 17,
+              "wr": 41.4,
+              "pnl": 200.0,
+              "avg_r": 0.034,
+              "exp_r": 0.034,
+              "max_dd": -1500.0,
+              "pf": 1.06
+            }
+          },
+          {
+            "fold": 4,
+            "train": {
+              "n": 187,
+              "wins": 82,
+              "losses": 105,
+              "wr": 43.9,
+              "pnl": 3600.0,
+              "avg_r": 0.096,
+              "exp_r": 0.096,
+              "max_dd": -2500.0,
+              "pf": 1.17
+            },
+            "oos": {
+              "n": 35,
+              "wins": 12,
+              "losses": 23,
+              "wr": 34.3,
+              "pnl": -1000.0,
+              "avg_r": -0.143,
+              "exp_r": -0.143,
+              "max_dd": -2200.0,
+              "pf": 0.78
+            }
+          }
+        ],
+        "torture": {
+          "spread_0.15R": {
+            "n": 220,
+            "wins": 94,
+            "losses": 126,
+            "wr": 42.7,
+            "pnl": -3600.0,
+            "avg_r": -0.082,
+            "exp_r": -0.082,
+            "max_dd": -4050.0,
+            "pf": 0.88
+          },
+          "skip_30pct": {
+            "n": 144,
+            "wins": 62,
+            "losses": 82,
+            "wr": 43.1,
+            "pnl": 2200.0,
+            "avg_r": 0.076,
+            "exp_r": 0.076,
+            "max_dd": -2000.0,
+            "pf": 1.13
+          },
+          "sl_widen_20pct": {
+            "n": 220,
+            "wins": 94,
+            "losses": 126,
+            "wr": 42.7,
+            "pnl": -2040.0,
+            "avg_r": -0.046,
+            "exp_r": -0.046,
+            "max_dd": -3660.0,
+            "pf": 0.93
+          }
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 15.0,
+          "p5_R": -15.0,
+          "p95_R": 42.5,
+          "mean_R": 14.398,
+          "prob_profit": 76.7,
+          "prob_ruin_10R": 31.8,
+          "median_maxDD_R": -15.5,
+          "p5_maxDD_R": -30.5
+        },
+        "verdict": "SURVIVES",
+        "wf_green": 3,
+        "wf_n": 4,
+        "score": 48.035,
+        "strategy": "bb_1.5",
+        "tf": "3m",
+        "role": "candidate"
+      },
+      {
+        "label": "cta_12_26@15m",
+        "entries": 77,
+        "full": {
+          "n": 47,
+          "wins": 23,
+          "losses": 24,
+          "wr": 48.9,
+          "pnl": 2100.0,
+          "avg_r": 0.223,
+          "exp_r": 0.223,
+          "max_dd": -1600.0,
+          "pf": 1.44
+        },
+        "oos": {
+          "n": 15,
+          "wins": 8,
+          "losses": 7,
+          "wr": 53.3,
+          "pnl": 1000.0,
+          "avg_r": 0.333,
+          "exp_r": 0.333,
+          "max_dd": -600.0,
+          "pf": 1.71
+        },
+        "walk_forward": [
+          {
+            "fold": 1,
+            "train": {
+              "n": 20,
+              "wins": 10,
+              "losses": 10,
+              "wr": 50.0,
+              "pnl": 1000.0,
+              "avg_r": 0.25,
+              "exp_r": 0.25,
+              "max_dd": -700.0,
+              "pf": 1.5
+            },
+            "oos": {
+              "n": 8,
+              "wins": 1,
+              "losses": 7,
+              "wr": 12.5,
+              "pnl": -1100.0,
+              "avg_r": -0.688,
+              "exp_r": -0.688,
+              "max_dd": -1400.0,
+              "pf": 0.21
+            }
+          },
+          {
+            "fold": 2,
+            "train": {
+              "n": 29,
+              "wins": 11,
+              "losses": 18,
+              "wr": 37.9,
+              "pnl": -300.0,
+              "avg_r": -0.052,
+              "exp_r": -0.052,
+              "max_dd": -1600.0,
+              "pf": 0.92
+            },
+            "oos": {
+              "n": 4,
+              "wins": 3,
+              "losses": 1,
+              "wr": 75.0,
+              "pnl": 700.0,
+              "avg_r": 0.875,
+              "exp_r": 0.875,
+              "max_dd": -200.0,
+              "pf": 4.5
+            }
+          },
+          {
+            "fold": 3,
+            "train": {
+              "n": 33,
+              "wins": 14,
+              "losses": 19,
+              "wr": 42.4,
+              "pnl": 400.0,
+              "avg_r": 0.061,
+              "exp_r": 0.061,
+              "max_dd": -1600.0,
+              "pf": 1.11
+            },
+            "oos": {
+              "n": 6,
+              "wins": 3,
+              "losses": 3,
+              "wr": 50.0,
+              "pnl": 300.0,
+              "avg_r": 0.25,
+              "exp_r": 0.25,
+              "max_dd": -600.0,
+              "pf": 1.5
+            }
+          },
+          {
+            "fold": 4,
+            "train": {
+              "n": 38,
+              "wins": 18,
+              "losses": 20,
+              "wr": 47.4,
+              "pnl": 1400.0,
+              "avg_r": 0.184,
+              "exp_r": 0.184,
+              "max_dd": -1600.0,
+              "pf": 1.35
+            },
+            "oos": {
+              "n": 8,
+              "wins": 4,
+              "losses": 4,
+              "wr": 50.0,
+              "pnl": 400.0,
+              "avg_r": 0.25,
+              "exp_r": 0.25,
+              "max_dd": -400.0,
+              "pf": 1.5
+            }
+          }
+        ],
+        "torture": {
+          "spread_0.15R": {
+            "n": 47,
+            "wins": 23,
+            "losses": 24,
+            "wr": 48.9,
+            "pnl": 690.0,
+            "avg_r": 0.073,
+            "exp_r": 0.073,
+            "max_dd": -2020.0,
+            "pf": 1.12
+          },
+          "skip_30pct": {
+            "n": 29,
+            "wins": 14,
+            "losses": 15,
+            "wr": 48.3,
+            "pnl": 1200.0,
+            "avg_r": 0.207,
+            "exp_r": 0.207,
+            "max_dd": -1300.0,
+            "pf": 1.4
+          },
+          "sl_widen_20pct": {
+            "n": 47,
+            "wins": 23,
+            "losses": 24,
+            "wr": 48.9,
+            "pnl": 1140.0,
+            "avg_r": 0.121,
+            "exp_r": 0.121,
+            "max_dd": -1980.0,
+            "pf": 1.2
+          }
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 10.5,
+          "p5_R": -4.5,
+          "p95_R": 25.5,
+          "mean_R": 10.591,
+          "prob_profit": 90.0,
+          "prob_ruin_10R": 2.4,
+          "median_maxDD_R": -5.5,
+          "p5_maxDD_R": -11.0
+        },
+        "verdict": "SURVIVES",
+        "wf_green": 3,
+        "wf_n": 4,
+        "score": 47.525,
+        "strategy": "cta_12_26",
+        "tf": "15m",
+        "role": "candidate"
+      },
+      {
+        "label": "bb_2@5m",
+        "entries": 38,
+        "full": {
+          "n": 35,
+          "wins": 18,
+          "losses": 17,
+          "wr": 51.4,
+          "pnl": 2000.0,
+          "avg_r": 0.286,
+          "exp_r": 0.286,
+          "max_dd": -600.0,
+          "pf": 1.59
+        },
+        "oos": {
+          "n": 11,
+          "wins": 6,
+          "losses": 5,
+          "wr": 54.5,
+          "pnl": 800.0,
+          "avg_r": 0.364,
+          "exp_r": 0.364,
+          "max_dd": -200.0,
+          "pf": 1.8
+        },
+        "walk_forward": [
+          {
+            "fold": 1,
+            "train": {
+              "n": 13,
+              "wins": 7,
+              "losses": 6,
+              "wr": 53.8,
+              "pnl": 900.0,
+              "avg_r": 0.346,
+              "exp_r": 0.346,
+              "max_dd": -400.0,
+              "pf": 1.75
+            },
+            "oos": {
+              "n": 4,
+              "wins": 2,
+              "losses": 2,
+              "wr": 50.0,
+              "pnl": 200.0,
+              "avg_r": 0.25,
+              "exp_r": 0.25,
+              "max_dd": -200.0,
+              "pf": 1.5
+            }
+          },
+          {
+            "fold": 2,
+            "train": {
+              "n": 17,
+              "wins": 9,
+              "losses": 8,
+              "wr": 52.9,
+              "pnl": 1100.0,
+              "avg_r": 0.324,
+              "exp_r": 0.324,
+              "max_dd": -400.0,
+              "pf": 1.69
+            },
+            "oos": {
+              "n": 7,
+              "wins": 3,
+              "losses": 4,
+              "wr": 42.9,
+              "pnl": 100.0,
+              "avg_r": 0.071,
+              "exp_r": 0.071,
+              "max_dd": -400.0,
+              "pf": 1.12
+            }
+          },
+          {
+            "fold": 3,
+            "train": {
+              "n": 24,
+              "wins": 12,
+              "losses": 12,
+              "wr": 50.0,
+              "pnl": 1200.0,
+              "avg_r": 0.25,
+              "exp_r": 0.25,
+              "max_dd": -600.0,
+              "pf": 1.5
+            },
+            "oos": {
+              "n": 7,
+              "wins": 4,
+              "losses": 3,
+              "wr": 57.1,
+              "pnl": 600.0,
+              "avg_r": 0.429,
+              "exp_r": 0.429,
+              "max_dd": -200.0,
+              "pf": 2.0
+            }
+          },
+          {
+            "fold": 4,
+            "train": {
+              "n": 31,
+              "wins": 16,
+              "losses": 15,
+              "wr": 51.6,
+              "pnl": 1800.0,
+              "avg_r": 0.29,
+              "exp_r": 0.29,
+              "max_dd": -600.0,
+              "pf": 1.6
+            },
+            "oos": {
+              "n": 4,
+              "wins": 2,
+              "losses": 2,
+              "wr": 50.0,
+              "pnl": 200.0,
+              "avg_r": 0.25,
+              "exp_r": 0.25,
+              "max_dd": -200.0,
+              "pf": 1.5
+            }
+          }
+        ],
+        "torture": {
+          "spread_0.15R": {
+            "n": 35,
+            "wins": 18,
+            "losses": 17,
+            "wr": 51.4,
+            "pnl": 950.0,
+            "avg_r": 0.136,
+            "exp_r": 0.136,
+            "max_dd": -840.0,
+            "pf": 1.24
+          },
+          "skip_30pct": {
+            "n": 20,
+            "wins": 10,
+            "losses": 10,
+            "wr": 50.0,
+            "pnl": 1000.0,
+            "avg_r": 0.25,
+            "exp_r": 0.25,
+            "max_dd": -600.0,
+            "pf": 1.5
+          },
+          "sl_widen_20pct": {
+            "n": 35,
+            "wins": 18,
+            "losses": 17,
+            "wr": 51.4,
+            "pnl": 1320.0,
+            "avg_r": 0.189,
+            "exp_r": 0.189,
+            "max_dd": -840.0,
+            "pf": 1.32
+          }
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 10.0,
+          "p5_R": -2.5,
+          "p95_R": 22.5,
+          "mean_R": 9.824,
+          "prob_profit": 87.1,
+          "prob_ruin_10R": 1.2,
+          "median_maxDD_R": -4.5,
+          "p5_maxDD_R": -9.5
+        },
+        "verdict": "SURVIVES",
+        "wf_green": 4,
+        "wf_n": 4,
+        "score": 46.955,
+        "strategy": "bb_2",
+        "tf": "5m",
+        "role": "candidate"
+      }
+    ],
+    "screened": 62
+  },
+  "elapsed_s": 102.1,
+  "note": "Research only \u2014 does not change SYMBOL_ENTRY_BRAIN"
+}

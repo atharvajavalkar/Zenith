@@ -1,0 +1,3566 @@
+{
+  "generated_at": "2026-07-20T17:35:44.498159+00:00",
+  "days": 14,
+  "n": 120,
+  "mode": "read_only",
+  "live_changes": false,
+  "aggregate": {
+    "tag_counts": [
+      [
+        "manual_or_sync_close",
+        112
+      ],
+      [
+        "off_prime_hour",
+        38
+      ],
+      [
+        "soft_mc_entry",
+        28
+      ],
+      [
+        "stretched_rr_loss",
+        18
+      ],
+      [
+        "fast_tf_loss",
+        15
+      ],
+      [
+        "bias_against",
+        11
+      ],
+      [
+        "smc_weak",
+        10
+      ],
+      [
+        "no_strong_flag",
+        7
+      ],
+      [
+        "mid_mc_entry",
+        5
+      ],
+      [
+        "news_against",
+        3
+      ],
+      [
+        "large_htf_loss",
+        1
+      ],
+      [
+        "clean_win_profile",
+        1
+      ]
+    ],
+    "suggestion_counts": [
+      [
+        "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+        58
+      ],
+      [
+        "Research: session filter / reduce size off-prime for ETHUSD.",
+        7
+      ],
+      [
+        "Research: raise MC soft floor for ? (paper A/B only).",
+        7
+      ],
+      [
+        "Research: prefer 1:2 forced RR on ? vs stretched None.",
+        5
+      ],
+      [
+        "Research: raise MC soft floor for ETHUSD (paper A/B only).",
+        4
+      ],
+      [
+        "Research: raise MC soft floor for GBPUSD (paper A/B only).",
+        2
+      ],
+      [
+        "Research: raise MC soft floor for USDCHF (paper A/B only).",
+        1
+      ],
+      [
+        "Research: prefer 1:2 forced RR on NAS100 vs stretched 1:3.",
+        1
+      ],
+      [
+        "Research: raise MC soft floor for NAS100 (paper A/B only).",
+        1
+      ],
+      [
+        "Research: prefer 1:2 forced RR on BTCUSD vs stretched None.",
+        1
+      ]
+    ],
+    "per_symbol": {
+      "USDCHF": {
+        "n": 1,
+        "wins": 0,
+        "losses": 1,
+        "pnl": -237.85,
+        "top_tags": [
+          [
+            "manual_or_sync_close",
+            1
+          ],
+          [
+            "soft_mc_entry",
+            1
+          ],
+          [
+            "stretched_rr_loss",
+            1
+          ],
+          [
+            "off_prime_hour",
+            1
+          ],
+          [
+            "news_against",
+            1
+          ]
+        ],
+        "top_loss_suggestions": [
+          [
+            "Research: raise MC soft floor for USDCHF (paper A/B only).",
+            1
+          ]
+        ]
+      },
+      "USDJPY": {
+        "n": 8,
+        "wins": 0,
+        "losses": 5,
+        "pnl": -128.41,
+        "top_tags": [
+          [
+            "manual_or_sync_close",
+            8
+          ],
+          [
+            "mid_mc_entry",
+            3
+          ],
+          [
+            "off_prime_hour",
+            3
+          ]
+        ],
+        "top_loss_suggestions": [
+          [
+            "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+            5
+          ]
+        ]
+      },
+      "NAS100": {
+        "n": 2,
+        "wins": 0,
+        "losses": 2,
+        "pnl": -147.35,
+        "top_tags": [
+          [
+            "manual_or_sync_close",
+            2
+          ],
+          [
+            "stretched_rr_loss",
+            2
+          ],
+          [
+            "off_prime_hour",
+            2
+          ],
+          [
+            "bias_against",
+            2
+          ],
+          [
+            "smc_weak",
+            2
+          ]
+        ],
+        "top_loss_suggestions": [
+          [
+            "Research: prefer 1:2 forced RR on NAS100 vs stretched 1:3.",
+            1
+          ],
+          [
+            "Research: raise MC soft floor for NAS100 (paper A/B only).",
+            1
+          ]
+        ]
+      },
+      "ETHUSD": {
+        "n": 11,
+        "wins": 0,
+        "losses": 11,
+        "pnl": -58.48,
+        "top_tags": [
+          [
+            "manual_or_sync_close",
+            11
+          ],
+          [
+            "off_prime_hour",
+            11
+          ],
+          [
+            "fast_tf_loss",
+            5
+          ],
+          [
+            "soft_mc_entry",
+            4
+          ],
+          [
+            "smc_weak",
+            4
+          ]
+        ],
+        "top_loss_suggestions": [
+          [
+            "Research: session filter / reduce size off-prime for ETHUSD.",
+            7
+          ],
+          [
+            "Research: raise MC soft floor for ETHUSD (paper A/B only).",
+            4
+          ]
+        ]
+      },
+      "BTCUSD": {
+        "n": 10,
+        "wins": 0,
+        "losses": 10,
+        "pnl": -807.63,
+        "top_tags": [
+          [
+            "manual_or_sync_close",
+            10
+          ],
+          [
+            "fast_tf_loss",
+            4
+          ],
+          [
+            "stretched_rr_loss",
+            2
+          ]
+        ],
+        "top_loss_suggestions": [
+          [
+            "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+            8
+          ],
+          [
+            "Research: prefer 1:2 forced RR on BTCUSD vs stretched None.",
+            1
+          ],
+          [
+            "Research: prefer 1:2 forced RR on BTCUSD vs stretched 1:3.",
+            1
+          ]
+        ]
+      },
+      "SILVER": {
+        "n": 8,
+        "wins": 0,
+        "losses": 8,
+        "pnl": -3610.0,
+        "top_tags": [
+          [
+            "manual_or_sync_close",
+            8
+          ]
+        ],
+        "top_loss_suggestions": [
+          [
+            "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+            8
+          ]
+        ]
+      },
+      "GBPUSD": {
+        "n": 25,
+        "wins": 2,
+        "losses": 11,
+        "pnl": -467.1,
+        "top_tags": [
+          [
+            "manual_or_sync_close",
+            24
+          ],
+          [
+            "soft_mc_entry",
+            14
+          ],
+          [
+            "off_prime_hour",
+            14
+          ],
+          [
+            "news_against",
+            2
+          ],
+          [
+            "fast_tf_loss",
+            2
+          ]
+        ],
+        "top_loss_suggestions": [
+          [
+            "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+            8
+          ],
+          [
+            "Research: raise MC soft floor for GBPUSD (paper A/B only).",
+            2
+          ]
+        ]
+      },
+      "EURUSD": {
+        "n": 23,
+        "wins": 0,
+        "losses": 22,
+        "pnl": -1167.52,
+        "top_tags": [
+          [
+            "manual_or_sync_close",
+            17
+          ],
+          [
+            "no_strong_flag",
+            6
+          ],
+          [
+            "fast_tf_loss",
+            4
+          ],
+          [
+            "bias_against",
+            2
+          ],
+          [
+            "smc_weak",
+            2
+          ]
+        ],
+        "top_loss_suggestions": [
+          [
+            "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+            16
+          ]
+        ]
+      },
+      "GOLD": {
+        "n": 15,
+        "wins": 2,
+        "losses": 13,
+        "pnl": -2260.08,
+        "top_tags": [
+          [
+            "manual_or_sync_close",
+            15
+          ],
+          [
+            "stretched_rr_loss",
+            1
+          ]
+        ],
+        "top_loss_suggestions": [
+          [
+            "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+            12
+          ],
+          [
+            "Research: prefer 1:2 forced RR on GOLD vs stretched 1:3.",
+            1
+          ]
+        ]
+      },
+      "?": {
+        "n": 17,
+        "wins": 3,
+        "losses": 14,
+        "pnl": -259.58,
+        "top_tags": [
+          [
+            "manual_or_sync_close",
+            16
+          ],
+          [
+            "stretched_rr_loss",
+            11
+          ],
+          [
+            "soft_mc_entry",
+            8
+          ],
+          [
+            "off_prime_hour",
+            7
+          ],
+          [
+            "bias_against",
+            7
+          ]
+        ],
+        "top_loss_suggestions": [
+          [
+            "Research: raise MC soft floor for ? (paper A/B only).",
+            7
+          ],
+          [
+            "Research: prefer 1:2 forced RR on ? vs stretched None.",
+            5
+          ],
+          [
+            "Research: prefer 1:2 forced RR on ? vs stretched 1:3.",
+            1
+          ]
+        ]
+      }
+    }
+  },
+  "autopsies": [
+    {
+      "id": 2715,
+      "symbol": "USDCHF",
+      "side": "SELL",
+      "brain": "ema_20_50",
+      "exec_tf": "4h",
+      "trade_mode": "demo",
+      "pnl": -237.85,
+      "r_est": null,
+      "planned_rr": 3.0,
+      "mc_prob": 39.15,
+      "markov_mc": 47.3,
+      "state": "LAMINAR_BEAR",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-20 04:51:15.274353+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "stretched_rr_loss",
+        "off_prime_hour",
+        "news_against",
+        "smc_weak",
+        "large_htf_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (39.1%).",
+        "Planned RR\u22483.0 and trade lost \u2014 stretch may have been optimistic.",
+        "Entry hour_utc=1 was not marked prime.",
+        "World-news bias was not aligned with the trade.",
+        "SMC concept flag was false at entry.",
+        "Large loss on higher TF (4h)."
+      ],
+      "suggestion": "Research: raise MC soft floor for USDCHF (paper A/B only).",
+      "outcome": "loss"
+    },
+    {
+      "id": 2714,
+      "symbol": "USDJPY",
+      "side": "SELL",
+      "brain": "ema_20_50",
+      "exec_tf": "1m",
+      "trade_mode": "demo",
+      "pnl": -0.23,
+      "r_est": null,
+      "planned_rr": 1.6,
+      "mc_prob": 47.07,
+      "markov_mc": 50.17,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-20 04:35:42.424621+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "mid_mc_entry",
+        "off_prime_hour"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entry hour_utc=4 was not marked prime."
+      ],
+      "suggestion": null,
+      "outcome": "flat"
+    },
+    {
+      "id": 2713,
+      "symbol": "USDJPY",
+      "side": "SELL",
+      "brain": "ema_20_50",
+      "exec_tf": "3m",
+      "trade_mode": "demo",
+      "pnl": -0.2,
+      "r_est": null,
+      "planned_rr": 1.76,
+      "mc_prob": 43.51,
+      "markov_mc": 48.32,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-20 04:35:39.425579+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "mid_mc_entry",
+        "off_prime_hour"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entry hour_utc=4 was not marked prime."
+      ],
+      "suggestion": null,
+      "outcome": "flat"
+    },
+    {
+      "id": 2712,
+      "symbol": "USDJPY",
+      "side": "SELL",
+      "brain": "ema_20_50",
+      "exec_tf": "5m",
+      "trade_mode": "demo",
+      "pnl": 0.24,
+      "r_est": null,
+      "planned_rr": 2.0,
+      "mc_prob": 42.98,
+      "markov_mc": 47.68,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-20 04:35:35.639315+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "mid_mc_entry",
+        "off_prime_hour"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entry hour_utc=4 was not marked prime."
+      ],
+      "suggestion": null,
+      "outcome": "flat"
+    },
+    {
+      "id": 2711,
+      "symbol": "NAS100",
+      "side": "BUY",
+      "brain": "ema_20_50",
+      "exec_tf": "15m",
+      "trade_mode": "demo",
+      "pnl": -145.01,
+      "r_est": -1.601,
+      "planned_rr": 3.0,
+      "mc_prob": 42.82,
+      "markov_mc": 47.51,
+      "state": "TRANSITION_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-20 02:37:05.966560+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "mid_mc_entry",
+        "stretched_rr_loss",
+        "off_prime_hour",
+        "bias_against",
+        "smc_weak"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Planned RR\u22483.0 and trade lost \u2014 stretch may have been optimistic.",
+        "Entry hour_utc=2 was not marked prime.",
+        "Desk bias not aligned.",
+        "SMC concept flag was false at entry."
+      ],
+      "suggestion": "Research: prefer 1:2 forced RR on NAS100 vs stretched 1:3.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2710,
+      "symbol": "NAS100",
+      "side": "BUY",
+      "brain": "ema_20_50",
+      "exec_tf": "15m",
+      "trade_mode": "demo",
+      "pnl": -2.34,
+      "r_est": -0.026,
+      "planned_rr": 3.0,
+      "mc_prob": 38.61,
+      "markov_mc": 39.59,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-20 01:27:03.215563+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "stretched_rr_loss",
+        "off_prime_hour",
+        "bias_against",
+        "smc_weak"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (38.6%).",
+        "Planned RR\u22483.0 and trade lost \u2014 stretch may have been optimistic.",
+        "Entry hour_utc=1 was not marked prime.",
+        "Desk bias not aligned.",
+        "SMC concept flag was false at entry."
+      ],
+      "suggestion": "Research: raise MC soft floor for NAS100 (paper A/B only).",
+      "outcome": "loss"
+    },
+    {
+      "id": 2709,
+      "symbol": "ETHUSD",
+      "side": "BUY",
+      "brain": "ema_20_50",
+      "exec_tf": "15m",
+      "trade_mode": "demo",
+      "pnl": -4.73,
+      "r_est": -0.349,
+      "planned_rr": 4.0,
+      "mc_prob": 36.85,
+      "markov_mc": 41.97,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-20 01:09:14.126324+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "stretched_rr_loss",
+        "off_prime_hour"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (36.9%).",
+        "Planned RR\u22484.0 and trade lost \u2014 stretch may have been optimistic.",
+        "Entry hour_utc=1 was not marked prime."
+      ],
+      "suggestion": "Research: raise MC soft floor for ETHUSD (paper A/B only).",
+      "outcome": "loss"
+    },
+    {
+      "id": 2707,
+      "symbol": "BTCUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -37.5,
+      "r_est": -1.0,
+      "planned_rr": 2.69,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-19 10:54:28.955482+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2706,
+      "symbol": "BTCUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -97.54,
+      "r_est": -1.0,
+      "planned_rr": 4.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-19 10:44:42.894210+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "stretched_rr_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Planned RR\u22484.0 and trade lost \u2014 stretch may have been optimistic."
+      ],
+      "suggestion": "Research: prefer 1:2 forced RR on BTCUSD vs stretched None.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2705,
+      "symbol": "ETHUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": "5m",
+      "trade_mode": "demo",
+      "pnl": -0.68,
+      "r_est": -0.335,
+      "planned_rr": 1.24,
+      "mc_prob": 40.16,
+      "markov_mc": 39.68,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-18 21:10:50.061462+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "off_prime_hour",
+        "smc_weak"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (40.2%).",
+        "Entry hour_utc=21 was not marked prime.",
+        "SMC concept flag was false at entry."
+      ],
+      "suggestion": "Research: raise MC soft floor for ETHUSD (paper A/B only).",
+      "outcome": "loss"
+    },
+    {
+      "id": 2704,
+      "symbol": "ETHUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": "3m",
+      "trade_mode": "demo",
+      "pnl": -7.92,
+      "r_est": -7.009,
+      "planned_rr": 0.69,
+      "mc_prob": 40.2,
+      "markov_mc": 41.24,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-18 21:10:27.942698+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "off_prime_hour",
+        "smc_weak",
+        "fast_tf_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (40.2%).",
+        "Entry hour_utc=21 was not marked prime.",
+        "SMC concept flag was false at entry.",
+        "Lost on fast TF (3m)."
+      ],
+      "suggestion": "Research: raise MC soft floor for ETHUSD (paper A/B only).",
+      "outcome": "loss"
+    },
+    {
+      "id": 2703,
+      "symbol": "ETHUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": "5m",
+      "trade_mode": "demo",
+      "pnl": -7.92,
+      "r_est": -3.901,
+      "planned_rr": 1.24,
+      "mc_prob": 41.51,
+      "markov_mc": 39.68,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-18 21:10:25.416284+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "off_prime_hour",
+        "smc_weak"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (41.5%).",
+        "Entry hour_utc=21 was not marked prime.",
+        "SMC concept flag was false at entry."
+      ],
+      "suggestion": "Research: raise MC soft floor for ETHUSD (paper A/B only).",
+      "outcome": "loss"
+    },
+    {
+      "id": 2702,
+      "symbol": "ETHUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": "1m",
+      "trade_mode": "demo",
+      "pnl": -3.68,
+      "r_est": null,
+      "planned_rr": 0.37,
+      "mc_prob": 49.14,
+      "markov_mc": 51.19,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-18 20:55:35.610188+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "off_prime_hour",
+        "smc_weak",
+        "fast_tf_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entry hour_utc=20 was not marked prime.",
+        "SMC concept flag was false at entry.",
+        "Lost on fast TF (1m)."
+      ],
+      "suggestion": "Research: session filter / reduce size off-prime for ETHUSD.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2701,
+      "symbol": "ETHUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": "3m",
+      "trade_mode": "demo",
+      "pnl": -3.68,
+      "r_est": -2.992,
+      "planned_rr": 0.75,
+      "mc_prob": 49.06,
+      "markov_mc": 49.14,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-18 20:55:33.226619+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "off_prime_hour",
+        "fast_tf_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entry hour_utc=20 was not marked prime.",
+        "Lost on fast TF (3m)."
+      ],
+      "suggestion": "Research: session filter / reduce size off-prime for ETHUSD.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2700,
+      "symbol": "ETHUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": "5m",
+      "trade_mode": "demo",
+      "pnl": -7.76,
+      "r_est": -3.919,
+      "planned_rr": 1.21,
+      "mc_prob": 47.88,
+      "markov_mc": 50.08,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-18 20:55:29.696408+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "mid_mc_entry",
+        "off_prime_hour"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entry hour_utc=20 was not marked prime."
+      ],
+      "suggestion": "Research: session filter / reduce size off-prime for ETHUSD.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2699,
+      "symbol": "ETHUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": "1m",
+      "trade_mode": "demo",
+      "pnl": -7.35,
+      "r_est": null,
+      "planned_rr": 0.33,
+      "mc_prob": 48.9,
+      "markov_mc": 50.85,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-18 20:54:53.786511+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "off_prime_hour",
+        "fast_tf_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entry hour_utc=20 was not marked prime.",
+        "Lost on fast TF (1m)."
+      ],
+      "suggestion": "Research: session filter / reduce size off-prime for ETHUSD.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2698,
+      "symbol": "ETHUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": "3m",
+      "trade_mode": "demo",
+      "pnl": -3.63,
+      "r_est": -2.881,
+      "planned_rr": 0.77,
+      "mc_prob": 53.2,
+      "markov_mc": 50.4,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-18 20:54:50.644804+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "off_prime_hour",
+        "fast_tf_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entry hour_utc=20 was not marked prime.",
+        "Lost on fast TF (3m)."
+      ],
+      "suggestion": "Research: session filter / reduce size off-prime for ETHUSD.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2697,
+      "symbol": "ETHUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": "5m",
+      "trade_mode": "demo",
+      "pnl": -3.63,
+      "r_est": -1.833,
+      "planned_rr": 1.21,
+      "mc_prob": 53.82,
+      "markov_mc": 52.93,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-18 20:54:47.356437+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "off_prime_hour"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entry hour_utc=20 was not marked prime."
+      ],
+      "suggestion": "Research: session filter / reduce size off-prime for ETHUSD.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2696,
+      "symbol": "ETHUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": "5m",
+      "trade_mode": "demo",
+      "pnl": -7.5,
+      "r_est": -3.788,
+      "planned_rr": 1.21,
+      "mc_prob": 49.48,
+      "markov_mc": 52.93,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-18 20:54:07.980351+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "off_prime_hour"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entry hour_utc=20 was not marked prime."
+      ],
+      "suggestion": "Research: session filter / reduce size off-prime for ETHUSD.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2695,
+      "symbol": "SILVER",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -370.0,
+      "r_est": -1.0,
+      "planned_rr": 0.39,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 19:23:00.471357+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2694,
+      "symbol": "SILVER",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -370.0,
+      "r_est": -1.0,
+      "planned_rr": 0.39,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 19:22:47.440580+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2693,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -90.0,
+      "r_est": -1.0,
+      "planned_rr": 0.89,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 19:22:20.400551+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2691,
+      "symbol": "GBPUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -58.0,
+      "r_est": -1.0,
+      "planned_rr": 1.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 19:21:19.067260+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2692,
+      "symbol": "GBPUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -58.0,
+      "r_est": -1.0,
+      "planned_rr": 1.04,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 19:21:19.067260+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2690,
+      "symbol": "GBPUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -60.0,
+      "r_est": -1.0,
+      "planned_rr": 1.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 19:21:19.067257+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2688,
+      "symbol": "EURUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -48.0,
+      "r_est": -1.0,
+      "planned_rr": 1.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:46:16.348149+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2689,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -62.0,
+      "r_est": -1.0,
+      "planned_rr": 1.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:46:16.348149+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2687,
+      "symbol": "GOLD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -69.0,
+      "r_est": -1.0,
+      "planned_rr": 1.08,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:46:16.348146+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2686,
+      "symbol": "SILVER",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -410.0,
+      "r_est": -1.0,
+      "planned_rr": 0.24,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:45:52.984009+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2685,
+      "symbol": "GOLD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -34.2,
+      "r_est": -1.0,
+      "planned_rr": 0.77,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:45:42.667676+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2684,
+      "symbol": "GOLD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -91.8,
+      "r_est": -1.0,
+      "planned_rr": 1.01,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:45:25.811203+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2683,
+      "symbol": "GOLD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": 34.2,
+      "r_est": 2.0,
+      "planned_rr": 0.93,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:45:11.403709+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Keep \u2014 no change suggested.",
+      "outcome": "win"
+    },
+    {
+      "id": 2682,
+      "symbol": "SILVER",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -195.0,
+      "r_est": -1.0,
+      "planned_rr": 0.35,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:45:11.403705+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2679,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -58.0,
+      "r_est": -1.0,
+      "planned_rr": 1.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:44:52.017730+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2681,
+      "symbol": "GOLD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": 62.4,
+      "r_est": 2.0,
+      "planned_rr": 0.93,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:44:52.017730+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Keep \u2014 no change suggested.",
+      "outcome": "win"
+    },
+    {
+      "id": 2680,
+      "symbol": "EURUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -48.0,
+      "r_est": -1.0,
+      "planned_rr": 1.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:44:52.017730+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2678,
+      "symbol": "USDJPY",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -39.45,
+      "r_est": -1.0,
+      "planned_rr": 1.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:44:52.017728+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2677,
+      "symbol": "USDJPY",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -24.65,
+      "r_est": -1.0,
+      "planned_rr": 1.17,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:44:41.158588+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2676,
+      "symbol": "EURUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -40.0,
+      "r_est": -1.0,
+      "planned_rr": 1.21,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:44:41.158587+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2675,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -48.0,
+      "r_est": -1.0,
+      "planned_rr": 1.36,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:44:41.158584+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2674,
+      "symbol": "GOLD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -61.5,
+      "r_est": -1.0,
+      "planned_rr": 1.56,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:24:49.744895+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2673,
+      "symbol": "GOLD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -364.5,
+      "r_est": -1.0,
+      "planned_rr": 1.28,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:24:42.668349+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2672,
+      "symbol": "GOLD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -376.5,
+      "r_est": -1.0,
+      "planned_rr": 1.19,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:24:42.668348+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2671,
+      "symbol": "BTCUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -228.0,
+      "r_est": -1.0,
+      "planned_rr": 1.2,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:24:42.668346+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2670,
+      "symbol": "USDJPY",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -24.66,
+      "r_est": -1.0,
+      "planned_rr": 0.16,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:24:25.822322+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2669,
+      "symbol": "EURUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -156.0,
+      "r_est": -1.0,
+      "planned_rr": 1.14,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:24:23.910714+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2668,
+      "symbol": "USDJPY",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -13.81,
+      "r_est": -1.0,
+      "planned_rr": 0.23,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:24:23.910713+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2667,
+      "symbol": "EURUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -54.0,
+      "r_est": -1.0,
+      "planned_rr": 1.32,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:24:23.910709+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2666,
+      "symbol": "GOLD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -40.5,
+      "r_est": -1.0,
+      "planned_rr": 1.04,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:23:01.564900+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2665,
+      "symbol": "SILVER",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -577.5,
+      "r_est": -1.0,
+      "planned_rr": 0.55,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:22:13.876986+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2664,
+      "symbol": "EURUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -252.0,
+      "r_est": -1.0,
+      "planned_rr": 1.2,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:21:51.486227+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2663,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": 30.0,
+      "r_est": 2.0,
+      "planned_rr": 1.17,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:21:49.462950+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Keep \u2014 no change suggested.",
+      "outcome": "win"
+    },
+    {
+      "id": 2662,
+      "symbol": "USDJPY",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -25.65,
+      "r_est": -1.0,
+      "planned_rr": 0.19,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:21:11.480185+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2661,
+      "symbol": "GOLD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -375.0,
+      "r_est": -1.0,
+      "planned_rr": 1.2,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:09:13.054684+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2660,
+      "symbol": "SILVER",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -562.5,
+      "r_est": -1.0,
+      "planned_rr": 0.64,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:08:48.439924+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2659,
+      "symbol": "GOLD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -255.0,
+      "r_est": -1.0,
+      "planned_rr": 1.28,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:08:48.439921+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2658,
+      "symbol": "BTCUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -92.4,
+      "r_est": -1.0,
+      "planned_rr": 1.2,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:08:37.909402+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2657,
+      "symbol": "SILVER",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -540.0,
+      "r_est": -1.0,
+      "planned_rr": 0.65,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:08:23.494656+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2656,
+      "symbol": "GOLD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -195.0,
+      "r_est": -1.0,
+      "planned_rr": 1.19,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:08:05.520631+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2654,
+      "symbol": "GOLD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -193.5,
+      "r_est": -1.0,
+      "planned_rr": 1.02,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:08:05.520630+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2653,
+      "symbol": "GBPUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -138.0,
+      "r_est": -1.0,
+      "planned_rr": 1.29,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:08:05.520630+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2655,
+      "symbol": "GOLD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -228.0,
+      "r_est": -1.0,
+      "planned_rr": 1.04,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:08:05.520630+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2652,
+      "symbol": "EURUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -132.0,
+      "r_est": -1.0,
+      "planned_rr": 1.2,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:08:05.520628+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2651,
+      "symbol": "SILVER",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -585.0,
+      "r_est": -1.0,
+      "planned_rr": 0.56,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 18:06:15.670103+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2650,
+      "symbol": "GOLD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": null,
+      "pnl": -72.18,
+      "r_est": -1.0,
+      "planned_rr": 5.14,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 12:02:07.059091+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "stretched_rr_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Planned RR\u22485.1 and trade lost \u2014 stretch may have been optimistic."
+      ],
+      "suggestion": "Research: prefer 1:2 forced RR on GOLD vs stretched 1:3.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2649,
+      "symbol": "BTCUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": "3m",
+      "trade_mode": "demo",
+      "pnl": -84.6,
+      "r_est": -1.781,
+      "planned_rr": 2.85,
+      "mc_prob": 52.26,
+      "markov_mc": 54.03,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 10:49:49.951864+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "stretched_rr_loss",
+        "fast_tf_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Planned RR\u22482.8 and trade lost \u2014 stretch may have been optimistic.",
+        "Lost on fast TF (3m)."
+      ],
+      "suggestion": "Research: prefer 1:2 forced RR on BTCUSD vs stretched 1:3.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2648,
+      "symbol": "BTCUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": "1m",
+      "trade_mode": "demo",
+      "pnl": -53.9,
+      "r_est": -2.049,
+      "planned_rr": 1.58,
+      "mc_prob": 50.22,
+      "markov_mc": 55.0,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 10:49:33.781228+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "fast_tf_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Lost on fast TF (1m)."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2647,
+      "symbol": "BTCUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": "1m",
+      "trade_mode": "demo",
+      "pnl": -52.5,
+      "r_est": -1.996,
+      "planned_rr": 1.05,
+      "mc_prob": 55.56,
+      "markov_mc": 55.0,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 10:49:27.364356+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "fast_tf_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Lost on fast TF (1m)."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2646,
+      "symbol": "BTCUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": "1m",
+      "trade_mode": "demo",
+      "pnl": -57.4,
+      "r_est": -2.183,
+      "planned_rr": 1.05,
+      "mc_prob": 56.38,
+      "markov_mc": 55.0,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 10:49:19.913036+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "fast_tf_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Lost on fast TF (1m)."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2645,
+      "symbol": "BTCUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": "5m",
+      "trade_mode": "demo",
+      "pnl": -90.3,
+      "r_est": -1.223,
+      "planned_rr": 2.0,
+      "mc_prob": 51.04,
+      "markov_mc": 55.31,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 10:49:17.944538+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2644,
+      "symbol": "EURUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": 0.0,
+      "r_est": 0.0,
+      "planned_rr": 2.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 10:34:58.327582+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": null,
+      "outcome": "flat"
+    },
+    {
+      "id": 2643,
+      "symbol": "EURUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": "1m",
+      "trade_mode": null,
+      "pnl": -63.0,
+      "r_est": -1.0,
+      "planned_rr": 0.76,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 10:24:58.920913+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "fast_tf_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Lost on fast TF (1m)."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2642,
+      "symbol": "EURUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": "3m",
+      "trade_mode": null,
+      "pnl": -63.0,
+      "r_est": -1.0,
+      "planned_rr": 1.7,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 10:24:55.356467+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "fast_tf_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Lost on fast TF (3m)."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2641,
+      "symbol": "EURUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": "5m",
+      "trade_mode": null,
+      "pnl": -90.0,
+      "r_est": -1.0,
+      "planned_rr": 2.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 10:24:49.203048+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2640,
+      "symbol": "EURUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": "1m",
+      "trade_mode": "demo",
+      "pnl": -60.0,
+      "r_est": -1.0,
+      "planned_rr": 1.2,
+      "mc_prob": 50.2,
+      "markov_mc": 54.93,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 08:40:23.911926+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "bias_against",
+        "smc_weak",
+        "fast_tf_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Desk bias not aligned.",
+        "SMC concept flag was false at entry.",
+        "Lost on fast TF (1m)."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2639,
+      "symbol": "EURUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": "3m",
+      "trade_mode": "demo",
+      "pnl": -12.0,
+      "r_est": -1.0,
+      "planned_rr": 2.28,
+      "mc_prob": 54.42,
+      "markov_mc": 56.26,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 08:40:21.775928+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "bias_against",
+        "smc_weak",
+        "fast_tf_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Desk bias not aligned.",
+        "SMC concept flag was false at entry.",
+        "Lost on fast TF (3m)."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2638,
+      "symbol": "GBPUSD",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": "5m",
+      "trade_mode": "demo",
+      "pnl": 96.0,
+      "r_est": null,
+      "planned_rr": 0.37,
+      "mc_prob": 56.58,
+      "markov_mc": 54.53,
+      "state": "LAMINAR_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-14 08:40:04.670206+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "clean_win_profile"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Win with decent MC \u2014 keep similar setups."
+      ],
+      "suggestion": "Keep \u2014 no change suggested.",
+      "outcome": "win"
+    },
+    {
+      "id": 2635,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -15.0,
+      "r_est": -1.0,
+      "planned_rr": 2.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_sl",
+      "created_at": "2026-07-13 19:11:21.186793+00:00",
+      "tags": [
+        "no_strong_flag"
+      ],
+      "notes": [
+        "No strong diagnostic flag \u2014 needs candle replay for deeper blame."
+      ],
+      "suggestion": null,
+      "outcome": "loss"
+    },
+    {
+      "id": 2634,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": "1m",
+      "trade_mode": "demo",
+      "pnl": -2.5,
+      "r_est": null,
+      "planned_rr": null,
+      "mc_prob": 0.0,
+      "markov_mc": 64.99,
+      "state": "TRANSITION_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-13 19:10:53.561843+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "off_prime_hour",
+        "news_against",
+        "fast_tf_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (0.0%).",
+        "Entry hour_utc=19 was not marked prime.",
+        "World-news bias was not aligned with the trade.",
+        "Lost on fast TF (1m)."
+      ],
+      "suggestion": "Research: raise MC soft floor for GBPUSD (paper A/B only).",
+      "outcome": "loss"
+    },
+    {
+      "id": 2633,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": "3m",
+      "trade_mode": "demo",
+      "pnl": -2.4,
+      "r_est": null,
+      "planned_rr": null,
+      "mc_prob": 0.0,
+      "markov_mc": 67.22,
+      "state": "TRANSITION_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-13 19:10:52.360718+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "off_prime_hour",
+        "news_against",
+        "smc_weak",
+        "fast_tf_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (0.0%).",
+        "Entry hour_utc=19 was not marked prime.",
+        "World-news bias was not aligned with the trade.",
+        "SMC concept flag was false at entry.",
+        "Lost on fast TF (3m)."
+      ],
+      "suggestion": "Research: raise MC soft floor for GBPUSD (paper A/B only).",
+      "outcome": "loss"
+    },
+    {
+      "id": 2632,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": "1m",
+      "trade_mode": "demo",
+      "pnl": -0.1,
+      "r_est": null,
+      "planned_rr": null,
+      "mc_prob": 0.0,
+      "markov_mc": 64.99,
+      "state": "TRANSITION_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-13 19:10:47.285543+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "off_prime_hour"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (0.0%).",
+        "Entry hour_utc=19 was not marked prime."
+      ],
+      "suggestion": null,
+      "outcome": "flat"
+    },
+    {
+      "id": 2631,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": "3m",
+      "trade_mode": "demo",
+      "pnl": -0.2,
+      "r_est": null,
+      "planned_rr": null,
+      "mc_prob": 0.0,
+      "markov_mc": 67.22,
+      "state": "TRANSITION_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-13 19:10:46.106201+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "off_prime_hour"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (0.0%).",
+        "Entry hour_utc=19 was not marked prime."
+      ],
+      "suggestion": null,
+      "outcome": "flat"
+    },
+    {
+      "id": 2629,
+      "symbol": "BTCUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": "manual",
+      "trade_mode": "demo",
+      "pnl": -13.49,
+      "r_est": -1.0,
+      "planned_rr": 2.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-13 19:10:05.896239+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2608,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": "5m",
+      "trade_mode": "demo",
+      "pnl": -0.2,
+      "r_est": null,
+      "planned_rr": null,
+      "mc_prob": 0.0,
+      "markov_mc": 76.61,
+      "state": "LAMINAR_BEAR",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-13 19:08:05.627607+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "off_prime_hour"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (0.0%).",
+        "Entry hour_utc=19 was not marked prime."
+      ],
+      "suggestion": null,
+      "outcome": "flat"
+    },
+    {
+      "id": 2607,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": "1m",
+      "trade_mode": "demo",
+      "pnl": -0.3,
+      "r_est": null,
+      "planned_rr": null,
+      "mc_prob": 0.0,
+      "markov_mc": 72.36,
+      "state": "LAMINAR_BEAR",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-13 19:08:01.895215+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "off_prime_hour"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (0.0%).",
+        "Entry hour_utc=19 was not marked prime."
+      ],
+      "suggestion": null,
+      "outcome": "flat"
+    },
+    {
+      "id": 2606,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": "5m",
+      "trade_mode": "demo",
+      "pnl": -0.2,
+      "r_est": null,
+      "planned_rr": null,
+      "mc_prob": 0.21,
+      "markov_mc": 76.61,
+      "state": "LAMINAR_BEAR",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-13 19:08:00.624468+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "off_prime_hour"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (0.2%).",
+        "Entry hour_utc=19 was not marked prime."
+      ],
+      "suggestion": null,
+      "outcome": "flat"
+    },
+    {
+      "id": 2605,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": "1m",
+      "trade_mode": "demo",
+      "pnl": -0.2,
+      "r_est": null,
+      "planned_rr": null,
+      "mc_prob": 0.0,
+      "markov_mc": 72.36,
+      "state": "LAMINAR_BEAR",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-13 19:07:57.607428+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "off_prime_hour"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (0.0%).",
+        "Entry hour_utc=19 was not marked prime."
+      ],
+      "suggestion": null,
+      "outcome": "flat"
+    },
+    {
+      "id": 2604,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": "5m",
+      "trade_mode": "demo",
+      "pnl": -0.1,
+      "r_est": null,
+      "planned_rr": null,
+      "mc_prob": 0.21,
+      "markov_mc": 76.61,
+      "state": "LAMINAR_BEAR",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-13 19:07:56.242209+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "off_prime_hour"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (0.2%).",
+        "Entry hour_utc=19 was not marked prime."
+      ],
+      "suggestion": null,
+      "outcome": "flat"
+    },
+    {
+      "id": 2603,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": "1m",
+      "trade_mode": "demo",
+      "pnl": 0.1,
+      "r_est": null,
+      "planned_rr": null,
+      "mc_prob": 0.0,
+      "markov_mc": 72.36,
+      "state": "LAMINAR_BEAR",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-13 19:07:53.059309+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "off_prime_hour"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (0.0%).",
+        "Entry hour_utc=19 was not marked prime."
+      ],
+      "suggestion": null,
+      "outcome": "flat"
+    },
+    {
+      "id": 2602,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": "5m",
+      "trade_mode": "demo",
+      "pnl": 0.1,
+      "r_est": null,
+      "planned_rr": null,
+      "mc_prob": 0.0,
+      "markov_mc": 76.61,
+      "state": "LAMINAR_BEAR",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-13 19:07:51.825529+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "off_prime_hour"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (0.0%).",
+        "Entry hour_utc=19 was not marked prime."
+      ],
+      "suggestion": null,
+      "outcome": "flat"
+    },
+    {
+      "id": 2601,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": "1m",
+      "trade_mode": "demo",
+      "pnl": 0.0,
+      "r_est": null,
+      "planned_rr": null,
+      "mc_prob": 0.0,
+      "markov_mc": 71.34,
+      "state": "LAMINAR_BEAR",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-13 19:07:40.517252+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "off_prime_hour"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (0.0%).",
+        "Entry hour_utc=19 was not marked prime."
+      ],
+      "suggestion": null,
+      "outcome": "flat"
+    },
+    {
+      "id": 2600,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": "3m",
+      "trade_mode": "demo",
+      "pnl": -0.1,
+      "r_est": null,
+      "planned_rr": null,
+      "mc_prob": 0.0,
+      "markov_mc": 76.17,
+      "state": "LAMINAR_BEAR",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-13 19:07:39.192911+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "off_prime_hour"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (0.0%).",
+        "Entry hour_utc=19 was not marked prime."
+      ],
+      "suggestion": null,
+      "outcome": "flat"
+    },
+    {
+      "id": 2599,
+      "symbol": "GBPUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": "5m",
+      "trade_mode": "demo",
+      "pnl": 0.0,
+      "r_est": null,
+      "planned_rr": null,
+      "mc_prob": 0.0,
+      "markov_mc": 75.1,
+      "state": "LAMINAR_BEAR",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-13 19:07:38.074992+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "off_prime_hour"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (0.0%).",
+        "Entry hour_utc=19 was not marked prime."
+      ],
+      "suggestion": null,
+      "outcome": "flat"
+    },
+    {
+      "id": 2598,
+      "symbol": "EURUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -15.0,
+      "r_est": -1.0,
+      "planned_rr": 2.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_sl",
+      "created_at": "2026-07-13 19:04:18.226929+00:00",
+      "tags": [
+        "no_strong_flag"
+      ],
+      "notes": [
+        "No strong diagnostic flag \u2014 needs candle replay for deeper blame."
+      ],
+      "suggestion": null,
+      "outcome": "loss"
+    },
+    {
+      "id": 2596,
+      "symbol": "EURUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -15.0,
+      "r_est": -1.0,
+      "planned_rr": 2.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_sl",
+      "created_at": "2026-07-13 19:04:18.226928+00:00",
+      "tags": [
+        "no_strong_flag"
+      ],
+      "notes": [
+        "No strong diagnostic flag \u2014 needs candle replay for deeper blame."
+      ],
+      "suggestion": null,
+      "outcome": "loss"
+    },
+    {
+      "id": 2597,
+      "symbol": "EURUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -15.0,
+      "r_est": -1.0,
+      "planned_rr": 2.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_sl",
+      "created_at": "2026-07-13 19:04:18.226928+00:00",
+      "tags": [
+        "no_strong_flag"
+      ],
+      "notes": [
+        "No strong diagnostic flag \u2014 needs candle replay for deeper blame."
+      ],
+      "suggestion": null,
+      "outcome": "loss"
+    },
+    {
+      "id": 2595,
+      "symbol": "EURUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -15.0,
+      "r_est": -1.0,
+      "planned_rr": 2.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_sl",
+      "created_at": "2026-07-13 19:04:18.226927+00:00",
+      "tags": [
+        "no_strong_flag"
+      ],
+      "notes": [
+        "No strong diagnostic flag \u2014 needs candle replay for deeper blame."
+      ],
+      "suggestion": null,
+      "outcome": "loss"
+    },
+    {
+      "id": 2594,
+      "symbol": "EURUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -15.0,
+      "r_est": -1.0,
+      "planned_rr": 2.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_sl",
+      "created_at": "2026-07-13 19:04:18.226927+00:00",
+      "tags": [
+        "no_strong_flag"
+      ],
+      "notes": [
+        "No strong diagnostic flag \u2014 needs candle replay for deeper blame."
+      ],
+      "suggestion": null,
+      "outcome": "loss"
+    },
+    {
+      "id": 2593,
+      "symbol": "EURUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -15.0,
+      "r_est": -1.0,
+      "planned_rr": 2.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_sl",
+      "created_at": "2026-07-13 19:04:18.226926+00:00",
+      "tags": [
+        "no_strong_flag"
+      ],
+      "notes": [
+        "No strong diagnostic flag \u2014 needs candle replay for deeper blame."
+      ],
+      "suggestion": null,
+      "outcome": "loss"
+    },
+    {
+      "id": 2592,
+      "symbol": "EURUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -14.88,
+      "r_est": -1.0,
+      "planned_rr": 2.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-13 19:04:18.226925+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2591,
+      "symbol": "EURUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -14.88,
+      "r_est": -1.0,
+      "planned_rr": 2.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-13 19:04:18.226925+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2590,
+      "symbol": "EURUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -14.88,
+      "r_est": -1.0,
+      "planned_rr": 2.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-13 19:04:18.226923+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2589,
+      "symbol": "EURUSD",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "demo",
+      "pnl": -14.88,
+      "r_est": -1.0,
+      "planned_rr": 2.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-13 19:04:18.226919+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2582,
+      "symbol": "?",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "live",
+      "pnl": 48.32,
+      "r_est": 10.067,
+      "planned_rr": 7.14,
+      "mc_prob": 35.63,
+      "markov_mc": 54.54,
+      "state": "TRANSITION_BEAR",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-10 15:22:36.707172+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (35.6%)."
+      ],
+      "suggestion": "Keep \u2014 no change suggested.",
+      "outcome": "win"
+    },
+    {
+      "id": 2581,
+      "symbol": "?",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": null,
+      "pnl": -33.9,
+      "r_est": -1.0,
+      "planned_rr": 4.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_sl",
+      "created_at": "2026-07-10 11:29:59.293081+00:00",
+      "tags": [
+        "stretched_rr_loss"
+      ],
+      "notes": [
+        "Planned RR\u22484.0 and trade lost \u2014 stretch may have been optimistic."
+      ],
+      "suggestion": "Research: prefer 1:2 forced RR on ? vs stretched None.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2579,
+      "symbol": "?",
+      "side": "BUY",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": null,
+      "pnl": 10.4,
+      "r_est": 2.0,
+      "planned_rr": 4.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-10 09:45:12.736158+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Keep \u2014 no change suggested.",
+      "outcome": "win"
+    },
+    {
+      "id": 2578,
+      "symbol": "?",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": null,
+      "pnl": -14.3,
+      "r_est": -1.0,
+      "planned_rr": 4.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-10 09:40:42.080785+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "stretched_rr_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Planned RR\u22484.0 and trade lost \u2014 stretch may have been optimistic."
+      ],
+      "suggestion": "Research: prefer 1:2 forced RR on ? vs stretched None.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2577,
+      "symbol": "?",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": null,
+      "pnl": 1.4,
+      "r_est": 2.0,
+      "planned_rr": 4.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-10 09:40:32.995710+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Keep \u2014 no change suggested.",
+      "outcome": "win"
+    },
+    {
+      "id": 2573,
+      "symbol": "?",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": null,
+      "pnl": -23.2,
+      "r_est": -1.0,
+      "planned_rr": 3.79,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-10 05:35:50.664011+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "stretched_rr_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Planned RR\u22483.8 and trade lost \u2014 stretch may have been optimistic."
+      ],
+      "suggestion": "Research: prefer 1:2 forced RR on ? vs stretched None.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2572,
+      "symbol": "?",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": null,
+      "pnl": -5.1,
+      "r_est": -1.0,
+      "planned_rr": 3.0,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-10 05:33:11.902333+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "stretched_rr_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Planned RR\u22483.0 and trade lost \u2014 stretch may have been optimistic."
+      ],
+      "suggestion": "Research: prefer 1:2 forced RR on ? vs stretched 1:3.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2571,
+      "symbol": "?",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "live",
+      "pnl": -22.0,
+      "r_est": -9.524,
+      "planned_rr": 2.0,
+      "mc_prob": 40.69,
+      "markov_mc": 39.06,
+      "state": "LAMINAR_BEAR",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-09 19:44:12.335367+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "off_prime_hour",
+        "bias_against"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (40.7%).",
+        "Entry hour_utc=19 was not marked prime.",
+        "Desk bias not aligned."
+      ],
+      "suggestion": "Research: raise MC soft floor for ? (paper A/B only).",
+      "outcome": "loss"
+    },
+    {
+      "id": 2570,
+      "symbol": "?",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "live",
+      "pnl": -25.6,
+      "r_est": -11.13,
+      "planned_rr": 2.0,
+      "mc_prob": 40.98,
+      "markov_mc": 42.59,
+      "state": "LAMINAR_BEAR",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-09 19:43:42.214988+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "off_prime_hour",
+        "bias_against"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (41.0%).",
+        "Entry hour_utc=19 was not marked prime.",
+        "Desk bias not aligned."
+      ],
+      "suggestion": "Research: raise MC soft floor for ? (paper A/B only).",
+      "outcome": "loss"
+    },
+    {
+      "id": 2569,
+      "symbol": "?",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "live",
+      "pnl": -21.6,
+      "r_est": -9.432,
+      "planned_rr": 3.0,
+      "mc_prob": 30.79,
+      "markov_mc": 41.89,
+      "state": "LAMINAR_BEAR",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-09 19:39:40.689021+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "stretched_rr_loss",
+        "off_prime_hour",
+        "bias_against"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (30.8%).",
+        "Planned RR\u22483.0 and trade lost \u2014 stretch may have been optimistic.",
+        "Entry hour_utc=19 was not marked prime.",
+        "Desk bias not aligned."
+      ],
+      "suggestion": "Research: raise MC soft floor for ? (paper A/B only).",
+      "outcome": "loss"
+    },
+    {
+      "id": 2568,
+      "symbol": "?",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "live",
+      "pnl": -23.5,
+      "r_est": -10.398,
+      "planned_rr": 3.0,
+      "mc_prob": 31.54,
+      "markov_mc": 38.82,
+      "state": "TRANSITION_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-09 19:38:29.233208+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "stretched_rr_loss",
+        "off_prime_hour",
+        "bias_against"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (31.5%).",
+        "Planned RR\u22483.0 and trade lost \u2014 stretch may have been optimistic.",
+        "Entry hour_utc=19 was not marked prime.",
+        "Desk bias not aligned."
+      ],
+      "suggestion": "Research: raise MC soft floor for ? (paper A/B only).",
+      "outcome": "loss"
+    },
+    {
+      "id": 2567,
+      "symbol": "?",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "live",
+      "pnl": -27.7,
+      "r_est": -11.26,
+      "planned_rr": 4.0,
+      "mc_prob": 22.33,
+      "markov_mc": 39.63,
+      "state": "TRANSITION_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-09 19:37:59.171530+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "stretched_rr_loss",
+        "off_prime_hour",
+        "bias_against"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (22.3%).",
+        "Planned RR\u22484.0 and trade lost \u2014 stretch may have been optimistic.",
+        "Entry hour_utc=19 was not marked prime.",
+        "Desk bias not aligned."
+      ],
+      "suggestion": "Research: raise MC soft floor for ? (paper A/B only).",
+      "outcome": "loss"
+    },
+    {
+      "id": 2566,
+      "symbol": "?",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "live",
+      "pnl": -27.4,
+      "r_est": -12.804,
+      "planned_rr": 3.0,
+      "mc_prob": 28.88,
+      "markov_mc": 36.71,
+      "state": "TRANSITION_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-09 19:36:11.899932+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "stretched_rr_loss",
+        "off_prime_hour",
+        "bias_against"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (28.9%).",
+        "Planned RR\u22483.0 and trade lost \u2014 stretch may have been optimistic.",
+        "Entry hour_utc=19 was not marked prime.",
+        "Desk bias not aligned."
+      ],
+      "suggestion": "Research: raise MC soft floor for ? (paper A/B only).",
+      "outcome": "loss"
+    },
+    {
+      "id": 2565,
+      "symbol": "?",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": "live",
+      "pnl": -23.7,
+      "r_est": -11.075,
+      "planned_rr": 3.0,
+      "mc_prob": 30.17,
+      "markov_mc": 42.04,
+      "state": "TRANSITION_BULL",
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-09 19:35:41.450817+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "soft_mc_entry",
+        "stretched_rr_loss",
+        "off_prime_hour",
+        "bias_against"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Entered with soft MC (30.2%).",
+        "Planned RR\u22483.0 and trade lost \u2014 stretch may have been optimistic.",
+        "Entry hour_utc=19 was not marked prime.",
+        "Desk bias not aligned."
+      ],
+      "suggestion": "Research: raise MC soft floor for ? (paper A/B only).",
+      "outcome": "loss"
+    },
+    {
+      "id": 2564,
+      "symbol": "?",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": null,
+      "pnl": -24.3,
+      "r_est": -1.0,
+      "planned_rr": 3.79,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-09 19:29:20.489916+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "stretched_rr_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Planned RR\u22483.8 and trade lost \u2014 stretch may have been optimistic."
+      ],
+      "suggestion": "Research: prefer 1:2 forced RR on ? vs stretched None.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2563,
+      "symbol": "?",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": null,
+      "pnl": -25.8,
+      "r_est": -1.0,
+      "planned_rr": 2.66,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-09 19:29:20.489915+00:00",
+      "tags": [
+        "manual_or_sync_close"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy."
+      ],
+      "suggestion": "Process: avoid manual early exits when testing brain edge; let SL/TP decide.",
+      "outcome": "loss"
+    },
+    {
+      "id": 2562,
+      "symbol": "?",
+      "side": "SELL",
+      "brain": "unknown",
+      "exec_tf": null,
+      "trade_mode": null,
+      "pnl": -21.6,
+      "r_est": -1.0,
+      "planned_rr": 3.16,
+      "mc_prob": null,
+      "markov_mc": null,
+      "state": null,
+      "pnl_status": "closed_manual",
+      "created_at": "2026-07-09 19:29:20.489913+00:00",
+      "tags": [
+        "manual_or_sync_close",
+        "stretched_rr_loss"
+      ],
+      "notes": [
+        "Exit was manual/broker-sync \u2014 not a clean SL/TP autopsy.",
+        "Planned RR\u22483.2 and trade lost \u2014 stretch may have been optimistic."
+      ],
+      "suggestion": "Research: prefer 1:2 forced RR on ? vs stretched None.",
+      "outcome": "loss"
+    }
+  ]
+}

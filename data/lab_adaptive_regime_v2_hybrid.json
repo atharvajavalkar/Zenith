@@ -1,0 +1,58 @@
+{
+  "hybrid_desk_pnl": {
+    "7d": 5000.0,
+    "90d": 58200.0,
+    "1y": 191800.0,
+    "3y": 465000.0
+  },
+  "mode_picks": {
+    "ETHUSD": {
+      "7d": "static",
+      "90d": "gated",
+      "1y": "static",
+      "3y": "static"
+    },
+    "BTCUSD": {
+      "7d": "switch",
+      "90d": "static",
+      "1y": "switch",
+      "3y": "switch"
+    },
+    "GOLD": {
+      "7d": "switch",
+      "90d": "static",
+      "1y": "static",
+      "3y": "static"
+    },
+    "NAS100": {
+      "7d": "static",
+      "90d": "gated",
+      "1y": "static",
+      "3y": "switch"
+    },
+    "USDJPY": {
+      "7d": "static",
+      "90d": "static",
+      "1y": "static",
+      "3y": "static"
+    },
+    "AUDUSD": {
+      "7d": "gated",
+      "90d": "switch",
+      "1y": "static",
+      "3y": "static"
+    },
+    "USDCHF": {
+      "7d": "static",
+      "90d": "static",
+      "1y": "static",
+      "3y": "static"
+    },
+    "UKOIL": {
+      "7d": "static",
+      "90d": "static",
+      "1y": "static",
+      "3y": "static"
+    }
+  }
+}

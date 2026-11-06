@@ -1,0 +1,40 @@
+
+=== BTCUSD live=circadian_kalman_z tf=5m RR=3.0 (n>=20) ===
+  session_mix          mult=1.0  maxSp=0.12  off=False FAIL  wf=0/4 1y $   -7,464 E[R]=-0.184 n=405 spR=0.093
+  session_mix          mult=5.0  maxSp=0.12  off=False FAIL  wf=0/4 1y $   -7,464 E[R]=-0.184 n=405 spR=0.093
+  session_mix          mult=8.0  maxSp=0.12  off=False FAIL  wf=0/4 1y $   -7,464 E[R]=-0.184 n=405 spR=0.093
+  session_mix          mult=1.0  maxSp=0.12  off=True  FAIL  wf=1/4 1y $   -7,770 E[R]=-0.187 n=415 spR=0.093
+  session_mix          mult=5.0  maxSp=0.12  off=True  FAIL  wf=1/4 1y $   -7,770 E[R]=-0.187 n=415 spR=0.093
+  session_mix          mult=8.0  maxSp=0.12  off=True  FAIL  wf=1/4 1y $   -7,770 E[R]=-0.187 n=415 spR=0.093
+  volmom               mult=1.0  maxSp=0.12  off=True  FAIL  wf=0/4 1y $   -8,465 E[R]=-0.209 n=404 spR=0.091
+  volmom               mult=5.0  maxSp=0.12  off=True  FAIL  wf=0/4 1y $   -8,465 E[R]=-0.209 n=404 spR=0.091
+
+=== AUDUSD live=circadian_kalman_z tf=5m RR=2.0 (n>=20) ===
+  volmom               mult=10.0 maxSp=None  off=False FAIL  wf=2/4 1y $   -1,333 E[R]=-0.059 n=225 spR=0.099
+  volmom               mult=10.0 maxSp=0.12  off=False FAIL  wf=2/4 1y $   -1,333 E[R]=-0.059 n=225 spR=0.099
+  volmom               mult=10.0 maxSp=0.18  off=False FAIL  wf=2/4 1y $   -1,333 E[R]=-0.059 n=225 spR=0.099
+  circadian_kalman_z   mult=10.0 maxSp=None  off=False FAIL  wf=1/4 1y $   -2,339 E[R]=-0.109 n=215 spR=0.100
+  circadian_kalman_z   mult=10.0 maxSp=0.12  off=False FAIL  wf=1/4 1y $   -2,339 E[R]=-0.109 n=215 spR=0.100
+  circadian_kalman_z   mult=10.0 maxSp=0.18  off=False FAIL  wf=1/4 1y $   -2,339 E[R]=-0.109 n=215 spR=0.100
+  session_mix          mult=8.0  maxSp=None  off=False FAIL  wf=1/4 1y $   -2,392 E[R]=-0.086 n=277 spR=0.115
+  session_mix          mult=8.0  maxSp=0.18  off=False FAIL  wf=1/4 1y $   -2,392 E[R]=-0.086 n=277 spR=0.115
+
+=== USDCHF live=session_mix tf=5m RR=2.0 (n>=20) ===
+  volmom               mult=10.0 maxSp=None  off=False FAIL  wf=1/4 1y $     -170 E[R]=-0.011 n=157 spR=0.100
+  volmom               mult=10.0 maxSp=0.12  off=False FAIL  wf=1/4 1y $     -170 E[R]=-0.011 n=157 spR=0.100
+  volmom               mult=10.0 maxSp=0.18  off=False FAIL  wf=1/4 1y $     -170 E[R]=-0.011 n=157 spR=0.100
+  volmom               mult=10.0 maxSp=None  off=True  FAIL  wf=1/4 1y $   -2,665 E[R]=-0.113 n=237 spR=0.100
+  volmom               mult=10.0 maxSp=0.12  off=True  FAIL  wf=1/4 1y $   -2,665 E[R]=-0.113 n=237 spR=0.100
+  volmom               mult=10.0 maxSp=0.18  off=True  FAIL  wf=1/4 1y $   -2,665 E[R]=-0.113 n=237 spR=0.100
+  session_mix          mult=10.0 maxSp=None  off=False FAIL  wf=1/4 1y $   -3,069 E[R]=-0.224 n=137 spR=0.100
+  session_mix          mult=10.0 maxSp=0.12  off=False FAIL  wf=1/4 1y $   -3,069 E[R]=-0.224 n=137 spR=0.100
+
+=== ETHUSD live=session_mix tf=5m RR=4.0 (n>=20) ===
+  session_mix          mult=8.0  maxSp=None  off=False SOFT  wf=2/4 1y $    1,925 E[R]=+0.047 n=406 spR=0.122
+  session_mix          mult=8.0  maxSp=0.18  off=False SOFT  wf=2/4 1y $    1,925 E[R]=+0.047 n=406 spR=0.122
+  session_mix          mult=1.0  maxSp=0.12  off=False FAIL  wf=1/4 1y $      322 E[R]=+0.058 n=56 spR=0.103
+  session_mix          mult=5.0  maxSp=0.12  off=False FAIL  wf=1/4 1y $      322 E[R]=+0.058 n=56 spR=0.103
+  session_mix          mult=8.0  maxSp=0.12  off=False FAIL  wf=1/4 1y $      322 E[R]=+0.058 n=56 spR=0.103
+  session_mix          mult=1.0  maxSp=0.12  off=True  FAIL  wf=1/4 1y $     -463 E[R]=-0.086 n=54 spR=0.104
+  session_mix          mult=5.0  maxSp=0.12  off=True  FAIL  wf=1/4 1y $     -463 E[R]=-0.086 n=54 spR=0.104
+  session_mix          mult=8.0  maxSp=0.12  off=True  FAIL  wf=1/4 1y $     -463 E[R]=-0.086 n=54 spR=0.104

@@ -1,0 +1,87 @@
+PREV vs CURRENT · week(~7d) + 1y/1h · READ-ONLY · $200.0/R
+Window 1y: 2025-07-23→2026-07-23
+
+
+=== GOLD rr=4 ===
+  PREV fib_liq_sweep@15m  vs  CUR cta_10_40@15m
+WARNING:data.fetcher:Data OK via fallback OANDA:XAUUSD (XM preferred but unavailable) — will retry XM on next fetch
+  GOLD 5m: 5461 bars 2026-06-28→2026-07-24
+  GOLD 3m: 6866 bars 2026-07-05→2026-07-24
+  GOLD 1m: 6822 bars 2026-07-19→2026-07-24
+  GOLD 15m: 1821 bars (resampled) 2026-06-28→2026-07-24
+  WEEK  PREV n=0 PnL=$0 OOS=$0 DEAD  |  CUR n=0 PnL=$0 OOS=$0 DEAD  → tie
+  YEAR  PREV PnL=$2,000 OOS=$2,400 SURVIVES  |  CUR PnL=$1,000 OOS=$-2,000 FRAGILE  → previous
+
+=== USDCHF rr=2.4 ===
+  PREV ema_20_50_tight@5m  vs  CUR rsi@1m
+  USDCHF 5m: 5702 bars 2026-06-28→2026-07-24
+  USDCHF 3m: 7121 bars 2026-07-05→2026-07-24
+  USDCHF 1m: 7082 bars 2026-07-19→2026-07-24
+  USDCHF 15m: 1902 bars (resampled) 2026-06-28→2026-07-24
+  WEEK  PREV n=0 PnL=$0 OOS=$0 DEAD  |  CUR n=0 PnL=$0 OOS=$0 DEAD  → tie
+  YEAR  PREV PnL=$-880 OOS=$1,320 FRAGILE  |  CUR PnL=$-3,720 OOS=$-3,800 DEAD  → previous
+
+=== USDJPY rr=4 ===
+  PREV fib_liq_sweep@15m  vs  CUR bb_1.5@15m
+  USDJPY 5m: 5701 bars 2026-06-28→2026-07-24
+  USDJPY 3m: 7121 bars 2026-07-05→2026-07-24
+  USDJPY 1m: 7096 bars 2026-07-19→2026-07-24
+  USDJPY 15m: 1901 bars (resampled) 2026-06-28→2026-07-24
+  WEEK  PREV n=0 PnL=$0 OOS=$0 DEAD  |  CUR n=0 PnL=$0 OOS=$0 DEAD  → tie
+  YEAR  PREV PnL=$2,200 OOS=$2,600 SURVIVES  |  CUR PnL=$-1,800 OOS=$-2,400 DEAD  → previous
+
+=== NAS100 rr=4 ===
+  PREV sma_20_50_cross@15m  vs  CUR ema_20_50_tight@15m
+  NAS100 5m: 5293 bars 2026-04-20→2026-07-24
+  NAS100 3m: 6886 bars 2026-07-05→2026-07-24
+  NAS100 1m: 5865 bars 2026-07-06→2026-07-24
+  NAS100 15m: 1809 bars (resampled) 2026-04-20→2026-07-24
+  WEEK  PREV n=0 PnL=$0 OOS=$0 DEAD  |  CUR n=0 PnL=$0 OOS=$0 DEAD  → tie
+  YEAR  PREV PnL=$7,000 OOS=$5,400 SURVIVES  |  CUR PnL=$0 OOS=$1,000 DEAD  → previous
+
+=== UKOIL rr=3 ===
+  PREV breakout_20@15m  vs  CUR st_3@15m
+  UKOIL 5m: 5276 bars 2026-06-28→2026-07-24
+  UKOIL 3m: 6642 bars 2026-07-05→2026-07-24
+  UKOIL 1m: 6596 bars 2026-07-19→2026-07-24
+  UKOIL 15m: 1760 bars (resampled) 2026-06-28→2026-07-24
+  WEEK  PREV n=0 PnL=$0 OOS=$0 DEAD  |  CUR n=0 PnL=$0 OOS=$0 DEAD  → tie
+  YEAR  PREV PnL=$3,200 OOS=$3,400 SURVIVES  |  CUR PnL=$-3,200 OOS=$-2,600 DEAD  → previous
+
+=== AUDUSD rr=1.5 ===
+  PREV ema_20_50_pull@15m  vs  CUR ema_20_50_pull@3m
+  AUDUSD 5m: 5704 bars 2026-06-28→2026-07-24
+  AUDUSD 3m: 7122 bars 2026-07-05→2026-07-24
+  AUDUSD 1m: 7050 bars 2026-07-19→2026-07-24
+  AUDUSD 15m: 1904 bars (resampled) 2026-06-28→2026-07-24
+  WEEK  PREV n=0 PnL=$0 OOS=$0 DEAD  |  CUR n=0 PnL=$0 OOS=$0 DEAD  → tie
+  YEAR  PREV PnL=$2,400 OOS=$1,300 SURVIVES  |  CUR PnL=$2,400 OOS=$1,300 SURVIVES  → tie
+
+=== BTCUSD rr=3 ===
+  PREV ema_20_50_tight@5m  vs  CUR fib_liq_sweep@3m
+  BTCUSD 5m: 6342 bars 2026-06-15→2026-07-24
+  BTCUSD 3m: 6384 bars 2026-06-22→2026-07-24
+  BTCUSD 1m: 7633 bars 2026-06-29→2026-07-24
+  BTCUSD 15m: 3194 bars (resampled) 2026-06-15→2026-07-24
+  WEEK  PREV n=0 PnL=$0 OOS=$0 DEAD  |  CUR n=0 PnL=$0 OOS=$0 DEAD  → tie
+  YEAR  PREV PnL=$3,600 OOS=$1,400 SURVIVES  |  CUR PnL=$-2,200 OOS=$-1,200 DEAD  → previous
+
+=== ETHUSD rr=4 ===
+  PREV ema_20_50_tight@5m  vs  CUR bb_2@1m
+  ETHUSD 5m: 5461 bars 2026-06-08→2026-07-24
+  ETHUSD 3m: 5479 bars 2026-06-22→2026-07-24
+  ETHUSD 1m: 6183 bars 2026-06-29→2026-07-24
+  ETHUSD 15m: 2909 bars (resampled) 2026-06-08→2026-07-24
+  WEEK  PREV n=0 PnL=$0 OOS=$0 DEAD  |  CUR n=0 PnL=$0 OOS=$0 DEAD  → tie
+  YEAR  PREV PnL=$9,400 OOS=$2,800 SURVIVES  |  CUR PnL=$400 OOS=$800 FRAGILE  → previous
+
+==========================================================================================
+### DESK SUMMARY (no changes made)
+
+WEEK  (~7d native TF):  PREV Full $0 / OOS $0  vs  CUR Full $0 / OOS $0
+      pair wins (full PnL): {'previous': 0, 'current': 0, 'tie': 8}
+YEAR  (1h ~365d):       PREV Full $28,920 / OOS $20,620  vs  CUR Full $-7,120 / OOS $-8,900
+      pair wins (full PnL): {'previous': 7, 'current': 0, 'tie': 1}
+
+→ Overall: previous_better
+Wrote /app/data/prev_vs_current_week.json

@@ -1,0 +1,47 @@
+=== Schwab tally DENSIFY · Dukascopy · Nebula untouched ===
+lookback_sets=24 · cells/pair=2160 · horizons=['1y', '3y', 'full'] · total≈51840 · $/200.0/R · SL=1.0ATR
+started 2026-09-07T17:50:58.069173+00:00
+
+--- GOLD daily=3643 2016-07-23→2026-07-23 ---
+  1y   best=lb10-21-42-84_linear_x2.0_c2c_h3… → SURVIVES n=83 E[R]=+0.978 pnl=$+16243 OOS=+0.462 WF=3/4 MC=100.0% · SURVIVES_cells=915
+  3y   best=lb10-21-42-84_linear_x2.0_c2c_h3… → SURVIVES n=245 E[R]=+0.520 pnl=$+25496 OOS=+1.031 WF=4/4 MC=100.0% · SURVIVES_cells=428
+  full best=lb7-21_strict_x2.0_c2c_h3… → SURVIVES n=736 E[R]=+0.216 pnl=$+31778 OOS=+0.353 WF=4/4 MC=98.2% · SURVIVES_cells=114
+
+--- BTCUSD daily=3365 2017-05-07→2026-07-23 ---
+  1y   best=lb14-42_strict_x2.0_c2c_h3… → SURVIVES n=74 E[R]=+0.397 pnl=$+5878 OOS=+0.498 WF=4/4 MC=91.2% · SURVIVES_cells=147
+  3y   best=lb14-42_strict_x2.0_c2c_h3… → SURVIVES n=228 E[R]=+0.314 pnl=$+14327 OOS=+0.397 WF=3/4 MC=95.8% · SURVIVES_cells=180
+  full best=lb14-28-56_strict_x2.0_c2c_h3… → SURVIVES n=827 E[R]=+0.254 pnl=$+41932 OOS=+0.134 WF=3/4 MC=99.9% · SURVIVES_cells=163
+
+--- UKOIL daily=3653 2016-07-23→2026-07-23 ---
+  1y   best=lb7-14-28-56_strict_x2.0_c2c_h3… → SURVIVES n=85 E[R]=+0.246 pnl=$+4175 OOS=+0.624 WF=3/4 MC=77.8% · SURVIVES_cells=81
+  3y   best=lb3-14-42_linear_x2.0_c2c_h3… → SURVIVES n=274 E[R]=+0.102 pnl=$+5616 OOS=+0.090 WF=3/4 MC=77.6% · SURVIVES_cells=2
+  full best=lb7-21_strict_x2.0_c2c_h3… → FRAGILE n=736 E[R]=+0.036 pnl=$+5275 OOS=-0.251 WF=2/4 MC=63.4% · SURVIVES_cells=0
+
+--- NAS100 daily=3653 2016-07-23→2026-07-23 ---
+  1y   best=lb7-21-42-84_strict_x2.0_tp1.0_h2… → SURVIVES n=130 E[R]=+0.283 pnl=$+7354 OOS=+0.584 WF=3/4 MC=99.2% · SURVIVES_cells=166
+  3y   best=lb21-42-63_strict_x2.0_c2c_h2… → SURVIVES n=365 E[R]=+0.213 pnl=$+15559 OOS=+0.052 WF=3/4 MC=97.9% · SURVIVES_cells=280
+  full best=lb21-42-63_strict_x2.0_c2c_h3… → SURVIVES n=897 E[R]=+0.158 pnl=$+28358 OOS=+0.229 WF=4/4 MC=97.9% · SURVIVES_cells=66
+
+--- AUDUSD daily=3653 2016-07-23→2026-07-23 ---
+  1y   best=lb7-21_strict_x2.0_c2c_h2… → SURVIVES n=99 E[R]=+0.073 pnl=$+1446 OOS=+0.070 WF=3/4 MC=65.8% · SURVIVES_cells=4
+  3y   best=lb3-7-14-28_strict_x1.0_c2c_h2… → FRAGILE n=330 E[R]=-0.010 pnl=$-653 OOS=+0.012 WF=2/4 MC=43.5% · SURVIVES_cells=0
+  full best=lb3-7-14-28_strict_x1.0_c2c_h2… → DEAD n=1090 E[R]=-0.023 pnl=$-4966 OOS=-0.010 WF=0/4 MC=18.5% · SURVIVES_cells=0
+
+--- ETHUSD daily=3147 2017-12-11→2026-07-23 ---
+  1y   best=lb10-20-40_strict_x2.0_c2c_h2… → SURVIVES n=122 E[R]=+0.176 pnl=$+4288 OOS=+0.178 WF=3/4 MC=88.0% · SURVIVES_cells=7
+  3y   best=lb5-10-20-40_strict_x2.0_c2c_h3… → SURVIVES n=252 E[R]=+0.213 pnl=$+10735 OOS=-0.064 WF=3/4 MC=94.8% · SURVIVES_cells=40
+  full best=lb5-15-30-60_strict_x2.0_c2c_h3… → FRAGILE n=698 E[R]=+0.037 pnl=$+5098 OOS=+0.158 WF=3/4 MC=67.5% · SURVIVES_cells=0
+
+--- USDJPY daily=3653 2016-07-23→2026-07-23 ---
+  1y   best=lb7-21_strict_x2.0_c2c_h1… → SURVIVES n=134 E[R]=+0.077 pnl=$+2071 OOS=+0.003 WF=3/4 MC=72.5% · SURVIVES_cells=10
+  3y   best=lb7-21-42-84_strict_x2.0_c2c_h3… → SURVIVES n=247 E[R]=+0.205 pnl=$+10128 OOS=+0.004 WF=3/4 MC=94.1% · SURVIVES_cells=6
+  full best=lb21-42-63_linear_x2.0_c2c_h2… → SURVIVES n=1196 E[R]=+0.063 pnl=$+15004 OOS=+0.148 WF=3/4 MC=86.8% · SURVIVES_cells=2
+
+--- USDCHF daily=3653 2016-07-23→2026-07-23 ---
+  1y   best=lb4-8-16-32_linear_x2.0_c2c_h3… → FRAGILE n=79 E[R]=+0.032 pnl=$+509 OOS=+0.150 WF=3/4 MC=55.6% · SURVIVES_cells=0
+  3y   best=lb21-42-63_strict_x2.0_c2c_h3… → FRAGILE n=274 E[R]=+0.130 pnl=$+7146 OOS=-0.146 WF=3/4 MC=83.3% · SURVIVES_cells=0
+  full best=lb3-14-42_linear_x1.0_c2c_h3… → FRAGILE n=902 E[R]=-0.012 pnl=$-2165 OOS=+0.044 WF=2/4 MC=36.2% · SURVIVES_cells=0
+
+=== SUMMARY === {'pairs_best_1y_SURVIVES': 7, 'pairs_best_1y_FRAGILE': 1, 'crowns_1y_n': 34, 'recommendation': 'RESEARCH_MORE', 'note': '7/8 pairs have a SURVIVES densify crown on 1y — worth GOLD/crypto sleeve work.', 'best_per_pair_1y': [{'symbol': 'GOLD', 'best_id': 'lb10-21-42-84_linear_x2.0_c2c_h3', 'verdict': 'SURVIVES', 'exp_r': 0.978, 'tp_r': None, 'lot': 2.0, 'lookbacks': [10, 21, 42, 84], 'mode': 'linear'}, {'symbol': 'BTCUSD', 'best_id': 'lb14-42_strict_x2.0_c2c_h3', 'verdict': 'SURVIVES', 'exp_r': 0.397, 'tp_r': None, 'lot': 2.0, 'lookbacks': [14, 42], 'mode': 'strict'}, {'symbol': 'UKOIL', 'best_id': 'lb7-14-28-56_strict_x2.0_c2c_h3', 'verdict': 'SURVIVES', 'exp_r': 0.246, 'tp_r': None, 'lot': 2.0, 'lookbacks': [7, 14, 28, 56], 'mode': 'strict'}, {'symbol': 'NAS100', 'best_id': 'lb7-21-42-84_strict_x2.0_tp1.0_h2', 'verdict': 'SURVIVES', 'exp_r': 0.283, 'tp_r': 1.0, 'lot': 2.0, 'lookbacks': [7, 21, 42, 84], 'mode': 'strict'}, {'symbol': 'AUDUSD', 'best_id': 'lb7-21_strict_x2.0_c2c_h2', 'verdict': 'SURVIVES', 'exp_r': 0.073, 'tp_r': None, 'lot': 2.0, 'lookbacks': [7, 21], 'mode': 'strict'}, {'symbol': 'ETHUSD', 'best_id': 'lb10-20-40_strict_x2.0_c2c_h2', 'verdict': 'SURVIVES', 'exp_r': 0.176, 'tp_r': None, 'lot': 2.0, 'lookbacks': [10, 20, 40], 'mode': 'strict'}, {'symbol': 'USDJPY', 'best_id': 'lb7-21_strict_x2.0_c2c_h1', 'verdict': 'SURVIVES', 'exp_r': 0.077, 'tp_r': None, 'lot': 2.0, 'lookbacks': [7, 21], 'mode': 'strict'}, {'symbol': 'USDCHF', 'best_id': 'lb4-8-16-32_linear_x2.0_c2c_h3', 'verdict': 'FRAGILE', 'exp_r': 0.032, 'tp_r': None, 'lot': 2.0, 'lookbacks': [4, 8, 16, 32], 'mode': 'linear'}], 'elapsed_s': 1548.7, 'finished': '2026-09-07T18:16:46.730781+00:00'}
+wrote /app/data/lab_schwab_tally_densify.json
+wrote /app/data/lab_schwab_tally_densify.md

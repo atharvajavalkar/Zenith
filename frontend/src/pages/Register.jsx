@@ -32,15 +32,15 @@ export default function Register() {
   }
 
   return (
-    <AuthLayout title="Create account" subtitle="Join Zenith">
+    <AuthLayout title="Create account" subtitle="Request access to the private desk">
       <AuthForm
         onSubmit={handleSubmit}
-        submitLabel={submitting ? 'Creating...' : 'Create account'}
+        submitLabel={submitting ? 'Creating…' : 'Create account'}
         error={error}
         footer={
-          <p className="text-center text-sm text-gray-400 mt-4">
+          <p className="text-center text-sm font-light text-surface-muted mt-5">
             Already have an account?{' '}
-            <Link to="/login" className="text-accent-gold hover:underline">
+            <Link to="/login" className="text-accent-gold hover:text-accent-gold-soft transition">
               Sign in
             </Link>
           </p>

@@ -1,0 +1,996 @@
+{
+  "generated_at": "2026-07-24T19:46:11.235605+00:00",
+  "symbol": "AUDUSD",
+  "rr": 1.5,
+  "target_trades": 5000000,
+  "trades_reached": 5002721,
+  "hit_target": true,
+  "current_live": {
+    "strategy": "bb_1.5",
+    "tf": "15m",
+    "status": "DEAD_prior_test"
+  },
+  "winner": {
+    "strategy": "ema_pull",
+    "live_name": "ema_20_50_pull",
+    "tf": "3m",
+    "family": "retail",
+    "label": "EMA pull",
+    "honest": {
+      "full": {
+        "n": 95,
+        "wins": 44,
+        "losses": 51,
+        "wr": 46.3,
+        "pnl": 3000.0,
+        "avg_r": 0.158,
+        "exp_r": 0.158,
+        "max_dd": -1900.0,
+        "pf": 1.29
+      },
+      "oos": {
+        "n": 22,
+        "wins": 16,
+        "losses": 6,
+        "wr": 72.7,
+        "pnl": 3600.0,
+        "avg_r": 0.818,
+        "exp_r": 0.818,
+        "max_dd": -500.0,
+        "pf": 4.0
+      },
+      "walk_forward": [
+        {
+          "fold": 1,
+          "train": {
+            "n": 41,
+            "wins": 18,
+            "losses": 23,
+            "wr": 43.9,
+            "pnl": 800.0,
+            "avg_r": 0.098,
+            "exp_r": 0.098,
+            "max_dd": -1500.0,
+            "pf": 1.17
+          },
+          "oos": {
+            "n": 18,
+            "wins": 6,
+            "losses": 12,
+            "wr": 33.3,
+            "pnl": -600.0,
+            "avg_r": -0.167,
+            "exp_r": -0.167,
+            "max_dd": -1700.0,
+            "pf": 0.75
+          }
+        },
+        {
+          "fold": 2,
+          "train": {
+            "n": 59,
+            "wins": 24,
+            "losses": 35,
+            "wr": 40.7,
+            "pnl": 200.0,
+            "avg_r": 0.017,
+            "exp_r": 0.017,
+            "max_dd": -1700.0,
+            "pf": 1.03
+          },
+          "oos": {
+            "n": 13,
+            "wins": 4,
+            "losses": 9,
+            "wr": 30.8,
+            "pnl": -600.0,
+            "avg_r": -0.231,
+            "exp_r": -0.231,
+            "max_dd": -700.0,
+            "pf": 0.67
+          }
+        },
+        {
+          "fold": 3,
+          "train": {
+            "n": 72,
+            "wins": 28,
+            "losses": 44,
+            "wr": 38.9,
+            "pnl": -400.0,
+            "avg_r": -0.028,
+            "exp_r": -0.028,
+            "max_dd": -1700.0,
+            "pf": 0.95
+          },
+          "oos": {
+            "n": 12,
+            "wins": 9,
+            "losses": 3,
+            "wr": 75.0,
+            "pnl": 2100.0,
+            "avg_r": 0.875,
+            "exp_r": 0.875,
+            "max_dd": -400.0,
+            "pf": 4.5
+          }
+        },
+        {
+          "fold": 4,
+          "train": {
+            "n": 85,
+            "wins": 37,
+            "losses": 48,
+            "wr": 43.5,
+            "pnl": 1500.0,
+            "avg_r": 0.088,
+            "exp_r": 0.088,
+            "max_dd": -1900.0,
+            "pf": 1.16
+          },
+          "oos": {
+            "n": 14,
+            "wins": 9,
+            "losses": 5,
+            "wr": 64.3,
+            "pnl": 1700.0,
+            "avg_r": 0.607,
+            "exp_r": 0.607,
+            "max_dd": -600.0,
+            "pf": 2.7
+          }
+        }
+      ],
+      "torture": {
+        "spread_0.15R": {
+          "n": 95,
+          "wins": 44,
+          "losses": 51,
+          "wr": 46.3,
+          "pnl": 150.0,
+          "avg_r": 0.008,
+          "exp_r": 0.008,
+          "max_dd": -2990.0,
+          "pf": 1.01
+        },
+        "skip_30pct": {
+          "n": 63,
+          "wins": 30,
+          "losses": 33,
+          "wr": 47.6,
+          "pnl": 2400.0,
+          "avg_r": 0.19,
+          "exp_r": 0.19,
+          "max_dd": -900.0,
+          "pf": 1.36
+        },
+        "sl_widen_20pct": {
+          "n": 95,
+          "wins": 44,
+          "losses": 51,
+          "wr": 46.3,
+          "pnl": 960.0,
+          "avg_r": 0.051,
+          "exp_r": 0.051,
+          "max_dd": -2700.0,
+          "pf": 1.08
+        }
+      },
+      "monte_carlo": {
+        "paths": 2000,
+        "median_R": 15.0,
+        "p5_R": -5.0,
+        "p95_R": 35.0,
+        "mean_R": 15.419,
+        "prob_profit": 87.6,
+        "prob_ruin_10R": 7.8,
+        "median_maxDD_R": -8.5,
+        "p5_maxDD_R": -16.0
+      },
+      "verdict": "SURVIVES",
+      "wf_green": 2,
+      "wf_n": 4
+    },
+    "cell_score": 61.58,
+    "volume_pool": {
+      "full": {
+        "n": 5002721,
+        "win_rate": 49.4,
+        "exp_r": -0.0039,
+        "pnl": -3879887.11
+      },
+      "oos": {
+        "n": 1500817,
+        "win_rate": 49.42,
+        "exp_r": -0.0036,
+        "pnl": -1081211.15
+      },
+      "mc": {
+        "prob_profit": 42.5,
+        "paths": 400
+      },
+      "verdict": "DEAD"
+    }
+  },
+  "top15": [
+    {
+      "strategy": "bb_2.5",
+      "family": "hedge",
+      "label": "BB 2.5\u03c3",
+      "tf": "3m",
+      "n": 5,
+      "entries": 6,
+      "verdict": "SURVIVES",
+      "oos_exp_r": 1.5,
+      "full_exp_r": 1.0,
+      "mc_prob": 94.5,
+      "wf": "3/4",
+      "score": 74.475,
+      "is_current_live": false,
+      "honest": {
+        "full": {
+          "n": 5,
+          "wins": 4,
+          "losses": 1,
+          "wr": 80.0,
+          "pnl": 1000.0,
+          "avg_r": 1.0,
+          "exp_r": 1.0,
+          "max_dd": -200.0,
+          "pf": 6.0
+        },
+        "oos": {
+          "n": 2,
+          "wins": 2,
+          "losses": 0,
+          "wr": 100.0,
+          "pnl": 600.0,
+          "avg_r": 1.5,
+          "exp_r": 1.5,
+          "max_dd": 0.0,
+          "pf": 600000000000.0
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 5.0,
+          "p5_R": 0.0,
+          "p95_R": 7.5,
+          "mean_R": 4.973,
+          "prob_profit": 94.5,
+          "prob_ruin_10R": 0.0,
+          "median_maxDD_R": -1.0,
+          "p5_maxDD_R": -2.0
+        },
+        "verdict": "SURVIVES"
+      }
+    },
+    {
+      "strategy": "ema_pull",
+      "family": "retail",
+      "label": "EMA pull",
+      "tf": "3m",
+      "n": 95,
+      "entries": 145,
+      "verdict": "SURVIVES",
+      "oos_exp_r": 0.818,
+      "full_exp_r": 0.158,
+      "mc_prob": 87.6,
+      "wf": "2/4",
+      "score": 61.58,
+      "is_current_live": false,
+      "honest": {
+        "full": {
+          "n": 95,
+          "wins": 44,
+          "losses": 51,
+          "wr": 46.3,
+          "pnl": 3000.0,
+          "avg_r": 0.158,
+          "exp_r": 0.158,
+          "max_dd": -1900.0,
+          "pf": 1.29
+        },
+        "oos": {
+          "n": 22,
+          "wins": 16,
+          "losses": 6,
+          "wr": 72.7,
+          "pnl": 3600.0,
+          "avg_r": 0.818,
+          "exp_r": 0.818,
+          "max_dd": -500.0,
+          "pf": 4.0
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 15.0,
+          "p5_R": -5.0,
+          "p95_R": 35.0,
+          "mean_R": 15.419,
+          "prob_profit": 87.6,
+          "prob_ruin_10R": 7.8,
+          "median_maxDD_R": -8.5,
+          "p5_maxDD_R": -16.0
+        },
+        "verdict": "SURVIVES"
+      }
+    },
+    {
+      "strategy": "inside",
+      "family": "retail",
+      "label": "Inside break",
+      "tf": "1m",
+      "n": 478,
+      "entries": 940,
+      "verdict": "SURVIVES",
+      "oos_exp_r": 0.043,
+      "full_exp_r": 0.077,
+      "mc_prob": 91.2,
+      "wf": "3/4",
+      "score": 59.535,
+      "is_current_live": false,
+      "honest": {
+        "full": {
+          "n": 478,
+          "wins": 206,
+          "losses": 272,
+          "wr": 43.1,
+          "pnl": 7400.0,
+          "avg_r": 0.077,
+          "exp_r": 0.077,
+          "max_dd": -2900.0,
+          "pf": 1.14
+        },
+        "oos": {
+          "n": 151,
+          "wins": 63,
+          "losses": 88,
+          "wr": 41.7,
+          "pnl": 1300.0,
+          "avg_r": 0.043,
+          "exp_r": 0.043,
+          "max_dd": -3100.0,
+          "pf": 1.07
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 37.0,
+          "p5_R": -8.0,
+          "p95_R": 79.5,
+          "mean_R": 36.764,
+          "prob_profit": 91.2,
+          "prob_ruin_10R": 31.6,
+          "median_maxDD_R": -20.0,
+          "p5_maxDD_R": -37.5
+        },
+        "verdict": "SURVIVES"
+      }
+    },
+    {
+      "strategy": "macd",
+      "family": "retail",
+      "label": "MACD",
+      "tf": "1m",
+      "n": 336,
+      "entries": 554,
+      "verdict": "SURVIVES",
+      "oos_exp_r": 0.173,
+      "full_exp_r": 0.057,
+      "mc_prob": 80.3,
+      "wf": "4/4",
+      "score": 55.14,
+      "is_current_live": false,
+      "honest": {
+        "full": {
+          "n": 336,
+          "wins": 142,
+          "losses": 194,
+          "wr": 42.3,
+          "pnl": 3800.0,
+          "avg_r": 0.057,
+          "exp_r": 0.057,
+          "max_dd": -2900.0,
+          "pf": 1.1
+        },
+        "oos": {
+          "n": 98,
+          "wins": 46,
+          "losses": 52,
+          "wr": 46.9,
+          "pnl": 3400.0,
+          "avg_r": 0.173,
+          "exp_r": 0.173,
+          "max_dd": -1600.0,
+          "pf": 1.33
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 19.0,
+          "p5_R": -16.0,
+          "p95_R": 56.5,
+          "mean_R": 19.392,
+          "prob_profit": 80.3,
+          "prob_ruin_10R": 39.6,
+          "median_maxDD_R": -18.5,
+          "p5_maxDD_R": -36.0
+        },
+        "verdict": "SURVIVES"
+      }
+    },
+    {
+      "strategy": "stoch_30",
+      "family": "retail",
+      "label": "Stoch 30/70",
+      "tf": "5m",
+      "n": 311,
+      "entries": 681,
+      "verdict": "SURVIVES",
+      "oos_exp_r": 0.108,
+      "full_exp_r": 0.061,
+      "mc_prob": 79.0,
+      "wf": "3/4",
+      "score": 53.7,
+      "is_current_live": false,
+      "honest": {
+        "full": {
+          "n": 311,
+          "wins": 132,
+          "losses": 179,
+          "wr": 42.4,
+          "pnl": 3800.0,
+          "avg_r": 0.061,
+          "exp_r": 0.061,
+          "max_dd": -2800.0,
+          "pf": 1.11
+        },
+        "oos": {
+          "n": 88,
+          "wins": 39,
+          "losses": 49,
+          "wr": 44.3,
+          "pnl": 1900.0,
+          "avg_r": 0.108,
+          "exp_r": 0.108,
+          "max_dd": -2100.0,
+          "pf": 1.19
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 19.0,
+          "p5_R": -16.0,
+          "p95_R": 56.5,
+          "mean_R": 18.18,
+          "prob_profit": 79.0,
+          "prob_ruin_10R": 37.1,
+          "median_maxDD_R": -18.0,
+          "p5_maxDD_R": -35.5
+        },
+        "verdict": "SURVIVES"
+      }
+    },
+    {
+      "strategy": "stoch_20",
+      "family": "retail",
+      "label": "Stoch 20/80",
+      "tf": "3m",
+      "n": 273,
+      "entries": 459,
+      "verdict": "SURVIVES",
+      "oos_exp_r": 0.136,
+      "full_exp_r": 0.108,
+      "mc_prob": 91.5,
+      "wf": "4/4",
+      "score": 53.625,
+      "is_current_live": false,
+      "honest": {
+        "full": {
+          "n": 273,
+          "wins": 121,
+          "losses": 152,
+          "wr": 44.3,
+          "pnl": 5900.0,
+          "avg_r": 0.108,
+          "exp_r": 0.108,
+          "max_dd": -2600.0,
+          "pf": 1.19
+        },
+        "oos": {
+          "n": 77,
+          "wins": 35,
+          "losses": 42,
+          "wr": 45.5,
+          "pnl": 2100.0,
+          "avg_r": 0.136,
+          "exp_r": 0.136,
+          "max_dd": -900.0,
+          "pf": 1.25
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 29.5,
+          "p5_R": -5.5,
+          "p95_R": 64.5,
+          "mean_R": 28.891,
+          "prob_profit": 91.5,
+          "prob_ruin_10R": 21.2,
+          "median_maxDD_R": -14.5,
+          "p5_maxDD_R": -27.5
+        },
+        "verdict": "SURVIVES"
+      }
+    },
+    {
+      "strategy": "z_20_2",
+      "family": "hedge",
+      "label": "Z 20/2",
+      "tf": "3m",
+      "n": 271,
+      "entries": 394,
+      "verdict": "SURVIVES",
+      "oos_exp_r": 0.059,
+      "full_exp_r": 0.153,
+      "mc_prob": 98.4,
+      "wf": "3/4",
+      "score": 51.945,
+      "is_current_live": false,
+      "honest": {
+        "full": {
+          "n": 271,
+          "wins": 125,
+          "losses": 146,
+          "wr": 46.1,
+          "pnl": 8300.0,
+          "avg_r": 0.153,
+          "exp_r": 0.153,
+          "max_dd": -2300.0,
+          "pf": 1.28
+        },
+        "oos": {
+          "n": 85,
+          "wins": 36,
+          "losses": 49,
+          "wr": 42.4,
+          "pnl": 1000.0,
+          "avg_r": 0.059,
+          "exp_r": 0.059,
+          "max_dd": -1900.0,
+          "pf": 1.1
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 41.5,
+          "p5_R": 9.0,
+          "p95_R": 76.5,
+          "mean_R": 41.846,
+          "prob_profit": 98.4,
+          "prob_ruin_10R": 10.8,
+          "median_maxDD_R": -12.5,
+          "p5_maxDD_R": -22.5
+        },
+        "verdict": "SURVIVES"
+      }
+    },
+    {
+      "strategy": "cta_5_20",
+      "family": "hedge",
+      "label": "CTA 5/20",
+      "tf": "15m",
+      "n": 61,
+      "entries": 125,
+      "verdict": "SURVIVES",
+      "oos_exp_r": 0.447,
+      "full_exp_r": 0.23,
+      "mc_prob": 92.7,
+      "wf": "1/4",
+      "score": 49.86,
+      "is_current_live": false,
+      "honest": {
+        "full": {
+          "n": 61,
+          "wins": 30,
+          "losses": 31,
+          "wr": 49.2,
+          "pnl": 2800.0,
+          "avg_r": 0.23,
+          "exp_r": 0.23,
+          "max_dd": -1000.0,
+          "pf": 1.45
+        },
+        "oos": {
+          "n": 19,
+          "wins": 11,
+          "losses": 8,
+          "wr": 57.9,
+          "pnl": 1700.0,
+          "avg_r": 0.447,
+          "exp_r": 0.447,
+          "max_dd": -600.0,
+          "pf": 2.06
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 14.0,
+          "p5_R": -1.0,
+          "p95_R": 29.0,
+          "mean_R": 14.054,
+          "prob_profit": 92.7,
+          "prob_ruin_10R": 2.8,
+          "median_maxDD_R": -6.0,
+          "p5_maxDD_R": -12.0
+        },
+        "verdict": "SURVIVES"
+      }
+    },
+    {
+      "strategy": "z_40_2",
+      "family": "hedge",
+      "label": "Z 40/2",
+      "tf": "5m",
+      "n": 195,
+      "entries": 254,
+      "verdict": "SURVIVES",
+      "oos_exp_r": 0.136,
+      "full_exp_r": 0.051,
+      "mc_prob": 70.2,
+      "wf": "3/4",
+      "score": 48.16,
+      "is_current_live": false,
+      "honest": {
+        "full": {
+          "n": 195,
+          "wins": 82,
+          "losses": 113,
+          "wr": 42.1,
+          "pnl": 2000.0,
+          "avg_r": 0.051,
+          "exp_r": 0.051,
+          "max_dd": -2900.0,
+          "pf": 1.09
+        },
+        "oos": {
+          "n": 66,
+          "wins": 30,
+          "losses": 36,
+          "wr": 45.5,
+          "pnl": 1800.0,
+          "avg_r": 0.136,
+          "exp_r": 0.136,
+          "max_dd": -2900.0,
+          "pf": 1.25
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 10.0,
+          "p5_R": -15.0,
+          "p95_R": 40.0,
+          "mean_R": 10.47,
+          "prob_profit": 70.2,
+          "prob_ruin_10R": 33.5,
+          "median_maxDD_R": -15.0,
+          "p5_maxDD_R": -29.0
+        },
+        "verdict": "SURVIVES"
+      }
+    },
+    {
+      "strategy": "inside",
+      "family": "retail",
+      "label": "Inside break",
+      "tf": "15m",
+      "n": 78,
+      "entries": 144,
+      "verdict": "SURVIVES",
+      "oos_exp_r": 0.346,
+      "full_exp_r": 0.154,
+      "mc_prob": 85.7,
+      "wf": "2/4",
+      "score": 47.835,
+      "is_current_live": false,
+      "honest": {
+        "full": {
+          "n": 78,
+          "wins": 36,
+          "losses": 42,
+          "wr": 46.2,
+          "pnl": 2400.0,
+          "avg_r": 0.154,
+          "exp_r": 0.154,
+          "max_dd": -2600.0,
+          "pf": 1.29
+        },
+        "oos": {
+          "n": 26,
+          "wins": 14,
+          "losses": 12,
+          "wr": 53.8,
+          "pnl": 1800.0,
+          "avg_r": 0.346,
+          "exp_r": 0.346,
+          "max_dd": -1200.0,
+          "pf": 1.75
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 12.0,
+          "p5_R": -5.5,
+          "p95_R": 29.5,
+          "mean_R": 12.055,
+          "prob_profit": 85.7,
+          "prob_ruin_10R": 8.5,
+          "median_maxDD_R": -8.0,
+          "p5_maxDD_R": -16.0
+        },
+        "verdict": "SURVIVES"
+      }
+    },
+    {
+      "strategy": "bb_2",
+      "family": "hedge",
+      "label": "BB 2\u03c3",
+      "tf": "5m",
+      "n": 35,
+      "entries": 38,
+      "verdict": "SURVIVES",
+      "oos_exp_r": 0.364,
+      "full_exp_r": 0.286,
+      "mc_prob": 87.1,
+      "wf": "4/4",
+      "score": 46.705,
+      "is_current_live": false,
+      "honest": {
+        "full": {
+          "n": 35,
+          "wins": 18,
+          "losses": 17,
+          "wr": 51.4,
+          "pnl": 2000.0,
+          "avg_r": 0.286,
+          "exp_r": 0.286,
+          "max_dd": -600.0,
+          "pf": 1.59
+        },
+        "oos": {
+          "n": 11,
+          "wins": 6,
+          "losses": 5,
+          "wr": 54.5,
+          "pnl": 800.0,
+          "avg_r": 0.364,
+          "exp_r": 0.364,
+          "max_dd": -200.0,
+          "pf": 1.8
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 10.0,
+          "p5_R": -2.5,
+          "p95_R": 22.5,
+          "mean_R": 9.824,
+          "prob_profit": 87.1,
+          "prob_ruin_10R": 1.2,
+          "median_maxDD_R": -4.5,
+          "p5_maxDD_R": -9.5
+        },
+        "verdict": "SURVIVES"
+      }
+    },
+    {
+      "strategy": "rsi",
+      "family": "hedge",
+      "label": "RSI MR",
+      "tf": "15m",
+      "n": 76,
+      "entries": 125,
+      "verdict": "SURVIVES",
+      "oos_exp_r": 0.296,
+      "full_exp_r": 0.151,
+      "mc_prob": 86.1,
+      "wf": "2/4",
+      "score": 46.505,
+      "is_current_live": false,
+      "honest": {
+        "full": {
+          "n": 76,
+          "wins": 35,
+          "losses": 41,
+          "wr": 46.1,
+          "pnl": 2300.0,
+          "avg_r": 0.151,
+          "exp_r": 0.151,
+          "max_dd": -2100.0,
+          "pf": 1.28
+        },
+        "oos": {
+          "n": 27,
+          "wins": 14,
+          "losses": 13,
+          "wr": 51.9,
+          "pnl": 1600.0,
+          "avg_r": 0.296,
+          "exp_r": 0.296,
+          "max_dd": -1200.0,
+          "pf": 1.62
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 11.5,
+          "p5_R": -6.0,
+          "p95_R": 29.0,
+          "mean_R": 11.774,
+          "prob_profit": 86.1,
+          "prob_ruin_10R": 8.8,
+          "median_maxDD_R": -7.5,
+          "p5_maxDD_R": -16.0
+        },
+        "verdict": "SURVIVES"
+      }
+    },
+    {
+      "strategy": "ichi",
+      "family": "retail",
+      "label": "Ichimoku TK",
+      "tf": "15m",
+      "n": 68,
+      "entries": 96,
+      "verdict": "SURVIVES",
+      "oos_exp_r": 0.316,
+      "full_exp_r": 0.14,
+      "mc_prob": 81.3,
+      "wf": "3/4",
+      "score": 46.365,
+      "is_current_live": false,
+      "honest": {
+        "full": {
+          "n": 68,
+          "wins": 31,
+          "losses": 37,
+          "wr": 45.6,
+          "pnl": 1900.0,
+          "avg_r": 0.14,
+          "exp_r": 0.14,
+          "max_dd": -2000.0,
+          "pf": 1.26
+        },
+        "oos": {
+          "n": 19,
+          "wins": 10,
+          "losses": 9,
+          "wr": 52.6,
+          "pnl": 1200.0,
+          "avg_r": 0.316,
+          "exp_r": 0.316,
+          "max_dd": -600.0,
+          "pf": 1.67
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 9.5,
+          "p5_R": -8.0,
+          "p95_R": 27.0,
+          "mean_R": 9.599,
+          "prob_profit": 81.3,
+          "prob_ruin_10R": 8.9,
+          "median_maxDD_R": -7.5,
+          "p5_maxDD_R": -15.5
+        },
+        "verdict": "SURVIVES"
+      }
+    },
+    {
+      "strategy": "cta_10_40",
+      "family": "hedge",
+      "label": "CTA 10/40",
+      "tf": "3m",
+      "n": 145,
+      "entries": 210,
+      "verdict": "SURVIVES",
+      "oos_exp_r": 0.111,
+      "full_exp_r": 0.121,
+      "mc_prob": 85.4,
+      "wf": "2/4",
+      "score": 46.295,
+      "is_current_live": false,
+      "honest": {
+        "full": {
+          "n": 145,
+          "wins": 65,
+          "losses": 80,
+          "wr": 44.8,
+          "pnl": 3500.0,
+          "avg_r": 0.121,
+          "exp_r": 0.121,
+          "max_dd": -2000.0,
+          "pf": 1.22
+        },
+        "oos": {
+          "n": 36,
+          "wins": 16,
+          "losses": 20,
+          "wr": 44.4,
+          "pnl": 800.0,
+          "avg_r": 0.111,
+          "exp_r": 0.111,
+          "max_dd": -1300.0,
+          "pf": 1.2
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 17.5,
+          "p5_R": -7.5,
+          "p95_R": 42.5,
+          "mean_R": 17.88,
+          "prob_profit": 85.4,
+          "prob_ruin_10R": 14.9,
+          "median_maxDD_R": -11.0,
+          "p5_maxDD_R": -20.5
+        },
+        "verdict": "SURVIVES"
+      }
+    },
+    {
+      "strategy": "cta_12_26",
+      "family": "hedge",
+      "label": "CTA 12/26",
+      "tf": "15m",
+      "n": 47,
+      "entries": 77,
+      "verdict": "SURVIVES",
+      "oos_exp_r": 0.333,
+      "full_exp_r": 0.223,
+      "mc_prob": 90.0,
+      "wf": "3/4",
+      "score": 46.175,
+      "is_current_live": false,
+      "honest": {
+        "full": {
+          "n": 47,
+          "wins": 23,
+          "losses": 24,
+          "wr": 48.9,
+          "pnl": 2100.0,
+          "avg_r": 0.223,
+          "exp_r": 0.223,
+          "max_dd": -1600.0,
+          "pf": 1.44
+        },
+        "oos": {
+          "n": 15,
+          "wins": 8,
+          "losses": 7,
+          "wr": 53.3,
+          "pnl": 1000.0,
+          "avg_r": 0.333,
+          "exp_r": 0.333,
+          "max_dd": -600.0,
+          "pf": 1.71
+        },
+        "monte_carlo": {
+          "paths": 2000,
+          "median_R": 10.5,
+          "p5_R": -4.5,
+          "p95_R": 25.5,
+          "mean_R": 10.591,
+          "prob_profit": 90.0,
+          "prob_ruin_10R": 2.4,
+          "median_maxDD_R": -5.5,
+          "p5_maxDD_R": -11.0
+        },
+        "verdict": "SURVIVES"
+      }
+    }
+  ],
+  "cells_tested": 143,
+  "strategies_catalog": 41,
+  "tfs": {
+    "5m": 5700,
+    "3m": 7115,
+    "1m": 7030,
+    "15m": 1902
+  },
+  "elapsed_s": 180.2,
+  "recommend_wire": {
+    "SYMBOL_ENTRY_BRAIN_AUDUSD": "ema_20_50_pull",
+    "SYMBOL_SCAN_TFS_AUDUSD": "3m"
+  },
+  "note": "Research complete \u2014 wire separately if approved"
+}

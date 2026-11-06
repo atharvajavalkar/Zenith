@@ -1,0 +1,109 @@
+Intraday hunt · 1m/3m/5m/15m only · 43 retail+hedge · ≥1,000,000/pair · NO daily
+[GOLD] loading 1m/3m/5m/15m…
+WARNING:data.fetcher:Data OK via fallback OANDA:XAUUSD (XM preferred but unavailable) — will retry XM on next fetch
+  GOLD 5m: 5443 bars 2026-06-28→2026-07-24
+  GOLD 3m: 6836 bars 2026-07-05→2026-07-24
+  GOLD 1m: 6732 bars 2026-07-19→2026-07-24
+  GOLD 15m: 1815 bars (resampled) 2026-06-28→2026-07-24
+[GOLD] hunted 5m · strategies=40 · trades=32,830
+[GOLD] hunted 3m · strategies=40 · trades=74,825
+[GOLD] hunted 1m · strategies=40 · trades=110,008
+[GOLD] hunted 15m · strategies=40 · trades=120,809
+[GOLD] dense#1 · 555,649/1,000,000
+[GOLD] dense#2 · 990,489/1,000,000
+[GOLD] dense#3 · 1,001,309/1,000,000
+★ [GOLD] best=cta_10_40@15m · SURVIVES · trades=1,001,309
+[USDCHF] loading 1m/3m/5m/15m…
+  USDCHF 5m: 5685 bars 2026-06-28→2026-07-24
+  USDCHF 3m: 7092 bars 2026-07-05→2026-07-24
+  USDCHF 1m: 6996 bars 2026-07-19→2026-07-24
+  USDCHF 15m: 1896 bars (resampled) 2026-06-28→2026-07-24
+[USDCHF] hunted 5m · strategies=40 · trades=31,221
+[USDCHF] hunted 3m · strategies=40 · trades=68,521
+[USDCHF] hunted 1m · strategies=40 · trades=92,615
+[USDCHF] hunted 15m · strategies=40 · trades=104,144
+[USDCHF] dense#1 · 541,651/1,000,000
+[USDCHF] dense#2 · 979,158/1,000,000
+[USDCHF] dense#3 · 1,001,042/1,000,000
+★ [USDCHF] best=rsi@1m · SURVIVES · trades=1,001,042
+[USDJPY] loading 1m/3m/5m/15m…
+  USDJPY 5m: 5685 bars 2026-06-28→2026-07-24
+  USDJPY 3m: 7094 bars 2026-07-05→2026-07-24
+  USDJPY 1m: 7002 bars 2026-07-19→2026-07-24
+  USDJPY 15m: 1895 bars (resampled) 2026-06-28→2026-07-24
+[USDJPY] hunted 5m · strategies=40 · trades=27,553
+[USDJPY] hunted 3m · strategies=40 · trades=60,690
+[USDJPY] hunted 1m · strategies=40 · trades=80,860
+[USDJPY] hunted 15m · strategies=40 · trades=90,835
+[USDJPY] dense#1 · 529,777/1,000,000
+[USDJPY] dense#2 · 968,719/1,000,000
+[USDJPY] dense#3 · 1,001,635/1,000,000
+★ [USDJPY] best=bb_1.5@15m · SURVIVES · trades=1,001,635
+[NAS100] loading 1m/3m/5m/15m…
+  NAS100 5m: 5278 bars 2026-04-20→2026-07-24
+  NAS100 3m: 5477 bars 2026-05-26→2026-07-24
+  NAS100 1m: 5792 bars 2026-07-06→2026-07-24
+  NAS100 15m: 1804 bars (resampled) 2026-04-20→2026-07-24
+[NAS100] hunted 5m · strategies=41 · trades=33,016
+[NAS100] hunted 3m · strategies=42 · trades=69,248
+[NAS100] hunted 1m · strategies=42 · trades=103,199
+[NAS100] hunted 15m · strategies=42 · trades=115,509
+[NAS100] dense#1 · 498,696/1,000,000
+[NAS100] dense#2 · 881,883/1,000,000
+[NAS100] dense#3 · 1,003,077/1,000,000
+★ [NAS100] best=ema_tight@15m · SURVIVES · trades=1,003,077
+[UKOIL] loading 1m/3m/5m/15m…
+  UKOIL 5m: 5265 bars 2026-06-28→2026-07-24
+  UKOIL 3m: 6623 bars 2026-07-05→2026-07-24
+  UKOIL 1m: 6540 bars 2026-07-19→2026-07-24
+  UKOIL 15m: 1756 bars (resampled) 2026-06-28→2026-07-24
+[UKOIL] hunted 5m · strategies=43 · trades=36,353
+[UKOIL] hunted 3m · strategies=43 · trades=82,381
+[UKOIL] hunted 1m · strategies=43 · trades=120,318
+[UKOIL] hunted 15m · strategies=43 · trades=132,360
+[UKOIL] dense#1 · 542,980/1,000,000
+[UKOIL] dense#2 · 953,600/1,000,000
+[UKOIL] dense#3 · 1,004,440/1,000,000
+★ [UKOIL] best=st_3@15m · SURVIVES · trades=1,004,440
+[AUDUSD] loading 1m/3m/5m/15m…
+  AUDUSD 5m: 5694 bars 2026-06-28→2026-07-24
+  AUDUSD 3m: 7104 bars 2026-07-05→2026-07-24
+  AUDUSD 1m: 7026 bars 2026-07-19→2026-07-24
+  AUDUSD 15m: 1900 bars (resampled) 2026-06-28→2026-07-24
+[AUDUSD] hunted 5m · strategies=40 · trades=32,385
+[AUDUSD] hunted 3m · strategies=40 · trades=72,139
+[AUDUSD] hunted 1m · strategies=40 · trades=100,311
+[AUDUSD] hunted 15m · strategies=40 · trades=111,676
+[AUDUSD] dense#1 · 548,168/1,000,000
+[AUDUSD] dense#2 · 984,660/1,000,000
+[AUDUSD] dense#3 · 1,001,091/1,000,000
+★ [AUDUSD] best=bb_1.5@15m · SURVIVES · trades=1,001,091
+[BTCUSD] loading 1m/3m/5m/15m…
+  BTCUSD 5m: 6338 bars 2026-06-15→2026-07-24
+  BTCUSD 3m: 6380 bars 2026-06-22→2026-07-24
+  BTCUSD 1m: 6913 bars 2026-07-20→2026-07-24
+  BTCUSD 15m: 3192 bars (resampled) 2026-06-15→2026-07-24
+[BTCUSD] hunted 5m · strategies=40 · trades=48,443
+[BTCUSD] hunted 3m · strategies=40 · trades=96,988
+[BTCUSD] hunted 1m · strategies=40 · trades=144,495
+[BTCUSD] hunted 15m · strategies=42 · trades=168,171
+[BTCUSD] dense#1 · 561,746/1,000,000
+[BTCUSD] dense#2 · 955,321/1,000,000
+[BTCUSD] dense#3 · 1,002,829/1,000,000
+★ [BTCUSD] best=fib_liq@3m · SURVIVES · trades=1,002,829
+[ETHUSD] loading 1m/3m/5m/15m…
+  ETHUSD 5m: 5459 bars 2026-06-08→2026-07-24
+  ETHUSD 3m: 5477 bars 2026-06-22→2026-07-24
+  ETHUSD 1m: 6181 bars 2026-06-29→2026-07-24
+  ETHUSD 15m: 2908 bars (resampled) 2026-06-08→2026-07-24
+[ETHUSD] hunted 5m · strategies=40 · trades=41,218
+[ETHUSD] hunted 3m · strategies=43 · trades=85,339
+[ETHUSD] hunted 1m · strategies=43 · trades=128,538
+[ETHUSD] hunted 15m · strategies=43 · trades=149,726
+[ETHUSD] dense#1 · 471,159/1,000,000
+[ETHUSD] dense#2 · 792,592/1,000,000
+[ETHUSD] dense#3 · 1,000,042/1,000,000
+★ [ETHUSD] best=bb_2@1m · SURVIVES · trades=1,000,042
+DONE · intraday 1/3/5/15m · 8/8 ≥1,000,000 · total 8,015,465 · honest 7.5/10 (5S/2F/1D)
+Wrote /app/data/strategy_lab.json in 2938.7s
+Honest 7.5/10 · 5S/2F/1D · trades=8,015,465

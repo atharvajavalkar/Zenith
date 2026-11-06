@@ -1,0 +1,1170 @@
+{
+  "generated_at": "2026-07-24T20:05:35.496478+00:00",
+  "mode": "prev_vs_current_readonly",
+  "risk_usd": 200.0,
+  "previous_brains": {
+    "GOLD": [
+      "fib_liq_sweep",
+      "15m"
+    ],
+    "USDCHF": [
+      "ema_20_50_tight",
+      "5m"
+    ],
+    "USDJPY": [
+      "fib_liq_sweep",
+      "15m"
+    ],
+    "NAS100": [
+      "sma_20_50_cross",
+      "15m"
+    ],
+    "UKOIL": [
+      "breakout_20",
+      "15m"
+    ],
+    "AUDUSD": [
+      "ema_20_50_pull",
+      "15m"
+    ],
+    "BTCUSD": [
+      "ema_20_50_tight",
+      "5m"
+    ],
+    "ETHUSD": [
+      "ema_20_50_tight",
+      "5m"
+    ]
+  },
+  "current_brains": {
+    "GOLD": "cta_10_40",
+    "USDCHF": "rsi",
+    "USDJPY": "bb_1.5",
+    "NAS100": "ema_20_50_tight",
+    "UKOIL": "st_3",
+    "AUDUSD": "ema_20_50_pull",
+    "BTCUSD": "fib_liq_sweep",
+    "ETHUSD": "bb_2"
+  },
+  "comparisons": [
+    {
+      "symbol": "GOLD",
+      "rr": 4.0,
+      "previous": {
+        "brain": "fib_liq_sweep",
+        "tf": "15m",
+        "week": {
+          "error": "The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+          "verdict": "DEAD",
+          "full": {
+            "pnl": 0,
+            "n": 0
+          },
+          "oos": {
+            "pnl": 0
+          }
+        },
+        "year_1h": {
+          "bars": 5711,
+          "start": "2025-07-23 00:00:00+00:00",
+          "end": "2026-07-23 23:00:00+00:00",
+          "span_days": 365.96,
+          "entries": 28,
+          "full": {
+            "n": 25,
+            "wins": 7,
+            "losses": 18,
+            "wr": 28.0,
+            "pnl": 2000.0,
+            "avg_r": 0.4,
+            "exp_r": 0.4,
+            "max_dd": -2400.0,
+            "pf": 1.56
+          },
+          "oos": {
+            "n": 8,
+            "wins": 4,
+            "losses": 4,
+            "wr": 50.0,
+            "pnl": 2400.0,
+            "avg_r": 1.5,
+            "exp_r": 1.5,
+            "max_dd": -600.0,
+            "pf": 4.0
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": 10.0,
+            "p5_R": -10.0,
+            "p95_R": 30.0,
+            "mean_R": 9.723,
+            "prob_profit": 74.1,
+            "prob_ruin_10R": 6.0,
+            "median_maxDD_R": -7.0,
+            "p5_maxDD_R": -13.0
+          },
+          "verdict": "SURVIVES",
+          "wf_green": 2,
+          "wf_n": 4,
+          "torture_exp_r": {
+            "spread_0.15R": 0.25,
+            "skip_30pct": 0.071,
+            "sl_widen_20pct": 0.256
+          }
+        }
+      },
+      "current": {
+        "brain": "cta_10_40",
+        "tf": "15m",
+        "week": {
+          "error": "The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+          "verdict": "DEAD",
+          "full": {
+            "pnl": 0,
+            "n": 0
+          },
+          "oos": {
+            "pnl": 0
+          }
+        },
+        "year_1h": {
+          "bars": 5711,
+          "start": "2025-07-23 00:00:00+00:00",
+          "end": "2026-07-23 23:00:00+00:00",
+          "span_days": 365.96,
+          "entries": 168,
+          "full": {
+            "n": 80,
+            "wins": 17,
+            "losses": 63,
+            "wr": 21.2,
+            "pnl": 1000.0,
+            "avg_r": 0.062,
+            "exp_r": 0.062,
+            "max_dd": -2800.0,
+            "pf": 1.08
+          },
+          "oos": {
+            "n": 30,
+            "wins": 4,
+            "losses": 26,
+            "wr": 13.3,
+            "pnl": -2000.0,
+            "avg_r": -0.333,
+            "exp_r": -0.333,
+            "max_dd": -2800.0,
+            "pf": 0.62
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": 5.0,
+            "p5_R": -25.0,
+            "p95_R": 35.0,
+            "mean_R": 4.952,
+            "prob_profit": 53.2,
+            "prob_ruin_10R": 45.0,
+            "median_maxDD_R": -17.0,
+            "p5_maxDD_R": -32.0
+          },
+          "verdict": "FRAGILE",
+          "wf_green": 1,
+          "wf_n": 4,
+          "torture_exp_r": {
+            "spread_0.15R": -0.087,
+            "skip_30pct": -0.091,
+            "sl_widen_20pct": -0.095
+          }
+        }
+      },
+      "unchanged": false,
+      "week_oos_winner": "tie",
+      "week_full_winner": "tie",
+      "year_oos_winner": "previous",
+      "year_full_winner": "previous"
+    },
+    {
+      "symbol": "USDCHF",
+      "rr": 2.4,
+      "previous": {
+        "brain": "ema_20_50_tight",
+        "tf": "5m",
+        "week": {
+          "error": "The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+          "verdict": "DEAD",
+          "full": {
+            "pnl": 0,
+            "n": 0
+          },
+          "oos": {
+            "pnl": 0
+          }
+        },
+        "year_1h": {
+          "bars": 6138,
+          "start": "2025-07-23 00:00:00+00:00",
+          "end": "2026-07-23 22:00:00+00:00",
+          "span_days": 365.92,
+          "entries": 45,
+          "full": {
+            "n": 35,
+            "wins": 9,
+            "losses": 26,
+            "wr": 25.7,
+            "pnl": -880.0,
+            "avg_r": -0.126,
+            "exp_r": -0.126,
+            "max_dd": -2480.0,
+            "pf": 0.83
+          },
+          "oos": {
+            "n": 7,
+            "wins": 4,
+            "losses": 3,
+            "wr": 57.1,
+            "pnl": 1320.0,
+            "avg_r": 0.943,
+            "exp_r": 0.943,
+            "max_dd": -400.0,
+            "pf": 3.2
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": -4.4,
+            "p5_R": -18.0,
+            "p95_R": 9.2,
+            "mean_R": -4.383,
+            "prob_profit": 27.3,
+            "prob_ruin_10R": 39.4,
+            "median_maxDD_R": -10.8,
+            "p5_maxDD_R": -20.4
+          },
+          "verdict": "FRAGILE",
+          "wf_green": 3,
+          "wf_n": 4,
+          "torture_exp_r": {
+            "spread_0.15R": -0.276,
+            "skip_30pct": 0.02,
+            "sl_widen_20pct": -0.274
+          }
+        }
+      },
+      "current": {
+        "brain": "rsi",
+        "tf": "1m",
+        "week": {
+          "error": "The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+          "verdict": "DEAD",
+          "full": {
+            "pnl": 0,
+            "n": 0
+          },
+          "oos": {
+            "pnl": 0
+          }
+        },
+        "year_1h": {
+          "bars": 6138,
+          "start": "2025-07-23 00:00:00+00:00",
+          "end": "2026-07-23 22:00:00+00:00",
+          "span_days": 365.92,
+          "entries": 385,
+          "full": {
+            "n": 226,
+            "wins": 61,
+            "losses": 165,
+            "wr": 27.0,
+            "pnl": -3720.0,
+            "avg_r": -0.082,
+            "exp_r": -0.082,
+            "max_dd": -5280.0,
+            "pf": 0.89
+          },
+          "oos": {
+            "n": 70,
+            "wins": 15,
+            "losses": 55,
+            "wr": 21.4,
+            "pnl": -3800.0,
+            "avg_r": -0.271,
+            "exp_r": -0.271,
+            "max_dd": -4520.0,
+            "pf": 0.65
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": -18.6,
+            "p5_R": -56.0,
+            "p95_R": 18.8,
+            "mean_R": -18.838,
+            "prob_profit": 20.9,
+            "prob_ruin_10R": 85.3,
+            "median_maxDD_R": -34.8,
+            "p5_maxDD_R": -62.41
+          },
+          "verdict": "DEAD",
+          "wf_green": 2,
+          "wf_n": 4,
+          "torture_exp_r": {
+            "spread_0.15R": -0.232,
+            "skip_30pct": -0.11,
+            "sl_widen_20pct": -0.228
+          }
+        }
+      },
+      "unchanged": false,
+      "week_oos_winner": "tie",
+      "week_full_winner": "tie",
+      "year_oos_winner": "previous",
+      "year_full_winner": "previous"
+    },
+    {
+      "symbol": "USDJPY",
+      "rr": 4.0,
+      "previous": {
+        "brain": "fib_liq_sweep",
+        "tf": "15m",
+        "week": {
+          "error": "The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+          "verdict": "DEAD",
+          "full": {
+            "pnl": 0,
+            "n": 0
+          },
+          "oos": {
+            "pnl": 0
+          }
+        },
+        "year_1h": {
+          "bars": 6128,
+          "start": "2025-07-23 00:00:00+00:00",
+          "end": "2026-07-23 22:00:00+00:00",
+          "span_days": 365.92,
+          "entries": 32,
+          "full": {
+            "n": 29,
+            "wins": 8,
+            "losses": 21,
+            "wr": 27.6,
+            "pnl": 2200.0,
+            "avg_r": 0.379,
+            "exp_r": 0.379,
+            "max_dd": -1400.0,
+            "pf": 1.52
+          },
+          "oos": {
+            "n": 7,
+            "wins": 4,
+            "losses": 3,
+            "wr": 57.1,
+            "pnl": 2600.0,
+            "avg_r": 1.857,
+            "exp_r": 1.857,
+            "max_dd": -400.0,
+            "pf": 5.33
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": 11.0,
+            "p5_R": -9.0,
+            "p95_R": 31.0,
+            "mean_R": 10.947,
+            "prob_profit": 85.5,
+            "prob_ruin_10R": 8.2,
+            "median_maxDD_R": -7.0,
+            "p5_maxDD_R": -15.0
+          },
+          "verdict": "SURVIVES",
+          "wf_green": 3,
+          "wf_n": 4,
+          "torture_exp_r": {
+            "spread_0.15R": 0.229,
+            "skip_30pct": -0.062,
+            "sl_widen_20pct": 0.234
+          }
+        }
+      },
+      "current": {
+        "brain": "bb_1.5",
+        "tf": "15m",
+        "week": {
+          "error": "The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+          "verdict": "DEAD",
+          "full": {
+            "pnl": 0,
+            "n": 0
+          },
+          "oos": {
+            "pnl": 0
+          }
+        },
+        "year_1h": {
+          "bars": 6128,
+          "start": "2025-07-23 00:00:00+00:00",
+          "end": "2026-07-23 22:00:00+00:00",
+          "span_days": 365.92,
+          "entries": 305,
+          "full": {
+            "n": 169,
+            "wins": 32,
+            "losses": 137,
+            "wr": 18.9,
+            "pnl": -1800.0,
+            "avg_r": -0.053,
+            "exp_r": -0.053,
+            "max_dd": -5000.0,
+            "pf": 0.93
+          },
+          "oos": {
+            "n": 47,
+            "wins": 7,
+            "losses": 40,
+            "wr": 14.9,
+            "pnl": -2400.0,
+            "avg_r": -0.255,
+            "exp_r": -0.255,
+            "max_dd": -5000.0,
+            "pf": 0.7
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": -9.0,
+            "p5_R": -49.0,
+            "p95_R": 31.0,
+            "mean_R": -9.32,
+            "prob_profit": 36.8,
+            "prob_ruin_10R": 76.5,
+            "median_maxDD_R": -32.0,
+            "p5_maxDD_R": -59.0
+          },
+          "verdict": "DEAD",
+          "wf_green": 2,
+          "wf_n": 4,
+          "torture_exp_r": {
+            "spread_0.15R": -0.203,
+            "skip_30pct": -0.028,
+            "sl_widen_20pct": -0.215
+          }
+        }
+      },
+      "unchanged": false,
+      "week_oos_winner": "tie",
+      "week_full_winner": "tie",
+      "year_oos_winner": "previous",
+      "year_full_winner": "previous"
+    },
+    {
+      "symbol": "NAS100",
+      "rr": 4.0,
+      "previous": {
+        "brain": "sma_20_50_cross",
+        "tf": "15m",
+        "week": {
+          "error": "The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+          "verdict": "DEAD",
+          "full": {
+            "pnl": 0,
+            "n": 0
+          },
+          "oos": {
+            "pnl": 0
+          }
+        },
+        "year_1h": {
+          "bars": 5717,
+          "start": "2025-07-23 00:00:00+00:00",
+          "end": "2026-07-23 23:00:00+00:00",
+          "span_days": 365.96,
+          "entries": 117,
+          "full": {
+            "n": 105,
+            "wins": 28,
+            "losses": 77,
+            "wr": 26.7,
+            "pnl": 7000.0,
+            "avg_r": 0.333,
+            "exp_r": 0.333,
+            "max_dd": -3000.0,
+            "pf": 1.45
+          },
+          "oos": {
+            "n": 28,
+            "wins": 11,
+            "losses": 17,
+            "wr": 39.3,
+            "pnl": 5400.0,
+            "avg_r": 0.964,
+            "exp_r": 0.964,
+            "max_dd": -800.0,
+            "pf": 2.59
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": 35.0,
+            "p5_R": -5.0,
+            "p95_R": 75.0,
+            "mean_R": 35.227,
+            "prob_profit": 91.4,
+            "prob_ruin_10R": 17.8,
+            "median_maxDD_R": -13.0,
+            "p5_maxDD_R": -25.0
+          },
+          "verdict": "SURVIVES",
+          "wf_green": 3,
+          "wf_n": 4,
+          "torture_exp_r": {
+            "spread_0.15R": 0.183,
+            "skip_30pct": 0.377,
+            "sl_widen_20pct": 0.187
+          }
+        }
+      },
+      "current": {
+        "brain": "ema_20_50_tight",
+        "tf": "15m",
+        "week": {
+          "error": "The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+          "verdict": "DEAD",
+          "full": {
+            "pnl": 0,
+            "n": 0
+          },
+          "oos": {
+            "pnl": 0
+          }
+        },
+        "year_1h": {
+          "bars": 5717,
+          "start": "2025-07-23 00:00:00+00:00",
+          "end": "2026-07-23 23:00:00+00:00",
+          "span_days": 365.96,
+          "entries": 31,
+          "full": {
+            "n": 25,
+            "wins": 5,
+            "losses": 20,
+            "wr": 20.0,
+            "pnl": 0.0,
+            "avg_r": 0.0,
+            "exp_r": 0.0,
+            "max_dd": -1200.0,
+            "pf": 1.0
+          },
+          "oos": {
+            "n": 10,
+            "wins": 3,
+            "losses": 7,
+            "wr": 30.0,
+            "pnl": 1000.0,
+            "avg_r": 0.5,
+            "exp_r": 0.5,
+            "max_dd": -800.0,
+            "pf": 1.71
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": 0.0,
+            "p5_R": -15.0,
+            "p95_R": 20.0,
+            "mean_R": 0.133,
+            "prob_profit": 39.1,
+            "prob_ruin_10R": 23.1,
+            "median_maxDD_R": -9.0,
+            "p5_maxDD_R": -18.0
+          },
+          "verdict": "DEAD",
+          "wf_green": 1,
+          "wf_n": 4,
+          "torture_exp_r": {
+            "spread_0.15R": -0.15,
+            "skip_30pct": -0.286,
+            "sl_widen_20pct": -0.16
+          }
+        }
+      },
+      "unchanged": false,
+      "week_oos_winner": "tie",
+      "week_full_winner": "tie",
+      "year_oos_winner": "previous",
+      "year_full_winner": "previous"
+    },
+    {
+      "symbol": "UKOIL",
+      "rr": 3.0,
+      "previous": {
+        "brain": "breakout_20",
+        "tf": "15m",
+        "week": {
+          "error": "The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+          "verdict": "DEAD",
+          "full": {
+            "pnl": 0,
+            "n": 0
+          },
+          "oos": {
+            "pnl": 0
+          }
+        },
+        "year_1h": {
+          "bars": 5695,
+          "start": "2025-07-23 00:00:00+00:00",
+          "end": "2026-07-23 23:00:00+00:00",
+          "span_days": 365.96,
+          "entries": 538,
+          "full": {
+            "n": 208,
+            "wins": 56,
+            "losses": 152,
+            "wr": 26.9,
+            "pnl": 3200.0,
+            "avg_r": 0.077,
+            "exp_r": 0.077,
+            "max_dd": -5800.0,
+            "pf": 1.11
+          },
+          "oos": {
+            "n": 67,
+            "wins": 21,
+            "losses": 46,
+            "wr": 31.3,
+            "pnl": 3400.0,
+            "avg_r": 0.254,
+            "exp_r": 0.254,
+            "max_dd": -1400.0,
+            "pf": 1.37
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": 16.0,
+            "p5_R": -24.0,
+            "p95_R": 60.0,
+            "mean_R": 15.962,
+            "prob_profit": 70.6,
+            "prob_ruin_10R": 48.5,
+            "median_maxDD_R": -22.0,
+            "p5_maxDD_R": -43.0
+          },
+          "verdict": "SURVIVES",
+          "wf_green": 4,
+          "wf_n": 4,
+          "torture_exp_r": {
+            "spread_0.15R": -0.073,
+            "skip_30pct": 0.067,
+            "sl_widen_20pct": -0.069
+          }
+        }
+      },
+      "current": {
+        "brain": "st_3",
+        "tf": "15m",
+        "week": {
+          "error": "The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+          "verdict": "DEAD",
+          "full": {
+            "pnl": 0,
+            "n": 0
+          },
+          "oos": {
+            "pnl": 0
+          }
+        },
+        "year_1h": {
+          "bars": 5695,
+          "start": "2025-07-23 00:00:00+00:00",
+          "end": "2026-07-23 23:00:00+00:00",
+          "span_days": 365.96,
+          "entries": 40,
+          "full": {
+            "n": 32,
+            "wins": 4,
+            "losses": 28,
+            "wr": 12.5,
+            "pnl": -3200.0,
+            "avg_r": -0.5,
+            "exp_r": -0.5,
+            "max_dd": -3800.0,
+            "pf": 0.43
+          },
+          "oos": {
+            "n": 17,
+            "wins": 1,
+            "losses": 16,
+            "wr": 5.9,
+            "pnl": -2600.0,
+            "avg_r": -0.765,
+            "exp_r": -0.765,
+            "max_dd": -2600.0,
+            "pf": 0.19
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": -16.0,
+            "p5_R": -28.0,
+            "p95_R": -4.0,
+            "mean_R": -15.73,
+            "prob_profit": 1.8,
+            "prob_ruin_10R": 84.9,
+            "median_maxDD_R": -19.0,
+            "p5_maxDD_R": -27.0
+          },
+          "verdict": "DEAD",
+          "wf_green": 1,
+          "wf_n": 4,
+          "torture_exp_r": {
+            "spread_0.15R": -0.65,
+            "skip_30pct": -0.158,
+            "sl_widen_20pct": -0.675
+          }
+        }
+      },
+      "unchanged": false,
+      "week_oos_winner": "tie",
+      "week_full_winner": "tie",
+      "year_oos_winner": "previous",
+      "year_full_winner": "previous"
+    },
+    {
+      "symbol": "AUDUSD",
+      "rr": 1.5,
+      "previous": {
+        "brain": "ema_20_50_pull",
+        "tf": "15m",
+        "week": {
+          "error": "The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+          "verdict": "DEAD",
+          "full": {
+            "pnl": 0,
+            "n": 0
+          },
+          "oos": {
+            "pnl": 0
+          }
+        },
+        "year_1h": {
+          "bars": 6196,
+          "start": "2025-07-23 00:00:00+00:00",
+          "end": "2026-07-23 22:00:00+00:00",
+          "span_days": 365.92,
+          "entries": 97,
+          "full": {
+            "n": 73,
+            "wins": 34,
+            "losses": 39,
+            "wr": 46.6,
+            "pnl": 2400.0,
+            "avg_r": 0.164,
+            "exp_r": 0.164,
+            "max_dd": -1500.0,
+            "pf": 1.31
+          },
+          "oos": {
+            "n": 21,
+            "wins": 11,
+            "losses": 10,
+            "wr": 52.4,
+            "pnl": 1300.0,
+            "avg_r": 0.31,
+            "exp_r": 0.31,
+            "max_dd": -800.0,
+            "pf": 1.65
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": 12.0,
+            "p5_R": -5.5,
+            "p95_R": 29.5,
+            "mean_R": 12.064,
+            "prob_profit": 85.3,
+            "prob_ruin_10R": 7.5,
+            "median_maxDD_R": -7.5,
+            "p5_maxDD_R": -15.0
+          },
+          "verdict": "SURVIVES",
+          "wf_green": 2,
+          "wf_n": 4,
+          "torture_exp_r": {
+            "spread_0.15R": 0.014,
+            "skip_30pct": 0.3,
+            "sl_widen_20pct": 0.058
+          }
+        }
+      },
+      "current": {
+        "brain": "ema_20_50_pull",
+        "tf": "3m",
+        "week": {
+          "error": "The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+          "verdict": "DEAD",
+          "full": {
+            "pnl": 0,
+            "n": 0
+          },
+          "oos": {
+            "pnl": 0
+          }
+        },
+        "year_1h": {
+          "bars": 6196,
+          "start": "2025-07-23 00:00:00+00:00",
+          "end": "2026-07-23 22:00:00+00:00",
+          "span_days": 365.92,
+          "entries": 97,
+          "full": {
+            "n": 73,
+            "wins": 34,
+            "losses": 39,
+            "wr": 46.6,
+            "pnl": 2400.0,
+            "avg_r": 0.164,
+            "exp_r": 0.164,
+            "max_dd": -1500.0,
+            "pf": 1.31
+          },
+          "oos": {
+            "n": 21,
+            "wins": 11,
+            "losses": 10,
+            "wr": 52.4,
+            "pnl": 1300.0,
+            "avg_r": 0.31,
+            "exp_r": 0.31,
+            "max_dd": -800.0,
+            "pf": 1.65
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": 12.0,
+            "p5_R": -5.5,
+            "p95_R": 29.5,
+            "mean_R": 12.064,
+            "prob_profit": 85.3,
+            "prob_ruin_10R": 7.5,
+            "median_maxDD_R": -7.5,
+            "p5_maxDD_R": -15.0
+          },
+          "verdict": "SURVIVES",
+          "wf_green": 2,
+          "wf_n": 4,
+          "torture_exp_r": {
+            "spread_0.15R": 0.014,
+            "skip_30pct": 0.3,
+            "sl_widen_20pct": 0.058
+          }
+        }
+      },
+      "unchanged": false,
+      "week_oos_winner": "tie",
+      "week_full_winner": "tie",
+      "year_oos_winner": "tie",
+      "year_full_winner": "tie"
+    },
+    {
+      "symbol": "BTCUSD",
+      "rr": 3.0,
+      "previous": {
+        "brain": "ema_20_50_tight",
+        "tf": "5m",
+        "week": {
+          "error": "The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+          "verdict": "DEAD",
+          "full": {
+            "pnl": 0,
+            "n": 0
+          },
+          "oos": {
+            "pnl": 0
+          }
+        },
+        "year_1h": {
+          "bars": 8752,
+          "start": "2025-07-23 00:00:00+00:00",
+          "end": "2026-07-23 23:00:00+00:00",
+          "span_days": 365.96,
+          "entries": 57,
+          "full": {
+            "n": 46,
+            "wins": 16,
+            "losses": 30,
+            "wr": 34.8,
+            "pnl": 3600.0,
+            "avg_r": 0.391,
+            "exp_r": 0.391,
+            "max_dd": -1200.0,
+            "pf": 1.6
+          },
+          "oos": {
+            "n": 13,
+            "wins": 5,
+            "losses": 8,
+            "wr": 38.5,
+            "pnl": 1400.0,
+            "avg_r": 0.538,
+            "exp_r": 0.538,
+            "max_dd": -400.0,
+            "pf": 1.88
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": 18.0,
+            "p5_R": -2.0,
+            "p95_R": 38.0,
+            "mean_R": 17.692,
+            "prob_profit": 91.6,
+            "prob_ruin_10R": 5.8,
+            "median_maxDD_R": -7.0,
+            "p5_maxDD_R": -14.05
+          },
+          "verdict": "SURVIVES",
+          "wf_green": 4,
+          "wf_n": 4,
+          "torture_exp_r": {
+            "spread_0.15R": 0.241,
+            "skip_30pct": 0.429,
+            "sl_widen_20pct": 0.261
+          }
+        }
+      },
+      "current": {
+        "brain": "fib_liq_sweep",
+        "tf": "3m",
+        "week": {
+          "error": "The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+          "verdict": "DEAD",
+          "full": {
+            "pnl": 0,
+            "n": 0
+          },
+          "oos": {
+            "pnl": 0
+          }
+        },
+        "year_1h": {
+          "bars": 8752,
+          "start": "2025-07-23 00:00:00+00:00",
+          "end": "2026-07-23 23:00:00+00:00",
+          "span_days": 365.96,
+          "entries": 37,
+          "full": {
+            "n": 35,
+            "wins": 6,
+            "losses": 29,
+            "wr": 17.1,
+            "pnl": -2200.0,
+            "avg_r": -0.314,
+            "exp_r": -0.314,
+            "max_dd": -2800.0,
+            "pf": 0.62
+          },
+          "oos": {
+            "n": 10,
+            "wins": 1,
+            "losses": 9,
+            "wr": 10.0,
+            "pnl": -1200.0,
+            "avg_r": -0.6,
+            "exp_r": -0.6,
+            "max_dd": -1200.0,
+            "pf": 0.33
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": -11.0,
+            "p5_R": -23.0,
+            "p95_R": 5.0,
+            "mean_R": -11.056,
+            "prob_profit": 12.8,
+            "prob_ruin_10R": 67.8,
+            "median_maxDD_R": -15.0,
+            "p5_maxDD_R": -26.0
+          },
+          "verdict": "DEAD",
+          "wf_green": 1,
+          "wf_n": 4,
+          "torture_exp_r": {
+            "spread_0.15R": -0.464,
+            "skip_30pct": 0.0,
+            "sl_widen_20pct": -0.48
+          }
+        }
+      },
+      "unchanged": false,
+      "week_oos_winner": "tie",
+      "week_full_winner": "tie",
+      "year_oos_winner": "previous",
+      "year_full_winner": "previous"
+    },
+    {
+      "symbol": "ETHUSD",
+      "rr": 4.0,
+      "previous": {
+        "brain": "ema_20_50_tight",
+        "tf": "5m",
+        "week": {
+          "error": "The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+          "verdict": "DEAD",
+          "full": {
+            "pnl": 0,
+            "n": 0
+          },
+          "oos": {
+            "pnl": 0
+          }
+        },
+        "year_1h": {
+          "bars": 8749,
+          "start": "2025-07-23 00:00:00+00:00",
+          "end": "2026-07-23 23:00:00+00:00",
+          "span_days": 365.96,
+          "entries": 46,
+          "full": {
+            "n": 38,
+            "wins": 17,
+            "losses": 21,
+            "wr": 44.7,
+            "pnl": 9400.0,
+            "avg_r": 1.237,
+            "exp_r": 1.237,
+            "max_dd": -1000.0,
+            "pf": 3.24
+          },
+          "oos": {
+            "n": 11,
+            "wins": 5,
+            "losses": 6,
+            "wr": 45.5,
+            "pnl": 2800.0,
+            "avg_r": 1.273,
+            "exp_r": 1.273,
+            "max_dd": -600.0,
+            "pf": 3.33
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": 47.0,
+            "p5_R": 22.0,
+            "p95_R": 72.0,
+            "mean_R": 46.788,
+            "prob_profit": 99.9,
+            "prob_ruin_10R": 0.3,
+            "median_maxDD_R": -5.0,
+            "p5_maxDD_R": -9.0
+          },
+          "verdict": "SURVIVES",
+          "wf_green": 4,
+          "wf_n": 4,
+          "torture_exp_r": {
+            "spread_0.15R": 1.087,
+            "skip_30pct": 1.045,
+            "sl_widen_20pct": 1.126
+          }
+        }
+      },
+      "current": {
+        "brain": "bb_2",
+        "tf": "1m",
+        "week": {
+          "error": "The truth value of a DataFrame is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().",
+          "verdict": "DEAD",
+          "full": {
+            "pnl": 0,
+            "n": 0
+          },
+          "oos": {
+            "pnl": 0
+          }
+        },
+        "year_1h": {
+          "bars": 8749,
+          "start": "2025-07-23 00:00:00+00:00",
+          "end": "2026-07-23 23:00:00+00:00",
+          "span_days": 365.96,
+          "entries": 118,
+          "full": {
+            "n": 98,
+            "wins": 20,
+            "losses": 78,
+            "wr": 20.4,
+            "pnl": 400.0,
+            "avg_r": 0.02,
+            "exp_r": 0.02,
+            "max_dd": -2800.0,
+            "pf": 1.03
+          },
+          "oos": {
+            "n": 31,
+            "wins": 7,
+            "losses": 24,
+            "wr": 22.6,
+            "pnl": 800.0,
+            "avg_r": 0.129,
+            "exp_r": 0.129,
+            "max_dd": -2200.0,
+            "pf": 1.17
+          },
+          "monte_carlo": {
+            "paths": 2000,
+            "median_R": 2.0,
+            "p5_R": -33.0,
+            "p95_R": 37.0,
+            "mean_R": 1.66,
+            "prob_profit": 53.6,
+            "prob_ruin_10R": 54.1,
+            "median_maxDD_R": -20.0,
+            "p5_maxDD_R": -40.0
+          },
+          "verdict": "FRAGILE",
+          "wf_green": 3,
+          "wf_n": 4,
+          "torture_exp_r": {
+            "spread_0.15R": -0.13,
+            "skip_30pct": 0.061,
+            "sl_widen_20pct": -0.139
+          }
+        }
+      },
+      "unchanged": false,
+      "week_oos_winner": "tie",
+      "week_full_winner": "tie",
+      "year_oos_winner": "previous",
+      "year_full_winner": "previous"
+    }
+  ],
+  "desk": {
+    "week": {
+      "previous_full_pnl": 0.0,
+      "current_full_pnl": 0.0,
+      "previous_oos_pnl": 0.0,
+      "current_oos_pnl": 0.0,
+      "pair_wins": {
+        "previous": 0,
+        "current": 0,
+        "tie": 8
+      }
+    },
+    "year_1h": {
+      "previous_full_pnl": 28920.0,
+      "current_full_pnl": -7120.0,
+      "previous_oos_pnl": 20620.0,
+      "current_oos_pnl": -8900.0,
+      "pair_wins": {
+        "previous": 7,
+        "current": 0,
+        "tie": 1
+      }
+    },
+    "overall_verdict": "previous_better"
+  },
+  "elapsed_s": 290.6,
+  "note": "No live changes. Previous = pre-lab-rewire map. Current = wired intraday hunt map.",
+  "week_5m_fair": {
+    "previous_full_pnl": 1120.0,
+    "current_full_pnl": 8280.0,
+    "previous_oos_pnl": -120.0,
+    "current_oos_pnl": 5920.0,
+    "pair_wins": {
+      "previous": 1,
+      "current": 6,
+      "tie": 1
+    },
+    "note": "Same 5m bars ~last 7d for both brains"
+  }
+}

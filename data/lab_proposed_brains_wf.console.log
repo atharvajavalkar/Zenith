@@ -1,0 +1,80 @@
+=== Proposed brains WF · $100.0/R · XM spreads · TF=5m ===
+map={'ETHUSD': 'vol_clock', 'BTCUSD': 'entropy_tod', 'GOLD': 'circadian_thr', 'NAS100': 'entropy_strict', 'USDJPY': 'weekday_regime_prior', 'AUDUSD': 'session_mix_no_off', 'USDCHF': 'session_mix', 'UKOIL': 'weekday_regime_prior'}
+windows=['7d', '15d', '30d', '90d', '180d', '1y', '3y']
+
+
+## ETHUSD · vol_clock · wireable=True
+     7d $     -338 E[R]=-1.125 oos=-1.125 n=3 wf=0/4 spR=0.125 FAIL
+    15d $     -562 E[R]=-1.125 oos=-1.125 n=5 wf=0/4 spR=0.125 FAIL
+    30d $      -12 E[R]=-0.014 oos=-1.125 n=9 wf=0/4 spR=0.125 FAIL
+    90d $      625 E[R]=+0.208 oos=+0.125 n=30 wf=0/4 spR=0.125 FAIL
+   180d $     -159 E[R]=-0.021 oos=+0.191 n=77 wf=2/4 spR=0.125 FAIL
+     1y $    3,557 E[R]=+0.222 oos=+0.059 n=160 wf=2/4 spR=0.121 SOFT
+     3y $    3,814 E[R]=+0.079 oos=+0.179 n=483 wf=2/4 spR=0.122 SOFT
+
+## BTCUSD · entropy_tod · wireable=False
+     7d $        0 E[R]=+0.000 oos=+0.000 n=0 wf=0/4 spR=0.000 FAIL
+    15d $        0 E[R]=+0.000 oos=+0.000 n=0 wf=0/4 spR=0.000 FAIL
+    30d $     -225 E[R]=-1.125 oos=-1.125 n=2 wf=0/4 spR=0.125 FAIL
+    90d $       62 E[R]=+0.208 oos=-1.125 n=3 wf=0/4 spR=0.125 FAIL
+   180d $     -270 E[R]=-0.450 oos=+0.208 n=6 wf=0/4 spR=0.117 FAIL
+     1y $       84 E[R]=+0.084 oos=+0.208 n=10 wf=0/4 spR=0.116 FAIL
+     3y $      474 E[R]=+0.169 oos=+0.084 n=28 wf=2/4 spR=0.116 SOFT
+
+## GOLD · circadian_thr · wireable=True
+     7d $      -22 E[R]=-0.044 oos=+0.207 n=5 wf=0/4 spR=0.044 FAIL
+    15d $     -150 E[R]=-0.136 oos=+0.207 n=11 wf=0/4 spR=0.045 FAIL
+    30d $      -18 E[R]=-0.008 oos=-0.489 n=24 wf=0/4 spR=0.049 FAIL
+    90d $      518 E[R]=+0.084 oos=+0.200 n=62 wf=2/4 spR=0.045 SOFT
+   180d $    2,375 E[R]=+0.222 oos=+0.174 n=107 wf=3/4 spR=0.040 PASS
+     1y $    3,315 E[R]=+0.150 oos=+0.011 n=221 wf=3/4 spR=0.049 PASS
+     3y $      765 E[R]=+0.012 oos=+0.216 n=645 wf=2/4 spR=0.073 SOFT
+
+## NAS100 · entropy_strict · wireable=True
+     7d $      -29 E[R]=-0.058 oos=-1.048 n=5 wf=0/4 spR=0.058 FAIL
+    15d $     -446 E[R]=-0.496 oos=-1.069 n=9 wf=0/4 spR=0.052 FAIL
+    30d $     -655 E[R]=-0.595 oos=-0.058 n=11 wf=0/4 spR=0.050 FAIL
+    90d $   -1,763 E[R]=-0.441 oos=-0.595 n=40 wf=1/4 spR=0.066 FAIL
+   180d $      935 E[R]=+0.125 oos=-0.430 n=75 wf=1/4 spR=0.075 FAIL
+     1y $    4,654 E[R]=+0.342 oos=+0.052 n=136 wf=3/4 spR=0.092 PASS
+     3y $    6,979 E[R]=+0.184 oos=+0.334 n=380 wf=4/4 spR=0.106 PASS
+
+## USDJPY · weekday_regime_prior · wireable=True
+     7d $     -140 E[R]=-0.350 oos=-0.100 n=4 wf=0/4 spR=0.100 FAIL
+    15d $     -310 E[R]=-0.282 oos=-0.100 n=11 wf=0/4 spR=0.100 FAIL
+    30d $   -1,440 E[R]=-0.600 oos=-0.500 n=24 wf=0/4 spR=0.100 FAIL
+    90d $   -2,207 E[R]=-0.345 oos=-0.600 n=64 wf=1/4 spR=0.095 FAIL
+   180d $   -1,051 E[R]=-0.058 oos=-0.348 n=182 wf=1/4 spR=0.096 FAIL
+     1y $    1,102 E[R]=+0.027 oos=-0.303 n=411 wf=2/4 spR=0.097 SOFT
+     3y $   -5,220 E[R]=-0.036 oos=+0.050 n=1465 wf=2/4 spR=0.094 FAIL
+
+## AUDUSD · session_mix_no_off · wireable=True
+     7d $     -220 E[R]=-1.100 oos=-1.100 n=2 wf=0/4 spR=0.100 FAIL
+    15d $     -470 E[R]=-0.671 oos=-1.100 n=7 wf=0/4 spR=0.100 FAIL
+    30d $       70 E[R]=+0.054 oos=-1.100 n=13 wf=0/4 spR=0.100 FAIL
+    90d $     -330 E[R]=-0.052 oos=+0.150 n=63 wf=1/4 spR=0.100 FAIL
+   180d $      790 E[R]=+0.041 oos=-0.400 n=192 wf=3/4 spR=0.100 SOFT
+     1y $    1,610 E[R]=+0.058 oos=+0.100 n=280 wf=2/4 spR=0.100 SOFT
+     3y $  -10,440 E[R]=-0.115 oos=+0.046 n=911 wf=2/4 spR=0.099 FAIL
+
+## USDCHF · session_mix · wireable=True
+     7d $        0 E[R]=+0.000 oos=+0.000 n=0 wf=0/4 spR=0.000 FAIL
+    15d $        0 E[R]=+0.000 oos=+0.000 n=0 wf=0/4 spR=0.000 FAIL
+    30d $       80 E[R]=+0.400 oos=-1.100 n=2 wf=0/4 spR=0.100 FAIL
+    90d $    1,200 E[R]=+0.400 oos=+0.567 n=30 wf=3/4 spR=0.100 PASS
+   180d $      354 E[R]=+0.037 oos=+0.631 n=95 wf=2/4 spR=0.100 SOFT
+     1y $      925 E[R]=+0.059 oos=+0.172 n=158 wf=2/4 spR=0.100 SOFT
+     3y $   -2,335 E[R]=-0.035 oos=+0.064 n=663 wf=2/4 spR=0.099 FAIL
+
+## UKOIL · weekday_regime_prior · wireable=True
+     7d $    1,230 E[R]=+1.757 oos=+0.585 n=7 wf=0/4 spR=0.100 FAIL
+    15d $    1,319 E[R]=+0.879 oos=+1.757 n=15 wf=0/4 spR=0.121 FAIL
+    30d $    1,476 E[R]=+0.422 oos=+1.677 n=35 wf=2/4 spR=0.150 SOFT
+    90d $    3,031 E[R]=+0.273 oos=+0.645 n=111 wf=3/4 spR=0.123 PASS
+   180d $    2,570 E[R]=+0.123 oos=+0.115 n=209 wf=3/4 spR=0.121 PASS
+     1y $    1,598 E[R]=+0.045 oos=+0.214 n=355 wf=3/4 spR=0.152 PASS
+     3y $   -3,687 E[R]=-0.038 oos=+0.052 n=961 wf=3/4 spR=0.173 FAIL
+
+=== DESK ===
+7d $481 · 15d $-619 · 30d $-725 · 90d $1,137 · 180d $5,543 · 1y $16,847 · 3y $-9,650
+wrote /app/data/lab_proposed_brains_wf.json

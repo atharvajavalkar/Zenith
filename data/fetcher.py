@@ -18,8 +18,8 @@ from config import (
     TV_USE_LOGIN,
 )
 
-# Anonymous TradingView feed works without credentials — silence library nologin spam.
-logging.getLogger("tvDatafeed.main").setLevel(logging.ERROR)
+# Anonymous TradingView feed — silence library spam (timeouts look like "check symbol")
+logging.getLogger("tvDatafeed.main").setLevel(logging.CRITICAL)
 
 logger = logging.getLogger(__name__)
 
@@ -110,14 +110,43 @@ def _try_fetch(
     return _normalize_df(df)
 
 
+def _is_xm_source(symbol: str, exchange: str) -> bool:
+    """True for XM / configured primary exchange — preferred for live XM trading."""
+    from config import EXCHANGE
+
+    return exchange.upper() in ("XM", (EXCHANGE or "XM").upper())
+
+
+def _ordered_sources() -> list:
+    """
+    Always try XM first (matches live broker).
+
+    Sticky cache only reorders within XM sources — never promotes OANDA/FX
+    above XM, so a temporary XM outage cannot lock the feed onto OANDA.
+    """
+    sources = list(FETCH_SOURCES)
+    # Deduplicate while preserving order
+    seen = set()
+    unique = []
+    for pair in sources:
+        if pair not in seen:
+            seen.add(pair)
+            unique.append(pair)
+
+    xm = [p for p in unique if _is_xm_source(*p)]
+    other = [p for p in unique if not _is_xm_source(*p)]
+
+    if _active_source and _active_source in xm:
+        xm = [_active_source] + [p for p in xm if p != _active_source]
+
+    return xm + other
+
+
 def fetch_tv(interval: Interval, bars: int) -> pd.DataFrame:
     """Fetch OHLCV with retries, client reset on failure, and exchange fallbacks."""
     global _active_source
 
-    sources = list(FETCH_SOURCES)
-    if _active_source and _active_source in sources:
-        sources.remove(_active_source)
-        sources.insert(0, _active_source)
+    sources = _ordered_sources()
 
     last_error: Optional[Exception] = None
     force_new = False
@@ -136,14 +165,23 @@ def fetch_tv(interval: Interval, bars: int) -> pd.DataFrame:
                 df = _try_fetch(symbol, exchange, interval, bars, force_new_client=force_new)
                 force_new = False
                 if df is not None and not df.empty:
+                    prev = _active_source
                     _active_source = (symbol, exchange)
-                    logger.info(
-                        "Data OK: %s:%s (%s bars, attempt %s)",
-                        exchange,
-                        symbol,
-                        len(df),
-                        attempt,
-                    )
+                    if prev != _active_source and not _is_xm_source(symbol, exchange):
+                        logger.warning(
+                            "Data OK via fallback %s:%s (XM preferred but unavailable) — "
+                            "will retry XM on next fetch",
+                            exchange,
+                            symbol,
+                        )
+                    else:
+                        logger.info(
+                            "Data OK: %s:%s (%s bars, attempt %s)",
+                            exchange,
+                            symbol,
+                            len(df),
+                            attempt,
+                        )
                     return df
             except Exception as exc:
                 last_error = exc
@@ -181,6 +219,42 @@ def fetch_tv(interval: Interval, bars: int) -> pd.DataFrame:
     raise ValueError(msg)
 
 
+def fetch_tv_symbol(symbol: str, interval: Interval, bars: int) -> pd.DataFrame:
+    """Paper-mode OHLCV for FX/metals/oil/index symbols beyond the default GOLD feed."""
+    global _active_source
+
+    from strategy.instrument_meta import tv_fetch_sources
+
+    sym = str(symbol or "XAUUSD").upper().strip()
+    if sym in ("GOLD", "XAUUSD"):
+        return fetch_tv(interval, bars)
+
+    srcs = tv_fetch_sources(sym)
+    sources = srcs if srcs else [
+        (sym, "XM"),
+        (sym, "FX_IDC"),
+        (sym, "OANDA"),
+        (sym, "FOREXCOM"),
+        (sym, "ICMARKETS"),
+    ]
+    last_error: Optional[Exception] = None
+    force_new = False
+    for attempt in range(1, max(2, FETCH_RETRIES // 2) + 1):
+        for s_sym, exchange in sources:
+            try:
+                df = _try_fetch(s_sym, exchange, interval, bars, force_new_client=force_new)
+                force_new = False
+                if df is not None and not df.empty:
+                    _active_source = (s_sym, exchange)
+                    logger.info("Data OK: %s:%s (%s bars)", exchange, s_sym, len(df))
+                    return df
+            except Exception as exc:
+                last_error = exc
+                force_new = True
+            time.sleep(min(FETCH_DELAY_SECONDS, 1.0))
+    raise ValueError(f"TradingView no data for {sym}: {last_error}")
+
+
 def fetch_tv_with_pause(interval: Interval, bars: int) -> pd.DataFrame:
     """Fetch one timeframe then pause to avoid websocket rate limits."""
     df = fetch_tv(interval, bars)
@@ -192,29 +266,7 @@ _tick_cache: dict = {}
 
 
 def get_tick_quote() -> dict:
-    """Lightweight 1M quote for sub-second SL/TP monitoring (cached)."""
-    from config import PRICE_FETCH_SECONDS
+    """Mode-aware tick — delegates to data.market_data (live=XM, paper=TV)."""
+    from data.market_data import get_tick_quote as _mode_tick
 
-    now = time.time()
-    if _tick_cache and now - _tick_cache.get("_ts", 0) < PRICE_FETCH_SECONDS:
-        return _tick_cache
-
-    try:
-        df = fetch_tv(Interval.in_1_minute, 5)
-        row = df.iloc[-1]
-        _tick_cache.clear()
-        _tick_cache.update(
-            {
-                "_ts": now,
-                "price": round(float(row["close"]), 2),
-                "high": round(float(row["high"]), 2),
-                "low": round(float(row["low"]), 2),
-                "time": str(df.index[-1]),
-            }
-        )
-    except Exception as exc:
-        logger.debug("Tick quote fetch failed, using cache: %s", exc)
-        if not _tick_cache:
-            return {}
-
-    return _tick_cache
+    return _mode_tick()

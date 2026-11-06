@@ -2,34 +2,28 @@ import { useQuery } from '@tanstack/react-query'
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { ColorType, createChart } from 'lightweight-charts'
 import api from '../services/api'
-import { ALL_INDICATORS, TV_INDICATOR_CATALOG, getIndicatorById } from '../data/tvIndicators'
+import { TV_INDICATOR_CATALOG, getIndicatorById } from '../data/tvIndicators'
 import { calcIndicator } from '../utils/chartIndicators'
 
-const TF_OPTIONS = [
-  { value: '1m', label: '1m' },
-  { value: '5m', label: '5m' },
-  { value: '15m', label: '15m' },
-  { value: '1h', label: '1h' },
-  { value: '4h', label: '4h' },
-]
-
-const TF_LABEL = { '1m': '1', '5m': '5', '15m': '15', '1h': '60', '4h': '240' }
-
+/** Zenith desk palette — matches dashboard void / gold / emerald / oxblood */
 const COLORS = {
-  bg: '#D1D4DC',
-  panel: '#FFFFFF',
-  text: '#131722',
-  muted: '#787B86',
-  border: '#E0E3EB',
-  crosshair: '#9598A1',
-  upCandle: '#FFFFFF',
-  downCandle: '#000000',
-  wick: '#000000',
-  buyBtn: '#2962FF',
-  sellBtn: '#F23645',
-  live: '#2962FF',
-  bid: '#F23645',
-  ask: '#089981',
+  bg: '#0e0e0c',
+  panel: '#121210',
+  text: '#ece8e1',
+  muted: '#8a857c',
+  border: '#242420',
+  crosshair: 'rgba(201, 166, 107, 0.35)',
+  upCandle: '#d8c9a8',
+  downCandle: '#1c1b18',
+  wickUp: '#c9a66b',
+  wickDown: '#6a655c',
+  buy: '#2f9e6f',
+  sell: '#d45b5b',
+  live: '#c9a66b',
+  bid: '#d45b5b',
+  ask: '#2f9e6f',
+  tp1: '#c9a66b',
+  tp2: '#2f9e6f',
 }
 
 function formatPrice(n) {
@@ -61,11 +55,10 @@ function toVolumeBar(c) {
   return {
     time: c.time,
     value: c.volume || 0,
-    color: c.close >= c.open ? 'rgba(0,0,0,0.25)' : 'rgba(0,0,0,0.45)',
+    color: c.close >= c.open ? 'rgba(201,166,107,0.22)' : 'rgba(138,133,124,0.28)',
   }
 }
 
-/** TradingView-like scroll/zoom — wheel zooms time, drag axes for H/V scale */
 const CHART_INTERACTION = {
   handleScroll: {
     mouseWheel: false,
@@ -101,22 +94,14 @@ function linkTimeScales(charts, syncingRef) {
   return () => cleanups.forEach((fn) => fn())
 }
 
-function ToolbarIcon({ children, title, onClick, active }) {
-  return (
-    <button
-      type="button"
-      title={title}
-      onClick={onClick}
-      className={`w-9 h-9 flex items-center justify-center rounded transition ${
-        active ? 'bg-[#E3F2FD] text-[#2962FF]' : 'hover:bg-[#F0F3FA] text-[#787B86]'
-      }`}
-    >
-      {children}
-    </button>
-  )
-}
-
-export default function PriceChart({ candles, timeframe, onTimeframeChange, signal }) {
+export default function PriceChart({
+  candles,
+  timeframe,
+  onTimeframeChange,
+  signal,
+  showSignals = true,
+  onToggleSignals,
+}) {
   const mainChartRef = useRef(null)
   const rsiChartRef = useRef(null)
   const volChartRef = useRef(null)
@@ -134,10 +119,10 @@ export default function PriceChart({ candles, timeframe, onTimeframeChange, sign
   const lastBarRef = useRef(null)
   const isHoveringRef = useRef(false)
   const [showIndicators, setShowIndicators] = useState(false)
-  const [showSignals, setShowSignals] = useState(true)
   const [indicatorSearch, setIndicatorSearch] = useState('')
   const [activeIndicators, setActiveIndicators] = useState(() => new Set())
   const [livePriceDisplay, setLivePriceDisplay] = useState(null)
+  const [showLevels, setShowLevels] = useState(true)
 
   const { data: tick } = useQuery({
     queryKey: ['live-tick'],
@@ -187,7 +172,7 @@ export default function PriceChart({ candles, timeframe, onTimeframeChange, sign
       const delta = bar.close - bar.open
       const pct = bar.open ? (delta / bar.open) * 100 : 0
       chg.textContent = `${delta >= 0 ? '+' : ''}${formatPrice(delta)} (${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%)`
-      chg.style.color = delta >= 0 ? '#089981' : '#F23645'
+      chg.style.color = delta >= 0 ? COLORS.buy : COLORS.sell
     }
   }
 
@@ -226,16 +211,6 @@ export default function PriceChart({ candles, timeframe, onTimeframeChange, sign
     rsiApiRef.current?.chart.timeScale().fitContent()
   }
 
-  const scrollChart = (bars) => {
-    const chart = mainApiRef.current?.chart
-    if (!chart) return
-    userInteractedRef.current = true
-    const ts = chart.timeScale()
-    const range = ts.getVisibleLogicalRange()
-    if (!range) return
-    ts.setVisibleLogicalRange({ from: range.from + bars, to: range.to + bars })
-  }
-
   const toggleIndicator = (id) => {
     setActiveIndicators((prev) => {
       const next = new Set(prev)
@@ -253,14 +228,27 @@ export default function PriceChart({ candles, timeframe, onTimeframeChange, sign
       layout: {
         background: { type: ColorType.Solid, color: COLORS.bg },
         textColor: COLORS.muted,
-        fontFamily: '-apple-system, BlinkMacSystemFont, "Trebuchet MS", Roboto, sans-serif',
+        fontFamily: 'Outfit, ui-sans-serif, sans-serif',
         fontSize: 11,
       },
-      grid: { vertLines: { visible: false }, horzLines: { visible: false } },
+      grid: {
+        vertLines: { color: 'rgba(255,255,255,0.03)', visible: true },
+        horzLines: { color: 'rgba(255,255,255,0.03)', visible: true },
+      },
       crosshair: {
         mode: 1,
-        vertLine: { color: COLORS.crosshair, width: 1, style: 2, labelBackgroundColor: COLORS.text },
-        horzLine: { color: COLORS.crosshair, width: 1, style: 2, labelBackgroundColor: COLORS.text },
+        vertLine: {
+          color: COLORS.crosshair,
+          width: 1,
+          style: 2,
+          labelBackgroundColor: COLORS.panel,
+        },
+        horzLine: {
+          color: COLORS.crosshair,
+          width: 1,
+          style: 2,
+          labelBackgroundColor: COLORS.panel,
+        },
       },
       rightPriceScale: {
         borderColor: COLORS.border,
@@ -293,10 +281,10 @@ export default function PriceChart({ candles, timeframe, onTimeframeChange, sign
     const candleSeries = mainChart.addCandlestickSeries({
       upColor: COLORS.upCandle,
       downColor: COLORS.downCandle,
-      borderUpColor: COLORS.wick,
-      borderDownColor: COLORS.wick,
-      wickUpColor: COLORS.wick,
-      wickDownColor: COLORS.wick,
+      borderUpColor: COLORS.wickUp,
+      borderDownColor: COLORS.wickDown,
+      wickUpColor: COLORS.wickUp,
+      wickDownColor: COLORS.wickDown,
       lastValueVisible: true,
       priceLineVisible: false,
     })
@@ -343,7 +331,6 @@ export default function PriceChart({ candles, timeframe, onTimeframeChange, sign
     }
   }, [])
 
-  // RSI pane — created when needed
   useEffect(() => {
     if (!hasRsi || !rsiChartRef.current) {
       if (rsiApiRef.current) {
@@ -362,9 +349,13 @@ export default function PriceChart({ candles, timeframe, onTimeframeChange, sign
       layout: {
         background: { type: ColorType.Solid, color: COLORS.bg },
         textColor: COLORS.muted,
+        fontFamily: 'Outfit, ui-sans-serif, sans-serif',
         fontSize: 11,
       },
-      grid: { vertLines: { visible: false }, horzLines: { visible: false } },
+      grid: {
+        vertLines: { color: 'rgba(255,255,255,0.03)', visible: true },
+        horzLines: { color: 'rgba(255,255,255,0.03)', visible: true },
+      },
       rightPriceScale: { borderColor: COLORS.border },
       timeScale: { visible: false },
       ...CHART_INTERACTION,
@@ -417,13 +408,12 @@ export default function PriceChart({ candles, timeframe, onTimeframeChange, sign
     candlesCacheRef.current = sortedCandles
   }, [sortedCandles])
 
-  // Live bid / ask / mid price lines — update in place (no remove/recreate)
   useEffect(() => {
     const { candleSeries } = mainApiRef.current || {}
     if (!candleSeries) return
 
     const upsertLine = (key, price, color, title, lineWidth, lineStyle) => {
-      if (price == null) {
+      if (price == null || !showLevels) {
         if (liveLinesRef.current[key]) {
           try {
             candleSeries.removePriceLine(liveLinesRef.current[key])
@@ -448,12 +438,11 @@ export default function PriceChart({ candles, timeframe, onTimeframeChange, sign
       }
     }
 
-    upsertLine('live', livePrice, COLORS.live, 'Live', 2, 0)
+    upsertLine('live', livePrice, COLORS.live, 'Live', 1, 0)
     upsertLine('bid', bid, COLORS.bid, 'Bid', 1, 2)
     upsertLine('ask', ask, COLORS.ask, 'Ask', 1, 2)
-  }, [livePrice, bid, ask])
+  }, [livePrice, bid, ask, showLevels])
 
-  // Signal levels — Entry / SL / TP1 / TP2 of the current setup
   useEffect(() => {
     const { candleSeries } = mainApiRef.current || {}
     if (!candleSeries) return
@@ -481,7 +470,7 @@ export default function PriceChart({ candles, timeframe, onTimeframeChange, sign
         signalLinesRef.current[key] = candleSeries.createPriceLine({
           price: p,
           color,
-          lineWidth: 2,
+          lineWidth: 1,
           lineStyle,
           axisLabelVisible: true,
           title,
@@ -493,10 +482,10 @@ export default function PriceChart({ candles, timeframe, onTimeframeChange, sign
     }
 
     const activeKeys = new Set()
-    if (upsertSignalLine('entry', signal.ENTRY, COLORS.live, `${signal.SIGNAL} ENTRY`, 0)) activeKeys.add('entry')
-    if (upsertSignalLine('sl', signal.SL, COLORS.sellBtn, 'SL', 2)) activeKeys.add('sl')
-    if (upsertSignalLine('tp1', signal.TP1, '#FB8C00', 'TP1', 2)) activeKeys.add('tp1')
-    if (upsertSignalLine('tp2', signal.TP, COLORS.ask, 'TP2', 2)) activeKeys.add('tp2')
+    if (upsertSignalLine('entry', signal.ENTRY, COLORS.live, `${signal.SIGNAL}`, 0)) activeKeys.add('entry')
+    if (upsertSignalLine('sl', signal.SL, COLORS.sell, 'SL', 2)) activeKeys.add('sl')
+    if (upsertSignalLine('tp1', signal.TP1, COLORS.tp1, 'TP1', 2)) activeKeys.add('tp1')
+    if (upsertSignalLine('tp2', signal.TP, COLORS.tp2, 'TP2', 2)) activeKeys.add('tp2')
 
     Object.entries(signalLinesRef.current).forEach(([key, line]) => {
       if (activeKeys.has(key)) return
@@ -509,7 +498,6 @@ export default function PriceChart({ candles, timeframe, onTimeframeChange, sign
     })
   }, [signal, showSignals])
 
-  // Trade entry markers — BUY (green up) / SELL (red down)
   useEffect(() => {
     const { candleSeries } = mainApiRef.current || {}
     if (!candleSeries) return
@@ -555,7 +543,7 @@ export default function PriceChart({ candles, timeframe, onTimeframeChange, sign
       markers.push({
         time,
         position: isBuy ? 'belowBar' : 'aboveBar',
-        color: isBuy ? COLORS.ask : COLORS.sellBtn,
+        color: isBuy ? COLORS.buy : COLORS.sell,
         shape: isBuy ? 'arrowUp' : 'arrowDown',
         text: t.signal,
       })
@@ -565,7 +553,6 @@ export default function PriceChart({ candles, timeframe, onTimeframeChange, sign
     candleSeries.setMarkers(markers)
   }, [sortedCandles, tradesData, showSignals])
 
-  // Manual indicators
   useEffect(() => {
     const main = mainApiRef.current
     if (!main?.chart || !sortedCandles.length) return
@@ -639,235 +626,249 @@ export default function PriceChart({ candles, timeframe, onTimeframeChange, sign
     })
   }, [sortedCandles, activeIndicators, hasRsi])
 
-  const tfDisplay = TF_LABEL[timeframe] || timeframe
-
   return (
-    <div className="rounded-lg overflow-hidden border border-[#E0E3EB] shadow-sm relative" style={{ backgroundColor: COLORS.panel }}>
-      <div className="flex items-center justify-between px-2 h-10 border-b border-[#E0E3EB]" style={{ backgroundColor: COLORS.panel }}>
-        <div className="flex items-center gap-1">
-          <button type="button" className="flex items-center gap-1.5 px-2 py-1 rounded hover:bg-[#F0F3FA]">
-            <span className="text-sm font-bold" style={{ color: COLORS.text }}>XAUUSD</span>
-            <span className="text-[#787B86] text-xs">▾</span>
-          </button>
-          <div className="flex items-center gap-0.5 ml-1">
-            {TF_OPTIONS.map((opt) => (
-              <button
-                key={opt.value}
-                type="button"
-                onClick={() => onTimeframeChange(opt.value)}
-                className="min-w-[32px] h-7 px-2 text-xs font-medium rounded transition"
-                style={
-                  timeframe === opt.value
-                    ? { backgroundColor: '#F0F3FA', color: COLORS.text }
-                    : { color: COLORS.muted }
-                }
-              >
-                {opt.label}
-              </button>
-            ))}
-          </div>
-          <span className="mx-1 text-[#E0E3EB]">|</span>
+    <div className="relative h-full flex flex-col" style={{ backgroundColor: COLORS.bg }}>
+      {/* Slim chart tools — indicators + view controls */}
+      <div
+        className="flex items-center justify-between gap-3 px-5 sm:px-8 h-11 border-b shrink-0"
+        style={{ backgroundColor: COLORS.panel, borderColor: COLORS.border }}
+      >
+        <div className="flex items-center gap-1 overflow-x-auto">
           <button
             type="button"
             onClick={() => setShowIndicators((v) => !v)}
-            className="px-2 py-1 text-xs rounded hover:bg-[#F0F3FA] flex items-center gap-1"
-            style={{ color: showIndicators ? COLORS.buyBtn : COLORS.muted }}
+            className={`px-2.5 py-1 text-[10px] uppercase tracking-[0.14em] transition ${
+              showIndicators || activeIndicators.size > 0
+                ? 'text-accent-gold'
+                : 'text-surface-muted hover:text-ink-soft'
+            }`}
           >
             Indicators
             {activeIndicators.size > 0 && (
-              <span className="bg-[#2962FF] text-white text-[10px] px-1.5 rounded-full">
-                {activeIndicators.size}
-              </span>
+              <span className="ml-1.5 text-accent-gold/70 tabular-nums">{activeIndicators.size}</span>
             )}
           </button>
           <button
             type="button"
-            onClick={() => setShowSignals((v) => !v)}
-            className="px-2 py-1 text-xs rounded hover:bg-[#F0F3FA] flex items-center gap-1"
-            style={{ color: showSignals ? COLORS.ask : COLORS.muted }}
-            title="Toggle BUY/SELL markers and SL/TP levels"
+            onClick={() => (onToggleSignals ? onToggleSignals() : null)}
+            className={`px-2.5 py-1 text-[10px] uppercase tracking-[0.14em] transition inline-flex items-center gap-1.5 ${
+              showSignals ? 'text-accent-gold' : 'text-surface-muted hover:text-ink-soft'
+            }`}
+            title="Entry markers & SL / TP"
           >
             Signals
             <span
-              className="w-2 h-2 rounded-full"
-              style={{ backgroundColor: showSignals ? COLORS.ask : COLORS.border }}
+              className="w-1.5 h-1.5 rounded-full"
+              style={{ backgroundColor: showSignals ? COLORS.live : COLORS.border }}
             />
           </button>
-        </div>
-        <div className="flex items-center gap-1">
-          <button type="button" className="px-3 py-1 text-xs font-medium rounded" style={{ color: COLORS.muted }}>
-            Save
+          <button
+            type="button"
+            onClick={() => setShowLevels((v) => !v)}
+            className={`px-2.5 py-1 text-[10px] uppercase tracking-[0.14em] transition ${
+              showLevels ? 'text-ink-soft' : 'text-surface-muted hover:text-ink-soft'
+            }`}
+            title="Live / bid / ask lines"
+          >
+            Levels
           </button>
-          <button type="button" className="px-3 py-1 text-xs font-semibold rounded text-white" style={{ backgroundColor: COLORS.buyBtn }}>
-            Trade
+        </div>
+        <div className="flex items-center gap-1 shrink-0">
+          <button
+            type="button"
+            onClick={() => zoomLogical(0.75)}
+            className="w-8 h-8 text-surface-muted hover:text-ink transition text-sm"
+            title="Zoom in"
+          >
+            +
+          </button>
+          <button
+            type="button"
+            onClick={() => zoomLogical(1.35)}
+            className="w-8 h-8 text-surface-muted hover:text-ink transition text-sm"
+            title="Zoom out"
+          >
+            −
+          </button>
+          <button
+            type="button"
+            onClick={fitChart}
+            className="px-2.5 h-8 text-[10px] uppercase tracking-[0.14em] text-surface-muted hover:text-accent-gold transition"
+            title="Fit"
+          >
+            Fit
           </button>
         </div>
       </div>
 
       {showIndicators && (
         <div
-          className="absolute left-12 top-10 z-20 w-72 max-h-80 overflow-hidden rounded-lg border border-[#E0E3EB] shadow-xl flex flex-col"
+          className="absolute left-5 sm:left-8 top-12 z-20 w-72 max-h-80 overflow-hidden flex flex-col border border-white/[0.08] shadow-soft"
           style={{ backgroundColor: COLORS.panel }}
         >
-          <div className="p-2 border-b border-[#E0E3EB]">
+          <div className="p-3 border-b" style={{ borderColor: COLORS.border }}>
             <input
               type="text"
-              placeholder="Search indicators..."
+              placeholder="Search studies…"
               value={indicatorSearch}
               onChange={(e) => setIndicatorSearch(e.target.value)}
-              className="w-full px-2 py-1.5 text-xs rounded border border-[#E0E3EB] outline-none focus:border-[#2962FF]"
-              style={{ color: COLORS.text }}
+              className="field text-xs py-2"
             />
-            <p className="text-[10px] mt-1.5" style={{ color: COLORS.muted }}>
-              TradingView-style indicators — toggle to overlay on chart
-            </p>
           </div>
-          <div className="overflow-y-auto flex-1 p-1">
+          <div className="overflow-y-auto flex-1 p-1.5">
             {filteredCatalog.map((group) => (
               <div key={group.category} className="mb-2">
-                <div className="text-[10px] font-semibold uppercase px-2 py-1" style={{ color: COLORS.muted }}>
-                  {group.category}
-                </div>
-                {group.items.map((ind) => (
-                  <button
-                    key={ind.id}
-                    type="button"
-                    onClick={() => toggleIndicator(ind.id)}
-                    className="w-full flex items-center gap-2 px-2 py-1.5 text-xs rounded hover:bg-[#F0F3FA] text-left"
-                    style={{ color: COLORS.text }}
-                  >
-                    <span
-                      className="w-3 h-3 rounded border flex items-center justify-center shrink-0"
-                      style={{
-                        borderColor: activeIndicators.has(ind.id) ? COLORS.buyBtn : COLORS.border,
-                        backgroundColor: activeIndicators.has(ind.id) ? COLORS.buyBtn : 'transparent',
-                      }}
+                <div className="section-label px-2 py-1.5">{group.category}</div>
+                {group.items.map((ind) => {
+                  const on = activeIndicators.has(ind.id)
+                  return (
+                    <button
+                      key={ind.id}
+                      type="button"
+                      onClick={() => toggleIndicator(ind.id)}
+                      className="w-full flex items-center gap-2.5 px-2 py-1.5 text-xs text-left transition hover:bg-white/[0.03]"
+                      style={{ color: COLORS.text }}
                     >
-                      {activeIndicators.has(ind.id) && <span className="text-white text-[8px]">✓</span>}
-                    </span>
-                    <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: ind.color }} />
-                    {ind.name}
-                  </button>
-                ))}
+                      <span
+                        className="w-3 h-3 border shrink-0 flex items-center justify-center"
+                        style={{
+                          borderColor: on ? COLORS.live : COLORS.border,
+                          backgroundColor: on ? COLORS.live : 'transparent',
+                        }}
+                      >
+                        {on && <span className="text-[#1a1610] text-[8px] font-bold">✓</span>}
+                      </span>
+                      <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: ind.color }} />
+                      <span className="font-light">{ind.name}</span>
+                    </button>
+                  )
+                })}
               </div>
             ))}
           </div>
         </div>
       )}
 
-      <div className="flex">
-        <div className="flex flex-col items-center py-1 border-r border-[#E0E3EB] w-11 shrink-0" style={{ backgroundColor: COLORS.panel }}>
-          <ToolbarIcon title="Crosshair (drag chart to pan)">✛</ToolbarIcon>
-          <ToolbarIcon title="Trend line">╱</ToolbarIcon>
-          <ToolbarIcon title="Fibonacci">φ</ToolbarIcon>
-          <ToolbarIcon title="Brush">✎</ToolbarIcon>
-          <ToolbarIcon title="Text">T</ToolbarIcon>
-          <ToolbarIcon title="Measure">⌗</ToolbarIcon>
-          <ToolbarIcon title="Zoom in (scroll wheel also zooms time)" onClick={() => zoomLogical(0.75)}>+</ToolbarIcon>
-          <ToolbarIcon title="Zoom out" onClick={() => zoomLogical(1.35)}>−</ToolbarIcon>
-          <ToolbarIcon title="Fit chart (double-click axis to reset scale)" onClick={fitChart}>⊡</ToolbarIcon>
-          <ToolbarIcon title="Pan left" onClick={() => scrollChart(-12)}>‹</ToolbarIcon>
-          <ToolbarIcon title="Pan right" onClick={() => scrollChart(12)}>›</ToolbarIcon>
-        </div>
-
-        <div className="flex-1 min-w-0">
-          <div className="px-3 pt-2 pb-1" style={{ backgroundColor: COLORS.bg }}>
-            <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
-              <span className="text-sm font-semibold" style={{ color: COLORS.text }}>Gold Spot / U.S. Dollar</span>
-              <span className="text-xs" style={{ color: COLORS.muted }}>· {tfDisplay} · XM</span>
-              {livePriceDisplay != null && (
-                <span className="text-sm font-bold tabular-nums ml-1" style={{ color: COLORS.live }}>
-                  {formatPrice(livePriceDisplay)}
+      <div className="flex-1 min-h-0 flex flex-col">
+        <div className="px-5 sm:px-8 pt-4 pb-2 shrink-0" style={{ backgroundColor: COLORS.bg }}>
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                <span className="font-display text-lg tracking-[0.04em] text-ink">Gold</span>
+                <span className="text-[11px] uppercase tracking-[0.14em] text-surface-muted">
+                  {timeframe} · XM
                 </span>
+                {livePriceDisplay != null && (
+                  <span className="text-base font-medium tabular-nums text-accent-gold">
+                    {formatPrice(livePriceDisplay)}
+                  </span>
+                )}
+              </div>
+              {lastBar && (
+                <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-2 text-[11px] text-surface-muted">
+                  <span>
+                    O{' '}
+                    <span className="text-ink-soft tabular-nums" ref={(el) => { ohlcRefs.current.o = el }}>
+                      {formatPrice(lastBar.open)}
+                    </span>
+                  </span>
+                  <span>
+                    H{' '}
+                    <span className="text-ink-soft tabular-nums" ref={(el) => { ohlcRefs.current.h = el }}>
+                      {formatPrice(lastBar.high)}
+                    </span>
+                  </span>
+                  <span>
+                    L{' '}
+                    <span className="text-ink-soft tabular-nums" ref={(el) => { ohlcRefs.current.l = el }}>
+                      {formatPrice(lastBar.low)}
+                    </span>
+                  </span>
+                  <span>
+                    C{' '}
+                    <span className="text-ink-soft tabular-nums" ref={(el) => { ohlcRefs.current.c = el }}>
+                      {formatPrice(lastBar.close)}
+                    </span>
+                  </span>
+                  {ohlcChange != null && (
+                    <span
+                      ref={(el) => { ohlcRefs.current.chg = el }}
+                      className="tabular-nums"
+                      style={{ color: ohlcChange >= 0 ? COLORS.buy : COLORS.sell }}
+                    >
+                      {ohlcChange >= 0 ? '+' : ''}
+                      {formatPrice(ohlcChange)}
+                      {ohlcPct != null && ` (${ohlcPct >= 0 ? '+' : ''}${ohlcPct.toFixed(2)}%)`}
+                    </span>
+                  )}
+                </div>
               )}
             </div>
-            {lastBar && (
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1 text-xs" style={{ color: COLORS.text }}>
-                <span>O<span className="ml-1 font-medium" ref={(el) => { ohlcRefs.current.o = el }}>{formatPrice(lastBar.open)}</span></span>
-                <span>H<span className="ml-1 font-medium" ref={(el) => { ohlcRefs.current.h = el }}>{formatPrice(lastBar.high)}</span></span>
-                <span>L<span className="ml-1 font-medium" ref={(el) => { ohlcRefs.current.l = el }}>{formatPrice(lastBar.low)}</span></span>
-                <span>C<span className="ml-1 font-medium" ref={(el) => { ohlcRefs.current.c = el }}>{formatPrice(lastBar.close)}</span></span>
-                {ohlcChange != null && (
-                  <span
-                    ref={(el) => { ohlcRefs.current.chg = el }}
-                    className={ohlcChange >= 0 ? 'text-[#089981]' : 'text-[#F23645]'}
-                  >
-                    {ohlcChange >= 0 ? '+' : ''}{formatPrice(ohlcChange)}
-                    {ohlcPct != null && ` (${ohlcPct >= 0 ? '+' : ''}${ohlcPct.toFixed(2)}%)`}
-                  </span>
-                )}
+
+            <div className="flex items-stretch gap-2">
+              <div className="flex flex-col justify-center px-3.5 py-1.5 min-w-[5.5rem] bg-accent-sell-deep/90">
+                <span className="text-[9px] uppercase tracking-[0.16em] text-[#f5f0e8]/70">Sell</span>
+                <span className="text-sm font-medium tabular-nums text-[#f5f0e8]">{formatPrice(bid)}</span>
               </div>
-            )}
-            <div className="flex items-center gap-2 mt-2 mb-1">
-              <button type="button" className="flex flex-col items-start px-3 py-1 rounded text-white text-xs min-w-[90px]" style={{ backgroundColor: COLORS.sellBtn }}>
-                <span className="opacity-80 text-[10px]">SELL</span>
-                <span className="font-semibold tabular-nums">{formatPrice(bid)}</span>
-              </button>
-              <span className="text-[10px] px-1.5 py-0.5 rounded border border-[#E0E3EB] tabular-nums" style={{ color: COLORS.muted }}>
+              <div className="flex items-center px-2 text-[10px] tabular-nums text-surface-muted border border-white/[0.06]">
                 {spread.toFixed(1)}
-              </span>
-              <button type="button" className="flex flex-col items-start px-3 py-1 rounded text-white text-xs min-w-[90px]" style={{ backgroundColor: COLORS.buyBtn }}>
-                <span className="opacity-80 text-[10px]">BUY</span>
-                <span className="font-semibold tabular-nums">{formatPrice(ask)}</span>
-              </button>
-            </div>
-            {showSignals && signal && (signal.SIGNAL === 'BUY' || signal.SIGNAL === 'SELL') && (
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1 text-[11px]" style={{ color: COLORS.muted }}>
-                <span className="font-semibold" style={{ color: signal.SIGNAL === 'BUY' ? COLORS.ask : COLORS.sellBtn }}>
-                  {signal.SIGNAL}
-                  {signal.DEMAND_TF && signal.SUPPLY_TF ? ` · ${signal.DEMAND_TF}/${signal.SUPPLY_TF}` : ''}
-                  {signal.MOVEMENT_5M ? ` · 5M ${signal.MOVEMENT_5M}` : ''}
-                </span>
-                <span className="inline-flex items-center gap-1">
-                  <span className="w-2.5 h-0.5" style={{ backgroundColor: COLORS.live }} /> Entry {formatPrice(signal.ENTRY)}
-                </span>
-                <span className="inline-flex items-center gap-1">
-                  <span className="w-2.5 h-0.5" style={{ backgroundColor: COLORS.sellBtn }} /> SL {formatPrice(signal.SL)}
-                </span>
-                {signal.TP1 != null && (
-                  <span className="inline-flex items-center gap-1">
-                    <span className="w-2.5 h-0.5" style={{ backgroundColor: '#FB8C00' }} /> TP1 {formatPrice(signal.TP1)}
-                  </span>
-                )}
-                <span className="inline-flex items-center gap-1">
-                  <span className="w-2.5 h-0.5" style={{ backgroundColor: COLORS.ask }} /> TP2 {formatPrice(signal.TP)}
-                </span>
-                {signal.RR && <span>RR {signal.RR}</span>}
               </div>
-            )}
-          </div>
-
-          <div
-            ref={mainChartRef}
-            className="w-full"
-            style={{ backgroundColor: COLORS.bg, height: 'min(52vh, 480px)', minHeight: 320 }}
-          />
-          {hasRsi && (
-            <div
-              ref={rsiChartRef}
-              className="w-full border-t border-[#E0E3EB]"
-              style={{ backgroundColor: COLORS.bg, height: 72 }}
-            />
-          )}
-          <div
-            ref={volChartRef}
-            className="w-full border-t border-[#E0E3EB]"
-            style={{ backgroundColor: COLORS.bg, height: 88 }}
-          />
-
-          <div className="flex items-center justify-between px-3 py-1.5 border-t border-[#E0E3EB] text-[11px]" style={{ backgroundColor: COLORS.panel, color: COLORS.muted }}>
-            <div className="flex gap-3 items-center">
-              <button type="button" onClick={fitChart} className="hover:text-[#131722] transition font-medium" style={{ color: COLORS.buyBtn }}>
-                Fit
-              </button>
-              {['1D', '5D', '1M', '3M', '6M', 'YTD', '1Y', 'All'].map((r) => (
-                <button key={r} type="button" className="hover:text-[#131722] transition">{r}</button>
-              ))}
+              <div className="flex flex-col justify-center px-3.5 py-1.5 min-w-[5.5rem] bg-accent-buy-deep/90">
+                <span className="text-[9px] uppercase tracking-[0.16em] text-[#f5f0e8]/70">Buy</span>
+                <span className="text-sm font-medium tabular-nums text-[#f5f0e8]">{formatPrice(ask)}</span>
+              </div>
             </div>
-            <span className="hidden sm:inline">Wheel = zoom · Drag = pan · Drag price/time axis = scale</span>
-            <span>{new Date().toLocaleTimeString()}</span>
           </div>
+
+          {showSignals && signal && (signal.SIGNAL === 'BUY' || signal.SIGNAL === 'SELL') && (
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-1 mt-3 text-[11px] text-surface-muted">
+              <span
+                className="font-medium uppercase tracking-[0.12em]"
+                style={{ color: signal.SIGNAL === 'BUY' ? COLORS.buy : COLORS.sell }}
+              >
+                {signal.SIGNAL}
+                {signal.DEMAND_TF && signal.SUPPLY_TF ? ` · ${signal.DEMAND_TF}/${signal.SUPPLY_TF}` : ''}
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <span className="w-3 h-px" style={{ backgroundColor: COLORS.live }} />
+                Entry {formatPrice(signal.ENTRY)}
+              </span>
+              <span className="inline-flex items-center gap-1.5">
+                <span className="w-3 h-px" style={{ backgroundColor: COLORS.sell }} />
+                SL {formatPrice(signal.SL)}
+              </span>
+              {signal.TP1 != null && (
+                <span className="inline-flex items-center gap-1.5">
+                  <span className="w-3 h-px" style={{ backgroundColor: COLORS.tp1 }} />
+                  TP1 {formatPrice(signal.TP1)}
+                </span>
+              )}
+              <span className="inline-flex items-center gap-1.5">
+                <span className="w-3 h-px" style={{ backgroundColor: COLORS.tp2 }} />
+                TP2 {formatPrice(signal.TP)}
+              </span>
+              {signal.RR && <span>RR {signal.RR}</span>}
+            </div>
+          )}
         </div>
+
+        <div
+          ref={mainChartRef}
+          className="w-full flex-1 min-h-[280px]"
+          style={{ backgroundColor: COLORS.bg }}
+        />
+        {hasRsi && (
+          <div
+            ref={rsiChartRef}
+            className="w-full border-t shrink-0"
+            style={{ backgroundColor: COLORS.bg, borderColor: COLORS.border, height: 72 }}
+          />
+        )}
+        <div
+          ref={volChartRef}
+          className="w-full border-t shrink-0"
+          style={{ backgroundColor: COLORS.bg, borderColor: COLORS.border, height: 80 }}
+        />
       </div>
     </div>
   )

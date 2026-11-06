@@ -1,0 +1,73 @@
+=== Schwab tally DENSIFY v2 · wide lookback permutations · Nebula untouched ===
+lookback_sets=793 · exec_cells=24 · cells/pair≈19032 · total≈304512 · $/200.0/R · SL=1.0ATR
+pool=(3, 5, 7, 10, 14, 20, 21, 28, 30, 42, 56, 60, 63, 84, 90) · started 2026-09-08T17:12:07.959161+00:00
+
+--- GOLD daily=3643 2016-07-23→2026-07-23 ---
+  1y   best=lb7-60_strict_x2.5_c2c_h5 → SURVIVES n=49 E[R]=+2.152 pnl=$+21090 OOS=+1.249 WF=4/4 MC=100.0% · SURVIVES=16579 (119s)
+  1y   best=lb7-60_strict_x2.5_c2c_h5 → SURVIVES n=49 E[R]=+2.152 pnl=$+21090 OOS=+1.249 WF=4/4 MC=100.0% · SURVIVES=16579 (117s)
+  full best=lb7-90_strict_x2.5_c2c_h4 → SURVIVES n=530 E[R]=+0.639 pnl=$+67742 OOS=+1.039 WF=3/4 MC=100.0% · SURVIVES=7963 (264s)
+
+--- BTCUSD daily=3365 2017-05-07→2026-07-23 ---
+  full best=lb7-90_strict_x2.5_c2c_h4 → SURVIVES n=530 E[R]=+0.639 pnl=$+67742 OOS=+1.039 WF=3/4 MC=100.0% · SURVIVES=7963 (265s)
+
+--- BTCUSD daily=3365 2017-05-07→2026-07-23 ---
+  1y   best=lb5-10_strict_x2.5_c2c_h5 → SURVIVES n=56 E[R]=+0.953 pnl=$+10678 OOS=+0.922 WF=4/4 MC=97.5% · SURVIVES=2464 (61s)
+  1y   best=lb5-10_strict_x2.5_c2c_h5 → SURVIVES n=56 E[R]=+0.953 pnl=$+10678 OOS=+0.922 WF=4/4 MC=97.5% · SURVIVES=2464 (61s)
+  full best=lb14-42_strict_x2.5_c2c_h5 → SURVIVES n=459 E[R]=+0.705 pnl=$+64675 OOS=+0.339 WF=3/4 MC=99.9% · SURVIVES=9166 (238s)
+
+--- UKOIL daily=3653 2016-07-23→2026-07-23 ---
+  full best=lb14-42_strict_x2.5_c2c_h5 → SURVIVES n=459 E[R]=+0.705 pnl=$+64675 OOS=+0.339 WF=3/4 MC=99.9% · SURVIVES=9166 (238s)
+
+--- UKOIL daily=3653 2016-07-23→2026-07-23 ---
+  1y   best=lb60-63_strict_x2.5_c2c_h5 → SURVIVES n=59 E[R]=+1.026 pnl=$+12111 OOS=+1.740 WF=4/4 MC=95.8% · SURVIVES=2988 (47s)
+  1y   best=lb60-63_strict_x2.5_c2c_h5 → SURVIVES n=59 E[R]=+1.026 pnl=$+12111 OOS=+1.740 WF=4/4 MC=95.8% · SURVIVES=2988 (47s)
+  full best=lb28-30_strict_x2.5_c2c_h5 → SURVIVES n=592 E[R]=+0.383 pnl=$+45346 OOS=+0.235 WF=3/4 MC=98.8% · SURVIVES=906 (128s)
+
+--- NAS100 daily=3653 2016-07-23→2026-07-23 ---
+  full best=lb28-30_strict_x2.5_c2c_h5 → SURVIVES n=592 E[R]=+0.383 pnl=$+45346 OOS=+0.235 WF=3/4 MC=98.8% · SURVIVES=906 (129s)
+
+--- NAS100 daily=3653 2016-07-23→2026-07-23 ---
+  1y   best=lb20-21-90_strict_x2.5_c2c_h4 → SURVIVES n=73 E[R]=+0.859 pnl=$+12542 OOS=+1.147 WF=4/4 MC=98.8% · SURVIVES=3888 (66s)
+  1y   best=lb20-21-90_strict_x2.5_c2c_h4 → SURVIVES n=73 E[R]=+0.859 pnl=$+12542 OOS=+1.147 WF=4/4 MC=98.8% · SURVIVES=3888 (66s)
+  full best=lb10-63_strict_x2.5_c2c_h5 → SURVIVES n=485 E[R]=+0.465 pnl=$+45115 OOS=+0.176 WF=4/4 MC=99.0% · SURVIVES=9266 (272s)
+
+--- AUDUSD daily=3653 2016-07-23→2026-07-23 ---
+  1y   best=lb3-7_strict_x2.5_c2c_h5 → SURVIVES n=55 E[R]=+0.751 pnl=$+8256 OOS=+0.421 WF=4/4 MC=94.6% · SURVIVES=162 (13s)
+  full best=lb10-63_strict_x2.5_c2c_h5 → SURVIVES n=485 E[R]=+0.465 pnl=$+45115 OOS=+0.176 WF=4/4 MC=99.0% · SURVIVES=9266 (272s)
+
+--- AUDUSD daily=3653 2016-07-23→2026-07-23 ---
+  1y   best=lb3-7_strict_x2.5_c2c_h5 → SURVIVES n=55 E[R]=+0.751 pnl=$+8256 OOS=+0.421 WF=4/4 MC=94.6% · SURVIVES=162 (13s)
+  full best=lb5-14-28-56_strict_x2.5_c2c_h4 → FRAGILE n=659 E[R]=+0.079 pnl=$+10468 OOS=-0.052 WF=2/4 MC=74.2% · SURVIVES=0 (51s)
+
+--- ETHUSD daily=3147 2017-12-11→2026-07-23 ---
+  full best=lb5-14-28-56_strict_x2.5_c2c_h4 → FRAGILE n=659 E[R]=+0.079 pnl=$+10468 OOS=-0.052 WF=2/4 MC=74.2% · SURVIVES=0 (52s)
+
+--- ETHUSD daily=3147 2017-12-11→2026-07-23 ---
+  1y   best=lb28-56_strict_x2.5_c2c_h5 → SURVIVES n=52 E[R]=+1.004 pnl=$+10439 OOS=+0.878 WF=4/4 MC=98.1% · SURVIVES=1966 (48s)
+  1y   best=lb28-56_strict_x2.5_c2c_h5 → SURVIVES n=52 E[R]=+1.004 pnl=$+10439 OOS=+0.878 WF=4/4 MC=98.1% · SURVIVES=1966 (48s)
+  full best=lb7-30_strict_x2.5_c2c_h5 → SURVIVES n=443 E[R]=+0.625 pnl=$+55368 OOS=+0.250 WF=3/4 MC=99.6% · SURVIVES=6093 (184s)
+
+--- USDJPY daily=3653 2016-07-23→2026-07-23 ---
+  full best=lb7-30_strict_x2.5_c2c_h5 → SURVIVES n=443 E[R]=+0.625 pnl=$+55368 OOS=+0.250 WF=3/4 MC=99.6% · SURVIVES=6093 (185s)
+
+--- USDJPY daily=3653 2016-07-23→2026-07-23 ---
+  1y   best=lb63-84_strict_x2.5_c2c_h5 → SURVIVES n=56 E[R]=+0.889 pnl=$+9957 OOS=+1.375 WF=2/4 MC=91.0% · SURVIVES=1082 (43s)
+  1y   best=lb63-84_strict_x2.5_c2c_h5 → SURVIVES n=56 E[R]=+0.889 pnl=$+9957 OOS=+1.375 WF=2/4 MC=91.0% · SURVIVES=1082 (42s)
+  full best=lb60-84-90_linear_x2.5_c2c_h5 → SURVIVES n=594 E[R]=+0.372 pnl=$+44140 OOS=+0.279 WF=4/4 MC=98.8% · SURVIVES=1498 (186s)
+
+--- USDCHF daily=3653 2016-07-23→2026-07-23 ---
+  1y   best=lb20-21_strict_x2.5_c2c_h3 → SURVIVES n=90 E[R]=+0.247 pnl=$+4449 OOS=+0.603 WF=3/4 MC=76.9% · SURVIVES=52 (11s)
+  full best=lb60-84-90_linear_x2.5_c2c_h5 → SURVIVES n=594 E[R]=+0.372 pnl=$+44140 OOS=+0.279 WF=4/4 MC=98.8% · SURVIVES=1498 (187s)
+
+--- USDCHF daily=3653 2016-07-23→2026-07-23 ---
+  1y   best=lb20-21_strict_x2.5_c2c_h3 → SURVIVES n=90 E[R]=+0.247 pnl=$+4449 OOS=+0.603 WF=3/4 MC=76.9% · SURVIVES=52 (11s)
+  full best=lb5-30_linear_x2.5_c2c_h4 → SURVIVES n=583 E[R]=+0.117 pnl=$+13659 OOS=+0.181 WF=2/4 MC=74.6% · SURVIVES=7 (54s)
+
+=== SUMMARY === {"pairs_best_1y_SURVIVES": 8, "pairs_best_1y_FRAGILE": 0, "recommendation": "RESEARCH_MORE", "note": "8/8 SURVIVES on 1y after wide permute \u2014 keep going (WF lock next).", "best_per_pair_1y": [{"symbol": "GOLD", "verdict": "SURVIVES", "exp_r": 2.152, "pnl": 21090.42, "lookbacks": [7, 60], "lot": 2.5, "tp_r": null, "hold": 5, "mode": "strict", "wf": "4/4", "mc": 100.0, "id": "lb7-60_strict_x2.5_c2c_h5"}, {"symbol": "BTCUSD", "verdict": "SURVIVES", "exp_r": 0.953, "pnl": 10678.12, "lookbacks": [5, 10], "lot": 2.5, "tp_r": null, "hold": 5, "mode": "strict", "wf": "4/4", "mc": 97.5, "id": "lb5-10_strict_x2.5_c2c_h5"}, {"symbol": "UKOIL", "verdict": "SURVIVES", "exp_r": 1.026, "pnl": 12110.56, "lookbacks": [60, 63], "lot": 2.5, "tp_r": null, "hold": 5, "mode": "strict", "wf": "4/4", "mc": 95.8, "id": "lb60-63_strict_x2.5_c2c_h5"}, {"symbol": "NAS100", "verdict": "SURVIVES", "exp_r": 0.859, "pnl": 12542.41, "lookbacks": [20, 21, 90], "lot": 2.5, "tp_r": null, "hold": 4, "mode": "strict", "wf": "4/4", "mc": 98.8, "id": "lb20-21-90_strict_x2.5_c2c_h4"}, {"symbol": "AUDUSD", "verdict": "SURVIVES", "exp_r": 0.751, "pnl": 8256.31, "lookbacks": [3, 7], "lot": 2.5, "tp_r": null, "hold": 5, 
+wrote /app/data/lab_schwab_tally_densify_v2.json
+wrote /app/data/lab_schwab_tally_densify_v2.md
+  full best=lb5-30_linear_x2.5_c2c_h4 → SURVIVES n=583 E[R]=+0.117 pnl=$+13659 OOS=+0.181 WF=2/4 MC=74.6% · SURVIVES=7 (55s)
+
+=== SUMMARY === {"pairs_best_1y_SURVIVES": 8, "pairs_best_1y_FRAGILE": 0, "recommendation": "RESEARCH_MORE", "note": "8/8 SURVIVES on 1y after wide permute \u2014 keep going (WF lock next).", "best_per_pair_1y": [{"symbol": "GOLD", "verdict": "SURVIVES", "exp_r": 2.152, "pnl": 21090.42, "lookbacks": [7, 60], "lot": 2.5, "tp_r": null, "hold": 5, "mode": "strict", "wf": "4/4", "mc": 100.0, "id": "lb7-60_strict_x2.5_c2c_h5"}, {"symbol": "BTCUSD", "verdict": "SURVIVES", "exp_r": 0.953, "pnl": 10678.12, "lookbacks": [5, 10], "lot": 2.5, "tp_r": null, "hold": 5, "mode": "strict", "wf": "4/4", "mc": 97.5, "id": "lb5-10_strict_x2.5_c2c_h5"}, {"symbol": "UKOIL", "verdict": "SURVIVES", "exp_r": 1.026, "pnl": 12110.56, "lookbacks": [60, 63], "lot": 2.5, "tp_r": null, "hold": 5, "mode": "strict", "wf": "4/4", "mc": 95.8, "id": "lb60-63_strict_x2.5_c2c_h5"}, {"symbol": "NAS100", "verdict": "SURVIVES", "exp_r": 0.859, "pnl": 12542.41, "lookbacks": [20, 21, 90], "lot": 2.5, "tp_r": null, "hold": 4, "mode": "strict", "wf": "4/4", "mc": 98.8, "id": "lb20-21-90_strict_x2.5_c2c_h4"}, {"symbol": "AUDUSD", "verdict": "SURVIVES", "exp_r": 0.751, "pnl": 8256.31, "lookbacks": [3, 7], "lot": 2.5, "tp_r": null, "hold": 5, 
+wrote /app/data/lab_schwab_tally_densify_v2.json
+wrote /app/data/lab_schwab_tally_densify_v2.md

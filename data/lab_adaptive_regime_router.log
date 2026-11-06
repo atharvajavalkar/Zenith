@@ -1,0 +1,57 @@
+=== ADAPTIVE REGIME ROUTER BT ===
+TF=5m cap=3.0y windows=['7d', '90d', '1y', '3y']
+Router: TREND→family book | FADE→kalman | FLAT→sit out
+LIVE BRAINS NOT TOUCHED
+
+
+######## ETHUSD ########
+  7d   static n=    0 WR=  0.0 E[R]=+0.000 pnl=$       0  |  adapt n=   24 WR= 33.3 E[R]=+0.133 pnl=$     640
+  90d  static n=   57 WR= 15.8 E[R]=-0.211 pnl=$  -2,400  |  adapt n=  307 WR= 28.0 E[R]=-0.048 pnl=$  -2,920
+  1y   static n=  223 WR= 25.6 E[R]=+0.278 pnl=$  12,400  |  adapt n= 1115 WR= 31.3 E[R]=+0.064 pnl=$  14,320
+  3y   static n=  573 WR= 24.1 E[R]=+0.204 pnl=$  23,400  |  adapt n= 3043 WR= 31.0 E[R]=+0.055 pnl=$  33,320
+
+######## BTCUSD ########
+  7d   static n=    0 WR=  0.0 E[R]=+0.000 pnl=$       0  |  adapt n=   29 WR= 37.9 E[R]=+0.290 pnl=$   1,680
+  90d  static n=   57 WR= 19.3 E[R]=-0.228 pnl=$  -2,600  |  adapt n=  260 WR= 27.3 E[R]=-0.072 pnl=$  -3,720
+  1y   static n=  191 WR= 23.6 E[R]=-0.058 pnl=$  -2,200  |  adapt n= 1016 WR= 29.7 E[R]=+0.011 pnl=$   2,160
+  3y   static n=  542 WR= 26.4 E[R]=+0.055 pnl=$   6,000  |  adapt n= 2975 WR= 30.1 E[R]=+0.023 pnl=$  13,600
+
+######## GOLD ########
+  7d   static n=    5 WR= 20.0 E[R]=+0.000 pnl=$       0  |  adapt n=   14 WR= 35.7 E[R]=+0.214 pnl=$     600
+  90d  static n=   74 WR= 28.4 E[R]=+0.419 pnl=$   6,200  |  adapt n=  242 WR= 28.5 E[R]=-0.031 pnl=$  -1,480
+  1y   static n=  275 WR= 30.9 E[R]=+0.545 pnl=$  30,000  |  adapt n=  865 WR= 29.0 E[R]=-0.013 pnl=$  -2,320
+  3y   static n=  862 WR= 25.4 E[R]=+0.270 pnl=$  46,600  |  adapt n= 2459 WR= 30.6 E[R]=+0.041 pnl=$  20,240
+
+######## NAS100 ########
+  7d   static n=    1 WR=100.0 E[R]=+2.000 pnl=$     400  |  adapt n=   11 WR= 18.2 E[R]=-0.382 pnl=$    -840
+  90d  static n=   37 WR= 37.8 E[R]=+0.135 pnl=$   1,000  |  adapt n=  152 WR= 27.6 E[R]=-0.061 pnl=$  -1,840
+  1y   static n=  152 WR= 37.5 E[R]=+0.125 pnl=$   3,800  |  adapt n=  586 WR= 26.8 E[R]=-0.089 pnl=$ -10,440
+  3y   static n=  439 WR= 35.8 E[R]=+0.073 pnl=$   6,400  |  adapt n= 1857 WR= 29.9 E[R]=+0.016 pnl=$   6,000
+
+######## USDJPY ########
+  7d   static n=   45 WR= 46.7 E[R]=+0.400 pnl=$   3,600  |  adapt n=   46 WR= 28.3 E[R]=-0.039 pnl=$    -360
+  90d  static n=  586 WR= 38.4 E[R]=+0.152 pnl=$  17,800  |  adapt n=  484 WR= 29.3 E[R]=-0.002 pnl=$    -240
+  1y   static n= 2211 WR= 36.9 E[R]=+0.107 pnl=$  47,400  |  adapt n= 2289 WR= 27.1 E[R]=-0.079 pnl=$ -36,200
+  3y   static n= 6559 WR= 35.9 E[R]=+0.076 pnl=$ 100,000  |  adapt n= 6863 WR= 28.6 E[R]=-0.028 pnl=$ -37,760
+
+######## AUDUSD ########
+  7d   static n=   27 WR= 18.5 E[R]=-0.444 pnl=$  -2,400  |  adapt n=   25 WR= 16.0 E[R]=-0.456 pnl=$  -2,280
+  90d  static n=  285 WR= 35.4 E[R]=+0.063 pnl=$   3,600  |  adapt n=  505 WR= 28.3 E[R]=-0.037 pnl=$  -3,760
+  1y   static n= 1137 WR= 37.2 E[R]=+0.116 pnl=$  26,400  |  adapt n= 2220 WR= 29.3 E[R]=-0.003 pnl=$  -1,320
+  3y   static n= 3385 WR= 37.0 E[R]=+0.111 pnl=$  75,400  |  adapt n= 6860 WR= 29.7 E[R]=+0.011 pnl=$  15,200
+
+######## USDCHF ########
+  7d   static n=   18 WR= 22.2 E[R]=-0.333 pnl=$  -1,200  |  adapt n=   40 WR= 25.0 E[R]=-0.150 pnl=$  -1,200
+  90d  static n=  278 WR= 39.2 E[R]=+0.176 pnl=$   9,800  |  adapt n=  576 WR= 27.4 E[R]=-0.067 pnl=$  -7,760
+  1y   static n= 1146 WR= 38.0 E[R]=+0.141 pnl=$  32,400  |  adapt n= 2319 WR= 28.6 E[R]=-0.028 pnl=$ -12,960
+  3y   static n= 3490 WR= 37.7 E[R]=+0.132 pnl=$  92,200  |  adapt n= 6565 WR= 29.8 E[R]=+0.012 pnl=$  15,720
+
+######## UKOIL ########
+  7d   static n=   22 WR= 31.8 E[R]=+0.591 pnl=$   2,600  |  adapt n=   34 WR= 32.4 E[R]=+0.100 pnl=$     680
+  90d  static n=  232 WR= 28.9 E[R]=+0.444 pnl=$  20,600  |  adapt n=  488 WR= 28.7 E[R]=-0.025 pnl=$  -2,400
+  1y   static n=  877 WR= 24.4 E[R]=+0.220 pnl=$  38,600  |  adapt n= 1995 WR= 29.1 E[R]=-0.012 pnl=$  -4,600
+  3y   static n= 2439 WR= 24.6 E[R]=+0.228 pnl=$ 111,200  |  adapt n= 5999 WR= 28.6 E[R]=-0.027 pnl=$ -32,240
+
+DESK deltas: 7d $-4,080, 90d $-78,120, 1y $-240,160, 3y $-427,120
+Wrote /app/data/lab_adaptive_regime_router.json
+Charts /app/data/lab_adaptive_regime_charts.json

@@ -1,0 +1,27 @@
+{
+  "updated_at": "2026-11-06T06:43:21.925614+00:00",
+  "last_rescore_at": "2026-10-14T22:08:28.188886+00:00",
+  "short_alt": {
+    "ETHUSD": "session_mix",
+    "BTCUSD": "circadian_kalman_z",
+    "GOLD": "entropy_tod",
+    "NAS100": "entropy_tod",
+    "USDJPY": "session_mix",
+    "AUDUSD": "session_mix",
+    "USDCHF": "session_mix",
+    "UKOIL": "circadian_kalman_z"
+  },
+  "per_symbol": {
+    "NAS100": {
+      "primary": "session_mix",
+      "active": "session_mix",
+      "short_alt": "entropy_tod",
+      "horizon_switched": false,
+      "pnl_7d": 0.0,
+      "switch_thr": -400.0,
+      "risk_scale": 1.0,
+      "at": "2026-11-06T06:43:21.925596+00:00"
+    }
+  },
+  "note": "desk reset for omni live begin"
+}

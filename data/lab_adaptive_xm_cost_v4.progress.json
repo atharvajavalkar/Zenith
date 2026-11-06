@@ -1,0 +1,10 @@
+{
+  "status": "done",
+  "pct": 100,
+  "elapsed_sec": 143.4,
+  "desk_abs_1y": 16846.54,
+  "desk_wireable_1y": 16762.95,
+  "pairs_wireable": 7,
+  "out": "/app/data/lab_adaptive_xm_cost_v4.json",
+  "updated_at": "2026-08-18T13:42:28.192243+00:00"
+}

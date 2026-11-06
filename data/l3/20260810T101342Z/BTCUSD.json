@@ -1,0 +1,27 @@
+{
+  "zenith": "BTCUSD",
+  "map": {
+    "true_l3": true,
+    "primary": "coinbase",
+    "product": "BTC-USD",
+    "databento": null,
+    "tardis": {
+      "exchange": "coinbase",
+      "symbol": "BTC-USD"
+    },
+    "note": "Coinbase Exchange L3 book (order_id per resting order)"
+  },
+  "sources": {
+    "coinbase_l3": {
+      "ok": false,
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1123)>"
+    },
+    "xm_dom": {
+      "ok": false,
+      "error": "No module named 'requests'"
+    }
+  },
+  "fetched_at": "2026-08-10T10:13:44Z",
+  "best_schema": null,
+  "best_source": null
+}

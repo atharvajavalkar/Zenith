@@ -1,0 +1,90 @@
+=== CRYPTO L3 + Fourier + Dist hunt · Dukascopy 1y · RESEARCH ===
+Live SYMBOL_ENTRY_BRAIN NOT changed.
+L3 calibration: {
+  "source": "coinbase_live_or_defaults",
+  "symbols": {
+    "ETHUSD": {
+      "ok": true,
+      "spread_bps": 0.052,
+      "spread_px": 0.01,
+      "imbalance": -0.2617,
+      "bid_notional": 9501.75,
+      "ask_notional": 16240.01,
+      "xm_floor": 1.5,
+      "min_risk_px": 6.0
+    },
+    "BTCUSD": {
+      "ok": true,
+      "spread_bps": 0.002,
+      "spread_px": 0.01,
+      "imbalance": -0.397,
+      "bid_notional": 24249.54,
+      "ask_notional": 56186.41,
+      "xm_floor": 8.0,
+      "min_risk_px": 32.0
+    }
+  }
+}
+
+===== ETHUSD =====
+load ETHUSD: 514,835 bars 2025-07-31→2026-07-23
+  LIVE_ETHUSD: n=13867 pnl=$457,600 E[R]=0.165 WR=23.3% OOS_E[R]=0.17 SURVIVES MC=100.0%
+  L3GATE_bb1.5_sl2_rr4: n=3263 pnl=$58,400 E[R]=0.0895 WR=21.8% OOS_E[R]=0.1079 SURVIVES MC=99.4%
+  L3GATE_bb1.5_sl2.5_rr4: n=2931 pnl=$41,800 E[R]=0.0713 WR=21.4% OOS_E[R]=0.1658 SURVIVES MC=97.0%
+  FOURIER_hf_bb1.5_sl2: n=3144 pnl=$58,200 E[R]=0.0926 WR=21.9% OOS_E[R]=0.1371 SURVIVES MC=99.5%
+  FOURIER_hf45_bb1.5_sl2.5: n=2652 pnl=$41,600 E[R]=0.0784 WR=21.6% OOS_E[R]=0.2349 SURVIVES MC=98.0%
+  DIST_z2_bb1.5_sl2: n=559 pnl=$-1,800 E[R]=-0.0161 WR=19.7% OOS_E[R]=-0.2727 DEAD MC=44.1%
+  DIST_z2_kurt_bb1.5_sl2.5: n=227 pnl=$600 E[R]=0.0132 WR=20.3% OOS_E[R]=-0.2683 DEAD MC=52.1%
+  COMBO_fourier_dist_l3: n=548 pnl=$-600 E[R]=-0.0055 WR=19.9% OOS_E[R]=-0.0789 DEAD MC=48.0%
+  COMBO_strict: n=2 pnl=$600 E[R]=1.5 WR=50.0% OOS_E[R]=0.0 FRAGILE MC=None%
+  COMBO_fourier_dist_l3_rr2: n=594 pnl=$1,800 E[R]=0.0152 WR=33.8% OOS_E[R]=0.1512 FRAGILE MC=57.3%
+  COMBO_fourier_dist_l3_rr2.4: n=585 pnl=$-720 E[R]=-0.0062 WR=29.2% OOS_E[R]=0.0119 FRAGILE MC=44.8%
+  COMBO_fourier_dist_l3_rr3: n=574 pnl=$400 E[R]=0.0035 WR=25.1% OOS_E[R]=-0.0617 FRAGILE MC=51.3%
+  HORIZON 1w: n=294 pnl=$10,200 E[R]=0.1735 WR=23.5% (2026-07-16→2026-07-23)
+  HORIZON 1m: n=1201 pnl=$47,800 E[R]=0.199 WR=24.0% (2026-06-23→2026-07-23)
+  HORIZON 2m: n=2334 pnl=$97,200 E[R]=0.2082 WR=24.2% (2026-05-24→2026-07-23)
+
+===== BTCUSD =====
+load BTCUSD: 514,835 bars 2025-07-31→2026-07-23
+  LIVE_BTCUSD: n=281 pnl=$24,040 E[R]=0.4278 WR=42.0% OOS_E[R]=0.6164 SURVIVES MC=100.0%
+  L3GATE_bb2.5_sl2_rr2.4: n=266 pnl=$12,080 E[R]=0.2271 WR=36.1% OOS_E[R]=0.3123 SURVIVES MC=98.9%
+  L3GATE_bb2.5_sl2.5_rr2.4: n=265 pnl=$9,560 E[R]=0.1804 WR=34.7% OOS_E[R]=0.2938 SURVIVES MC=97.0%
+  FOURIER_hf_bb2.5_sl2: n=259 pnl=$12,800 E[R]=0.2471 WR=36.7% OOS_E[R]=0.3239 SURVIVES MC=99.4%
+  FOURIER_hf45_bb2.5_sl2.5: n=234 pnl=$10,320 E[R]=0.2205 WR=35.9% OOS_E[R]=0.3472 SURVIVES MC=98.6%
+  DIST_z2_bb2.5_sl2: n=55 pnl=$12,800 E[R]=1.1636 WR=63.6% OOS_E[R]=1.4 SURVIVES MC=100.0%
+  DIST_z2_kurt_bb2.5_sl2.5: n=44 pnl=$10,240 E[R]=1.1636 WR=63.6% OOS_E[R]=1.38 SURVIVES MC=100.0%
+  COMBO_fourier_dist_l3: n=45 pnl=$10,040 E[R]=1.1156 WR=62.2% OOS_E[R]=1.3448 SURVIVES MC=100.0%
+  COMBO_strict: n=26 pnl=$5,000 E[R]=0.9615 WR=57.7% OOS_E[R]=0.87 SURVIVES MC=99.9%
+  COMBO_fourier_dist_l3_rr2: n=47 pnl=$11,000 E[R]=1.1702 WR=72.3% OOS_E[R]=1.3226 SURVIVES MC=100.0%
+  COMBO_fourier_dist_l3_rr3: n=43 pnl=$9,000 E[R]=1.0465 WR=51.2% OOS_E[R]=1.2857 SURVIVES MC=100.0%
+  COMBO_fourier_dist_l3_rr4: n=40 pnl=$7,000 E[R]=0.875 WR=37.5% OOS_E[R]=1.0 SURVIVES MC=98.6%
+  HORIZON 1w: n=1 pnl=$400 E[R]=2.0 WR=100.0% (2026-07-16→2026-07-23)
+  HORIZON 1m: n=7 pnl=$2,200 E[R]=1.5714 WR=85.7% (2026-06-23→2026-07-23)
+  HORIZON 2m: n=19 pnl=$6,400 E[R]=1.6842 WR=89.5% (2026-05-24→2026-07-23)
+
+### DESK SUMMARY
+picks: {'ETHUSD': 'LIVE_ETHUSD', 'BTCUSD': 'COMBO_fourier_dist_l3_rr2'}
+full 1y winner Σpnl=$468,600 vs live Σpnl=$481,640 Δ=$-13,040
+horizon 1w: winner=$10,600 live=$12,600 Δ=$-2,000
+horizon 1m: winner=$50,000 live=$52,760 Δ=$-2,760
+horizon 2m: winner=$103,600 live=$107,400 Δ=$-3,800
+
+ETHUSD WINNER=LIVE_ETHUSD E[R]=0.165 pnl=$457,600 SURVIVES
+  formula: wired live brain
+  spec: {'name': 'LIVE_ETHUSD', 'bb_mult': 1.5, 'sl_atr': 1.2, 'rr': 4.0, 'min_risk_px': 0.0}
+  1w: winner n=294 E[R]=0.1735 $10,200 | live n=294 E[R]=0.1735 $10,200
+  1m: winner n=1201 E[R]=0.199 $47,800 | live n=1201 E[R]=0.199 $47,800
+  2m: winner n=2334 E[R]=0.2082 $97,200 | live n=2334 E[R]=0.2082 $97,200
+
+BTCUSD WINNER=COMBO_fourier_dist_l3_rr2 E[R]=1.1702 pnl=$11,000 SURVIVES
+  formula: combo RR sweep 2.0
+  spec: {'name': 'COMBO_fourier_dist_l3_rr2', 'bb_mult': 2.5, 'sl_atr': 2.5, 'rr': 2.0, 'min_risk_px': 32.0, 'fourier_hf_min': 0.4, 'abs_z_min': 1.5, 'kurt_max': 7.0, 'min_eff': 0.25}
+  1w: winner n=1 E[R]=2.0 $400 | live n=5 E[R]=2.4 $2,400
+  1m: winner n=7 E[R]=1.5714 $2,200 | live n=33 E[R]=0.7515 $4,960
+  2m: winner n=19 E[R]=1.6842 $6,400 | live n=68 E[R]=0.75 $10,200
+
+Wrote /app/data/lab_crypto_l3_fourier_hunt_bt.json in 32.8s
+load ETHUSD: 514,834 bars 2025-07-31→2026-07-23
+load BTCUSD: 514,834 bars 2025-07-31→2026-07-23
+load ETHUSD: 514,833 bars 2025-07-31→2026-07-23
+load BTCUSD: 514,833 bars 2025-07-31→2026-07-23

@@ -12,14 +12,12 @@ const INTERVAL_MAP = {
 }
 
 /**
- * Official TradingView Advanced Chart embed — full toolbar, drawing tools,
- * and the same Indicators library (80+ studies) as the TradingView app.
- * @see https://www.tradingview.com/widget-docs/widgets/charts/advanced-chart/
+ * TradingView Advanced Chart — dark theme to match Zenith desk.
  */
 function TradingViewWidget({
   symbol = 'XM:XAUUSD',
-  interval = '1m',
-  theme = 'light',
+  interval = '5m',
+  theme = 'dark',
   timezone = 'Etc/UTC',
 }) {
   const containerRef = useRef(null)
@@ -32,13 +30,13 @@ function TradingViewWidget({
 
     const widget = document.createElement('div')
     widget.className = 'tradingview-widget-container__widget'
-    widget.style.cssText = 'height:100%;width:100%'
+    widget.style.cssText = 'height:calc(100% - 22px);width:100%'
 
     const copyright = document.createElement('div')
-    copyright.className = 'tradingview-widget-copyright text-[10px] py-1 text-center'
-    copyright.style.color = '#787B86'
+    copyright.className = 'text-[10px] py-1 text-center tracking-wide'
+    copyright.style.color = '#8a857c'
     copyright.innerHTML =
-      '<a href="https://www.tradingview.com/" rel="noopener noreferrer" target="_blank" style="color:#2962FF">Chart by TradingView</a>'
+      '<a href="https://www.tradingview.com/" rel="noopener noreferrer" target="_blank" style="color:#c9a66b">Chart by TradingView</a>'
 
     const script = document.createElement('script')
     script.type = 'text/javascript'
@@ -49,7 +47,7 @@ function TradingViewWidget({
       symbol,
       interval: INTERVAL_MAP[interval] || interval,
       timezone,
-      theme,
+      theme: 'dark',
       style: '1',
       locale: 'en',
       enable_publishing: false,
@@ -57,17 +55,15 @@ function TradingViewWidget({
       calendar: false,
       support_host: 'https://www.tradingview.com',
       hide_top_toolbar: false,
-      hide_side_toolbar: false,
+      hide_side_toolbar: true,
       hide_legend: false,
       withdateranges: true,
-      save_image: true,
-      backgroundColor: theme === 'light' ? '#D1D4DC' : '#131722',
-      gridColor: theme === 'light' ? 'rgba(0, 0, 0, 0.06)' : 'rgba(255, 255, 255, 0.06)',
-      show_popup_button: true,
-      popup_width: '1000',
-      popup_height: '650',
-      details: true,
-      hotlist: true,
+      save_image: false,
+      backgroundColor: '#0e0e0c',
+      gridColor: 'rgba(255, 255, 255, 0.04)',
+      show_popup_button: false,
+      details: false,
+      hotlist: false,
     })
 
     container.appendChild(widget)
@@ -83,7 +79,7 @@ function TradingViewWidget({
     <div
       ref={containerRef}
       className="tradingview-widget-container h-full w-full"
-      style={{ height: '100%', width: '100%' }}
+      style={{ height: '100%', width: '100%', backgroundColor: '#0e0e0c' }}
     />
   )
 }

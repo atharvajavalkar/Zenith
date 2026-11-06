@@ -1,0 +1,100 @@
+{
+  "GOLD": {
+    "5m": {
+      "symbol": "GOLD",
+      "tf": "5m",
+      "source": "GC=F",
+      "added": 13670,
+      "join": "2026-07-28 04:00:00+00:00",
+      "gap_hours": 100.08,
+      "prev_close": 4046.765,
+      "join_close": 4048.39990234375,
+      "end": "2026-10-07 00:39:46+00:00"
+    },
+    "15m": {
+      "symbol": "GOLD",
+      "tf": "15m",
+      "source": "GC=F",
+      "added": 4568,
+      "join": "2026-07-28 04:00:00+00:00",
+      "gap_hours": 100.25,
+      "prev_close": 4046.765,
+      "join_close": 4044.300048828125,
+      "end": "2026-10-07 00:39:57+00:00"
+    }
+  },
+  "BTCUSD": {
+    "5m": {
+      "symbol": "BTCUSD",
+      "tf": "5m",
+      "source": "BTC-USD",
+      "added": 16973,
+      "join": "2026-08-09 00:00:00+00:00",
+      "gap_hours": 384.08,
+      "prev_close": 65030.3,
+      "join_close": 64910.6796875,
+      "end": "2026-10-07 00:49:58+00:00"
+    },
+    "15m": {
+      "symbol": "BTCUSD",
+      "tf": "15m",
+      "source": "BTC-USD",
+      "added": 5661,
+      "join": "2026-08-09 00:00:00+00:00",
+      "gap_hours": 384.25,
+      "prev_close": 65030.3,
+      "join_close": 64902.609375,
+      "end": "2026-10-07 00:50:03+00:00"
+    }
+  },
+  "UKOIL": {
+    "5m": {
+      "symbol": "UKOIL",
+      "tf": "5m",
+      "source": "BZ=F",
+      "added": 12431,
+      "join": "2026-07-28 04:00:00+00:00",
+      "gap_hours": 100.08,
+      "prev_close": 100.482,
+      "join_close": 87.22000122070312,
+      "end": "2026-10-07 00:39:58+00:00"
+    },
+    "15m": {
+      "symbol": "UKOIL",
+      "tf": "15m",
+      "source": "BZ=F",
+      "added": 4360,
+      "join": "2026-07-28 04:00:00+00:00",
+      "gap_hours": 100.25,
+      "prev_close": 100.482,
+      "join_close": 87.38999938964844,
+      "end": "2026-10-07 00:39:58+00:00"
+    }
+  },
+  "NAS100": {
+    "5m": {
+      "symbol": "NAS100",
+      "tf": "5m",
+      "source": "NQ=F",
+      "added": 13631,
+      "join": "2026-07-28 04:05:00+00:00",
+      "gap_hours": 100.17,
+      "prev_close": 28524.298,
+      "join_close": 28008.25,
+      "end": "2026-10-07 00:40:17+00:00"
+    },
+    "15m": {
+      "symbol": "NAS100",
+      "tf": "15m",
+      "source": "NQ=F",
+      "added": 4566,
+      "join": "2026-07-28 04:00:00+00:00",
+      "gap_hours": 100.25,
+      "prev_close": 28524.298,
+      "join_close": 27986.75,
+      "end": "2026-10-07 00:40:23+00:00"
+    }
+  },
+  "generated_at": "2026-10-07T00:50:28.931479+00:00",
+  "note": "Yahoo chart path appended after local Dukascopy. XM session spreads are still applied in the hunt, not in these prices."
+}

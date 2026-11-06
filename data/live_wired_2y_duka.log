@@ -1,0 +1,28 @@
+DUKA BRAINS horizons · Dukascopy 5m/15m · $200.0/R
+Brains: {'GOLD': 'don_100', 'USDCHF': 'bb_2.5', 'USDJPY': 'bb_2.5', 'NAS100': 'don_100', 'UKOIL': 'roc_120', 'AUDUSD': 'bb_2.5', 'BTCUSD': 'cta_50_200', 'ETHUSD': 'ema_tight'}
+Live scan TFs (ref): {'GOLD': '1h', 'USDCHF': '5m', 'USDJPY': '5m', 'NAS100': '1h', 'UKOIL': '15m', 'AUDUSD': '5m', 'BTCUSD': '1h', 'ETHUSD': '1h'}
+Horizons: [2]y (hist ≈10y; no honest 15y yet)
+
+
+### NATIVE live scan TFs (per-pair)
+
+--- 2y native ---
+  GOLD     don_100            1h   n=  279 PnL=$      20,200 OOS=$      4,800 E[R]=+0.296 SURVIVES
+  USDCHF   bb_2.5             5m   n=   97 PnL=$       9,600 OOS=$      4,200 E[R]=+0.724 SURVIVES
+  USDJPY   bb_2.5             5m   n=  125 PnL=$      19,000 OOS=$      6,000 E[R]=+0.750 SURVIVES
+  NAS100   don_100            1h   n=  286 PnL=$      16,800 OOS=$      4,400 E[R]=+0.250 SURVIVES
+  UKOIL    roc_120            15m  n=   35 PnL=$       6,000 OOS=$      4,000 E[R]=+0.800 SURVIVES
+  AUDUSD   bb_2.5             5m   n=  121 PnL=$      13,800 OOS=$      4,000 E[R]=+0.500 SURVIVES
+  BTCUSD   cta_50_200         1h   n=  105 PnL=$       3,000 OOS=$      2,000 E[R]=+0.333 SURVIVES
+  ETHUSD   ema_tight          1h   n=   78 PnL=$      13,400 OOS=$      4,000 E[R]=+1.000 SURVIVES
+  → Native 2y desk 8S/0F/0D · Full $101,800 · OOS $33,400 · fit 10.0/10 · FITS
+
+===============================================================================================
+
+### DUKA FIT BY HORIZON — native scan TFs
+
+ Years    S/F/D       Full PnL        OOS PnL   Fit    Fits?
+----------------------------------------------------------------
+     2 8/0/0 $      101,800 $       33,400  10.0      YES
+→ Headline native/2y desk: Full $101,800 · OOS $33,400 · 8S/0F/0D · fit 10.0/10
+Wrote /app/data/live_wired_2y_duka.json in 48.6s

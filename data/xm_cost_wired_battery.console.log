@@ -1,0 +1,82 @@
+=== XM-cost wired battery · risk=$100.0/R · cap=3.0y · variants=['mid', 'xm', 'xm_off_sitout', 'xm_spread_gate', 'xm_off_gate'] ===
+
+[1/8] ETHUSD brain=session_mix tf=5m RR=4.0
+  bars=328321 sides_nonzero=58158 entries=26803 span=2023-06-09 23:55:00+00:00→2026-07-23 23:55:00+00:00
+  mid            1y $     3,600 E[R]=+0.026 n=1374 avgSpR=0.000 bat=FAIL wf=0/4
+  xm             1y $   -54,231 E[R]=-0.395 n=1374 avgSpR=0.421 bat=FAIL wf=0/4
+  xm_off_sitout  1y $   -54,231 E[R]=-0.395 n=1374 avgSpR=0.421 bat=FAIL wf=0/4
+  xm_spread_gate 1y $   -13,474 E[R]=-0.193 n=699 avgSpR=0.230 bat=FAIL wf=0/4
+  xm_off_gate    1y $   -13,474 E[R]=-0.193 n=699 avgSpR=0.230 bat=FAIL wf=0/4
+
+[2/8] BTCUSD brain=circadian_kalman_z tf=5m RR=3.0
+  bars=328321 sides_nonzero=15797 entries=8983 span=2023-06-09 23:55:00+00:00→2026-07-23 23:55:00+00:00
+  mid            1y $     5,500 E[R]=+0.050 n=1105 avgSpR=0.000 bat=FAIL wf=0/4
+  xm             1y $   -13,590 E[R]=-0.123 n=1105 avgSpR=0.173 bat=FAIL wf=0/4
+  xm_off_sitout  1y $   -13,590 E[R]=-0.123 n=1105 avgSpR=0.173 bat=FAIL wf=0/4
+  xm_spread_gate 1y $   -13,590 E[R]=-0.123 n=1105 avgSpR=0.173 bat=FAIL wf=0/4
+  xm_off_gate    1y $   -13,590 E[R]=-0.123 n=1105 avgSpR=0.173 bat=FAIL wf=0/4
+
+[3/8] GOLD brain=entropy_tod tf=5m RR=4.0
+  bars=328321 sides_nonzero=1317 entries=499 span=2023-06-09 23:55:00+00:00→2026-07-23 23:55:00+00:00
+  mid            1y $     2,600 E[R]=+0.406 n=64 avgSpR=0.000 bat=FAIL wf=0/4
+  xm             1y $     2,204 E[R]=+0.344 n=64 avgSpR=0.062 bat=FAIL wf=0/4
+  xm_off_sitout  1y $     2,526 E[R]=+0.665 n=38 avgSpR=0.046 bat=FAIL wf=0/4
+  xm_spread_gate 1y $     2,204 E[R]=+0.344 n=64 avgSpR=0.062 bat=FAIL wf=0/4
+  xm_off_gate    1y $     2,526 E[R]=+0.665 n=38 avgSpR=0.046 bat=FAIL wf=0/4
+
+[4/8] NAS100 brain=volmom tf=15m RR=4.0
+  bars=109441 sides_nonzero=5351 entries=4146 span=2023-06-09 23:45:00+00:00→2026-07-23 23:45:00+00:00
+  mid            1y $     7,800 E[R]=+0.210 n=372 avgSpR=0.000 bat=FAIL wf=0/4
+  xm             1y $     5,970 E[R]=+0.161 n=372 avgSpR=0.049 bat=FAIL wf=0/4
+  xm_off_sitout  1y $     5,970 E[R]=+0.161 n=372 avgSpR=0.049 bat=FAIL wf=0/4
+  xm_spread_gate 1y $     5,970 E[R]=+0.161 n=372 avgSpR=0.049 bat=FAIL wf=0/4
+  xm_off_gate    1y $     5,970 E[R]=+0.161 n=372 avgSpR=0.049 bat=FAIL wf=0/4
+
+[5/8] USDJPY brain=circadian_kalman_z tf=5m RR=2.0
+  bars=328321 sides_nonzero=10503 entries=5559 span=2023-06-09 23:55:00+00:00→2026-07-23 23:55:00+00:00
+  mid            1y $     7,200 E[R]=+0.145 n=495 avgSpR=0.000 bat=FAIL wf=0/4
+  xm             1y $     1,719 E[R]=+0.035 n=495 avgSpR=0.111 bat=FAIL wf=0/4
+  xm_off_sitout  1y $       585 E[R]=+0.012 n=485 avgSpR=0.107 bat=FAIL wf=0/4
+  xm_spread_gate 1y $     1,719 E[R]=+0.035 n=495 avgSpR=0.111 bat=FAIL wf=0/4
+  xm_off_gate    1y $       585 E[R]=+0.012 n=485 avgSpR=0.107 bat=FAIL wf=0/4
+
+[6/8] AUDUSD brain=circadian_kalman_z tf=5m RR=2.0
+  bars=328321 sides_nonzero=10034 entries=5356 span=2023-06-09 23:55:00+00:00→2026-07-23 23:55:00+00:00
+  mid            1y $      -300 E[R]=-0.011 n=270 avgSpR=0.000 bat=FAIL wf=0/4
+  xm             1y $    -3,441 E[R]=-0.128 n=270 avgSpR=0.116 bat=FAIL wf=0/4
+  xm_off_sitout  1y $    -3,236 E[R]=-0.122 n=266 avgSpR=0.114 bat=FAIL wf=0/4
+  xm_spread_gate 1y $    -3,441 E[R]=-0.128 n=270 avgSpR=0.116 bat=FAIL wf=0/4
+  xm_off_gate    1y $    -3,236 E[R]=-0.122 n=266 avgSpR=0.114 bat=FAIL wf=0/4
+
+[7/8] USDCHF brain=session_mix tf=5m RR=2.0
+  bars=328321 sides_nonzero=20354 entries=9640 span=2023-06-09 23:55:00+00:00→2026-07-23 23:55:00+00:00
+  mid            1y $    -1,000 E[R]=-0.034 n=298 avgSpR=0.000 bat=FAIL wf=0/4
+  xm             1y $    -5,032 E[R]=-0.169 n=298 avgSpR=0.135 bat=FAIL wf=0/4
+  xm_off_sitout  1y $    -5,873 E[R]=-0.205 n=286 avgSpR=0.118 bat=FAIL wf=0/4
+  xm_spread_gate 1y $    -5,873 E[R]=-0.205 n=286 avgSpR=0.118 bat=FAIL wf=0/4
+  xm_off_gate    1y $    -5,873 E[R]=-0.205 n=286 avgSpR=0.118 bat=FAIL wf=0/4
+
+[8/8] UKOIL brain=session_mix tf=5m RR=4.0
+  bars=328321 sides_nonzero=18690 entries=8641 span=2023-06-09 23:55:00+00:00→2026-07-23 23:55:00+00:00
+  mid            1y $    11,800 E[R]=+0.191 n=617 avgSpR=0.000 bat=FAIL wf=0/4
+  xm             1y $       703 E[R]=+0.011 n=617 avgSpR=0.180 bat=FAIL wf=0/4
+  xm_off_sitout  1y $     1,707 E[R]=+0.029 n=590 avgSpR=0.166 bat=FAIL wf=0/4
+  xm_spread_gate 1y $     1,557 E[R]=+0.026 n=591 avgSpR=0.167 bat=FAIL wf=0/4
+  xm_off_gate    1y $     1,707 E[R]=+0.029 n=590 avgSpR=0.166 bat=FAIL wf=0/4
+
+=== DESK PnL by variant ($100/R) ===
+  mid            7d $4,300 · 30d $10,100 · 90d $17,800 · 180d $26,800 · 1y $37,200 · 3y $81,500
+  xm             7d $2,483 · 30d $-506 · 90d $-16,288 · 180d $-32,073 · 1y $-65,698 · 3y $-282,755
+  xm_off_sitout  7d $2,483 · 30d $254 · 90d $-16,323 · 180d $-32,305 · 1y $-66,141 · 3y $-280,524
+  xm_spread_gate 7d $2,423 · 30d $899 · 90d $-611 · 180d $-3,704 · 1y $-24,929 · 3y $-124,418
+  xm_off_gate    7d $2,423 · 30d $1,727 · 90d $-539 · 180d $-3,179 · 1y $-25,385 · 3y $-122,017
+
+BEST XM mix 1y $-23,410 · 3y $-120,909 · wrote /app/data/xm_cost_wired_battery.json
+  REC ETHUSD   xm_spread_gate FAIL  wf=0/4 1y $-13,474 E[R]=-0.193 mid−xm gap $57,831
+  REC BTCUSD   xm             FAIL  wf=0/4 1y $-13,590 E[R]=-0.123 mid−xm gap $19,090
+  REC GOLD     xm_off_sitout  FAIL  wf=0/4 1y $2,526 E[R]=+0.665 mid−xm gap $396
+  REC NAS100   xm             FAIL  wf=0/4 1y $5,970 E[R]=+0.161 mid−xm gap $1,830
+  REC USDJPY   xm             FAIL  wf=0/4 1y $1,719 E[R]=+0.035 mid−xm gap $5,481
+  REC AUDUSD   xm_off_sitout  FAIL  wf=0/4 1y $-3,236 E[R]=-0.122 mid−xm gap $3,141
+  REC USDCHF   xm             FAIL  wf=0/4 1y $-5,032 E[R]=-0.169 mid−xm gap $4,032
+  REC UKOIL    xm_off_sitout  FAIL  wf=0/4 1y $1,707 E[R]=+0.029 mid−xm gap $11,097

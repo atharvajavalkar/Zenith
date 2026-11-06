@@ -1,0 +1,130 @@
+DUKA BRAINS horizons · Dukascopy 5m/15m · $200.0/R
+Brains: {'GOLD': 'cta_10_40', 'USDCHF': 'rsi', 'USDJPY': 'bb_1.5', 'NAS100': 'ema_20_50_tight', 'UKOIL': 'st_3', 'AUDUSD': 'ema_20_50_pull', 'BTCUSD': 'fib_liq_sweep', 'ETHUSD': 'bb_2'}
+Live scan TFs (ref): {'GOLD': '15m', 'USDCHF': '1m', 'USDJPY': '15m', 'NAS100': '15m', 'UKOIL': '15m', 'AUDUSD': '3m', 'BTCUSD': '3m', 'ETHUSD': '1m'}
+Horizons: [1, 2, 3, 5, 7, 10]y (hist ≈10y; no honest 15y yet)
+
+
+### TF 15m
+  load GOLD 15m: 349,728 bars 2016-07-23→2026-07-23
+  1y GOLD     cta_10_40          15m  n=  385 PnL=$       2,000 OOS=$      2,600 E[R]=+0.116 FRAGILE
+  2y GOLD     cta_10_40          15m  n=  778 PnL=$      -4,600 OOS=$      8,400 E[R]=+0.188 FRAGILE
+  3y GOLD     cta_10_40          15m  n= 1145 PnL=$      -7,000 OOS=$      6,000 E[R]=+0.091 FRAGILE
+  5y GOLD     cta_10_40          15m  n= 2012 PnL=$     -25,400 OOS=$      5,200 E[R]=+0.045 FRAGILE
+  7y GOLD     cta_10_40          15m  n= 2776 PnL=$     -35,200 OOS=$     -7,600 E[R]=-0.046 DEAD
+  10y GOLD     cta_10_40          15m  n= 3983 PnL=$     -49,600 OOS=$     -6,000 E[R]=-0.026 DEAD
+  load USDCHF 15m: 350,688 bars 2016-07-23→2026-07-23
+  1y USDCHF   rsi                15m  n=  954 PnL=$      -1,760 OOS=$        240 E[R]=+0.004 FRAGILE
+  2y USDCHF   rsi                15m  n= 1834 PnL=$       8,560 OOS=$      2,560 E[R]=+0.023 FRAGILE
+  3y USDCHF   rsi                15m  n= 2685 PnL=$       2,920 OOS=$     -2,920 E[R]=-0.017 FRAGILE
+  5y USDCHF   rsi                15m  n= 4445 PnL=$     -19,280 OOS=$     11,920 E[R]=+0.043 FRAGILE
+  7y USDCHF   rsi                15m  n= 6225 PnL=$     -26,440 OOS=$      5,360 E[R]=+0.014 FRAGILE
+  10y USDCHF   rsi                15m  n= 8845 PnL=$     -63,560 OOS=$      2,800 E[R]=+0.005 FRAGILE
+  load USDJPY 15m: 350,688 bars 2016-07-23→2026-07-23
+  1y USDJPY   bb_1.5             15m  n=  634 PnL=$     -11,800 OOS=$      4,600 E[R]=+0.156 DEAD
+  2y USDJPY   bb_1.5             15m  n= 1328 PnL=$       2,400 OOS=$     -7,200 E[R]=-0.098 FRAGILE
+  3y USDJPY   bb_1.5             15m  n= 2017 PnL=$      -3,400 OOS=$    -10,800 E[R]=-0.096 DEAD
+  5y USDJPY   bb_1.5             15m  n= 3511 PnL=$      35,800 OOS=$     -9,400 E[R]=-0.048 FRAGILE
+  7y USDJPY   bb_1.5             15m  n= 4893 PnL=$      43,400 OOS=$      1,800 E[R]=+0.006 FRAGILE
+  10y USDJPY   bb_1.5             15m  n= 7113 PnL=$      24,400 OOS=$     -3,000 E[R]=-0.007 FRAGILE
+  load NAS100 15m: 350,688 bars 2016-07-23→2026-07-23
+  1y NAS100   ema_20_50_tight    15m  n=  123 PnL=$       4,400 OOS=$      1,000 E[R]=+0.125 SURVIVES
+  2y NAS100   ema_20_50_tight    15m  n=  252 PnL=$        -400 OOS=$      3,200 E[R]=+0.203 DEAD
+  3y NAS100   ema_20_50_tight    15m  n=  385 PnL=$       4,000 OOS=$      2,400 E[R]=+0.106 FRAGILE
+  5y NAS100   ema_20_50_tight    15m  n=  625 PnL=$       8,000 OOS=$      1,800 E[R]=+0.047 SURVIVES
+  7y NAS100   ema_20_50_tight    15m  n=  842 PnL=$      14,600 OOS=$      2,800 E[R]=+0.053 SURVIVES
+  10y NAS100   ema_20_50_tight    15m  n=  448 PnL=$      13,400 OOS=$     -2,200 E[R]=-0.073 FRAGILE
+  load UKOIL 15m: 350,688 bars 2016-07-23→2026-07-23
+  1y UKOIL    st_3               15m  n=  269 PnL=$      -5,000 OOS=$     -3,600 E[R]=-0.191 DEAD
+  2y UKOIL    st_3               15m  n=  536 PnL=$     -11,200 OOS=$     -6,800 E[R]=-0.200 DEAD
+  3y UKOIL    st_3               15m  n=  815 PnL=$      -9,400 OOS=$     -4,000 E[R]=-0.083 DEAD
+  5y UKOIL    st_3               15m  n= 1368 PnL=$     -19,200 OOS=$    -16,200 E[R]=-0.202 DEAD
+  7y UKOIL    st_3               15m  n= 1853 PnL=$     -21,000 OOS=$     -8,000 E[R]=-0.071 DEAD
+  10y UKOIL    st_3               15m  n= 2673 PnL=$     -25,800 OOS=$     -9,600 E[R]=-0.059 DEAD
+  load AUDUSD 15m: 350,688 bars 2016-07-23→2026-07-23
+  1y AUDUSD   ema_20_50_pull     15m  n=  364 PnL=$       2,200 OOS=$        500 E[R]=+0.023 FRAGILE
+  2y AUDUSD   ema_20_50_pull     15m  n=  705 PnL=$       5,500 OOS=$      3,900 E[R]=+0.089 FRAGILE
+  3y AUDUSD   ema_20_50_pull     15m  n= 1028 PnL=$      -1,600 OOS=$      2,900 E[R]=+0.044 FRAGILE
+  5y AUDUSD   ema_20_50_pull     15m  n= 1712 PnL=$      -8,400 OOS=$      2,400 E[R]=+0.022 FRAGILE
+  7y AUDUSD   ema_20_50_pull     15m  n= 2369 PnL=$     -11,800 OOS=$      6,900 E[R]=+0.047 DEAD
+  10y AUDUSD   ema_20_50_pull     15m  n= 1333 PnL=$      -4,600 OOS=$      1,500 E[R]=+0.019 FRAGILE
+  load BTCUSD 15m: 323,040 bars 2017-05-07→2026-07-23
+  1y BTCUSD   fib_liq_sweep      15m  n=  143 PnL=$     -12,600 OOS=$     -4,400 E[R]=-0.579 DEAD
+  2y BTCUSD   fib_liq_sweep      15m  n=  281 PnL=$      -1,800 OOS=$     -3,000 E[R]=-0.200 DEAD
+  3y BTCUSD   fib_liq_sweep      15m  n=  428 PnL=$      -1,600 OOS=$    -10,000 E[R]=-0.410 DEAD
+  5y BTCUSD   fib_liq_sweep      15m  n=  647 PnL=$      -2,200 OOS=$     -7,600 E[R]=-0.213 DEAD
+  7y BTCUSD   fib_liq_sweep      15m  n=  854 PnL=$      -3,600 OOS=$     -1,400 E[R]=-0.027 DEAD
+  10y BTCUSD   fib_liq_sweep      15m  n=  954 PnL=$       6,000 OOS=$      2,400 E[R]=+0.038 FRAGILE
+  load ETHUSD 15m: 302,112 bars 2017-12-11→2026-07-23
+  1y ETHUSD   bb_2               15m  n=  322 PnL=$       1,600 OOS=$       -200 E[R]=-0.010 FRAGILE
+  2y ETHUSD   bb_2               15m  n=  600 PnL=$           0 OOS=$     -1,800 E[R]=-0.044 DEAD
+  3y ETHUSD   bb_2               15m  n=  920 PnL=$      -8,000 OOS=$      1,800 E[R]=+0.031 DEAD
+  5y ETHUSD   bb_2               15m  n= 1616 PnL=$      -6,200 OOS=$      1,000 E[R]=+0.011 DEAD
+  7y ETHUSD   bb_2               15m  n= 2110 PnL=$     -15,000 OOS=$     -1,800 E[R]=-0.014 DEAD
+  10y ETHUSD   bb_2               15m  n= 2511 PnL=$     -10,200 OOS=$     -6,400 E[R]=-0.041 DEAD
+
+===== 1y 15m desk → 1S/4F/3D · Full $-20,960 · OOS $740 · fit 2.9/10 · DOES NOT FIT
+
+===== 2y 15m desk → 0S/4F/4D · Full $-1,540 · OOS $-740 · fit 1.0/10 · DOES NOT FIT
+
+===== 3y 15m desk → 0S/4F/4D · Full $-24,080 · OOS $-14,620 · fit 1.0/10 · DOES NOT FIT
+
+===== 5y 15m desk → 1S/4F/3D · Full $-36,880 · OOS $-10,880 · fit 1.9/10 · DOES NOT FIT
+
+===== 7y 15m desk → 1S/2F/5D · Full $-55,040 · OOS $-1,940 · fit 1.0/10 · DOES NOT FIT
+
+===== 10y 15m desk → 0S/5F/3D · Full $-109,960 · OOS $-20,500 · fit 1.2/10 · DOES NOT FIT
+
+### TF 5m
+  load GOLD 5m: 1,049,184 bars 2016-07-23→2026-07-23
+  1y GOLD     cta_10_40          5m   n= 1211 PnL=$     -14,200 OOS=$       -400 E[R]=-0.006 DEAD
+  2y GOLD     cta_10_40          5m   n= 2290 PnL=$      10,000 OOS=$    -12,000 E[R]=-0.085 FRAGILE
+  3y GOLD     cta_10_40          5m   n= 3427 PnL=$       2,600 OOS=$     -9,200 E[R]=-0.043 FRAGILE
+  5y GOLD     cta_10_40          5m   n= 5610 PnL=$      13,000 OOS=$      3,800 E[R]=+0.011 FRAGILE
+  7y GOLD     cta_10_40          5m   n= 7869 PnL=$     -35,800 OOS=$      9,600 E[R]=+0.020 FRAGILE
+  10y GOLD     cta_10_40          5m   n=11460 PnL=$     -44,000 OOS=$      2,600 E[R]=+0.004 FRAGILE
+  load USDCHF 5m: 1,052,064 bars 2016-07-23→2026-07-23
+  1y USDCHF   rsi                5m   n= 2822 PnL=$       8,840 OOS=$      8,160 E[R]=+0.045 FRAGILE
+  2y USDCHF   rsi                5m   n= 5639 PnL=$       6,440 OOS=$       -920 E[R]=-0.003 FRAGILE
+  3y USDCHF   rsi                5m   n= 8236 PnL=$      29,000 OOS=$     10,080 E[R]=+0.020 FRAGILE
+  5y USDCHF   rsi                5m   n=13756 PnL=$      13,000 OOS=$      2,600 E[R]=+0.003 FRAGILE
+  7y USDCHF   rsi                5m   n=19208 PnL=$      47,320 OOS=$      2,240 E[R]=+0.002 FRAGILE
+  10y USDCHF   rsi                5m   n=27205 PnL=$      21,440 OOS=$     27,760 E[R]=+0.017 FRAGILE
+  load USDJPY 5m: 1,052,064 bars 2016-07-23→2026-07-23
+  1y USDJPY   bb_1.5             5m   n= 1899 PnL=$      30,200 OOS=$     21,000 E[R]=+0.216 SURVIVES
+  2y USDJPY   bb_1.5             5m   n= 3984 PnL=$      43,200 OOS=$     27,800 E[R]=+0.127 SURVIVES
+  3y USDJPY   bb_1.5             5m   n= 5845 PnL=$      50,000 OOS=$     21,600 E[R]=+0.063 FRAGILE
+  5y USDJPY   bb_1.5             5m   n= 9816 PnL=$     105,800 OOS=$     37,200 E[R]=+0.063 SURVIVES
+  7y USDJPY   bb_1.5             5m   n=13564 PnL=$      89,200 OOS=$     36,400 E[R]=+0.044 SURVIVES
+  10y USDJPY   bb_1.5             5m   n=19596 PnL=$     152,800 OOS=$     48,600 E[R]=+0.042 SURVIVES
+  load NAS100 5m: 1,052,064 bars 2016-07-23→2026-07-23
+  1y NAS100   ema_20_50_tight    5m   n=  360 PnL=$      11,000 OOS=$      1,600 E[R]=+0.071 SURVIVES
+  2y NAS100   ema_20_50_tight    5m   n=  748 PnL=$      22,400 OOS=$      9,000 E[R]=+0.209 SURVIVES
+  3y NAS100   ema_20_50_tight    5m   n=  465 PnL=$           0 OOS=$      7,000 E[R]=+0.269 FRAGILE
+  5y NAS100   ema_20_50_tight    5m   n=  770 PnL=$       3,000 OOS=$      8,800 E[R]=+0.190 FRAGILE
+  7y NAS100   ema_20_50_tight    5m   n= 1116 PnL=$       2,800 OOS=$      4,600 E[R]=+0.067 FRAGILE
+  10y NAS100   ema_20_50_tight    5m   n= 1502 PnL=$       2,600 OOS=$       -200 E[R]=-0.002 FRAGILE
+  load UKOIL 5m: 1,052,064 bars 2016-07-23→2026-07-23
+  1y UKOIL    st_3               5m   n=  339 PnL=$       1,800 OOS=$      5,400 E[R]=+0.248 FRAGILE
+  2y UKOIL    st_3               5m   n=  668 PnL=$      14,400 OOS=$        600 E[R]=+0.015 SURVIVES
+  3y UKOIL    st_3               5m   n= 1005 PnL=$      14,200 OOS=$      3,800 E[R]=+0.063 SURVIVES
+  5y UKOIL    st_3               5m   n= 1692 PnL=$      18,400 OOS=$      6,800 E[R]=+0.066 SURVIVES
+  7y UKOIL    st_3               5m   n= 2376 PnL=$       6,400 OOS=$     12,000 E[R]=+0.086 FRAGILE
+  10y UKOIL    st_3               5m   n= 3536 PnL=$      16,800 OOS=$     14,000 E[R]=+0.070 FRAGILE
+  load AUDUSD 5m: 1,052,064 bars 2016-07-23→2026-07-23
+  1y AUDUSD   ema_20_50_pull     5m   n= 1005 PnL=$     -20,500 OOS=$       -700 E[R]=-0.011 DEAD
+  2y AUDUSD   ema_20_50_pull     5m   n= 2093 PnL=$     -25,100 OOS=$    -14,000 E[R]=-0.112 DEAD
+  3y AUDUSD   ema_20_50_pull     5m   n= 1235 PnL=$      -7,000 OOS=$     -6,500 E[R]=-0.088 DEAD
+  5y AUDUSD   ema_20_50_pull     5m   n= 2090 PnL=$     -10,500 OOS=$     -3,700 E[R]=-0.029 DEAD
+  7y AUDUSD   ema_20_50_pull     5m   n= 2912 PnL=$      -4,900 OOS=$     -9,600 E[R]=-0.056 DEAD
+  10y AUDUSD   ema_20_50_pull     5m   n= 4215 PnL=$     -22,000 OOS=$     -7,000 E[R]=-0.028 DEAD
+  load BTCUSD 5m: 969,120 bars 2017-05-07→2026-07-23
+  1y BTCUSD   fib_liq_sweep      5m   n=  425 PnL=$      -3,400 OOS=$          0 E[R]=+0.000 DEAD
+  2y BTCUSD   fib_liq_sweep      5m   n=  689 PnL=$     -12,200 OOS=$     -1,600 E[R]=-0.030 DEAD
+  3y BTCUSD   fib_liq_sweep      5m   n=  935 PnL=$     -19,000 OOS=$     -1,600 E[R]=-0.026 DEAD
+  5y BTCUSD   fib_liq_sweep      5m   n= 1524 PnL=$     -13,600 OOS=$     -8,000 E[R]=-0.085 DEAD
+28 DEAD
+  load BTCUSD 5m: 969,120 bars 2017-05-07→2026-07-23
+  1y BTCUSD   fib_liq_sweep      5m   n=  425 PnL=$      -3,400 OOS=$          0 E[R]=+0.000 DEAD
+  2y BTCUSD   fib_liq_sweep      5m   n=  689 PnL=$     -12,200 OOS=$     -1,600 E[R]=-0.030 DEAD
+  3y BTCUSD   fib_liq_sweep      5m   n=  935 PnL=$     -19,000 OOS=$     -1,600 E[R]=-0.026 DEAD
+  5y BTCUSD   fib_liq_sweep      5m   n= 1524 PnL=$     -13,600 OOS=$     -8,000 E[R]=-0.085 DEAD

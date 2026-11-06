@@ -14,14 +14,21 @@ _ALGO_ROOT = Path(__file__).resolve().parents[2]
 if str(_ALGO_ROOT) not in sys.path:
     sys.path.insert(0, str(_ALGO_ROOT))
 
+from app.api.algo_settings import router as algo_settings_router
 from app.api.auth import router as auth_router
+from app.api.backtest import router as backtest_router
 from app.api.chart import router as chart_router
+from app.api.hyper_scalp import router as hyper_scalp_router
+from app.api.news import router as news_router
 from app.api.signals import router as signals_router
+from app.api.hunt_live import router as hunt_live_router
+from app.api.strategy_lab import router as strategy_lab_router
 from app.api.trades import router as trades_router
 from app.api.ws import router as ws_router
 from app.core.config import settings
 from app.core.database import init_db
 from app.services.bias_cache import bias_cache
+from app.services.hyper_scalp_worker import hyper_scalp_worker
 from app.services.markov_cache import markov_cache
 from app.services.signal_worker import signal_worker
 from app.services.trade_calibrator import trade_calibrator
@@ -34,6 +41,7 @@ logger = logging.getLogger(__name__)
 async def lifespan(app: FastAPI):
     await init_db()
     signal_worker.start()
+    hyper_scalp_worker.start()
 
     async def _bias_refresh_loop() -> None:
         await bias_cache.refresh(force=True)
@@ -44,6 +52,25 @@ async def lifespan(app: FastAPI):
     async def _calibrator_refresh_loop() -> None:
         await trade_calibrator.refresh(force=True)
         await markov_cache.refresh(force=True)
+        try:
+            from analysis.instrument_rl import rebuild_from_trades
+
+            rows = await trade_calibrator.load_closed_rows()
+            closed = [r for r in rows if r.get("status") == "closed"]
+            try:
+                from app.services.desk_epoch import filter_rows_since_epoch
+
+                closed = filter_rows_since_epoch(closed)
+            except Exception:
+                pass
+            rl = await asyncio.to_thread(rebuild_from_trades, closed, ignore_epoch=False)
+            logger.info(
+                "Instrument RL bootstrapped: %s updates across %s symbols",
+                rl.get("total_updates"),
+                len(rl.get("instruments") or {}),
+            )
+        except Exception as exc:
+            logger.warning("Instrument RL bootstrap skipped: %s", exc)
         while True:
             await asyncio.sleep(300)
             await trade_calibrator.refresh(force=True)
@@ -61,6 +88,7 @@ async def lifespan(app: FastAPI):
         except asyncio.CancelledError:
             pass
     await signal_worker.stop()
+    await hyper_scalp_worker.stop()
 
 
 app = FastAPI(
@@ -81,6 +109,12 @@ app.include_router(auth_router)
 app.include_router(signals_router)
 app.include_router(chart_router)
 app.include_router(trades_router)
+app.include_router(backtest_router)
+app.include_router(algo_settings_router)
+app.include_router(news_router)
+app.include_router(hyper_scalp_router)
+app.include_router(strategy_lab_router)
+app.include_router(hunt_live_router)
 app.include_router(ws_router)
 
 

@@ -1,0 +1,10 @@
+2026-08-27T13:47:54Z pipeline watchdog up — rest5 + cog in parallel until both done
+rest5_pids []
+2026-08-27T13:47:55Z starting COGNITIVE deep hunt (zenith+bayes+HMM+math-omni)
+2026-08-28T11:05:02Z pipeline watchdog up — rest5 + cog in parallel until both done
+lab_adaptive_xm_rest5_hunt_bt []
+lab_adaptive_xm_rest5_cog_hunt_bt [47, 53, 65]
+killed 47
+killed 53
+kept 65
+2026-08-28T11:05:02Z starting COGNITIVE deep hunt (zenith+bayes+HMM+math-omni)

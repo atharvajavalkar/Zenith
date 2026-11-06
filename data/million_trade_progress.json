@@ -1,0 +1,8 @@
+{
+  "message": "DONE \u00b7 1,004,262 trades \u00b7 OOS E[R]=-0.0007 \u00b7 MC=88.3% \u00b7 77.8s",
+  "updated_at": "2026-07-24T11:50:23.205962+00:00",
+  "status": "done",
+  "trades": 1004262,
+  "pct": 100,
+  "result": "DEAD"
+}

@@ -1,0 +1,39 @@
+=== ADAPTIVE v3 · MINUTE/DAY EQUATIONS vs v2 ===
+TF=5m 3.0y · 12 invented adaptive eqs
+Compare vs v2 static|gated|switch|preferred
+LIVE BRAINS NOT TOUCHED
+
+
+######## ETHUSD ########
+  ABS=session_mix $17,600 vs v2best $12,400 beat=True
+  top: session_mix=$17,600, vol_clock=$17,000, tod_fade_boost=$16,400, static=$12,400, v2_preferred=$12,400
+
+######## BTCUSD ########
+  ABS=circadian_kalman_z $24,800 vs v2best $800 beat=True
+  top: circadian_kalman_z=$24,800, session_mix=$13,800, minute_softmax=$8,800, dow_book=$5,600, tod_fade_boost=$5,200
+
+######## GOLD ########
+  ABS=entropy_tod $30,600 vs v2best $30,000 beat=True
+  top: entropy_tod=$30,600, static=$30,000, v2_preferred=$30,000, vol_clock=$25,200, hybrid_v2_tod=$24,200
+
+######## NAS100 ########
+  ABS=entropy_tod $15,200 vs v2best $3,800 beat=True
+  top: entropy_tod=$15,200, hybrid_v2_tod=$4,800, circadian_thr=$4,400, static=$3,800, v2_preferred=$3,800
+
+######## USDJPY ########
+  ABS=circadian_kalman_z $66,400 vs v2best $47,400 beat=True
+  top: circadian_kalman_z=$66,400, session_mix=$55,000, tod_fade_boost=$48,600, static=$47,400, v2_preferred=$47,400
+
+######## AUDUSD ########
+  ABS=circadian_kalman_z $48,600 vs v2best $26,400 beat=True
+  top: circadian_kalman_z=$48,600, tod_fade_boost=$40,200, session_mix=$35,800, static=$26,400, v2_preferred=$26,400
+
+######## USDCHF ########
+  ABS=session_mix $61,000 vs v2best $32,400 beat=True
+  top: session_mix=$61,000, circadian_kalman_z=$48,000, vol_clock=$42,400, dow_book=$34,200, static=$32,400
+
+######## UKOIL ########
+  ABS=session_mix $51,000 vs v2best $38,600 beat=True
+  top: session_mix=$51,000, vol_clock=$41,400, minute_softmax=$39,600, static=$38,600, v2_preferred=$38,600
+
+DESK abs 1y $315,200 vs v2pref $191,800 · beats 8/8 · wrote /app/data/lab_adaptive_minute_day_v3.json
