@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T06:43:21.925614+00:00",
+  "updated_at": "2026-11-06T06:50:42.128548+00:00",
   "last_rescore_at": "2026-10-14T22:08:28.188886+00:00",
   "short_alt": {
     "ETHUSD": "session_mix",
@@ -17,10 +17,10 @@
       "active": "session_mix",
       "short_alt": "entropy_tod",
       "horizon_switched": false,
-      "pnl_7d": 0.0,
+      "pnl_7d": -296.6,
       "switch_thr": -400.0,
-      "risk_scale": 1.0,
-      "at": "2026-11-06T06:43:21.925596+00:00"
+      "risk_scale": 0.75,
+      "at": "2026-11-06T06:50:42.128543+00:00"
     }
   },
   "note": "desk reset for omni live begin"
